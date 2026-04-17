@@ -1,0 +1,400 @@
+/* ─────────────────────────────────────────────
+   MILLION — Top Projects Site
+   Global stylesheet
+───────────────────────────────────────────── */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --black:      #1c1c1c;
+  --white:      #ffffff;
+  --gray-light: #f4f4f4;
+  --gray-mid:   #c0c0c0;
+  --gray-dark:  #555;
+  --serif:      'Playfair Display', 'Times New Roman', Georgia, serif;
+  --sans:       -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--sans);
+  background: var(--white);
+  color: var(--black);
+  line-height: 1.6;
+}
+
+a { color: inherit; text-decoration: none; }
+img { display: block; max-width: 100%; }
+
+/* ── NAV ─────────────────────────────────────── */
+.site-nav {
+  background: var(--black);
+  padding: 0 32px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.site-nav .logo {
+  font-family: var(--serif);
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 4px;
+  color: var(--white);
+  text-transform: uppercase;
+}
+
+.site-nav .logo img {
+  height: 28px;
+  width: auto;
+}
+
+.nav-back {
+  font-size: 13px;
+  letter-spacing: 1px;
+  color: var(--gray-mid);
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: color 0.2s;
+}
+.nav-back:hover { color: var(--white); }
+.nav-back::before { content: '←'; font-size: 16px; }
+
+/* ── LOBBY HERO ──────────────────────────────── */
+.lobby-hero {
+  background: var(--black);
+  padding: 64px 32px 56px;
+  text-align: center;
+}
+
+.lobby-hero h1 {
+  font-family: var(--serif);
+  font-size: clamp(28px, 5vw, 48px);
+  font-weight: 700;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  color: var(--white);
+  margin-bottom: 10px;
+}
+
+.lobby-hero p {
+  font-size: 13px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--gray-mid);
+}
+
+/* ── SEARCH BAR ──────────────────────────────── */
+.search-wrap {
+  max-width: 480px;
+  margin: -22px auto 0;
+  padding: 0 24px;
+  position: relative;
+  z-index: 2;
+}
+
+.search-wrap input {
+  width: 100%;
+  padding: 14px 20px 14px 44px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-family: var(--sans);
+  box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+  background: var(--white) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23999' stroke-width='2'%3E%3Ccircle cx='11' cy='11' r='8'/%3E%3Cline x1='21' y1='21' x2='16.65' y2='16.65'/%3E%3C/svg%3E") 15px center no-repeat;
+  outline: none;
+}
+
+.search-wrap input::placeholder { color: #aaa; }
+.search-wrap input:focus { box-shadow: 0 2px 16px rgba(0,0,0,0.2); }
+
+/* ── PROJECT COUNT ───────────────────────────── */
+.project-count {
+  max-width: 1200px;
+  margin: 32px auto 12px;
+  padding: 0 32px;
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--gray-dark);
+}
+
+/* ── PROJECTS GRID ───────────────────────────── */
+.projects-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px 80px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+@media (max-width: 900px) { .projects-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 560px) { .projects-grid { grid-template-columns: 1fr; padding: 0 16px 60px; } }
+
+.project-card {
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.project-card:hover { transform: translateY(-3px); }
+
+.project-card .card-img {
+  width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  background: var(--gray-light);
+}
+
+.card-img-placeholder {
+  width: 100%;
+  aspect-ratio: 4/3;
+  background: var(--gray-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--serif);
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--gray-dark);
+}
+
+.project-card .card-body {
+  padding: 14px 4px 10px;
+  text-align: center;
+}
+
+.project-card .card-name {
+  font-family: var(--serif);
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--black);
+  margin-bottom: 4px;
+  line-height: 1.4;
+}
+
+.project-card .card-price {
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--gray-dark);
+}
+
+/* ── PROJECT HERO ────────────────────────────── */
+.project-hero {
+  width: 100%;
+  height: 55vh;
+  min-height: 320px;
+  max-height: 600px;
+  object-fit: cover;
+  background: var(--black);
+  display: block;
+}
+
+.project-hero-placeholder {
+  width: 100%;
+  height: 55vh;
+  min-height: 320px;
+  max-height: 600px;
+  background: var(--black);
+}
+
+/* ── PROJECT CONTENT ─────────────────────────── */
+.project-content {
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+/* ── SECTION ─────────────────────────────────── */
+.section {
+  padding: 36px 24px;
+  text-align: center;
+  border-top: 1px solid var(--gray-mid);
+}
+
+.section:first-child { border-top: none; }
+
+.section-title {
+  font-family: var(--serif);
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: var(--black);
+}
+
+.section-label {
+  font-family: var(--serif);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--black);
+  display: block;
+  margin-bottom: 10px;
+}
+
+.section-value {
+  font-size: 16px;
+  color: var(--black);
+  line-height: 1.7;
+  white-space: pre-line;
+}
+
+/* ── TWO-COLUMN ──────────────────────────────── */
+.two-col {
+  width: 100%;
+  border-collapse: collapse;
+  border-top: 1px solid var(--gray-mid);
+  table-layout: fixed;
+}
+
+.two-col td {
+  width: 50%;
+  padding: 36px 24px;
+  text-align: center;
+  vertical-align: top;
+  word-break: break-word;
+}
+
+.two-col td.left { border-right: 1px solid var(--gray-mid); }
+
+/* ── BULLET LIST ─────────────────────────────── */
+.bullet-list {
+  list-style: square;
+  padding-left: 22px;
+  margin: 4px auto 0;
+  display: inline-block;
+  text-align: left;
+}
+.bullet-list li {
+  font-size: 15px;
+  color: var(--black);
+  line-height: 1.7;
+  margin-bottom: 2px;
+}
+
+/* ── CONTACT ─────────────────────────────────── */
+.contact-entry { margin-bottom: 16px; }
+.contact-name {
+  font-family: var(--serif);
+  font-weight: 700;
+  font-size: 16px;
+  display: block;
+  margin-bottom: 3px;
+}
+.contact-detail { font-size: 14px; color: var(--gray-dark); display: block; line-height: 1.6; }
+.contact-detail a { color: #1a73e8; }
+.contact-detail a:hover { text-decoration: underline; }
+
+/* ── PDF EMBED ───────────────────────────────── */
+.pdf-embed {
+  width: 100%;
+  height: 600px;
+  border: none;
+  display: block;
+}
+
+.pdf-link-btn {
+  display: inline-block;
+  padding: 10px 24px;
+  border: 1px solid var(--black);
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--black);
+  transition: background 0.2s, color 0.2s;
+}
+.pdf-link-btn:hover { background: var(--black); color: var(--white); }
+
+/* ── BROCHURES GRID ──────────────────────────── */
+.brochures-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.brochure-card {
+  width: 220px;
+  text-align: center;
+}
+
+.brochure-thumb {
+  width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  background: var(--gray-light);
+  border: 1px solid #e0e0e0;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.brochure-thumb-placeholder {
+  width: 100%;
+  aspect-ratio: 4/3;
+  background: var(--gray-light);
+  border: 1px solid #e0e0e0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.brochure-title {
+  font-family: var(--serif);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* ── PRICE LIST EMBED ────────────────────────── */
+.price-list-wrap { padding: 0 24px 36px; }
+
+/* ── LOADING / ERROR ─────────────────────────── */
+.loading {
+  text-align: center;
+  padding: 80px 24px;
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--gray-dark);
+}
+
+.error-msg {
+  text-align: center;
+  padding: 80px 24px;
+  font-size: 14px;
+  color: #c00;
+}
+
+/* ── FOOTER ──────────────────────────────────── */
+.site-footer {
+  border-top: 1px solid var(--gray-mid);
+  padding: 24px;
+  text-align: center;
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--gray-dark);
+}
+
+/* ── RESPONSIVE PROJECT PAGE ─────────────────── */
+@media (max-width: 600px) {
+  .two-col { display: block; }
+  .two-col td { display: block; width: 100%; border-right: none !important; border-top: 1px solid var(--gray-mid); }
+  .two-col td:first-child { border-top: none; }
+  .project-hero { height: 40vw; min-height: 200px; }
+  .section, .two-col td { padding: 28px 16px; }
+}

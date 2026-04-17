@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project — Million</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="site-nav">
+    <a href="/" class="logo">Million</a>
+    <a href="/" class="nav-back">Top Projects</a>
+  </nav>
+
+  <!-- HERO -->
+  <div id="hero-wrap"></div>
+
+  <!-- CONTENT -->
+  <div class="project-content" id="content">
+    <div class="loading">Loading&hellip;</div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    &copy; Million And Up &middot; Data updated in real time
+  </footer>
+
+  <script>
+    var content  = document.getElementById('content');
+    var heroWrap = document.getElementById('hero-wrap');
+
+    // Read slug from URL path: /projects/SLUG
+    var slug = window.location.pathname.split('/').filter(Boolean).pop() || '';
+
+    // ── Helpers ────────────────────────────────────────────────
+
+    function el(tag, className, text) {
+      var e = document.createElement(tag);
+      if (className) e.className = className;
+      if (text !== undefined) e.textContent = text;
+      return e;
+    }
+
+    function section(labelText, valueText) {
+      var wrap = el('div', 'section');
+      wrap.appendChild(el('span', 'section-label', labelText));
+      wrap.appendChild(el('div', 'section-value', valueText));
+      return wrap;
+    }
+
+    function sectionTitle(titleText) {
+      var wrap = el('div', 'section');
+      wrap.appendChild(el('div', 'section-title', titleText));
+      return wrap;
+    }
+
+    function bulletSection(labelText, lines) {
+      var wrap = el('div', 'section');
+      wrap.appendChild(el('span', 'section-label', labelText));
+      if (lines.length > 1) {
+        var ul = el('ul', 'bullet-list');
+        lines.forEach(function(line) {
+          ul.appendChild(el('li', null, line));
+        });
+        wrap.appendChild(ul);
+      } else {
+        wrap.appendChild(el('div', 'section-value', lines[0]));
+      }
+      return wrap;
+    }
+
+    function twoCol(leftLabel, leftContent, rightLabel, rightContent) {
+      var table = document.createElement('table');
+      table.className = 'two-col';
+      var tr = document.createElement('tr');
+
+      var tdL = document.createElement('td');
+      tdL.className = 'left';
+      tdL.appendChild(el('span', 'section-label', leftLabel));
+      tdL.appendChild(leftContent);
+
+      var tdR = document.createElement('td');
+      tdR.appendChild(el('span', 'section-label', rightLabel));
+      tdR.appendChild(rightContent);
+
+      tr.appendChild(tdL);
+      tr.appendChild(tdR);
+      table.appendChild(tr);
+      return table;
+    }
+
+    function textNode(text) {
+      var d = el('div', 'section-value', text);
+      return d;
+    }
+
+    function bulletNode(lines) {
+      if (lines.length > 1) {
+        var ul = el('ul', 'bullet-list');
+        lines.forEach(function(l) { ul.appendChild(el('li', null, l)); });
+        return ul;
+      }
+      return el('div', 'section-value', lines[0]);
+    }
+
+    // ── Render ─────────────────────────────────────────────────
+
+    function render(d) {
+      document.title = d.name + ' — Million';
+      content.textContent = '';
+
+      // Hero
+      if (d.hero) {
+        var img = document.createElement('img');
+        img.className = 'project-hero';
+        img.src = d.hero;
+        img.alt = d.name;
+        heroWrap.appendChild(img);
+      } else {
+        var ph = el('div', 'project-hero-placeholder');
+        heroWrap.appendChild(ph);
+      }
+
+      var frag = document.createDocumentFragment();
+
+      // ── PRICE LIST ─────────────────────────────────────────
+      var priceListBrochure = (d.brochures || []).find(function(b) {
+        return b.title.toLowerCase().indexOf('price') !== -1;
+      });
+      if (priceListBrochure && priceListBrochure.driveFileId) {
+        var plSection = el('div', 'section');
+        plSection.style.borderTop = 'none';
+        plSection.appendChild(el('span', 'section-label', 'Price List'));
+        var plWrap = el('div', 'price-list-wrap');
+        var iframe = document.createElement('iframe');
+        iframe.className = 'pdf-embed';
+        iframe.src = 'https://drive.google.com/file/d/' + priceListBrochure.driveFileId + '/preview';
+        iframe.setAttribute('allowfullscreen', '');
+        plWrap.appendChild(iframe);
+        plSection.appendChild(plWrap);
+        frag.appendChild(plSection);
+      }
+
+      // ── THE PROJECT title ──────────────────────────────────
+      var projectTitle = sectionTitle('The Project');
+      projectTitle.style.borderTop = 'none';
+      if (!priceListBrochure) projectTitle.style.borderTop = 'none';
+      frag.appendChild(projectTitle);
+
+      // Address
+      if (d.address) {
+        var addrSec = section('Address', d.address);
+        addrSec.style.paddingTop = '0';
+        addrSec.style.borderTop = 'none';
+        frag.appendChild(addrSec);
+      }
+
+      // Building Description
+      if (d.buildingDescription) {
+        frag.appendChild(section('Building Description', d.buildingDescription));
+      }
+
+      // Stylish Amenities
+      if (d.stylishAmenities) {
+        frag.appendChild(section('Stylish Amenities', d.stylishAmenities));
+      }
+
+      // ── DETAILS title ──────────────────────────────────────
+      frag.appendChild(sectionTitle('Details'));
+
+      // Developer | Architecture
+      var hasDev  = !!d.developer;
+      var hasArch = !!d.architecture;
+      if (hasDev && hasArch) {
+        frag.appendChild(twoCol('Developer', textNode(d.developer), 'Architecture', textNode(d.architecture)));
+      } else if (hasDev) {
+        frag.appendChild(section('Developer', d.developer));
+      } else if (hasArch) {
+        frag.appendChild(section('Architecture', d.architecture));
+      }
+
+      // Interior Design | Completion Date
+      var hasInt  = !!d.interiorDesign;
+      var hasComp = !!d.completionDate;
+      if (hasInt && hasComp) {
+        frag.appendChild(twoCol('Interior Design', textNode(d.interiorDesign), 'Completion Date', textNode(d.completionDate)));
+      } else if (hasInt) {
+        frag.appendChild(section('Interior Design', d.interiorDesign));
+      } else if (hasComp) {
+        frag.appendChild(section('Completion Date', d.completionDate));
+      }
+
+      // Deposit Structure | Rental Restrictions
+      var hasDep = d.depositStructure && d.depositStructure.length;
+      var hasRR  = d.rentalRestrictions && d.rentalRestrictions.length;
+      if (hasDep && hasRR) {
+        frag.appendChild(twoCol('Deposit Structure', bulletNode(d.depositStructure), 'Rental Restrictions', bulletNode(d.rentalRestrictions)));
+      } else if (hasDep) {
+        frag.appendChild(bulletSection('Deposit Structure', d.depositStructure));
+      } else if (hasRR) {
+        frag.appendChild(bulletSection('Rental Restrictions', d.rentalRestrictions));
+      }
+
+      // Parking Spaces | HOA
+      var hasPark = d.parkingSpaces && d.parkingSpaces.length;
+      var hasHOA  = !!d.hoa;
+      if (hasPark && hasHOA) {
+        frag.appendChild(twoCol('Parking Spaces', bulletNode(d.parkingSpaces), 'HOA', textNode(d.hoa)));
+      } else if (hasPark) {
+        frag.appendChild(bulletSection('Parking Spaces', d.parkingSpaces));
+      } else if (hasHOA) {
+        frag.appendChild(section('HOA', d.hoa));
+      }
+
+      // ── CONTACT CARD ───────────────────────────────────────
+      if (d.contact && d.contact.length) {
+        var contactSec = el('div', 'section');
+        contactSec.appendChild(el('span', 'section-label', 'Contact Card'));
+        d.contact.forEach(function(agent) {
+          var entry = el('div', 'contact-entry');
+          entry.appendChild(el('span', 'contact-name', agent.name));
+          if (agent.phone) entry.appendChild(el('span', 'contact-detail', agent.phone));
+          if (agent.email) {
+            var emailEl = el('span', 'contact-detail');
+            var link = el('a', null, agent.email);
+            link.href = 'mailto:' + agent.email;
+            emailEl.appendChild(link);
+            entry.appendChild(emailEl);
+          }
+          contactSec.appendChild(entry);
+        });
+        frag.appendChild(contactSec);
+      }
+
+      // ── BROCHURES ──────────────────────────────────────────
+      var otherBrochures = (d.brochures || []).filter(function(b) {
+        return b.title.toLowerCase().indexOf('price') === -1 && b.driveFileId;
+      });
+      if (otherBrochures.length) {
+        var bSec = el('div', 'section');
+        bSec.appendChild(el('span', 'section-label', 'Brochures'));
+        var grid = el('div', 'brochures-grid');
+        otherBrochures.forEach(function(b) {
+          var card = el('div', 'brochure-card');
+          var thumb = document.createElement('img');
+          thumb.className = 'brochure-thumb';
+          thumb.src = 'https://drive.google.com/thumbnail?id=' + b.driveFileId + '&sz=w480-h360-p-k-nu';
+          thumb.alt = b.title;
+          var titleEl = el('div', 'brochure-title', b.title);
+          var link = document.createElement('a');
+          link.href = 'https://drive.google.com/file/d/' + b.driveFileId + '/view';
+          link.target = '_blank';
+          link.appendChild(thumb);
+          card.appendChild(link);
+          card.appendChild(titleEl);
+          grid.appendChild(card);
+        });
+        bSec.appendChild(grid);
+        frag.appendChild(bSec);
+      }
+
+      content.appendChild(frag);
+    }
+
+    // ── Load ───────────────────────────────────────────────────
+
+    if (!slug) {
+      content.textContent = '';
+      var errDiv = el('div', 'error-msg', 'No project specified.');
+      content.appendChild(errDiv);
+    } else {
+      fetch('/api/project?slug=' + encodeURIComponent(slug))
+        .then(function(res) {
+          if (!res.ok) throw new Error('Not found');
+          return res.json();
+        })
+        .then(function(data) { render(data); })
+        .catch(function() {
+          content.textContent = '';
+          var errDiv = el('div', 'error-msg', 'Project not found or data unavailable.');
+          content.appendChild(errDiv);
+        });
+    }
+  </script>
+</body>
+</html>

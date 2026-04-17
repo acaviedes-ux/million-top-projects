@@ -1,0 +1,11 @@
+{
+  "name": "million-top-projects",
+  "version": "1.0.0",
+  "description": "Top Projects luxury real estate site — Million And Up",
+  "dependencies": {
+    "googleapis": "^144.0.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

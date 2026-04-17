@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Top Projects — Million</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="site-nav">
+    <a href="/" class="logo">Million</a>
+  </nav>
+
+  <!-- HERO -->
+  <header class="lobby-hero">
+    <h1>Top Projects</h1>
+    <p>Top Luxury Buildings in South Florida</p>
+  </header>
+
+  <!-- SEARCH -->
+  <div class="search-wrap">
+    <input type="text" id="search" placeholder="Search projects..." autocomplete="off">
+  </div>
+
+  <!-- COUNT -->
+  <div class="project-count" id="count"></div>
+
+  <!-- GRID -->
+  <main class="projects-grid" id="grid">
+    <div class="loading">Loading projects&hellip;</div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    &copy; Million And Up &middot; Data updated in real time
+  </footer>
+
+  <script>
+    var grid    = document.getElementById('grid');
+    var countEl = document.getElementById('count');
+    var search  = document.getElementById('search');
+    var allProjects = [];
+
+    function buildCard(p) {
+      var a = document.createElement('a');
+      a.className = 'project-card';
+      a.href = '/projects/' + p.slug;
+
+      if (p.thumbnail) {
+        var img = document.createElement('img');
+        img.className = 'card-img';
+        img.src = p.thumbnail;
+        img.alt = p.name;
+        img.loading = 'lazy';
+        a.appendChild(img);
+      } else {
+        var ph = document.createElement('div');
+        ph.className = 'card-img-placeholder';
+        ph.textContent = 'No image';
+        a.appendChild(ph);
+      }
+
+      var body = document.createElement('div');
+      body.className = 'card-body';
+
+      var name = document.createElement('div');
+      name.className = 'card-name';
+      name.textContent = p.name;
+      body.appendChild(name);
+
+      if (p.startingPrice) {
+        var price = document.createElement('div');
+        price.className = 'card-price';
+        price.textContent = 'Starting at ' + p.startingPrice;
+        body.appendChild(price);
+      }
+
+      a.appendChild(body);
+      return a;
+    }
+
+    function renderGrid(projects) {
+      countEl.textContent = projects.length + ' project' + (projects.length !== 1 ? 's' : '');
+      grid.textContent = '';
+
+      if (!projects.length) {
+        var msg = document.createElement('div');
+        msg.className = 'loading';
+        msg.textContent = 'No projects found.';
+        grid.appendChild(msg);
+        return;
+      }
+
+      var frag = document.createDocumentFragment();
+      projects.forEach(function(p) { frag.appendChild(buildCard(p)); });
+      grid.appendChild(frag);
+    }
+
+    function loadProjects() {
+      fetch('/api/projects')
+        .then(function(res) { return res.json(); })
+        .then(function(data) {
+          allProjects = data;
+          renderGrid(allProjects);
+        })
+        .catch(function() {
+          grid.textContent = '';
+          var err = document.createElement('div');
+          err.className = 'error-msg';
+          err.textContent = 'Could not load projects. Please try again.';
+          grid.appendChild(err);
+        });
+    }
+
+    search.addEventListener('input', function() {
+      var q = search.value.toLowerCase().trim();
+      renderGrid(q
+        ? allProjects.filter(function(p) { return p.name.toLowerCase().indexOf(q) !== -1; })
+        : allProjects
+      );
+    });
+
+    loadProjects();
+  </script>
+</body>
+</html>
