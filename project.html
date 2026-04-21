@@ -8,281 +8,335 @@
 </head>
 <body>
 
-  <!-- NAV -->
+  <!-- ── HEADER ─────────────────────────────────────────────── -->
   <nav class="site-nav">
-    <a href="/" class="logo">Million</a>
-    <a href="/" class="nav-back">Top Projects</a>
+    <a href="/" class="logo">
+      <img src="/images/logo.png" alt="MILLION" onerror="this.style.display='none';this.nextElementSibling.style.display='inline'">
+      <span style="display:none">MILLION</span>
+    </a>
+
+    <div class="nav-project-logo" id="nav-project-logo" style="display:none">
+      <img id="project-logo-img" src="" alt="" style="height:32px;width:auto;filter:brightness(0) invert(1)">
+    </div>
+
+    <div class="nav-dropdown" id="nav-dropdown">
+      <button class="nav-dropdown-btn" id="nav-dropdown-btn" aria-expanded="false">
+        Top Projects <span class="nav-dropdown-arrow">&#9662;</span>
+      </button>
+      <div class="nav-dropdown-menu" id="nav-dropdown-menu" role="menu"></div>
+    </div>
   </nav>
 
-  <!-- HERO -->
-  <div id="hero-wrap"></div>
+  <!-- ── HERO ───────────────────────────────────────────────── -->
+  <div class="project-hero-wrap" id="hero-wrap">
+    <div class="hero-overlay"></div>
+    <a href="/" class="hero-back">Back</a>
+  </div>
 
-  <!-- CONTENT -->
-  <div class="project-content" id="content">
+  <!-- ── PAGE CONTENT ───────────────────────────────────────── -->
+  <div id="page-content">
     <div class="loading">Loading&hellip;</div>
   </div>
 
-  <!-- FOOTER -->
-  <footer class="site-footer">
-    &copy; MILLION &middot; Data updated in real time
-  </footer>
+  <!-- ── FOOTER ─────────────────────────────────────────────── -->
+  <footer class="site-footer">&copy; MILLION</footer>
 
-  <script>
-    var content  = document.getElementById('content');
-    var heroWrap = document.getElementById('hero-wrap');
+<script>
+(function () {
+  'use strict';
 
-    // Read slug from URL path: /projects/SLUG
-    var slug = window.location.pathname.split('/').filter(Boolean).pop() || '';
+  var pageContent = document.getElementById('page-content');
+  var heroWrap    = document.getElementById('hero-wrap');
+  var slug = window.location.pathname.split('/').filter(Boolean).pop() || '';
 
-    // ── Helpers ────────────────────────────────────────────────
+  // ── Utilities ────────────────────────────────────────────────
 
-    function el(tag, className, text) {
-      var e = document.createElement(tag);
-      if (className) e.className = className;
-      if (text !== undefined) e.textContent = text;
-      return e;
+  function el(tag, cls, text) {
+    var e = document.createElement(tag);
+    if (cls)  e.className = cls;
+    if (text !== undefined) e.textContent = text;
+    return e;
+  }
+
+  // Safe DOM clear — avoids innerHTML = ''
+  function clearEl(node) {
+    while (node.firstChild) node.removeChild(node.firstChild);
+  }
+
+  // ── Dropdown ────────────────────────────────────────────────
+
+  var dropdownBtn    = document.getElementById('nav-dropdown-btn');
+  var dropdownMenu   = document.getElementById('nav-dropdown-menu');
+  var dropdownLoaded = false;
+
+  dropdownBtn.addEventListener('click', function () {
+    var isOpen = dropdownMenu.classList.toggle('open');
+    dropdownBtn.setAttribute('aria-expanded', String(isOpen));
+    if (isOpen && !dropdownLoaded) loadDropdown();
+  });
+
+  document.addEventListener('click', function (e) {
+    if (!document.getElementById('nav-dropdown').contains(e.target)) {
+      dropdownMenu.classList.remove('open');
+      dropdownBtn.setAttribute('aria-expanded', 'false');
     }
+  });
 
-    function section(labelText, valueText) {
-      var wrap = el('div', 'section');
-      wrap.appendChild(el('span', 'section-label', labelText));
-      wrap.appendChild(el('div', 'section-value', valueText));
-      return wrap;
-    }
+  function loadDropdown() {
+    dropdownLoaded = true;
+    clearEl(dropdownMenu);
+    dropdownMenu.appendChild(el('div', 'nav-dropdown-loading', 'Loading\u2026'));
 
-    function sectionTitle(titleText) {
-      var wrap = el('div', 'section');
-      wrap.appendChild(el('div', 'section-title', titleText));
-      return wrap;
-    }
-
-    function bulletSection(labelText, lines) {
-      var wrap = el('div', 'section');
-      wrap.appendChild(el('span', 'section-label', labelText));
-      if (lines.length > 1) {
-        var ul = el('ul', 'bullet-list');
-        lines.forEach(function(line) {
-          ul.appendChild(el('li', null, line));
+    fetch('/api/projects')
+      .then(function (r) { return r.json(); })
+      .then(function (list) {
+        clearEl(dropdownMenu);
+        list.forEach(function (p) {
+          var a = el('a', 'nav-dropdown-item' + (p.slug === slug ? ' active' : ''), p.name);
+          a.href = '/projects/' + p.slug;
+          a.setAttribute('role', 'menuitem');
+          dropdownMenu.appendChild(a);
         });
-        wrap.appendChild(ul);
-      } else {
-        wrap.appendChild(el('div', 'section-value', lines[0]));
-      }
-      return wrap;
-    }
-
-    function twoCol(leftLabel, leftContent, rightLabel, rightContent) {
-      var table = document.createElement('table');
-      table.className = 'two-col';
-      var tr = document.createElement('tr');
-
-      var tdL = document.createElement('td');
-      tdL.className = 'left';
-      tdL.appendChild(el('span', 'section-label', leftLabel));
-      tdL.appendChild(leftContent);
-
-      var tdR = document.createElement('td');
-      tdR.appendChild(el('span', 'section-label', rightLabel));
-      tdR.appendChild(rightContent);
-
-      tr.appendChild(tdL);
-      tr.appendChild(tdR);
-      table.appendChild(tr);
-      return table;
-    }
-
-    function textNode(text) {
-      var d = el('div', 'section-value', text);
-      return d;
-    }
-
-    function bulletNode(lines) {
-      if (lines.length > 1) {
-        var ul = el('ul', 'bullet-list');
-        lines.forEach(function(l) { ul.appendChild(el('li', null, l)); });
-        return ul;
-      }
-      return el('div', 'section-value', lines[0]);
-    }
-
-    // ── Render ─────────────────────────────────────────────────
-
-    function render(d) {
-      document.title = d.name + ' — Million';
-      content.textContent = '';
-
-      // Hero
-      if (d.hero) {
-        var img = document.createElement('img');
-        img.className = 'project-hero';
-        img.src = d.hero;
-        img.alt = d.name;
-        heroWrap.appendChild(img);
-      } else {
-        var ph = el('div', 'project-hero-placeholder');
-        heroWrap.appendChild(ph);
-      }
-
-      var frag = document.createDocumentFragment();
-
-      // ── PRICE LIST ─────────────────────────────────────────
-      var priceListBrochure = (d.brochures || []).find(function(b) {
-        return b.title.toLowerCase().indexOf('price') !== -1;
+      })
+      .catch(function () {
+        clearEl(dropdownMenu);
+        dropdownMenu.appendChild(el('div', 'nav-dropdown-loading', 'Could not load.'));
       });
-      if (priceListBrochure && priceListBrochure.driveFileId) {
-        var plSection = el('div', 'section');
-        plSection.style.borderTop = 'none';
-        plSection.appendChild(el('span', 'section-label', 'Price List'));
-        var plWrap = el('div', 'price-list-wrap');
-        var iframe = document.createElement('iframe');
-        iframe.className = 'pdf-embed';
-        iframe.src = 'https://drive.google.com/file/d/' + priceListBrochure.driveFileId + '/preview';
-        iframe.setAttribute('allowfullscreen', '');
-        plWrap.appendChild(iframe);
-        plSection.appendChild(plWrap);
-        frag.appendChild(plSection);
-      }
+  }
 
-      // ── THE PROJECT title ──────────────────────────────────
-      var projectTitle = sectionTitle('The Project');
-      projectTitle.style.borderTop = 'none';
-      if (!priceListBrochure) projectTitle.style.borderTop = 'none';
-      frag.appendChild(projectTitle);
+  // ── DOM builders ─────────────────────────────────────────────
 
-      // Address
-      if (d.address) {
-        var addrSec = section('Address', d.address);
-        addrSec.style.paddingTop = '0';
-        addrSec.style.borderTop = 'none';
-        frag.appendChild(addrSec);
-      }
+  function makeSection(id) {
+    var s = el('div', 'page-section');
+    if (id) s.id = id;
+    return s;
+  }
 
-      // Building Description
-      if (d.buildingDescription) {
-        frag.appendChild(section('Building Description', d.buildingDescription));
-      }
+  function sectionHeading(text) {
+    return el('div', 'section-heading', text);
+  }
 
-      // Stylish Amenities
-      if (d.stylishAmenities) {
-        frag.appendChild(section('Stylish Amenities', d.stylishAmenities));
-      }
+  // Detail cell: label + value (string, array of lines, or pre-built node)
+  function detailCell(label, value, isLeft) {
+    var cell = el('div', 'detail-cell' + (isLeft ? ' detail-cell--left' : ''));
+    cell.appendChild(el('div', 'detail-label', label));
 
-      // ── DETAILS title ──────────────────────────────────────
-      frag.appendChild(sectionTitle('Details'));
-
-      // Developer | Architecture
-      var hasDev  = !!d.developer;
-      var hasArch = !!d.architecture;
-      if (hasDev && hasArch) {
-        frag.appendChild(twoCol('Developer', textNode(d.developer), 'Architecture', textNode(d.architecture)));
-      } else if (hasDev) {
-        frag.appendChild(section('Developer', d.developer));
-      } else if (hasArch) {
-        frag.appendChild(section('Architecture', d.architecture));
-      }
-
-      // Interior Design | Completion Date
-      var hasInt  = !!d.interiorDesign;
-      var hasComp = !!d.completionDate;
-      if (hasInt && hasComp) {
-        frag.appendChild(twoCol('Interior Design', textNode(d.interiorDesign), 'Completion Date', textNode(d.completionDate)));
-      } else if (hasInt) {
-        frag.appendChild(section('Interior Design', d.interiorDesign));
-      } else if (hasComp) {
-        frag.appendChild(section('Completion Date', d.completionDate));
-      }
-
-      // Deposit Structure | Rental Restrictions
-      var hasDep = d.depositStructure && d.depositStructure.length;
-      var hasRR  = d.rentalRestrictions && d.rentalRestrictions.length;
-      if (hasDep && hasRR) {
-        frag.appendChild(twoCol('Deposit Structure', bulletNode(d.depositStructure), 'Rental Restrictions', bulletNode(d.rentalRestrictions)));
-      } else if (hasDep) {
-        frag.appendChild(bulletSection('Deposit Structure', d.depositStructure));
-      } else if (hasRR) {
-        frag.appendChild(bulletSection('Rental Restrictions', d.rentalRestrictions));
-      }
-
-      // Parking Spaces | HOA
-      var hasPark = d.parkingSpaces && d.parkingSpaces.length;
-      var hasHOA  = !!d.hoa;
-      if (hasPark && hasHOA) {
-        frag.appendChild(twoCol('Parking Spaces', bulletNode(d.parkingSpaces), 'HOA', textNode(d.hoa)));
-      } else if (hasPark) {
-        frag.appendChild(bulletSection('Parking Spaces', d.parkingSpaces));
-      } else if (hasHOA) {
-        frag.appendChild(section('HOA', d.hoa));
-      }
-
-      // ── CONTACT CARD ───────────────────────────────────────
-      if (d.contact && d.contact.length) {
-        var contactSec = el('div', 'section');
-        contactSec.appendChild(el('span', 'section-label', 'Contact Card'));
-        d.contact.forEach(function(agent) {
-          var entry = el('div', 'contact-entry');
-          entry.appendChild(el('span', 'contact-name', agent.name));
-          if (agent.phone) entry.appendChild(el('span', 'contact-detail', agent.phone));
-          if (agent.email) {
-            var emailEl = el('span', 'contact-detail');
-            var link = el('a', null, agent.email);
-            link.href = 'mailto:' + agent.email;
-            emailEl.appendChild(link);
-            entry.appendChild(emailEl);
-          }
-          contactSec.appendChild(entry);
-        });
-        frag.appendChild(contactSec);
-      }
-
-      // ── BROCHURES ──────────────────────────────────────────
-      var otherBrochures = (d.brochures || []).filter(function(b) {
-        return b.title.toLowerCase().indexOf('price') === -1 && b.driveFileId;
-      });
-      if (otherBrochures.length) {
-        var bSec = el('div', 'section');
-        bSec.appendChild(el('span', 'section-label', 'Brochures'));
-        var grid = el('div', 'brochures-grid');
-        otherBrochures.forEach(function(b) {
-          var card = el('div', 'brochure-card');
-          var thumb = document.createElement('img');
-          thumb.className = 'brochure-thumb';
-          thumb.src = 'https://drive.google.com/thumbnail?id=' + b.driveFileId + '&sz=w480-h360-p-k-nu';
-          thumb.alt = b.title;
-          var titleEl = el('div', 'brochure-title', b.title);
-          var link = document.createElement('a');
-          link.href = 'https://drive.google.com/file/d/' + b.driveFileId + '/view';
-          link.target = '_blank';
-          link.appendChild(thumb);
-          card.appendChild(link);
-          card.appendChild(titleEl);
-          grid.appendChild(card);
-        });
-        bSec.appendChild(grid);
-        frag.appendChild(bSec);
-      }
-
-      content.appendChild(frag);
-    }
-
-    // ── Load ───────────────────────────────────────────────────
-
-    if (!slug) {
-      content.textContent = '';
-      var errDiv = el('div', 'error-msg', 'No project specified.');
-      content.appendChild(errDiv);
+    var isEmpty = !value || (Array.isArray(value) && !value.length);
+    if (isEmpty) {
+      cell.appendChild(el('div', 'detail-value detail-empty', '\u2014'));
+    } else if (Array.isArray(value)) {
+      var ul = el('ul', 'detail-bullets');
+      value.forEach(function (line) { ul.appendChild(el('li', null, line)); });
+      cell.appendChild(ul);
+    } else if (typeof value === 'string') {
+      cell.appendChild(el('div', 'detail-value', value));
     } else {
-      fetch('/api/project?slug=' + encodeURIComponent(slug))
-        .then(function(res) {
-          if (!res.ok) throw new Error('Not found');
-          return res.json();
-        })
-        .then(function(data) { render(data); })
-        .catch(function() {
-          content.textContent = '';
-          var errDiv = el('div', 'error-msg', 'Project not found or data unavailable.');
-          content.appendChild(errDiv);
-        });
+      // Pre-built DOM node (contact card, amenities+parking, etc.)
+      cell.appendChild(value);
     }
-  </script>
+    return cell;
+  }
+
+  function detailRow(leftLabel, leftVal, rightLabel, rightVal) {
+    var row = el('div', 'detail-row');
+    row.appendChild(detailCell(leftLabel, leftVal, true));
+    row.appendChild(detailCell(rightLabel, rightVal, false));
+    return row;
+  }
+
+  function buildContactNode(contacts) {
+    var wrap = el('div', 'contact-list');
+    contacts.forEach(function (agent) {
+      var entry = el('div', 'contact-entry');
+      entry.appendChild(el('div', 'contact-name', agent.name));
+      if (agent.phone) entry.appendChild(el('div', 'contact-detail', agent.phone));
+      if (agent.email) {
+        var emailRow = el('div', 'contact-detail');
+        var a = el('a', 'contact-email', agent.email);
+        a.href = 'mailto:' + agent.email;
+        emailRow.appendChild(a);
+        entry.appendChild(emailRow);
+      }
+      wrap.appendChild(entry);
+    });
+    return wrap;
+  }
+
+  // Stylish Amenities cell — includes Parking Spaces as sub-field
+  function buildAmenitiesNode(amenities, parking) {
+    var wrap = el('div');
+    if (amenities) {
+      wrap.appendChild(el('div', 'detail-value', amenities));
+    }
+    if (parking && parking.length) {
+      wrap.appendChild(el('div', 'detail-sublabel', 'PARKING SPACES'));
+      var ul = el('ul', 'detail-bullets');
+      parking.forEach(function (line) { ul.appendChild(el('li', null, line)); });
+      wrap.appendChild(ul);
+    }
+    if (!amenities && !(parking && parking.length)) {
+      wrap.appendChild(el('div', 'detail-value detail-empty', '\u2014'));
+    }
+    return wrap;
+  }
+
+  function docItem(title, driveFileId) {
+    var row = el('div', 'doc-item');
+    row.appendChild(el('div', 'doc-title', title));
+    if (driveFileId) {
+      var a = el('a', 'doc-btn', 'View PDF');
+      a.href   = 'https://drive.google.com/file/d/' + driveFileId + '/view';
+      a.target = '_blank';
+      a.rel    = 'noopener noreferrer';
+      row.appendChild(a);
+    } else {
+      row.appendChild(el('div', 'doc-pending', 'Coming soon'));
+    }
+    return row;
+  }
+
+  // ── Main render ──────────────────────────────────────────────
+
+  function render(d) {
+    document.title = d.name + ' — Million';
+    clearEl(pageContent);
+
+    // Project logo in nav
+    if (d.projectLogo) {
+      var logoImg = document.getElementById('project-logo-img');
+      logoImg.src = d.projectLogo;
+      logoImg.alt = d.name;
+      document.getElementById('nav-project-logo').style.display = 'block';
+    }
+
+    // Hero image (inserted before the overlay div)
+    if (d.hero) {
+      var heroImg = el('img', 'hero-img');
+      heroImg.src = d.hero;
+      heroImg.alt = d.name;
+      heroWrap.insertBefore(heroImg, heroWrap.firstChild);
+    }
+
+    var frag = document.createDocumentFragment();
+
+    // ── 1. PRICE LIST ────────────────────────────────────────
+    if (d.priceList) {
+      var plSec = makeSection('price-list');
+      plSec.appendChild(sectionHeading('PRICE LIST'));
+      if (d.priceList.text) {
+        plSec.appendChild(el('p', 'section-text', d.priceList.text));
+      }
+      if (d.priceList.driveFileId) {
+        var plLink = el('a', 'doc-btn section-cta', 'View Price List');
+        plLink.href   = 'https://drive.google.com/file/d/' + d.priceList.driveFileId + '/view';
+        plLink.target = '_blank';
+        plLink.rel    = 'noopener noreferrer';
+        plSec.appendChild(plLink);
+      }
+      frag.appendChild(plSec);
+    }
+
+    // ── 2. ADDRESS ───────────────────────────────────────────
+    if (d.address) {
+      var addrSec = makeSection('address');
+      addrSec.appendChild(sectionHeading('ADDRESS'));
+      addrSec.appendChild(el('p', 'section-text', d.address));
+      frag.appendChild(addrSec);
+    }
+
+    // ── 3. DETAILS ───────────────────────────────────────────
+    var hasDetails = d.developer || d.architecture || d.interiorDesign ||
+      d.completionDate || d.theBuilding || d.depositStructure ||
+      d.stylishAmenities || d.parkingSpaces || d.rentalRestrictions ||
+      d.hoa || (d.contact && d.contact.length);
+
+    if (hasDetails) {
+      var detSec = makeSection('details');
+      detSec.appendChild(sectionHeading('DETAILS'));
+      var grid = el('div', 'details-grid');
+
+      // Row 1: Developer | Architecture
+      grid.appendChild(detailRow('DEVELOPER', d.developer, 'ARCHITECTURE', d.architecture));
+
+      // Row 2: Interior Design | Completion Date
+      grid.appendChild(detailRow('INTERIOR DESIGN', d.interiorDesign, 'COMPLETION DATE', d.completionDate));
+
+      // Row 3: The Building | Deposit Structure
+      grid.appendChild(detailRow('THE BUILDING', d.theBuilding, 'DEPOSIT STRUCTURE', d.depositStructure));
+
+      // Row 4: Stylish Amenities (+Parking) | Rental Restrictions
+      var amenNode = buildAmenitiesNode(d.stylishAmenities, d.parkingSpaces);
+      grid.appendChild(detailRow('STYLISH AMENITIES', amenNode, 'RENTAL RESTRICTIONS', d.rentalRestrictions));
+
+      // Row 5: HOA | Contact Card
+      var contactNode = (d.contact && d.contact.length) ? buildContactNode(d.contact) : null;
+      grid.appendChild(detailRow('HOA', d.hoa, 'CONTACT CARD', contactNode));
+
+      detSec.appendChild(grid);
+      frag.appendChild(detSec);
+    }
+
+    // ── Document sections ────────────────────────────────────
+    function appendDocSection(id, title, items) {
+      if (!items || !items.length) return;
+      var sec = makeSection(id);
+      sec.appendChild(sectionHeading(title));
+      var list = el('div', 'doc-list');
+      items.forEach(function (item) {
+        list.appendChild(docItem(item.title, item.driveFileId));
+      });
+      sec.appendChild(list);
+      frag.appendChild(sec);
+    }
+
+    // ── 4. Brochures
+    appendDocSection('brochures',     'BROCHURES',     d.brochures);
+    // ── 5. Fact Sheets
+    appendDocSection('fact-sheets',   'FACT SHEETS',   d.factSheets);
+    // ── 6. Presentations
+    appendDocSection('presentations', 'PRESENTATIONS', d.presentations);
+    // ── 7. Floor Plans
+    appendDocSection('floor-plans',   'FLOOR PLANS',   d.floorPlans);
+
+    // ── 8. RENDERINGS ────────────────────────────────────────
+    if (d.renderings && d.renderings.length) {
+      var renderSec = makeSection('renderings');
+      renderSec.appendChild(sectionHeading('RENDERINGS'));
+      var gallery = el('div', 'renderings-grid');
+      d.renderings.forEach(function (r) {
+        var img = el('img', 'rendering-img');
+        img.src     = r.url;
+        img.alt     = r.alt || '';
+        img.loading = 'lazy';
+        gallery.appendChild(img);
+      });
+      renderSec.appendChild(gallery);
+      frag.appendChild(renderSec);
+    }
+
+    pageContent.appendChild(frag);
+  }
+
+  // ── Fetch & boot ─────────────────────────────────────────────
+
+  if (!slug) {
+    clearEl(pageContent);
+    pageContent.appendChild(el('div', 'error-msg', 'No project specified.'));
+    return;
+  }
+
+  fetch('/api/project?slug=' + encodeURIComponent(slug))
+    .then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status);
+      return r.json();
+    })
+    .then(function (data) { render(data); })
+    .catch(function () {
+      clearEl(pageContent);
+      pageContent.appendChild(el('div', 'error-msg', 'Project not found.'));
+    });
+
+}());
+</script>
 </body>
 </html>

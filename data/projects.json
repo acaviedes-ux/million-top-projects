@@ -1,5 +1,61 @@
 [
   {
+    "slug": "baya-vista",
+    "name": "Baya Vista Residences",
+    "esqueletoName": "Baya Vista Residences",
+    "startingPrice": "$4.2M",
+    "thumbnail": "https://picsum.photos/seed/bayavista-thumb/600/450",
+    "hero": "https://picsum.photos/seed/bayavista-hero/1990/600",
+    "projectLogo": null,
+    "address": "3401 Pan American Dr, Coconut Grove, Miami, FL 33133",
+    "developer": "Montecito Development Partners",
+    "architecture": "Herzog & de Meuron",
+    "interiorDesign": "Liaigre Paris",
+    "completionDate": "Q1 2028",
+    "theBuilding": "Rising 52 stories above the shores of Coconut Grove, Baya Vista Residences reframes the relationship between city and bay. Herzog & de Meuron's signature folded façade — inspired by the root structures of the surrounding mangroves — creates residences with unobstructed water views on all four sides. Each of the 184 homes is a single-level floor-through plan, ensuring no shared walls and absolute acoustic privacy.",
+    "depositStructure": ["10% at contract signing", "10% at groundbreaking — Q3 2025", "10% at slab — Q1 2026", "10% at top-off — Q4 2026", "60% at closing"],
+    "stylishAmenities": "A full floor dedicated to resident amenity at level 12: resort-style infinity pool cantilevered over the bay, private boat slips, curated beach club, double-height fitness pavilion with Technogym, Hammam spa, wine library, private chef's kitchen for entertaining, and residents' cinema. Concierge service available 24 hours.",
+    "parkingSpaces": ["2 assigned spaces per residence", "Private garages available — from $110,000"],
+    "rentalRestrictions": ["Minimum 6-month lease", "No more than 2 rentals per year"],
+    "hoa": "$2.40 / sq ft / month",
+    "contact": [
+      {
+        "name": "Valentina Reyes",
+        "phone": "+1 (305) 712-4890",
+        "email": "valentina@millionandup.com"
+      },
+      {
+        "name": "Marco Salazar",
+        "phone": "+1 (786) 540-3121",
+        "email": "marco@millionandup.com"
+      }
+    ],
+    "priceList": {
+      "text": "Current availability includes 2 to 5-bedroom residences from $4.2M to $22M. Sky Penthouse collection is priced upon request. All residences are delivered fully finished with Bulthaup kitchens, Gaggenau appliances, and Dornbracht fixtures.",
+      "driveFileId": ""
+    },
+    "brochures": [
+      { "title": "Main Brochure", "driveFileId": "" }
+    ],
+    "factSheets": [
+      { "title": "Project Fact Sheet", "driveFileId": "" }
+    ],
+    "presentations": [
+      { "title": "Sales Presentation 2025", "driveFileId": "" }
+    ],
+    "floorPlans": [
+      { "title": "Complete Floor Plans — All Lines", "driveFileId": "" }
+    ],
+    "renderings": [
+      { "url": "https://picsum.photos/seed/bv-r1/800/600", "alt": "Exterior — Bay Elevation" },
+      { "url": "https://picsum.photos/seed/bv-r2/800/600", "alt": "Living Room — Line A" },
+      { "url": "https://picsum.photos/seed/bv-r3/800/600", "alt": "Infinity Pool Terrace" },
+      { "url": "https://picsum.photos/seed/bv-r4/800/600", "alt": "Master Suite" },
+      { "url": "https://picsum.photos/seed/bv-r5/800/600", "alt": "Kitchen — Bulthaup" },
+      { "url": "https://picsum.photos/seed/bv-r6/800/600", "alt": "Lobby" }
+    ]
+  },
+  {
     "slug": "619-residences",
     "name": "619 Residences by Foster + Partners + Nobu Hospitality",
     "esqueletoName": "619 Residences by Foster + Partners + Nobu Hospitality",
