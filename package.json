@@ -7,7 +7,9 @@
     "seed:all": "node scripts/seed-project.js --all"
   },
   "dependencies": {
-    "dotenv": "^16.6.1",
+    "dotenv": "^16.6.1"
+  },
+  "devDependencies": {
     "googleapis": "^144.0.0"
   },
   "engines": {
