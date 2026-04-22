@@ -52,9 +52,11 @@ const ESQ = {
 
 // ── TP DATA tab column map (0-based indices) ──────────────────
 // Row layout: headers in row 1, data from row 2.
-// Column A (index 0) = project name — used to find the row.
+// Actual headers: Sección | Proyecto | Starting Price | THE BUILDING | STYLISH AMENITIES
+// Column A (index 0) = "Sección" (section label, e.g. "Top Projects") — NOT the name
+// Column B (index 1) = "Proyecto" — project identifier used to find the row
 const TP = {
-  name:             0,  // A — project identifier
+  name:             1,  // B — project identifier
   startingPrice:    2,  // C
   theBuilding:      3,  // D
   stylishAmenities: 4,  // E
@@ -133,8 +135,10 @@ function stripPrefix(value) {
 
 // ── Main seeder ───────────────────────────────────────────────
 
-async function seedProject(projectName) {
+async function seedProject(projectName, tpDataName = null) {
   console.log(`\n→ Seeding: "${projectName}"`);
+  const tpLookup = tpDataName || projectName;
+  if (tpDataName) console.log(`  TP DATA lookup name: "${tpLookup}"`);
 
   const auth   = makeAuth();
   const sheets = google.sheets({ version: 'v4', auth });
@@ -154,13 +158,14 @@ async function seedProject(projectName) {
   console.log('  ✓ Found in Esqueleto');
 
   // 2. Read TP DATA tab (headers in row 1, data from row 2)
+  // Uses tpLookup (which may differ from projectName) for matching.
   const tpRows = await getRange(sheets, TP_DATA_ID, `${TP_DATA_TAB}!A:E`);
   const tpData = tpRows.slice(1); // skip header row
   const tpRow  = tpData.find(r =>
-    cell(r, TP.name).toLowerCase() === projectName.toLowerCase()
+    cell(r, TP.name).toLowerCase() === tpLookup.toLowerCase()
   );
   if (!tpRow) {
-    console.warn(`  ⚠ "${projectName}" not found in TP DATA — theBuilding/amenities/startingPrice will be empty.`);
+    console.warn(`  ⚠ "${tpLookup}" not found in TP DATA — theBuilding/amenities/startingPrice will be empty.`);
   } else {
     console.log('  ✓ Found in TP DATA');
   }
@@ -219,33 +224,50 @@ async function main() {
   const args = process.argv.slice(2);
   const isAll = args[0] === '--all';
 
+  // --tp-name "..." override for single-project runs where the TP DATA tab
+  // uses a different name than the Esqueleto spreadsheet.
+  const tpNameFlagIdx = args.indexOf('--tp-name');
+  const tpNameOverride = tpNameFlagIdx !== -1 ? args[tpNameFlagIdx + 1] : null;
+
+  // targets: array of { esqueletoName, tpDataName }
   let targets;
   if (isAll) {
-    // Seed every project in projects.json that has an esqueletoName
+    // Seed every project in projects.json that has an esqueletoName.
+    // Reads the optional tpDataName alias from the JSON entry.
     const projects = JSON.parse(fs.readFileSync(PROJECTS_JSON, 'utf8'));
     targets = projects
       .filter(p => p.esqueletoName)
-      .map(p => p.esqueletoName);
+      .map(p => ({ esqueletoName: p.esqueletoName, tpDataName: p.tpDataName || null }));
     console.log(`Seeding all ${targets.length} projects...`);
-  } else if (args[0]) {
-    targets = [args[0]];
+  } else if (args[0] && args[0] !== '--tp-name') {
+    // Read tpDataName from projects.json unless an explicit --tp-name was given.
+    let resolvedTpName = tpNameOverride;
+    if (!resolvedTpName) {
+      const projects = JSON.parse(fs.readFileSync(PROJECTS_JSON, 'utf8'));
+      const entry = projects.find(p =>
+        (p.esqueletoName || p.name).toLowerCase() === args[0].toLowerCase()
+      );
+      resolvedTpName = entry?.tpDataName || null;
+    }
+    targets = [{ esqueletoName: args[0], tpDataName: resolvedTpName }];
   } else {
     console.error('Usage:');
     console.error('  node scripts/seed-project.js "619 Residences by Foster + Partners + Nobu Hospitality"');
+    console.error('  node scripts/seed-project.js "619 Residences ..." --tp-name "619 Brickell - NOBU"');
     console.error('  node scripts/seed-project.js --all');
     process.exit(1);
   }
 
   let ok = 0, failed = 0;
-  for (const name of targets) {
+  for (const { esqueletoName, tpDataName } of targets) {
     try {
-      const updates = await seedProject(name);
+      const updates = await seedProject(esqueletoName, tpDataName);
       if (updates) {
-        updateProjectsJson(name, updates);
+        updateProjectsJson(esqueletoName, updates);
         ok++;
       }
     } catch (err) {
-      console.error(`  ✗ Error for "${name}":`, err.message);
+      console.error(`  ✗ Error for "${esqueletoName}":`, err.message);
       failed++;
     }
   }

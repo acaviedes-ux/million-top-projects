@@ -101,11 +101,12 @@
     "slug": "619-residences",
     "name": "619 Residences by Foster + Partners + Nobu Hospitality",
     "esqueletoName": "619 Residences by Foster + Partners + Nobu Hospitality",
+    "tpDataName": "619 Brickell - NOBU",
     "startingPrice": "$2.6M",
     "thumbnail": "/images/thumbnails/619-residences.jpg",
     "hero": "/images/hero/619-residences.jpg",
     "buildingDescription": "A modern Brickell landmark marrying bay-oriented architecture with Nobu's understated elegance.",
-    "stylishAmenities": "Bayfront resort pool terrace, private lounges, next-generation fitness and spa, on-site dining curated to elevate daily life.",
+    "stylishAmenities": "Bayfront resort pool terrace, private lounges, next‑generation fitness and spa, and on‑site dining curated to elevate daily life.",
     "brochures": [
       {
         "title": "Price List",
@@ -147,7 +148,8 @@
         "phone": "+1 (305) 206-9080",
         "email": "catalina@onesothebysrealty.com"
       }
-    ]
+    ],
+    "theBuilding": "A modern Brickell landmark marrying bay‑oriented architecture with Nobu's understated elegance."
   },
   {
     "slug": "72-carlyle",
