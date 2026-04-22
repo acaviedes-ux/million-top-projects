@@ -61,14 +61,18 @@ const TP = {
 };
 
 // ── Google auth ───────────────────────────────────────────────
+// Uses JWT (same as price_lists_update) — supports domain-wide delegation
+// via GOOGLE_IMPERSONATE_EMAIL when set.
 
 function makeAuth() {
-  return new google.auth.GoogleAuth({
-    credentials: {
-      client_email: process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL,
-      private_key: (process.env.GOOGLE_PRIVATE_KEY || '').replace(/\\n/g, '\n'),
-    },
-    scopes: ['https://www.googleapis.com/auth/spreadsheets.readonly'],
+  return new google.auth.JWT({
+    email: process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL,
+    key: (process.env.GOOGLE_PRIVATE_KEY || '').replace(/\\n/g, '\n'),
+    scopes: [
+      'https://www.googleapis.com/auth/spreadsheets',
+      'https://www.googleapis.com/auth/drive',
+    ],
+    subject: process.env.GOOGLE_IMPERSONATE_EMAIL || undefined,
   });
 }
 
