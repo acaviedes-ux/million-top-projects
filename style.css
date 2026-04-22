@@ -517,6 +517,7 @@ img { display: block; max-width: 100%; }
   margin: 0 auto;
   padding: 52px 40px;
   border-top: 1px solid var(--gray-mid);
+  text-align: center;        /* center everything in sections by default */
 }
 .page-section:first-child { border-top: none; }
 
@@ -528,6 +529,7 @@ img { display: block; max-width: 100%; }
   text-transform: uppercase;
   color: var(--gray-dark);
   margin-bottom: 32px;
+  text-align: center;
 }
 
 .section-text {
@@ -535,7 +537,8 @@ img { display: block; max-width: 100%; }
   line-height: 1.85;
   color: var(--black);
   max-width: 680px;
-  margin-bottom: 24px;
+  margin: 0 auto 24px;       /* auto left/right to center the paragraph block */
+  text-align: center;
 }
 
 .section-cta {
@@ -564,6 +567,7 @@ img { display: block; max-width: 100%; }
   padding: 28px 32px;
   border-bottom: 1px solid var(--gray-mid);
   word-break: break-word;
+  text-align: center;        /* center label + value within each cell */
 }
 
 .detail-cell--left {
@@ -582,6 +586,7 @@ img { display: block; max-width: 100%; }
   text-transform: uppercase;
   color: var(--gray-dark);
   margin-bottom: 12px;
+  text-align: center;
 }
 
 .detail-value {
@@ -589,6 +594,7 @@ img { display: block; max-width: 100%; }
   line-height: 1.75;
   color: var(--black);
   white-space: pre-line;
+  text-align: center;
 }
 
 .detail-empty { color: var(--gray-mid); }
@@ -606,7 +612,9 @@ img { display: block; max-width: 100%; }
 .detail-bullets {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;             /* center the block within the cell */
+  display: inline-block;      /* shrink to content width so text-align:center works */
+  text-align: left;           /* keep line text left-aligned for readability */
 }
 .detail-bullets li {
   font-size: 15px;
@@ -625,7 +633,10 @@ img { display: block; max-width: 100%; }
 /* ── CONTACT CARD ────────────────────────────── */
 .contact-list { display: flex; flex-direction: column; gap: 20px; }
 
-.contact-entry { line-height: 1; }
+.contact-entry {
+  line-height: 1;
+  text-align: center;
+}
 
 .contact-name {
   font-family: var(--serif);

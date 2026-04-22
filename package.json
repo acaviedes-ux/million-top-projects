@@ -2,7 +2,12 @@
   "name": "million-top-projects",
   "version": "1.0.0",
   "description": "Top Projects luxury real estate site — Million And Up",
+  "scripts": {
+    "seed": "node scripts/seed-project.js",
+    "seed:all": "node scripts/seed-project.js --all"
+  },
   "dependencies": {
+    "dotenv": "^16.6.1",
     "googleapis": "^144.0.0"
   },
   "engines": {
