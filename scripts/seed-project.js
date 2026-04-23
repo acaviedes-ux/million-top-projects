@@ -134,21 +134,34 @@ function stripPrefix(value) {
 }
 
 // ── Main seeder ───────────────────────────────────────────────
+// Accepts pre-loaded sheet data for --all mode (2 API calls total, not 436).
+// Falls back to fetching when called for a single project.
 
-async function seedProject(projectName, tpDataName = null) {
+async function seedProject(projectName, tpDataName = null, preloaded = null) {
   console.log(`\n→ Seeding: "${projectName}"`);
   const tpLookup = tpDataName || projectName;
   if (tpDataName) console.log(`  TP DATA lookup name: "${tpLookup}"`);
 
-  const auth   = makeAuth();
-  const sheets = google.sheets({ version: 'v4', auth });
+  let esqData, tpData;
 
-  // 1. Read Esqueleto (headers in row 2, data from row 3)
-  const esqRows = await getRange(sheets, ESQUELETO_ID, 'Projects Overview!A:AH');
-  if (esqRows.length < 3) throw new Error('Esqueleto: fewer than 3 rows — check tab name.');
+  if (preloaded) {
+    // --all mode: use already-fetched arrays
+    ({ esqData, tpData } = preloaded);
+  } else {
+    // Single-project mode: fetch now
+    const auth   = makeAuth();
+    const sheets = google.sheets({ version: 'v4', auth });
 
-  const esqData = esqRows.slice(2); // skip title row (1) and headers row (2)
-  const esqRow  = esqData.find(r =>
+    const esqRows = await getRange(sheets, ESQUELETO_ID, 'Projects Overview!A:AH');
+    if (esqRows.length < 3) throw new Error('Esqueleto: fewer than 3 rows — check tab name.');
+    esqData = esqRows.slice(2); // skip title row (1) and headers row (2)
+
+    const tpRows = await getRange(sheets, TP_DATA_ID, `${TP_DATA_TAB}!A:E`);
+    tpData = tpRows.slice(1); // skip header row
+  }
+
+  // Match Esqueleto row
+  const esqRow = esqData.find(r =>
     cell(r, ESQ.name).toLowerCase() === projectName.toLowerCase()
   );
   if (!esqRow) {
@@ -157,11 +170,8 @@ async function seedProject(projectName, tpDataName = null) {
   }
   console.log('  ✓ Found in Esqueleto');
 
-  // 2. Read TP DATA tab (headers in row 1, data from row 2)
-  // Uses tpLookup (which may differ from projectName) for matching.
-  const tpRows = await getRange(sheets, TP_DATA_ID, `${TP_DATA_TAB}!A:E`);
-  const tpData = tpRows.slice(1); // skip header row
-  const tpRow  = tpData.find(r =>
+  // Match TP DATA row
+  const tpRow = tpData.find(r =>
     cell(r, TP.name).toLowerCase() === tpLookup.toLowerCase()
   );
   if (!tpRow) {
@@ -170,7 +180,7 @@ async function seedProject(projectName, tpDataName = null) {
     console.log('  ✓ Found in TP DATA');
   }
 
-  // 3. Build the updated project fields
+  // Build the updated project fields
   const updates = {
     startingPrice:      tpRow ? cell(tpRow, TP.startingPrice)    || null : undefined,
     address:            cell(esqRow, ESQ.address)                || null,
@@ -258,10 +268,35 @@ async function main() {
     process.exit(1);
   }
 
+  // For --all mode, fetch both sheets once and reuse for every project.
+  let preloaded = null;
+  if (isAll) {
+    console.log('\nFetching Esqueleto and TP DATA sheets...');
+    const auth   = makeAuth();
+    const sheets = google.sheets({ version: 'v4', auth });
+
+    const [esqRows, tpRows] = await Promise.all([
+      getRange(sheets, ESQUELETO_ID, 'Projects Overview!A:AH'),
+      getRange(sheets, TP_DATA_ID,   `${TP_DATA_TAB}!A:E`),
+    ]);
+
+    if (esqRows.length < 3) {
+      console.error('Error: Esqueleto returned fewer than 3 rows — check tab name.');
+      process.exit(1);
+    }
+
+    preloaded = {
+      esqData: esqRows.slice(2), // skip title row (1) + headers row (2)
+      tpData:  tpRows.slice(1),  // skip header row
+    };
+    console.log(`  ✓ Esqueleto: ${preloaded.esqData.length} data rows`);
+    console.log(`  ✓ TP DATA: ${preloaded.tpData.length} data rows`);
+  }
+
   let ok = 0, failed = 0;
   for (const { esqueletoName, tpDataName } of targets) {
     try {
-      const updates = await seedProject(esqueletoName, tpDataName);
+      const updates = await seedProject(esqueletoName, tpDataName, preloaded);
       if (updates) {
         updateProjectsJson(esqueletoName, updates);
         ok++;
