@@ -13,6 +13,7 @@ module.exports = (req, res) => {
     const list = projects.map(p => ({
       name:          p.name,
       slug:          p.slug,
+      section:       p.section       || null,
       startingPrice: p.startingPrice || null,
       thumbnail:     p.thumbnail     || null,
     }));

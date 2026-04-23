@@ -24,13 +24,8 @@
     <input type="text" id="search" placeholder="Search projects..." autocomplete="off">
   </div>
 
-  <!-- COUNT -->
-  <div class="project-count" id="count"></div>
-
-  <!-- GRID -->
-  <main class="projects-grid" id="grid">
-    <div class="loading">Loading projects&hellip;</div>
-  </main>
+  <!-- CONTENT: two sections when not searching, single list when searching -->
+  <div id="lobby-content"></div>
 
   <!-- FOOTER -->
   <footer class="site-footer">
@@ -38,11 +33,11 @@
   </footer>
 
   <script>
-    var grid    = document.getElementById('grid');
-    var countEl = document.getElementById('count');
-    var search  = document.getElementById('search');
+    var contentEl = document.getElementById('lobby-content');
+    var searchEl  = document.getElementById('search');
     var allProjects = [];
 
+    // ── Card builder ────────────────────────────────────────────
     function buildCard(p) {
       var a = document.createElement('a');
       a.className = 'project-card';
@@ -58,7 +53,7 @@
       } else {
         var ph = document.createElement('div');
         ph.className = 'card-img-placeholder';
-        ph.textContent = 'No image';
+        ph.textContent = p.name.charAt(0);
         a.appendChild(ph);
       }
 
@@ -81,21 +76,85 @@
       return a;
     }
 
-    function renderGrid(projects) {
-      countEl.textContent = projects.length + ' project' + (projects.length !== 1 ? 's' : '');
-      grid.textContent = '';
+    // ── Section builder ─────────────────────────────────────────
+    function buildSection(label, projects) {
+      var wrap = document.createElement('div');
+      wrap.className = 'lobby-section';
 
-      if (!projects.length) {
-        var msg = document.createElement('div');
-        msg.className = 'loading';
-        msg.textContent = 'No projects found.';
-        grid.appendChild(msg);
-        return;
-      }
+      var heading = document.createElement('h2');
+      heading.className = 'lobby-section-heading';
+      heading.textContent = label;
+      wrap.appendChild(heading);
 
+      var count = document.createElement('div');
+      count.className = 'lobby-section-count';
+      count.textContent = projects.length + ' project' + (projects.length !== 1 ? 's' : '');
+      wrap.appendChild(count);
+
+      var grid = document.createElement('div');
+      grid.className = 'projects-grid';
       var frag = document.createDocumentFragment();
       projects.forEach(function(p) { frag.appendChild(buildCard(p)); });
       grid.appendChild(frag);
+      wrap.appendChild(grid);
+
+      return wrap;
+    }
+
+    // ── Render logic ─────────────────────────────────────────────
+    function render(query) {
+      contentEl.textContent = '';
+      var frag = document.createDocumentFragment();
+
+      if (query) {
+        // Search mode: one merged list, no section headers
+        var matches = allProjects.filter(function(p) {
+          return p.name.toLowerCase().indexOf(query) !== -1;
+        });
+
+        var searchWrap = document.createElement('div');
+        searchWrap.className = 'lobby-search-results';
+
+        var searchCount = document.createElement('div');
+        searchCount.className = 'project-count';
+        searchCount.textContent = matches.length + ' result' + (matches.length !== 1 ? 's' : '');
+        searchWrap.appendChild(searchCount);
+
+        if (matches.length) {
+          var grid = document.createElement('div');
+          grid.className = 'projects-grid';
+          var gfrag = document.createDocumentFragment();
+          matches.forEach(function(p) { gfrag.appendChild(buildCard(p)); });
+          grid.appendChild(gfrag);
+          searchWrap.appendChild(grid);
+        } else {
+          var none = document.createElement('div');
+          none.className = 'lobby-no-results';
+          none.textContent = 'No projects found.';
+          searchWrap.appendChild(none);
+        }
+
+        frag.appendChild(searchWrap);
+
+      } else {
+        // Browse mode: two separate sections (already sorted alphabetically from API)
+        var topProjects   = allProjects.filter(function(p) { return p.section === 'Top Projects'; });
+        var otherProjects = allProjects.filter(function(p) { return p.section === 'Other Projects'; });
+
+        if (topProjects.length)   frag.appendChild(buildSection('Top Projects', topProjects));
+        if (otherProjects.length) frag.appendChild(buildSection('Other Projects', otherProjects));
+      }
+
+      contentEl.appendChild(frag);
+    }
+
+    // ── Load ─────────────────────────────────────────────────────
+    function showError() {
+      contentEl.textContent = '';
+      var err = document.createElement('div');
+      err.className = 'lobby-error';
+      err.textContent = 'Could not load projects. Please try again.';
+      contentEl.appendChild(err);
     }
 
     function loadProjects() {
@@ -103,23 +162,13 @@
         .then(function(res) { return res.json(); })
         .then(function(data) {
           allProjects = data;
-          renderGrid(allProjects);
+          render('');
         })
-        .catch(function() {
-          grid.textContent = '';
-          var err = document.createElement('div');
-          err.className = 'error-msg';
-          err.textContent = 'Could not load projects. Please try again.';
-          grid.appendChild(err);
-        });
+        .catch(showError);
     }
 
-    search.addEventListener('input', function() {
-      var q = search.value.toLowerCase().trim();
-      renderGrid(q
-        ? allProjects.filter(function(p) { return p.name.toLowerCase().indexOf(q) !== -1; })
-        : allProjects
-      );
+    searchEl.addEventListener('input', function() {
+      render(searchEl.value.toLowerCase().trim());
     });
 
     loadProjects();
