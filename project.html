@@ -98,12 +98,14 @@
       .then(function (r) { return r.json(); })
       .then(function (list) {
         clearEl(dropdownMenu);
-        list.forEach(function (p) {
-          var a = el('a', 'nav-dropdown-item' + (p.slug === slug ? ' active' : ''), p.name);
-          a.href = '/projects/' + p.slug;
-          a.setAttribute('role', 'menuitem');
-          dropdownMenu.appendChild(a);
-        });
+        list
+          .filter(function (p) { return p.section === 'Top Projects'; })
+          .forEach(function (p) {
+            var a = el('a', 'nav-dropdown-item' + (p.slug === slug ? ' active' : ''), p.name);
+            a.href = '/projects/' + p.slug;
+            a.setAttribute('role', 'menuitem');
+            dropdownMenu.appendChild(a);
+          });
       })
       .catch(function () {
         clearEl(dropdownMenu);
