@@ -52,7 +52,8 @@
       }
     ],
     "theBuilding": "A modern Brickell landmark marrying bay‑oriented architecture with Nobu's understated elegance.",
-    "section": "Top Projects"
+    "section": "Top Projects",
+    "projectLogo": "/images/logos/619-residences.svg"
   },
   {
     "slug": "72-carlyle",
@@ -664,7 +665,8 @@
         "phone": "+1 (305) 915-9471",
         "email": "csuarez@cmcrealestate.com"
       }
-    ]
+    ],
+    "projectLogo": "/images/logos/four-seasons-coconut-grove.svg"
   },
   {
     "slug": "la-mare",
@@ -5000,7 +5002,8 @@
         "phone": "+1 (305) 890-2457",
         "email": "N/A"
       }
-    ]
+    ],
+    "projectLogo": "/images/logos/mercedes-benz-places-miami.svg"
   },
   {
     "slug": "miami-design-residences-midtown-miami",
