@@ -33,7 +33,7 @@ img { display: block; max-width: 100%; }
 .site-nav {
   background: var(--black);
   padding: 0 32px;
-  height: 60px;
+  min-height: 60px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -861,8 +861,61 @@ img { display: block; max-width: 100%; }
   .project-hero-wrap { height: 260px; }
   .renderings-grid { grid-template-columns: 1fr; }
   .nav-dropdown-menu { min-width: 200px; right: -8px; }
-  /* Narrower search on mobile */
-  .nav-scroll-search input { width: 130px; }
-  .site-nav.scrolled .nav-scroll-search { max-width: 150px; }
-  .site-nav { padding: 0 16px; }
+}
+
+/* ── MOBILE NAV SCROLL LAYOUT (≤ 640px) ─────── */
+/* On desktop: single row (MILLION | TOP PROJECTS centered | search right).
+   On mobile: two rows — MILLION + TOP PROJECTS in row 1,
+   full-width search bar in row 2. */
+@media (max-width: 640px) {
+  .site-nav {
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    padding: 0 20px;
+    gap: 0;
+  }
+
+  /* Row 1 items need explicit height so they sit in a 60px band */
+  .site-nav .logo {
+    height: 60px;
+    display: flex;
+    align-items: center;
+  }
+
+  /* Title: pull out of absolute positioning and into normal flow */
+  .nav-scroll-title {
+    position: static !important;
+    transform: none !important;
+    margin-left: auto;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    letter-spacing: 4px;
+    padding-left: 12px;
+  }
+
+  /* Search: full-width second row, hidden by default via zero height */
+  .nav-scroll-search {
+    flex: 0 0 100%;
+    max-width: 100% !important;
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: height 0.3s ease, opacity 0.3s ease, padding 0.3s ease;
+  }
+
+  .site-nav.scrolled .nav-scroll-search {
+    height: 48px;
+    opacity: 1;
+    padding: 0 0 12px;
+    pointer-events: auto;
+  }
+
+  .nav-scroll-search input {
+    width: 100% !important;
+    box-sizing: border-box;
+  }
 }
