@@ -40,6 +40,62 @@ img { display: block; max-width: 100%; }
   position: sticky;
   top: 0;
   z-index: 100;
+  /* needed so .nav-scroll-title (position:absolute) centres within nav */
+  isolation: isolate;
+}
+
+/* Lobby scroll-reveal: title (centered) + mini search (right) */
+.nav-scroll-title {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: var(--serif);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: var(--white);
+  white-space: nowrap;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.nav-scroll-search {
+  max-width: 0;
+  overflow: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: max-width 0.35s ease, opacity 0.3s ease;
+}
+
+.nav-scroll-search input {
+  width: 210px;
+  padding: 7px 14px 7px 34px;
+  background: rgba(255,255,255,0.1)
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%23aaa' stroke-width='2'%3E%3Ccircle cx='11' cy='11' r='8'/%3E%3Cline x1='21' y1='21' x2='16.65' y2='16.65'/%3E%3C/svg%3E")
+    11px center no-repeat;
+  border: 1px solid rgba(255,255,255,0.18);
+  border-radius: 4px;
+  color: var(--white);
+  font-size: 12px;
+  letter-spacing: 0.3px;
+  font-family: var(--sans);
+  outline: none;
+  display: block;
+}
+.nav-scroll-search input::placeholder { color: rgba(255,255,255,0.4); }
+.nav-scroll-search input:focus { border-color: rgba(255,255,255,0.4); }
+
+/* Activated state — triggered by JS adding .scrolled to the nav */
+.site-nav.scrolled .nav-scroll-title {
+  opacity: 1;
+  pointer-events: auto;
+}
+.site-nav.scrolled .nav-scroll-search {
+  max-width: 230px;
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .site-nav .logo {
@@ -477,20 +533,24 @@ img { display: block; max-width: 100%; }
   z-index: 1;
 }
 
+/* ── BACK BAR (below hero, scrolls with page) ── */
+.back-bar {
+  padding: 24px 32px;
+  text-align: center;
+  border-bottom: 1px solid #e8e8e8;
+}
+
 .hero-back {
-  position: absolute;
-  top: 22px;
-  left: 28px;
-  z-index: 2;
-  color: var(--white);
+  display: inline-block;
   font-size: 11px;
   letter-spacing: 2.5px;
   text-transform: uppercase;
-  padding: 9px 20px;
-  border: 1px solid rgba(255, 255, 255, 0.45);
-  transition: background 0.2s;
+  color: var(--black);
+  padding: 9px 24px;
+  border: 1px solid rgba(0,0,0,0.22);
+  transition: background 0.2s, color 0.2s;
 }
-.hero-back:hover { background: rgba(255, 255, 255, 0.12); }
+.hero-back:hover { background: var(--black); color: var(--white); }
 
 /* ── HERO PROJECT LOGO ───────────────────────── */
 .hero-logo-wrap {
@@ -801,4 +861,8 @@ img { display: block; max-width: 100%; }
   .project-hero-wrap { height: 260px; }
   .renderings-grid { grid-template-columns: 1fr; }
   .nav-dropdown-menu { min-width: 200px; right: -8px; }
+  /* Narrower search on mobile */
+  .nav-scroll-search input { width: 130px; }
+  .site-nav.scrolled .nav-scroll-search { max-width: 150px; }
+  .site-nav { padding: 0 16px; }
 }

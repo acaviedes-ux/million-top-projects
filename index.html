@@ -9,8 +9,13 @@
 <body>
 
   <!-- NAV -->
-  <nav class="site-nav">
+  <nav class="site-nav" id="site-nav">
     <a href="/" class="logo">Million</a>
+    <!-- Appears after hero is scrolled past -->
+    <span class="nav-scroll-title">Top Projects</span>
+    <div class="nav-scroll-search">
+      <input type="text" id="nav-search" placeholder="Search projects..." autocomplete="off">
+    </div>
   </nav>
 
   <!-- HERO -->
@@ -173,8 +178,33 @@
     }
 
     searchEl.addEventListener('input', function() {
-      render(searchEl.value.toLowerCase().trim());
+      var q = searchEl.value.toLowerCase().trim();
+      navSearchEl.value = searchEl.value; // keep nav search in sync
+      render(q);
     });
+
+    // ── Scroll-triggered nav title + search ──────────────────
+    var siteNav     = document.getElementById('site-nav');
+    var navSearchEl = document.getElementById('nav-search');
+    var heroEl      = document.querySelector('.lobby-hero');
+
+    navSearchEl.addEventListener('input', function() {
+      var q = this.value.toLowerCase().trim();
+      searchEl.value = this.value; // keep main search in sync
+      render(q);
+    });
+
+    function onScroll() {
+      var threshold = heroEl.offsetTop + heroEl.offsetHeight + 50;
+      if (window.scrollY > threshold) {
+        siteNav.classList.add('scrolled');
+      } else {
+        siteNav.classList.remove('scrolled');
+        // Clear nav search when it hides so it doesn't linger
+      }
+    }
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll(); // run once on load in case page reloaded mid-scroll
 
     loadProjects();
   </script>
