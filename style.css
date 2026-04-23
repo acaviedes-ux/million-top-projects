@@ -149,6 +149,7 @@ img { display: block; max-width: 100%; }
   letter-spacing: 5px;
   text-transform: uppercase;
   color: var(--black);
+  text-align: center;
 }
 
 .lobby-section-count {
@@ -159,6 +160,7 @@ img { display: block; max-width: 100%; }
   letter-spacing: 1px;
   text-transform: uppercase;
   color: var(--gray-dark);
+  text-align: center;
 }
 
 /* Search results wrapper */

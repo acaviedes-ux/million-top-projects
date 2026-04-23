@@ -68,7 +68,12 @@
       if (p.startingPrice) {
         var price = document.createElement('div');
         price.className = 'card-price';
-        price.textContent = 'Starting at ' + p.startingPrice;
+        // Show "Starting at $X" for numeric prices; show the value as-is
+        // for non-price strings like "Check Availability on MLS".
+        var isNumericPrice = /^\$/.test(p.startingPrice.trim());
+        price.textContent = isNumericPrice
+          ? 'Starting at ' + p.startingPrice
+          : p.startingPrice;
         body.appendChild(price);
       }
 
