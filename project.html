@@ -15,8 +15,8 @@
       <span style="display:none">MILLION</span>
     </a>
 
-    <div class="nav-project-logo" id="nav-project-logo" style="display:none">
-      <img id="project-logo-img" src="" alt="" style="height:32px;width:auto;filter:brightness(0) invert(1)">
+    <div class="nav-project-logo" id="nav-project-logo">
+      <img id="project-logo-img" src="" alt="">
     </div>
 
     <div class="nav-dropdown" id="nav-dropdown">
@@ -208,20 +208,33 @@
     document.title = d.name + ' — Million';
     clearEl(pageContent);
 
-    // Project logo — hero (centered) + nav
+    // Project logo — hero (large, centered) + nav (small, scroll-triggered)
     if (d.projectLogo) {
-      // Hero logo (centered over hero image)
+      // Hero logo: always visible over the hero image
       var heroLogoImg  = document.getElementById('hero-logo-img');
       var heroLogoWrap = document.getElementById('hero-logo-wrap');
       heroLogoImg.src  = d.projectLogo;
       heroLogoImg.alt  = d.name;
       heroLogoWrap.style.display = 'flex';
 
-      // Nav logo (small, top-center)
-      var navLogoImg = document.getElementById('project-logo-img');
-      navLogoImg.src = d.projectLogo;
-      navLogoImg.alt = d.name;
-      document.getElementById('nav-project-logo').style.display = 'block';
+      // Nav logo: only appears once the hero scrolls out of view
+      var navLogoImg  = document.getElementById('project-logo-img');
+      var navLogoWrap = document.getElementById('nav-project-logo');
+      navLogoImg.src  = d.projectLogo;
+      navLogoImg.alt  = d.name;
+
+      // Scroll listener: show nav logo when hero bottom clears the nav bar
+      function syncNavLogo() {
+        var heroBottom = heroWrap.getBoundingClientRect().bottom;
+        var navH = document.querySelector('.site-nav').offsetHeight || 60;
+        if (heroBottom <= navH) {
+          navLogoWrap.classList.add('nav-logo-visible');
+        } else {
+          navLogoWrap.classList.remove('nav-logo-visible');
+        }
+      }
+      window.addEventListener('scroll', syncNavLogo, { passive: true });
+      syncNavLogo(); // run once to set correct state on load
     }
 
     // Hero image (inserted before the overlay div)

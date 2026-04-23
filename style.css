@@ -574,10 +574,23 @@ img { display: block; max-width: 100%; }
 }
 
 /* ── NAV PROJECT LOGO ────────────────────────── */
+/* Hidden by default; JS adds .nav-logo-visible once hero scrolls out */
 .nav-project-logo {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.35s ease;
+}
+.nav-project-logo.nav-logo-visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+.nav-project-logo img {
+  height: 26px;
+  width: auto;
+  filter: brightness(0) invert(1);
 }
 
 /* ── NAV DROPDOWN ────────────────────────────── */
@@ -918,4 +931,26 @@ img { display: block; max-width: 100%; }
     width: 100% !important;
     box-sizing: border-box;
   }
+
+  /* Smaller MILLION on mobile */
+  .site-nav .logo,
+  .site-nav .logo img {
+    font-size: 16px;
+    letter-spacing: 3px;
+    height: 22px;
+  }
+
+  /* TOP PROJECTS button: two lines, smaller text */
+  .nav-dropdown-btn {
+    font-size: 9px;
+    letter-spacing: 1px;
+    white-space: normal;
+    text-align: right;
+    max-width: 54px;
+    line-height: 1.45;
+    gap: 2px;
+  }
+
+  /* Shrink nav logo on mobile */
+  .nav-project-logo img { height: 20px !important; }
 }
