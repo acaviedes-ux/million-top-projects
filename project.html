@@ -250,21 +250,23 @@
     var frag = document.createDocumentFragment();
 
     // ── 1. PRICE LIST ────────────────────────────────────────
-    if (d.priceList) {
-      var plSec = makeSection('price-list');
-      plSec.appendChild(sectionHeading('PRICE LIST'));
-      if (d.priceList.text) {
-        plSec.appendChild(el('p', 'section-text', d.priceList.text));
-      }
-      if (d.priceList.driveFileId) {
-        var plLink = el('a', 'doc-btn section-cta', 'View Price List');
-        plLink.href   = 'https://drive.google.com/file/d/' + d.priceList.driveFileId + '/view';
-        plLink.target = '_blank';
-        plLink.rel    = 'noopener noreferrer';
-        plSec.appendChild(plLink);
-      }
-      frag.appendChild(plSec);
+    var plSec = makeSection('price-list');
+    plSec.appendChild(sectionHeading('PRICE LIST'));
+    if (d.priceList && d.priceList.text) {
+      plSec.appendChild(el('p', 'section-text', d.priceList.text));
     }
+    if (d.priceList && d.priceList.driveFileId) {
+      var plLink = el('a', 'doc-btn section-cta', 'View Price List');
+      plLink.href   = 'https://drive.google.com/file/d/' + d.priceList.driveFileId + '/view';
+      plLink.target = '_blank';
+      plLink.rel    = 'noopener noreferrer';
+      plSec.appendChild(plLink);
+    } else {
+      var plList = el('div', 'doc-list');
+      plList.appendChild(docItem('Price List', null));
+      plSec.appendChild(plList);
+    }
+    frag.appendChild(plSec);
 
     // ── 2. ADDRESS ───────────────────────────────────────────
     if (d.address) {
@@ -308,13 +310,17 @@
 
     // ── Document sections ────────────────────────────────────
     function appendDocSection(id, title, items) {
-      if (!items || !items.length) return;
       var sec = makeSection(id);
       sec.appendChild(sectionHeading(title));
       var list = el('div', 'doc-list');
-      items.forEach(function (item) {
-        list.appendChild(docItem(item.title, item.driveFileId));
-      });
+      if (items && items.length) {
+        items.forEach(function (item) {
+          list.appendChild(docItem(item.title, item.driveFileId));
+        });
+      } else {
+        // No documents yet — show a single "Coming soon" placeholder row
+        list.appendChild(docItem('', null));
+      }
       sec.appendChild(list);
       frag.appendChild(sec);
     }
