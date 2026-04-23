@@ -30,6 +30,9 @@
   <!-- ── HERO ───────────────────────────────────────────────── -->
   <div class="project-hero-wrap" id="hero-wrap">
     <div class="hero-overlay"></div>
+    <div class="hero-logo-wrap" id="hero-logo-wrap" style="display:none">
+      <img class="hero-logo-img" id="hero-logo-img" src="" alt="" loading="eager">
+    </div>
     <a href="/" class="hero-back">Back</a>
   </div>
 
@@ -201,11 +204,19 @@
     document.title = d.name + ' — Million';
     clearEl(pageContent);
 
-    // Project logo in nav
+    // Project logo — hero (centered) + nav
     if (d.projectLogo) {
-      var logoImg = document.getElementById('project-logo-img');
-      logoImg.src = d.projectLogo;
-      logoImg.alt = d.name;
+      // Hero logo (centered over hero image)
+      var heroLogoImg  = document.getElementById('hero-logo-img');
+      var heroLogoWrap = document.getElementById('hero-logo-wrap');
+      heroLogoImg.src  = d.projectLogo;
+      heroLogoImg.alt  = d.name;
+      heroLogoWrap.style.display = 'flex';
+
+      // Nav logo (small, top-center)
+      var navLogoImg = document.getElementById('project-logo-img');
+      navLogoImg.src = d.projectLogo;
+      navLogoImg.alt = d.name;
       document.getElementById('nav-project-logo').style.display = 'block';
     }
 

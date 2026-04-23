@@ -492,6 +492,27 @@ img { display: block; max-width: 100%; }
 }
 .hero-back:hover { background: rgba(255, 255, 255, 0.12); }
 
+/* ── HERO PROJECT LOGO ───────────────────────── */
+.hero-logo-wrap {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.hero-logo-img {
+  max-height: 130px;
+  max-width: min(360px, 55vw);
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  /* White + subtle shadow so logo reads on any hero image */
+  filter: brightness(0) invert(1) drop-shadow(0 2px 16px rgba(0,0,0,0.5));
+}
+
 /* ── NAV PROJECT LOGO ────────────────────────── */
 .nav-project-logo {
   position: absolute;
