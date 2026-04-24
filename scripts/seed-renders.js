@@ -64,6 +64,14 @@ function norm(s) {
     .trim();
 }
 
+// Drive folder names include status suffixes like "- ACTIVE", "- OFFLINE",
+// "- TEMPLATES", "- NOT USED". Strip them before matching to project names.
+function stripDriveSuffix(name) {
+  return (name || '')
+    .replace(/\s*-\s*(ACTIVE|OFFLINE|TEMPLATES?|NOT USED|TEMPLATE)\s*$/i, '')
+    .trim();
+}
+
 // ── Drive helpers ─────────────────────────────────────────────
 
 // List direct children of a folder (optionally filtered by mimeType)
@@ -97,10 +105,39 @@ async function findRendersSubfolder(drive, projectFolderId) {
   return subfolders.find(f => /render/i.test(f.name)) || null;
 }
 
-// Pick the image with the largest size (highest quality heuristic)
+// Keywords that suggest an exterior / building render (preferred)
+const EXTERIOR_KEYWORDS = [
+  'exterior', 'facade', 'fachada', 'hero', 'building', 'aerial',
+  'tower', 'skyline', 'night', 'day', 'front', 'elevation',
+  'street', 'view', 'outside', 'rooftop', 'terrace', 'balcony',
+];
+
+// Keywords that suggest an interior or amenity shot (deprioritised)
+const INTERIOR_KEYWORDS = [
+  'interior', 'lobby', 'pool', 'amenity', 'amenities', 'gym',
+  'kitchen', 'bedroom', 'bathroom', 'living', 'dining', 'suite',
+  'unit', 'spa', 'fitness', 'clubhouse', 'lounge', 'floor plan',
+  'floorplan', 'floor_plan',
+];
+
+// Pick the best image using keyword scoring + file size as tiebreaker.
+// Exterior keywords → ×2 bonus. Interior keywords → ×0.1 penalty.
+// Falls back to largest file if no keyword signals are present.
 function pickBestImage(files) {
   if (!files.length) return null;
-  return files.slice().sort((a, b) => Number(b.size || 0) - Number(a.size || 0))[0];
+
+  const scored = files.map(f => {
+    const name = (f.name || '').toLowerCase();
+    let score  = Number(f.size || 0);
+
+    if (EXTERIOR_KEYWORDS.some(k => name.includes(k))) score *= 2;
+    if (INTERIOR_KEYWORDS.some(k => name.includes(k))) score *= 0.1;
+
+    return { file: f, score };
+  });
+
+  scored.sort((a, b) => b.score - a.score);
+  return scored[0].file;
 }
 
 // ── Formatting ────────────────────────────────────────────────
@@ -179,18 +216,21 @@ async function main() {
     console.log(`    ${subfolders.length} subfolders`);
 
     for (const folder of subfolders) {
-      // Exact norm match first
-      let project = projectMap.get(norm(folder.name));
+      // Strip Drive status suffixes ("- ACTIVE", "- OFFLINE", etc.) before matching
+      const cleanName  = stripDriveSuffix(folder.name);
+      const folderNorm = norm(cleanName);
 
-      // Fallback: check if the folder name is a substring of any project norm, or vice-versa
+      // Exact norm match first
+      let project = projectMap.get(folderNorm);
+
+      // Fallback: prefix substring match (handles minor name variations)
       if (!project) {
-        const folderNorm = norm(folder.name);
         for (const [key, p] of projectMap) {
-          if (folderNorm.length >= 8 && key.includes(folderNorm.substring(0, 8))) {
+          if (folderNorm.length >= 8 && key.startsWith(folderNorm.substring(0, 8))) {
             project = p;
             break;
           }
-          if (key.length >= 8 && folderNorm.includes(key.substring(0, 8))) {
+          if (key.length >= 8 && folderNorm.startsWith(key.substring(0, 8))) {
             project = p;
             break;
           }
@@ -198,7 +238,7 @@ async function main() {
       }
 
       if (project) {
-        matched.push({ folder, project });
+        matched.push({ folder, project, cleanName });
       } else {
         unmatched++;
         if (isDry) console.log(`    ⚠ No match: "${folder.name}"`);
