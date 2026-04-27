@@ -3,15 +3,17 @@
 /**
  * seed-pricelist-links.js
  * ─────────────────────────────────────────────────────────────
- * Reads price list Drive links from "Pre-construction Data" spreadsheet
- * (col A = project name, col M = Drive URL) and updates priceList.driveFileId
- * in data/projects.json for all Top Projects.
+ * Reads price list data from "Pre-construction Data" spreadsheet:
+ *   col A = project name
+ *   col K = last update date
+ *   col M = Drive URL
+ *
+ * Matches Top Projects in data/projects.json and updates:
+ *   priceList.driveFileId  — Drive file ID for the iframe embed
+ *   priceList.createdAt    — "As of Month, DD of YYYY" formatted date
  *
  * Usage:
  *   node scripts/seed-pricelist-links.js
- *
- * Requires the same .env vars as seed-project.js plus:
- *   PRE_CONSTRUCTION_SPREADSHEET_ID
  * ─────────────────────────────────────────────────────────────
  */
 
@@ -20,8 +22,8 @@ const { google } = require('googleapis');
 const fs   = require('fs');
 const path = require('path');
 
-const PROJECTS_JSON          = path.join(__dirname, '../data/projects.json');
-const PRE_CONSTRUCTION_ID    = process.env.PRE_CONSTRUCTION_SPREADSHEET_ID || '1RTDA5ZNHbHrSYTEVGuUCUdWI04TKRso--ErWmASEehU';
+const PROJECTS_JSON       = path.join(__dirname, '../data/projects.json');
+const PRE_CONSTRUCTION_ID = process.env.PRE_CONSTRUCTION_SPREADSHEET_ID || '1RTDA5ZNHbHrSYTEVGuUCUdWI04TKRso--ErWmASEehU';
 
 function makeAuth() {
   return new google.auth.JWT({
@@ -43,13 +45,22 @@ function normalize(s) {
 
 function extractFileId(url) {
   if (!url) return null;
-  // https://drive.google.com/file/d/{ID}/view?...
   const m1 = url.match(/\/file\/d\/([a-zA-Z0-9_-]+)/);
   if (m1) return m1[1];
-  // https://drive.google.com/open?id={ID}
   const m2 = url.match(/[?&]id=([a-zA-Z0-9_-]+)/);
   if (m2) return m2[1];
   return null;
+}
+
+function formatSheetDate(dateStr) {
+  if (!dateStr || !dateStr.trim()) return null;
+  const d = new Date(dateStr.trim());
+  if (isNaN(d.getTime())) return null;
+  const parts = new Intl.DateTimeFormat('en-US', {
+    month: 'long', day: 'numeric', year: 'numeric',
+  }).formatToParts(d);
+  const get = t => parts.find(p => p.type === t)?.value || '';
+  return `As of ${get('month')}, ${get('day')} of ${get('year')}`;
 }
 
 async function main() {
@@ -59,44 +70,52 @@ async function main() {
   console.log('Reading Pre-construction Data spreadsheet…');
   const rows = await getRange(sheets, PRE_CONSTRUCTION_ID, 'Pre-construction Data!A:M');
 
-  // Build lookup map: normalized name → { originalName, fileId }
+  // Build lookup: normalized name → { originalName, fileId, createdAt }
   const sheetMap = new Map();
   for (const row of rows) {
-    const name = (row[0] || '').trim();
-    const url  = (row[12] || '').trim(); // col M = index 12
+    const name    = (row[0]  || '').trim();
+    const dateStr = (row[10] || '').trim(); // col K = last update
+    const url     = (row[12] || '').trim(); // col M = drive link
     if (!name || !url) continue;
     const fileId = extractFileId(url);
     if (fileId) {
-      sheetMap.set(normalize(name), { originalName: name, fileId });
+      sheetMap.set(normalize(name), {
+        originalName: name,
+        fileId,
+        createdAt: formatSheetDate(dateStr),
+      });
     }
   }
-  console.log(`Found ${sheetMap.size} entries with Drive links in the spreadsheet.\n`);
+  console.log(`Found ${sheetMap.size} entries with Drive links.\n`);
 
-  const projects = JSON.parse(fs.readFileSync(PROJECTS_JSON, 'utf8'));
+  const projects    = JSON.parse(fs.readFileSync(PROJECTS_JSON, 'utf8'));
   const topProjects = projects.filter(p => p.section === 'Top Projects');
 
-  const matched   = [];
-  const notFound  = [];
+  const matched  = [];
+  const notFound = [];
 
   for (const project of topProjects) {
-    const normName = normalize(project.name);
+    // Skip projects that already have a special config (button, message, or no-units)
+    if (project.priceList && (project.priceList.externalUrl || project.priceList.heading || project.priceList.message)) {
+      continue;
+    }
 
-    // Step 1: exact normalized match
+    const normName = normalize(project.name);
     let entry = sheetMap.get(normName);
 
-    // Step 2: one contains the other
     if (!entry) {
       for (const [key, val] of sheetMap) {
-        if (normName.includes(key) || key.includes(normName)) {
-          entry = val;
-          break;
-        }
+        if (normName.includes(key) || key.includes(normName)) { entry = val; break; }
       }
     }
 
     if (entry) {
-      project.priceList = { ...(project.priceList || {}), driveFileId: entry.fileId };
-      matched.push({ project: project.name, sheetName: entry.originalName, fileId: entry.fileId });
+      project.priceList = {
+        ...(project.priceList || {}),
+        driveFileId: entry.fileId,
+        ...(entry.createdAt ? { createdAt: entry.createdAt } : {}),
+      };
+      matched.push({ name: project.name, sheetName: entry.originalName, createdAt: entry.createdAt });
     } else {
       notFound.push(project.name);
     }
@@ -106,18 +125,16 @@ async function main() {
 
   console.log('── MATCHED (' + matched.length + ') ─────────────────────────────────');
   for (const m of matched) {
-    console.log(`  ✓  ${m.project}`);
-    if (normalize(m.project) !== normalize(m.sheetName)) {
+    console.log(`  ✓  ${m.name}`);
+    if (normalize(m.name) !== normalize(m.sheetName)) {
       console.log(`       ↳ matched as: "${m.sheetName}"`);
     }
+    if (m.createdAt) console.log(`       ↳ ${m.createdAt}`);
   }
 
   if (notFound.length) {
     console.log('\n── NOT FOUND (' + notFound.length + ') ────────────────────────────────');
-    for (const n of notFound) {
-      console.log(`  ✗  ${n}`);
-    }
-    console.log('\nAdd these driveFileId values manually in data/projects.json.');
+    for (const n of notFound) console.log(`  ✗  ${n}`);
   }
 
   console.log(`\nDone. ${matched.length}/${topProjects.length} top projects updated.`);

@@ -55,7 +55,8 @@
     "section": "Top Projects",
     "projectLogo": "/images/logos/619-residences.svg",
     "priceList": {
-      "driveFileId": "181AgGdoTFE3IX8vJIBIBD6CmU9rczXpt"
+      "driveFileId": "181AgGdoTFE3IX8vJIBIBD6CmU9rczXpt",
+      "createdAt": "As of April, 20 of 2026"
     }
   },
   {
@@ -96,7 +97,8 @@
     ],
     "projectLogo": "/images/logos/72-carlyle.png",
     "priceList": {
-      "driveFileId": "1_UP3y2YCvBqRae6dRI3OIj81XhQQ-43U"
+      "driveFileId": "1_UP3y2YCvBqRae6dRI3OIj81XhQQ-43U",
+      "createdAt": "As of April, 1 of 2026"
     }
   },
   {
@@ -139,7 +141,8 @@
     ],
     "projectLogo": "/images/logos/888-brickell.png",
     "priceList": {
-      "driveFileId": "1o-hD9jBBvqTeXwyVa5r8i2vIX-g8DaUJ"
+      "driveFileId": "1o-hD9jBBvqTeXwyVa5r8i2vIX-g8DaUJ",
+      "createdAt": "As of April, 13 of 2026"
     }
   },
   {
@@ -183,7 +186,8 @@
     ],
     "projectLogo": "/images/logos/andare-residences.png",
     "priceList": {
-      "driveFileId": "1oPBOlX7JoVIGmlJiVV90SOf_1kPWyJNo"
+      "driveFileId": "1oPBOlX7JoVIGmlJiVV90SOf_1kPWyJNo",
+      "createdAt": "As of April, 27 of 2026"
     }
   },
   {
@@ -227,7 +231,8 @@
     ],
     "projectLogo": "/images/logos/aria-reserve.jpg",
     "priceList": {
-      "driveFileId": "1ionTmudk_U5tj0Q3pNp-9lPMAgNia7zw"
+      "driveFileId": "1ionTmudk_U5tj0Q3pNp-9lPMAgNia7zw",
+      "createdAt": "As of March, 20 of 2026"
     }
   },
   {
@@ -268,7 +273,8 @@
     ],
     "projectLogo": "/images/logos/armani-casa-pompano-beach.png",
     "priceList": {
-      "driveFileId": "1e-S1forYtBUOuoahx6Oavy5eKzIu-iTt"
+      "driveFileId": "1e-S1forYtBUOuoahx6Oavy5eKzIu-iTt",
+      "createdAt": "As of December, 12 of 2025"
     }
   },
   {
@@ -307,7 +313,8 @@
     ],
     "projectLogo": "/images/logos/avenia-aventura.png",
     "priceList": {
-      "driveFileId": "12vVORLBhU2VkpxYtAi_gbqJIvLBgWSnM"
+      "driveFileId": "12vVORLBhU2VkpxYtAi_gbqJIvLBgWSnM",
+      "createdAt": "As of February, 13 of 2026"
     }
   },
   {
@@ -352,7 +359,8 @@
     ],
     "projectLogo": "/images/logos/banyan-tree.png",
     "priceList": {
-      "driveFileId": "1GPRSu4G7JHKKmCA4mGSPansbS0mPmYNE"
+      "driveFileId": "1GPRSu4G7JHKKmCA4mGSPansbS0mPmYNE",
+      "createdAt": "As of March, 26 of 2026"
     }
   },
   {
@@ -393,7 +401,8 @@
     ],
     "projectLogo": "/images/logos/bay-harbor-towers.png",
     "priceList": {
-      "driveFileId": "1GXMKbCi24VY2y_rxpUMf0Ha9ARuKdbRX"
+      "driveFileId": "1GXMKbCi24VY2y_rxpUMf0Ha9ARuKdbRX",
+      "createdAt": "As of April, 16 of 2026"
     }
   },
   {
@@ -418,7 +427,10 @@
     "parkingSpaces": null,
     "rentalRestrictions": null,
     "hoa": null,
-    "contact": null
+    "contact": null,
+    "priceList": {
+      "heading": "NO UNITS AVAILABLE"
+    }
   },
   {
     "slug": "cipriani-residences",
@@ -463,7 +475,8 @@
     ],
     "projectLogo": "/images/logos/cipriani-residences.png",
     "priceList": {
-      "driveFileId": "1tti5R3-KymvQj0RtWaMQFwY3sw2jyR8_"
+      "driveFileId": "1tti5R3-KymvQj0RtWaMQFwY3sw2jyR8_",
+      "createdAt": "As of April, 23 of 2026"
     }
   },
   {
@@ -505,7 +518,8 @@
     ],
     "projectLogo": "/images/logos/colette-brickell.png",
     "priceList": {
-      "driveFileId": "14raCCHVkPStsAPLlgJU7uWIcdcOvnhYg"
+      "driveFileId": "14raCCHVkPStsAPLlgJU7uWIcdcOvnhYg",
+      "createdAt": "As of April, 2 of 2026"
     }
   },
   {
@@ -546,7 +560,8 @@
     ],
     "projectLogo": "/images/logos/cora-merrick.png",
     "priceList": {
-      "driveFileId": "1lX90_0SFDtTiXhfgCKzqEuWgLGBxm7Db"
+      "driveFileId": "1lX90_0SFDtTiXhfgCKzqEuWgLGBxm7Db",
+      "createdAt": "As of April, 16 of 2026"
     }
   },
   {
@@ -588,7 +603,8 @@
     ],
     "projectLogo": "/images/logos/edition-residences-edgewater.png",
     "priceList": {
-      "driveFileId": "1d0tNFJ7efBXDBb0ymOkyVHLzk0M06J-h"
+      "driveFileId": "1d0tNFJ7efBXDBb0ymOkyVHLzk0M06J-h",
+      "createdAt": "As of March, 18 of 2026"
     }
   },
   {
@@ -623,7 +639,10 @@
         "phone": "N/A",
         "email": "N/A"
       }
-    ]
+    ],
+    "priceList": {
+      "externalUrl": "https://www.faenahousemiami.com/for-sale.html"
+    }
   },
   {
     "slug": "faena-residences-downtown-miami",
@@ -668,7 +687,8 @@
     ],
     "projectLogo": "/images/logos/faena-residences-downtown-miami.png",
     "priceList": {
-      "driveFileId": "1t9fxfMQHAZzqsRN_yaS40YCPdm5se9C7"
+      "driveFileId": "1t9fxfMQHAZzqsRN_yaS40YCPdm5se9C7",
+      "createdAt": "As of March, 25 of 2026"
     }
   },
   {
@@ -710,7 +730,8 @@
     ],
     "projectLogo": "/images/logos/four-seasons-coconut-grove.svg",
     "priceList": {
-      "driveFileId": "1ipdJf4UGI-v_oNrjU0jkVRXF1MVOaX5U"
+      "driveFileId": "1ipdJf4UGI-v_oNrjU0jkVRXF1MVOaX5U",
+      "createdAt": "As of April, 8 of 2026"
     }
   },
   {
@@ -752,7 +773,8 @@
     ],
     "projectLogo": "/images/logos/la-mare.png",
     "priceList": {
-      "driveFileId": "1kZoiOqlLtM3FBjexihnLLJ8Le6_NYpil"
+      "driveFileId": "1kZoiOqlLtM3FBjexihnLLJ8Le6_NYpil",
+      "createdAt": "As of April, 1 of 2026"
     }
   },
   {
@@ -800,7 +822,8 @@
     ],
     "projectLogo": "/images/logos/miami-tropic.png",
     "priceList": {
-      "driveFileId": "1qGKlggCJ7Wo2LsQzf0ZD8sFbGdAkJPS-"
+      "driveFileId": "1qGKlggCJ7Wo2LsQzf0ZD8sFbGdAkJPS-",
+      "createdAt": "As of April, 1 of 2026"
     }
   },
   {
@@ -841,7 +864,8 @@
     ],
     "projectLogo": "/images/logos/mr-c-residences-boca-raton.png",
     "priceList": {
-      "driveFileId": "1yBKr4513Y3KhKIM_tRHF3WFhT5CK6_ET"
+      "driveFileId": "1yBKr4513Y3KhKIM_tRHF3WFhT5CK6_ET",
+      "createdAt": "As of April, 20 of 2026"
     }
   },
   {
@@ -875,7 +899,10 @@
         "phone": "+1 (786) 302-2735",
         "email": "ish@ishmiami.com"
       }
-    ]
+    ],
+    "priceList": {
+      "externalUrl": "https://www.mrcresidencemiami.com/for-sale.html"
+    }
   },
   {
     "slug": "mr-c-residences-west-palm-beach",
@@ -914,7 +941,8 @@
     ],
     "projectLogo": "/images/logos/mr-c-residences-west-palm-beach.png",
     "priceList": {
-      "driveFileId": "1_QTK1Jld01GnnIfBT24BJ2x5jLmiH1Wx"
+      "driveFileId": "1_QTK1Jld01GnnIfBT24BJ2x5jLmiH1Wx",
+      "createdAt": "As of April, 8 of 2026"
     }
   },
   {
@@ -955,7 +983,8 @@
       }
     ],
     "priceList": {
-      "driveFileId": "1dAYwcPD66wkFU8gAOBQrVqog0L0vpJvT"
+      "driveFileId": "1dAYwcPD66wkFU8gAOBQrVqog0L0vpJvT",
+      "createdAt": "As of April, 2 of 2026"
     }
   },
   {
@@ -997,7 +1026,8 @@
     ],
     "projectLogo": "/images/logos/ocean-house.png",
     "priceList": {
-      "driveFileId": "1BIj-iaVtJIbw-TDJvwIMfsJ_PbuQ-t3-"
+      "driveFileId": "1BIj-iaVtJIbw-TDJvwIMfsJ_PbuQ-t3-",
+      "createdAt": "As of April, 1 of 2026"
     }
   },
   {
@@ -1041,7 +1071,8 @@
     ],
     "projectLogo": "/images/logos/ora-casa-tua.png",
     "priceList": {
-      "driveFileId": "1aQCQ_iyECR_HNzlqEVCk4KzS22LF8rOT"
+      "driveFileId": "1aQCQ_iyECR_HNzlqEVCk4KzS22LF8rOT",
+      "createdAt": "As of April, 27 of 2026"
     }
   },
   {
@@ -1083,7 +1114,8 @@
     ],
     "projectLogo": "/images/logos/ponce-park.png",
     "priceList": {
-      "driveFileId": "1uMXFsCIUtRjJxFZughlpFbUZJadzmsiU"
+      "driveFileId": "1uMXFsCIUtRjJxFZughlpFbUZJadzmsiU",
+      "createdAt": "As of April, 14 of 2026"
     }
   },
   {
@@ -1125,7 +1157,8 @@
     ],
     "projectLogo": "/images/logos/riva-residenze.png",
     "priceList": {
-      "driveFileId": "1lAfZTDebbVQl4yUuSfBteQjAKcHX-qoR"
+      "driveFileId": "1lAfZTDebbVQl4yUuSfBteQjAKcHX-qoR",
+      "createdAt": "As of December, 13 of 2025"
     }
   },
   {
@@ -1166,7 +1199,8 @@
     ],
     "projectLogo": "/images/logos/rivage-bal-harbour.png",
     "priceList": {
-      "driveFileId": "13U78AfKpTUBNYb1CyKcQec9HTsW8vryf"
+      "driveFileId": "13U78AfKpTUBNYb1CyKcQec9HTsW8vryf",
+      "createdAt": "As of April, 17 of 2026"
     }
   },
   {
@@ -1209,7 +1243,8 @@
     ],
     "projectLogo": "/images/logos/rosewood-hillsboro.png",
     "priceList": {
-      "driveFileId": "118-u3eQkMinoRgMw2-Z5OtCY6PqmQl5N"
+      "driveFileId": "118-u3eQkMinoRgMw2-Z5OtCY6PqmQl5N",
+      "createdAt": "As of April, 27 of 2026"
     }
   },
   {
@@ -1248,7 +1283,8 @@
     ],
     "projectLogo": "/images/logos/shore-club-private-collection-residences.png",
     "priceList": {
-      "driveFileId": "1g3NJIwob5UmwnBSz7iYfX7zPWPMzpkhX"
+      "driveFileId": "1g3NJIwob5UmwnBSz7iYfX7zPWPMzpkhX",
+      "createdAt": "As of February, 27 of 2026"
     }
   },
   {
@@ -1290,7 +1326,8 @@
     ],
     "projectLogo": "/images/logos/shorecrest-west-palm-beach.png",
     "priceList": {
-      "driveFileId": "1lBnA52J-4xwNCDQUEmXNRhTfqjf7Ik2N"
+      "driveFileId": "1lBnA52J-4xwNCDQUEmXNRhTfqjf7Ik2N",
+      "createdAt": "As of April, 10 of 2026"
     }
   },
   {
@@ -1333,7 +1370,8 @@
     ],
     "projectLogo": "/images/logos/st-regis-residences-bahia-mar-fort-lauderdale.jpg",
     "priceList": {
-      "driveFileId": "1V6JyrgMdHBVjXJtUfRCoIM2o5pexqXEr"
+      "driveFileId": "1V6JyrgMdHBVjXJtUfRCoIM2o5pexqXEr",
+      "createdAt": "As of April, 24 of 2026"
     }
   },
   {
@@ -1376,7 +1414,8 @@
     ],
     "projectLogo": "/images/logos/st-regis-residences-brickell.png",
     "priceList": {
-      "driveFileId": "1WsK0EERloiAA4U9fn_awIazisYvhIW_q"
+      "driveFileId": "1WsK0EERloiAA4U9fn_awIazisYvhIW_q",
+      "createdAt": "As of April, 8 of 2026"
     }
   },
   {
@@ -1425,7 +1464,8 @@
     ],
     "projectLogo": "/images/logos/st-regis-residences-sunny-isles.jpg",
     "priceList": {
-      "driveFileId": "1DJJlF7BqNq-_B9zXm1SBvkq86tHSiCw-"
+      "driveFileId": "1DJJlF7BqNq-_B9zXm1SBvkq86tHSiCw-",
+      "createdAt": "As of April, 15 of 2026"
     }
   },
   {
@@ -1467,7 +1507,8 @@
     ],
     "projectLogo": "/images/logos/the-berkeley.png",
     "priceList": {
-      "driveFileId": "1QHKNEEdpzZ_UqaFYi0ajzVcCj_whvT2E"
+      "driveFileId": "1QHKNEEdpzZ_UqaFYi0ajzVcCj_whvT2E",
+      "createdAt": "As of February, 16 of 2026"
     }
   },
   {
@@ -1502,7 +1543,10 @@
         "phone": "+1 (561) 573-9198",
         "email": "Sonja.Stevens@elliman.com"
       }
-    ]
+    ],
+    "priceList": {
+      "message": "Check Availability on MLS"
+    }
   },
   {
     "slug": "the-delmore",
@@ -1541,7 +1585,8 @@
     ],
     "projectLogo": "/images/logos/the-delmore.png",
     "priceList": {
-      "driveFileId": "1FANYhuswf8-JGTs9Ua5dQeA1hNWHBrfe"
+      "driveFileId": "1FANYhuswf8-JGTs9Ua5dQeA1hNWHBrfe",
+      "createdAt": "As of January, 5 of 2026"
     }
   },
   {
@@ -1586,7 +1631,8 @@
     ],
     "projectLogo": "/images/logos/the-perigon.png",
     "priceList": {
-      "driveFileId": "1lc3XAFY4G97b-0heBMmPY3nkH0YcLs-P"
+      "driveFileId": "1lc3XAFY4G97b-0heBMmPY3nkH0YcLs-P",
+      "createdAt": "As of April, 7 of 2026"
     }
   },
   {
@@ -1626,7 +1672,8 @@
     ],
     "projectLogo": "/images/logos/the-raleigh.png",
     "priceList": {
-      "driveFileId": "1nYx-lbj866SxUNBMJ1nXI_erDeainQj-"
+      "driveFileId": "1nYx-lbj866SxUNBMJ1nXI_erDeainQj-",
+      "createdAt": "As of August, 27 of 2025"
     }
   },
   {
@@ -1670,7 +1717,8 @@
     ],
     "projectLogo": "/images/logos/1428-brickell.png",
     "priceList": {
-      "driveFileId": "1GjJfjMSjROuCUrIgHWaHco4lfK3LruHP"
+      "driveFileId": "1GjJfjMSjROuCUrIgHWaHco4lfK3LruHP",
+      "createdAt": "As of April, 20 of 2026"
     }
   },
   {
@@ -1715,7 +1763,8 @@
     ],
     "projectLogo": "/images/logos/mandarin-oriental-miami.png",
     "priceList": {
-      "driveFileId": "1AkDF5goneljVdQwKOK6jttzZGDOIIn7V"
+      "driveFileId": "1AkDF5goneljVdQwKOK6jttzZGDOIIn7V",
+      "createdAt": "As of April, 8 of 2026"
     }
   },
   {
@@ -1756,7 +1805,8 @@
     ],
     "projectLogo": "/images/logos/the-residences-at-mandarin-oriental-west-palm-beach.png",
     "priceList": {
-      "driveFileId": "1Ac2M-r8QtR0HI8QZhl17cg0QQXAzFLFg"
+      "driveFileId": "1Ac2M-r8QtR0HI8QZhl17cg0QQXAzFLFg",
+      "createdAt": "As of April, 6 of 2026"
     }
   },
   {
@@ -1795,7 +1845,8 @@
     ],
     "projectLogo": "/images/logos/ritz-carlton-fort-lauderdale.jpg",
     "priceList": {
-      "driveFileId": "1_S7sEVZ_L4a5GIGXyqQB2T0LMzvIrKi9"
+      "driveFileId": "1_S7sEVZ_L4a5GIGXyqQB2T0LMzvIrKi9",
+      "createdAt": "As of April, 23 of 2026"
     }
   },
   {
@@ -1830,7 +1881,10 @@
         "phone": "+1 (305) 807-2508",
         "email": "soniagerald01@gmail.com"
       }
-    ]
+    ],
+    "priceList": {
+      "externalUrl": "https://ritzcarltonresidencesmiamibeach.nestcapitals.com/for-sale.html"
+    }
   },
   {
     "slug": "ritz-carlton-palm-beach-gardens",
@@ -1870,7 +1924,8 @@
     ],
     "projectLogo": "/images/logos/ritz-carlton-palm-beach-gardens.jpg",
     "priceList": {
-      "driveFileId": "1H555FTV5cAOY16sqwyi--Tbh0jSg3Yah"
+      "driveFileId": "1H555FTV5cAOY16sqwyi--Tbh0jSg3Yah",
+      "createdAt": "As of April, 6 of 2026"
     }
   },
   {
@@ -1911,7 +1966,8 @@
     ],
     "projectLogo": "/images/logos/ritz-carlton-south-beach.jpg",
     "priceList": {
-      "driveFileId": "1djbLkYpCyezLtCRgwGAQqTdueTnAidnN"
+      "driveFileId": "1djbLkYpCyezLtCRgwGAQqTdueTnAidnN",
+      "createdAt": "As of April, 7 of 2026"
     }
   },
   {
@@ -1954,7 +2010,8 @@
     ],
     "projectLogo": "/images/logos/ritz-carlton-west-palm.jpg",
     "priceList": {
-      "driveFileId": "1hEacT9wjc-1PVF5N6iJNuLzMrqnsZBb0"
+      "driveFileId": "1hEacT9wjc-1PVF5N6iJNuLzMrqnsZBb0",
+      "createdAt": "As of April, 17 of 2026"
     }
   },
   {
@@ -1990,7 +2047,10 @@
         "phone": "+1 (786) 914-7751",
         "email": "kmontilva@fortrealtyllc.com"
       }
-    ]
+    ],
+    "priceList": {
+      "externalUrl": "https://www.thesurfclubs.com/for-sale.html"
+    }
   },
   {
     "slug": "the-village-coral-gables",
@@ -2031,7 +2091,8 @@
     ],
     "projectLogo": "/images/logos/the-village-coral-gables.png",
     "priceList": {
-      "driveFileId": "12GcPPA9O3YJL5wg6KhzSnNQvk6i7RNeu"
+      "driveFileId": "12GcPPA9O3YJL5wg6KhzSnNQvk6i7RNeu",
+      "createdAt": "As of March, 5 of 2026"
     }
   },
   {
@@ -2070,7 +2131,8 @@
     ],
     "projectLogo": "/images/logos/the-well-bay-harbor.png",
     "priceList": {
-      "driveFileId": "1wld03EUblS_0uYacTtYnj3C2mlasuzN5"
+      "driveFileId": "1wld03EUblS_0uYacTtYnj3C2mlasuzN5",
+      "createdAt": "As of April, 21 of 2026"
     }
   },
   {
@@ -2115,7 +2177,8 @@
     ],
     "projectLogo": "/images/logos/the-well-coconut-grove.png",
     "priceList": {
-      "driveFileId": "1B7zAT7HpgeVKvgQCcqv2QcF6YjejTaoM"
+      "driveFileId": "1B7zAT7HpgeVKvgQCcqv2QcF6YjejTaoM",
+      "createdAt": "As of April, 22 of 2026"
     }
   },
   {
@@ -2153,7 +2216,8 @@
     ],
     "projectLogo": "/images/logos/tula-residences.png",
     "priceList": {
-      "driveFileId": "1PcJZ3Za42WNhk_2GZvio6Kp8W0a25fZE"
+      "driveFileId": "1PcJZ3Za42WNhk_2GZvio6Kp8W0a25fZE",
+      "createdAt": "As of March, 27 of 2026"
     }
   },
   {
@@ -2199,7 +2263,8 @@
     ],
     "projectLogo": "/images/logos/villa-miami.png",
     "priceList": {
-      "driveFileId": "1g5bCs8HuZ8IFrSAmqU55DjRLojvEWXWt"
+      "driveFileId": "1g5bCs8HuZ8IFrSAmqU55DjRLojvEWXWt",
+      "createdAt": "As of April, 6 of 2026"
     }
   },
   {
@@ -2240,7 +2305,8 @@
     ],
     "projectLogo": "/images/logos/vita-at-grove-isle.png",
     "priceList": {
-      "driveFileId": "19ro7jUNdjVL_OrG2o7X_HTCppynA7Oa6"
+      "driveFileId": "19ro7jUNdjVL_OrG2o7X_HTCppynA7Oa6",
+      "createdAt": "As of April, 6 of 2026"
     }
   },
   {
@@ -2283,7 +2349,8 @@
     ],
     "projectLogo": "/images/logos/w-pompano-beach-hotel-residences.png",
     "priceList": {
-      "driveFileId": "1xlfS9MVodwwLYscvJ1Zs0KEU7HnD1lQa"
+      "driveFileId": "1xlfS9MVodwwLYscvJ1Zs0KEU7HnD1lQa",
+      "createdAt": "As of March, 23 of 2026"
     }
   },
   {
@@ -2326,7 +2393,8 @@
     ],
     "projectLogo": "/images/logos/waldorf-astoria-pompano.png",
     "priceList": {
-      "driveFileId": "1mqb2zolOG2T4fErkS22cyuTPilszkJH8"
+      "driveFileId": "1mqb2zolOG2T4fErkS22cyuTPilszkJH8",
+      "createdAt": "As of April, 21 of 2026"
     }
   },
   {
@@ -2365,7 +2433,8 @@
     ],
     "projectLogo": "/images/logos/ziggurat-coconut-grove.png",
     "priceList": {
-      "driveFileId": "1EHsPsdedx4sRghV1YZHdakTKyoTEsF8g"
+      "driveFileId": "1EHsPsdedx4sRghV1YZHdakTKyoTEsF8g",
+      "createdAt": "As of April, 13 of 2026"
     }
   },
   {

@@ -251,9 +251,10 @@
 
     // ── 1. PRICE LIST ────────────────────────────────────────
     var plSec = makeSection('price-list');
-    plSec.appendChild(sectionHeading('PRICE LIST'));
-    if (d.priceList && d.priceList.text) {
-      plSec.appendChild(el('p', 'section-text', d.priceList.text));
+    var plHeading = (d.priceList && d.priceList.heading) ? d.priceList.heading : 'PRICE LIST';
+    plSec.appendChild(sectionHeading(plHeading));
+    if (d.priceList && d.priceList.createdAt) {
+      plSec.appendChild(el('p', 'pl-date', d.priceList.createdAt));
     }
     if (d.priceList && d.priceList.driveFileId) {
       var iframe = document.createElement('iframe');
@@ -262,7 +263,15 @@
       iframe.setAttribute('allow', 'autoplay');
       iframe.setAttribute('frameborder', '0');
       plSec.appendChild(iframe);
-    } else {
+    } else if (d.priceList && d.priceList.externalUrl) {
+      var extBtn = el('a', 'pl-ext-btn', 'View All Units for Sale');
+      extBtn.href = d.priceList.externalUrl;
+      extBtn.target = '_blank';
+      extBtn.rel = 'noopener noreferrer';
+      plSec.appendChild(extBtn);
+    } else if (d.priceList && d.priceList.message) {
+      plSec.appendChild(el('p', 'pl-message', d.priceList.message));
+    } else if (!d.priceList || !d.priceList.heading) {
       var plList = el('div', 'doc-list');
       plList.appendChild(docItem('Price List', null));
       plSec.appendChild(plList);
