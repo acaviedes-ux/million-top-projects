@@ -256,11 +256,12 @@
       plSec.appendChild(el('p', 'section-text', d.priceList.text));
     }
     if (d.priceList && d.priceList.driveFileId) {
-      var plLink = el('a', 'doc-btn section-cta', 'View Price List');
-      plLink.href   = 'https://drive.google.com/file/d/' + d.priceList.driveFileId + '/view';
-      plLink.target = '_blank';
-      plLink.rel    = 'noopener noreferrer';
-      plSec.appendChild(plLink);
+      var iframe = document.createElement('iframe');
+      iframe.src = 'https://drive.google.com/file/d/' + d.priceList.driveFileId + '/preview';
+      iframe.className = 'pl-iframe';
+      iframe.setAttribute('allow', 'autoplay');
+      iframe.setAttribute('frameborder', '0');
+      plSec.appendChild(iframe);
     } else {
       var plList = el('div', 'doc-list');
       plList.appendChild(docItem('Price List', null));

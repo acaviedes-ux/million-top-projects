@@ -955,3 +955,16 @@ img { display: block; max-width: 100%; }
   /* Shrink nav logo on mobile */
   .nav-project-logo img { height: 20px !important; }
 }
+
+/* ── Price List iframe embed ─────────────────────────────── */
+.pl-iframe {
+  width: 100%;
+  height: 680px;
+  border: none;
+  display: block;
+  margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  .pl-iframe { height: 480px; }
+}

@@ -4,7 +4,8 @@
   "description": "Top Projects luxury real estate site — Million And Up",
   "scripts": {
     "seed": "node scripts/seed-project.js",
-    "seed:all": "node scripts/seed-project.js --all"
+    "seed:all": "node scripts/seed-project.js --all",
+    "seed:pricelists": "node scripts/seed-pricelist-links.js"
   },
   "dependencies": {
     "dotenv": "^16.6.1"

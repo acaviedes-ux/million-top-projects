@@ -53,7 +53,10 @@
     ],
     "theBuilding": "A modern Brickell landmark marrying bay‑oriented architecture with Nobu's understated elegance.",
     "section": "Top Projects",
-    "projectLogo": "/images/logos/619-residences.svg"
+    "projectLogo": "/images/logos/619-residences.svg",
+    "priceList": {
+      "driveFileId": "181AgGdoTFE3IX8vJIBIBD6CmU9rczXpt"
+    }
   },
   {
     "slug": "72-carlyle",
@@ -91,7 +94,10 @@
         "email": "N/A"
       }
     ],
-    "projectLogo": "/images/logos/72-carlyle.png"
+    "projectLogo": "/images/logos/72-carlyle.png",
+    "priceList": {
+      "driveFileId": "1_UP3y2YCvBqRae6dRI3OIj81XhQQ-43U"
+    }
   },
   {
     "slug": "888-brickell",
@@ -131,7 +137,10 @@
         "email": "N/A"
       }
     ],
-    "projectLogo": "/images/logos/888-brickell.png"
+    "projectLogo": "/images/logos/888-brickell.png",
+    "priceList": {
+      "driveFileId": "1o-hD9jBBvqTeXwyVa5r8i2vIX-g8DaUJ"
+    }
   },
   {
     "slug": "andare-residences",
@@ -172,7 +181,10 @@
         "email": "kasia@andareresidences.com"
       }
     ],
-    "projectLogo": "/images/logos/andare-residences.png"
+    "projectLogo": "/images/logos/andare-residences.png",
+    "priceList": {
+      "driveFileId": "1oPBOlX7JoVIGmlJiVV90SOf_1kPWyJNo"
+    }
   },
   {
     "slug": "aria-reserve",
@@ -213,7 +225,10 @@
         "email": "andres@ariareserve.com"
       }
     ],
-    "projectLogo": "/images/logos/aria-reserve.jpg"
+    "projectLogo": "/images/logos/aria-reserve.jpg",
+    "priceList": {
+      "driveFileId": "1ionTmudk_U5tj0Q3pNp-9lPMAgNia7zw"
+    }
   },
   {
     "slug": "armani-casa-pompano-beach",
@@ -251,7 +266,10 @@
         "email": "N/A"
       }
     ],
-    "projectLogo": "/images/logos/armani-casa-pompano-beach.png"
+    "projectLogo": "/images/logos/armani-casa-pompano-beach.png",
+    "priceList": {
+      "driveFileId": "1e-S1forYtBUOuoahx6Oavy5eKzIu-iTt"
+    }
   },
   {
     "slug": "avenia-aventura",
@@ -287,7 +305,10 @@
         "email": "camila.steel@elliman.com"
       }
     ],
-    "projectLogo": "/images/logos/avenia-aventura.png"
+    "projectLogo": "/images/logos/avenia-aventura.png",
+    "priceList": {
+      "driveFileId": "12vVORLBhU2VkpxYtAi_gbqJIvLBgWSnM"
+    }
   },
   {
     "slug": "banyan-tree",
@@ -329,7 +350,10 @@
         "email": "annemarie.alexander@elliman.com"
       }
     ],
-    "projectLogo": "/images/logos/banyan-tree.png"
+    "projectLogo": "/images/logos/banyan-tree.png",
+    "priceList": {
+      "driveFileId": "1GPRSu4G7JHKKmCA4mGSPansbS0mPmYNE"
+    }
   },
   {
     "slug": "bay-harbor-towers",
@@ -367,7 +391,10 @@
         "email": "mpardo@bayharbortowers.com"
       }
     ],
-    "projectLogo": "/images/logos/bay-harbor-towers.png"
+    "projectLogo": "/images/logos/bay-harbor-towers.png",
+    "priceList": {
+      "driveFileId": "1GXMKbCi24VY2y_rxpUMf0Ha9ARuKdbRX"
+    }
   },
   {
     "slug": "casa-cipriani",
@@ -434,7 +461,10 @@
         "email": "montse@ciprianiresidencesmiami.com"
       }
     ],
-    "projectLogo": "/images/logos/cipriani-residences.png"
+    "projectLogo": "/images/logos/cipriani-residences.png",
+    "priceList": {
+      "driveFileId": "1tti5R3-KymvQj0RtWaMQFwY3sw2jyR8_"
+    }
   },
   {
     "slug": "colette-brickell",
@@ -473,7 +503,10 @@
         "email": "wilson.chueire@elliman.com"
       }
     ],
-    "projectLogo": "/images/logos/colette-brickell.png"
+    "projectLogo": "/images/logos/colette-brickell.png",
+    "priceList": {
+      "driveFileId": "14raCCHVkPStsAPLlgJU7uWIcdcOvnhYg"
+    }
   },
   {
     "slug": "cora-merrick",
@@ -511,7 +544,10 @@
         "email": null
       }
     ],
-    "projectLogo": "/images/logos/cora-merrick.png"
+    "projectLogo": "/images/logos/cora-merrick.png",
+    "priceList": {
+      "driveFileId": "1lX90_0SFDtTiXhfgCKzqEuWgLGBxm7Db"
+    }
   },
   {
     "slug": "edition-residences-edgewater",
@@ -550,7 +586,10 @@
         "email": "brenda@editionresidencesedgewater.com"
       }
     ],
-    "projectLogo": "/images/logos/edition-residences-edgewater.png"
+    "projectLogo": "/images/logos/edition-residences-edgewater.png",
+    "priceList": {
+      "driveFileId": "1d0tNFJ7efBXDBb0ymOkyVHLzk0M06J-h"
+    }
   },
   {
     "slug": "faena-house",
@@ -627,7 +666,10 @@
         "email": "patrickvysata@me.com"
       }
     ],
-    "projectLogo": "/images/logos/faena-residences-downtown-miami.png"
+    "projectLogo": "/images/logos/faena-residences-downtown-miami.png",
+    "priceList": {
+      "driveFileId": "1t9fxfMQHAZzqsRN_yaS40YCPdm5se9C7"
+    }
   },
   {
     "slug": "four-seasons-coconut-grove",
@@ -666,7 +708,10 @@
         "email": "csuarez@cmcrealestate.com"
       }
     ],
-    "projectLogo": "/images/logos/four-seasons-coconut-grove.svg"
+    "projectLogo": "/images/logos/four-seasons-coconut-grove.svg",
+    "priceList": {
+      "driveFileId": "1ipdJf4UGI-v_oNrjU0jkVRXF1MVOaX5U"
+    }
   },
   {
     "slug": "la-mare",
@@ -705,7 +750,10 @@
         "email": "camila.steel@elliman.com"
       }
     ],
-    "projectLogo": "/images/logos/la-mare.png"
+    "projectLogo": "/images/logos/la-mare.png",
+    "priceList": {
+      "driveFileId": "1kZoiOqlLtM3FBjexihnLLJ8Le6_NYpil"
+    }
   },
   {
     "slug": "miami-tropic",
@@ -750,7 +798,10 @@
         "email": "todd@miamitropic.com"
       }
     ],
-    "projectLogo": "/images/logos/miami-tropic.png"
+    "projectLogo": "/images/logos/miami-tropic.png",
+    "priceList": {
+      "driveFileId": "1qGKlggCJ7Wo2LsQzf0ZD8sFbGdAkJPS-"
+    }
   },
   {
     "slug": "mr-c-residences-boca-raton",
@@ -788,7 +839,10 @@
         "email": "asalazar.pb@gmail.com"
       }
     ],
-    "projectLogo": "/images/logos/mr-c-residences-boca-raton.png"
+    "projectLogo": "/images/logos/mr-c-residences-boca-raton.png",
+    "priceList": {
+      "driveFileId": "1yBKr4513Y3KhKIM_tRHF3WFhT5CK6_ET"
+    }
   },
   {
     "slug": "mr-c-residences-tigertail",
@@ -858,7 +912,10 @@
         "email": "steven.menezes@elliman.com"
       }
     ],
-    "projectLogo": "/images/logos/mr-c-residences-west-palm-beach.png"
+    "projectLogo": "/images/logos/mr-c-residences-west-palm-beach.png",
+    "priceList": {
+      "driveFileId": "1_QTK1Jld01GnnIfBT24BJ2x5jLmiH1Wx"
+    }
   },
   {
     "slug": "nora-house",
@@ -896,7 +953,10 @@
         "phone": "+1 (203) 219-4193",
         "email": "chris@norahouse.com"
       }
-    ]
+    ],
+    "priceList": {
+      "driveFileId": "1dAYwcPD66wkFU8gAOBQrVqog0L0vpJvT"
+    }
   },
   {
     "slug": "ocean-house",
@@ -935,7 +995,10 @@
         "email": "cjude997@gmail.com"
       }
     ],
-    "projectLogo": "/images/logos/ocean-house.png"
+    "projectLogo": "/images/logos/ocean-house.png",
+    "priceList": {
+      "driveFileId": "1BIj-iaVtJIbw-TDJvwIMfsJ_PbuQ-t3-"
+    }
   },
   {
     "slug": "ora-casa-tua",
@@ -976,7 +1039,10 @@
         "email": "egarcia@fortuneintlgroup.com"
       }
     ],
-    "projectLogo": "/images/logos/ora-casa-tua.png"
+    "projectLogo": "/images/logos/ora-casa-tua.png",
+    "priceList": {
+      "driveFileId": "1aQCQ_iyECR_HNzlqEVCk4KzS22LF8rOT"
+    }
   },
   {
     "slug": "ponce-park",
@@ -1015,7 +1081,10 @@
         "email": "bilbaopatsy@gmail.com"
       }
     ],
-    "projectLogo": "/images/logos/ponce-park.png"
+    "projectLogo": "/images/logos/ponce-park.png",
+    "priceList": {
+      "driveFileId": "1uMXFsCIUtRjJxFZughlpFbUZJadzmsiU"
+    }
   },
   {
     "slug": "riva-residenze",
@@ -1054,7 +1123,10 @@
         "email": "adam@theworthgrp.com"
       }
     ],
-    "projectLogo": "/images/logos/riva-residenze.png"
+    "projectLogo": "/images/logos/riva-residenze.png",
+    "priceList": {
+      "driveFileId": "1lAfZTDebbVQl4yUuSfBteQjAKcHX-qoR"
+    }
   },
   {
     "slug": "rivage-bal-harbour",
@@ -1092,7 +1164,10 @@
         "email": "silvia@rivagebalharbour.com"
       }
     ],
-    "projectLogo": "/images/logos/rivage-bal-harbour.png"
+    "projectLogo": "/images/logos/rivage-bal-harbour.png",
+    "priceList": {
+      "driveFileId": "13U78AfKpTUBNYb1CyKcQec9HTsW8vryf"
+    }
   },
   {
     "slug": "rosewood-hillsboro",
@@ -1132,7 +1207,10 @@
         "email": "merav@residenceshillsborobeach.com"
       }
     ],
-    "projectLogo": "/images/logos/rosewood-hillsboro.png"
+    "projectLogo": "/images/logos/rosewood-hillsboro.png",
+    "priceList": {
+      "driveFileId": "118-u3eQkMinoRgMw2-Z5OtCY6PqmQl5N"
+    }
   },
   {
     "slug": "shore-club-private-collection-residences",
@@ -1168,7 +1246,10 @@
         "email": "devin.kay@elliman.com"
       }
     ],
-    "projectLogo": "/images/logos/shore-club-private-collection-residences.png"
+    "projectLogo": "/images/logos/shore-club-private-collection-residences.png",
+    "priceList": {
+      "driveFileId": "1g3NJIwob5UmwnBSz7iYfX7zPWPMzpkhX"
+    }
   },
   {
     "slug": "shorecrest-west-palm-beach",
@@ -1207,7 +1288,10 @@
         "email": "suzanne.petrizzi@corcoran.com"
       }
     ],
-    "projectLogo": "/images/logos/shorecrest-west-palm-beach.png"
+    "projectLogo": "/images/logos/shorecrest-west-palm-beach.png",
+    "priceList": {
+      "driveFileId": "1lBnA52J-4xwNCDQUEmXNRhTfqjf7Ik2N"
+    }
   },
   {
     "slug": "st-regis-residences-bahia-mar-fort-lauderdale",
@@ -1247,7 +1331,10 @@
         "email": "deborah@srrbahiamar.com"
       }
     ],
-    "projectLogo": "/images/logos/st-regis-residences-bahia-mar-fort-lauderdale.jpg"
+    "projectLogo": "/images/logos/st-regis-residences-bahia-mar-fort-lauderdale.jpg",
+    "priceList": {
+      "driveFileId": "1V6JyrgMdHBVjXJtUfRCoIM2o5pexqXEr"
+    }
   },
   {
     "slug": "st-regis-residences-brickell",
@@ -1287,7 +1374,10 @@
         "email": "damian@miamisrr.com"
       }
     ],
-    "projectLogo": "/images/logos/st-regis-residences-brickell.png"
+    "projectLogo": "/images/logos/st-regis-residences-brickell.png",
+    "priceList": {
+      "driveFileId": "1WsK0EERloiAA4U9fn_awIazisYvhIW_q"
+    }
   },
   {
     "slug": "st-regis-residences-sunny-isles",
@@ -1333,7 +1423,10 @@
         "email": "lucofresi@gmail.com"
       }
     ],
-    "projectLogo": "/images/logos/st-regis-residences-sunny-isles.jpg"
+    "projectLogo": "/images/logos/st-regis-residences-sunny-isles.jpg",
+    "priceList": {
+      "driveFileId": "1DJJlF7BqNq-_B9zXm1SBvkq86tHSiCw-"
+    }
   },
   {
     "slug": "the-berkeley",
@@ -1372,7 +1465,10 @@
         "email": "lesleysavin@theberkeleypalmbeach.com"
       }
     ],
-    "projectLogo": "/images/logos/the-berkeley.png"
+    "projectLogo": "/images/logos/the-berkeley.png",
+    "priceList": {
+      "driveFileId": "1QHKNEEdpzZ_UqaFYi0ajzVcCj_whvT2E"
+    }
   },
   {
     "slug": "the-bristol",
@@ -1443,7 +1539,10 @@
         "email": "N/A"
       }
     ],
-    "projectLogo": "/images/logos/the-delmore.png"
+    "projectLogo": "/images/logos/the-delmore.png",
+    "priceList": {
+      "driveFileId": "1FANYhuswf8-JGTs9Ua5dQeA1hNWHBrfe"
+    }
   },
   {
     "slug": "the-perigon",
@@ -1485,7 +1584,10 @@
         "email": "diana@theperigonmiamibeach.com"
       }
     ],
-    "projectLogo": "/images/logos/the-perigon.png"
+    "projectLogo": "/images/logos/the-perigon.png",
+    "priceList": {
+      "driveFileId": "1lc3XAFY4G97b-0heBMmPY3nkH0YcLs-P"
+    }
   },
   {
     "slug": "the-raleigh",
@@ -1522,7 +1624,10 @@
         "email": "ivan@millionluxury.com"
       }
     ],
-    "projectLogo": "/images/logos/the-raleigh.png"
+    "projectLogo": "/images/logos/the-raleigh.png",
+    "priceList": {
+      "driveFileId": "1nYx-lbj866SxUNBMJ1nXI_erDeainQj-"
+    }
   },
   {
     "slug": "1428-brickell",
@@ -1563,7 +1668,10 @@
         "email": "juliaogroup@gmail.com"
       }
     ],
-    "projectLogo": "/images/logos/1428-brickell.png"
+    "projectLogo": "/images/logos/1428-brickell.png",
+    "priceList": {
+      "driveFileId": "1GjJfjMSjROuCUrIgHWaHco4lfK3LruHP"
+    }
   },
   {
     "slug": "mandarin-oriental-miami",
@@ -1605,7 +1713,10 @@
         "email": "eduardo@cofresi.com"
       }
     ],
-    "projectLogo": "/images/logos/mandarin-oriental-miami.png"
+    "projectLogo": "/images/logos/mandarin-oriental-miami.png",
+    "priceList": {
+      "driveFileId": "1AkDF5goneljVdQwKOK6jttzZGDOIIn7V"
+    }
   },
   {
     "slug": "the-residences-at-mandarin-oriental-west-palm-beach",
@@ -1643,7 +1754,10 @@
         "email": "susi@cervera.com"
       }
     ],
-    "projectLogo": "/images/logos/the-residences-at-mandarin-oriental-west-palm-beach.png"
+    "projectLogo": "/images/logos/the-residences-at-mandarin-oriental-west-palm-beach.png",
+    "priceList": {
+      "driveFileId": "1Ac2M-r8QtR0HI8QZhl17cg0QQXAzFLFg"
+    }
   },
   {
     "slug": "ritz-carlton-fort-lauderdale",
@@ -1679,7 +1793,10 @@
         "email": "lgustafson@theresidencesfortlauderdalebeach.com"
       }
     ],
-    "projectLogo": "/images/logos/ritz-carlton-fort-lauderdale.jpg"
+    "projectLogo": "/images/logos/ritz-carlton-fort-lauderdale.jpg",
+    "priceList": {
+      "driveFileId": "1_S7sEVZ_L4a5GIGXyqQB2T0LMzvIrKi9"
+    }
   },
   {
     "slug": "ritz-carlton-miami-beach",
@@ -1751,7 +1868,10 @@
         "email": "dave@theresidencespalmbeachgardens.com"
       }
     ],
-    "projectLogo": "/images/logos/ritz-carlton-palm-beach-gardens.jpg"
+    "projectLogo": "/images/logos/ritz-carlton-palm-beach-gardens.jpg",
+    "priceList": {
+      "driveFileId": "1H555FTV5cAOY16sqwyi--Tbh0jSg3Yah"
+    }
   },
   {
     "slug": "ritz-carlton-south-beach",
@@ -1789,7 +1909,10 @@
         "email": "pietro.belmonte@elliman.com"
       }
     ],
-    "projectLogo": "/images/logos/ritz-carlton-south-beach.jpg"
+    "projectLogo": "/images/logos/ritz-carlton-south-beach.jpg",
+    "priceList": {
+      "driveFileId": "1djbLkYpCyezLtCRgwGAQqTdueTnAidnN"
+    }
   },
   {
     "slug": "ritz-carlton-west-palm",
@@ -1829,7 +1952,10 @@
         "email": "joe.columbo@elliman.com"
       }
     ],
-    "projectLogo": "/images/logos/ritz-carlton-west-palm.jpg"
+    "projectLogo": "/images/logos/ritz-carlton-west-palm.jpg",
+    "priceList": {
+      "driveFileId": "1hEacT9wjc-1PVF5N6iJNuLzMrqnsZBb0"
+    }
   },
   {
     "slug": "surf-club-four-seasons",
@@ -1903,7 +2029,10 @@
         "email": "anunez@onesothebysrealty.com"
       }
     ],
-    "projectLogo": "/images/logos/the-village-coral-gables.png"
+    "projectLogo": "/images/logos/the-village-coral-gables.png",
+    "priceList": {
+      "driveFileId": "12GcPPA9O3YJL5wg6KhzSnNQvk6i7RNeu"
+    }
   },
   {
     "slug": "the-well-bay-harbor",
@@ -1939,7 +2068,10 @@
         "email": "susan@thewellbayharbor.com"
       }
     ],
-    "projectLogo": "/images/logos/the-well-bay-harbor.png"
+    "projectLogo": "/images/logos/the-well-bay-harbor.png",
+    "priceList": {
+      "driveFileId": "1wld03EUblS_0uYacTtYnj3C2mlasuzN5"
+    }
   },
   {
     "slug": "the-well-coconut-grove",
@@ -1981,7 +2113,10 @@
         "email": "susan@thewellcg.com"
       }
     ],
-    "projectLogo": "/images/logos/the-well-coconut-grove.png"
+    "projectLogo": "/images/logos/the-well-coconut-grove.png",
+    "priceList": {
+      "driveFileId": "1B7zAT7HpgeVKvgQCcqv2QcF6YjejTaoM"
+    }
   },
   {
     "slug": "tula-residences",
@@ -2016,7 +2151,10 @@
         "email": "pcuberos@bhsusa.com"
       }
     ],
-    "projectLogo": "/images/logos/tula-residences.png"
+    "projectLogo": "/images/logos/tula-residences.png",
+    "priceList": {
+      "driveFileId": "1PcJZ3Za42WNhk_2GZvio6Kp8W0a25fZE"
+    }
   },
   {
     "slug": "villa-miami",
@@ -2059,7 +2197,10 @@
         "email": "ish@ishmiami.com"
       }
     ],
-    "projectLogo": "/images/logos/villa-miami.png"
+    "projectLogo": "/images/logos/villa-miami.png",
+    "priceList": {
+      "driveFileId": "1g5bCs8HuZ8IFrSAmqU55DjRLojvEWXWt"
+    }
   },
   {
     "slug": "vita-at-grove-isle",
@@ -2097,7 +2238,10 @@
         "email": "csuarez@cmcrealestate.com"
       }
     ],
-    "projectLogo": "/images/logos/vita-at-grove-isle.png"
+    "projectLogo": "/images/logos/vita-at-grove-isle.png",
+    "priceList": {
+      "driveFileId": "19ro7jUNdjVL_OrG2o7X_HTCppynA7Oa6"
+    }
   },
   {
     "slug": "w-pompano-beach-hotel-residences",
@@ -2137,7 +2281,10 @@
         "email": "N/A"
       }
     ],
-    "projectLogo": "/images/logos/w-pompano-beach-hotel-residences.png"
+    "projectLogo": "/images/logos/w-pompano-beach-hotel-residences.png",
+    "priceList": {
+      "driveFileId": "1xlfS9MVodwwLYscvJ1Zs0KEU7HnD1lQa"
+    }
   },
   {
     "slug": "waldorf-astoria-pompano",
@@ -2177,7 +2324,10 @@
         "email": "maria@waldorfastoriaresidencespompano.com"
       }
     ],
-    "projectLogo": "/images/logos/waldorf-astoria-pompano.png"
+    "projectLogo": "/images/logos/waldorf-astoria-pompano.png",
+    "priceList": {
+      "driveFileId": "1mqb2zolOG2T4fErkS22cyuTPilszkJH8"
+    }
   },
   {
     "slug": "ziggurat-coconut-grove",
@@ -2213,7 +2363,10 @@
         "email": "spresti@onesothebysrealty.com"
       }
     ],
-    "projectLogo": "/images/logos/ziggurat-coconut-grove.png"
+    "projectLogo": "/images/logos/ziggurat-coconut-grove.png",
+    "priceList": {
+      "driveFileId": "1EHsPsdedx4sRghV1YZHdakTKyoTEsF8g"
+    }
   },
   {
     "slug": "1-hotel-homes",
