@@ -5,7 +5,8 @@
   "scripts": {
     "seed": "node scripts/seed-project.js",
     "seed:all": "node scripts/seed-project.js --all",
-    "seed:pricelists": "node scripts/seed-pricelist-links.js"
+    "seed:pricelists": "node scripts/seed-pricelist-links.js",
+    "seed:pricelists:other": "node scripts/seed-pricelist-links.js --section \"Other Projects\""
   },
   "dependencies": {
     "dotenv": "^16.6.1"

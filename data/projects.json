@@ -2498,7 +2498,11 @@
         "email": "sales@123oceanpalmbeach.com"
       }
     ],
-    "projectLogo": "/images/logos/123-ocean-palm-beach-shores.png"
+    "projectLogo": "/images/logos/123-ocean-palm-beach-shores.png",
+    "priceList": {
+      "driveFileId": "1A9LVvscLEAqquXO4brsgX97Ma2QhD8h9",
+      "createdAt": "As of April, 16 of 2026"
+    }
   },
   {
     "slug": "14-roc-miami",
@@ -2536,7 +2540,11 @@
         "email": "N/A"
       }
     ],
-    "projectLogo": "/images/logos/14-roc-miami.png"
+    "projectLogo": "/images/logos/14-roc-miami.png",
+    "priceList": {
+      "driveFileId": "1NdkubOIW_z5O-8PeqWT0LPninAJgsPMk",
+      "createdAt": "As of January, 25 of 2025"
+    }
   },
   {
     "slug": "2000-ocean",
@@ -2610,7 +2618,11 @@
         "email": "irit@owpbrokers.com"
       }
     ],
-    "projectLogo": "/images/logos/2200-brickell.png"
+    "projectLogo": "/images/logos/2200-brickell.png",
+    "priceList": {
+      "driveFileId": "1Swh9ppx6TIECgtwPCIizgObR7UeYTsrO",
+      "createdAt": "As of April, 10 of 2026"
+    }
   },
   {
     "slug": "3000-waterside-fort-lauderdale",
@@ -2640,7 +2652,11 @@
         "email": "nancy.seltzer@3000waterside.com"
       }
     ],
-    "projectLogo": "/images/logos/3000-waterside-fort-lauderdale.png"
+    "projectLogo": "/images/logos/3000-waterside-fort-lauderdale.png",
+    "priceList": {
+      "driveFileId": "1AUGQwdKAGbCeA9GczedqbnNLwaMpT1C1",
+      "createdAt": "As of April, 6 of 2026"
+    }
   },
   {
     "slug": "3200-south-ocean",
@@ -2812,7 +2828,11 @@
         "email": "cristycolmena@outlook.com"
       }
     ],
-    "projectLogo": "/images/logos/72-park.png"
+    "projectLogo": "/images/logos/72-park.png",
+    "priceList": {
+      "driveFileId": "1OPmta47jbYnSHehdFfcbqhb6qL5b21KQ",
+      "createdAt": "As of April, 2 of 2026"
+    }
   },
   {
     "slug": "9900-west",
@@ -2845,7 +2865,11 @@
         "email": "julian@9900west.com"
       }
     ],
-    "projectLogo": "/images/logos/9900-west.png"
+    "projectLogo": "/images/logos/9900-west.png",
+    "priceList": {
+      "driveFileId": "1-5nri4nDHSPgf50YQL0zTmG8KRyF3h24",
+      "createdAt": "As of December, 3 of 2025"
+    }
   },
   {
     "slug": "adagio-fort-lauderdale",
@@ -2915,7 +2939,11 @@
         "email": "bandretti@fortuneintlgroup.com"
       }
     ],
-    "projectLogo": "/images/logos/alana-bay-harbor-islands.png"
+    "projectLogo": "/images/logos/alana-bay-harbor-islands.png",
+    "priceList": {
+      "driveFileId": "149_AjtLUzJhtD9N0tP-F_Fmmz-a5oYW9",
+      "createdAt": "As of March, 23 of 2026"
+    }
   },
   {
     "slug": "alba-west-palm-beach",
@@ -2956,7 +2984,11 @@
         "email": "kweisz@onesothebysrealty.com"
       }
     ],
-    "projectLogo": "/images/logos/alba-west-palm-beach.png"
+    "projectLogo": "/images/logos/alba-west-palm-beach.png",
+    "priceList": {
+      "driveFileId": "11I1FRqPKpfKe85MB2AFZpjCn45bcdzya",
+      "createdAt": "As of April, 23 of 2026"
+    }
   },
   {
     "slug": "alina-residences",
@@ -2992,7 +3024,11 @@
         "email": "N/A"
       }
     ],
-    "projectLogo": "/images/logos/alina-residences.png"
+    "projectLogo": "/images/logos/alina-residences.png",
+    "priceList": {
+      "driveFileId": "1eM2AmP9V4WKIjX61uQW1tHc8R91J0PtV",
+      "createdAt": "As of March, 26 of 2026"
+    }
   },
   {
     "slug": "alma-bay-harbor-islands",
@@ -3030,7 +3066,11 @@
         "email": "miguel@lirluxury.com"
       }
     ],
-    "projectLogo": "/images/logos/alma-bay-harbor-islands.png"
+    "projectLogo": "/images/logos/alma-bay-harbor-islands.png",
+    "priceList": {
+      "driveFileId": "112EGxHkEunjqGLqQaOTxwEbz1jo9pul8",
+      "createdAt": "As of February, 3 of 2026"
+    }
   },
   {
     "slug": "apogee",
@@ -3100,7 +3140,11 @@
         "email": "smasis@cervera.com"
       }
     ],
-    "projectLogo": "/images/logos/arbor-coconut-grove.png"
+    "projectLogo": "/images/logos/arbor-coconut-grove.png",
+    "priceList": {
+      "driveFileId": "18PA5bm_RgBTRjNuYgc88_AZNSKtypZuT",
+      "createdAt": "As of April, 6 of 2026"
+    }
   },
   {
     "slug": "armani-casa",
@@ -3133,7 +3177,11 @@
         "phone": "(305) 389-4249",
         "email": "lucofresi@gmail.com"
       }
-    ]
+    ],
+    "priceList": {
+      "driveFileId": "1e-S1forYtBUOuoahx6Oavy5eKzIu-iTt",
+      "createdAt": "As of December, 12 of 2025"
+    }
   },
   {
     "slug": "arte-surfside",
@@ -3347,7 +3395,11 @@
         "email": "valelugo17@gmail.com"
       }
     ],
-    "projectLogo": "/images/logos/baccarat-residences.png"
+    "projectLogo": "/images/logos/baccarat-residences.png",
+    "priceList": {
+      "driveFileId": "1Suv0Pr4QPCrBc49au9UJPuUXaitCA3hx",
+      "createdAt": "As of April, 15 of 2026"
+    }
   },
   {
     "slug": "bal-harbour-tower",
@@ -3424,7 +3476,11 @@
         "email": "steve@stevemcaloon.com"
       }
     ],
-    "projectLogo": "/images/logos/banyan-tree-bimini-bahamas.png"
+    "projectLogo": "/images/logos/banyan-tree-bimini-bahamas.png",
+    "priceList": {
+      "driveFileId": "1Z7BmVA0bwTY4Zv1lTdOq8tvQmcsvNnjP",
+      "createdAt": "As of March, 16 of 2026"
+    }
   },
   {
     "slug": "bayview-village",
@@ -3532,7 +3588,11 @@
         "email": "melissa@dezer.com"
       }
     ],
-    "projectLogo": "/images/logos/bentley-residences-sunny-isles.png"
+    "projectLogo": "/images/logos/bentley-residences-sunny-isles.png",
+    "priceList": {
+      "driveFileId": "1Ccf-MAzJilagqFGWgB_5dF8wpck3tXzC",
+      "createdAt": "As of April, 13 of 2026"
+    }
   },
   {
     "slug": "biltmore-row",
@@ -3781,7 +3841,11 @@
         "email": "martha@cassiamiami.com"
       }
     ],
-    "projectLogo": "/images/logos/cassia-coral-gables.png"
+    "projectLogo": "/images/logos/cassia-coral-gables.png",
+    "priceList": {
+      "driveFileId": "1A8Ax711EBLY-V_Qi2GDqR5FyHa6G1FTH",
+      "createdAt": "As of April, 1 of 2026"
+    }
   },
   {
     "slug": "chateau-beach-residences",
@@ -3852,7 +3916,11 @@
         "email": "N/A"
       }
     ],
-    "projectLogo": "/images/logos/continuum-12000-sport-wellness-residences-miami.png"
+    "projectLogo": "/images/logos/continuum-12000-sport-wellness-residences-miami.png",
+    "priceList": {
+      "driveFileId": "1C1syt6xaKM8SZ0_1zlMXn5Caxjtg8hco",
+      "createdAt": "As of March, 6 of 2026"
+    }
   },
   {
     "slug": "continuum-club-residences-north-bay-village",
@@ -3892,7 +3960,11 @@
         "email": "paula@continuummiami.com"
       }
     ],
-    "projectLogo": "/images/logos/continuum-club-residences-north-bay-village.png"
+    "projectLogo": "/images/logos/continuum-club-residences-north-bay-village.png",
+    "priceList": {
+      "driveFileId": "1yrqzNFYTzx0ZxYO-V5ZLqbTX3sRcSRHO",
+      "createdAt": "As of April, 16 of 2026"
+    }
   },
   {
     "slug": "continuum-south-beach",
@@ -3976,7 +4048,11 @@
         "email": "karinerealtor@gmail.com"
       }
     ],
-    "projectLogo": "/images/logos/delano-residences-hotel-miami.png"
+    "projectLogo": "/images/logos/delano-residences-hotel-miami.png",
+    "priceList": {
+      "driveFileId": "1X6qdrDfsEhTBw-cxvUE1_EMwp9uj59Kg",
+      "createdAt": "As of April, 20 of 2026"
+    }
   },
   {
     "slug": "diesel-wynwood",
@@ -4013,7 +4089,11 @@
         "email": "fabiana@dieselwynwood.com"
       }
     ],
-    "projectLogo": "/images/logos/diesel-wynwood.png"
+    "projectLogo": "/images/logos/diesel-wynwood.png",
+    "priceList": {
+      "driveFileId": "18qp8ftI1mYKp76BNnGmDyvaiM0o8DdLS",
+      "createdAt": "As of January, 29 of 2025"
+    }
   },
   {
     "slug": "domus-brickell-center",
@@ -4052,7 +4132,11 @@
         "email": "kristinelperez@gmail.com"
       }
     ],
-    "projectLogo": "/images/logos/domus-brickell-center.png"
+    "projectLogo": "/images/logos/domus-brickell-center.png",
+    "priceList": {
+      "driveFileId": "1w685AJ8px-1M9lF-Ekm5UXCgBZc8ALIh",
+      "createdAt": "As of April, 20 of 2026"
+    }
   },
   {
     "slug": "domus-brickell-park",
@@ -4089,7 +4173,11 @@
         "email": "kristinelperez@gmail.com"
       }
     ],
-    "projectLogo": "/images/logos/domus-brickell-park.png"
+    "projectLogo": "/images/logos/domus-brickell-park.png",
+    "priceList": {
+      "driveFileId": "1tKH2R5Wpm9VtMgxNRNhXur3CkBWFNyZG",
+      "createdAt": "As of April, 20 of 2026"
+    }
   },
   {
     "slug": "edge-house-miami",
@@ -4128,7 +4216,11 @@
         "email": "ricardo@edgehousemiami.com"
       }
     ],
-    "projectLogo": "/images/logos/edge-house-miami.png"
+    "projectLogo": "/images/logos/edge-house-miami.png",
+    "priceList": {
+      "driveFileId": "1QHHOU14AJY8RUXLSlJDKMLIFYby-bgi6",
+      "createdAt": "As of March, 10 of 2026"
+    }
   },
   {
     "slug": "edgeworth-west-palm-beach",
@@ -4167,7 +4259,11 @@
         "email": "jon.duerr@corcoran.com"
       }
     ],
-    "projectLogo": "/images/logos/edgeworth-west-palm-beach.png"
+    "projectLogo": "/images/logos/edgeworth-west-palm-beach.png",
+    "priceList": {
+      "driveFileId": "15TaGKEtVpOx1u2U8RM1Vckj8zbKcsnVe",
+      "createdAt": "As of April, 24 of 2026"
+    }
   },
   {
     "slug": "eighty-seven-park",
@@ -4237,7 +4333,11 @@
         "email": "iballestas@onesothebysrealty.com"
       }
     ],
-    "projectLogo": "/images/logos/ella-miami-beach.png"
+    "projectLogo": "/images/logos/ella-miami-beach.png",
+    "priceList": {
+      "driveFileId": "1zB5cS5hVrPCOC7-UYWu1HdySF1QqKUov",
+      "createdAt": "As of April, 15 of 2026"
+    }
   },
   {
     "slug": "elle-residences-edgewater",
@@ -4273,7 +4373,11 @@
         "email": "N/A"
       }
     ],
-    "projectLogo": "/images/logos/elle-residences-edgewater.png"
+    "projectLogo": "/images/logos/elle-residences-edgewater.png",
+    "priceList": {
+      "driveFileId": "1GMCA4hmW3J-vFDOiHVw2dkKfclS2AsSY",
+      "createdAt": "As of April, 22 of 2026"
+    }
   },
   {
     "slug": "elysee-miami",
@@ -4344,7 +4448,11 @@
         "email": "schmitzp@gulfbay.com"
       }
     ],
-    "projectLogo": "/images/logos/epique-pelican-bay.png"
+    "projectLogo": "/images/logos/epique-pelican-bay.png",
+    "priceList": {
+      "driveFileId": "1rLn4qyWXJbizdkRU2-vQNlqYBavEAAUp",
+      "createdAt": "As of April, 1 of 2026"
+    }
   },
   {
     "slug": "fendi-chateau",
@@ -4418,7 +4526,11 @@
         "email": "charlotte.maietto@elliman.com"
       }
     ],
-    "projectLogo": "/images/logos/five-park-miami-beach.png"
+    "projectLogo": "/images/logos/five-park-miami-beach.png",
+    "priceList": {
+      "driveFileId": "1OnJDD2Dx_PE6HcWmZY90VE2_bDjbWJX4",
+      "createdAt": "As of February, 24 of 2026"
+    }
   },
   {
     "slug": "forte-on-flagler",
@@ -4456,7 +4568,11 @@
         "email": "N/A"
       }
     ],
-    "projectLogo": "/images/logos/forte-on-flagler.png"
+    "projectLogo": "/images/logos/forte-on-flagler.png",
+    "priceList": {
+      "driveFileId": "1VNzBkz_B2ogKFgfnroxC5qMrHTML8r9l",
+      "createdAt": "As of February, 10 of 2026"
+    }
   },
   {
     "slug": "four-seasons-hotel-private-residences",
@@ -4565,7 +4681,11 @@
         "email": "asierra@propertymgresidential.com"
       }
     ],
-    "projectLogo": "/images/logos/frida-kahlo-wynwood-residences.png"
+    "projectLogo": "/images/logos/frida-kahlo-wynwood-residences.png",
+    "priceList": {
+      "driveFileId": "1sE7axJsYdrMKhLbRYDOt9zMrw6Mgh27c",
+      "createdAt": "As of March, 10 of 2026"
+    }
   },
   {
     "slug": "gale-miami",
@@ -4600,7 +4720,11 @@
         "email": "lorena@galemiami.com"
       }
     ],
-    "projectLogo": "/images/logos/gale-miami.png"
+    "projectLogo": "/images/logos/gale-miami.png",
+    "priceList": {
+      "driveFileId": "1vrpTmiVTn4N1Tdff9-BYd5H8bbCOQQwv",
+      "createdAt": "As of November, 14 of 2024"
+    }
   },
   {
     "slug": "glass-house-boca-raton",
@@ -4638,7 +4762,11 @@
         "email": "bonnie@glasshouseboca.com"
       }
     ],
-    "projectLogo": "/images/logos/glass-house-boca-raton.png"
+    "projectLogo": "/images/logos/glass-house-boca-raton.png",
+    "priceList": {
+      "driveFileId": "1PGXdivl0G-BPS-r7lD7OknLoTRr7pGv-",
+      "createdAt": "As of April, 1 of 2026"
+    }
   },
   {
     "slug": "glass-miami-beach",
@@ -4748,7 +4876,11 @@
         "email": "kathymiamisales@gmail.com"
       }
     ],
-    "projectLogo": "/images/logos/house-of-wellness-brickell.png"
+    "projectLogo": "/images/logos/house-of-wellness-brickell.png",
+    "priceList": {
+      "driveFileId": "1_JHLJ_ZcchSXD-MGqPKvLSCjiQHAXi5s",
+      "createdAt": "As of February, 13 of 2026"
+    }
   },
   {
     "slug": "hub-miami",
@@ -4787,7 +4919,11 @@
         "email": "yury@owpbrokers.com"
       }
     ],
-    "projectLogo": "/images/logos/hub-miami.png"
+    "projectLogo": "/images/logos/hub-miami.png",
+    "priceList": {
+      "driveFileId": "1_poC628_noM9vAGKrQp3UXz0hLx7zsfQ",
+      "createdAt": "As of August, 15 of 2025"
+    }
   },
   {
     "slug": "icon-beach-residences-hollywood",
@@ -4826,7 +4962,11 @@
         "email": "carla@themiamivida.com"
       }
     ],
-    "projectLogo": "/images/logos/icon-beach-residences-hollywood.png"
+    "projectLogo": "/images/logos/icon-beach-residences-hollywood.png",
+    "priceList": {
+      "driveFileId": "1jxYPIbkCKdGdWj0fid2yo7uLVDnWV6V2",
+      "createdAt": "As of April, 1 of 2026"
+    }
   },
   {
     "slug": "il-villaggio",
@@ -5001,7 +5141,11 @@
         "email": "cristina@owpbrokers.com"
       }
     ],
-    "projectLogo": "/images/logos/jem-residences.png"
+    "projectLogo": "/images/logos/jem-residences.png",
+    "priceList": {
+      "driveFileId": "1DLNzsNU7xaYWdVaBwXFfG5VV26-81cZB",
+      "createdAt": "As of February, 23 of 2026"
+    }
   },
   {
     "slug": "l-atelier",
@@ -5073,7 +5217,11 @@
         "email": "vargaslimaris@gmail.com"
       }
     ],
-    "projectLogo": "/images/logos/la-baia-north-bay-harbor.png"
+    "projectLogo": "/images/logos/la-baia-north-bay-harbor.png",
+    "priceList": {
+      "driveFileId": "11IPIKAcqEzrVhQyVbHJ803jb-ofA4V8W",
+      "createdAt": "As of April, 13 of 2026"
+    }
   },
   {
     "slug": "la-santa-maria",
@@ -5148,7 +5296,11 @@
         "email": "Dianne@diannesaavedra.com"
       }
     ],
-    "projectLogo": "/images/logos/lofty-residences.jpg"
+    "projectLogo": "/images/logos/lofty-residences.jpg",
+    "priceList": {
+      "driveFileId": "1dHcIvS4XAgg1RyDfPmAsuZauxu2B4EXj",
+      "createdAt": "As of December, 2 of 2025"
+    }
   },
   {
     "slug": "maison-d-or-south-flagler",
@@ -5185,7 +5337,11 @@
         "email": "N/A"
       }
     ],
-    "projectLogo": "/images/logos/maison-d-or-south-flagler.png"
+    "projectLogo": "/images/logos/maison-d-or-south-flagler.png",
+    "priceList": {
+      "driveFileId": "1nRj4kexwkE53O4vA3HciRALHWwgnbvwd",
+      "createdAt": "As of February, 12 of 2026"
+    }
   },
   {
     "slug": "mercedes-benz-places-miami",
@@ -5225,7 +5381,11 @@
         "email": "N/A"
       }
     ],
-    "projectLogo": "/images/logos/mercedes-benz-places-miami.svg"
+    "projectLogo": "/images/logos/mercedes-benz-places-miami.svg",
+    "priceList": {
+      "driveFileId": "127w87ADZFZHl1AiVUYEUCNiQ3vhByq7X",
+      "createdAt": "As of April, 1 of 2026"
+    }
   },
   {
     "slug": "miami-design-residences-midtown-miami",
@@ -5261,7 +5421,11 @@
         "email": "N/A"
       }
     ],
-    "projectLogo": "/images/logos/miami-design-residences-midtown-miami.png"
+    "projectLogo": "/images/logos/miami-design-residences-midtown-miami.png",
+    "priceList": {
+      "driveFileId": "1QPHVY5gv_PRiphceN5s5ELaLYdxCfme9",
+      "createdAt": "As of April, 24 of 2026"
+    }
   },
   {
     "slug": "mila-bay-harbor-islands",
@@ -5299,7 +5463,11 @@
         "email": "miguel@lirluxury.com"
       }
     ],
-    "projectLogo": "/images/logos/mila-bay-harbor-islands.png"
+    "projectLogo": "/images/logos/mila-bay-harbor-islands.png",
+    "priceList": {
+      "driveFileId": "1vIaRkEqKvG0bB2SeZohrmsI79w20FKHf",
+      "createdAt": "As of February, 3 of 2026"
+    }
   },
   {
     "slug": "missoni-baia",
@@ -5545,7 +5713,11 @@
         "email": "aa@naplesbeachclub.com"
       }
     ],
-    "projectLogo": "/images/logos/naples-beach-club-four-seasons.png"
+    "projectLogo": "/images/logos/naples-beach-club-four-seasons.png",
+    "priceList": {
+      "driveFileId": "1XGiMLAk5rlBVh6NmmICKzpXyLfvxRyR4",
+      "createdAt": "As of February, 26 of 2026"
+    }
   },
   {
     "slug": "nexo-north-miami-beach",
@@ -5581,7 +5753,11 @@
         "email": "AlejandraRelated@gmail.com"
       }
     ],
-    "projectLogo": "/images/logos/nexo-north-miami-beach.png"
+    "projectLogo": "/images/logos/nexo-north-miami-beach.png",
+    "priceList": {
+      "driveFileId": "13x0f2XD21JnOyW1J4d3dS8SyiZ1wXpEh",
+      "createdAt": "As of January, 5 of 2026"
+    }
   },
   {
     "slug": "nomad-residences-wynwood",
@@ -5619,7 +5795,11 @@
         "email": "rdominguez@fir.com"
       }
     ],
-    "projectLogo": "/images/logos/nomad-residences-wynwood.png"
+    "projectLogo": "/images/logos/nomad-residences-wynwood.png",
+    "priceList": {
+      "driveFileId": "1splDzq2OXHtUbVGD0fSHDinVIxzTawMh",
+      "createdAt": "As of April, 20 of 2026"
+    }
   },
   {
     "slug": "oasis-hallandale",
@@ -5658,7 +5838,11 @@
         "email": "N/A"
       }
     ],
-    "projectLogo": "/images/logos/oasis-hallandale.png"
+    "projectLogo": "/images/logos/oasis-hallandale.png",
+    "priceList": {
+      "driveFileId": "10ajv78EPR0ABoyMY_WQEg5f3BJdTWJwi",
+      "createdAt": "As of April, 6 of 2026"
+    }
   },
   {
     "slug": "ocean-580-pompano-beach",
@@ -5693,7 +5877,11 @@
         "email": "N/A"
       }
     ],
-    "projectLogo": "/images/logos/ocean-580-pompano-beach.png"
+    "projectLogo": "/images/logos/ocean-580-pompano-beach.png",
+    "priceList": {
+      "driveFileId": "1EflwiR6V5n0k3eNdBu-ei3psMK12CyIG",
+      "createdAt": "As of April, 15 of 2026"
+    }
   },
   {
     "slug": "ocean-delray",
@@ -5759,7 +5947,11 @@
         "phone": "N/A",
         "email": "N/A"
       }
-    ]
+    ],
+    "priceList": {
+      "driveFileId": "1BIj-iaVtJIbw-TDJvwIMfsJ_PbuQ-t3-",
+      "createdAt": "As of April, 1 of 2026"
+    }
   },
   {
     "slug": "ocean-park",
@@ -5832,7 +6024,11 @@
         "email": "camila.cuevas@elliman.com"
       }
     ],
-    "projectLogo": "/images/logos/ocean-terrace.png"
+    "projectLogo": "/images/logos/ocean-terrace.png",
+    "priceList": {
+      "driveFileId": "1JXES6sbOeSQIx1Du1Zgi3Wi78N7hSHR6",
+      "createdAt": "As of April, 15 of 2026"
+    }
   },
   {
     "slug": "oceana-bal-harbour",
@@ -5972,7 +6168,11 @@
         "email": "NA"
       }
     ],
-    "projectLogo": "/images/logos/okan-tower.png"
+    "projectLogo": "/images/logos/okan-tower.png",
+    "priceList": {
+      "driveFileId": "1kYkjZa7OnlMZMhehGG-A9Xvsqucq9t54",
+      "createdAt": "As of April, 28 of 2026"
+    }
   },
   {
     "slug": "olara-west-palm-beach",
@@ -6012,7 +6212,11 @@
         "email": "matt@olarawestpalmbeach.com"
       }
     ],
-    "projectLogo": "/images/logos/olara-west-palm-beach.png"
+    "projectLogo": "/images/logos/olara-west-palm-beach.png",
+    "priceList": {
+      "driveFileId": "1y6i55TFTKHZE4RYxErdCNrQgO8yWa2N9",
+      "createdAt": "As of April, 14 of 2026"
+    }
   },
   {
     "slug": "ombelle-fort-lauderdale",
@@ -6050,7 +6254,11 @@
         "email": "tyler@ownombelle.com"
       }
     ],
-    "projectLogo": "/images/logos/ombelle-fort-lauderdale.png"
+    "projectLogo": "/images/logos/ombelle-fort-lauderdale.png",
+    "priceList": {
+      "driveFileId": "1JqdHhFE9v_uossWUwYUip2kuDj9C2SLb",
+      "createdAt": "As of January, 29 of 2026"
+    }
   },
   {
     "slug": "onda-bay-harbor",
@@ -6089,7 +6297,11 @@
         "email": "csuarez@cmcrealestate.com"
       }
     ],
-    "projectLogo": "/images/logos/onda-bay-harbor.png"
+    "projectLogo": "/images/logos/onda-bay-harbor.png",
+    "priceList": {
+      "driveFileId": "1RWm6r96tQrjsrLlLjrmG6kKa7dYnUsoA",
+      "createdAt": "As of December, 16 of 2025"
+    }
   },
   {
     "slug": "one-ocean",
@@ -6161,7 +6373,11 @@
         "email": "ElsaRodriguezT@gmail.com"
       }
     ],
-    "projectLogo": "/images/logos/one-park-tower-by-turnberry.png"
+    "projectLogo": "/images/logos/one-park-tower-by-turnberry.png",
+    "priceList": {
+      "driveFileId": "16S5QCWrU29Jm3t55pd6N75Dekt_nNJtu",
+      "createdAt": "As of April, 27 of 2026"
+    }
   },
   {
     "slug": "one-thousand-museum",
@@ -6231,7 +6447,11 @@
         "email": "ale@serhant.com"
       }
     ],
-    "projectLogo": "/images/logos/opus-coconut-grove.png"
+    "projectLogo": "/images/logos/opus-coconut-grove.png",
+    "priceList": {
+      "driveFileId": "1OE_NxwW7aOE4440W-AWATHMCyQPYgw43",
+      "createdAt": "As of April, 6 of 2026"
+    }
   },
   {
     "slug": "origin",
@@ -6268,7 +6488,11 @@
         "email": "NA"
       }
     ],
-    "projectLogo": "/images/logos/origin.png"
+    "projectLogo": "/images/logos/origin.png",
+    "priceList": {
+      "driveFileId": "1EV1FwIIipBmmfjj8weyfoB87g4dMWVGN",
+      "createdAt": "As of January, 15 of 2026"
+    }
   },
   {
     "slug": "pagani-north-bay-village",
@@ -6310,7 +6534,11 @@
         "email": "diego@paganiresidences.com"
       }
     ],
-    "projectLogo": "/images/logos/pagani-north-bay-village.png"
+    "projectLogo": "/images/logos/pagani-north-bay-village.png",
+    "priceList": {
+      "driveFileId": "1VuVrXI4EIOOJm3SoBpdLuM38sIerRLQ0",
+      "createdAt": "As of March, 12 of 2026"
+    }
   },
   {
     "slug": "palazzo-at-bayfront-naples",
@@ -6348,7 +6576,11 @@
         "email": "jamie.chang@premiersir.com"
       }
     ],
-    "projectLogo": "/images/logos/palazzo-at-bayfront-naples.png"
+    "projectLogo": "/images/logos/palazzo-at-bayfront-naples.png",
+    "priceList": {
+      "driveFileId": "1Kqx249G2bsSw0XXThxY-7D0wIURrogkj",
+      "createdAt": "As of July, 31 of 2025"
+    }
   },
   {
     "slug": "palazzo-del-sol",
@@ -6453,7 +6685,11 @@
         "email": "NA"
       }
     ],
-    "projectLogo": "/images/logos/palma-miami-beach.png"
+    "projectLogo": "/images/logos/palma-miami-beach.png",
+    "priceList": {
+      "driveFileId": "1rZJ5A9zHfkpDp264-61MtZNodcLFb48W",
+      "createdAt": "As of April, 2 of 2026"
+    }
   },
   {
     "slug": "paramount-fort-lauderdale-beach",
@@ -6593,7 +6829,11 @@
         "email": "aballon@onesothebysrealty.com"
       }
     ],
-    "projectLogo": "/images/logos/pier-sixty-six-fort-lauderdale.png"
+    "projectLogo": "/images/logos/pier-sixty-six-fort-lauderdale.png",
+    "priceList": {
+      "driveFileId": "1i_g7Ya5sMtIenmaZUZV219VDUE07jAQk",
+      "createdAt": "As of April, 6 of 2026"
+    }
   },
   {
     "slug": "porsche-design-tower",
@@ -6769,7 +7009,11 @@
         "email": "mario.chirino@riverdistrict14.com"
       }
     ],
-    "projectLogo": "/images/logos/river-district-14-miami.png"
+    "projectLogo": "/images/logos/river-district-14-miami.png",
+    "priceList": {
+      "driveFileId": "1x6jdsAWxiBf6fJ3-MG0Ezn1I3yRHQhIj",
+      "createdAt": "As of June, 16 of 2025"
+    }
   },
   {
     "slug": "rosewood-residences-naples",
@@ -6799,7 +7043,11 @@
         "email": "anita@rontorealty.com"
       }
     ],
-    "projectLogo": "/images/logos/rosewood-residences-naples.png"
+    "projectLogo": "/images/logos/rosewood-residences-naples.png",
+    "priceList": {
+      "driveFileId": "1QGVuwmVr0ATCppxwb7aOuDq0WJ1N9yi6",
+      "createdAt": "As of February, 18 of 2026"
+    }
   },
   {
     "slug": "sage-fort-lauderdale",
@@ -6836,7 +7084,11 @@
         "email": "afreeman@propertymgresidential.com"
       }
     ],
-    "projectLogo": "/images/logos/sage-fort-lauderdale.png"
+    "projectLogo": "/images/logos/sage-fort-lauderdale.png",
+    "priceList": {
+      "driveFileId": "1-1eqJgJ5TGhYWdTSg8Rja5ZbE7U29dYb",
+      "createdAt": "As of January, 28 of 2026"
+    }
   },
   {
     "slug": "salato",
@@ -6873,7 +7125,11 @@
         "email": "tinka.ellington@elliman.com"
       }
     ],
-    "projectLogo": "/images/logos/salato.png"
+    "projectLogo": "/images/logos/salato.png",
+    "priceList": {
+      "driveFileId": "1Hd0vXnWzIuzrq9be8q4CL0aGYlp-yjDY",
+      "createdAt": "As of March, 19 of 2026"
+    }
   },
   {
     "slug": "setai-residences",
@@ -6942,7 +7198,11 @@
         "email": "norma-jean.callahan@elliman.com"
       }
     ],
-    "projectLogo": "/images/logos/shell-bay-by-auberge.png"
+    "projectLogo": "/images/logos/shell-bay-by-auberge.png",
+    "priceList": {
+      "driveFileId": "12S40oYZRcRnBKEzCKCvyL9e5GcxoDIQ2",
+      "createdAt": "As of April, 1 of 2026"
+    }
   },
   {
     "slug": "shoma-bay",
@@ -6982,7 +7242,11 @@
         "email": "nmerheg@shomabay.com"
       }
     ],
-    "projectLogo": "/images/logos/shoma-bay.png"
+    "projectLogo": "/images/logos/shoma-bay.png",
+    "priceList": {
+      "driveFileId": "170UbAV974y-aSaoWVc8nTj6HF7iXcOw9",
+      "createdAt": "As of March, 27 of 2026"
+    }
   },
   {
     "slug": "sixth-rio",
@@ -7020,7 +7284,11 @@
         "email": "NA"
       }
     ],
-    "projectLogo": "/images/logos/sixth-rio.png"
+    "projectLogo": "/images/logos/sixth-rio.png",
+    "priceList": {
+      "driveFileId": "1QRlTgRlenWTE3G9-KMFq-MNOaxFrHgoq",
+      "createdAt": "As of April, 10 of 2026"
+    }
   },
   {
     "slug": "south-flagler-house",
@@ -7059,7 +7327,11 @@
         "email": "N/A"
       }
     ],
-    "projectLogo": "/images/logos/south-flagler-house.jpg"
+    "projectLogo": "/images/logos/south-flagler-house.jpg",
+    "priceList": {
+      "driveFileId": "1oyZtBpI3EBPZ0f04XlStJoSHP6N-gclt",
+      "createdAt": "As of April, 7 of 2026"
+    }
   },
   {
     "slug": "south-pointe-towers",
@@ -7159,7 +7431,11 @@
         "email": "lsnider@onesothebysrealty.com"
       }
     ],
-    "projectLogo": "/images/logos/surf-row.png"
+    "projectLogo": "/images/logos/surf-row.png",
+    "priceList": {
+      "driveFileId": "1qJf54HihipdAuFGn_blWlgN0_geIKVXy",
+      "createdAt": "As of March, 20 of 2026"
+    }
   },
   {
     "slug": "the-avenue",
@@ -7199,7 +7475,11 @@
         "email": "carolinagoudie@cervera.com"
       }
     ],
-    "projectLogo": "/images/logos/the-avenue.png"
+    "projectLogo": "/images/logos/the-avenue.png",
+    "priceList": {
+      "driveFileId": "1nLlVWYDimeJzSGP9avSJkHRJY__ORooZ",
+      "createdAt": "As of April, 1 of 2026"
+    }
   },
   {
     "slug": "the-bath-club",
@@ -7269,7 +7549,11 @@
         "email": "johnny.schiliro@elliman.com"
       }
     ],
-    "projectLogo": "/images/logos/the-cove-residences.png"
+    "projectLogo": "/images/logos/the-cove-residences.png",
+    "priceList": {
+      "driveFileId": "1p3y0qsR5GuY-LTjRZupQcEH1wBuxdUDJ",
+      "createdAt": "As of March, 20 of 2026"
+    }
   },
   {
     "slug": "the-estates-at-acqualina",
@@ -7367,7 +7651,11 @@
     "rentalRestrictions": null,
     "hoa": null,
     "contact": null,
-    "projectLogo": "/images/logos/the-george-residences-coral-gables.png"
+    "projectLogo": "/images/logos/the-george-residences-coral-gables.png",
+    "priceList": {
+      "driveFileId": "1xAH9O0ha02AX-1mJepYewb2wuEh2izEM",
+      "createdAt": "As of March, 6 of 2026"
+    }
   },
   {
     "slug": "the-lincoln-coconut-grove",
@@ -7402,7 +7690,11 @@
         "email": "patriciab@onesothebysrealty.com"
       }
     ],
-    "projectLogo": "/images/logos/the-lincoln-coconut-grove.png"
+    "projectLogo": "/images/logos/the-lincoln-coconut-grove.png",
+    "priceList": {
+      "driveFileId": "1hx7rikSY_yfCSofs1cO99lSM2LD48PcD",
+      "createdAt": "As of April, 16 of 2026"
+    }
   },
   {
     "slug": "the-links-estates",
@@ -7440,7 +7732,11 @@
         "email": "N/A"
       }
     ],
-    "projectLogo": "/images/logos/the-links-estates.png"
+    "projectLogo": "/images/logos/the-links-estates.png",
+    "priceList": {
+      "driveFileId": "1Bg1JvytgE6DI3SwoxzthnIQ656zOVpMT",
+      "createdAt": "As of July, 7 of 2025"
+    }
   },
   {
     "slug": "the-mansions-at-acqualina",
@@ -7512,7 +7808,11 @@
         "email": "cmcbride@theoceanclubresidences.com"
       }
     ],
-    "projectLogo": "/images/logos/the-ocean-club-four-seasons-residences-bahamas.png"
+    "projectLogo": "/images/logos/the-ocean-club-four-seasons-residences-bahamas.png",
+    "priceList": {
+      "driveFileId": "1sG0ShNbRWnpSRq5EQBOlkZmOXtDP1Txf",
+      "createdAt": "As of February, 24 of 2026"
+    }
   },
   {
     "slug": "the-palace-at-bal-harbour",
@@ -7585,7 +7885,11 @@
         "email": "cellert@moresidencesbocaraton.com"
       }
     ],
-    "projectLogo": "/images/logos/the-residences-at-mandarin-oriental-boca-raton.jpg"
+    "projectLogo": "/images/logos/the-residences-at-mandarin-oriental-boca-raton.jpg",
+    "priceList": {
+      "driveFileId": "1_sbRCEkkIGKjJfTdTfbm9qW7g6vZ7Fin",
+      "createdAt": "As of April, 6 of 2026"
+    }
   },
   {
     "slug": "the-residences-at-six-fisher-island",
@@ -7622,7 +7926,11 @@
         "email": "kinga@6-fisherisland.com"
       }
     ],
-    "projectLogo": "/images/logos/the-residences-at-six-fisher-island.png"
+    "projectLogo": "/images/logos/the-residences-at-six-fisher-island.png",
+    "priceList": {
+      "driveFileId": "19z3EI2CzQAN6OMoi684dKMrmaefaDczC",
+      "createdAt": "As of April, 10 of 2026"
+    }
   },
   {
     "slug": "the-residences-at-the-miami-beach-edition",
@@ -7723,7 +8031,11 @@
         "email": "dgora@stockdevelopment.com"
       }
     ],
-    "projectLogo": "/images/logos/the-ritz-carlton-residences-naples.jpg"
+    "projectLogo": "/images/logos/the-ritz-carlton-residences-naples.jpg",
+    "priceList": {
+      "driveFileId": "198v0Rrxhf4kB1NIkVLoJwAhoJKgMITO2",
+      "createdAt": "As of March, 13 of 2026"
+    }
   },
   {
     "slug": "the-ritz-carlton-residences-pompano-beach",
@@ -7762,7 +8074,11 @@
         "email": "apelaez@fir.com"
       }
     ],
-    "projectLogo": "/images/logos/the-ritz-carlton-residences-pompano-beach.jpg"
+    "projectLogo": "/images/logos/the-ritz-carlton-residences-pompano-beach.jpg",
+    "priceList": {
+      "driveFileId": "1dgj51r9NC_ssPf7bS5ldSfURw1PRCeep",
+      "createdAt": "As of March, 30 of 2026"
+    }
   },
   {
     "slug": "the-ritz-carlton-residences-sunny-isles",
@@ -7824,7 +8140,11 @@
     "rentalRestrictions": null,
     "hoa": "$0.40",
     "contact": null,
-    "projectLogo": "/images/logos/the-roads-townhomes-brickell.png"
+    "projectLogo": "/images/logos/the-roads-townhomes-brickell.png",
+    "priceList": {
+      "driveFileId": "1C1A6a0RxfqGaUNF-G4gkOjM9zfKBvLvA",
+      "createdAt": "As of December, 23 of 2025"
+    }
   },
   {
     "slug": "the-standard-residences",
@@ -7862,7 +8182,11 @@
         "email": "mgomez@onesothebysrealty.com"
       }
     ],
-    "projectLogo": "/images/logos/the-standard-residences.png"
+    "projectLogo": "/images/logos/the-standard-residences.png",
+    "priceList": {
+      "driveFileId": "1dmCUQFl2nUOu3Wb-y5qM1vKQgHaq8p3T",
+      "createdAt": "As of February, 16 of 2026"
+    }
   },
   {
     "slug": "turnberry-ocean-club",
@@ -7962,7 +8286,11 @@
         "email": "N/A"
       }
     ],
-    "projectLogo": "/images/logos/twenty-nine-indian-creek.png"
+    "projectLogo": "/images/logos/twenty-nine-indian-creek.png",
+    "priceList": {
+      "driveFileId": "1qJllB6Rfh2mQhiX8uiOIw7QfMLkFXFpW",
+      "createdAt": "As of February, 25 of 2026"
+    }
   },
   {
     "slug": "una-residences",
@@ -8002,7 +8330,11 @@
         "email": "N/A"
       }
     ],
-    "projectLogo": "/images/logos/una-residences.png"
+    "projectLogo": "/images/logos/una-residences.png",
+    "priceList": {
+      "driveFileId": "1l9MO24_GU6PcI5AR51QIgV7aXW8CNaTQ",
+      "createdAt": "As of April, 10 of 2026"
+    }
   },
   {
     "slug": "viceroy-brickell",
@@ -8041,7 +8373,11 @@
         "email": "valelugo17@gmail.com"
       }
     ],
-    "projectLogo": "/images/logos/viceroy-brickell.png"
+    "projectLogo": "/images/logos/viceroy-brickell.png",
+    "priceList": {
+      "driveFileId": "11lTUFH1vgdmUZH9tbYv_DEX9I4Qf3uL0",
+      "createdAt": "As of March, 26 of 2026"
+    }
   },
   {
     "slug": "viceroy-fort-lauderdale",
@@ -8079,7 +8415,11 @@
         "email": "christopher.cortez@viceroyfortlauderdale.com"
       }
     ],
-    "projectLogo": "/images/logos/viceroy-fort-lauderdale.png"
+    "projectLogo": "/images/logos/viceroy-fort-lauderdale.png",
+    "priceList": {
+      "driveFileId": "1ky5yqBrZ4cceDlOa5He4CAaU1RthOHrN",
+      "createdAt": "As of March, 26 of 2026"
+    }
   },
   {
     "slug": "villa-valencia",
@@ -8190,7 +8530,11 @@
         "email": "karinerealtor@gmail.com"
       }
     ],
-    "projectLogo": "/images/logos/waldorf-astoria-residences-downtown-miami.png"
+    "projectLogo": "/images/logos/waldorf-astoria-residences-downtown-miami.png",
+    "priceList": {
+      "driveFileId": "1B0mOgYn16F4fSmD9SzpRa1DlZgeLemud",
+      "createdAt": "As of April, 20 of 2026"
+    }
   },
   {
     "slug": "west-eleventh-residences",
@@ -8225,6 +8569,10 @@
         "email": "liza@e11evenresidences.com"
       }
     ],
-    "projectLogo": "/images/logos/west-eleventh-residences.png"
+    "projectLogo": "/images/logos/west-eleventh-residences.png",
+    "priceList": {
+      "driveFileId": "1XjnRNAsU7t077vKL7PjiGEEd9dCm04Dj",
+      "createdAt": "As of April, 6 of 2026"
+    }
   }
 ]

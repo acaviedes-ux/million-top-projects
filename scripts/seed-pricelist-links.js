@@ -88,8 +88,13 @@ async function main() {
   }
   console.log(`Found ${sheetMap.size} entries with Drive links.\n`);
 
+  const sectionArg  = process.argv.find(a => a.startsWith('--section='))?.split('=').slice(1).join('=')
+                   || (process.argv.includes('--section') ? process.argv[process.argv.indexOf('--section') + 1] : null)
+                   || 'Top Projects';
+  console.log(`Processing section: "${sectionArg}"\n`);
+
   const projects    = JSON.parse(fs.readFileSync(PROJECTS_JSON, 'utf8'));
-  const topProjects = projects.filter(p => p.section === 'Top Projects');
+  const topProjects = projects.filter(p => p.section === sectionArg);
 
   const matched  = [];
   const notFound = [];
