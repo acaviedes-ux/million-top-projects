@@ -2468,7 +2468,10 @@
         "phone": "+1 (305) 926-5265",
         "email": "tracy.galya@elliman.com"
       }
-    ]
+    ],
+    "priceList": {
+      "hidden": true
+    }
   },
   {
     "slug": "123-ocean-palm-beach-shores",
@@ -2580,7 +2583,10 @@
         "phone": "(305) 491-5247",
         "email": "ccasadella@fortuneintlgroup.com"
       }
-    ]
+    ],
+    "priceList": {
+      "externalUrl": "https://www.2000oceaninhallandale.com/for-sale.html"
+    }
   },
   {
     "slug": "2200-brickell",
@@ -2689,7 +2695,10 @@
         "phone": "(561) 287-2083",
         "email": "andrew@seagaterealtygroup.com"
       }
-    ]
+    ],
+    "priceList": {
+      "hidden": true
+    }
   },
   {
     "slug": "321-ocean",
@@ -2722,7 +2731,10 @@
         "phone": "N/A",
         "email": "N/A"
       }
-    ]
+    ],
+    "priceList": {
+      "hidden": true
+    }
   },
   {
     "slug": "5000-north-ocean",
@@ -2757,7 +2769,10 @@
         "phone": "+1 (561) 653-6100",
         "email": "chris.cox@elliman.com"
       }
-    ]
+    ],
+    "priceList": {
+      "hidden": true
+    }
   },
   {
     "slug": "57-ocean",
@@ -2790,7 +2805,10 @@
         "phone": "+1 (305)-800-5775",
         "email": "cjude997@gmail.com"
       }
-    ]
+    ],
+    "priceList": {
+      "externalUrl": "https://www.57oceancondomiami.com/for-sale.html"
+    }
   },
   {
     "slug": "72-park",
@@ -2902,7 +2920,10 @@
         "phone": "(305) 710-2796",
         "email": "kkarnis@onesothebysrealty.com"
       }
-    ]
+    ],
+    "priceList": {
+      "hidden": true
+    }
   },
   {
     "slug": "alana-bay-harbor-islands",
@@ -3103,7 +3124,10 @@
         "phone": "N/A",
         "email": "N/A"
       }
-    ]
+    ],
+    "priceList": {
+      "externalUrl": "https://www.apogeecondosouthbeach.com/for-sale.html"
+    }
   },
   {
     "slug": "arbor-coconut-grove",
@@ -3214,7 +3238,10 @@
         "phone": "(305) 298-8511",
         "email": "mkastanis@elliman.com"
       }
-    ]
+    ],
+    "priceList": {
+      "hidden": true
+    }
   },
   {
     "slug": "asia-brickell",
@@ -3247,7 +3274,10 @@
         "phone": "N/A",
         "email": "N/A"
       }
-    ]
+    ],
+    "priceList": {
+      "hidden": true
+    }
   },
   {
     "slug": "aston-martin-residences",
@@ -3285,7 +3315,10 @@
         "phone": "(305) 303-5708",
         "email": "juliaogroup@gmail.com"
       }
-    ]
+    ],
+    "priceList": {
+      "externalUrl": "https://astonmartinresidencesdowntownmiami.nestcapitals.com/for-sale.html"
+    }
   },
   {
     "slug": "auberge-beach-residences-spa-fort-lauderdale",
@@ -3318,7 +3351,10 @@
         "phone": "(561) 358-0832",
         "email": "mariascarolarelated@gmail.com"
       }
-    ]
+    ],
+    "priceList": {
+      "externalUrl": "https://www.aubergebeachsresidences.com/for-sale.html"
+    }
   },
   {
     "slug": "aurora-sunny-isles-beach",
@@ -3353,7 +3389,10 @@
         "phone": "(786) 470-9657",
         "email": "carlaprado.miami@gmail.com"
       }
-    ]
+    ],
+    "priceList": {
+      "hidden": true
+    }
   },
   {
     "slug": "baccarat-residences",
@@ -3432,7 +3471,10 @@
         "phone": "N/A",
         "email": "N/A"
       }
-    ]
+    ],
+    "priceList": {
+      "hidden": true
+    }
   },
   {
     "slug": "banyan-tree-bimini-bahamas",
@@ -3513,7 +3555,10 @@
         "phone": "N/A",
         "email": "N/A"
       }
-    ]
+    ],
+    "priceList": {
+      "hidden": true
+    }
   },
   {
     "slug": "beach-house-8",
@@ -3546,7 +3591,10 @@
         "phone": "N/A",
         "email": "N/A"
       }
-    ]
+    ],
+    "priceList": {
+      "hidden": true
+    }
   },
   {
     "slug": "bentley-residences-sunny-isles",
@@ -3627,7 +3675,10 @@
         "phone": "(305) 302-2441",
         "email": "atabraue@fir.com"
       }
-    ]
+    ],
+    "priceList": {
+      "hidden": true
+    }
   },
   {
     "slug": "blue-green-diamond-towers",
@@ -3660,7 +3711,10 @@
         "phone": "N/A",
         "email": "N/A"
       }
-    ]
+    ],
+    "priceList": {
+      "hidden": true
+    }
   },
   {
     "slug": "brickell-city-centre",
@@ -3698,7 +3752,10 @@
         "phone": "+1 (305) 371-2888",
         "email": "IvonneB@isgbcc.com"
       }
-    ]
+    ],
+    "priceList": {
+      "hidden": true
+    }
   },
   {
     "slug": "bristol-tower",
@@ -3731,7 +3788,10 @@
         "phone": "N/A",
         "email": "N/A"
       }
-    ]
+    ],
+    "priceList": {
+      "hidden": true
+    }
   },
   {
     "slug": "caribbean",
@@ -3764,7 +3824,10 @@
         "phone": "N/A",
         "email": "N/A"
       }
-    ]
+    ],
+    "priceList": {
+      "hidden": true
+    }
   },
   {
     "slug": "casa-bella-residences-miami",
@@ -3803,7 +3866,10 @@
         "email": "N/A"
       }
     ],
-    "projectLogo": "/images/logos/casa-bella-residences-miami.png"
+    "projectLogo": "/images/logos/casa-bella-residences-miami.png",
+    "priceList": {
+      "driveFileId": "1S3YvhrXJH3VES67qtzz18O7WmJmHC5aD"
+    }
   },
   {
     "slug": "cassia-coral-gables",
@@ -3878,7 +3944,10 @@
         "phone": "N/A",
         "email": "N/A"
       }
-    ]
+    ],
+    "priceList": {
+      "hidden": true
+    }
   },
   {
     "slug": "continuum-12000-sport-wellness-residences-miami",
@@ -4000,7 +4069,10 @@
         "phone": "N/A",
         "email": "N/A"
       }
-    ]
+    ],
+    "priceList": {
+      "externalUrl": "https://www.continummsouthbeach.com/for-sale.html"
+    }
   },
   {
     "slug": "delano-residences-hotel-miami",
@@ -4296,7 +4368,10 @@
         "phone": "+1 (305) 519-4004",
         "email": "diana@eightysevenpark.com"
       }
-    ]
+    ],
+    "priceList": {
+      "externalUrl": "https://www.eightysevenparkcondo.com/for-sale.html"
+    }
   },
   {
     "slug": "ella-miami-beach",
@@ -4410,7 +4485,10 @@
         "phone": "+1 (646) 707-1498",
         "email": "AncaMirescu@elyseemiami.com"
       }
-    ]
+    ],
+    "priceList": {
+      "hidden": true
+    }
   },
   {
     "slug": "epique-pelican-bay",
@@ -4485,7 +4563,10 @@
         "phone": "+1 (786) 859-8418",
         "email": "veronica@chateaugroup.net"
       }
-    ]
+    ],
+    "priceList": {
+      "externalUrl": "https://www.fendichateaumiami.com/for-sale.html"
+    }
   },
   {
     "slug": "five-park-miami-beach",
@@ -4608,7 +4689,10 @@
         "phone": "+1 (954) 258-0634",
         "email": "kgopaul@fortpartners.com"
       }
-    ]
+    ],
+    "priceList": {
+      "externalUrl": "https://fourseasonsresidencesfortlauderdale.nestcapitals.com/for-sale.html"
+    }
   },
   {
     "slug": "four-seasons-residences-las-vegas",
@@ -4643,7 +4727,10 @@
         "email": "craig@lasvegasprivateresidences.com"
       }
     ],
-    "projectLogo": "/images/logos/four-seasons-residences-las-vegas.png"
+    "projectLogo": "/images/logos/four-seasons-residences-las-vegas.png",
+    "priceList": {
+      "driveFileId": "1Q1nWflZ_dpk6NqXTm75Z5ouXeC5CNTND"
+    }
   },
   {
     "slug": "frida-kahlo-wynwood-residences",
@@ -4799,7 +4886,10 @@
         "phone": "N/A",
         "email": "N/A"
       }
-    ]
+    ],
+    "priceList": {
+      "hidden": true
+    }
   },
   {
     "slug": "grove-at-grand-bay",
@@ -4832,7 +4922,10 @@
         "phone": "N/A",
         "email": "N/A"
       }
-    ]
+    ],
+    "priceList": {
+      "externalUrl": "https://www.groveatgranbay.com/for-sale.html"
+    }
   },
   {
     "slug": "house-of-wellness-brickell",
@@ -4999,7 +5092,10 @@
         "phone": "N/A",
         "email": "N/A"
       }
-    ]
+    ],
+    "priceList": {
+      "hidden": true
+    }
   },
   {
     "slug": "jade-beach",
@@ -5032,7 +5128,10 @@
         "phone": "N/A",
         "email": "N/A"
       }
-    ]
+    ],
+    "priceList": {
+      "hidden": true
+    }
   },
   {
     "slug": "jade-ocean",
@@ -5065,7 +5164,10 @@
         "phone": "N/A",
         "email": "N/A"
       }
-    ]
+    ],
+    "priceList": {
+      "externalUrl": "https://www.jadeoceancondo.com/for-sale.html"
+    }
   },
   {
     "slug": "jade-signature",
@@ -5103,7 +5205,10 @@
         "phone": "+1 (305) 510-2166",
         "email": "egarcia@fortuneintlgroup.com"
       }
-    ]
+    ],
+    "priceList": {
+      "externalUrl": "https://www.jadesignatures.com/for-sale.html"
+    }
   },
   {
     "slug": "jem-residences",
@@ -5178,7 +5283,10 @@
         "phone": "+1 (305) 776-0369",
         "email": "mgomez@onesothebysrealty.com"
       }
-    ]
+    ],
+    "priceList": {
+      "hidden": true
+    }
   },
   {
     "slug": "la-baia-north-bay-harbor",
@@ -5254,7 +5362,10 @@
         "phone": "N/A",
         "email": "N/A"
       }
-    ]
+    ],
+    "priceList": {
+      "hidden": true
+    }
   },
   {
     "slug": "lofty-residences",
@@ -5502,7 +5613,10 @@
         "phone": "+1 (786) 223-4902",
         "email": "sprada@fir.com"
       }
-    ]
+    ],
+    "priceList": {
+      "hidden": true
+    }
   },
   {
     "slug": "monaco-yacht-club-residences",
@@ -5541,7 +5655,10 @@
         "phone": "+1 (786) 355-1124",
         "email": "bandretti@fortuneintlgroup.com"
       }
-    ]
+    ],
+    "priceList": {
+      "hidden": true
+    }
   },
   {
     "slug": "monad-terrace",
@@ -5574,7 +5691,10 @@
         "phone": "+1 (305) 926-5265",
         "email": "tracy.galya@elliman.com"
       }
-    ]
+    ],
+    "priceList": {
+      "hidden": true
+    }
   },
   {
     "slug": "murano-at-portofino",
@@ -5607,7 +5727,10 @@
         "phone": "N/A",
         "email": "N/A"
       }
-    ]
+    ],
+    "priceList": {
+      "hidden": true
+    }
   },
   {
     "slug": "murano-grande-at-portofino",
@@ -5640,7 +5763,10 @@
         "phone": "N/A",
         "email": "N/A"
       }
-    ]
+    ],
+    "priceList": {
+      "hidden": true
+    }
   },
   {
     "slug": "muse-residences",
@@ -5673,7 +5799,10 @@
         "phone": "+1 (786) 210-9595",
         "email": "sylviad@isgmuse.com"
       }
-    ]
+    ],
+    "priceList": {
+      "externalUrl": "https://www.museresidencesmiami.com/for-sale.html"
+    }
   },
   {
     "slug": "naples-beach-club-four-seasons",
@@ -5914,7 +6043,10 @@
         "phone": "(954) 232-7253",
         "email": "dhaines@imiliving.com"
       }
-    ]
+    ],
+    "priceList": {
+      "hidden": true
+    }
   },
   {
     "slug": "ocean-house-2",
@@ -5987,7 +6119,10 @@
         "phone": "(305) 799-5522",
         "email": "peretsn@gmail.com"
       }
-    ]
+    ],
+    "priceList": {
+      "hidden": true
+    }
   },
   {
     "slug": "ocean-terrace",
@@ -6065,7 +6200,10 @@
         "phone": "+1 (407) 222-9202",
         "email": "mruby@consultatiousa.com"
       }
-    ]
+    ],
+    "priceList": {
+      "externalUrl": "https://www.oceanaballlharbour.com/for-sale.html"
+    }
   },
   {
     "slug": "oceana-key-biscayne",
@@ -6098,7 +6236,10 @@
         "phone": "N/A",
         "email": "N/A"
       }
-    ]
+    ],
+    "priceList": {
+      "externalUrl": "https://www.oceanakeybisscayne.com/for-sale.html"
+    }
   },
   {
     "slug": "oceanside",
@@ -6131,7 +6272,10 @@
         "phone": "N/A",
         "email": "N/A"
       }
-    ]
+    ],
+    "priceList": {
+      "hidden": true
+    }
   },
   {
     "slug": "okan-tower",
@@ -6334,7 +6478,10 @@
         "phone": "N/A",
         "email": "N/A"
       }
-    ]
+    ],
+    "priceList": {
+      "hidden": true
+    }
   },
   {
     "slug": "one-park-tower-by-turnberry",
@@ -6410,7 +6557,10 @@
         "phone": "+1 (786) 853-8484",
         "email": "anna@annasherrill.com"
       }
-    ]
+    ],
+    "priceList": {
+      "externalUrl": "https://www.1000museumiami.com/for-sale.html"
+    }
   },
   {
     "slug": "opus-coconut-grove",
@@ -6613,7 +6763,10 @@
         "phone": "+1 (954) 554-8391",
         "email": "kkonsorska@palazzodellaluna.com"
       }
-    ]
+    ],
+    "priceList": {
+      "externalUrl": "https://www.palazzodellsol.com/for-sale.html"
+    }
   },
   {
     "slug": "palazzo-della-luna",
@@ -6646,7 +6799,10 @@
         "phone": "+1 (954) 554-8391",
         "email": "kkonsorska@palazzodellaluna.com"
       }
-    ]
+    ],
+    "priceList": {
+      "externalUrl": "https://www.palazzoodellaluna.com/for-sale.html"
+    }
   },
   {
     "slug": "palma-miami-beach",
@@ -6722,7 +6878,10 @@
         "phone": "+1 (954) 224-9336",
         "email": "agata@owpbrokers.com"
       }
-    ]
+    ],
+    "priceList": {
+      "hidden": true
+    }
   },
   {
     "slug": "park-grove",
@@ -6755,7 +6914,10 @@
         "phone": "+1 (407) 760-7103",
         "email": "rcanao@terrarealtyllc.com"
       }
-    ]
+    ],
+    "priceList": {
+      "externalUrl": "https://www.parkgrovecondomiami.com/for-sale.html"
+    }
   },
   {
     "slug": "parque-towers",
@@ -6793,7 +6955,10 @@
         "phone": "+1 (305) 934-7963",
         "email": "rmicheloni@j-milton.com"
       }
-    ]
+    ],
+    "priceList": {
+      "hidden": true
+    }
   },
   {
     "slug": "pier-sixty-six-fort-lauderdale",
@@ -6870,7 +7035,10 @@
         "phone": "+1 (305) 988-4351",
         "email": "melissa@dezer.com"
       }
-    ]
+    ],
+    "priceList": {
+      "hidden": true
+    }
   },
   {
     "slug": "portofino-tower",
@@ -6903,7 +7071,10 @@
         "phone": "N/A",
         "email": "N/A"
       }
-    ]
+    ],
+    "priceList": {
+      "hidden": true
+    }
   },
   {
     "slug": "prive-island",
@@ -6936,7 +7107,10 @@
         "phone": "+1 (305) 608-0797",
         "email": "carlos@mypriveisland.com"
       }
-    ]
+    ],
+    "priceList": {
+      "hidden": true
+    }
   },
   {
     "slug": "regalia",
@@ -6969,7 +7143,10 @@
         "phone": "N/A",
         "email": "N/A"
       }
-    ]
+    ],
+    "priceList": {
+      "externalUrl": "https://www.regaliaresidenses.com/for-sale.html"
+    }
   },
   {
     "slug": "river-district-14-miami",
@@ -7162,7 +7339,10 @@
         "phone": "N/A",
         "email": "N/A"
       }
-    ]
+    ],
+    "priceList": {
+      "externalUrl": "https://setaimiamibeach.nestcapitals.com/for-sale.html"
+    }
   },
   {
     "slug": "shell-bay-by-auberge",
@@ -7364,7 +7544,10 @@
         "phone": "N/A",
         "email": "N/A"
       }
-    ]
+    ],
+    "priceList": {
+      "hidden": true
+    }
   },
   {
     "slug": "st-regis-residences-bal-harbour",
@@ -7397,7 +7580,10 @@
         "phone": "N/A",
         "email": "N/A"
       }
-    ]
+    ],
+    "priceList": {
+      "hidden": true
+    }
   },
   {
     "slug": "surf-row",
@@ -7512,7 +7698,10 @@
         "phone": "N/A",
         "email": "N/A"
       }
-    ]
+    ],
+    "priceList": {
+      "hidden": true
+    }
   },
   {
     "slug": "the-cove-residences",
@@ -7588,7 +7777,10 @@
         "phone": "(305) 924-0311",
         "email": "yansy@estatesatacqualina.com"
       }
-    ]
+    ],
+    "priceList": {
+      "externalUrl": "https://www.estatessatacqualina.com/for-sale.html"
+    }
   },
   {
     "slug": "the-fairchild",
@@ -7621,7 +7813,10 @@
         "phone": "(305) 342-1623",
         "email": "riley@rileysmithgroup.com"
       }
-    ]
+    ],
+    "priceList": {
+      "hidden": true
+    }
   },
   {
     "slug": "the-george-residences-coral-gables",
@@ -7769,7 +7964,10 @@
         "phone": "N/A",
         "email": "N/A"
       }
-    ]
+    ],
+    "priceList": {
+      "hidden": true
+    }
   },
   {
     "slug": "the-ocean-club-four-seasons-residences-bahamas",
@@ -7845,7 +8043,10 @@
         "phone": "N/A",
         "email": "N/A"
       }
-    ]
+    ],
+    "priceList": {
+      "hidden": true
+    }
   },
   {
     "slug": "the-residences-at-mandarin-oriental-boca-raton",
@@ -7963,7 +8164,10 @@
         "phone": "N/A",
         "email": "N/A"
       }
-    ]
+    ],
+    "priceList": {
+      "hidden": true
+    }
   },
   {
     "slug": "the-ritz-carlton-residences-bal-harbour",
@@ -7996,7 +8200,10 @@
         "phone": "N/A",
         "email": "N/A"
       }
-    ]
+    ],
+    "priceList": {
+      "hidden": true
+    }
   },
   {
     "slug": "the-ritz-carlton-residences-naples",
@@ -8116,7 +8323,10 @@
         "phone": "+1 (786) 325-9888",
         "email": "Dayana@theresidencessunnyislesbeach.com"
       }
-    ]
+    ],
+    "priceList": {
+      "externalUrl": "https://ritzcarltonsunnyisles.nestcapitals.com/for-sale.html"
+    }
   },
   {
     "slug": "the-roads-townhomes-brickell",
@@ -8219,7 +8429,10 @@
         "phone": "+1 (305) 933-3000",
         "email": "wictor@arraes.net"
       }
-    ]
+    ],
+    "priceList": {
+      "externalUrl": "https://www.turnberryoceansclub.com/for-sale.html"
+    }
   },
   {
     "slug": "turnberry-ocean-colony",
@@ -8252,7 +8465,10 @@
         "phone": "N/A",
         "email": "N/A"
       }
-    ]
+    ],
+    "priceList": {
+      "hidden": true
+    }
   },
   {
     "slug": "twenty-nine-indian-creek",
@@ -8457,7 +8673,10 @@
         "phone": "+1 (786) 570-0756",
         "email": "bilbaopatsy@gmail.com"
       }
-    ]
+    ],
+    "priceList": {
+      "hidden": true
+    }
   },
   {
     "slug": "w-south-beach-residences",
@@ -8490,7 +8709,10 @@
         "phone": "N/A",
         "email": "N/A"
       }
-    ]
+    ],
+    "priceList": {
+      "hidden": true
+    }
   },
   {
     "slug": "waldorf-astoria-residences-downtown-miami",

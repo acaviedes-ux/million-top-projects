@@ -250,33 +250,35 @@
     var frag = document.createDocumentFragment();
 
     // ── 1. PRICE LIST ────────────────────────────────────────
-    var plSec = makeSection('price-list');
-    var plHeading = (d.priceList && d.priceList.heading) ? d.priceList.heading : 'PRICE LIST';
-    plSec.appendChild(sectionHeading(plHeading));
-    if (d.priceList && d.priceList.createdAt) {
-      plSec.appendChild(el('p', 'pl-date', d.priceList.createdAt));
+    if (!d.priceList || !d.priceList.hidden) {
+      var plSec = makeSection('price-list');
+      var plHeading = (d.priceList && d.priceList.heading) ? d.priceList.heading : 'PRICE LIST';
+      plSec.appendChild(sectionHeading(plHeading));
+      if (d.priceList && d.priceList.createdAt) {
+        plSec.appendChild(el('p', 'pl-date', d.priceList.createdAt));
+      }
+      if (d.priceList && d.priceList.driveFileId) {
+        var iframe = document.createElement('iframe');
+        iframe.src = 'https://drive.google.com/file/d/' + d.priceList.driveFileId + '/preview';
+        iframe.className = 'pl-iframe';
+        iframe.setAttribute('allow', 'autoplay');
+        iframe.setAttribute('frameborder', '0');
+        plSec.appendChild(iframe);
+      } else if (d.priceList && d.priceList.externalUrl) {
+        var extBtn = el('a', 'pl-ext-btn', 'View All Units for Sale');
+        extBtn.href = d.priceList.externalUrl;
+        extBtn.target = '_blank';
+        extBtn.rel = 'noopener noreferrer';
+        plSec.appendChild(extBtn);
+      } else if (d.priceList && d.priceList.message) {
+        plSec.appendChild(el('p', 'pl-message', d.priceList.message));
+      } else if (!d.priceList || !d.priceList.heading) {
+        var plList = el('div', 'doc-list');
+        plList.appendChild(docItem('Price List', null));
+        plSec.appendChild(plList);
+      }
+      frag.appendChild(plSec);
     }
-    if (d.priceList && d.priceList.driveFileId) {
-      var iframe = document.createElement('iframe');
-      iframe.src = 'https://drive.google.com/file/d/' + d.priceList.driveFileId + '/preview';
-      iframe.className = 'pl-iframe';
-      iframe.setAttribute('allow', 'autoplay');
-      iframe.setAttribute('frameborder', '0');
-      plSec.appendChild(iframe);
-    } else if (d.priceList && d.priceList.externalUrl) {
-      var extBtn = el('a', 'pl-ext-btn', 'View All Units for Sale');
-      extBtn.href = d.priceList.externalUrl;
-      extBtn.target = '_blank';
-      extBtn.rel = 'noopener noreferrer';
-      plSec.appendChild(extBtn);
-    } else if (d.priceList && d.priceList.message) {
-      plSec.appendChild(el('p', 'pl-message', d.priceList.message));
-    } else if (!d.priceList || !d.priceList.heading) {
-      var plList = el('div', 'doc-list');
-      plList.appendChild(docItem('Price List', null));
-      plSec.appendChild(plList);
-    }
-    frag.appendChild(plSec);
 
     // ── 2. ADDRESS ───────────────────────────────────────────
     if (d.address) {
