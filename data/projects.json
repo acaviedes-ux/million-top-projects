@@ -53,7 +53,7 @@
     ],
     "theBuilding": "A modern Brickell landmark marrying bay‑oriented architecture with Nobu's understated elegance.",
     "section": "Top Projects",
-    "projectLogo": "/images/logos/619-residences.svg",
+    "projectLogo": "/images/logos/619-residences.png",
     "priceList": {
       "driveFileId": "181AgGdoTFE3IX8vJIBIBD6CmU9rczXpt",
       "createdAt": "As of April, 20 of 2026"
@@ -989,7 +989,7 @@
       "driveFileId": "1dAYwcPD66wkFU8gAOBQrVqog0L0vpJvT",
       "createdAt": "As of April, 2 of 2026"
     },
-    "projectLogo": "/images/logos/nora-house.svg"
+    "projectLogo": "/images/logos/nora-house.png"
   },
   {
     "slug": "ocean-house",
@@ -1551,7 +1551,7 @@
     "priceList": {
       "message": "Check Availability on MLS"
     },
-    "projectLogo": "/images/logos/the-bristol.svg"
+    "projectLogo": "/images/logos/the-bristol.png"
   },
   {
     "slug": "the-delmore",
