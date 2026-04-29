@@ -563,17 +563,27 @@ img { display: block; max-width: 100%; }
   pointer-events: none;
 }
 
+/* White card wrapper — background is NOT filtered */
+.hero-logo-card {
+  background: rgba(255, 255, 255, 0.92);
+  padding: 18px 32px;
+  border-radius: 4px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.35);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* filter only on the <img> so brightness(0) turns ANY artwork black
+   without affecting the parent card's white background */
 .hero-logo-img {
   max-height: 130px;
   max-width: min(360px, 55vw);
   width: auto;
   height: auto;
   object-fit: contain;
-  /* White card so any logo (SVG, PNG, JPG) reads on any hero image */
-  background: rgba(255, 255, 255, 0.92);
-  padding: 18px 32px;
-  border-radius: 4px;
-  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.35);
+  display: block;
+  filter: brightness(0);
 }
 
 /* ── NAV PROJECT LOGO ────────────────────────── */
