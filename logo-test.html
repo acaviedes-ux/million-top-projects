@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Logo Test</title>
+<style>
+body { margin: 0; background: #555; font-family: sans-serif; padding: 20px; }
+h3 { color: white; margin: 20px 0 8px; }
+
+/* ── From style.css ── */
+.hero-logo-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  background: url('/images/renders/the-bristol.jpg') center/cover;
+  margin-bottom: 30px;
+}
+.hero-overlay {
+  position: absolute; inset: 0;
+  background: rgba(0,0,0,0.25);
+}
+.hero-logo-card {
+  position: relative;
+  z-index: 2;
+  background: rgba(255, 255, 255, 0.92);
+  padding: 18px 32px;
+  border-radius: 4px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.35);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero-logo-img {
+  max-height: 130px;
+  max-width: min(360px, 55vw);
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  filter: brightness(0);
+}
+.nav-logo {
+  height: 26px;
+  filter: brightness(0) invert(1);
+}
+</style>
+</head>
+<body>
+<h3>the-bristol.svg (attribute fills, #1a1a1a)</h3>
+<div class="hero-logo-wrap">
+  <div class="hero-overlay"></div>
+  <div class="hero-logo-card">
+    <img class="hero-logo-img" src="/images/logos/the-bristol.svg">
+  </div>
+</div>
+
+<h3>nora-house.svg</h3>
+<div class="hero-logo-wrap" style="background: url('/images/renders/nora-house.jpg') center/cover">
+  <div class="hero-overlay"></div>
+  <div class="hero-logo-card">
+    <img class="hero-logo-img" src="/images/logos/nora-house.svg">
+  </div>
+</div>
+
+<h3>619-residences.svg (fill=black)</h3>
+<div class="hero-logo-wrap" style="background: url('/images/renders/619-residences.jpg') center/cover">
+  <div class="hero-overlay"></div>
+  <div class="hero-logo-card">
+    <img class="hero-logo-img" src="/images/logos/619-residences.svg">
+  </div>
+</div>
+
+<h3>faena-house.svg (.st0 CSS fill)</h3>
+<div class="hero-logo-wrap" style="background: #1a1a2e">
+  <div class="hero-overlay"></div>
+  <div class="hero-logo-card">
+    <img class="hero-logo-img" src="/images/logos/faena-house.svg">
+  </div>
+</div>
+
+<h3>Nav logos (brightness(0) invert(1) — white on dark)</h3>
+<div style="background:#000; padding:16px; display:flex; gap:32px; align-items:center">
+  <img class="nav-logo" src="/images/logos/the-bristol.svg">
+  <img class="nav-logo" src="/images/logos/nora-house.svg">
+  <img class="nav-logo" src="/images/logos/faena-house.svg">
+</div>
+</body>
+</html>
