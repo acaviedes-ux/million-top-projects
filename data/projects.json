@@ -430,7 +430,8 @@
     "contact": null,
     "priceList": {
       "heading": "NO UNITS AVAILABLE"
-    }
+    },
+    "projectLogo": "/images/logos/casa-cipriani.svg"
   },
   {
     "slug": "cipriani-residences",
@@ -642,7 +643,8 @@
     ],
     "priceList": {
       "externalUrl": "https://www.faenahousemiami.com/for-sale.html"
-    }
+    },
+    "projectLogo": "/images/logos/faena-house.svg"
   },
   {
     "slug": "faena-residences-downtown-miami",
@@ -902,7 +904,8 @@
     ],
     "priceList": {
       "externalUrl": "https://www.mrcresidencemiami.com/for-sale.html"
-    }
+    },
+    "projectLogo": "/images/logos/mr-c-residences-tigertail.svg"
   },
   {
     "slug": "mr-c-residences-west-palm-beach",
@@ -985,7 +988,8 @@
     "priceList": {
       "driveFileId": "1dAYwcPD66wkFU8gAOBQrVqog0L0vpJvT",
       "createdAt": "As of April, 2 of 2026"
-    }
+    },
+    "projectLogo": "/images/logos/nora-house.svg"
   },
   {
     "slug": "ocean-house",
@@ -1546,7 +1550,8 @@
     ],
     "priceList": {
       "message": "Check Availability on MLS"
-    }
+    },
+    "projectLogo": "/images/logos/the-bristol.svg"
   },
   {
     "slug": "the-delmore",
@@ -1884,7 +1889,8 @@
     ],
     "priceList": {
       "externalUrl": "https://ritzcarltonresidencesmiamibeach.nestcapitals.com/for-sale.html"
-    }
+    },
+    "projectLogo": "/images/logos/ritz-carlton-miami-beach.svg"
   },
   {
     "slug": "ritz-carlton-palm-beach-gardens",
@@ -2050,7 +2056,8 @@
     ],
     "priceList": {
       "externalUrl": "https://www.thesurfclubs.com/for-sale.html"
-    }
+    },
+    "projectLogo": "/images/logos/surf-club-four-seasons.svg"
   },
   {
     "slug": "the-village-coral-gables",
@@ -2471,7 +2478,8 @@
     ],
     "priceList": {
       "hidden": true
-    }
+    },
+    "projectLogo": "/images/logos/1-hotel-homes.svg"
   },
   {
     "slug": "123-ocean-palm-beach-shores",
@@ -2586,7 +2594,8 @@
     ],
     "priceList": {
       "externalUrl": "https://www.2000oceaninhallandale.com/for-sale.html"
-    }
+    },
+    "projectLogo": "/images/logos/2000-ocean.svg"
   },
   {
     "slug": "2200-brickell",
@@ -2698,7 +2707,8 @@
     ],
     "priceList": {
       "hidden": true
-    }
+    },
+    "projectLogo": "/images/logos/3200-south-ocean.svg"
   },
   {
     "slug": "321-ocean",
@@ -2734,7 +2744,8 @@
     ],
     "priceList": {
       "hidden": true
-    }
+    },
+    "projectLogo": "/images/logos/321-ocean.svg"
   },
   {
     "slug": "5000-north-ocean",
@@ -2772,7 +2783,8 @@
     ],
     "priceList": {
       "hidden": true
-    }
+    },
+    "projectLogo": "/images/logos/5000-north-ocean.svg"
   },
   {
     "slug": "57-ocean",
@@ -2808,7 +2820,8 @@
     ],
     "priceList": {
       "externalUrl": "https://www.57oceancondomiami.com/for-sale.html"
-    }
+    },
+    "projectLogo": "/images/logos/57-ocean.svg"
   },
   {
     "slug": "72-park",
@@ -2923,7 +2936,8 @@
     ],
     "priceList": {
       "hidden": true
-    }
+    },
+    "projectLogo": "/images/logos/adagio-fort-lauderdale.svg"
   },
   {
     "slug": "alana-bay-harbor-islands",
@@ -3127,7 +3141,8 @@
     ],
     "priceList": {
       "externalUrl": "https://www.apogeecondosouthbeach.com/for-sale.html"
-    }
+    },
+    "projectLogo": "/images/logos/apogee.svg"
   },
   {
     "slug": "arbor-coconut-grove",
@@ -3205,7 +3220,8 @@
     "priceList": {
       "driveFileId": "1e-S1forYtBUOuoahx6Oavy5eKzIu-iTt",
       "createdAt": "As of December, 12 of 2025"
-    }
+    },
+    "projectLogo": "/images/logos/armani-casa.svg"
   },
   {
     "slug": "arte-surfside",
@@ -3241,7 +3257,8 @@
     ],
     "priceList": {
       "hidden": true
-    }
+    },
+    "projectLogo": "/images/logos/arte-surfside.svg"
   },
   {
     "slug": "asia-brickell",
@@ -3277,7 +3294,8 @@
     ],
     "priceList": {
       "hidden": true
-    }
+    },
+    "projectLogo": "/images/logos/asia-brickell.svg"
   },
   {
     "slug": "aston-martin-residences",
@@ -3318,7 +3336,8 @@
     ],
     "priceList": {
       "externalUrl": "https://astonmartinresidencesdowntownmiami.nestcapitals.com/for-sale.html"
-    }
+    },
+    "projectLogo": "/images/logos/aston-martin-residences.svg"
   },
   {
     "slug": "auberge-beach-residences-spa-fort-lauderdale",
@@ -3354,7 +3373,8 @@
     ],
     "priceList": {
       "externalUrl": "https://www.aubergebeachsresidences.com/for-sale.html"
-    }
+    },
+    "projectLogo": "/images/logos/auberge-beach-residences-spa-fort-lauderdale.svg"
   },
   {
     "slug": "aurora-sunny-isles-beach",
@@ -3392,7 +3412,8 @@
     ],
     "priceList": {
       "hidden": true
-    }
+    },
+    "projectLogo": "/images/logos/aurora-sunny-isles-beach.svg"
   },
   {
     "slug": "baccarat-residences",
@@ -3474,7 +3495,8 @@
     ],
     "priceList": {
       "hidden": true
-    }
+    },
+    "projectLogo": "/images/logos/bal-harbour-tower.svg"
   },
   {
     "slug": "banyan-tree-bimini-bahamas",
@@ -3558,7 +3580,8 @@
     ],
     "priceList": {
       "hidden": true
-    }
+    },
+    "projectLogo": "/images/logos/bayview-village.svg"
   },
   {
     "slug": "beach-house-8",
@@ -3594,7 +3617,8 @@
     ],
     "priceList": {
       "hidden": true
-    }
+    },
+    "projectLogo": "/images/logos/beach-house-8.svg"
   },
   {
     "slug": "bentley-residences-sunny-isles",
@@ -3678,7 +3702,8 @@
     ],
     "priceList": {
       "hidden": true
-    }
+    },
+    "projectLogo": "/images/logos/biltmore-row.svg"
   },
   {
     "slug": "blue-green-diamond-towers",
@@ -3714,7 +3739,8 @@
     ],
     "priceList": {
       "hidden": true
-    }
+    },
+    "projectLogo": "/images/logos/blue-green-diamond-towers.svg"
   },
   {
     "slug": "brickell-city-centre",
@@ -3755,7 +3781,8 @@
     ],
     "priceList": {
       "hidden": true
-    }
+    },
+    "projectLogo": "/images/logos/brickell-city-centre.svg"
   },
   {
     "slug": "bristol-tower",
@@ -3791,7 +3818,8 @@
     ],
     "priceList": {
       "hidden": true
-    }
+    },
+    "projectLogo": "/images/logos/bristol-tower.svg"
   },
   {
     "slug": "caribbean",
@@ -3827,7 +3855,8 @@
     ],
     "priceList": {
       "hidden": true
-    }
+    },
+    "projectLogo": "/images/logos/caribbean.svg"
   },
   {
     "slug": "casa-bella-residences-miami",
@@ -3947,7 +3976,8 @@
     ],
     "priceList": {
       "hidden": true
-    }
+    },
+    "projectLogo": "/images/logos/chateau-beach-residences.svg"
   },
   {
     "slug": "continuum-12000-sport-wellness-residences-miami",
@@ -4072,7 +4102,8 @@
     ],
     "priceList": {
       "externalUrl": "https://www.continummsouthbeach.com/for-sale.html"
-    }
+    },
+    "projectLogo": "/images/logos/continuum-south-beach.svg"
   },
   {
     "slug": "delano-residences-hotel-miami",
@@ -4371,7 +4402,8 @@
     ],
     "priceList": {
       "externalUrl": "https://www.eightysevenparkcondo.com/for-sale.html"
-    }
+    },
+    "projectLogo": "/images/logos/eighty-seven-park.svg"
   },
   {
     "slug": "ella-miami-beach",
@@ -4488,7 +4520,8 @@
     ],
     "priceList": {
       "hidden": true
-    }
+    },
+    "projectLogo": "/images/logos/elysee-miami.svg"
   },
   {
     "slug": "epique-pelican-bay",
@@ -4566,7 +4599,8 @@
     ],
     "priceList": {
       "externalUrl": "https://www.fendichateaumiami.com/for-sale.html"
-    }
+    },
+    "projectLogo": "/images/logos/fendi-chateau.svg"
   },
   {
     "slug": "five-park-miami-beach",
@@ -4692,7 +4726,8 @@
     ],
     "priceList": {
       "externalUrl": "https://fourseasonsresidencesfortlauderdale.nestcapitals.com/for-sale.html"
-    }
+    },
+    "projectLogo": "/images/logos/four-seasons-hotel-private-residences.svg"
   },
   {
     "slug": "four-seasons-residences-las-vegas",
@@ -4889,7 +4924,8 @@
     ],
     "priceList": {
       "hidden": true
-    }
+    },
+    "projectLogo": "/images/logos/glass-miami-beach.svg"
   },
   {
     "slug": "grove-at-grand-bay",
@@ -4925,7 +4961,8 @@
     ],
     "priceList": {
       "externalUrl": "https://www.groveatgranbay.com/for-sale.html"
-    }
+    },
+    "projectLogo": "/images/logos/grove-at-grand-bay.svg"
   },
   {
     "slug": "house-of-wellness-brickell",
@@ -5095,7 +5132,8 @@
     ],
     "priceList": {
       "hidden": true
-    }
+    },
+    "projectLogo": "/images/logos/il-villaggio.svg"
   },
   {
     "slug": "jade-beach",
@@ -5131,7 +5169,8 @@
     ],
     "priceList": {
       "hidden": true
-    }
+    },
+    "projectLogo": "/images/logos/jade-beach.svg"
   },
   {
     "slug": "jade-ocean",
@@ -5167,7 +5206,8 @@
     ],
     "priceList": {
       "externalUrl": "https://www.jadeoceancondo.com/for-sale.html"
-    }
+    },
+    "projectLogo": "/images/logos/jade-ocean.svg"
   },
   {
     "slug": "jade-signature",
@@ -5208,7 +5248,8 @@
     ],
     "priceList": {
       "externalUrl": "https://www.jadesignatures.com/for-sale.html"
-    }
+    },
+    "projectLogo": "/images/logos/jade-signature.svg"
   },
   {
     "slug": "jem-residences",
@@ -5286,7 +5327,8 @@
     ],
     "priceList": {
       "hidden": true
-    }
+    },
+    "projectLogo": "/images/logos/l-atelier.svg"
   },
   {
     "slug": "la-baia-north-bay-harbor",
@@ -5365,7 +5407,8 @@
     ],
     "priceList": {
       "hidden": true
-    }
+    },
+    "projectLogo": "/images/logos/la-santa-maria.svg"
   },
   {
     "slug": "lofty-residences",
@@ -5616,7 +5659,8 @@
     ],
     "priceList": {
       "hidden": true
-    }
+    },
+    "projectLogo": "/images/logos/missoni-baia.svg"
   },
   {
     "slug": "monaco-yacht-club-residences",
@@ -5658,7 +5702,8 @@
     ],
     "priceList": {
       "hidden": true
-    }
+    },
+    "projectLogo": "/images/logos/monaco-yacht-club-residences.svg"
   },
   {
     "slug": "monad-terrace",
@@ -5694,7 +5739,8 @@
     ],
     "priceList": {
       "hidden": true
-    }
+    },
+    "projectLogo": "/images/logos/monad-terrace.svg"
   },
   {
     "slug": "murano-at-portofino",
@@ -5730,7 +5776,8 @@
     ],
     "priceList": {
       "hidden": true
-    }
+    },
+    "projectLogo": "/images/logos/murano-at-portofino.svg"
   },
   {
     "slug": "murano-grande-at-portofino",
@@ -5766,7 +5813,8 @@
     ],
     "priceList": {
       "hidden": true
-    }
+    },
+    "projectLogo": "/images/logos/murano-grande-at-portofino.svg"
   },
   {
     "slug": "muse-residences",
@@ -5802,7 +5850,8 @@
     ],
     "priceList": {
       "externalUrl": "https://www.museresidencesmiami.com/for-sale.html"
-    }
+    },
+    "projectLogo": "/images/logos/muse-residences.svg"
   },
   {
     "slug": "naples-beach-club-four-seasons",
@@ -6046,7 +6095,8 @@
     ],
     "priceList": {
       "hidden": true
-    }
+    },
+    "projectLogo": "/images/logos/ocean-delray.svg"
   },
   {
     "slug": "ocean-house-2",
@@ -6083,7 +6133,8 @@
     "priceList": {
       "driveFileId": "1BIj-iaVtJIbw-TDJvwIMfsJ_PbuQ-t3-",
       "createdAt": "As of April, 1 of 2026"
-    }
+    },
+    "projectLogo": "/images/logos/ocean-house-2.svg"
   },
   {
     "slug": "ocean-park",
@@ -6122,7 +6173,8 @@
     ],
     "priceList": {
       "hidden": true
-    }
+    },
+    "projectLogo": "/images/logos/ocean-park.svg"
   },
   {
     "slug": "ocean-terrace",
@@ -6203,7 +6255,8 @@
     ],
     "priceList": {
       "externalUrl": "https://www.oceanaballlharbour.com/for-sale.html"
-    }
+    },
+    "projectLogo": "/images/logos/oceana-bal-harbour.svg"
   },
   {
     "slug": "oceana-key-biscayne",
@@ -6239,7 +6292,8 @@
     ],
     "priceList": {
       "externalUrl": "https://www.oceanakeybisscayne.com/for-sale.html"
-    }
+    },
+    "projectLogo": "/images/logos/oceana-key-biscayne.svg"
   },
   {
     "slug": "oceanside",
@@ -6275,7 +6329,8 @@
     ],
     "priceList": {
       "hidden": true
-    }
+    },
+    "projectLogo": "/images/logos/oceanside.svg"
   },
   {
     "slug": "okan-tower",
@@ -6481,7 +6536,8 @@
     ],
     "priceList": {
       "hidden": true
-    }
+    },
+    "projectLogo": "/images/logos/one-ocean.svg"
   },
   {
     "slug": "one-park-tower-by-turnberry",
@@ -6560,7 +6616,8 @@
     ],
     "priceList": {
       "externalUrl": "https://www.1000museumiami.com/for-sale.html"
-    }
+    },
+    "projectLogo": "/images/logos/one-thousand-museum.svg"
   },
   {
     "slug": "opus-coconut-grove",
@@ -6766,7 +6823,8 @@
     ],
     "priceList": {
       "externalUrl": "https://www.palazzodellsol.com/for-sale.html"
-    }
+    },
+    "projectLogo": "/images/logos/palazzo-del-sol.svg"
   },
   {
     "slug": "palazzo-della-luna",
@@ -6802,7 +6860,8 @@
     ],
     "priceList": {
       "externalUrl": "https://www.palazzoodellaluna.com/for-sale.html"
-    }
+    },
+    "projectLogo": "/images/logos/palazzo-della-luna.svg"
   },
   {
     "slug": "palma-miami-beach",
@@ -6881,7 +6940,8 @@
     ],
     "priceList": {
       "hidden": true
-    }
+    },
+    "projectLogo": "/images/logos/paramount-fort-lauderdale-beach.svg"
   },
   {
     "slug": "park-grove",
@@ -6917,7 +6977,8 @@
     ],
     "priceList": {
       "externalUrl": "https://www.parkgrovecondomiami.com/for-sale.html"
-    }
+    },
+    "projectLogo": "/images/logos/park-grove.svg"
   },
   {
     "slug": "parque-towers",
@@ -6958,7 +7019,8 @@
     ],
     "priceList": {
       "hidden": true
-    }
+    },
+    "projectLogo": "/images/logos/parque-towers.svg"
   },
   {
     "slug": "pier-sixty-six-fort-lauderdale",
@@ -7038,7 +7100,8 @@
     ],
     "priceList": {
       "hidden": true
-    }
+    },
+    "projectLogo": "/images/logos/porsche-design-tower.svg"
   },
   {
     "slug": "portofino-tower",
@@ -7074,7 +7137,8 @@
     ],
     "priceList": {
       "hidden": true
-    }
+    },
+    "projectLogo": "/images/logos/portofino-tower.svg"
   },
   {
     "slug": "prive-island",
@@ -7110,7 +7174,8 @@
     ],
     "priceList": {
       "hidden": true
-    }
+    },
+    "projectLogo": "/images/logos/prive-island.svg"
   },
   {
     "slug": "regalia",
@@ -7146,7 +7211,8 @@
     ],
     "priceList": {
       "externalUrl": "https://www.regaliaresidenses.com/for-sale.html"
-    }
+    },
+    "projectLogo": "/images/logos/regalia.svg"
   },
   {
     "slug": "river-district-14-miami",
@@ -7342,7 +7408,8 @@
     ],
     "priceList": {
       "externalUrl": "https://setaimiamibeach.nestcapitals.com/for-sale.html"
-    }
+    },
+    "projectLogo": "/images/logos/setai-residences.svg"
   },
   {
     "slug": "shell-bay-by-auberge",
@@ -7547,7 +7614,8 @@
     ],
     "priceList": {
       "hidden": true
-    }
+    },
+    "projectLogo": "/images/logos/south-pointe-towers.svg"
   },
   {
     "slug": "st-regis-residences-bal-harbour",
@@ -7583,7 +7651,8 @@
     ],
     "priceList": {
       "hidden": true
-    }
+    },
+    "projectLogo": "/images/logos/st-regis-residences-bal-harbour.svg"
   },
   {
     "slug": "surf-row",
@@ -7701,7 +7770,8 @@
     ],
     "priceList": {
       "hidden": true
-    }
+    },
+    "projectLogo": "/images/logos/the-bath-club.svg"
   },
   {
     "slug": "the-cove-residences",
@@ -7780,7 +7850,8 @@
     ],
     "priceList": {
       "externalUrl": "https://www.estatessatacqualina.com/for-sale.html"
-    }
+    },
+    "projectLogo": "/images/logos/the-estates-at-acqualina.svg"
   },
   {
     "slug": "the-fairchild",
@@ -7816,7 +7887,8 @@
     ],
     "priceList": {
       "hidden": true
-    }
+    },
+    "projectLogo": "/images/logos/the-fairchild.svg"
   },
   {
     "slug": "the-george-residences-coral-gables",
@@ -7967,7 +8039,8 @@
     ],
     "priceList": {
       "hidden": true
-    }
+    },
+    "projectLogo": "/images/logos/the-mansions-at-acqualina.svg"
   },
   {
     "slug": "the-ocean-club-four-seasons-residences-bahamas",
@@ -8046,7 +8119,8 @@
     ],
     "priceList": {
       "hidden": true
-    }
+    },
+    "projectLogo": "/images/logos/the-palace-at-bal-harbour.svg"
   },
   {
     "slug": "the-residences-at-mandarin-oriental-boca-raton",
@@ -8167,7 +8241,8 @@
     ],
     "priceList": {
       "hidden": true
-    }
+    },
+    "projectLogo": "/images/logos/the-residences-at-the-miami-beach-edition.svg"
   },
   {
     "slug": "the-ritz-carlton-residences-bal-harbour",
@@ -8203,7 +8278,8 @@
     ],
     "priceList": {
       "hidden": true
-    }
+    },
+    "projectLogo": "/images/logos/the-ritz-carlton-residences-bal-harbour.svg"
   },
   {
     "slug": "the-ritz-carlton-residences-naples",
@@ -8326,7 +8402,8 @@
     ],
     "priceList": {
       "externalUrl": "https://ritzcarltonsunnyisles.nestcapitals.com/for-sale.html"
-    }
+    },
+    "projectLogo": "/images/logos/the-ritz-carlton-residences-sunny-isles.svg"
   },
   {
     "slug": "the-roads-townhomes-brickell",
@@ -8432,7 +8509,8 @@
     ],
     "priceList": {
       "externalUrl": "https://www.turnberryoceansclub.com/for-sale.html"
-    }
+    },
+    "projectLogo": "/images/logos/turnberry-ocean-club.svg"
   },
   {
     "slug": "turnberry-ocean-colony",
@@ -8468,7 +8546,8 @@
     ],
     "priceList": {
       "hidden": true
-    }
+    },
+    "projectLogo": "/images/logos/turnberry-ocean-colony.svg"
   },
   {
     "slug": "twenty-nine-indian-creek",
@@ -8676,7 +8755,8 @@
     ],
     "priceList": {
       "hidden": true
-    }
+    },
+    "projectLogo": "/images/logos/villa-valencia.svg"
   },
   {
     "slug": "w-south-beach-residences",
@@ -8712,7 +8792,8 @@
     ],
     "priceList": {
       "hidden": true
-    }
+    },
+    "projectLogo": "/images/logos/w-south-beach-residences.svg"
   },
   {
     "slug": "waldorf-astoria-residences-downtown-miami",
