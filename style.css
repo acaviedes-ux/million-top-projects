@@ -569,8 +569,11 @@ img { display: block; max-width: 100%; }
   width: auto;
   height: auto;
   object-fit: contain;
-  /* White + subtle shadow so logo reads on any hero image */
-  filter: brightness(0) invert(1) drop-shadow(0 2px 16px rgba(0,0,0,0.5));
+  /* White card so any logo (SVG, PNG, JPG) reads on any hero image */
+  background: rgba(255, 255, 255, 0.92);
+  padding: 18px 32px;
+  border-radius: 4px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.35);
 }
 
 /* ── NAV PROJECT LOGO ────────────────────────── */
