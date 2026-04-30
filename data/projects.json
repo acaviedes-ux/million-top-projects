@@ -2512,6 +2512,7 @@
   {
     "slug": "kempinski-residences-miami-design-district",
     "name": "Kempinski Residences Miami Design District",
+    "isNew": true,
     "esqueletoName": "Kempinski Residences Miami Design District",
     "tpDataName": "Kempinski Residences Miami Design District",
     "startingPrice": "$3.8M",
