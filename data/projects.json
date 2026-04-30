@@ -457,7 +457,7 @@
     "esqueletoName": "Cipriani Residences Brickell",
     "address": "1420 S Miami Ave, Miami, FL 33130",
     "developer": "Mast Capital",
-    "architecture": "Arquitectonica",
+    "architecture": "Arquitectonica TEST",
     "interiorDesign": "1508 London",
     "completionDate": "2028",
     "depositStructure": [
@@ -489,7 +489,7 @@
       "driveFileId": "1tti5R3-KymvQj0RtWaMQFwY3sw2jyR8_",
       "createdAt": "As of April, 23 of 2026"
     },
-    "isNew": true
+    "isNew": false
   },
   {
     "slug": "colette-brickell",
