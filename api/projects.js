@@ -16,6 +16,7 @@ module.exports = (req, res) => {
       section:       p.section       || null,
       startingPrice: p.startingPrice || null,
       thumbnail:     p.thumbnail     || null,
+      isNew:         p.isNew         || false,
     }));
 
     return res.status(200).json(list);

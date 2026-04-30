@@ -48,6 +48,13 @@
       a.className = 'project-card';
       a.href = '/projects/' + p.slug;
 
+      if (p.isNew) {
+        var badge = document.createElement('div');
+        badge.className = 'card-new-badge';
+        badge.textContent = 'New';
+        a.appendChild(badge);
+      }
+
       if (p.thumbnail) {
         var img = document.createElement('img');
         img.className = 'card-img';
