@@ -116,7 +116,7 @@
     "theBuilding": "Soaring up to 1,049 feet with 90 levels, 888 is set to become an icon in the Miami skyline. A total of 259 residences from 1 to 4 bedrooms and floor plans between 2,173 to 9,780 Sq. Ft.",
     "address": "888 Brickell Ave, Miami, FL 33131",
     "developer": "JDS Development",
-    "architecture": "ODP Architects",
+    "architecture": "ODP Architecture & Design",
     "interiorDesign": "Dolce & Gabbana",
     "completionDate": "2028",
     "depositStructure": [
@@ -352,9 +352,9 @@
     "hoa": "$2.16",
     "contact": [
       {
-        "name": "AnneMarie Alexander",
-        "phone": "+1 (917) 566-3377",
-        "email": "annemarie.alexander@elliman.com"
+        "name": "Kendall Corso",
+        "phone": "+1 (561) 901-4138",
+        "email": "N/A"
       }
     ],
     "projectLogo": "/images/logos/banyan-tree.png",
@@ -754,10 +754,19 @@
     "interiorDesign": "Debora Aguiar Arquitetos",
     "completionDate": "2027 (Regency Collection)\n2026 (Signature Collection)\n2028 (Bay Collection)",
     "depositStructure": [
+      "Regency Collection:",
+      "20% at contract",
+      "20% 90 days after contract",
+      "60% at closing (Q1 2027)",
+      "Signature Collection:",
+      "20% at contract",
+      "20% 90 days after contract",
+      "60% at closing (December 2026)",
+      "Bay Collection:",
       "20% at contract",
       "10% at groundbreaking",
       "10% at top-off",
-      "60% at closing"
+      "60% at closing (2028)"
     ],
     "parkingSpaces": [
       "2 assigned parking spaces per unit."
@@ -796,7 +805,7 @@
     "developer": "Terra & Lion Development Group",
     "architecture": "Arquitectonica",
     "interiorDesign": "Yabu Pushelberg",
-    "completionDate": "2028",
+    "completionDate": "2029",
     "depositStructure": [
       "10% at contract",
       "5% 90 days after contract",
@@ -1227,9 +1236,8 @@
     "completionDate": "2027",
     "depositStructure": [
       "20% at contract",
-      "10% 60 days after contract",
-      "10% at top-off (May 2026)",
-      "60% at closing (February 2027)"
+      "10% 90 days after contract",
+      "70% at closing (March 2027)"
     ],
     "parkingSpaces": [
       "2 parking spaces for each residence. Self-parking plus valet parking service."
@@ -1609,7 +1617,7 @@
     "theBuilding": "A single tower featuring 73 luxurious residences through 17 levels. From 2 to 4 bedrooms, spanning between 2,100 to 6,700 square feet.",
     "address": "5333 Collins Ave, Miami Beach, FL 33140",
     "developer": "Mast Capital",
-    "architecture": "OMA New York + ODP Architecture",
+    "architecture": "OMA New York & ODP Architecture & Design",
     "interiorDesign": "Tara Bernerd & Partners",
     "completionDate": "2027",
     "depositStructure": [
@@ -2242,7 +2250,7 @@
     "theBuilding": "This 55-story building boasts 70 fully finished residences, each offering the option for full or half-floor living, as well as stylish duplexes for the discerning buyer.",
     "address": "710 29th St, Miami, FL 33137",
     "developer": "Terra & One Thousand Group",
-    "architecture": "ODP Architects",
+    "architecture": "ODP Architecture & Design",
     "interiorDesign": "Charles & Co",
     "completionDate": "2027",
     "depositStructure": [
@@ -5026,7 +5034,7 @@
     "esqueletoName": "HUB Miami Downtown Miami",
     "address": "525 NW 2nd Ave, Miami, FL 33136",
     "developer": "John Buck Company, Florida Value Partners, BH Group, and PEBB Enterprises",
-    "architecture": "ODP Architects",
+    "architecture": "ODP Architecture & Design",
     "interiorDesign": "One Line Design Studio",
     "completionDate": "2027",
     "depositStructure": [
@@ -6192,7 +6200,7 @@
     "developer": "Witkoff & Ocean Terrace Holdings",
     "architecture": "Revuelta Architecture International",
     "interiorDesign": "Robert A.M. Stern",
-    "completionDate": "2029",
+    "completionDate": "2021",
     "depositStructure": [
       "20% at contract",
       "10% at groundbreaking",
@@ -7940,7 +7948,7 @@
     "developer": "LORE Development",
     "architecture": "Paredes Architects",
     "interiorDesign": "Design Philosophy",
-    "completionDate": "2027",
+    "completionDate": "2028",
     "depositStructure": [
       "20% at contract",
       "10% at groundbreaking (Spring 2026)",
