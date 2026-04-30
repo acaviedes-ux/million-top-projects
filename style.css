@@ -265,6 +265,18 @@ img { display: block; max-width: 100%; }
   pointer-events: none;
   z-index: 1;
 }
+
+.project-new-banner {
+  display: block;
+  background: #000;
+  color: #fff;
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 10px 24px;
+}
 .project-card:hover { transform: translateY(-3px); }
 
 .project-card .card-img {

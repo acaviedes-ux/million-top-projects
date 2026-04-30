@@ -42,6 +42,7 @@ function normalize(p) {
     // Identity
     slug:          p.slug,
     name:          p.name,
+    isNew:         p.isNew          || false,
     startingPrice: p.startingPrice  || null,
     thumbnail:     p.thumbnail      || null,
     hero:          p.hero           || null,

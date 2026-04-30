@@ -251,6 +251,12 @@
 
     var frag = document.createDocumentFragment();
 
+    // ── NEW badge ────────────────────────────────────────────
+    if (d.isNew) {
+      var newBanner = el('div', 'project-new-banner', 'New Project');
+      frag.appendChild(newBanner);
+    }
+
     // ── 1. PRICE LIST ────────────────────────────────────────
     if (!d.priceList || !d.priceList.hidden) {
       var plSec = makeSection('price-list');
