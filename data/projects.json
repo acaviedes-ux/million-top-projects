@@ -6915,53 +6915,6 @@
     "isNew": false
   },
   {
-    "slug": "pagani-north-bay-village",
-    "name": "Pagani North Bay Village",
-    "tpDataName": "Pagani North Bay Village",
-    "section": "Other Projects",
-    "startingPrice": "$3.7M",
-    "thumbnail": "/images/renders/pagani-north-bay-village.jpg",
-    "hero": "/images/renders/pagani-north-bay-village.jpg",
-    "theBuilding": "Standing 30 stories tall, The Pagani encompasses a total of 70 unparalleled units. Designed to cater to various preferences, the building offers a range of 2 to 4-bedroom residences with spacious layouts.",
-    "stylishAmenities": "Equipped with a diverse array of upscale amenities, residents can enjoy access to a dedicated kids' room, library, co-working space, lounge, and movie room for leisure and relaxation. Elevating the living experience further, the rooftop offers an additional amenity deck, featuring a pristine pool, state-of-the-art gym, and a rejuvenating spa.",
-    "brochures": [],
-    "esqueletoName": "Pagani North Bay Village",
-    "address": "7940 West Dr, North Bay Village, FL 33141",
-    "developer": "Riviera Horizons",
-    "architecture": "Revuelta Architecture International",
-    "interiorDesign": "A++",
-    "completionDate": "2028",
-    "depositStructure": [
-      "20% at contract",
-      "10% at groundbreaking (Q1 2026)",
-      "10% at reaching the amenity deck (Q3 2026)",
-      "10% at top-off (Q2 2027)",
-      "50% at closing (Q1 2028)"
-    ],
-    "parkingSpaces": [
-      "1 assigned space and 1 valet for 2-bedroom units.",
-      "2 assigned spaces and 1 valet for 3-bedroom units.",
-      "3 assigned spaces and 1 valet for 4-bedroom units."
-    ],
-    "rentalRestrictions": [
-      "6 months minimum. 2 times per year."
-    ],
-    "hoa": "$1.65",
-    "contact": [
-      {
-        "name": "Diego Mila",
-        "phone": "+1 (954) 812-5627",
-        "email": "diego@paganiresidences.com"
-      }
-    ],
-    "projectLogo": "/images/logos/pagani-north-bay-village.png",
-    "priceList": {
-      "driveFileId": "1VuVrXI4EIOOJm3SoBpdLuM38sIerRLQ0",
-      "createdAt": "As of March, 12 of 2026"
-    },
-    "isNew": false
-  },
-  {
     "slug": "palazzo-at-bayfront-naples",
     "name": "Palazzo at Bayfront Naples",
     "tpDataName": "Palazzo at Bayfront Naples",
