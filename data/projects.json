@@ -754,6 +754,42 @@
     "isNew": false
   },
   {
+    "slug": "kempinski-residences-miami-design-district",
+    "name": "Kempinski Residences Miami Design District",
+    "isNew": true,
+    "esqueletoName": "Kempinski Residences Miami Design District",
+    "tpDataName": "Kempinski Residences Miami Design District",
+    "startingPrice": "$3.8M",
+    "thumbnail": "/images/renders/kempinski-residences-miami-design-district.jpg",
+    "hero": "/images/renders/kempinski-residences-miami-design-district.jpg",
+    "buildingDescription": null,
+    "stylishAmenities": null,
+    "brochures": [],
+    "section": "Top Projects",
+    "theBuilding": null,
+    "address": "3801 Biscayne Blvd, Miami, FL 33137",
+    "developer": "DaGrosa Capital Development Partners, LLC.",
+    "architecture": "Arquitectonica",
+    "interiorDesign": "Rockwell Group",
+    "completionDate": "2029",
+    "depositStructure": [
+      "$50,000 at reservation",
+      "20% at contract",
+      "10% at groundbreaking",
+      "10% at top-off",
+      "60% at closing"
+    ],
+    "parkingSpaces": null,
+    "rentalRestrictions": null,
+    "hoa": "$2.14",
+    "contact": [],
+    "projectLogo": "/images/logos/kempinski-residences-miami-design-district.svg",
+    "priceList": {
+      "driveFileId": "1Onko0pidCIDwhGR-aTZx_JL8Nmmu7pLh",
+      "createdAt": "As of April, 17 of 2026"
+    }
+  },
+  {
     "slug": "la-mare",
     "name": "La Maré",
     "tpDataName": "La Maré",
@@ -2508,42 +2544,6 @@
       "createdAt": "As of April, 13 of 2026"
     },
     "isNew": false
-  },
-  {
-    "slug": "kempinski-residences-miami-design-district",
-    "name": "Kempinski Residences Miami Design District",
-    "isNew": true,
-    "esqueletoName": "Kempinski Residences Miami Design District",
-    "tpDataName": "Kempinski Residences Miami Design District",
-    "startingPrice": "$3.8M",
-    "thumbnail": "/images/renders/kempinski-residences-miami-design-district.jpg",
-    "hero": "/images/renders/kempinski-residences-miami-design-district.jpg",
-    "buildingDescription": null,
-    "stylishAmenities": null,
-    "brochures": [],
-    "section": "Top Projects",
-    "theBuilding": null,
-    "address": "3801 Biscayne Blvd, Miami, FL 33137",
-    "developer": "DaGrosa Capital Development Partners, LLC.",
-    "architecture": "Arquitectonica",
-    "interiorDesign": "Rockwell Group",
-    "completionDate": "2029",
-    "depositStructure": [
-      "$50,000 at reservation",
-      "20% at contract",
-      "10% at groundbreaking",
-      "10% at top-off",
-      "60% at closing"
-    ],
-    "parkingSpaces": null,
-    "rentalRestrictions": null,
-    "hoa": "$2.14",
-    "contact": [],
-    "projectLogo": "/images/logos/kempinski-residences-miami-design-district.svg",
-    "priceList": {
-      "driveFileId": "1Onko0pidCIDwhGR-aTZx_JL8Nmmu7pLh",
-      "createdAt": "As of April, 17 of 2026"
-    }
   },
   {
     "slug": "1-hotel-homes",
