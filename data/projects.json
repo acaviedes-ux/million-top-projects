@@ -57,7 +57,8 @@
     "priceList": {
       "driveFileId": "181AgGdoTFE3IX8vJIBIBD6CmU9rczXpt",
       "createdAt": "As of April, 20 of 2026"
-    }
+    },
+    "isNew": false
   },
   {
     "slug": "72-carlyle",
@@ -99,7 +100,8 @@
     "priceList": {
       "driveFileId": "1_UP3y2YCvBqRae6dRI3OIj81XhQQ-43U",
       "createdAt": "As of April, 1 of 2026"
-    }
+    },
+    "isNew": false
   },
   {
     "slug": "888-brickell",
@@ -143,7 +145,8 @@
     "priceList": {
       "driveFileId": "1o-hD9jBBvqTeXwyVa5r8i2vIX-g8DaUJ",
       "createdAt": "As of April, 13 of 2026"
-    }
+    },
+    "isNew": false
   },
   {
     "slug": "andare-residences",
@@ -188,7 +191,8 @@
     "priceList": {
       "driveFileId": "1oPBOlX7JoVIGmlJiVV90SOf_1kPWyJNo",
       "createdAt": "As of April, 27 of 2026"
-    }
+    },
+    "isNew": false
   },
   {
     "slug": "aria-reserve",
@@ -233,7 +237,8 @@
     "priceList": {
       "driveFileId": "1ionTmudk_U5tj0Q3pNp-9lPMAgNia7zw",
       "createdAt": "As of March, 20 of 2026"
-    }
+    },
+    "isNew": false
   },
   {
     "slug": "armani-casa-pompano-beach",
@@ -275,7 +280,8 @@
     "priceList": {
       "driveFileId": "1e-S1forYtBUOuoahx6Oavy5eKzIu-iTt",
       "createdAt": "As of December, 12 of 2025"
-    }
+    },
+    "isNew": false
   },
   {
     "slug": "avenia-aventura",
@@ -315,7 +321,8 @@
     "priceList": {
       "driveFileId": "12vVORLBhU2VkpxYtAi_gbqJIvLBgWSnM",
       "createdAt": "As of February, 13 of 2026"
-    }
+    },
+    "isNew": false
   },
   {
     "slug": "banyan-tree",
@@ -361,7 +368,8 @@
     "priceList": {
       "driveFileId": "1GPRSu4G7JHKKmCA4mGSPansbS0mPmYNE",
       "createdAt": "As of March, 26 of 2026"
-    }
+    },
+    "isNew": true
   },
   {
     "slug": "bay-harbor-towers",
@@ -403,7 +411,8 @@
     "priceList": {
       "driveFileId": "1GXMKbCi24VY2y_rxpUMf0Ha9ARuKdbRX",
       "createdAt": "As of April, 16 of 2026"
-    }
+    },
+    "isNew": false
   },
   {
     "slug": "casa-cipriani",
@@ -431,7 +440,8 @@
     "priceList": {
       "heading": "NO UNITS AVAILABLE"
     },
-    "projectLogo": "/images/logos/casa-cipriani.svg"
+    "projectLogo": "/images/logos/casa-cipriani.svg",
+    "isNew": false
   },
   {
     "slug": "cipriani-residences",
@@ -478,7 +488,8 @@
     "priceList": {
       "driveFileId": "1tti5R3-KymvQj0RtWaMQFwY3sw2jyR8_",
       "createdAt": "As of April, 23 of 2026"
-    }
+    },
+    "isNew": false
   },
   {
     "slug": "colette-brickell",
@@ -521,7 +532,8 @@
     "priceList": {
       "driveFileId": "14raCCHVkPStsAPLlgJU7uWIcdcOvnhYg",
       "createdAt": "As of April, 2 of 2026"
-    }
+    },
+    "isNew": false
   },
   {
     "slug": "cora-merrick",
@@ -563,7 +575,8 @@
     "priceList": {
       "driveFileId": "1lX90_0SFDtTiXhfgCKzqEuWgLGBxm7Db",
       "createdAt": "As of April, 16 of 2026"
-    }
+    },
+    "isNew": false
   },
   {
     "slug": "edition-residences-edgewater",
@@ -606,7 +619,8 @@
     "priceList": {
       "driveFileId": "1d0tNFJ7efBXDBb0ymOkyVHLzk0M06J-h",
       "createdAt": "As of March, 18 of 2026"
-    }
+    },
+    "isNew": false
   },
   {
     "slug": "faena-house",
@@ -644,7 +658,8 @@
     "priceList": {
       "externalUrl": "https://www.faenahousemiami.com/for-sale.html"
     },
-    "projectLogo": "/images/logos/faena-house.svg"
+    "projectLogo": "/images/logos/faena-house.svg",
+    "isNew": false
   },
   {
     "slug": "faena-residences-downtown-miami",
@@ -691,7 +706,8 @@
     "priceList": {
       "driveFileId": "1t9fxfMQHAZzqsRN_yaS40YCPdm5se9C7",
       "createdAt": "As of March, 25 of 2026"
-    }
+    },
+    "isNew": false
   },
   {
     "slug": "four-seasons-coconut-grove",
@@ -734,7 +750,8 @@
     "priceList": {
       "driveFileId": "1ipdJf4UGI-v_oNrjU0jkVRXF1MVOaX5U",
       "createdAt": "As of April, 8 of 2026"
-    }
+    },
+    "isNew": false
   },
   {
     "slug": "la-mare",
@@ -786,7 +803,8 @@
     "priceList": {
       "driveFileId": "1kZoiOqlLtM3FBjexihnLLJ8Le6_NYpil",
       "createdAt": "As of April, 1 of 2026"
-    }
+    },
+    "isNew": false
   },
   {
     "slug": "miami-tropic",
@@ -835,7 +853,8 @@
     "priceList": {
       "driveFileId": "1qGKlggCJ7Wo2LsQzf0ZD8sFbGdAkJPS-",
       "createdAt": "As of April, 1 of 2026"
-    }
+    },
+    "isNew": false
   },
   {
     "slug": "mr-c-residences-boca-raton",
@@ -877,7 +896,8 @@
     "priceList": {
       "driveFileId": "1yBKr4513Y3KhKIM_tRHF3WFhT5CK6_ET",
       "createdAt": "As of April, 20 of 2026"
-    }
+    },
+    "isNew": false
   },
   {
     "slug": "mr-c-residences-tigertail",
@@ -914,7 +934,8 @@
     "priceList": {
       "externalUrl": "https://www.mrcresidencemiami.com/for-sale.html"
     },
-    "projectLogo": "/images/logos/mr-c-residences-tigertail.svg"
+    "projectLogo": "/images/logos/mr-c-residences-tigertail.svg",
+    "isNew": false
   },
   {
     "slug": "mr-c-residences-west-palm-beach",
@@ -955,7 +976,8 @@
     "priceList": {
       "driveFileId": "1_QTK1Jld01GnnIfBT24BJ2x5jLmiH1Wx",
       "createdAt": "As of April, 8 of 2026"
-    }
+    },
+    "isNew": false
   },
   {
     "slug": "nora-house",
@@ -998,7 +1020,8 @@
       "driveFileId": "1dAYwcPD66wkFU8gAOBQrVqog0L0vpJvT",
       "createdAt": "As of April, 2 of 2026"
     },
-    "projectLogo": "/images/logos/nora-house.png"
+    "projectLogo": "/images/logos/nora-house.png",
+    "isNew": true
   },
   {
     "slug": "ocean-house",
@@ -1041,7 +1064,8 @@
     "priceList": {
       "driveFileId": "1BIj-iaVtJIbw-TDJvwIMfsJ_PbuQ-t3-",
       "createdAt": "As of April, 1 of 2026"
-    }
+    },
+    "isNew": false
   },
   {
     "slug": "ora-casa-tua",
@@ -1086,7 +1110,8 @@
     "priceList": {
       "driveFileId": "1w7HVA2n7c-C_yuTAPwb0arBQXlr6WY6U",
       "createdAt": "As of April, 27 of 2026"
-    }
+    },
+    "isNew": false
   },
   {
     "slug": "ponce-park",
@@ -1129,7 +1154,8 @@
     "priceList": {
       "driveFileId": "1uMXFsCIUtRjJxFZughlpFbUZJadzmsiU",
       "createdAt": "As of April, 14 of 2026"
-    }
+    },
+    "isNew": false
   },
   {
     "slug": "riva-residenze",
@@ -1172,7 +1198,8 @@
     "priceList": {
       "driveFileId": "1lAfZTDebbVQl4yUuSfBteQjAKcHX-qoR",
       "createdAt": "As of December, 13 of 2025"
-    }
+    },
+    "isNew": false
   },
   {
     "slug": "rivage-bal-harbour",
@@ -1214,7 +1241,8 @@
     "priceList": {
       "driveFileId": "13U78AfKpTUBNYb1CyKcQec9HTsW8vryf",
       "createdAt": "As of April, 17 of 2026"
-    }
+    },
+    "isNew": false
   },
   {
     "slug": "rosewood-hillsboro",
@@ -1257,7 +1285,8 @@
     "priceList": {
       "driveFileId": "1YK29BXm-r9R8G1VrrFfpEuW3GYruXVm4",
       "createdAt": "As of April, 27 of 2026"
-    }
+    },
+    "isNew": false
   },
   {
     "slug": "shore-club-private-collection-residences",
@@ -1297,7 +1326,8 @@
     "priceList": {
       "driveFileId": "1g3NJIwob5UmwnBSz7iYfX7zPWPMzpkhX",
       "createdAt": "As of February, 27 of 2026"
-    }
+    },
+    "isNew": false
   },
   {
     "slug": "shorecrest-west-palm-beach",
@@ -1340,7 +1370,8 @@
     "priceList": {
       "driveFileId": "1lBnA52J-4xwNCDQUEmXNRhTfqjf7Ik2N",
       "createdAt": "As of April, 10 of 2026"
-    }
+    },
+    "isNew": false
   },
   {
     "slug": "st-regis-residences-bahia-mar-fort-lauderdale",
@@ -1384,7 +1415,8 @@
     "priceList": {
       "driveFileId": "1V6JyrgMdHBVjXJtUfRCoIM2o5pexqXEr",
       "createdAt": "As of April, 24 of 2026"
-    }
+    },
+    "isNew": false
   },
   {
     "slug": "st-regis-residences-brickell",
@@ -1428,7 +1460,8 @@
     "priceList": {
       "driveFileId": "1WsK0EERloiAA4U9fn_awIazisYvhIW_q",
       "createdAt": "As of April, 8 of 2026"
-    }
+    },
+    "isNew": false
   },
   {
     "slug": "st-regis-residences-sunny-isles",
@@ -1478,7 +1511,8 @@
     "priceList": {
       "driveFileId": "1DJJlF7BqNq-_B9zXm1SBvkq86tHSiCw-",
       "createdAt": "As of April, 15 of 2026"
-    }
+    },
+    "isNew": false
   },
   {
     "slug": "the-berkeley",
@@ -1521,7 +1555,8 @@
     "priceList": {
       "driveFileId": "12G9LHVA4j8YL7C13e793FEt7uLc0Ql0A",
       "createdAt": "As of April, 28 of 2026"
-    }
+    },
+    "isNew": false
   },
   {
     "slug": "the-bristol",
@@ -1559,7 +1594,8 @@
     "priceList": {
       "message": "Check Availability on MLS"
     },
-    "projectLogo": "/images/logos/the-bristol.png"
+    "projectLogo": "/images/logos/the-bristol.png",
+    "isNew": false
   },
   {
     "slug": "the-delmore",
@@ -1600,7 +1636,8 @@
     "priceList": {
       "driveFileId": "1FANYhuswf8-JGTs9Ua5dQeA1hNWHBrfe",
       "createdAt": "As of January, 5 of 2026"
-    }
+    },
+    "isNew": false
   },
   {
     "slug": "the-perigon",
@@ -1646,7 +1683,8 @@
     "priceList": {
       "driveFileId": "1lc3XAFY4G97b-0heBMmPY3nkH0YcLs-P",
       "createdAt": "As of April, 7 of 2026"
-    }
+    },
+    "isNew": false
   },
   {
     "slug": "the-raleigh",
@@ -1687,7 +1725,8 @@
     "priceList": {
       "driveFileId": "1nYx-lbj866SxUNBMJ1nXI_erDeainQj-",
       "createdAt": "As of August, 27 of 2025"
-    }
+    },
+    "isNew": false
   },
   {
     "slug": "1428-brickell",
@@ -1732,7 +1771,8 @@
     "priceList": {
       "driveFileId": "1GjJfjMSjROuCUrIgHWaHco4lfK3LruHP",
       "createdAt": "As of April, 29 of 2026"
-    }
+    },
+    "isNew": false
   },
   {
     "slug": "mandarin-oriental-miami",
@@ -1778,7 +1818,8 @@
     "priceList": {
       "driveFileId": "1AkDF5goneljVdQwKOK6jttzZGDOIIn7V",
       "createdAt": "As of April, 8 of 2026"
-    }
+    },
+    "isNew": false
   },
   {
     "slug": "the-residences-at-mandarin-oriental-west-palm-beach",
@@ -1820,7 +1861,8 @@
     "priceList": {
       "driveFileId": "1Ac2M-r8QtR0HI8QZhl17cg0QQXAzFLFg",
       "createdAt": "As of April, 6 of 2026"
-    }
+    },
+    "isNew": false
   },
   {
     "slug": "ritz-carlton-fort-lauderdale",
@@ -1860,7 +1902,8 @@
     "priceList": {
       "driveFileId": "1_S7sEVZ_L4a5GIGXyqQB2T0LMzvIrKi9",
       "createdAt": "As of April, 23 of 2026"
-    }
+    },
+    "isNew": false
   },
   {
     "slug": "ritz-carlton-miami-beach",
@@ -1898,7 +1941,8 @@
     "priceList": {
       "externalUrl": "https://ritzcarltonresidencesmiamibeach.nestcapitals.com/for-sale.html"
     },
-    "projectLogo": "/images/logos/ritz-carlton-miami-beach.svg"
+    "projectLogo": "/images/logos/ritz-carlton-miami-beach.svg",
+    "isNew": false
   },
   {
     "slug": "ritz-carlton-palm-beach-gardens",
@@ -1940,7 +1984,8 @@
     "priceList": {
       "driveFileId": "1H555FTV5cAOY16sqwyi--Tbh0jSg3Yah",
       "createdAt": "As of April, 6 of 2026"
-    }
+    },
+    "isNew": false
   },
   {
     "slug": "ritz-carlton-south-beach",
@@ -1982,7 +2027,8 @@
     "priceList": {
       "driveFileId": "1djbLkYpCyezLtCRgwGAQqTdueTnAidnN",
       "createdAt": "As of April, 7 of 2026"
-    }
+    },
+    "isNew": false
   },
   {
     "slug": "ritz-carlton-west-palm",
@@ -2026,7 +2072,8 @@
     "priceList": {
       "driveFileId": "1hEacT9wjc-1PVF5N6iJNuLzMrqnsZBb0",
       "createdAt": "As of April, 17 of 2026"
-    }
+    },
+    "isNew": false
   },
   {
     "slug": "surf-club-four-seasons",
@@ -2065,7 +2112,8 @@
     "priceList": {
       "externalUrl": "https://www.thesurfclubs.com/for-sale.html"
     },
-    "projectLogo": "/images/logos/surf-club-four-seasons.svg"
+    "projectLogo": "/images/logos/surf-club-four-seasons.svg",
+    "isNew": false
   },
   {
     "slug": "the-village-coral-gables",
@@ -2108,7 +2156,8 @@
     "priceList": {
       "driveFileId": "12GcPPA9O3YJL5wg6KhzSnNQvk6i7RNeu",
       "createdAt": "As of March, 5 of 2026"
-    }
+    },
+    "isNew": false
   },
   {
     "slug": "the-well-bay-harbor",
@@ -2148,7 +2197,8 @@
     "priceList": {
       "driveFileId": "1wld03EUblS_0uYacTtYnj3C2mlasuzN5",
       "createdAt": "As of April, 29 of 2026"
-    }
+    },
+    "isNew": false
   },
   {
     "slug": "the-well-coconut-grove",
@@ -2194,7 +2244,8 @@
     "priceList": {
       "driveFileId": "1B7zAT7HpgeVKvgQCcqv2QcF6YjejTaoM",
       "createdAt": "As of April, 22 of 2026"
-    }
+    },
+    "isNew": false
   },
   {
     "slug": "tula-residences",
@@ -2233,7 +2284,8 @@
     "priceList": {
       "driveFileId": "1PcJZ3Za42WNhk_2GZvio6Kp8W0a25fZE",
       "createdAt": "As of March, 27 of 2026"
-    }
+    },
+    "isNew": true
   },
   {
     "slug": "villa-miami",
@@ -2280,7 +2332,8 @@
     "priceList": {
       "driveFileId": "1g5bCs8HuZ8IFrSAmqU55DjRLojvEWXWt",
       "createdAt": "As of April, 6 of 2026"
-    }
+    },
+    "isNew": false
   },
   {
     "slug": "vita-at-grove-isle",
@@ -2322,7 +2375,8 @@
     "priceList": {
       "driveFileId": "19ro7jUNdjVL_OrG2o7X_HTCppynA7Oa6",
       "createdAt": "As of April, 6 of 2026"
-    }
+    },
+    "isNew": false
   },
   {
     "slug": "w-pompano-beach-hotel-residences",
@@ -2366,7 +2420,8 @@
     "priceList": {
       "driveFileId": "1xlfS9MVodwwLYscvJ1Zs0KEU7HnD1lQa",
       "createdAt": "As of March, 23 of 2026"
-    }
+    },
+    "isNew": false
   },
   {
     "slug": "waldorf-astoria-pompano",
@@ -2410,7 +2465,8 @@
     "priceList": {
       "driveFileId": "1mqb2zolOG2T4fErkS22cyuTPilszkJH8",
       "createdAt": "As of April, 21 of 2026"
-    }
+    },
+    "isNew": false
   },
   {
     "slug": "ziggurat-coconut-grove",
@@ -2450,7 +2506,8 @@
     "priceList": {
       "driveFileId": "1EHsPsdedx4sRghV1YZHdakTKyoTEsF8g",
       "createdAt": "As of April, 13 of 2026"
-    }
+    },
+    "isNew": false
   },
   {
     "slug": "1-hotel-homes",
@@ -2487,7 +2544,8 @@
     "priceList": {
       "hidden": true
     },
-    "projectLogo": "/images/logos/1-hotel-homes.svg"
+    "projectLogo": "/images/logos/1-hotel-homes.svg",
+    "isNew": false
   },
   {
     "slug": "123-ocean-palm-beach-shores",
@@ -2521,7 +2579,8 @@
     "priceList": {
       "driveFileId": "1A9LVvscLEAqquXO4brsgX97Ma2QhD8h9",
       "createdAt": "As of April, 16 of 2026"
-    }
+    },
+    "isNew": false
   },
   {
     "slug": "14-roc-miami",
@@ -2563,7 +2622,8 @@
     "priceList": {
       "driveFileId": "1NdkubOIW_z5O-8PeqWT0LPninAJgsPMk",
       "createdAt": "As of January, 25 of 2025"
-    }
+    },
+    "isNew": false
   },
   {
     "slug": "2000-ocean",
@@ -2603,7 +2663,8 @@
     "priceList": {
       "externalUrl": "https://www.2000oceaninhallandale.com/for-sale.html"
     },
-    "projectLogo": "/images/logos/2000-ocean.svg"
+    "projectLogo": "/images/logos/2000-ocean.svg",
+    "isNew": false
   },
   {
     "slug": "2200-brickell",
@@ -2645,7 +2706,8 @@
     "priceList": {
       "driveFileId": "1Swh9ppx6TIECgtwPCIizgObR7UeYTsrO",
       "createdAt": "As of April, 10 of 2026"
-    }
+    },
+    "isNew": false
   },
   {
     "slug": "3000-waterside-fort-lauderdale",
@@ -2679,7 +2741,8 @@
     "priceList": {
       "driveFileId": "1AUGQwdKAGbCeA9GczedqbnNLwaMpT1C1",
       "createdAt": "As of April, 6 of 2026"
-    }
+    },
+    "isNew": false
   },
   {
     "slug": "3200-south-ocean",
@@ -2716,7 +2779,8 @@
     "priceList": {
       "hidden": true
     },
-    "projectLogo": "/images/logos/3200-south-ocean.svg"
+    "projectLogo": "/images/logos/3200-south-ocean.svg",
+    "isNew": false
   },
   {
     "slug": "321-ocean",
@@ -2753,7 +2817,8 @@
     "priceList": {
       "hidden": true
     },
-    "projectLogo": "/images/logos/321-ocean.svg"
+    "projectLogo": "/images/logos/321-ocean.svg",
+    "isNew": false
   },
   {
     "slug": "5000-north-ocean",
@@ -2792,7 +2857,8 @@
     "priceList": {
       "hidden": true
     },
-    "projectLogo": "/images/logos/5000-north-ocean.svg"
+    "projectLogo": "/images/logos/5000-north-ocean.svg",
+    "isNew": false
   },
   {
     "slug": "57-ocean",
@@ -2829,7 +2895,8 @@
     "priceList": {
       "externalUrl": "https://www.57oceancondomiami.com/for-sale.html"
     },
-    "projectLogo": "/images/logos/57-ocean.svg"
+    "projectLogo": "/images/logos/57-ocean.svg",
+    "isNew": false
   },
   {
     "slug": "72-park",
@@ -2871,7 +2938,8 @@
     "priceList": {
       "driveFileId": "1OPmta47jbYnSHehdFfcbqhb6qL5b21KQ",
       "createdAt": "As of April, 2 of 2026"
-    }
+    },
+    "isNew": false
   },
   {
     "slug": "9900-west",
@@ -2908,7 +2976,8 @@
     "priceList": {
       "driveFileId": "1-5nri4nDHSPgf50YQL0zTmG8KRyF3h24",
       "createdAt": "As of December, 3 of 2025"
-    }
+    },
+    "isNew": false
   },
   {
     "slug": "adagio-fort-lauderdale",
@@ -2945,7 +3014,8 @@
     "priceList": {
       "hidden": true
     },
-    "projectLogo": "/images/logos/adagio-fort-lauderdale.svg"
+    "projectLogo": "/images/logos/adagio-fort-lauderdale.svg",
+    "isNew": false
   },
   {
     "slug": "alana-bay-harbor-islands",
@@ -2986,7 +3056,8 @@
     "priceList": {
       "driveFileId": "149_AjtLUzJhtD9N0tP-F_Fmmz-a5oYW9",
       "createdAt": "As of March, 23 of 2026"
-    }
+    },
+    "isNew": false
   },
   {
     "slug": "alba-west-palm-beach",
@@ -3031,7 +3102,8 @@
     "priceList": {
       "driveFileId": "11I1FRqPKpfKe85MB2AFZpjCn45bcdzya",
       "createdAt": "As of April, 23 of 2026"
-    }
+    },
+    "isNew": false
   },
   {
     "slug": "alina-residences",
@@ -3071,7 +3143,8 @@
     "priceList": {
       "driveFileId": "1eM2AmP9V4WKIjX61uQW1tHc8R91J0PtV",
       "createdAt": "As of March, 26 of 2026"
-    }
+    },
+    "isNew": false
   },
   {
     "slug": "alma-bay-harbor-islands",
@@ -3113,7 +3186,8 @@
     "priceList": {
       "driveFileId": "112EGxHkEunjqGLqQaOTxwEbz1jo9pul8",
       "createdAt": "As of February, 3 of 2026"
-    }
+    },
+    "isNew": false
   },
   {
     "slug": "apogee",
@@ -3150,7 +3224,8 @@
     "priceList": {
       "externalUrl": "https://www.apogeecondosouthbeach.com/for-sale.html"
     },
-    "projectLogo": "/images/logos/apogee.svg"
+    "projectLogo": "/images/logos/apogee.svg",
+    "isNew": false
   },
   {
     "slug": "arbor-coconut-grove",
@@ -3191,7 +3266,8 @@
     "priceList": {
       "driveFileId": "18PA5bm_RgBTRjNuYgc88_AZNSKtypZuT",
       "createdAt": "As of April, 6 of 2026"
-    }
+    },
+    "isNew": false
   },
   {
     "slug": "armani-casa",
@@ -3229,7 +3305,8 @@
       "driveFileId": "1e-S1forYtBUOuoahx6Oavy5eKzIu-iTt",
       "createdAt": "As of December, 12 of 2025"
     },
-    "projectLogo": "/images/logos/armani-casa.svg"
+    "projectLogo": "/images/logos/armani-casa.svg",
+    "isNew": false
   },
   {
     "slug": "arte-surfside",
@@ -3266,7 +3343,8 @@
     "priceList": {
       "hidden": true
     },
-    "projectLogo": "/images/logos/arte-surfside.svg"
+    "projectLogo": "/images/logos/arte-surfside.svg",
+    "isNew": false
   },
   {
     "slug": "asia-brickell",
@@ -3303,7 +3381,8 @@
     "priceList": {
       "hidden": true
     },
-    "projectLogo": "/images/logos/asia-brickell.svg"
+    "projectLogo": "/images/logos/asia-brickell.svg",
+    "isNew": false
   },
   {
     "slug": "aston-martin-residences",
@@ -3345,7 +3424,8 @@
     "priceList": {
       "externalUrl": "https://astonmartinresidencesdowntownmiami.nestcapitals.com/for-sale.html"
     },
-    "projectLogo": "/images/logos/aston-martin-residences.svg"
+    "projectLogo": "/images/logos/aston-martin-residences.svg",
+    "isNew": false
   },
   {
     "slug": "auberge-beach-residences-spa-fort-lauderdale",
@@ -3382,7 +3462,8 @@
     "priceList": {
       "externalUrl": "https://www.aubergebeachsresidences.com/for-sale.html"
     },
-    "projectLogo": "/images/logos/auberge-beach-residences-spa-fort-lauderdale.svg"
+    "projectLogo": "/images/logos/auberge-beach-residences-spa-fort-lauderdale.svg",
+    "isNew": false
   },
   {
     "slug": "aurora-sunny-isles-beach",
@@ -3421,7 +3502,8 @@
     "priceList": {
       "hidden": true
     },
-    "projectLogo": "/images/logos/aurora-sunny-isles-beach.svg"
+    "projectLogo": "/images/logos/aurora-sunny-isles-beach.svg",
+    "isNew": false
   },
   {
     "slug": "baccarat-residences",
@@ -3467,7 +3549,8 @@
     "priceList": {
       "driveFileId": "1Suv0Pr4QPCrBc49au9UJPuUXaitCA3hx",
       "createdAt": "As of April, 15 of 2026"
-    }
+    },
+    "isNew": false
   },
   {
     "slug": "bal-harbour-tower",
@@ -3504,7 +3587,8 @@
     "priceList": {
       "hidden": true
     },
-    "projectLogo": "/images/logos/bal-harbour-tower.svg"
+    "projectLogo": "/images/logos/bal-harbour-tower.svg",
+    "isNew": false
   },
   {
     "slug": "banyan-tree-bimini-bahamas",
@@ -3552,7 +3636,8 @@
     "priceList": {
       "driveFileId": "1Z7BmVA0bwTY4Zv1lTdOq8tvQmcsvNnjP",
       "createdAt": "As of March, 16 of 2026"
-    }
+    },
+    "isNew": false
   },
   {
     "slug": "bayview-village",
@@ -3589,7 +3674,8 @@
     "priceList": {
       "hidden": true
     },
-    "projectLogo": "/images/logos/bayview-village.svg"
+    "projectLogo": "/images/logos/bayview-village.svg",
+    "isNew": false
   },
   {
     "slug": "beach-house-8",
@@ -3626,7 +3712,8 @@
     "priceList": {
       "hidden": true
     },
-    "projectLogo": "/images/logos/beach-house-8.svg"
+    "projectLogo": "/images/logos/beach-house-8.svg",
+    "isNew": false
   },
   {
     "slug": "bentley-residences-sunny-isles",
@@ -3672,7 +3759,8 @@
     "priceList": {
       "driveFileId": "1Ccf-MAzJilagqFGWgB_5dF8wpck3tXzC",
       "createdAt": "As of April, 13 of 2026"
-    }
+    },
+    "isNew": false
   },
   {
     "slug": "biltmore-row",
@@ -3711,7 +3799,8 @@
     "priceList": {
       "hidden": true
     },
-    "projectLogo": "/images/logos/biltmore-row.svg"
+    "projectLogo": "/images/logos/biltmore-row.svg",
+    "isNew": false
   },
   {
     "slug": "blue-green-diamond-towers",
@@ -3748,7 +3837,8 @@
     "priceList": {
       "hidden": true
     },
-    "projectLogo": "/images/logos/blue-green-diamond-towers.svg"
+    "projectLogo": "/images/logos/blue-green-diamond-towers.svg",
+    "isNew": false
   },
   {
     "slug": "brickell-city-centre",
@@ -3790,7 +3880,8 @@
     "priceList": {
       "hidden": true
     },
-    "projectLogo": "/images/logos/brickell-city-centre.svg"
+    "projectLogo": "/images/logos/brickell-city-centre.svg",
+    "isNew": false
   },
   {
     "slug": "bristol-tower",
@@ -3827,7 +3918,8 @@
     "priceList": {
       "hidden": true
     },
-    "projectLogo": "/images/logos/bristol-tower.svg"
+    "projectLogo": "/images/logos/bristol-tower.svg",
+    "isNew": false
   },
   {
     "slug": "caribbean",
@@ -3864,7 +3956,8 @@
     "priceList": {
       "hidden": true
     },
-    "projectLogo": "/images/logos/caribbean.svg"
+    "projectLogo": "/images/logos/caribbean.svg",
+    "isNew": false
   },
   {
     "slug": "casa-bella-residences-miami",
@@ -3906,7 +3999,8 @@
     "projectLogo": "/images/logos/casa-bella-residences-miami.png",
     "priceList": {
       "driveFileId": "1S3YvhrXJH3VES67qtzz18O7WmJmHC5aD"
-    }
+    },
+    "isNew": false
   },
   {
     "slug": "cassia-coral-gables",
@@ -3948,7 +4042,8 @@
     "priceList": {
       "driveFileId": "1A8Ax711EBLY-V_Qi2GDqR5FyHa6G1FTH",
       "createdAt": "As of April, 1 of 2026"
-    }
+    },
+    "isNew": false
   },
   {
     "slug": "chateau-beach-residences",
@@ -3985,7 +4080,8 @@
     "priceList": {
       "hidden": true
     },
-    "projectLogo": "/images/logos/chateau-beach-residences.svg"
+    "projectLogo": "/images/logos/chateau-beach-residences.svg",
+    "isNew": false
   },
   {
     "slug": "continuum-12000-sport-wellness-residences-miami",
@@ -4027,7 +4123,8 @@
     "priceList": {
       "driveFileId": "1C1syt6xaKM8SZ0_1zlMXn5Caxjtg8hco",
       "createdAt": "As of March, 6 of 2026"
-    }
+    },
+    "isNew": true
   },
   {
     "slug": "continuum-club-residences-north-bay-village",
@@ -4071,7 +4168,8 @@
     "priceList": {
       "driveFileId": "1yrqzNFYTzx0ZxYO-V5ZLqbTX3sRcSRHO",
       "createdAt": "As of April, 16 of 2026"
-    }
+    },
+    "isNew": false
   },
   {
     "slug": "continuum-south-beach",
@@ -4111,7 +4209,8 @@
     "priceList": {
       "externalUrl": "https://www.continummsouthbeach.com/for-sale.html"
     },
-    "projectLogo": "/images/logos/continuum-south-beach.svg"
+    "projectLogo": "/images/logos/continuum-south-beach.svg",
+    "isNew": false
   },
   {
     "slug": "delano-residences-hotel-miami",
@@ -4163,7 +4262,8 @@
     "priceList": {
       "driveFileId": "1X6qdrDfsEhTBw-cxvUE1_EMwp9uj59Kg",
       "createdAt": "As of April, 20 of 2026"
-    }
+    },
+    "isNew": false
   },
   {
     "slug": "diesel-wynwood",
@@ -4204,7 +4304,8 @@
     "priceList": {
       "driveFileId": "18qp8ftI1mYKp76BNnGmDyvaiM0o8DdLS",
       "createdAt": "As of January, 29 of 2025"
-    }
+    },
+    "isNew": false
   },
   {
     "slug": "domus-brickell-center",
@@ -4247,7 +4348,8 @@
     "priceList": {
       "driveFileId": "1w685AJ8px-1M9lF-Ekm5UXCgBZc8ALIh",
       "createdAt": "As of April, 20 of 2026"
-    }
+    },
+    "isNew": false
   },
   {
     "slug": "domus-brickell-park",
@@ -4288,7 +4390,8 @@
     "priceList": {
       "driveFileId": "1tKH2R5Wpm9VtMgxNRNhXur3CkBWFNyZG",
       "createdAt": "As of April, 20 of 2026"
-    }
+    },
+    "isNew": false
   },
   {
     "slug": "edge-house-miami",
@@ -4331,7 +4434,8 @@
     "priceList": {
       "driveFileId": "1UVldHag6fTRBR-1MEdc9s9zKgvL3JfSk",
       "createdAt": "As of April, 29 of 2026"
-    }
+    },
+    "isNew": false
   },
   {
     "slug": "edgeworth-west-palm-beach",
@@ -4374,7 +4478,8 @@
     "priceList": {
       "driveFileId": "15TaGKEtVpOx1u2U8RM1Vckj8zbKcsnVe",
       "createdAt": "As of April, 24 of 2026"
-    }
+    },
+    "isNew": true
   },
   {
     "slug": "eighty-seven-park",
@@ -4411,7 +4516,8 @@
     "priceList": {
       "externalUrl": "https://www.eightysevenparkcondo.com/for-sale.html"
     },
-    "projectLogo": "/images/logos/eighty-seven-park.svg"
+    "projectLogo": "/images/logos/eighty-seven-park.svg",
+    "isNew": false
   },
   {
     "slug": "ella-miami-beach",
@@ -4452,7 +4558,8 @@
     "priceList": {
       "driveFileId": "1zB5cS5hVrPCOC7-UYWu1HdySF1QqKUov",
       "createdAt": "As of April, 15 of 2026"
-    }
+    },
+    "isNew": false
   },
   {
     "slug": "elle-residences-edgewater",
@@ -4492,7 +4599,8 @@
     "priceList": {
       "driveFileId": "1GMCA4hmW3J-vFDOiHVw2dkKfclS2AsSY",
       "createdAt": "As of April, 22 of 2026"
-    }
+    },
+    "isNew": false
   },
   {
     "slug": "elysee-miami",
@@ -4529,7 +4637,8 @@
     "priceList": {
       "hidden": true
     },
-    "projectLogo": "/images/logos/elysee-miami.svg"
+    "projectLogo": "/images/logos/elysee-miami.svg",
+    "isNew": false
   },
   {
     "slug": "epique-pelican-bay",
@@ -4571,7 +4680,8 @@
     "priceList": {
       "driveFileId": "1rLn4qyWXJbizdkRU2-vQNlqYBavEAAUp",
       "createdAt": "As of April, 1 of 2026"
-    }
+    },
+    "isNew": false
   },
   {
     "slug": "fendi-chateau",
@@ -4608,7 +4718,8 @@
     "priceList": {
       "externalUrl": "https://www.fendichateaumiami.com/for-sale.html"
     },
-    "projectLogo": "/images/logos/fendi-chateau.svg"
+    "projectLogo": "/images/logos/fendi-chateau.svg",
+    "isNew": false
   },
   {
     "slug": "five-park-miami-beach",
@@ -4653,7 +4764,8 @@
     "priceList": {
       "driveFileId": "1OnJDD2Dx_PE6HcWmZY90VE2_bDjbWJX4",
       "createdAt": "As of February, 24 of 2026"
-    }
+    },
+    "isNew": false
   },
   {
     "slug": "forte-on-flagler",
@@ -4695,7 +4807,8 @@
     "priceList": {
       "driveFileId": "1VNzBkz_B2ogKFgfnroxC5qMrHTML8r9l",
       "createdAt": "As of February, 10 of 2026"
-    }
+    },
+    "isNew": false
   },
   {
     "slug": "four-seasons-hotel-private-residences",
@@ -4735,7 +4848,8 @@
     "priceList": {
       "externalUrl": "https://fourseasonsresidencesfortlauderdale.nestcapitals.com/for-sale.html"
     },
-    "projectLogo": "/images/logos/four-seasons-hotel-private-residences.svg"
+    "projectLogo": "/images/logos/four-seasons-hotel-private-residences.svg",
+    "isNew": false
   },
   {
     "slug": "four-seasons-residences-las-vegas",
@@ -4773,7 +4887,8 @@
     "projectLogo": "/images/logos/four-seasons-residences-las-vegas.png",
     "priceList": {
       "driveFileId": "1Q1nWflZ_dpk6NqXTm75Z5ouXeC5CNTND"
-    }
+    },
+    "isNew": false
   },
   {
     "slug": "frida-kahlo-wynwood-residences",
@@ -4815,7 +4930,8 @@
     "priceList": {
       "driveFileId": "1sE7axJsYdrMKhLbRYDOt9zMrw6Mgh27c",
       "createdAt": "As of March, 10 of 2026"
-    }
+    },
+    "isNew": true
   },
   {
     "slug": "gale-miami",
@@ -4854,7 +4970,8 @@
     "priceList": {
       "driveFileId": "1vrpTmiVTn4N1Tdff9-BYd5H8bbCOQQwv",
       "createdAt": "As of November, 14 of 2024"
-    }
+    },
+    "isNew": false
   },
   {
     "slug": "glass-house-boca-raton",
@@ -4896,7 +5013,8 @@
     "priceList": {
       "driveFileId": "1PGXdivl0G-BPS-r7lD7OknLoTRr7pGv-",
       "createdAt": "As of April, 1 of 2026"
-    }
+    },
+    "isNew": false
   },
   {
     "slug": "glass-miami-beach",
@@ -4933,7 +5051,8 @@
     "priceList": {
       "hidden": true
     },
-    "projectLogo": "/images/logos/glass-miami-beach.svg"
+    "projectLogo": "/images/logos/glass-miami-beach.svg",
+    "isNew": false
   },
   {
     "slug": "grove-at-grand-bay",
@@ -4970,7 +5089,8 @@
     "priceList": {
       "externalUrl": "https://www.groveatgranbay.com/for-sale.html"
     },
-    "projectLogo": "/images/logos/grove-at-grand-bay.svg"
+    "projectLogo": "/images/logos/grove-at-grand-bay.svg",
+    "isNew": false
   },
   {
     "slug": "house-of-wellness-brickell",
@@ -5018,7 +5138,8 @@
     "priceList": {
       "driveFileId": "1_JHLJ_ZcchSXD-MGqPKvLSCjiQHAXi5s",
       "createdAt": "As of February, 13 of 2026"
-    }
+    },
+    "isNew": false
   },
   {
     "slug": "hub-miami",
@@ -5061,7 +5182,8 @@
     "priceList": {
       "driveFileId": "1_poC628_noM9vAGKrQp3UXz0hLx7zsfQ",
       "createdAt": "As of August, 15 of 2025"
-    }
+    },
+    "isNew": false
   },
   {
     "slug": "icon-beach-residences-hollywood",
@@ -5104,7 +5226,8 @@
     "priceList": {
       "driveFileId": "1jxYPIbkCKdGdWj0fid2yo7uLVDnWV6V2",
       "createdAt": "As of April, 1 of 2026"
-    }
+    },
+    "isNew": false
   },
   {
     "slug": "il-villaggio",
@@ -5141,7 +5264,8 @@
     "priceList": {
       "hidden": true
     },
-    "projectLogo": "/images/logos/il-villaggio.svg"
+    "projectLogo": "/images/logos/il-villaggio.svg",
+    "isNew": false
   },
   {
     "slug": "jade-beach",
@@ -5178,7 +5302,8 @@
     "priceList": {
       "hidden": true
     },
-    "projectLogo": "/images/logos/jade-beach.svg"
+    "projectLogo": "/images/logos/jade-beach.svg",
+    "isNew": false
   },
   {
     "slug": "jade-ocean",
@@ -5215,7 +5340,8 @@
     "priceList": {
       "externalUrl": "https://www.jadeoceancondo.com/for-sale.html"
     },
-    "projectLogo": "/images/logos/jade-ocean.svg"
+    "projectLogo": "/images/logos/jade-ocean.svg",
+    "isNew": false
   },
   {
     "slug": "jade-signature",
@@ -5257,7 +5383,8 @@
     "priceList": {
       "externalUrl": "https://www.jadesignatures.com/for-sale.html"
     },
-    "projectLogo": "/images/logos/jade-signature.svg"
+    "projectLogo": "/images/logos/jade-signature.svg",
+    "isNew": false
   },
   {
     "slug": "jem-residences",
@@ -5299,7 +5426,8 @@
     "priceList": {
       "driveFileId": "1DLNzsNU7xaYWdVaBwXFfG5VV26-81cZB",
       "createdAt": "As of February, 23 of 2026"
-    }
+    },
+    "isNew": false
   },
   {
     "slug": "l-atelier",
@@ -5336,7 +5464,8 @@
     "priceList": {
       "hidden": true
     },
-    "projectLogo": "/images/logos/l-atelier.svg"
+    "projectLogo": "/images/logos/l-atelier.svg",
+    "isNew": false
   },
   {
     "slug": "la-baia-north-bay-harbor",
@@ -5379,7 +5508,8 @@
     "priceList": {
       "driveFileId": "11IPIKAcqEzrVhQyVbHJ803jb-ofA4V8W",
       "createdAt": "As of April, 13 of 2026"
-    }
+    },
+    "isNew": false
   },
   {
     "slug": "la-santa-maria",
@@ -5416,7 +5546,8 @@
     "priceList": {
       "hidden": true
     },
-    "projectLogo": "/images/logos/la-santa-maria.svg"
+    "projectLogo": "/images/logos/la-santa-maria.svg",
+    "isNew": false
   },
   {
     "slug": "lofty-residences",
@@ -5462,7 +5593,8 @@
     "priceList": {
       "driveFileId": "1dHcIvS4XAgg1RyDfPmAsuZauxu2B4EXj",
       "createdAt": "As of December, 2 of 2025"
-    }
+    },
+    "isNew": false
   },
   {
     "slug": "maison-d-or-south-flagler",
@@ -5503,7 +5635,8 @@
     "priceList": {
       "driveFileId": "1nRj4kexwkE53O4vA3HciRALHWwgnbvwd",
       "createdAt": "As of February, 12 of 2026"
-    }
+    },
+    "isNew": false
   },
   {
     "slug": "mercedes-benz-places-miami",
@@ -5547,7 +5680,8 @@
     "priceList": {
       "driveFileId": "127w87ADZFZHl1AiVUYEUCNiQ3vhByq7X",
       "createdAt": "As of April, 1 of 2026"
-    }
+    },
+    "isNew": false
   },
   {
     "slug": "miami-design-residences-midtown-miami",
@@ -5587,7 +5721,8 @@
     "priceList": {
       "driveFileId": "1QPHVY5gv_PRiphceN5s5ELaLYdxCfme9",
       "createdAt": "As of April, 24 of 2026"
-    }
+    },
+    "isNew": false
   },
   {
     "slug": "mila-bay-harbor-islands",
@@ -5629,7 +5764,8 @@
     "priceList": {
       "driveFileId": "1vIaRkEqKvG0bB2SeZohrmsI79w20FKHf",
       "createdAt": "As of February, 3 of 2026"
-    }
+    },
+    "isNew": false
   },
   {
     "slug": "missoni-baia",
@@ -5668,7 +5804,8 @@
     "priceList": {
       "hidden": true
     },
-    "projectLogo": "/images/logos/missoni-baia.svg"
+    "projectLogo": "/images/logos/missoni-baia.svg",
+    "isNew": false
   },
   {
     "slug": "monaco-yacht-club-residences",
@@ -5711,7 +5848,8 @@
     "priceList": {
       "hidden": true
     },
-    "projectLogo": "/images/logos/monaco-yacht-club-residences.svg"
+    "projectLogo": "/images/logos/monaco-yacht-club-residences.svg",
+    "isNew": false
   },
   {
     "slug": "monad-terrace",
@@ -5748,7 +5886,8 @@
     "priceList": {
       "hidden": true
     },
-    "projectLogo": "/images/logos/monad-terrace.svg"
+    "projectLogo": "/images/logos/monad-terrace.svg",
+    "isNew": false
   },
   {
     "slug": "murano-at-portofino",
@@ -5785,7 +5924,8 @@
     "priceList": {
       "hidden": true
     },
-    "projectLogo": "/images/logos/murano-at-portofino.svg"
+    "projectLogo": "/images/logos/murano-at-portofino.svg",
+    "isNew": false
   },
   {
     "slug": "murano-grande-at-portofino",
@@ -5822,7 +5962,8 @@
     "priceList": {
       "hidden": true
     },
-    "projectLogo": "/images/logos/murano-grande-at-portofino.svg"
+    "projectLogo": "/images/logos/murano-grande-at-portofino.svg",
+    "isNew": false
   },
   {
     "slug": "muse-residences",
@@ -5859,7 +6000,8 @@
     "priceList": {
       "externalUrl": "https://www.museresidencesmiami.com/for-sale.html"
     },
-    "projectLogo": "/images/logos/muse-residences.svg"
+    "projectLogo": "/images/logos/muse-residences.svg",
+    "isNew": false
   },
   {
     "slug": "naples-beach-club-four-seasons",
@@ -5903,7 +6045,8 @@
     "priceList": {
       "driveFileId": "1XGiMLAk5rlBVh6NmmICKzpXyLfvxRyR4",
       "createdAt": "As of February, 26 of 2026"
-    }
+    },
+    "isNew": false
   },
   {
     "slug": "nexo-north-miami-beach",
@@ -5943,7 +6086,8 @@
     "priceList": {
       "driveFileId": "13x0f2XD21JnOyW1J4d3dS8SyiZ1wXpEh",
       "createdAt": "As of January, 5 of 2026"
-    }
+    },
+    "isNew": false
   },
   {
     "slug": "nomad-residences-wynwood",
@@ -5985,7 +6129,8 @@
     "priceList": {
       "driveFileId": "1splDzq2OXHtUbVGD0fSHDinVIxzTawMh",
       "createdAt": "As of April, 20 of 2026"
-    }
+    },
+    "isNew": false
   },
   {
     "slug": "oasis-hallandale",
@@ -6028,7 +6173,8 @@
     "priceList": {
       "driveFileId": "10ajv78EPR0ABoyMY_WQEg5f3BJdTWJwi",
       "createdAt": "As of April, 6 of 2026"
-    }
+    },
+    "isNew": false
   },
   {
     "slug": "ocean-580-pompano-beach",
@@ -6067,7 +6213,8 @@
     "priceList": {
       "driveFileId": "1EflwiR6V5n0k3eNdBu-ei3psMK12CyIG",
       "createdAt": "As of April, 15 of 2026"
-    }
+    },
+    "isNew": false
   },
   {
     "slug": "ocean-delray",
@@ -6104,7 +6251,8 @@
     "priceList": {
       "hidden": true
     },
-    "projectLogo": "/images/logos/ocean-delray.svg"
+    "projectLogo": "/images/logos/ocean-delray.svg",
+    "isNew": false
   },
   {
     "slug": "ocean-house-2",
@@ -6142,7 +6290,8 @@
       "driveFileId": "1BIj-iaVtJIbw-TDJvwIMfsJ_PbuQ-t3-",
       "createdAt": "As of April, 1 of 2026"
     },
-    "projectLogo": "/images/logos/ocean-house-2.svg"
+    "projectLogo": "/images/logos/ocean-house-2.svg",
+    "isNew": false
   },
   {
     "slug": "ocean-park",
@@ -6182,7 +6331,8 @@
     "priceList": {
       "hidden": true
     },
-    "projectLogo": "/images/logos/ocean-park.svg"
+    "projectLogo": "/images/logos/ocean-park.svg",
+    "isNew": false
   },
   {
     "slug": "ocean-terrace",
@@ -6223,7 +6373,8 @@
     "priceList": {
       "driveFileId": "1JXES6sbOeSQIx1Du1Zgi3Wi78N7hSHR6",
       "createdAt": "As of April, 28 of 2026"
-    }
+    },
+    "isNew": false
   },
   {
     "slug": "oceana-bal-harbour",
@@ -6264,7 +6415,8 @@
     "priceList": {
       "externalUrl": "https://www.oceanaballlharbour.com/for-sale.html"
     },
-    "projectLogo": "/images/logos/oceana-bal-harbour.svg"
+    "projectLogo": "/images/logos/oceana-bal-harbour.svg",
+    "isNew": false
   },
   {
     "slug": "oceana-key-biscayne",
@@ -6301,7 +6453,8 @@
     "priceList": {
       "externalUrl": "https://www.oceanakeybisscayne.com/for-sale.html"
     },
-    "projectLogo": "/images/logos/oceana-key-biscayne.svg"
+    "projectLogo": "/images/logos/oceana-key-biscayne.svg",
+    "isNew": false
   },
   {
     "slug": "oceanside",
@@ -6338,7 +6491,8 @@
     "priceList": {
       "hidden": true
     },
-    "projectLogo": "/images/logos/oceanside.svg"
+    "projectLogo": "/images/logos/oceanside.svg",
+    "isNew": false
   },
   {
     "slug": "okan-tower",
@@ -6379,7 +6533,8 @@
     "priceList": {
       "driveFileId": "1_PJUcCIB30yVkzUU2Y4hyzQWN212_qyJ",
       "createdAt": "As of April, 28 of 2026"
-    }
+    },
+    "isNew": false
   },
   {
     "slug": "olara-west-palm-beach",
@@ -6423,7 +6578,8 @@
     "priceList": {
       "driveFileId": "1y6i55TFTKHZE4RYxErdCNrQgO8yWa2N9",
       "createdAt": "As of April, 14 of 2026"
-    }
+    },
+    "isNew": false
   },
   {
     "slug": "ombelle-fort-lauderdale",
@@ -6465,7 +6621,8 @@
     "priceList": {
       "driveFileId": "1JqdHhFE9v_uossWUwYUip2kuDj9C2SLb",
       "createdAt": "As of January, 29 of 2026"
-    }
+    },
+    "isNew": false
   },
   {
     "slug": "onda-bay-harbor",
@@ -6508,7 +6665,8 @@
     "priceList": {
       "driveFileId": "1RWm6r96tQrjsrLlLjrmG6kKa7dYnUsoA",
       "createdAt": "As of December, 16 of 2025"
-    }
+    },
+    "isNew": false
   },
   {
     "slug": "one-ocean",
@@ -6545,7 +6703,8 @@
     "priceList": {
       "hidden": true
     },
-    "projectLogo": "/images/logos/one-ocean.svg"
+    "projectLogo": "/images/logos/one-ocean.svg",
+    "isNew": false
   },
   {
     "slug": "one-park-tower-by-turnberry",
@@ -6588,7 +6747,8 @@
     "priceList": {
       "driveFileId": "16S5QCWrU29Jm3t55pd6N75Dekt_nNJtu",
       "createdAt": "As of April, 27 of 2026"
-    }
+    },
+    "isNew": false
   },
   {
     "slug": "one-thousand-museum",
@@ -6625,7 +6785,8 @@
     "priceList": {
       "externalUrl": "https://www.1000museumiami.com/for-sale.html"
     },
-    "projectLogo": "/images/logos/one-thousand-museum.svg"
+    "projectLogo": "/images/logos/one-thousand-museum.svg",
+    "isNew": false
   },
   {
     "slug": "opus-coconut-grove",
@@ -6666,7 +6827,8 @@
     "priceList": {
       "driveFileId": "1OE_NxwW7aOE4440W-AWATHMCyQPYgw43",
       "createdAt": "As of April, 6 of 2026"
-    }
+    },
+    "isNew": false
   },
   {
     "slug": "origin",
@@ -6707,7 +6869,8 @@
     "priceList": {
       "driveFileId": "1EV1FwIIipBmmfjj8weyfoB87g4dMWVGN",
       "createdAt": "As of January, 15 of 2026"
-    }
+    },
+    "isNew": false
   },
   {
     "slug": "pagani-north-bay-village",
@@ -6753,7 +6916,8 @@
     "priceList": {
       "driveFileId": "1VuVrXI4EIOOJm3SoBpdLuM38sIerRLQ0",
       "createdAt": "As of March, 12 of 2026"
-    }
+    },
+    "isNew": false
   },
   {
     "slug": "palazzo-at-bayfront-naples",
@@ -6795,7 +6959,8 @@
     "priceList": {
       "driveFileId": "1Kqx249G2bsSw0XXThxY-7D0wIURrogkj",
       "createdAt": "As of July, 31 of 2025"
-    }
+    },
+    "isNew": false
   },
   {
     "slug": "palazzo-del-sol",
@@ -6832,7 +6997,8 @@
     "priceList": {
       "externalUrl": "https://www.palazzodellsol.com/for-sale.html"
     },
-    "projectLogo": "/images/logos/palazzo-del-sol.svg"
+    "projectLogo": "/images/logos/palazzo-del-sol.svg",
+    "isNew": false
   },
   {
     "slug": "palazzo-della-luna",
@@ -6869,7 +7035,8 @@
     "priceList": {
       "externalUrl": "https://www.palazzoodellaluna.com/for-sale.html"
     },
-    "projectLogo": "/images/logos/palazzo-della-luna.svg"
+    "projectLogo": "/images/logos/palazzo-della-luna.svg",
+    "isNew": false
   },
   {
     "slug": "palma-miami-beach",
@@ -6912,7 +7079,8 @@
     "priceList": {
       "driveFileId": "1rZJ5A9zHfkpDp264-61MtZNodcLFb48W",
       "createdAt": "As of April, 2 of 2026"
-    }
+    },
+    "isNew": false
   },
   {
     "slug": "paramount-fort-lauderdale-beach",
@@ -6949,7 +7117,8 @@
     "priceList": {
       "hidden": true
     },
-    "projectLogo": "/images/logos/paramount-fort-lauderdale-beach.svg"
+    "projectLogo": "/images/logos/paramount-fort-lauderdale-beach.svg",
+    "isNew": false
   },
   {
     "slug": "park-grove",
@@ -6986,7 +7155,8 @@
     "priceList": {
       "externalUrl": "https://www.parkgrovecondomiami.com/for-sale.html"
     },
-    "projectLogo": "/images/logos/park-grove.svg"
+    "projectLogo": "/images/logos/park-grove.svg",
+    "isNew": false
   },
   {
     "slug": "parque-towers",
@@ -7028,7 +7198,8 @@
     "priceList": {
       "hidden": true
     },
-    "projectLogo": "/images/logos/parque-towers.svg"
+    "projectLogo": "/images/logos/parque-towers.svg",
+    "isNew": false
   },
   {
     "slug": "pier-sixty-six-fort-lauderdale",
@@ -7068,7 +7239,8 @@
     "priceList": {
       "driveFileId": "1i_g7Ya5sMtIenmaZUZV219VDUE07jAQk",
       "createdAt": "As of April, 6 of 2026"
-    }
+    },
+    "isNew": false
   },
   {
     "slug": "porsche-design-tower",
@@ -7109,7 +7281,8 @@
     "priceList": {
       "hidden": true
     },
-    "projectLogo": "/images/logos/porsche-design-tower.svg"
+    "projectLogo": "/images/logos/porsche-design-tower.svg",
+    "isNew": false
   },
   {
     "slug": "portofino-tower",
@@ -7146,7 +7319,8 @@
     "priceList": {
       "hidden": true
     },
-    "projectLogo": "/images/logos/portofino-tower.svg"
+    "projectLogo": "/images/logos/portofino-tower.svg",
+    "isNew": false
   },
   {
     "slug": "prive-island",
@@ -7183,7 +7357,8 @@
     "priceList": {
       "hidden": true
     },
-    "projectLogo": "/images/logos/prive-island.svg"
+    "projectLogo": "/images/logos/prive-island.svg",
+    "isNew": false
   },
   {
     "slug": "regalia",
@@ -7220,7 +7395,8 @@
     "priceList": {
       "externalUrl": "https://www.regaliaresidenses.com/for-sale.html"
     },
-    "projectLogo": "/images/logos/regalia.svg"
+    "projectLogo": "/images/logos/regalia.svg",
+    "isNew": false
   },
   {
     "slug": "river-district-14-miami",
@@ -7264,7 +7440,8 @@
     "priceList": {
       "driveFileId": "1Q47M0JGCi5ui6VtBzDqYkmpKEX61tp_g",
       "createdAt": "As of April, 29 of 2026"
-    }
+    },
+    "isNew": false
   },
   {
     "slug": "rosewood-residences-naples",
@@ -7298,7 +7475,8 @@
     "priceList": {
       "driveFileId": "1QGVuwmVr0ATCppxwb7aOuDq0WJ1N9yi6",
       "createdAt": "As of February, 18 of 2026"
-    }
+    },
+    "isNew": false
   },
   {
     "slug": "sage-fort-lauderdale",
@@ -7339,7 +7517,8 @@
     "priceList": {
       "driveFileId": "1-1eqJgJ5TGhYWdTSg8Rja5ZbE7U29dYb",
       "createdAt": "As of January, 28 of 2026"
-    }
+    },
+    "isNew": false
   },
   {
     "slug": "salato",
@@ -7380,7 +7559,8 @@
     "priceList": {
       "driveFileId": "1Hd0vXnWzIuzrq9be8q4CL0aGYlp-yjDY",
       "createdAt": "As of March, 19 of 2026"
-    }
+    },
+    "isNew": false
   },
   {
     "slug": "setai-residences",
@@ -7417,7 +7597,8 @@
     "priceList": {
       "externalUrl": "https://setaimiamibeach.nestcapitals.com/for-sale.html"
     },
-    "projectLogo": "/images/logos/setai-residences.svg"
+    "projectLogo": "/images/logos/setai-residences.svg",
+    "isNew": false
   },
   {
     "slug": "shell-bay-by-auberge",
@@ -7457,7 +7638,8 @@
     "priceList": {
       "driveFileId": "12S40oYZRcRnBKEzCKCvyL9e5GcxoDIQ2",
       "createdAt": "As of April, 1 of 2026"
-    }
+    },
+    "isNew": false
   },
   {
     "slug": "shoma-bay",
@@ -7501,7 +7683,8 @@
     "priceList": {
       "driveFileId": "170UbAV974y-aSaoWVc8nTj6HF7iXcOw9",
       "createdAt": "As of March, 27 of 2026"
-    }
+    },
+    "isNew": false
   },
   {
     "slug": "sixth-rio",
@@ -7543,7 +7726,8 @@
     "priceList": {
       "driveFileId": "1QRlTgRlenWTE3G9-KMFq-MNOaxFrHgoq",
       "createdAt": "As of April, 10 of 2026"
-    }
+    },
+    "isNew": false
   },
   {
     "slug": "south-flagler-house",
@@ -7586,7 +7770,8 @@
     "priceList": {
       "driveFileId": "1oyZtBpI3EBPZ0f04XlStJoSHP6N-gclt",
       "createdAt": "As of April, 7 of 2026"
-    }
+    },
+    "isNew": false
   },
   {
     "slug": "south-pointe-towers",
@@ -7623,7 +7808,8 @@
     "priceList": {
       "hidden": true
     },
-    "projectLogo": "/images/logos/south-pointe-towers.svg"
+    "projectLogo": "/images/logos/south-pointe-towers.svg",
+    "isNew": false
   },
   {
     "slug": "st-regis-residences-bal-harbour",
@@ -7660,7 +7846,8 @@
     "priceList": {
       "hidden": true
     },
-    "projectLogo": "/images/logos/st-regis-residences-bal-harbour.svg"
+    "projectLogo": "/images/logos/st-regis-residences-bal-harbour.svg",
+    "isNew": false
   },
   {
     "slug": "surf-row",
@@ -7698,7 +7885,8 @@
     "priceList": {
       "driveFileId": "1qJf54HihipdAuFGn_blWlgN0_geIKVXy",
       "createdAt": "As of March, 20 of 2026"
-    }
+    },
+    "isNew": false
   },
   {
     "slug": "the-avenue",
@@ -7742,7 +7930,8 @@
     "priceList": {
       "driveFileId": "1nLlVWYDimeJzSGP9avSJkHRJY__ORooZ",
       "createdAt": "As of April, 1 of 2026"
-    }
+    },
+    "isNew": false
   },
   {
     "slug": "the-bath-club",
@@ -7779,7 +7968,8 @@
     "priceList": {
       "hidden": true
     },
-    "projectLogo": "/images/logos/the-bath-club.svg"
+    "projectLogo": "/images/logos/the-bath-club.svg",
+    "isNew": false
   },
   {
     "slug": "the-cove-residences",
@@ -7820,7 +8010,8 @@
     "priceList": {
       "driveFileId": "1p3y0qsR5GuY-LTjRZupQcEH1wBuxdUDJ",
       "createdAt": "As of March, 20 of 2026"
-    }
+    },
+    "isNew": false
   },
   {
     "slug": "the-estates-at-acqualina",
@@ -7859,7 +8050,8 @@
     "priceList": {
       "externalUrl": "https://www.estatessatacqualina.com/for-sale.html"
     },
-    "projectLogo": "/images/logos/the-estates-at-acqualina.svg"
+    "projectLogo": "/images/logos/the-estates-at-acqualina.svg",
+    "isNew": false
   },
   {
     "slug": "the-fairchild",
@@ -7896,7 +8088,8 @@
     "priceList": {
       "hidden": true
     },
-    "projectLogo": "/images/logos/the-fairchild.svg"
+    "projectLogo": "/images/logos/the-fairchild.svg",
+    "isNew": false
   },
   {
     "slug": "the-george-residences-coral-gables",
@@ -7930,7 +8123,8 @@
     "priceList": {
       "driveFileId": "1xAH9O0ha02AX-1mJepYewb2wuEh2izEM",
       "createdAt": "As of March, 6 of 2026"
-    }
+    },
+    "isNew": false
   },
   {
     "slug": "the-lincoln-coconut-grove",
@@ -7969,7 +8163,8 @@
     "priceList": {
       "driveFileId": "1hx7rikSY_yfCSofs1cO99lSM2LD48PcD",
       "createdAt": "As of April, 16 of 2026"
-    }
+    },
+    "isNew": false
   },
   {
     "slug": "the-links-estates",
@@ -8011,7 +8206,8 @@
     "priceList": {
       "driveFileId": "1Bg1JvytgE6DI3SwoxzthnIQ656zOVpMT",
       "createdAt": "As of July, 7 of 2025"
-    }
+    },
+    "isNew": false
   },
   {
     "slug": "the-mansions-at-acqualina",
@@ -8048,7 +8244,8 @@
     "priceList": {
       "hidden": true
     },
-    "projectLogo": "/images/logos/the-mansions-at-acqualina.svg"
+    "projectLogo": "/images/logos/the-mansions-at-acqualina.svg",
+    "isNew": false
   },
   {
     "slug": "the-ocean-club-four-seasons-residences-bahamas",
@@ -8091,7 +8288,8 @@
     "priceList": {
       "driveFileId": "1sG0ShNbRWnpSRq5EQBOlkZmOXtDP1Txf",
       "createdAt": "As of February, 24 of 2026"
-    }
+    },
+    "isNew": false
   },
   {
     "slug": "the-palace-at-bal-harbour",
@@ -8128,7 +8326,8 @@
     "priceList": {
       "hidden": true
     },
-    "projectLogo": "/images/logos/the-palace-at-bal-harbour.svg"
+    "projectLogo": "/images/logos/the-palace-at-bal-harbour.svg",
+    "isNew": false
   },
   {
     "slug": "the-residences-at-mandarin-oriental-boca-raton",
@@ -8172,7 +8371,8 @@
     "priceList": {
       "driveFileId": "1_sbRCEkkIGKjJfTdTfbm9qW7g6vZ7Fin",
       "createdAt": "As of April, 6 of 2026"
-    }
+    },
+    "isNew": false
   },
   {
     "slug": "the-residences-at-six-fisher-island",
@@ -8213,7 +8413,8 @@
     "priceList": {
       "driveFileId": "19z3EI2CzQAN6OMoi684dKMrmaefaDczC",
       "createdAt": "As of April, 10 of 2026"
-    }
+    },
+    "isNew": false
   },
   {
     "slug": "the-residences-at-the-miami-beach-edition",
@@ -8250,7 +8451,8 @@
     "priceList": {
       "hidden": true
     },
-    "projectLogo": "/images/logos/the-residences-at-the-miami-beach-edition.svg"
+    "projectLogo": "/images/logos/the-residences-at-the-miami-beach-edition.svg",
+    "isNew": false
   },
   {
     "slug": "the-ritz-carlton-residences-bal-harbour",
@@ -8287,7 +8489,8 @@
     "priceList": {
       "hidden": true
     },
-    "projectLogo": "/images/logos/the-ritz-carlton-residences-bal-harbour.svg"
+    "projectLogo": "/images/logos/the-ritz-carlton-residences-bal-harbour.svg",
+    "isNew": false
   },
   {
     "slug": "the-ritz-carlton-residences-naples",
@@ -8326,7 +8529,8 @@
     "priceList": {
       "driveFileId": "198v0Rrxhf4kB1NIkVLoJwAhoJKgMITO2",
       "createdAt": "As of March, 13 of 2026"
-    }
+    },
+    "isNew": false
   },
   {
     "slug": "the-ritz-carlton-residences-pompano-beach",
@@ -8369,7 +8573,8 @@
     "priceList": {
       "driveFileId": "1dgj51r9NC_ssPf7bS5ldSfURw1PRCeep",
       "createdAt": "As of March, 30 of 2026"
-    }
+    },
+    "isNew": false
   },
   {
     "slug": "the-ritz-carlton-residences-sunny-isles",
@@ -8411,7 +8616,8 @@
     "priceList": {
       "externalUrl": "https://ritzcarltonsunnyisles.nestcapitals.com/for-sale.html"
     },
-    "projectLogo": "/images/logos/the-ritz-carlton-residences-sunny-isles.svg"
+    "projectLogo": "/images/logos/the-ritz-carlton-residences-sunny-isles.svg",
+    "isNew": false
   },
   {
     "slug": "the-roads-townhomes-brickell",
@@ -8439,7 +8645,8 @@
     "priceList": {
       "driveFileId": "1C1A6a0RxfqGaUNF-G4gkOjM9zfKBvLvA",
       "createdAt": "As of December, 23 of 2025"
-    }
+    },
+    "isNew": false
   },
   {
     "slug": "the-standard-residences",
@@ -8481,7 +8688,8 @@
     "priceList": {
       "driveFileId": "1BsbRyhwppR7ydH46XNcU3uYptOZDK8_N",
       "createdAt": "As of April, 29 of 2026"
-    }
+    },
+    "isNew": false
   },
   {
     "slug": "turnberry-ocean-club",
@@ -8518,7 +8726,8 @@
     "priceList": {
       "externalUrl": "https://www.turnberryoceansclub.com/for-sale.html"
     },
-    "projectLogo": "/images/logos/turnberry-ocean-club.svg"
+    "projectLogo": "/images/logos/turnberry-ocean-club.svg",
+    "isNew": false
   },
   {
     "slug": "turnberry-ocean-colony",
@@ -8555,7 +8764,8 @@
     "priceList": {
       "hidden": true
     },
-    "projectLogo": "/images/logos/turnberry-ocean-colony.svg"
+    "projectLogo": "/images/logos/turnberry-ocean-colony.svg",
+    "isNew": false
   },
   {
     "slug": "twenty-nine-indian-creek",
@@ -8593,7 +8803,8 @@
     "priceList": {
       "driveFileId": "1qJllB6Rfh2mQhiX8uiOIw7QfMLkFXFpW",
       "createdAt": "As of February, 25 of 2026"
-    }
+    },
+    "isNew": false
   },
   {
     "slug": "una-residences",
@@ -8637,7 +8848,8 @@
     "priceList": {
       "driveFileId": "1l9MO24_GU6PcI5AR51QIgV7aXW8CNaTQ",
       "createdAt": "As of April, 10 of 2026"
-    }
+    },
+    "isNew": false
   },
   {
     "slug": "viceroy-brickell",
@@ -8680,7 +8892,8 @@
     "priceList": {
       "driveFileId": "11lTUFH1vgdmUZH9tbYv_DEX9I4Qf3uL0",
       "createdAt": "As of March, 26 of 2026"
-    }
+    },
+    "isNew": false
   },
   {
     "slug": "viceroy-fort-lauderdale",
@@ -8722,7 +8935,8 @@
     "priceList": {
       "driveFileId": "1ky5yqBrZ4cceDlOa5He4CAaU1RthOHrN",
       "createdAt": "As of March, 26 of 2026"
-    }
+    },
+    "isNew": false
   },
   {
     "slug": "villa-valencia",
@@ -8764,7 +8978,8 @@
     "priceList": {
       "hidden": true
     },
-    "projectLogo": "/images/logos/villa-valencia.svg"
+    "projectLogo": "/images/logos/villa-valencia.svg",
+    "isNew": false
   },
   {
     "slug": "w-south-beach-residences",
@@ -8801,7 +9016,8 @@
     "priceList": {
       "hidden": true
     },
-    "projectLogo": "/images/logos/w-south-beach-residences.svg"
+    "projectLogo": "/images/logos/w-south-beach-residences.svg",
+    "isNew": false
   },
   {
     "slug": "waldorf-astoria-residences-downtown-miami",
@@ -8845,7 +9061,8 @@
     "priceList": {
       "driveFileId": "1B0mOgYn16F4fSmD9SzpRa1DlZgeLemud",
       "createdAt": "As of April, 29 of 2026"
-    }
+    },
+    "isNew": false
   },
   {
     "slug": "west-eleventh-residences",
@@ -8884,6 +9101,7 @@
     "priceList": {
       "driveFileId": "1XjnRNAsU7t077vKL7PjiGEEd9dCm04Dj",
       "createdAt": "As of April, 6 of 2026"
-    }
+    },
+    "isNew": false
   }
 ]
