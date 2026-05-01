@@ -7422,7 +7422,9 @@
     "parkingSpaces": [
       "One parking space per unit."
     ],
-    "rentalRestrictions": null,
+    "rentalRestrictions": [
+      "Daily Rentals Allowed"
+    ],
     "hoa": "$1.21",
     "contact": [
       {
