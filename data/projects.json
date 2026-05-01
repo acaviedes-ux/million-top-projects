@@ -7415,7 +7415,9 @@
       "20% at contract",
       "10% 90 days after contract",
       "70% at closing (Q4 2026)",
-      "For 2-bedroom residences:"
+      "For 2-bedroom residences:",
+      "20% at contract",
+      "80% at closing"
     ],
     "parkingSpaces": [
       "One parking space per unit."
