@@ -1940,7 +1940,7 @@
         "email": "lgustafson@theresidencesfortlauderdalebeach.com"
       }
     ],
-    "projectLogo": "/images/logos/ritz-carlton-fort-lauderdale.jpg",
+    "projectLogo": "/images/logos/ritz-carlton-fort-lauderdale.png",
     "priceList": {
       "driveFileId": "1_S7sEVZ_L4a5GIGXyqQB2T0LMzvIrKi9",
       "createdAt": "As of April, 23 of 2026"
@@ -1983,7 +1983,7 @@
     "priceList": {
       "externalUrl": "https://ritzcarltonresidencesmiamibeach.nestcapitals.com/for-sale.html"
     },
-    "projectLogo": "/images/logos/ritz-carlton-miami-beach.svg",
+    "projectLogo": "/images/logos/ritz-carlton-miami-beach.png",
     "isNew": false
   },
   {
@@ -2022,7 +2022,7 @@
         "email": "dave@theresidencespalmbeachgardens.com"
       }
     ],
-    "projectLogo": "/images/logos/ritz-carlton-palm-beach-gardens.jpg",
+    "projectLogo": "/images/logos/ritz-carlton-palm-beach-gardens.png",
     "priceList": {
       "driveFileId": "1H555FTV5cAOY16sqwyi--Tbh0jSg3Yah",
       "createdAt": "As of April, 6 of 2026"
@@ -2065,7 +2065,7 @@
         "email": "pietro.belmonte@elliman.com"
       }
     ],
-    "projectLogo": "/images/logos/ritz-carlton-south-beach.jpg",
+    "projectLogo": "/images/logos/ritz-carlton-south-beach.png",
     "priceList": {
       "driveFileId": "1djbLkYpCyezLtCRgwGAQqTdueTnAidnN",
       "createdAt": "As of April, 7 of 2026"
@@ -2110,7 +2110,7 @@
         "email": "joe.columbo@elliman.com"
       }
     ],
-    "projectLogo": "/images/logos/ritz-carlton-west-palm.jpg",
+    "projectLogo": "/images/logos/ritz-carlton-west-palm.png",
     "priceList": {
       "driveFileId": "1hEacT9wjc-1PVF5N6iJNuLzMrqnsZBb0",
       "createdAt": "As of April, 17 of 2026"
@@ -8486,7 +8486,7 @@
     "priceList": {
       "hidden": true
     },
-    "projectLogo": "/images/logos/the-ritz-carlton-residences-bal-harbour.svg",
+    "projectLogo": "/images/logos/the-ritz-carlton-residences-bal-harbour.png",
     "isNew": false
   },
   {
@@ -8522,7 +8522,7 @@
         "email": "dgora@stockdevelopment.com"
       }
     ],
-    "projectLogo": "/images/logos/the-ritz-carlton-residences-naples.jpg",
+    "projectLogo": "/images/logos/the-ritz-carlton-residences-naples.png",
     "priceList": {
       "driveFileId": "198v0Rrxhf4kB1NIkVLoJwAhoJKgMITO2",
       "createdAt": "As of March, 13 of 2026"
@@ -8535,8 +8535,8 @@
     "tpDataName": "The Ritz-Carlton Residences® Pompano Beach",
     "section": "Other Projects",
     "startingPrice": "$5.7M",
-    "thumbnail": null,
-    "hero": null,
+    "thumbnail": "/images/renders/the-ritz-carlton-residences-pompano-beach.jpg",
+    "hero": "/images/renders/the-ritz-carlton-residences-pompano-beach.jpg",
     "theBuilding": "This residential masterpiece offers a total of 206 ultra-luxurious 1 to 5 bedroom units with spaces ranging from 1,170 to 12,503 square feet, designed by Luis Revuelta.",
     "stylishAmenities": "The indoor experiences include a wine tasting room, virtual golf simulators, pool tables, art classes, a library and a business center. Also featuring both a yacht club as well as a beach club with trained staff, pickleball court, outstanding services and amenities by the renowned Ritz-Carlton®.",
     "brochures": [],
@@ -8566,7 +8566,7 @@
         "email": "apelaez@fir.com"
       }
     ],
-    "projectLogo": "/images/logos/the-ritz-carlton-residences-pompano-beach.jpg",
+    "projectLogo": "/images/logos/the-ritz-carlton-residences-pompano-beach.png",
     "priceList": {
       "driveFileId": "1dgj51r9NC_ssPf7bS5ldSfURw1PRCeep",
       "createdAt": "As of March, 30 of 2026"
@@ -8613,7 +8613,7 @@
     "priceList": {
       "externalUrl": "https://ritzcarltonsunnyisles.nestcapitals.com/for-sale.html"
     },
-    "projectLogo": "/images/logos/the-ritz-carlton-residences-sunny-isles.svg",
+    "projectLogo": "/images/logos/the-ritz-carlton-residences-sunny-isles.png",
     "isNew": false
   },
   {
