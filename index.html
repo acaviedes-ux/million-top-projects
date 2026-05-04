@@ -165,6 +165,34 @@
       contentEl.appendChild(frag);
     }
 
+    // ── Lobby state persistence (scroll + search) ────────────────
+    function saveState() {
+      sessionStorage.setItem('lobbyScrollY', window.scrollY);
+      sessionStorage.setItem('lobbySearchQuery', searchEl.value);
+    }
+
+    function restoreState() {
+      var q = sessionStorage.getItem('lobbySearchQuery') || '';
+      var y = parseInt(sessionStorage.getItem('lobbyScrollY') || '0', 10);
+      sessionStorage.removeItem('lobbyScrollY');
+      sessionStorage.removeItem('lobbySearchQuery');
+
+      if (q) {
+        searchEl.value = q;
+        navSearchEl.value = q;
+        render(q.toLowerCase().trim());
+      }
+
+      if (y) {
+        requestAnimationFrame(function() { window.scrollTo(0, y); });
+      }
+    }
+
+    // Save state whenever a project card is clicked
+    contentEl.addEventListener('click', function(e) {
+      if (e.target.closest('.project-card')) saveState();
+    });
+
     // ── Load ─────────────────────────────────────────────────────
     function showError() {
       contentEl.textContent = '';
@@ -180,6 +208,7 @@
         .then(function(data) {
           allProjects = data;
           render('');
+          restoreState();
         })
         .catch(showError);
     }
