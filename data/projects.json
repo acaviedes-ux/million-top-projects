@@ -58,7 +58,11 @@
       "driveFileId": "181AgGdoTFE3IX8vJIBIBD6CmU9rczXpt",
       "createdAt": "As of April, 20 of 2026"
     },
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Brickell",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2030"
   },
   {
     "slug": "72-carlyle",
@@ -101,7 +105,11 @@
       "driveFileId": "1_UP3y2YCvBqRae6dRI3OIj81XhQQ-43U",
       "createdAt": "As of April, 1 of 2026"
     },
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Miami Beach",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2028"
   },
   {
     "slug": "888-brickell",
@@ -146,7 +154,11 @@
       "driveFileId": "1o-hD9jBBvqTeXwyVa5r8i2vIX-g8DaUJ",
       "createdAt": "As of April, 13 of 2026"
     },
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Brickell",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2028"
   },
   {
     "slug": "andare-residences",
@@ -192,7 +204,11 @@
       "driveFileId": "1oPBOlX7JoVIGmlJiVV90SOf_1kPWyJNo",
       "createdAt": "As of April, 27 of 2026"
     },
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Broward County",
+    "filterLocation": "Fort Lauderdale",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2027"
   },
   {
     "slug": "aria-reserve",
@@ -238,7 +254,11 @@
       "driveFileId": "1ionTmudk_U5tj0Q3pNp-9lPMAgNia7zw",
       "createdAt": "As of March, 20 of 2026"
     },
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Edgewater",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2026"
   },
   {
     "slug": "armani-casa-pompano-beach",
@@ -281,7 +301,11 @@
       "driveFileId": "1e-S1forYtBUOuoahx6Oavy5eKzIu-iTt",
       "createdAt": "As of December, 12 of 2025"
     },
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Broward County",
+    "filterLocation": "Pompano Beach",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2028"
   },
   {
     "slug": "avenia-aventura",
@@ -322,7 +346,11 @@
       "driveFileId": "12vVORLBhU2VkpxYtAi_gbqJIvLBgWSnM",
       "createdAt": "As of February, 13 of 2026"
     },
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Aventura",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2028"
   },
   {
     "slug": "banyan-tree",
@@ -369,7 +397,11 @@
       "driveFileId": "1GPRSu4G7JHKKmCA4mGSPansbS0mPmYNE",
       "createdAt": "As of March, 26 of 2026"
     },
-    "isNew": true
+    "isNew": true,
+    "filterCounty": "Palm Beach County",
+    "filterLocation": "West Palm Beach",
+    "filterStatus": "Pre-construction - NEW",
+    "filterYear": "2029"
   },
   {
     "slug": "bay-harbor-towers",
@@ -412,7 +444,11 @@
       "driveFileId": "1GXMKbCi24VY2y_rxpUMf0Ha9ARuKdbRX",
       "createdAt": "As of April, 16 of 2026"
     },
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Bay Harbor Islands",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2026"
   },
   {
     "slug": "casa-cipriani",
@@ -441,7 +477,11 @@
       "heading": "NO UNITS AVAILABLE"
     },
     "projectLogo": "/images/logos/casa-cipriani.svg",
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Miami Beach",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2027"
   },
   {
     "slug": "cipriani-residences",
@@ -489,7 +529,11 @@
       "driveFileId": "1tti5R3-KymvQj0RtWaMQFwY3sw2jyR8_",
       "createdAt": "As of April, 23 of 2026"
     },
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Brickell",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2028"
   },
   {
     "slug": "colette-brickell",
@@ -533,7 +577,11 @@
       "driveFileId": "14raCCHVkPStsAPLlgJU7uWIcdcOvnhYg",
       "createdAt": "As of April, 2 of 2026"
     },
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Brickell",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2028"
   },
   {
     "slug": "cora-merrick",
@@ -576,7 +624,11 @@
       "driveFileId": "1lX90_0SFDtTiXhfgCKzqEuWgLGBxm7Db",
       "createdAt": "As of April, 16 of 2026"
     },
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Coral Gables",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2027"
   },
   {
     "slug": "edition-residences-edgewater",
@@ -620,7 +672,11 @@
       "driveFileId": "1d0tNFJ7efBXDBb0ymOkyVHLzk0M06J-h",
       "createdAt": "As of March, 18 of 2026"
     },
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Edgewater",
+    "filterStatus": "CANCELLED",
+    "filterYear": "2028"
   },
   {
     "slug": "faena-house",
@@ -659,7 +715,11 @@
       "externalUrl": "https://www.faenahousemiami.com/for-sale.html"
     },
     "projectLogo": "/images/logos/faena-house.svg",
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Miami Beach",
+    "filterStatus": "Resale",
+    "filterYear": "2015"
   },
   {
     "slug": "faena-residences-downtown-miami",
@@ -707,7 +767,11 @@
       "driveFileId": "1t9fxfMQHAZzqsRN_yaS40YCPdm5se9C7",
       "createdAt": "As of March, 25 of 2026"
     },
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Downtown Miami",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2029"
   },
   {
     "slug": "four-seasons-coconut-grove",
@@ -751,7 +815,11 @@
       "driveFileId": "1ipdJf4UGI-v_oNrjU0jkVRXF1MVOaX5U",
       "createdAt": "As of April, 8 of 2026"
     },
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Coconut Grove",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2028"
   },
   {
     "slug": "kempinski-residences-miami-design-district",
@@ -793,7 +861,11 @@
     "priceList": {
       "driveFileId": "1Onko0pidCIDwhGR-aTZx_JL8Nmmu7pLh",
       "createdAt": "As of April, 17 of 2026"
-    }
+    },
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Design District",
+    "filterStatus": "Pre-construction - NEW",
+    "filterYear": "2029"
   },
   {
     "slug": "la-mare",
@@ -846,7 +918,11 @@
       "driveFileId": "1kZoiOqlLtM3FBjexihnLLJ8Le6_NYpil",
       "createdAt": "As of April, 1 of 2026"
     },
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Bay Harbor Islands",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2027"
   },
   {
     "slug": "miami-tropic",
@@ -896,7 +972,11 @@
       "driveFileId": "1qGKlggCJ7Wo2LsQzf0ZD8sFbGdAkJPS-",
       "createdAt": "As of April, 1 of 2026"
     },
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Miami",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2029"
   },
   {
     "slug": "mr-c-residences-boca-raton",
@@ -939,7 +1019,11 @@
       "driveFileId": "1yBKr4513Y3KhKIM_tRHF3WFhT5CK6_ET",
       "createdAt": "As of April, 20 of 2026"
     },
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Palm Beach County",
+    "filterLocation": "Boca Raton",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2029"
   },
   {
     "slug": "mr-c-residences-tigertail",
@@ -977,7 +1061,11 @@
       "externalUrl": "https://www.mrcresidencemiami.com/for-sale.html"
     },
     "projectLogo": "/images/logos/mr-c-residences-tigertail.svg",
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Coconut Grove",
+    "filterStatus": "Resale",
+    "filterYear": "2024"
   },
   {
     "slug": "mr-c-residences-west-palm-beach",
@@ -1019,7 +1107,11 @@
       "driveFileId": "1_QTK1Jld01GnnIfBT24BJ2x5jLmiH1Wx",
       "createdAt": "As of April, 8 of 2026"
     },
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Palm Beach County",
+    "filterLocation": "West Palm Beach",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2027"
   },
   {
     "slug": "nora-house",
@@ -1063,7 +1155,11 @@
       "createdAt": "As of April, 2 of 2026"
     },
     "projectLogo": "/images/logos/nora-house.png",
-    "isNew": true
+    "isNew": true,
+    "filterCounty": "Palm Beach County",
+    "filterLocation": "West Palm Beach",
+    "filterStatus": "Pre-construction - NEW",
+    "filterYear": "2029"
   },
   {
     "slug": "ocean-house",
@@ -1107,7 +1203,11 @@
       "driveFileId": "1BIj-iaVtJIbw-TDJvwIMfsJ_PbuQ-t3-",
       "createdAt": "As of April, 1 of 2026"
     },
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Surfside",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2027"
   },
   {
     "slug": "ora-casa-tua",
@@ -1153,7 +1253,11 @@
       "driveFileId": "1w7HVA2n7c-C_yuTAPwb0arBQXlr6WY6U",
       "createdAt": "As of April, 27 of 2026"
     },
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Brickell",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2029"
   },
   {
     "slug": "ponce-park",
@@ -1197,7 +1301,11 @@
       "driveFileId": "1uMXFsCIUtRjJxFZughlpFbUZJadzmsiU",
       "createdAt": "As of April, 14 of 2026"
     },
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Coral Gables",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2028"
   },
   {
     "slug": "riva-residenze",
@@ -1241,7 +1349,11 @@
       "driveFileId": "1lAfZTDebbVQl4yUuSfBteQjAKcHX-qoR",
       "createdAt": "As of December, 13 of 2025"
     },
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Broward County",
+    "filterLocation": "Fort Lauderdale",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2028"
   },
   {
     "slug": "rivage-bal-harbour",
@@ -1284,7 +1396,11 @@
       "driveFileId": "13U78AfKpTUBNYb1CyKcQec9HTsW8vryf",
       "createdAt": "As of April, 17 of 2026"
     },
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Bal Harbour",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2028"
   },
   {
     "slug": "rosewood-hillsboro",
@@ -1328,7 +1444,11 @@
       "driveFileId": "1YK29BXm-r9R8G1VrrFfpEuW3GYruXVm4",
       "createdAt": "As of April, 27 of 2026"
     },
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Broward County",
+    "filterLocation": "Hillsboro Beach",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2027"
   },
   {
     "slug": "shore-club-private-collection-residences",
@@ -1369,7 +1489,11 @@
       "driveFileId": "1g3NJIwob5UmwnBSz7iYfX7zPWPMzpkhX",
       "createdAt": "As of February, 27 of 2026"
     },
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Miami Beach",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2028"
   },
   {
     "slug": "shorecrest-west-palm-beach",
@@ -1413,7 +1537,11 @@
       "driveFileId": "1lBnA52J-4xwNCDQUEmXNRhTfqjf7Ik2N",
       "createdAt": "As of April, 10 of 2026"
     },
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Palm Beach County",
+    "filterLocation": "West Palm Beach",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2028"
   },
   {
     "slug": "st-regis-residences-bahia-mar-fort-lauderdale",
@@ -1458,7 +1586,11 @@
       "driveFileId": "1V6JyrgMdHBVjXJtUfRCoIM2o5pexqXEr",
       "createdAt": "As of April, 24 of 2026"
     },
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Broward County",
+    "filterLocation": "Fort Lauderdale",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2029"
   },
   {
     "slug": "st-regis-residences-brickell",
@@ -1503,7 +1635,11 @@
       "driveFileId": "1WsK0EERloiAA4U9fn_awIazisYvhIW_q",
       "createdAt": "As of April, 8 of 2026"
     },
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Brickell",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2027"
   },
   {
     "slug": "st-regis-residences-sunny-isles",
@@ -1554,7 +1690,11 @@
       "driveFileId": "1DJJlF7BqNq-_B9zXm1SBvkq86tHSiCw-",
       "createdAt": "As of April, 15 of 2026"
     },
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Sunny Isles Beach",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2029"
   },
   {
     "slug": "the-berkeley",
@@ -1598,7 +1738,11 @@
       "driveFileId": "12G9LHVA4j8YL7C13e793FEt7uLc0Ql0A",
       "createdAt": "As of April, 28 of 2026"
     },
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Palm Beach County",
+    "filterLocation": "Palm Beach",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2028"
   },
   {
     "slug": "the-bristol",
@@ -1637,7 +1781,11 @@
       "message": "Check Availability on MLS"
     },
     "projectLogo": "/images/logos/the-bristol.png",
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Palm Beach County",
+    "filterLocation": "Palm Beach",
+    "filterStatus": "Resale",
+    "filterYear": "2019"
   },
   {
     "slug": "the-delmore",
@@ -1679,7 +1827,11 @@
       "driveFileId": "1FANYhuswf8-JGTs9Ua5dQeA1hNWHBrfe",
       "createdAt": "As of January, 5 of 2026"
     },
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Surfside",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2029"
   },
   {
     "slug": "the-perigon",
@@ -1726,7 +1878,11 @@
       "driveFileId": "1lc3XAFY4G97b-0heBMmPY3nkH0YcLs-P",
       "createdAt": "As of April, 7 of 2026"
     },
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Miami Beach",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2027"
   },
   {
     "slug": "the-raleigh",
@@ -1768,7 +1924,11 @@
       "driveFileId": "1nYx-lbj866SxUNBMJ1nXI_erDeainQj-",
       "createdAt": "As of August, 27 of 2025"
     },
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Miami Beach",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2027"
   },
   {
     "slug": "1428-brickell",
@@ -1814,7 +1974,11 @@
       "driveFileId": "1GjJfjMSjROuCUrIgHWaHco4lfK3LruHP",
       "createdAt": "As of April, 29 of 2026"
     },
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Brickell",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2028"
   },
   {
     "slug": "mandarin-oriental-miami",
@@ -1861,7 +2025,11 @@
       "driveFileId": "1AkDF5goneljVdQwKOK6jttzZGDOIIn7V",
       "createdAt": "As of April, 8 of 2026"
     },
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Downtown Miami",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2030"
   },
   {
     "slug": "the-residences-at-mandarin-oriental-west-palm-beach",
@@ -1904,7 +2072,11 @@
       "driveFileId": "1Ac2M-r8QtR0HI8QZhl17cg0QQXAzFLFg",
       "createdAt": "As of April, 6 of 2026"
     },
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Palm Beach County",
+    "filterLocation": "West Palm Beach",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2031"
   },
   {
     "slug": "ritz-carlton-fort-lauderdale",
@@ -1945,7 +2117,11 @@
       "driveFileId": "1_S7sEVZ_L4a5GIGXyqQB2T0LMzvIrKi9",
       "createdAt": "As of April, 23 of 2026"
     },
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Broward County",
+    "filterLocation": "Fort Lauderdale",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2029"
   },
   {
     "slug": "ritz-carlton-miami-beach",
@@ -1984,7 +2160,11 @@
       "externalUrl": "https://ritzcarltonresidencesmiamibeach.nestcapitals.com/for-sale.html"
     },
     "projectLogo": "/images/logos/ritz-carlton-miami-beach.png",
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Miami Beach",
+    "filterStatus": "Resale",
+    "filterYear": "2019"
   },
   {
     "slug": "ritz-carlton-palm-beach-gardens",
@@ -2027,7 +2207,11 @@
       "driveFileId": "1H555FTV5cAOY16sqwyi--Tbh0jSg3Yah",
       "createdAt": "As of April, 6 of 2026"
     },
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Palm Beach County",
+    "filterLocation": "Palm Beach Gardens",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2026"
   },
   {
     "slug": "ritz-carlton-south-beach",
@@ -2070,7 +2254,11 @@
       "driveFileId": "1djbLkYpCyezLtCRgwGAQqTdueTnAidnN",
       "createdAt": "As of April, 7 of 2026"
     },
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Miami Beach",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2028"
   },
   {
     "slug": "ritz-carlton-west-palm",
@@ -2115,7 +2303,11 @@
       "driveFileId": "1hEacT9wjc-1PVF5N6iJNuLzMrqnsZBb0",
       "createdAt": "As of April, 17 of 2026"
     },
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Palm Beach County",
+    "filterLocation": "West Palm Beach",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2028"
   },
   {
     "slug": "surf-club-four-seasons",
@@ -2155,7 +2347,11 @@
       "externalUrl": "https://www.thesurfclubs.com/for-sale.html"
     },
     "projectLogo": "/images/logos/surf-club-four-seasons.svg",
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Surfside",
+    "filterStatus": "Resale",
+    "filterYear": "2017"
   },
   {
     "slug": "the-village-coral-gables",
@@ -2199,7 +2395,11 @@
       "driveFileId": "12GcPPA9O3YJL5wg6KhzSnNQvk6i7RNeu",
       "createdAt": "As of March, 5 of 2026"
     },
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Coral Gables",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2026"
   },
   {
     "slug": "the-well-bay-harbor",
@@ -2240,7 +2440,11 @@
       "driveFileId": "1wld03EUblS_0uYacTtYnj3C2mlasuzN5",
       "createdAt": "As of April, 29 of 2026"
     },
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Bay Harbor Islands",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2026"
   },
   {
     "slug": "the-well-coconut-grove",
@@ -2287,7 +2491,11 @@
       "driveFileId": "1B7zAT7HpgeVKvgQCcqv2QcF6YjejTaoM",
       "createdAt": "As of April, 22 of 2026"
     },
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Coconut Grove",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2028"
   },
   {
     "slug": "tula-residences",
@@ -2327,7 +2535,11 @@
       "driveFileId": "1PcJZ3Za42WNhk_2GZvio6Kp8W0a25fZE",
       "createdAt": "As of March, 27 of 2026"
     },
-    "isNew": true
+    "isNew": true,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "North Bay Village",
+    "filterStatus": "Pre-construction - NEW",
+    "filterYear": "2027"
   },
   {
     "slug": "villa-miami",
@@ -2375,7 +2587,11 @@
       "driveFileId": "1g5bCs8HuZ8IFrSAmqU55DjRLojvEWXWt",
       "createdAt": "As of April, 6 of 2026"
     },
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Downtown Miami",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2027"
   },
   {
     "slug": "vita-at-grove-isle",
@@ -2418,7 +2634,11 @@
       "driveFileId": "19ro7jUNdjVL_OrG2o7X_HTCppynA7Oa6",
       "createdAt": "As of April, 6 of 2026"
     },
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Coconut Grove",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2025"
   },
   {
     "slug": "w-pompano-beach-hotel-residences",
@@ -2463,7 +2683,11 @@
       "driveFileId": "1xlfS9MVodwwLYscvJ1Zs0KEU7HnD1lQa",
       "createdAt": "As of March, 23 of 2026"
     },
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Broward County",
+    "filterLocation": "Pompano Beach",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2029"
   },
   {
     "slug": "waldorf-astoria-pompano",
@@ -2508,7 +2732,11 @@
       "driveFileId": "1mqb2zolOG2T4fErkS22cyuTPilszkJH8",
       "createdAt": "As of April, 21 of 2026"
     },
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Broward County",
+    "filterLocation": "Pompano Beach",
+    "filterStatus": "Pre-construction - NEW",
+    "filterYear": "2027"
   },
   {
     "slug": "ziggurat-coconut-grove",
@@ -2549,7 +2777,11 @@
       "driveFileId": "1EHsPsdedx4sRghV1YZHdakTKyoTEsF8g",
       "createdAt": "As of April, 13 of 2026"
     },
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Coconut Grove",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2028"
   },
   {
     "slug": "1-hotel-homes",
@@ -2587,7 +2819,11 @@
       "hidden": true
     },
     "projectLogo": "/images/logos/1-hotel-homes.svg",
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "South Beach",
+    "filterStatus": "Resale",
+    "filterYear": "2014"
   },
   {
     "slug": "123-ocean-palm-beach-shores",
@@ -2622,7 +2858,11 @@
       "driveFileId": "1A9LVvscLEAqquXO4brsgX97Ma2QhD8h9",
       "createdAt": "As of April, 16 of 2026"
     },
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Palm Beach County",
+    "filterLocation": "Palm Beach Shores",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2029"
   },
   {
     "slug": "14-roc-miami",
@@ -2665,7 +2905,11 @@
       "driveFileId": "1NdkubOIW_z5O-8PeqWT0LPninAJgsPMk",
       "createdAt": "As of January, 25 of 2025"
     },
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Downtown Miami",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2027"
   },
   {
     "slug": "2000-ocean",
@@ -2706,7 +2950,11 @@
       "externalUrl": "https://www.2000oceaninhallandale.com/for-sale.html"
     },
     "projectLogo": "/images/logos/2000-ocean.svg",
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Broward County",
+    "filterLocation": "Hallandale",
+    "filterStatus": "Resale",
+    "filterYear": "2021"
   },
   {
     "slug": "2200-brickell",
@@ -2749,7 +2997,11 @@
       "driveFileId": "1Swh9ppx6TIECgtwPCIizgObR7UeYTsrO",
       "createdAt": "As of April, 10 of 2026"
     },
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Brickell",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2026"
   },
   {
     "slug": "3000-waterside-fort-lauderdale",
@@ -2784,7 +3036,11 @@
       "driveFileId": "1AUGQwdKAGbCeA9GczedqbnNLwaMpT1C1",
       "createdAt": "As of April, 6 of 2026"
     },
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Broward County",
+    "filterLocation": "Fort Lauderdale",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2028"
   },
   {
     "slug": "3200-south-ocean",
@@ -2822,7 +3078,11 @@
       "hidden": true
     },
     "projectLogo": "/images/logos/3200-south-ocean.svg",
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Palm Beach County",
+    "filterLocation": "Highland Beach",
+    "filterStatus": "Resale",
+    "filterYear": "2016"
   },
   {
     "slug": "321-ocean",
@@ -2860,7 +3120,11 @@
       "hidden": true
     },
     "projectLogo": "/images/logos/321-ocean.svg",
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Miami Beach",
+    "filterStatus": "Resale",
+    "filterYear": "2019"
   },
   {
     "slug": "5000-north-ocean",
@@ -2900,7 +3164,11 @@
       "hidden": true
     },
     "projectLogo": "/images/logos/5000-north-ocean.svg",
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Palm Beach County",
+    "filterLocation": "Riviera Beach",
+    "filterStatus": "Resale",
+    "filterYear": "2020"
   },
   {
     "slug": "57-ocean",
@@ -2938,7 +3206,11 @@
       "externalUrl": "https://www.57oceancondomiami.com/for-sale.html"
     },
     "projectLogo": "/images/logos/57-ocean.svg",
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Miami Beach",
+    "filterStatus": "Resale",
+    "filterYear": "2021"
   },
   {
     "slug": "72-park",
@@ -2981,7 +3253,11 @@
       "driveFileId": "1OPmta47jbYnSHehdFfcbqhb6qL5b21KQ",
       "createdAt": "As of April, 2 of 2026"
     },
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Miami Beach",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2024"
   },
   {
     "slug": "9900-west",
@@ -3019,7 +3295,11 @@
       "driveFileId": "1-5nri4nDHSPgf50YQL0zTmG8KRyF3h24",
       "createdAt": "As of December, 3 of 2025"
     },
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Bay Harbor Islands",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2026"
   },
   {
     "slug": "adagio-fort-lauderdale",
@@ -3057,7 +3337,11 @@
       "hidden": true
     },
     "projectLogo": "/images/logos/adagio-fort-lauderdale.svg",
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Broward County",
+    "filterLocation": "Fort Lauderdale",
+    "filterStatus": "Resale",
+    "filterYear": "2019"
   },
   {
     "slug": "alana-bay-harbor-islands",
@@ -3099,7 +3383,11 @@
       "driveFileId": "149_AjtLUzJhtD9N0tP-F_Fmmz-a5oYW9",
       "createdAt": "As of March, 23 of 2026"
     },
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Bay Harbor Islands",
+    "filterStatus": "Resale",
+    "filterYear": "2025"
   },
   {
     "slug": "alba-west-palm-beach",
@@ -3145,7 +3433,11 @@
       "driveFileId": "11I1FRqPKpfKe85MB2AFZpjCn45bcdzya",
       "createdAt": "As of April, 23 of 2026"
     },
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Palm Beach County",
+    "filterLocation": "West Palm Beach",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2026"
   },
   {
     "slug": "alina-residences",
@@ -3186,7 +3478,11 @@
       "driveFileId": "1eM2AmP9V4WKIjX61uQW1tHc8R91J0PtV",
       "createdAt": "As of March, 26 of 2026"
     },
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Palm Beach County",
+    "filterLocation": "Boca Raton",
+    "filterStatus": "Resale",
+    "filterYear": "2025"
   },
   {
     "slug": "alma-bay-harbor-islands",
@@ -3229,7 +3525,11 @@
       "driveFileId": "112EGxHkEunjqGLqQaOTxwEbz1jo9pul8",
       "createdAt": "As of February, 3 of 2026"
     },
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Bay Harbor Islands",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2027"
   },
   {
     "slug": "apogee",
@@ -3267,7 +3567,11 @@
       "externalUrl": "https://www.apogeecondosouthbeach.com/for-sale.html"
     },
     "projectLogo": "/images/logos/apogee.svg",
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "South Beach",
+    "filterStatus": "Resale",
+    "filterYear": "2008"
   },
   {
     "slug": "arbor-coconut-grove",
@@ -3309,7 +3613,11 @@
       "driveFileId": "18PA5bm_RgBTRjNuYgc88_AZNSKtypZuT",
       "createdAt": "As of April, 6 of 2026"
     },
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Coconut Grove",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2026"
   },
   {
     "slug": "armani-casa",
@@ -3348,7 +3656,11 @@
       "createdAt": "As of December, 12 of 2025"
     },
     "projectLogo": "/images/logos/armani-casa.svg",
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Sunny Isles Beach",
+    "filterStatus": "Resale",
+    "filterYear": "2019"
   },
   {
     "slug": "arte-surfside",
@@ -3386,7 +3698,11 @@
       "hidden": true
     },
     "projectLogo": "/images/logos/arte-surfside.svg",
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Surfside",
+    "filterStatus": "Resale",
+    "filterYear": "2019"
   },
   {
     "slug": "asia-brickell",
@@ -3424,7 +3740,11 @@
       "hidden": true
     },
     "projectLogo": "/images/logos/asia-brickell.svg",
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Brickell Key",
+    "filterStatus": "Resale",
+    "filterYear": "2008"
   },
   {
     "slug": "aston-martin-residences",
@@ -3467,7 +3787,11 @@
       "externalUrl": "https://astonmartinresidencesdowntownmiami.nestcapitals.com/for-sale.html"
     },
     "projectLogo": "/images/logos/aston-martin-residences.svg",
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Downtown Miami",
+    "filterStatus": "Resale",
+    "filterYear": "2024"
   },
   {
     "slug": "auberge-beach-residences-spa-fort-lauderdale",
@@ -3505,7 +3829,11 @@
       "externalUrl": "https://www.aubergebeachsresidences.com/for-sale.html"
     },
     "projectLogo": "/images/logos/auberge-beach-residences-spa-fort-lauderdale.svg",
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Broward County",
+    "filterLocation": "Fort Lauderdale",
+    "filterStatus": "Resale",
+    "filterYear": "2018"
   },
   {
     "slug": "aurora-sunny-isles-beach",
@@ -3545,7 +3873,11 @@
       "hidden": true
     },
     "projectLogo": "/images/logos/aurora-sunny-isles-beach.svg",
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Sunny Isles Beach",
+    "filterStatus": "Resale",
+    "filterYear": "2023"
   },
   {
     "slug": "baccarat-residences",
@@ -3592,7 +3924,11 @@
       "driveFileId": "1Suv0Pr4QPCrBc49au9UJPuUXaitCA3hx",
       "createdAt": "As of April, 15 of 2026"
     },
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Brickell",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2028"
   },
   {
     "slug": "bal-harbour-tower",
@@ -3630,7 +3966,11 @@
       "hidden": true
     },
     "projectLogo": "/images/logos/bal-harbour-tower.svg",
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Bal Harbour",
+    "filterStatus": "Resale",
+    "filterYear": "1990"
   },
   {
     "slug": "banyan-tree-bimini-bahamas",
@@ -3679,7 +4019,11 @@
       "driveFileId": "1Z7BmVA0bwTY4Zv1lTdOq8tvQmcsvNnjP",
       "createdAt": "As of March, 16 of 2026"
     },
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Bimini",
+    "filterLocation": "Bahamas",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2025"
   },
   {
     "slug": "bayview-village",
@@ -3717,7 +4061,11 @@
       "hidden": true
     },
     "projectLogo": "/images/logos/bayview-village.svg",
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Fisher Island",
+    "filterStatus": "Resale",
+    "filterYear": "1990"
   },
   {
     "slug": "beach-house-8",
@@ -3755,7 +4103,11 @@
       "hidden": true
     },
     "projectLogo": "/images/logos/beach-house-8.svg",
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Miami Beach",
+    "filterStatus": "Resale",
+    "filterYear": "2016"
   },
   {
     "slug": "bentley-residences-sunny-isles",
@@ -3802,7 +4154,11 @@
       "driveFileId": "1Ccf-MAzJilagqFGWgB_5dF8wpck3tXzC",
       "createdAt": "As of April, 13 of 2026"
     },
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Sunny Isles Beach",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2028"
   },
   {
     "slug": "biltmore-row",
@@ -3842,7 +4198,11 @@
       "hidden": true
     },
     "projectLogo": "/images/logos/biltmore-row.svg",
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Coral Gables",
+    "filterStatus": "Resale",
+    "filterYear": "2022"
   },
   {
     "slug": "blue-green-diamond-towers",
@@ -3880,7 +4240,11 @@
       "hidden": true
     },
     "projectLogo": "/images/logos/blue-green-diamond-towers.svg",
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Miami Beach",
+    "filterStatus": "Resale",
+    "filterYear": "2000"
   },
   {
     "slug": "brickell-city-centre",
@@ -3923,7 +4287,11 @@
       "hidden": true
     },
     "projectLogo": "/images/logos/brickell-city-centre.svg",
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Brickell",
+    "filterStatus": "Resale",
+    "filterYear": "2016"
   },
   {
     "slug": "bristol-tower",
@@ -3961,7 +4329,11 @@
       "hidden": true
     },
     "projectLogo": "/images/logos/bristol-tower.svg",
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Brickell",
+    "filterStatus": "Resale",
+    "filterYear": "1993"
   },
   {
     "slug": "caribbean",
@@ -3999,7 +4371,11 @@
       "hidden": true
     },
     "projectLogo": "/images/logos/caribbean.svg",
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Miami Beach",
+    "filterStatus": "Resale",
+    "filterYear": "2008"
   },
   {
     "slug": "casa-bella-residences-miami",
@@ -4042,7 +4418,11 @@
     "priceList": {
       "driveFileId": "1S3YvhrXJH3VES67qtzz18O7WmJmHC5aD"
     },
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Downtown Miami",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2026"
   },
   {
     "slug": "cassia-coral-gables",
@@ -4085,7 +4465,11 @@
       "driveFileId": "1A8Ax711EBLY-V_Qi2GDqR5FyHa6G1FTH",
       "createdAt": "As of April, 1 of 2026"
     },
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Coral Gables",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2026"
   },
   {
     "slug": "chateau-beach-residences",
@@ -4123,7 +4507,11 @@
       "hidden": true
     },
     "projectLogo": "/images/logos/chateau-beach-residences.svg",
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Sunny Isles Beach",
+    "filterStatus": "Resale",
+    "filterYear": "2015"
   },
   {
     "slug": "continuum-12000-sport-wellness-residences-miami",
@@ -4166,7 +4554,11 @@
       "driveFileId": "1C1syt6xaKM8SZ0_1zlMXn5Caxjtg8hco",
       "createdAt": "As of March, 6 of 2026"
     },
-    "isNew": true
+    "isNew": true,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "North Miami",
+    "filterStatus": "Pre-construction - NEW",
+    "filterYear": "2030"
   },
   {
     "slug": "continuum-club-residences-north-bay-village",
@@ -4211,7 +4603,11 @@
       "driveFileId": "1yrqzNFYTzx0ZxYO-V5ZLqbTX3sRcSRHO",
       "createdAt": "As of April, 16 of 2026"
     },
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "North Bay Village",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2028"
   },
   {
     "slug": "continuum-south-beach",
@@ -4252,7 +4648,11 @@
       "externalUrl": "https://www.continummsouthbeach.com/for-sale.html"
     },
     "projectLogo": "/images/logos/continuum-south-beach.svg",
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "South Beach",
+    "filterStatus": "Resale",
+    "filterYear": "2008"
   },
   {
     "slug": "delano-residences-hotel-miami",
@@ -4305,7 +4705,11 @@
       "driveFileId": "1X6qdrDfsEhTBw-cxvUE1_EMwp9uj59Kg",
       "createdAt": "As of April, 20 of 2026"
     },
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Downtown Miami",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2031"
   },
   {
     "slug": "diesel-wynwood",
@@ -4347,7 +4751,11 @@
       "driveFileId": "18qp8ftI1mYKp76BNnGmDyvaiM0o8DdLS",
       "createdAt": "As of January, 29 of 2025"
     },
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Wynwood",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2028"
   },
   {
     "slug": "domus-brickell-center",
@@ -4391,7 +4799,11 @@
       "driveFileId": "1w685AJ8px-1M9lF-Ekm5UXCgBZc8ALIh",
       "createdAt": "As of April, 20 of 2026"
     },
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Brickell",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2028"
   },
   {
     "slug": "domus-brickell-park",
@@ -4433,7 +4845,11 @@
       "driveFileId": "1tKH2R5Wpm9VtMgxNRNhXur3CkBWFNyZG",
       "createdAt": "As of April, 20 of 2026"
     },
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Brickell",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2026"
   },
   {
     "slug": "edge-house-miami",
@@ -4477,7 +4893,11 @@
       "driveFileId": "1UVldHag6fTRBR-1MEdc9s9zKgvL3JfSk",
       "createdAt": "As of April, 29 of 2026"
     },
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Edgewater",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2028"
   },
   {
     "slug": "edgeworth-west-palm-beach",
@@ -4521,7 +4941,11 @@
       "driveFileId": "15TaGKEtVpOx1u2U8RM1Vckj8zbKcsnVe",
       "createdAt": "As of April, 24 of 2026"
     },
-    "isNew": true
+    "isNew": true,
+    "filterCounty": "Palm Beach County",
+    "filterLocation": "West Palm Beach",
+    "filterStatus": "Pre-construction - NEW",
+    "filterYear": "2029"
   },
   {
     "slug": "eighty-seven-park",
@@ -4559,7 +4983,11 @@
       "externalUrl": "https://www.eightysevenparkcondo.com/for-sale.html"
     },
     "projectLogo": "/images/logos/eighty-seven-park.svg",
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Miami Beach",
+    "filterStatus": "Resale",
+    "filterYear": "2019"
   },
   {
     "slug": "ella-miami-beach",
@@ -4601,7 +5029,11 @@
       "driveFileId": "1zB5cS5hVrPCOC7-UYWu1HdySF1QqKUov",
       "createdAt": "As of April, 15 of 2026"
     },
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Miami Beach",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2026"
   },
   {
     "slug": "elle-residences-edgewater",
@@ -4642,7 +5074,11 @@
       "driveFileId": "1GMCA4hmW3J-vFDOiHVw2dkKfclS2AsSY",
       "createdAt": "As of April, 22 of 2026"
     },
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Edgewater",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2028"
   },
   {
     "slug": "elysee-miami",
@@ -4680,7 +5116,11 @@
       "hidden": true
     },
     "projectLogo": "/images/logos/elysee-miami.svg",
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Edgewater",
+    "filterStatus": "Resale",
+    "filterYear": "2021"
   },
   {
     "slug": "epique-pelican-bay",
@@ -4723,7 +5163,11 @@
       "driveFileId": "1rLn4qyWXJbizdkRU2-vQNlqYBavEAAUp",
       "createdAt": "As of April, 1 of 2026"
     },
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Collier County",
+    "filterLocation": "Naples",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2027"
   },
   {
     "slug": "fendi-chateau",
@@ -4761,7 +5205,11 @@
       "externalUrl": "https://www.fendichateaumiami.com/for-sale.html"
     },
     "projectLogo": "/images/logos/fendi-chateau.svg",
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Surfside",
+    "filterStatus": "Resale",
+    "filterYear": "2016"
   },
   {
     "slug": "five-park-miami-beach",
@@ -4807,7 +5255,11 @@
       "driveFileId": "1OnJDD2Dx_PE6HcWmZY90VE2_bDjbWJX4",
       "createdAt": "As of February, 24 of 2026"
     },
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Miami Beach",
+    "filterStatus": "Resale",
+    "filterYear": "2024"
   },
   {
     "slug": "forte-on-flagler",
@@ -4850,7 +5302,11 @@
       "driveFileId": "1VNzBkz_B2ogKFgfnroxC5qMrHTML8r9l",
       "createdAt": "As of February, 10 of 2026"
     },
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Palm Beach County",
+    "filterLocation": "West Palm Beach",
+    "filterStatus": "Resale",
+    "filterYear": "2025"
   },
   {
     "slug": "four-seasons-hotel-private-residences",
@@ -4891,7 +5347,11 @@
       "externalUrl": "https://fourseasonsresidencesfortlauderdale.nestcapitals.com/for-sale.html"
     },
     "projectLogo": "/images/logos/four-seasons-hotel-private-residences.svg",
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Broward County",
+    "filterLocation": "Fort Lauderdale",
+    "filterStatus": "Resale",
+    "filterYear": "2022"
   },
   {
     "slug": "four-seasons-residences-las-vegas",
@@ -4930,7 +5390,11 @@
     "priceList": {
       "driveFileId": "1Q1nWflZ_dpk6NqXTm75Z5ouXeC5CNTND"
     },
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Clark County",
+    "filterLocation": "Henderson",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2027"
   },
   {
     "slug": "frida-kahlo-wynwood-residences",
@@ -4973,7 +5437,11 @@
       "driveFileId": "1sE7axJsYdrMKhLbRYDOt9zMrw6Mgh27c",
       "createdAt": "As of March, 10 of 2026"
     },
-    "isNew": true
+    "isNew": true,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Wynwood",
+    "filterStatus": "Pre-construction - NEW",
+    "filterYear": "2029"
   },
   {
     "slug": "gale-miami",
@@ -5013,7 +5481,11 @@
       "driveFileId": "1vrpTmiVTn4N1Tdff9-BYd5H8bbCOQQwv",
       "createdAt": "As of November, 14 of 2024"
     },
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Downtown Miami",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2024"
   },
   {
     "slug": "glass-house-boca-raton",
@@ -5056,7 +5528,11 @@
       "driveFileId": "1PGXdivl0G-BPS-r7lD7OknLoTRr7pGv-",
       "createdAt": "As of April, 1 of 2026"
     },
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Palm Beach County",
+    "filterLocation": "Boca Raton",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2027"
   },
   {
     "slug": "glass-miami-beach",
@@ -5094,7 +5570,11 @@
       "hidden": true
     },
     "projectLogo": "/images/logos/glass-miami-beach.svg",
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Miami Beach",
+    "filterStatus": "Resale",
+    "filterYear": "2015"
   },
   {
     "slug": "grove-at-grand-bay",
@@ -5132,7 +5612,11 @@
       "externalUrl": "https://www.groveatgranbay.com/for-sale.html"
     },
     "projectLogo": "/images/logos/grove-at-grand-bay.svg",
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Coconut Grove",
+    "filterStatus": "Resale",
+    "filterYear": "2017"
   },
   {
     "slug": "house-of-wellness-brickell",
@@ -5181,7 +5665,11 @@
       "driveFileId": "1_JHLJ_ZcchSXD-MGqPKvLSCjiQHAXi5s",
       "createdAt": "As of February, 13 of 2026"
     },
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Brickell",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2029"
   },
   {
     "slug": "hub-miami",
@@ -5225,7 +5713,11 @@
       "driveFileId": "1_poC628_noM9vAGKrQp3UXz0hLx7zsfQ",
       "createdAt": "As of August, 15 of 2025"
     },
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Downtown Miami",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2027"
   },
   {
     "slug": "icon-beach-residences-hollywood",
@@ -5269,7 +5761,11 @@
       "driveFileId": "1jxYPIbkCKdGdWj0fid2yo7uLVDnWV6V2",
       "createdAt": "As of April, 1 of 2026"
     },
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Broward County",
+    "filterLocation": "Hollywood",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2027"
   },
   {
     "slug": "il-villaggio",
@@ -5307,7 +5803,11 @@
       "hidden": true
     },
     "projectLogo": "/images/logos/il-villaggio.svg",
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Miami Beach",
+    "filterStatus": "Resale",
+    "filterYear": "1999"
   },
   {
     "slug": "jade-beach",
@@ -5345,7 +5845,11 @@
       "hidden": true
     },
     "projectLogo": "/images/logos/jade-beach.svg",
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Sunny Isles Beach",
+    "filterStatus": "Resale",
+    "filterYear": "2008"
   },
   {
     "slug": "jade-ocean",
@@ -5383,7 +5887,11 @@
       "externalUrl": "https://www.jadeoceancondo.com/for-sale.html"
     },
     "projectLogo": "/images/logos/jade-ocean.svg",
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Sunny Isles Beach",
+    "filterStatus": "Resale",
+    "filterYear": "2009"
   },
   {
     "slug": "jade-signature",
@@ -5426,7 +5934,11 @@
       "externalUrl": "https://www.jadesignatures.com/for-sale.html"
     },
     "projectLogo": "/images/logos/jade-signature.svg",
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Sunny Isles Beach",
+    "filterStatus": "Resale",
+    "filterYear": "2018"
   },
   {
     "slug": "jem-residences",
@@ -5469,7 +5981,11 @@
       "driveFileId": "1DLNzsNU7xaYWdVaBwXFfG5VV26-81cZB",
       "createdAt": "As of February, 23 of 2026"
     },
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Brickell",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2027"
   },
   {
     "slug": "l-atelier",
@@ -5507,7 +6023,11 @@
       "hidden": true
     },
     "projectLogo": "/images/logos/l-atelier.svg",
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Miami Beach",
+    "filterStatus": "Resale",
+    "filterYear": "2019"
   },
   {
     "slug": "la-baia-north-bay-harbor",
@@ -5551,7 +6071,11 @@
       "driveFileId": "11IPIKAcqEzrVhQyVbHJ803jb-ofA4V8W",
       "createdAt": "As of April, 13 of 2026"
     },
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Bay Harbor Islands",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2027"
   },
   {
     "slug": "la-santa-maria",
@@ -5589,7 +6113,11 @@
       "hidden": true
     },
     "projectLogo": "/images/logos/la-santa-maria.svg",
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Brickell",
+    "filterStatus": "Resale",
+    "filterYear": "1997"
   },
   {
     "slug": "lofty-residences",
@@ -5636,7 +6164,11 @@
       "driveFileId": "1dHcIvS4XAgg1RyDfPmAsuZauxu2B4EXj",
       "createdAt": "As of December, 2 of 2025"
     },
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Brickell",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2027"
   },
   {
     "slug": "maison-d-or-south-flagler",
@@ -5678,7 +6210,11 @@
       "driveFileId": "1nRj4kexwkE53O4vA3HciRALHWwgnbvwd",
       "createdAt": "As of February, 12 of 2026"
     },
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Palm Beach County",
+    "filterLocation": "West Palm Beach",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2028"
   },
   {
     "slug": "mercedes-benz-places-miami",
@@ -5723,7 +6259,11 @@
       "driveFileId": "127w87ADZFZHl1AiVUYEUCNiQ3vhByq7X",
       "createdAt": "As of April, 1 of 2026"
     },
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Brickell",
+    "filterStatus": "PAUSED",
+    "filterYear": "2027"
   },
   {
     "slug": "miami-design-residences-midtown-miami",
@@ -5764,7 +6304,11 @@
       "driveFileId": "1QPHVY5gv_PRiphceN5s5ELaLYdxCfme9",
       "createdAt": "As of April, 24 of 2026"
     },
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Midtown Miami",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2030"
   },
   {
     "slug": "mila-bay-harbor-islands",
@@ -5807,7 +6351,11 @@
       "driveFileId": "1vIaRkEqKvG0bB2SeZohrmsI79w20FKHf",
       "createdAt": "As of February, 3 of 2026"
     },
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Bay Harbor Islands",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2027"
   },
   {
     "slug": "missoni-baia",
@@ -5847,7 +6395,11 @@
       "hidden": true
     },
     "projectLogo": "/images/logos/missoni-baia.svg",
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Edgewater",
+    "filterStatus": "Resale",
+    "filterYear": "2023"
   },
   {
     "slug": "monaco-yacht-club-residences",
@@ -5891,7 +6443,11 @@
       "hidden": true
     },
     "projectLogo": "/images/logos/monaco-yacht-club-residences.svg",
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Miami Beach",
+    "filterStatus": "Resale",
+    "filterYear": "2022"
   },
   {
     "slug": "monad-terrace",
@@ -5929,7 +6485,11 @@
       "hidden": true
     },
     "projectLogo": "/images/logos/monad-terrace.svg",
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "South Beach",
+    "filterStatus": "Resale",
+    "filterYear": "2021"
   },
   {
     "slug": "murano-at-portofino",
@@ -5967,7 +6527,11 @@
       "hidden": true
     },
     "projectLogo": "/images/logos/murano-at-portofino.svg",
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "South Beach",
+    "filterStatus": "Resale",
+    "filterYear": "2001"
   },
   {
     "slug": "murano-grande-at-portofino",
@@ -6005,7 +6569,11 @@
       "hidden": true
     },
     "projectLogo": "/images/logos/murano-grande-at-portofino.svg",
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "South Beach",
+    "filterStatus": "Resale",
+    "filterYear": "2003"
   },
   {
     "slug": "muse-residences",
@@ -6043,7 +6611,11 @@
       "externalUrl": "https://www.museresidencesmiami.com/for-sale.html"
     },
     "projectLogo": "/images/logos/muse-residences.svg",
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Sunny Isles Beach",
+    "filterStatus": "Resale",
+    "filterYear": "2018"
   },
   {
     "slug": "naples-beach-club-four-seasons",
@@ -6088,7 +6660,11 @@
       "driveFileId": "1XGiMLAk5rlBVh6NmmICKzpXyLfvxRyR4",
       "createdAt": "As of February, 26 of 2026"
     },
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Collier County",
+    "filterLocation": "Naples",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2026"
   },
   {
     "slug": "nexo-north-miami-beach",
@@ -6129,7 +6705,11 @@
       "driveFileId": "13x0f2XD21JnOyW1J4d3dS8SyiZ1wXpEh",
       "createdAt": "As of January, 5 of 2026"
     },
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "North Miami Beach",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2026"
   },
   {
     "slug": "nomad-residences-wynwood",
@@ -6172,7 +6752,11 @@
       "driveFileId": "1splDzq2OXHtUbVGD0fSHDinVIxzTawMh",
       "createdAt": "As of April, 20 of 2026"
     },
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Wynwood",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2025"
   },
   {
     "slug": "oasis-hallandale",
@@ -6216,7 +6800,11 @@
       "driveFileId": "10ajv78EPR0ABoyMY_WQEg5f3BJdTWJwi",
       "createdAt": "As of April, 6 of 2026"
     },
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Broward County",
+    "filterLocation": "Hallandale",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2025"
   },
   {
     "slug": "ocean-580-pompano-beach",
@@ -6256,7 +6844,11 @@
       "driveFileId": "1EflwiR6V5n0k3eNdBu-ei3psMK12CyIG",
       "createdAt": "As of April, 15 of 2026"
     },
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Broward County",
+    "filterLocation": "Pompano Beach",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2028"
   },
   {
     "slug": "ocean-delray",
@@ -6294,7 +6886,11 @@
       "hidden": true
     },
     "projectLogo": "/images/logos/ocean-delray.svg",
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Palm Beach County",
+    "filterLocation": "Delray Beach",
+    "filterStatus": "Resale",
+    "filterYear": "2021"
   },
   {
     "slug": "ocean-house-2",
@@ -6333,7 +6929,11 @@
       "createdAt": "As of April, 1 of 2026"
     },
     "projectLogo": "/images/logos/ocean-house-2.svg",
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "South Beach",
+    "filterStatus": "Resale",
+    "filterYear": "2011"
   },
   {
     "slug": "ocean-park",
@@ -6374,7 +6974,11 @@
       "hidden": true
     },
     "projectLogo": "/images/logos/ocean-park.svg",
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "South Beach",
+    "filterStatus": "Resale",
+    "filterYear": "2023"
   },
   {
     "slug": "ocean-terrace",
@@ -6416,7 +7020,11 @@
       "driveFileId": "1JXES6sbOeSQIx1Du1Zgi3Wi78N7hSHR6",
       "createdAt": "As of April, 28 of 2026"
     },
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Miami Beach",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2021"
   },
   {
     "slug": "oceana-bal-harbour",
@@ -6458,7 +7066,11 @@
       "externalUrl": "https://www.oceanaballlharbour.com/for-sale.html"
     },
     "projectLogo": "/images/logos/oceana-bal-harbour.svg",
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Bal Harbour",
+    "filterStatus": "Resale",
+    "filterYear": "2016"
   },
   {
     "slug": "oceana-key-biscayne",
@@ -6496,7 +7108,11 @@
       "externalUrl": "https://www.oceanakeybisscayne.com/for-sale.html"
     },
     "projectLogo": "/images/logos/oceana-key-biscayne.svg",
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Key Biscayne",
+    "filterStatus": "Resale",
+    "filterYear": "2015"
   },
   {
     "slug": "oceanside",
@@ -6534,7 +7150,11 @@
       "hidden": true
     },
     "projectLogo": "/images/logos/oceanside.svg",
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Fisher Island",
+    "filterStatus": "Resale",
+    "filterYear": "2002"
   },
   {
     "slug": "okan-tower",
@@ -6576,7 +7196,11 @@
       "driveFileId": "1_PJUcCIB30yVkzUU2Y4hyzQWN212_qyJ",
       "createdAt": "As of April, 28 of 2026"
     },
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Downtown Miami",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2027"
   },
   {
     "slug": "olara-west-palm-beach",
@@ -6621,7 +7245,11 @@
       "driveFileId": "1y6i55TFTKHZE4RYxErdCNrQgO8yWa2N9",
       "createdAt": "As of April, 14 of 2026"
     },
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Palm Beach County",
+    "filterLocation": "West Palm Beach",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2028"
   },
   {
     "slug": "ombelle-fort-lauderdale",
@@ -6664,7 +7292,11 @@
       "driveFileId": "1JqdHhFE9v_uossWUwYUip2kuDj9C2SLb",
       "createdAt": "As of January, 29 of 2026"
     },
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Broward County",
+    "filterLocation": "Fort Lauderdale",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2028"
   },
   {
     "slug": "onda-bay-harbor",
@@ -6708,7 +7340,11 @@
       "driveFileId": "1RWm6r96tQrjsrLlLjrmG6kKa7dYnUsoA",
       "createdAt": "As of December, 16 of 2025"
     },
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Bay Harbor Islands",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2024"
   },
   {
     "slug": "one-ocean",
@@ -6746,7 +7382,11 @@
       "hidden": true
     },
     "projectLogo": "/images/logos/one-ocean.svg",
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "South Beach",
+    "filterStatus": "Resale",
+    "filterYear": "2016"
   },
   {
     "slug": "one-park-tower-by-turnberry",
@@ -6790,7 +7430,11 @@
       "driveFileId": "16S5QCWrU29Jm3t55pd6N75Dekt_nNJtu",
       "createdAt": "As of April, 27 of 2026"
     },
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "North Miami",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2026"
   },
   {
     "slug": "one-thousand-museum",
@@ -6828,7 +7472,11 @@
       "externalUrl": "https://www.1000museumiami.com/for-sale.html"
     },
     "projectLogo": "/images/logos/one-thousand-museum.svg",
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Downtown Miami",
+    "filterStatus": "Resale",
+    "filterYear": "2019"
   },
   {
     "slug": "opus-coconut-grove",
@@ -6870,7 +7518,11 @@
       "driveFileId": "1OE_NxwW7aOE4440W-AWATHMCyQPYgw43",
       "createdAt": "As of April, 6 of 2026"
     },
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Coconut Grove",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2027"
   },
   {
     "slug": "origin",
@@ -6912,7 +7564,11 @@
       "driveFileId": "1EV1FwIIipBmmfjj8weyfoB87g4dMWVGN",
       "createdAt": "As of January, 15 of 2026"
     },
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Bay Harbor Islands",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2026"
   },
   {
     "slug": "palazzo-at-bayfront-naples",
@@ -6955,7 +7611,11 @@
       "driveFileId": "1Kqx249G2bsSw0XXThxY-7D0wIURrogkj",
       "createdAt": "As of July, 31 of 2025"
     },
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Collier County",
+    "filterLocation": "Naples",
+    "filterStatus": "Pre-construction",
+    "filterYear": null
   },
   {
     "slug": "palazzo-del-sol",
@@ -6993,7 +7653,11 @@
       "externalUrl": "https://www.palazzodellsol.com/for-sale.html"
     },
     "projectLogo": "/images/logos/palazzo-del-sol.svg",
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Fisher Island",
+    "filterStatus": "Resale",
+    "filterYear": "2016"
   },
   {
     "slug": "palazzo-della-luna",
@@ -7031,7 +7695,11 @@
       "externalUrl": "https://www.palazzoodellaluna.com/for-sale.html"
     },
     "projectLogo": "/images/logos/palazzo-della-luna.svg",
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Fisher Island",
+    "filterStatus": "Resale",
+    "filterYear": "2019"
   },
   {
     "slug": "palma-miami-beach",
@@ -7075,7 +7743,11 @@
       "driveFileId": "1rZJ5A9zHfkpDp264-61MtZNodcLFb48W",
       "createdAt": "As of April, 2 of 2026"
     },
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Miami Beach",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2027"
   },
   {
     "slug": "paramount-fort-lauderdale-beach",
@@ -7113,7 +7785,11 @@
       "hidden": true
     },
     "projectLogo": "/images/logos/paramount-fort-lauderdale-beach.svg",
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Broward County",
+    "filterLocation": "Fort Lauderdale",
+    "filterStatus": "Resale",
+    "filterYear": "2017"
   },
   {
     "slug": "park-grove",
@@ -7151,7 +7827,11 @@
       "externalUrl": "https://www.parkgrovecondomiami.com/for-sale.html"
     },
     "projectLogo": "/images/logos/park-grove.svg",
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Coconut Grove",
+    "filterStatus": "Resale",
+    "filterYear": "2020"
   },
   {
     "slug": "parque-towers",
@@ -7194,7 +7874,11 @@
       "hidden": true
     },
     "projectLogo": "/images/logos/parque-towers.svg",
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Sunny Isles Beach",
+    "filterStatus": "Resale",
+    "filterYear": "2019"
   },
   {
     "slug": "pier-sixty-six-fort-lauderdale",
@@ -7235,7 +7919,11 @@
       "driveFileId": "1i_g7Ya5sMtIenmaZUZV219VDUE07jAQk",
       "createdAt": "As of April, 6 of 2026"
     },
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Broward County",
+    "filterLocation": "Fort Lauderdale",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2024"
   },
   {
     "slug": "porsche-design-tower",
@@ -7277,7 +7965,11 @@
       "hidden": true
     },
     "projectLogo": "/images/logos/porsche-design-tower.svg",
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Sunny Isles Beach",
+    "filterStatus": "Resale",
+    "filterYear": "2016"
   },
   {
     "slug": "portofino-tower",
@@ -7315,7 +8007,11 @@
       "hidden": true
     },
     "projectLogo": "/images/logos/portofino-tower.svg",
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "South Beach",
+    "filterStatus": "Resale",
+    "filterYear": "1996"
   },
   {
     "slug": "prive-island",
@@ -7353,7 +8049,11 @@
       "hidden": true
     },
     "projectLogo": "/images/logos/prive-island.svg",
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Aventura",
+    "filterStatus": "Resale",
+    "filterYear": "2018"
   },
   {
     "slug": "regalia",
@@ -7391,7 +8091,11 @@
       "externalUrl": "https://www.regaliaresidenses.com/for-sale.html"
     },
     "projectLogo": "/images/logos/regalia.svg",
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Sunny Isles Beach",
+    "filterStatus": "Resale",
+    "filterYear": "2014"
   },
   {
     "slug": "river-district-14-miami",
@@ -7438,7 +8142,11 @@
       "driveFileId": "1Q47M0JGCi5ui6VtBzDqYkmpKEX61tp_g",
       "createdAt": "As of April, 29 of 2026"
     },
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Miami",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2025"
   },
   {
     "slug": "rosewood-residences-naples",
@@ -7473,7 +8181,11 @@
       "driveFileId": "1QGVuwmVr0ATCppxwb7aOuDq0WJ1N9yi6",
       "createdAt": "As of February, 18 of 2026"
     },
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Collier County",
+    "filterLocation": "Naples",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2026"
   },
   {
     "slug": "sage-fort-lauderdale",
@@ -7515,7 +8227,11 @@
       "driveFileId": "1-1eqJgJ5TGhYWdTSg8Rja5ZbE7U29dYb",
       "createdAt": "As of January, 28 of 2026"
     },
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Broward County",
+    "filterLocation": "Fort Lauderdale",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2027"
   },
   {
     "slug": "salato",
@@ -7557,7 +8273,11 @@
       "driveFileId": "1Hd0vXnWzIuzrq9be8q4CL0aGYlp-yjDY",
       "createdAt": "As of March, 19 of 2026"
     },
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Broward County",
+    "filterLocation": "Pompano Beach",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2026"
   },
   {
     "slug": "setai-residences",
@@ -7595,7 +8315,11 @@
       "externalUrl": "https://setaimiamibeach.nestcapitals.com/for-sale.html"
     },
     "projectLogo": "/images/logos/setai-residences.svg",
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Miami Beach",
+    "filterStatus": "Resale",
+    "filterYear": "2004"
   },
   {
     "slug": "shell-bay-by-auberge",
@@ -7636,7 +8360,11 @@
       "driveFileId": "12S40oYZRcRnBKEzCKCvyL9e5GcxoDIQ2",
       "createdAt": "As of April, 1 of 2026"
     },
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Broward County",
+    "filterLocation": "Hallandale",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2027"
   },
   {
     "slug": "shoma-bay",
@@ -7681,7 +8409,11 @@
       "driveFileId": "170UbAV974y-aSaoWVc8nTj6HF7iXcOw9",
       "createdAt": "As of March, 27 of 2026"
     },
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "North Bay Village",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2028"
   },
   {
     "slug": "sixth-rio",
@@ -7724,7 +8456,11 @@
       "driveFileId": "1QRlTgRlenWTE3G9-KMFq-MNOaxFrHgoq",
       "createdAt": "As of April, 10 of 2026"
     },
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Broward County",
+    "filterLocation": "Fort Lauderdale",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2026"
   },
   {
     "slug": "south-flagler-house",
@@ -7768,7 +8504,11 @@
       "driveFileId": "1oyZtBpI3EBPZ0f04XlStJoSHP6N-gclt",
       "createdAt": "As of April, 7 of 2026"
     },
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Palm Beach County",
+    "filterLocation": "West Palm Beach",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2027"
   },
   {
     "slug": "south-pointe-towers",
@@ -7806,7 +8546,11 @@
       "hidden": true
     },
     "projectLogo": "/images/logos/south-pointe-towers.svg",
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "South Beach",
+    "filterStatus": "Resale",
+    "filterYear": "1987"
   },
   {
     "slug": "st-regis-residences-bal-harbour",
@@ -7844,7 +8588,11 @@
       "hidden": true
     },
     "projectLogo": "/images/logos/st-regis-residences-bal-harbour.svg",
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Bal Harbour",
+    "filterStatus": "Resale",
+    "filterYear": "2012"
   },
   {
     "slug": "surf-row",
@@ -7883,7 +8631,11 @@
       "driveFileId": "1qJf54HihipdAuFGn_blWlgN0_geIKVXy",
       "createdAt": "As of March, 20 of 2026"
     },
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Surfside",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2027"
   },
   {
     "slug": "the-avenue",
@@ -7928,7 +8680,11 @@
       "driveFileId": "1nLlVWYDimeJzSGP9avSJkHRJY__ORooZ",
       "createdAt": "As of April, 1 of 2026"
     },
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Coral Gables",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2025"
   },
   {
     "slug": "the-bath-club",
@@ -7966,7 +8722,11 @@
       "hidden": true
     },
     "projectLogo": "/images/logos/the-bath-club.svg",
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Miami Beach",
+    "filterStatus": "Resale",
+    "filterYear": "2005"
   },
   {
     "slug": "the-cove-residences",
@@ -8008,7 +8768,11 @@
       "driveFileId": "1p3y0qsR5GuY-LTjRZupQcEH1wBuxdUDJ",
       "createdAt": "As of March, 20 of 2026"
     },
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Edgewater",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2028"
   },
   {
     "slug": "the-estates-at-acqualina",
@@ -8048,7 +8812,11 @@
       "externalUrl": "https://www.estatessatacqualina.com/for-sale.html"
     },
     "projectLogo": "/images/logos/the-estates-at-acqualina.svg",
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Sunny Isles Beach",
+    "filterStatus": "Resale",
+    "filterYear": "2022"
   },
   {
     "slug": "the-fairchild",
@@ -8086,7 +8854,11 @@
       "hidden": true
     },
     "projectLogo": "/images/logos/the-fairchild.svg",
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Coconut Grove",
+    "filterStatus": "Resale",
+    "filterYear": "2020"
   },
   {
     "slug": "the-george-residences-coral-gables",
@@ -8121,7 +8893,11 @@
       "driveFileId": "1xAH9O0ha02AX-1mJepYewb2wuEh2izEM",
       "createdAt": "As of March, 6 of 2026"
     },
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Coral Gables",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2027"
   },
   {
     "slug": "the-lincoln-coconut-grove",
@@ -8161,7 +8937,11 @@
       "driveFileId": "1hx7rikSY_yfCSofs1cO99lSM2LD48PcD",
       "createdAt": "As of April, 16 of 2026"
     },
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Coconut Grove",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2028"
   },
   {
     "slug": "the-links-estates",
@@ -8204,7 +8984,11 @@
       "driveFileId": "1Bg1JvytgE6DI3SwoxzthnIQ656zOVpMT",
       "createdAt": "As of July, 7 of 2025"
     },
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Fisher Island",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2027"
   },
   {
     "slug": "the-mansions-at-acqualina",
@@ -8242,7 +9026,11 @@
       "hidden": true
     },
     "projectLogo": "/images/logos/the-mansions-at-acqualina.svg",
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Sunny Isles Beach",
+    "filterStatus": "Resale",
+    "filterYear": "2015"
   },
   {
     "slug": "the-ocean-club-four-seasons-residences-bahamas",
@@ -8286,7 +9074,11 @@
       "driveFileId": "1sG0ShNbRWnpSRq5EQBOlkZmOXtDP1Txf",
       "createdAt": "As of February, 24 of 2026"
     },
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Nassau",
+    "filterLocation": "Bahamas",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2027"
   },
   {
     "slug": "the-palace-at-bal-harbour",
@@ -8324,7 +9116,11 @@
       "hidden": true
     },
     "projectLogo": "/images/logos/the-palace-at-bal-harbour.svg",
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Bal Harbour",
+    "filterStatus": "Resale",
+    "filterYear": "1994"
   },
   {
     "slug": "the-residences-at-mandarin-oriental-boca-raton",
@@ -8369,7 +9165,11 @@
       "driveFileId": "1_sbRCEkkIGKjJfTdTfbm9qW7g6vZ7Fin",
       "createdAt": "As of April, 6 of 2026"
     },
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Palm Beach County",
+    "filterLocation": "Boca Raton",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2027"
   },
   {
     "slug": "the-residences-at-six-fisher-island",
@@ -8411,7 +9211,11 @@
       "driveFileId": "19z3EI2CzQAN6OMoi684dKMrmaefaDczC",
       "createdAt": "As of April, 10 of 2026"
     },
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Fisher Island",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2027"
   },
   {
     "slug": "the-residences-at-the-miami-beach-edition",
@@ -8449,7 +9253,11 @@
       "hidden": true
     },
     "projectLogo": "/images/logos/the-residences-at-the-miami-beach-edition.svg",
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Miami Beach",
+    "filterStatus": "Resale",
+    "filterYear": "2014"
   },
   {
     "slug": "the-ritz-carlton-residences-bal-harbour",
@@ -8487,7 +9295,11 @@
       "hidden": true
     },
     "projectLogo": "/images/logos/the-ritz-carlton-residences-bal-harbour.png",
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Bal Harbour",
+    "filterStatus": "Resale",
+    "filterYear": "2007"
   },
   {
     "slug": "the-ritz-carlton-residences-naples",
@@ -8527,7 +9339,11 @@
       "driveFileId": "198v0Rrxhf4kB1NIkVLoJwAhoJKgMITO2",
       "createdAt": "As of March, 13 of 2026"
     },
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Collier County",
+    "filterLocation": "Naples",
+    "filterStatus": "Pre-construction",
+    "filterYear": null
   },
   {
     "slug": "the-ritz-carlton-residences-pompano-beach",
@@ -8571,7 +9387,11 @@
       "driveFileId": "1dgj51r9NC_ssPf7bS5ldSfURw1PRCeep",
       "createdAt": "As of March, 30 of 2026"
     },
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Broward County",
+    "filterLocation": "Pompano Beach",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2026"
   },
   {
     "slug": "the-ritz-carlton-residences-sunny-isles",
@@ -8614,7 +9434,11 @@
       "externalUrl": "https://ritzcarltonsunnyisles.nestcapitals.com/for-sale.html"
     },
     "projectLogo": "/images/logos/the-ritz-carlton-residences-sunny-isles.png",
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Sunny Isles Beach",
+    "filterStatus": "Resale",
+    "filterYear": "2020"
   },
   {
     "slug": "the-roads-townhomes-brickell",
@@ -8643,7 +9467,11 @@
       "driveFileId": "1C1A6a0RxfqGaUNF-G4gkOjM9zfKBvLvA",
       "createdAt": "As of December, 23 of 2025"
     },
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Brickell",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2025"
   },
   {
     "slug": "the-standard-residences",
@@ -8686,7 +9514,11 @@
       "driveFileId": "1BsbRyhwppR7ydH46XNcU3uYptOZDK8_N",
       "createdAt": "As of April, 29 of 2026"
     },
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Brickell",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2027"
   },
   {
     "slug": "turnberry-ocean-club",
@@ -8724,7 +9556,11 @@
       "externalUrl": "https://www.turnberryoceansclub.com/for-sale.html"
     },
     "projectLogo": "/images/logos/turnberry-ocean-club.svg",
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Sunny Isles Beach",
+    "filterStatus": "Resale",
+    "filterYear": "2020"
   },
   {
     "slug": "turnberry-ocean-colony",
@@ -8762,7 +9598,11 @@
       "hidden": true
     },
     "projectLogo": "/images/logos/turnberry-ocean-colony.svg",
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Sunny Isles Beach",
+    "filterStatus": "Resale",
+    "filterYear": "2006"
   },
   {
     "slug": "twenty-nine-indian-creek",
@@ -8801,7 +9641,11 @@
       "driveFileId": "1qJllB6Rfh2mQhiX8uiOIw7QfMLkFXFpW",
       "createdAt": "As of February, 25 of 2026"
     },
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Miami Beach",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2027"
   },
   {
     "slug": "una-residences",
@@ -8846,7 +9690,11 @@
       "driveFileId": "1l9MO24_GU6PcI5AR51QIgV7aXW8CNaTQ",
       "createdAt": "As of April, 10 of 2026"
     },
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Brickell",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2026"
   },
   {
     "slug": "viceroy-brickell",
@@ -8890,7 +9738,11 @@
       "driveFileId": "11lTUFH1vgdmUZH9tbYv_DEX9I4Qf3uL0",
       "createdAt": "As of March, 26 of 2026"
     },
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Brickell",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2026"
   },
   {
     "slug": "viceroy-fort-lauderdale",
@@ -8933,7 +9785,11 @@
       "driveFileId": "1ky5yqBrZ4cceDlOa5He4CAaU1RthOHrN",
       "createdAt": "As of March, 26 of 2026"
     },
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Fort Lauderdale",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2028"
   },
   {
     "slug": "villa-valencia",
@@ -8976,7 +9832,11 @@
       "hidden": true
     },
     "projectLogo": "/images/logos/villa-valencia.svg",
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Coral Gables",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2022"
   },
   {
     "slug": "w-south-beach-residences",
@@ -9014,7 +9874,11 @@
       "hidden": true
     },
     "projectLogo": "/images/logos/w-south-beach-residences.svg",
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "South Beach",
+    "filterStatus": "Resale",
+    "filterYear": "2009"
   },
   {
     "slug": "waldorf-astoria-residences-downtown-miami",
@@ -9059,7 +9923,11 @@
       "driveFileId": "1B0mOgYn16F4fSmD9SzpRa1DlZgeLemud",
       "createdAt": "As of April, 29 of 2026"
     },
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Downtown Miami",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2028"
   },
   {
     "slug": "west-eleventh-residences",
@@ -9099,6 +9967,10 @@
       "driveFileId": "1XjnRNAsU7t077vKL7PjiGEEd9dCm04Dj",
       "createdAt": "As of April, 6 of 2026"
     },
-    "isNew": false
+    "isNew": false,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Downtown Miami",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2027"
   }
 ]

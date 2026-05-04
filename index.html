@@ -29,6 +29,12 @@
     <input type="text" id="search" placeholder="Search projects..." autocomplete="off">
   </div>
 
+  <!-- FILTERS -->
+  <div class="filter-bar" id="filter-bar">
+    <!-- populated by JS once projects load -->
+  </div>
+  <div class="filter-chips" id="filter-chips"></div>
+
   <!-- CONTENT: two sections when not searching, single list when searching -->
   <div id="lobby-content"></div>
 
@@ -38,11 +44,33 @@
   </footer>
 
   <script>
-    var contentEl = document.getElementById('lobby-content');
-    var searchEl  = document.getElementById('search');
+    var contentEl   = document.getElementById('lobby-content');
+    var searchEl    = document.getElementById('search');
+    var filterBarEl = document.getElementById('filter-bar');
+    var filterChipsEl = document.getElementById('filter-chips');
     var allProjects = [];
 
-    // ── Card builder ────────────────────────────────────────────
+    // ── Filter state ─────────────────────────────────────────────
+    // activeFilters: { county: Set, location: Set, status: Set, year: Set }
+    var activeFilters = { county: new Set(), location: new Set(), status: new Set(), year: new Set() };
+
+    var FILTER_DEFS = [
+      { key: 'county',   label: 'County',   field: 'filterCounty'   },
+      { key: 'location', label: 'Location', field: 'filterLocation' },
+      { key: 'status',   label: 'Status',   field: 'filterStatus'   },
+      { key: 'year',     label: 'Year',     field: 'filterYear'     },
+    ];
+
+    // ── Filter matching ──────────────────────────────────────────
+    function projectMatchesFilters(p) {
+      return FILTER_DEFS.every(function(def) {
+        var sel = activeFilters[def.key];
+        if (!sel.size) return true;           // no filter active → pass
+        return sel.has(p[def.field]);         // OR within group: one hit = pass
+      });
+    }
+
+    // ── Card builder ─────────────────────────────────────────────
     function buildCard(p) {
       var a = document.createElement('a');
       a.className = 'project-card';
@@ -80,8 +108,6 @@
       if (p.startingPrice) {
         var price = document.createElement('div');
         price.className = 'card-price';
-        // Show "Starting at $X" for numeric prices; show the value as-is
-        // for non-price strings like "Check Availability on MLS".
         var isNumericPrice = /^\$/.test(p.startingPrice.trim());
         price.textContent = isNumericPrice
           ? 'Starting at ' + p.startingPrice
@@ -93,7 +119,7 @@
       return a;
     }
 
-    // ── Section builder ─────────────────────────────────────────
+    // ── Section builder ──────────────────────────────────────────
     function buildSection(label, projects) {
       var wrap = document.createElement('div');
       wrap.className = 'lobby-section';
@@ -123,10 +149,15 @@
       contentEl.textContent = '';
       var frag = document.createDocumentFragment();
 
-      if (query) {
-        // Search mode: one merged list, no section headers
+      var searchQ = query ? query.toLowerCase().trim() : '';
+      var hasSearch = searchQ.length > 0;
+      var hasFilters = FILTER_DEFS.some(function(d) { return activeFilters[d.key].size > 0; });
+
+      if (hasSearch || hasFilters) {
+        // Filtered/search mode: one merged list
         var matches = allProjects.filter(function(p) {
-          return p.name.toLowerCase().indexOf(query) !== -1;
+          var nameOk = !hasSearch || p.name.toLowerCase().indexOf(searchQ) !== -1;
+          return nameOk && projectMatchesFilters(p);
         });
 
         var searchWrap = document.createElement('div');
@@ -154,7 +185,7 @@
         frag.appendChild(searchWrap);
 
       } else {
-        // Browse mode: two separate sections (already sorted alphabetically from API)
+        // Browse mode: two sections
         var topProjects   = allProjects.filter(function(p) { return p.section === 'Top Projects'; });
         var otherProjects = allProjects.filter(function(p) { return p.section === 'Other Projects'; });
 
@@ -163,7 +194,178 @@
       }
 
       contentEl.appendChild(frag);
+
+      // Refresh filter button active states + chips after each render
+      refreshFilterUI();
     }
+
+    // ── Filter UI builders ───────────────────────────────────────
+
+    // Count how many projects have a given field value (across ALL projects, not filtered)
+    function valueCounts(field) {
+      var counts = {};
+      allProjects.forEach(function(p) {
+        var v = p[field];
+        if (v) counts[v] = (counts[v] || 0) + 1;
+      });
+      return counts;
+    }
+
+    function buildFilterBar() {
+      filterBarEl.textContent = '';
+      FILTER_DEFS.forEach(function(def) {
+        var counts = valueCounts(def.field);
+        var values = Object.keys(counts).sort(function(a, b) {
+          // Sort years numerically descending; others alphabetically
+          if (def.key === 'year') return Number(b) - Number(a);
+          return a.localeCompare(b);
+        });
+        if (!values.length) return;
+
+        var group = document.createElement('div');
+        group.className = 'filter-group';
+        group.dataset.key = def.key;
+
+        // Button
+        var btn = document.createElement('button');
+        btn.className = 'filter-btn';
+        btn.type = 'button';
+
+        var labelSpan = document.createElement('span');
+        labelSpan.textContent = def.label;
+        btn.appendChild(labelSpan);
+
+        var countBadge = document.createElement('span');
+        countBadge.className = 'filter-count';
+        countBadge.style.display = 'none';
+        btn.appendChild(countBadge);
+
+        var arrow = document.createElement('span');
+        arrow.className = 'filter-arrow';
+        btn.appendChild(arrow);
+
+        // Panel
+        var panel = document.createElement('div');
+        panel.className = 'filter-panel';
+
+        values.forEach(function(val) {
+          var opt = document.createElement('label');
+          opt.className = 'filter-option';
+
+          var cb = document.createElement('input');
+          cb.type = 'checkbox';
+          cb.value = val;
+          cb.checked = activeFilters[def.key].has(val);
+          cb.addEventListener('change', function() {
+            if (this.checked) {
+              activeFilters[def.key].add(val);
+            } else {
+              activeFilters[def.key].delete(val);
+            }
+            render(searchEl.value);
+          });
+
+          var lbl = document.createElement('span');
+          lbl.className = 'filter-option-label';
+          lbl.textContent = val;
+
+          var ct = document.createElement('span');
+          ct.className = 'filter-option-count';
+          ct.textContent = counts[val];
+
+          opt.appendChild(cb);
+          opt.appendChild(lbl);
+          opt.appendChild(ct);
+          panel.appendChild(opt);
+        });
+
+        btn.addEventListener('click', function(e) {
+          e.stopPropagation();
+          var isOpen = group.classList.toggle('open');
+          // Close all other groups
+          document.querySelectorAll('.filter-group').forEach(function(g) {
+            if (g !== group) g.classList.remove('open');
+          });
+        });
+
+        group.appendChild(btn);
+        group.appendChild(panel);
+        filterBarEl.appendChild(group);
+      });
+    }
+
+    // Sync button active state + count badges + chips after state changes
+    function refreshFilterUI() {
+      // Update buttons
+      document.querySelectorAll('.filter-group').forEach(function(group) {
+        var key = group.dataset.key;
+        var sel = activeFilters[key];
+        var btn = group.querySelector('.filter-btn');
+        var badge = group.querySelector('.filter-count');
+        var checkboxes = group.querySelectorAll('input[type="checkbox"]');
+
+        btn.classList.toggle('active', sel.size > 0);
+        if (sel.size > 0) {
+          badge.style.display = 'inline-block';
+          badge.textContent = sel.size;
+        } else {
+          badge.style.display = 'none';
+        }
+
+        // Sync checkbox states (in case chip removal cleared them)
+        checkboxes.forEach(function(cb) {
+          cb.checked = sel.has(cb.value);
+        });
+      });
+
+      // Rebuild chips
+      filterChipsEl.textContent = '';
+      var hasAny = false;
+
+      FILTER_DEFS.forEach(function(def) {
+        activeFilters[def.key].forEach(function(val) {
+          hasAny = true;
+          var chip = document.createElement('div');
+          chip.className = 'filter-chip';
+
+          var lbl = document.createElement('span');
+          lbl.textContent = val;
+          chip.appendChild(lbl);
+
+          var rm = document.createElement('span');
+          rm.className = 'filter-chip-remove';
+          rm.title = 'Remove';
+          rm.textContent = '×';
+          rm.addEventListener('click', function() {
+            activeFilters[def.key].delete(val);
+            render(searchEl.value);
+          });
+          chip.appendChild(rm);
+
+          filterChipsEl.appendChild(chip);
+        });
+      });
+
+      if (hasAny) {
+        var clearAll = document.createElement('span');
+        clearAll.className = 'filter-clear-all';
+        clearAll.textContent = 'Clear all';
+        clearAll.addEventListener('click', function() {
+          FILTER_DEFS.forEach(function(d) { activeFilters[d.key].clear(); });
+          render(searchEl.value);
+        });
+        filterChipsEl.appendChild(clearAll);
+      }
+    }
+
+    // Close any open filter panel when clicking outside
+    document.addEventListener('click', function(e) {
+      if (!e.target.closest('.filter-group')) {
+        document.querySelectorAll('.filter-group.open').forEach(function(g) {
+          g.classList.remove('open');
+        });
+      }
+    });
 
     // ── Lobby state persistence (scroll + search) ────────────────
     function saveState() {
@@ -207,6 +409,7 @@
         .then(function(res) { return res.json(); })
         .then(function(data) {
           allProjects = data;
+          buildFilterBar();
           render('');
           restoreState();
         })
@@ -215,18 +418,18 @@
 
     searchEl.addEventListener('input', function() {
       var q = searchEl.value.toLowerCase().trim();
-      navSearchEl.value = searchEl.value; // keep nav search in sync
+      navSearchEl.value = searchEl.value;
       render(q);
     });
 
-    // ── Scroll-triggered nav title + search ──────────────────
+    // ── Scroll-triggered nav title + search ──────────────────────
     var siteNav     = document.getElementById('site-nav');
     var navSearchEl = document.getElementById('nav-search');
     var heroEl      = document.querySelector('.lobby-hero');
 
     navSearchEl.addEventListener('input', function() {
       var q = this.value.toLowerCase().trim();
-      searchEl.value = this.value; // keep main search in sync
+      searchEl.value = this.value;
       render(q);
     });
 
@@ -236,11 +439,10 @@
         siteNav.classList.add('scrolled');
       } else {
         siteNav.classList.remove('scrolled');
-        // Clear nav search when it hides so it doesn't linger
       }
     }
     window.addEventListener('scroll', onScroll, { passive: true });
-    onScroll(); // run once on load in case page reloaded mid-scroll
+    onScroll();
 
     loadProjects();
   </script>

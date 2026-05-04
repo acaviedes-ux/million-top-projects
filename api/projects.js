@@ -13,10 +13,14 @@ module.exports = (req, res) => {
     const list = projects.map(p => ({
       name:          p.name,
       slug:          p.slug,
-      section:       p.section       || null,
-      startingPrice: p.startingPrice || null,
-      thumbnail:     p.thumbnail     || null,
-      isNew:         p.isNew         || false,
+      section:       p.section        || null,
+      startingPrice: p.startingPrice  || null,
+      thumbnail:     p.thumbnail      || null,
+      isNew:         p.isNew          || false,
+      filterCounty:  p.filterCounty   || null,
+      filterLocation:p.filterLocation || null,
+      filterStatus:  p.filterStatus   || null,
+      filterYear:    p.filterYear     || null,
     }));
 
     return res.status(200).json(list);
