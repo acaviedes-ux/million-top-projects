@@ -267,10 +267,34 @@
         group.className = 'filter-group';
         group.dataset.key = def.key;
 
+        // Category row label
         var groupLabel = document.createElement('div');
         groupLabel.className = 'filter-group-label';
-        groupLabel.textContent = def.label;
+
+        var labelText = document.createElement('span');
+        labelText.textContent = def.label;
+        groupLabel.appendChild(labelText);
+
+        var labelRight = document.createElement('span');
+        labelRight.style.display = 'flex';
+        labelRight.style.alignItems = 'center';
+        labelRight.style.gap = '6px';
+
+        var countBadge = document.createElement('span');
+        countBadge.className = 'filter-group-count';
+        countBadge.style.display = 'none';
+        labelRight.appendChild(countBadge);
+
+        var arrow = document.createElement('span');
+        arrow.className = 'filter-group-arrow';
+        labelRight.appendChild(arrow);
+
+        groupLabel.appendChild(labelRight);
         group.appendChild(groupLabel);
+
+        // Submenu with checkboxes
+        var submenu = document.createElement('div');
+        submenu.className = 'filter-submenu';
 
         values.forEach(function(val) {
           var opt = document.createElement('label');
@@ -300,9 +324,10 @@
           opt.appendChild(cb);
           opt.appendChild(lbl);
           opt.appendChild(ct);
-          group.appendChild(opt);
+          submenu.appendChild(opt);
         });
 
+        group.appendChild(submenu);
         filterBarEl.appendChild(group);
       });
     }
@@ -322,8 +347,22 @@
 
       document.querySelectorAll('.filter-group').forEach(function(group) {
         var key = group.dataset.key;
+        var sel = activeFilters[key];
+        var badge = group.querySelector('.filter-group-count');
+
+        if (badge) {
+          if (sel.size > 0) {
+            badge.textContent = sel.size;
+            badge.style.display = 'inline-block';
+            group.classList.add('has-active');
+          } else {
+            badge.style.display = 'none';
+            group.classList.remove('has-active');
+          }
+        }
+
         group.querySelectorAll('input[type="checkbox"]').forEach(function(cb) {
-          cb.checked = activeFilters[key].has(cb.value);
+          cb.checked = sel.has(cb.value);
         });
       });
 
