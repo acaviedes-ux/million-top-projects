@@ -290,6 +290,17 @@
         labelRight.appendChild(arrow);
 
         groupLabel.appendChild(labelRight);
+
+        groupLabel.addEventListener('click', function(e) {
+          e.stopPropagation();
+          var isOpen = group.classList.toggle('open');
+          if (isOpen) {
+            document.querySelectorAll('.filter-group.open').forEach(function(g) {
+              if (g !== group) g.classList.remove('open');
+            });
+          }
+        });
+
         group.appendChild(groupLabel);
 
         // Submenu with checkboxes
@@ -405,12 +416,25 @@
       }
     }
 
-    // ── Hover open/close for filters mega-panel ──────────────────
-    filtersWrapEl.addEventListener('mouseenter', function() {
-      filtersWrapEl.classList.add('open');
+    // ── Click open/close for filters panel ───────────────────────
+    filtersToggleEl.addEventListener('click', function(e) {
+      e.stopPropagation();
+      var opening = !filtersWrapEl.classList.contains('open');
+      filtersWrapEl.classList.toggle('open');
+      if (!opening) {
+        document.querySelectorAll('.filter-group.open').forEach(function(g) {
+          g.classList.remove('open');
+        });
+      }
     });
-    filtersWrapEl.addEventListener('mouseleave', function() {
-      filtersWrapEl.classList.remove('open');
+
+    document.addEventListener('click', function(e) {
+      if (!e.target.closest('.filters-dropdown-wrap')) {
+        filtersWrapEl.classList.remove('open');
+        document.querySelectorAll('.filter-group.open').forEach(function(g) {
+          g.classList.remove('open');
+        });
+      }
     });
 
     // ── Lobby state persistence (scroll + search) ────────────────

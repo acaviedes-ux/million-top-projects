@@ -269,7 +269,8 @@ img { display: block; max-width: 100%; }
   transition: background 0.1s;
 }
 
-.filter-group:hover > .filter-group-label {
+.filter-group:hover > .filter-group-label,
+.filter-group.open > .filter-group-label {
   background: #f5f5f5;
 }
 
@@ -323,7 +324,7 @@ img { display: block; max-width: 100%; }
   padding: 6px 0;
 }
 
-.filter-group:hover .filter-submenu {
+.filter-group.open .filter-submenu {
   display: block;
 }
 
