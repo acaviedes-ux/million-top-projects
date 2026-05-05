@@ -16,6 +16,10 @@
     <div class="nav-scroll-search">
       <input type="text" id="nav-search" placeholder="Search projects..." autocomplete="off">
     </div>
+    <button type="button" class="nav-filters-btn" id="nav-filters-btn">
+      Filters
+      <span class="nav-filters-count" id="nav-filters-count" style="display:none">0</span>
+    </button>
   </nav>
 
   <!-- HERO -->
@@ -52,9 +56,11 @@
     var searchEl        = document.getElementById('search');
     var filterBarEl     = document.getElementById('filter-bar');
     var filterChipsEl   = document.getElementById('filter-chips');
-    var filtersWrapEl   = document.getElementById('filters-dropdown-wrap');
-    var filtersToggleEl = document.getElementById('filters-toggle');
-    var filtersCountEl  = document.getElementById('filters-active-count');
+    var filtersWrapEl    = document.getElementById('filters-dropdown-wrap');
+    var filtersToggleEl  = document.getElementById('filters-toggle');
+    var filtersCountEl   = document.getElementById('filters-active-count');
+    var navFiltersBtnEl  = document.getElementById('nav-filters-btn');
+    var navFiltersCountEl = document.getElementById('nav-filters-count');
     var allProjects     = [];
 
     // ── Filter state ─────────────────────────────────────────────
@@ -380,9 +386,14 @@
         filtersToggleEl.classList.add('active');
         filtersCountEl.textContent = total;
         filtersCountEl.style.display = 'inline-block';
+        navFiltersBtnEl.classList.add('active');
+        navFiltersCountEl.textContent = total;
+        navFiltersCountEl.style.display = 'inline-block';
       } else {
         filtersToggleEl.classList.remove('active');
         filtersCountEl.style.display = 'none';
+        navFiltersBtnEl.classList.remove('active');
+        navFiltersCountEl.style.display = 'none';
       }
 
       document.querySelectorAll('.filter-group').forEach(function(group) {
@@ -446,8 +457,7 @@
     }
 
     // ── Click open/close for filters panel ───────────────────────
-    filtersToggleEl.addEventListener('click', function(e) {
-      e.stopPropagation();
+    function toggleFiltersPanel() {
       var opening = !filtersWrapEl.classList.contains('open');
       filtersWrapEl.classList.toggle('open');
       if (!opening) {
@@ -455,10 +465,20 @@
           g.classList.remove('open');
         });
       }
+    }
+
+    filtersToggleEl.addEventListener('click', function(e) {
+      e.stopPropagation();
+      toggleFiltersPanel();
+    });
+
+    navFiltersBtnEl.addEventListener('click', function(e) {
+      e.stopPropagation();
+      toggleFiltersPanel();
     });
 
     document.addEventListener('click', function(e) {
-      if (!e.target.closest('.filters-dropdown-wrap')) {
+      if (!e.target.closest('.filters-dropdown-wrap') && !e.target.closest('#nav-filters-btn')) {
         filtersWrapEl.classList.remove('open');
         document.querySelectorAll('.filter-group.open').forEach(function(g) {
           g.classList.remove('open');

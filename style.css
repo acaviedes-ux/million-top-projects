@@ -98,6 +98,48 @@ img { display: block; max-width: 100%; }
   pointer-events: auto;
 }
 
+/* Filters button in nav — only visible when scrolled */
+.nav-filters-btn {
+  display: none;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.35);
+  border-radius: 4px;
+  color: var(--white);
+  font-family: var(--sans);
+  font-size: 11px;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  cursor: pointer;
+  white-space: nowrap;
+  flex-shrink: 0;
+  transition: border-color 0.15s, background 0.15s;
+}
+.nav-filters-btn:hover {
+  border-color: rgba(255,255,255,0.7);
+}
+.nav-filters-btn.active {
+  background: var(--white);
+  color: var(--black);
+  border-color: var(--white);
+}
+.site-nav.scrolled .nav-filters-btn {
+  display: flex;
+}
+.nav-filters-count {
+  background: rgba(255,255,255,0.25);
+  border-radius: 10px;
+  padding: 1px 5px;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+.nav-filters-btn.active .nav-filters-count {
+  background: rgba(0,0,0,0.15);
+}
+
 .site-nav .logo {
   font-family: var(--serif);
   font-size: 22px;
@@ -153,16 +195,12 @@ img { display: block; max-width: 100%; }
 .search-wrap {
   max-width: 600px;
   margin: -22px auto 0;
-  padding: 12px 24px;
-  position: sticky;
-  top: 0;
+  padding: 0 24px;
+  position: relative;
   z-index: 10;
   display: flex;
   gap: 10px;
   align-items: stretch;
-  background: rgba(255,255,255,0.92);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
 }
 
 .search-wrap input {
@@ -237,9 +275,9 @@ img { display: block; max-width: 100%; }
 /* ── FILTERS PANEL (category list) ──────────── */
 .filters-panel {
   display: none;
-  position: absolute;
-  top: calc(100% + 8px);
-  right: 0;
+  position: fixed;
+  top: 68px;
+  right: 24px;
   width: 210px;
   background: var(--white);
   border: 1.5px solid #d8d8d8;
