@@ -62,7 +62,153 @@
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Brickell",
     "filterStatus": "Pre-construction",
-    "filterYear": "2030"
+    "filterYear": "2030",
+    "floorPlans": [
+      {
+        "title": "",
+        "driveFileId": "1-grrgwZH4jCXgTwowiDY5glnbGkqjalA"
+      }
+    ],
+    "presentations": [
+      {
+        "title": "EN",
+        "driveFileId": "1I653tHB1WDoEBCJ5g0G374t4iQlkQYhi"
+      }
+    ],
+    "renderings": [
+      {
+        "driveFileId": "1ks-b85XUEv90bGRIQ2eUiLvLHxD0-0Lz",
+        "alt": "619 Residences 2"
+      },
+      {
+        "driveFileId": "11MN1_HfnOXGo5VcVtFFToTFO1xv5b4FF",
+        "alt": "619 Residences 3"
+      },
+      {
+        "driveFileId": "14NV9givZWK7Cdhv8xSWV_6hdG7FfHgFZ",
+        "alt": "IMG_5145"
+      },
+      {
+        "driveFileId": "1nBDHqojMI4sImBblzGc3p-nymWXR3GST",
+        "alt": "IMG_5146"
+      },
+      {
+        "driveFileId": "19Z5oA1ML0TGGrUALr665WTTgJoLLqDbn",
+        "alt": "IMG_5147"
+      },
+      {
+        "driveFileId": "1UYqKBbrviVc1x3C0dDU4obco6nKuK2Xq",
+        "alt": "IMG_5148"
+      },
+      {
+        "driveFileId": "1qAcVRYUHGg_RU1pqM3olK5QkkIcRji4H",
+        "alt": "IMG_5149"
+      },
+      {
+        "driveFileId": "1-xEvxUdePK2L2McVJODjoetjJm5eJDs0",
+        "alt": "IMG_5150"
+      },
+      {
+        "driveFileId": "1E4HA49ToOUJ2q5uitBjgrVO_bABVKsWt",
+        "alt": "IMG_5151"
+      },
+      {
+        "driveFileId": "1-b0QDfMT1QJTKoQmLLtM776Qv6atLycM",
+        "alt": "IMG_5152"
+      },
+      {
+        "driveFileId": "13t82Jm3M5eXc9kvwTYYEu0g7tmY1nJut",
+        "alt": "IMG_5153"
+      },
+      {
+        "driveFileId": "1YmR08FTr_XZ-oo6yZFqoCWUHzvc_zOgn",
+        "alt": "IMG_5154"
+      },
+      {
+        "driveFileId": "1oi9Uo3IwDRZhSVyroGGTVrBpUjA90dW4",
+        "alt": "IMG_5155"
+      },
+      {
+        "driveFileId": "1K9Q6lTeQNof8LFWN4KRpik9pQ755L4z5",
+        "alt": "IMG_5156"
+      },
+      {
+        "driveFileId": "1v9T7pbYfhjTvvs7X0FNs3MCZ_pNzM_jL",
+        "alt": "IMG_5157"
+      },
+      {
+        "driveFileId": "1Van3cIbJ5TmM37Z8K40qXjWM3LmHTcVl",
+        "alt": "IMG_5158"
+      },
+      {
+        "driveFileId": "1H89SK6FnYsKpaxVUwjyJd6e7xKUzM0o1",
+        "alt": "IMG_5159"
+      },
+      {
+        "driveFileId": "1uqe5mJJDjPU0fO64_UQq44lICNZdbGDF",
+        "alt": "IMG_5160"
+      },
+      {
+        "driveFileId": "1bQ6oAd8uTIj9Gv3yE-EZ79RCvgJmn1F9",
+        "alt": "IMG_5161"
+      },
+      {
+        "driveFileId": "1Dv1_f4cgo4-E-2Zf6ZyWmMdOH35YuGAm",
+        "alt": "IMG_5162"
+      },
+      {
+        "driveFileId": "1ieW9dr6zAQ4rpkFi1qgAInG8AzPBPJ69",
+        "alt": "IMG_5163"
+      },
+      {
+        "driveFileId": "1_9zcJZfiCbtZAykwcR00nQ3tSGgno1tX",
+        "alt": "IMG_5164"
+      },
+      {
+        "driveFileId": "1zb4BdF430lfaGsMen6BnvxXguxnrs5MJ",
+        "alt": "IMG_5165"
+      },
+      {
+        "driveFileId": "1o2jmJZv2kiRbrPqNtlUWV5WwIY3zaRdN",
+        "alt": "IMG_5166"
+      },
+      {
+        "driveFileId": "1k2FkxScnI6JuwLX6EJk-3YHbVFesFCju",
+        "alt": "IMG_5167"
+      },
+      {
+        "driveFileId": "1ae2hLQjkLE7Q5lNR5IaKZ6r_sCWx7b7m",
+        "alt": "IMG_5168"
+      },
+      {
+        "driveFileId": "1wDc6mx96d8eeoWRZe0TSc-vujR3k0O1N",
+        "alt": "IMG_5169"
+      },
+      {
+        "driveFileId": "1X8mzwQUjRgDaEpEax9lwk_kSLstqIs93",
+        "alt": "IMG_5170"
+      },
+      {
+        "driveFileId": "1QDnAJ3ey0C8oAsV5vq4HzQyOHEL8VOk2",
+        "alt": "IMG_5171"
+      },
+      {
+        "driveFileId": "15IFevFoWJXfuwy3NBcMryWSTA94Ddtdw",
+        "alt": "IMG_5172"
+      },
+      {
+        "driveFileId": "1p53ZNFfQ2vR47IzNc_gc6yKqjrEJm_x0",
+        "alt": "IMG_5173"
+      },
+      {
+        "driveFileId": "1rujql9cqb8HUcazGxwdace6uBat-zmFC",
+        "alt": "IMG_5174"
+      },
+      {
+        "driveFileId": "1D-ineGotPFxOiow518OwfOkIglLna3MS",
+        "alt": "IMG_5175"
+      }
+    ]
   },
   {
     "slug": "72-carlyle",

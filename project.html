@@ -346,17 +346,16 @@
 
     // ── Document sections ────────────────────────────────────
     function appendDocSection(id, title, items) {
+      // Skip the section entirely if there are no real documents
+      var real = (items || []).filter(function (item) { return item.driveFileId; });
+      if (!real.length) return;
+
       var sec = makeSection(id);
       sec.appendChild(sectionHeading(title));
       var list = el('div', 'doc-list');
-      if (items && items.length) {
-        items.forEach(function (item) {
-          list.appendChild(docItem(item.title, item.driveFileId));
-        });
-      } else {
-        // No documents yet — show a single "Coming soon" placeholder row
-        list.appendChild(docItem('', null));
-      }
+      real.forEach(function (item) {
+        list.appendChild(docItem(item.title, item.driveFileId));
+      });
       sec.appendChild(list);
       frag.appendChild(sec);
     }
