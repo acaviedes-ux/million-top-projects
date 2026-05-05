@@ -83,7 +83,7 @@
       return 'More than $8M';
     }
 
-    var YEAR_BUCKET_ORDER = ['Before 2000', 'From 2000 – 2010', 'From 2010 – 2020'];
+    var YEAR_BUCKET_ORDER = ['From 2021 – 2025', 'From 2010 – 2020', 'From 2000 – 2010', 'Before 2000'];
 
     function getYearBucket(yearStr) {
       var y = parseInt(yearStr, 10);
@@ -91,6 +91,7 @@
       if (y < 2000)  return 'Before 2000';
       if (y <= 2010) return 'From 2000 – 2010';
       if (y <= 2020) return 'From 2010 – 2020';
+      if (y <= 2025) return 'From 2021 – 2025';
       return yearStr;
     }
 
@@ -109,7 +110,7 @@
           var presentBuckets = YEAR_BUCKET_ORDER.filter(function(b) { return vals.indexOf(b) !== -1; });
           var individual = vals.filter(function(v) { return !bucketSet.has(v); })
                               .sort(function(a, b) { return Number(b) - Number(a); });
-          return presentBuckets.concat(individual);
+          return individual.concat(presentBuckets);
         }
       },
     ];
