@@ -274,6 +274,7 @@
           });
           values = def.staticValues;
         } else if (def.getFieldValue) {
+          counts = {};
           allProjects.forEach(function(p) {
             var v = def.getFieldValue(p);
             if (v) counts[v] = (counts[v] || 0) + 1;
