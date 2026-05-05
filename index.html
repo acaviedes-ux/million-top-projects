@@ -83,6 +83,17 @@
       return 'More than $8M';
     }
 
+    var YEAR_BUCKET_ORDER = ['Before 2000', 'From 2000 – 2010', 'From 2010 – 2020'];
+
+    function getYearBucket(yearStr) {
+      var y = parseInt(yearStr, 10);
+      if (isNaN(y)) return null;
+      if (y < 2000)  return 'Before 2000';
+      if (y <= 2010) return 'From 2000 – 2010';
+      if (y <= 2020) return 'From 2010 – 2020';
+      return yearStr;
+    }
+
     var FILTER_DEFS = [
       { key: 'section',  label: 'Top Projects',      staticValues: ['Top Projects', 'Other Projects'],
         getFieldValue: function(p) { return p.section; } },
@@ -91,7 +102,16 @@
       { key: 'county',   label: 'County',            field: 'filterCounty'   },
       { key: 'location', label: 'Area',              field: 'filterLocation' },
       { key: 'status',   label: 'Status',            field: 'filterStatus'   },
-      { key: 'year',     label: 'Construction Year', field: 'filterYear'     },
+      { key: 'year',     label: 'Construction Year', field: 'filterYear',
+        getFieldValue: getYearBucket,
+        sortValues: function(vals) {
+          var bucketSet = new Set(YEAR_BUCKET_ORDER);
+          var presentBuckets = YEAR_BUCKET_ORDER.filter(function(b) { return vals.indexOf(b) !== -1; });
+          var individual = vals.filter(function(v) { return !bucketSet.has(v); })
+                              .sort(function(a, b) { return Number(b) - Number(a); });
+          return presentBuckets.concat(individual);
+        }
+      },
     ];
 
     // ── Filter matching ──────────────────────────────────────────
@@ -253,10 +273,17 @@
             if (v && counts.hasOwnProperty(v)) counts[v]++;
           });
           values = def.staticValues;
+        } else if (def.getFieldValue) {
+          allProjects.forEach(function(p) {
+            var v = def.getFieldValue(p);
+            if (v) counts[v] = (counts[v] || 0) + 1;
+          });
+          values = def.sortValues
+            ? def.sortValues(Object.keys(counts))
+            : Object.keys(counts).sort(function(a, b) { return a.localeCompare(b); });
         } else {
           counts = valueCounts(def.field);
           values = Object.keys(counts).sort(function(a, b) {
-            if (def.key === 'year') return Number(b) - Number(a);
             return a.localeCompare(b);
           });
         }
