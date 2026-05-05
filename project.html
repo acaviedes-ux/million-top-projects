@@ -193,16 +193,32 @@
 
   function docItem(title, driveFileId) {
     var row = el('div', 'doc-item');
-    row.appendChild(el('div', 'doc-title', title));
+
+    // Preview thumbnail (Drive generates a first-page JPEG for PDFs)
+    if (driveFileId) {
+      var preview = el('img', 'doc-preview');
+      preview.src     = 'https://drive.google.com/thumbnail?id=' + driveFileId + '&sz=w400';
+      preview.alt     = title || 'Document preview';
+      preview.loading = 'lazy';
+      row.appendChild(preview);
+    } else {
+      row.appendChild(el('div', 'doc-preview doc-preview--empty'));
+    }
+
+    // Footer: title + action button
+    var footer = el('div', 'doc-item-footer');
+    if (title) footer.appendChild(el('div', 'doc-title', title));
     if (driveFileId) {
       var a = el('a', 'doc-btn', 'View PDF');
       a.href   = 'https://drive.google.com/file/d/' + driveFileId + '/view';
       a.target = '_blank';
       a.rel    = 'noopener noreferrer';
-      row.appendChild(a);
+      footer.appendChild(a);
     } else {
-      row.appendChild(el('div', 'doc-pending', 'Coming soon'));
+      footer.appendChild(el('div', 'doc-pending', 'Coming soon'));
     }
+    row.appendChild(footer);
+
     return row;
   }
 
