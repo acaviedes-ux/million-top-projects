@@ -1246,7 +1246,10 @@
       "2.5 parking spaces assigned for 3+ bedrooms units.",
       "Combination of self parking space and valet parking service depending on the unit."
     ],
-    "rentalRestrictions": null,
+    "rentalRestrictions": [
+      "Min 6 months",
+      "2 times per year"
+    ],
     "hoa": "$2.16",
     "contact": [
       {
