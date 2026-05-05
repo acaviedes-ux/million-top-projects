@@ -103,7 +103,7 @@
       { key: 'location', label: 'Area',              field: 'filterLocation' },
       { key: 'status',   label: 'Status',            field: 'filterStatus'   },
       { key: 'year',     label: 'Construction Year', field: 'filterYear',
-        getFieldValue: getYearBucket,
+        getFieldValue: function(p) { return getYearBucket(p.filterYear); },
         sortValues: function(vals) {
           var bucketSet = new Set(YEAR_BUCKET_ORDER);
           var presentBuckets = YEAR_BUCKET_ORDER.filter(function(b) { return vals.indexOf(b) !== -1; });
