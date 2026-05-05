@@ -151,15 +151,19 @@ img { display: block; max-width: 100%; }
 
 /* ── SEARCH BAR ──────────────────────────────── */
 .search-wrap {
-  max-width: 480px;
+  max-width: 600px;
   margin: -22px auto 0;
   padding: 0 24px;
   position: relative;
-  z-index: 2;
+  z-index: 10;
+  display: flex;
+  gap: 10px;
+  align-items: stretch;
 }
 
 .search-wrap input {
-  width: 100%;
+  flex: 1;
+  min-width: 0;
   padding: 14px 20px 14px 44px;
   border: none;
   border-radius: 6px;
@@ -173,27 +177,18 @@ img { display: block; max-width: 100%; }
 .search-wrap input::placeholder { color: #aaa; }
 .search-wrap input:focus { box-shadow: 0 2px 16px rgba(0,0,0,0.2); }
 
-/* ── FILTER BAR ──────────────────────────────── */
-.filter-bar {
-  max-width: 960px;
-  margin: 20px auto 0;
-  padding: 0 24px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  align-items: flex-start;
-}
-
-/* Each filter group: button + dropdown panel */
-.filter-group {
+/* ── FILTERS DROPDOWN WRAP ───────────────────── */
+.filters-dropdown-wrap {
   position: relative;
+  flex-shrink: 0;
 }
 
-.filter-btn {
+.filters-toggle-btn {
   display: flex;
   align-items: center;
   gap: 6px;
-  padding: 8px 14px;
+  height: 100%;
+  padding: 0 18px;
   background: var(--white);
   border: 1.5px solid #d8d8d8;
   border-radius: 6px;
@@ -203,25 +198,22 @@ img { display: block; max-width: 100%; }
   text-transform: uppercase;
   color: var(--black);
   cursor: pointer;
-  transition: border-color 0.15s, background 0.15s;
   white-space: nowrap;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+  transition: border-color 0.15s, background 0.15s;
 }
 
-.filter-btn:hover {
+.filters-toggle-btn:hover {
   border-color: #aaa;
 }
 
-.filter-btn.active {
+.filters-toggle-btn.active {
   background: var(--black);
   border-color: var(--black);
   color: var(--white);
 }
 
-.filter-btn.active .filter-arrow {
-  border-top-color: var(--white);
-}
-
-.filter-count {
+.filters-active-count {
   background: #e0e0e0;
   color: var(--black);
   border-radius: 10px;
@@ -233,44 +225,46 @@ img { display: block; max-width: 100%; }
   text-align: center;
 }
 
-.filter-btn.active .filter-count {
+.filters-toggle-btn.active .filters-active-count {
   background: rgba(255,255,255,0.25);
   color: var(--white);
 }
 
-.filter-arrow {
-  display: inline-block;
-  width: 0;
-  height: 0;
-  border-left: 4px solid transparent;
-  border-right: 4px solid transparent;
-  border-top: 5px solid var(--black);
-  transition: transform 0.15s;
-}
-
-.filter-group.open .filter-arrow {
-  transform: rotate(180deg);
-}
-
-/* Dropdown panel */
-.filter-panel {
+/* ── FILTERS MEGA-PANEL ──────────────────────── */
+.filters-panel {
   display: none;
   position: absolute;
-  top: calc(100% + 6px);
-  left: 0;
-  min-width: 200px;
-  max-height: 300px;
-  overflow-y: auto;
+  top: calc(100% + 8px);
+  right: 0;
+  width: 480px;
   background: var(--white);
   border: 1.5px solid #d8d8d8;
-  border-radius: 8px;
-  box-shadow: 0 6px 24px rgba(0,0,0,0.12);
-  z-index: 100;
-  padding: 6px 0;
+  border-radius: 10px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.13);
+  z-index: 200;
+  padding: 20px;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px 28px;
 }
 
-.filter-group.open .filter-panel {
-  display: block;
+.filters-dropdown-wrap.open .filters-panel {
+  display: grid;
+}
+
+/* ── FILTER GROUPS (inside mega-panel) ──────── */
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.filter-group-label {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 600;
+  color: var(--gray-dark);
+  margin-bottom: 6px;
 }
 
 .filter-option {
@@ -361,15 +355,25 @@ img { display: block; max-width: 100%; }
 }
 
 @media (max-width: 640px) {
-  .filter-bar {
-    padding: 0 16px;
-    gap: 8px;
+  .search-wrap {
+    flex-wrap: wrap;
+  }
+  .filters-dropdown-wrap {
+    width: 100%;
+  }
+  .filters-toggle-btn {
+    width: 100%;
+    justify-content: center;
+    padding: 10px 18px;
+  }
+  .filters-panel {
+    right: auto;
+    left: 0;
+    width: calc(100vw - 48px);
+    grid-template-columns: 1fr;
   }
   .filter-chips {
     padding: 0 16px;
-  }
-  .filter-panel {
-    min-width: 160px;
   }
 }
 

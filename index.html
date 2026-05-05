@@ -24,14 +24,18 @@
     <p>Top Luxury Buildings in South Florida</p>
   </header>
 
-  <!-- SEARCH -->
+  <!-- SEARCH + FILTERS -->
   <div class="search-wrap">
     <input type="text" id="search" placeholder="Search projects..." autocomplete="off">
-  </div>
-
-  <!-- FILTERS -->
-  <div class="filter-bar" id="filter-bar">
-    <!-- populated by JS once projects load -->
+    <div class="filters-dropdown-wrap" id="filters-dropdown-wrap">
+      <button type="button" class="filters-toggle-btn" id="filters-toggle">
+        Filters
+        <span class="filters-active-count" id="filters-active-count" style="display:none">0</span>
+      </button>
+      <div class="filters-panel" id="filter-bar">
+        <!-- populated by JS once projects load -->
+      </div>
+    </div>
   </div>
   <div class="filter-chips" id="filter-chips"></div>
 
@@ -44,29 +48,59 @@
   </footer>
 
   <script>
-    var contentEl   = document.getElementById('lobby-content');
-    var searchEl    = document.getElementById('search');
-    var filterBarEl = document.getElementById('filter-bar');
-    var filterChipsEl = document.getElementById('filter-chips');
-    var allProjects = [];
+    var contentEl       = document.getElementById('lobby-content');
+    var searchEl        = document.getElementById('search');
+    var filterBarEl     = document.getElementById('filter-bar');
+    var filterChipsEl   = document.getElementById('filter-chips');
+    var filtersWrapEl   = document.getElementById('filters-dropdown-wrap');
+    var filtersToggleEl = document.getElementById('filters-toggle');
+    var filtersCountEl  = document.getElementById('filters-active-count');
+    var allProjects     = [];
 
     // ── Filter state ─────────────────────────────────────────────
-    // activeFilters: { county: Set, location: Set, status: Set, year: Set }
-    var activeFilters = { county: new Set(), location: new Set(), status: new Set(), year: new Set() };
+    var activeFilters = {
+      section: new Set(), price: new Set(),
+      county: new Set(), location: new Set(), status: new Set(), year: new Set()
+    };
+
+    // ── Price helpers ─────────────────────────────────────────────
+    function parsePriceToMillions(str) {
+      var m = str && str.match(/\$([0-9.]+)\s*M/i);
+      if (m) return parseFloat(m[1]);
+      var k = str && str.match(/\$([0-9.]+)\s*K/i);
+      if (k) return parseFloat(k[1]) / 1000;
+      return null;
+    }
+
+    var PRICE_BUCKETS = ['Less than $3M', '$3M – $5M', '$5M – $8M', 'More than $8M'];
+
+    function getPriceBucket(str) {
+      var v = parsePriceToMillions(str);
+      if (v === null) return null;
+      if (v < 3)  return 'Less than $3M';
+      if (v <= 5) return '$3M – $5M';
+      if (v <= 8) return '$5M – $8M';
+      return 'More than $8M';
+    }
 
     var FILTER_DEFS = [
-      { key: 'county',   label: 'County',   field: 'filterCounty'   },
-      { key: 'location', label: 'Area',     field: 'filterLocation' },
-      { key: 'status',   label: 'Status',   field: 'filterStatus'   },
-      { key: 'year',     label: 'Construction Year', field: 'filterYear' },
+      { key: 'section',  label: 'Top Projects',      staticValues: ['Top Projects', 'Other Projects'],
+        getFieldValue: function(p) { return p.section; } },
+      { key: 'price',    label: 'Starting Price',    staticValues: PRICE_BUCKETS,
+        getFieldValue: function(p) { return getPriceBucket(p.startingPrice); } },
+      { key: 'county',   label: 'County',            field: 'filterCounty'   },
+      { key: 'location', label: 'Area',              field: 'filterLocation' },
+      { key: 'status',   label: 'Status',            field: 'filterStatus'   },
+      { key: 'year',     label: 'Construction Year', field: 'filterYear'     },
     ];
 
     // ── Filter matching ──────────────────────────────────────────
     function projectMatchesFilters(p) {
       return FILTER_DEFS.every(function(def) {
         var sel = activeFilters[def.key];
-        if (!sel.size) return true;           // no filter active → pass
-        return sel.has(p[def.field]);         // OR within group: one hit = pass
+        if (!sel.size) return true;
+        var val = def.getFieldValue ? def.getFieldValue(p) : p[def.field];
+        return sel.has(val);
       });
     }
 
@@ -149,12 +183,11 @@
       contentEl.textContent = '';
       var frag = document.createDocumentFragment();
 
-      var searchQ = query ? query.toLowerCase().trim() : '';
-      var hasSearch = searchQ.length > 0;
+      var searchQ    = query ? query.toLowerCase().trim() : '';
+      var hasSearch  = searchQ.length > 0;
       var hasFilters = FILTER_DEFS.some(function(d) { return activeFilters[d.key].size > 0; });
 
       if (hasSearch || hasFilters) {
-        // Filtered/search mode: one merged list
         var matches = allProjects.filter(function(p) {
           var nameOk = !hasSearch || p.name.toLowerCase().indexOf(searchQ) !== -1;
           return nameOk && projectMatchesFilters(p);
@@ -185,7 +218,6 @@
         frag.appendChild(searchWrap);
 
       } else {
-        // Browse mode: two sections
         var topProjects   = allProjects.filter(function(p) { return p.section === 'Top Projects'; });
         var otherProjects = allProjects.filter(function(p) { return p.section === 'Other Projects'; });
 
@@ -194,14 +226,11 @@
       }
 
       contentEl.appendChild(frag);
-
-      // Refresh filter button active states + chips after each render
       refreshFilterUI();
     }
 
     // ── Filter UI builders ───────────────────────────────────────
 
-    // Count how many projects have a given field value (across ALL projects, not filtered)
     function valueCounts(field) {
       var counts = {};
       allProjects.forEach(function(p) {
@@ -214,39 +243,34 @@
     function buildFilterBar() {
       filterBarEl.textContent = '';
       FILTER_DEFS.forEach(function(def) {
-        var counts = valueCounts(def.field);
-        var values = Object.keys(counts).sort(function(a, b) {
-          // Sort years numerically descending; others alphabetically
-          if (def.key === 'year') return Number(b) - Number(a);
-          return a.localeCompare(b);
-        });
+        var counts, values;
+
+        if (def.staticValues) {
+          counts = {};
+          def.staticValues.forEach(function(v) { counts[v] = 0; });
+          allProjects.forEach(function(p) {
+            var v = def.getFieldValue(p);
+            if (v && counts.hasOwnProperty(v)) counts[v]++;
+          });
+          values = def.staticValues;
+        } else {
+          counts = valueCounts(def.field);
+          values = Object.keys(counts).sort(function(a, b) {
+            if (def.key === 'year') return Number(b) - Number(a);
+            return a.localeCompare(b);
+          });
+        }
+
         if (!values.length) return;
 
         var group = document.createElement('div');
         group.className = 'filter-group';
         group.dataset.key = def.key;
 
-        // Button
-        var btn = document.createElement('button');
-        btn.className = 'filter-btn';
-        btn.type = 'button';
-
-        var labelSpan = document.createElement('span');
-        labelSpan.textContent = def.label;
-        btn.appendChild(labelSpan);
-
-        var countBadge = document.createElement('span');
-        countBadge.className = 'filter-count';
-        countBadge.style.display = 'none';
-        btn.appendChild(countBadge);
-
-        var arrow = document.createElement('span');
-        arrow.className = 'filter-arrow';
-        btn.appendChild(arrow);
-
-        // Panel
-        var panel = document.createElement('div');
-        panel.className = 'filter-panel';
+        var groupLabel = document.createElement('div');
+        groupLabel.className = 'filter-group-label';
+        groupLabel.textContent = def.label;
+        group.appendChild(groupLabel);
 
         values.forEach(function(val) {
           var opt = document.createElement('label');
@@ -271,54 +295,38 @@
 
           var ct = document.createElement('span');
           ct.className = 'filter-option-count';
-          ct.textContent = counts[val];
+          ct.textContent = counts[val] || 0;
 
           opt.appendChild(cb);
           opt.appendChild(lbl);
           opt.appendChild(ct);
-          panel.appendChild(opt);
+          group.appendChild(opt);
         });
 
-        btn.addEventListener('click', function(e) {
-          e.stopPropagation();
-          var isOpen = group.classList.toggle('open');
-          // Close all other groups
-          document.querySelectorAll('.filter-group').forEach(function(g) {
-            if (g !== group) g.classList.remove('open');
-          });
-        });
-
-        group.appendChild(btn);
-        group.appendChild(panel);
         filterBarEl.appendChild(group);
       });
     }
 
-    // Sync button active state + count badges + chips after state changes
     function refreshFilterUI() {
-      // Update buttons
+      var total = 0;
+      FILTER_DEFS.forEach(function(d) { total += activeFilters[d.key].size; });
+
+      if (total > 0) {
+        filtersToggleEl.classList.add('active');
+        filtersCountEl.textContent = total;
+        filtersCountEl.style.display = 'inline-block';
+      } else {
+        filtersToggleEl.classList.remove('active');
+        filtersCountEl.style.display = 'none';
+      }
+
       document.querySelectorAll('.filter-group').forEach(function(group) {
         var key = group.dataset.key;
-        var sel = activeFilters[key];
-        var btn = group.querySelector('.filter-btn');
-        var badge = group.querySelector('.filter-count');
-        var checkboxes = group.querySelectorAll('input[type="checkbox"]');
-
-        btn.classList.toggle('active', sel.size > 0);
-        if (sel.size > 0) {
-          badge.style.display = 'inline-block';
-          badge.textContent = sel.size;
-        } else {
-          badge.style.display = 'none';
-        }
-
-        // Sync checkbox states (in case chip removal cleared them)
-        checkboxes.forEach(function(cb) {
-          cb.checked = sel.has(cb.value);
+        group.querySelectorAll('input[type="checkbox"]').forEach(function(cb) {
+          cb.checked = activeFilters[key].has(cb.value);
         });
       });
 
-      // Rebuild chips
       filterChipsEl.textContent = '';
       var hasAny = false;
 
@@ -358,13 +366,12 @@
       }
     }
 
-    // Close any open filter panel when clicking outside
-    document.addEventListener('click', function(e) {
-      if (!e.target.closest('.filter-group')) {
-        document.querySelectorAll('.filter-group.open').forEach(function(g) {
-          g.classList.remove('open');
-        });
-      }
+    // ── Hover open/close for filters mega-panel ──────────────────
+    filtersWrapEl.addEventListener('mouseenter', function() {
+      filtersWrapEl.classList.add('open');
+    });
+    filtersWrapEl.addEventListener('mouseleave', function() {
+      filtersWrapEl.classList.remove('open');
     });
 
     // ── Lobby state persistence (scroll + search) ────────────────
@@ -390,7 +397,6 @@
       }
     }
 
-    // Save state whenever a project card is clicked
     contentEl.addEventListener('click', function(e) {
       if (e.target.closest('.project-card')) saveState();
     });
