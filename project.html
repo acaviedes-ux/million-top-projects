@@ -361,10 +361,21 @@
       var gallery = el('div', 'renderings-grid');
       d.renderings.forEach(function (r) {
         var img = el('img', 'rendering-img');
-        img.src     = r.url;
         img.alt     = r.alt || '';
         img.loading = 'lazy';
-        gallery.appendChild(img);
+
+        if (r.driveFileId) {
+          img.src = 'https://drive.google.com/thumbnail?id=' + r.driveFileId + '&sz=w800';
+          var a = el('a', 'rendering-link');
+          a.href   = 'https://drive.google.com/file/d/' + r.driveFileId + '/view';
+          a.target = '_blank';
+          a.rel    = 'noopener noreferrer';
+          a.appendChild(img);
+          gallery.appendChild(a);
+        } else {
+          img.src = r.url || '';
+          gallery.appendChild(img);
+        }
       });
       renderSec.appendChild(gallery);
       frag.appendChild(renderSec);

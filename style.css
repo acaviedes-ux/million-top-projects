@@ -1152,24 +1152,30 @@ img { display: block; max-width: 100%; }
 .contact-email:hover { color: var(--black); border-color: var(--black); }
 
 /* ── DOCUMENT SECTIONS ───────────────────────── */
-.doc-list { display: flex; flex-direction: column; gap: 0; }
+.doc-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
 
 .doc-item {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  padding: 16px 0;
-  border-bottom: 1px solid var(--gray-mid);
-  gap: 16px;
+  gap: 14px;
+  padding: 22px 18px;
+  border: 1px solid var(--gray-mid);
+  min-height: 90px;
 }
-.doc-item:first-child { border-top: 1px solid var(--gray-mid); }
 
 .doc-title {
-  flex: 1;
-  font-size: 13px;
+  font-size: 11px;
   letter-spacing: 1.5px;
   text-transform: uppercase;
   color: var(--black);
+  text-align: center;
+  line-height: 1.6;
 }
 
 .doc-btn {
@@ -1196,20 +1202,25 @@ img { display: block; max-width: 100%; }
 /* ── RENDERINGS GALLERY ──────────────────────── */
 .renderings-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 6px;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 4px;
+}
+
+.rendering-link {
+  display: block;
+  overflow: hidden;
 }
 
 .rendering-img {
   width: 100%;
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 3 / 2;
   object-fit: cover;
   display: block;
   background: var(--gray-light);
   cursor: zoom-in;
-  transition: opacity 0.2s;
+  transition: opacity 0.2s, transform 0.2s;
 }
-.rendering-img:hover { opacity: 0.88; }
+.rendering-img:hover { opacity: 0.85; transform: scale(1.03); }
 
 /* ── RESPONSIVE (new template) ───────────────── */
 @media (max-width: 800px) {
@@ -1220,14 +1231,16 @@ img { display: block; max-width: 100%; }
   .detail-cell { border-bottom: 1px solid var(--gray-mid) !important; padding: 22px 20px; }
   .detail-row:last-child .detail-cell:last-child { border-bottom: none !important; }
 
-  .renderings-grid { grid-template-columns: repeat(2, 1fr); }
+  .renderings-grid { grid-template-columns: repeat(3, 1fr); }
+  .doc-list { grid-template-columns: repeat(2, 1fr); }
 
   .page-section { padding: 40px 20px; }
 }
 
 @media (max-width: 480px) {
   .project-hero-wrap { height: 200px; }
-  .renderings-grid { grid-template-columns: 1fr; }
+  .renderings-grid { grid-template-columns: repeat(2, 1fr); }
+  .doc-list { grid-template-columns: 1fr; }
   .nav-dropdown-menu { min-width: 200px; right: -8px; }
 }
 
