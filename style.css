@@ -393,21 +393,29 @@ img { display: block; max-width: 100%; }
   display: none;
 }
 
-/* Checkmark placeholder — invisible when unchecked, black when checked */
+/* Custom checkbox box */
 .filter-check {
   flex-shrink: 0;
-  width: 14px;
-  font-size: 13px;
+  width: 15px;
+  height: 15px;
+  border: 1.5px solid #bbb;
+  border-radius: 3px;
+  background: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
   font-weight: 700;
-  line-height: 1;
-  text-align: center;
-  color: transparent;   /* invisible by default */
+  color: transparent;   /* checkmark hidden when unchecked */
+  transition: border-color 0.12s, background 0.12s;
   user-select: none;
 }
 
-/* Sibling selector: input:checked → the very next .filter-check */
+/* Checked state: black fill + white tick */
 .filter-option input[type="checkbox"]:checked + .filter-check {
-  color: var(--black);
+  background: var(--black);
+  border-color: var(--black);
+  color: var(--white);
 }
 
 .filter-option-label {
