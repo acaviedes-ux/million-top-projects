@@ -1246,7 +1246,9 @@
       "2.5 parking spaces assigned for 3+ bedrooms units.",
       "Combination of self parking space and valet parking service depending on the unit."
     ],
-    "rentalRestrictions": null,
+    "rentalRestrictions": [
+      "6 months minimum. 2 times per year."
+    ],
     "hoa": "$2.16",
     "contact": [
       {
@@ -3237,7 +3239,7 @@
     "contact": [
       {
         "name": "Todd Finlay",
-        "phone": "+1 (305) 331-1781‬",
+        "phone": "+1 (305) 331-1781",
         "email": "todd@miamitropic.com"
       }
     ],
@@ -5907,9 +5909,9 @@
     "completionDate": "2029",
     "depositStructure": [
       "15% at contract",
-      "15% at groundbreaking",
-      "10% at top-off",
-      "60% at closing"
+      "15% at groundbreaking (2027)",
+      "10% at top-off (Q4 2028)",
+      "60% at closing (Q1 2030)"
     ],
     "parkingSpaces": [
       "2 assigned spaces and valet parking for condo residences. Valet parking only for resort residences."
