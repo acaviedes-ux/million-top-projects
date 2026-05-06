@@ -10,6 +10,8 @@ const PUBLIC_PATHS = new Set([
   '/login',
   '/style.css',
   '/images/logo.png',
+  '/images/logo-white.png',
+  '/images/logo-black.png',
   '/favicon.ico',
 ]);
 
