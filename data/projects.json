@@ -5915,7 +5915,7 @@
     "developer": "Related Group",
     "architecture": "Arquitectonica",
     "interiorDesign": "Tara Bernerd & Partners",
-    "completionDate": "2029",
+    "completionDate": "2030",
     "depositStructure": [
       "15% at contract",
       "15% at groundbreaking (2027)",
@@ -5923,13 +5923,14 @@
       "60% at closing (Q1 2030)"
     ],
     "parkingSpaces": [
-      "2 assigned spaces and valet parking for condo residences. Valet parking only for resort residences."
+      "Hotel Tower - Resort Collection: Valet parking service available.",
+      "Tower 1 - Private Residences: 4 assigned parking spaces for penthouses and 2 assigned parking spaces for units."
     ],
     "rentalRestrictions": [
-      "Resort Collection: Daily Rentals Allowed and a hotel management program, owners can also live there full time.",
-      "Private Residences: 6 months minimum. 2 times per year."
+      "Hotel Tower - Resort Collection: Daily Rentals Allowed and a hotel management program, owners can also live there full time.",
+      "Tower 1 - Private Residences: 6 months minimum. 2 times per year."
     ],
-    "hoa": "$1.80 Resort Fee\n$2.00 Private HOA",
+    "hoa": "Hotel Tower - Resort Collection: $1.80\nTower 1 - Private Residences: $2.00",
     "contact": [
       {
         "name": "Deborah Wiltshire",
