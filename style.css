@@ -1396,9 +1396,9 @@ img { display: block; max-width: 100%; }
   /* Smaller MILLION on mobile */
   .site-nav .logo,
   .site-nav .logo img {
-    font-size: 16px;
-    letter-spacing: 3px;
-    height: 22px;
+    font-size: 13px;
+    letter-spacing: 2px;
+    height: 18px;
   }
 
   /* TOP PROJECTS button: two lines, smaller text */
