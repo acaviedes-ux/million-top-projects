@@ -339,6 +339,17 @@
         sec.appendChild(el('p', 'pl-date', plData.createdAt));
       }
 
+      // Disclaimer banner (warning or info) — shown before the iframe/content
+      var disclaimer = d.priceList && d.priceList.disclaimer;
+      if (disclaimer) {
+        var disc = el('div', 'pl-disclaimer pl-disclaimer--' + (disclaimer.type || 'info'));
+        var icon = el('span', 'pl-disclaimer-icon');
+        icon.textContent = disclaimer.type === 'warning' ? '⚠️' : 'ℹ️';
+        disc.appendChild(icon);
+        disc.appendChild(el('span', null, disclaimer.text));
+        sec.appendChild(disc);
+      }
+
       if (plData && plData.driveFileId) {
         var iframe = document.createElement('iframe');
         iframe.src = 'https://drive.google.com/file/d/' + plData.driveFileId + '/preview';

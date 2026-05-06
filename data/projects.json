@@ -7672,7 +7672,11 @@
     "projectLogo": "/images/logos/the-delmore.png",
     "priceList": {
       "driveFileId": "1FANYhuswf8-JGTs9Ua5dQeA1hNWHBrfe",
-      "createdAt": "As of January, 2026"
+      "createdAt": "As of January, 2026",
+      "disclaimer": {
+        "type": "info",
+        "text": "It is set to be relaunched in January 2027, and the developer remains fully committed. They are currently in the process of bringing on a local joint venture partner to move the project forward."
+      }
     },
     "isNew": false,
     "filterCounty": "Miami-Dade County",
@@ -13270,7 +13274,11 @@
     "projectLogo": "/images/logos/bentley-residences-sunny-isles.png",
     "priceList": {
       "driveFileId": "1XuMTajj2mx6xDc5Z15VX66eVP9QYCYr6",
-      "createdAt": "As of May, 2026"
+      "createdAt": "As of May, 2026",
+      "disclaimer": {
+        "type": "warning",
+        "text": "Do not share the Price List or specific prices with clients. Price List for reference only. Share price ranges only."
+      }
     },
     "isNew": false,
     "filterCounty": "Miami-Dade County",
@@ -14068,7 +14076,12 @@
       }
     ],
     "projectLogo": "/images/logos/edgeworth-west-palm-beach.png",
-    "priceList": null,
+    "priceList": {
+      "disclaimer": {
+        "type": "warning",
+        "text": "Do not share the Price List or specific prices with clients. Price List for reference only. As the project is in its pre-launch phase, prices may vary. Share price ranges only and verify them with the in-house before."
+      }
+    },
     "isNew": true,
     "filterCounty": "Palm Beach County",
     "filterLocation": "West Palm Beach",
@@ -15390,7 +15403,11 @@
     "projectLogo": "/images/logos/mercedes-benz-places-miami.svg",
     "priceList": {
       "driveFileId": "1XzwRlxC6ezra9i-3pYnno3dCAzLFJA01",
-      "createdAt": "As of May, 2026"
+      "createdAt": "As of May, 2026",
+      "disclaimer": {
+        "type": "warning",
+        "text": "The project has been temporarily paused due to bankruptcy. According to local media, Mercedes-Benz Places is facing an $80 million foreclosure lawsuit because the developer allegedly defaulted on a construction loan that was due in January 2025."
+      }
     },
     "isNew": false,
     "filterCounty": "Miami-Dade County",
