@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iniciar sesión — Million</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --black:     #1c1c1c;
+      --white:     #ffffff;
+      --gray-dark: #555;
+      --serif:     'Playfair Display', 'Times New Roman', Georgia, serif;
+      --sans:      -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    }
+
+    body {
+      font-family: var(--sans);
+      background: var(--black);
+      color: var(--white);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+
+    .brand {
+      font-family: var(--serif);
+      font-size: 26px;
+      font-weight: 700;
+      letter-spacing: 10px;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+    }
+
+    .brand-rule {
+      width: 36px;
+      height: 1px;
+      background: rgba(255, 255, 255, 0.25);
+      margin: 0 auto 52px;
+    }
+
+    .card {
+      background: var(--white);
+      color: var(--black);
+      padding: 52px 44px 44px;
+      max-width: 400px;
+      width: 100%;
+      text-align: center;
+    }
+
+    .card-title {
+      font-family: var(--serif);
+      font-size: 22px;
+      font-weight: 400;
+      margin-bottom: 10px;
+    }
+
+    .card-desc {
+      font-size: 13px;
+      color: var(--gray-dark);
+      line-height: 1.65;
+      margin-bottom: 36px;
+    }
+
+    .signin-wrap {
+      display: flex;
+      justify-content: center;
+      min-height: 44px;
+      align-items: center;
+    }
+
+    .signin-spinner {
+      width: 18px;
+      height: 18px;
+      border: 2px solid #ddd;
+      border-top-color: var(--black);
+      border-radius: 50%;
+      animation: spin 0.7s linear infinite;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    .error-msg {
+      margin-top: 20px;
+      padding: 12px 16px;
+      background: #fff0f0;
+      border: 1px solid #ffcccc;
+      color: #c0392b;
+      font-size: 13px;
+      line-height: 1.55;
+      display: none;
+      text-align: left;
+    }
+
+    .card-footer {
+      margin-top: 32px;
+      padding-top: 20px;
+      border-top: 1px solid #f0f0f0;
+    }
+
+    .logout-link {
+      font-size: 12px;
+      color: #999;
+      text-decoration: none;
+      letter-spacing: 0.3px;
+    }
+    .logout-link:hover { color: var(--black); }
+
+    .site-footer {
+      margin-top: 48px;
+      font-size: 11px;
+      color: rgba(255, 255, 255, 0.2);
+      letter-spacing: 0.5px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="brand">Million</div>
+  <div class="brand-rule"></div>
+
+  <div class="card">
+    <h1 class="card-title">Portal de Proyectos</h1>
+    <p class="card-desc">
+      Inicia sesión con tu cuenta corporativa de Google<br>para acceder al portal.
+    </p>
+
+    <div class="signin-wrap" id="signin-wrap">
+      <div class="signin-spinner"></div>
+    </div>
+
+    <div class="error-msg" id="error-msg"></div>
+
+    <div class="card-footer">
+      <a href="/api/auth/logout" class="logout-link">Cerrar sesión actual</a>
+    </div>
+  </div>
+
+  <p class="site-footer">&copy; MILLION &middot; Acceso restringido al equipo</p>
+
+  <script src="https://accounts.google.com/gsi/client" onload="initAuth()" async defer></script>
+  <script>
+    var errorEl    = document.getElementById('error-msg');
+    var signinWrap = document.getElementById('signin-wrap');
+
+    async function handleCredentialResponse(response) {
+      errorEl.style.display = 'none';
+
+      try {
+        var res = await fetch('/api/auth/google', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ credential: response.credential }),
+        });
+
+        if (!res.ok) {
+          var data = await res.json().catch(function() { return {}; });
+          if (res.status === 403) {
+            errorEl.textContent =
+              'Acceso denegado. Este portal es exclusivo para el equipo de Million. ' +
+              'Por favor usa tu correo corporativo.';
+          } else {
+            errorEl.textContent = data.error || 'Error al iniciar sesión. Intenta de nuevo.';
+          }
+          errorEl.style.display = 'block';
+          return;
+        }
+
+        var params = new URLSearchParams(window.location.search);
+        var from = params.get('from') || '/';
+        // Prevent open redirect — only allow same-origin relative paths
+        if (!from.startsWith('/') || from.startsWith('//')) from = '/';
+        window.location.href = from;
+
+      } catch (err) {
+        errorEl.textContent = 'Error de conexión. Intenta de nuevo.';
+        errorEl.style.display = 'block';
+      }
+    }
+
+    async function initAuth() {
+      try {
+        var res = await fetch('/api/auth/config');
+        var cfg = await res.json();
+
+        google.accounts.id.initialize({
+          client_id: cfg.clientId,
+          callback: handleCredentialResponse,
+          ux_mode: 'popup',
+        });
+
+        // Clear spinner using safe DOM manipulation
+        while (signinWrap.firstChild) signinWrap.removeChild(signinWrap.firstChild);
+
+        google.accounts.id.renderButton(signinWrap, {
+          type: 'standard',
+          size: 'large',
+          theme: 'outline',
+          text: 'signin_with',
+          shape: 'rectangular',
+          logo_alignment: 'left',
+          width: 280,
+        });
+      } catch (err) {
+        var errP = document.createElement('p');
+        errP.style.cssText = 'color:#c0392b;font-size:13px';
+        errP.textContent = 'Error cargando el módulo de inicio de sesión. Recarga la página.';
+        while (signinWrap.firstChild) signinWrap.removeChild(signinWrap.firstChild);
+        signinWrap.appendChild(errP);
+      }
+    }
+  </script>
+
+</body>
+</html>
