@@ -3,17 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sign In — Million Top Projects</title>
+  <title>Sign In — MILLION Top Projects</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap">
   <style>
     *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
     :root {
-      --black:  #1c1c1c;
-      --white:  #ffffff;
-      --serif:  'Playfair Display', 'Times New Roman', Georgia, serif;
-      --sans:   -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      --black:       #000000;
+      --white:       #ffffff;
+      --gray-border: #eaeaea;
+      --serif:       'Cinzel', 'Times New Roman', Georgia, serif;
+      --sans:        'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
     }
 
     body {
@@ -34,14 +36,12 @@
       margin-bottom: 52px;
     }
 
-    .brand-name {
-      font-family: var(--serif);
-      font-size: 30px;
-      font-weight: 700;
-      letter-spacing: 14px;
-      text-transform: uppercase;
-      color: var(--white);
-      margin-bottom: 18px;
+    .brand-logo {
+      height: 38px;
+      width: auto;
+      display: block;
+      margin: 0 auto 18px;
+      filter: brightness(0) invert(1);
     }
 
     .brand-tag {
@@ -113,7 +113,7 @@
     .signin-spinner {
       width: 18px;
       height: 18px;
-      border: 1.5px solid #e0e0e0;
+      border: 1.5px solid var(--gray-border);
       border-top-color: #888;
       border-radius: 50%;
       animation: spin 0.8s linear infinite;
@@ -134,7 +134,7 @@
 
     .card-divider {
       border: none;
-      border-top: 1px solid #efefef;
+      border-top: 1px solid var(--gray-border);
       margin: 32px 0 24px;
     }
 
@@ -161,7 +161,7 @@
 <body>
 
   <div class="brand">
-    <div class="brand-name">Million</div>
+    <img class="brand-logo" src="/images/logo-white.png" alt="MILLION">
     <div class="brand-tag">
       <span class="brand-tag-line"></span>
       <span class="brand-tag-text">Top Projects</span>
@@ -173,7 +173,7 @@
     <p class="card-eyebrow">Private Access</p>
     <h1 class="card-title">Sign In</h1>
     <p class="card-desc">
-      Access is restricted to authorized<br>Million team members.
+      Access is restricted to authorized<br>MILLION team members.
     </p>
 
     <div class="signin-wrap" id="signin-wrap">
@@ -186,7 +186,7 @@
     <a href="/api/auth/logout" class="logout-link">Sign out of current session</a>
   </div>
 
-  <p class="site-footer">&copy; Million &middot; South Florida &middot; Restricted</p>
+  <p class="site-footer">&copy; Million Realty LLC</p>
 
   <script src="https://accounts.google.com/gsi/client" onload="initAuth()" async defer></script>
   <script>

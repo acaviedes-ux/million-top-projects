@@ -389,11 +389,32 @@ img { display: block; max-width: 100%; }
 }
 
 .filter-option input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
   width: 15px;
   height: 15px;
-  accent-color: var(--black);
   flex-shrink: 0;
   cursor: pointer;
+  background: transparent;
+  border: none;
+  position: relative;
+  font-size: 15px;
+  line-height: 1;
+}
+
+.filter-option input[type="checkbox"]::before {
+  content: '';
+  display: block;
+  width: 15px;
+  height: 15px;
+}
+
+.filter-option input[type="checkbox"]:checked::before {
+  content: '✓';
+  color: var(--black);
+  font-size: 14px;
+  line-height: 15px;
+  font-weight: 700;
 }
 
 .filter-option-label {

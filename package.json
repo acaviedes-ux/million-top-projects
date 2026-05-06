@@ -10,7 +10,9 @@
     "seed:docs": "node scripts/seed-docs-from-drive.js",
     "seed:docs:dry": "node scripts/seed-docs-from-drive.js --dry",
     "seed:prices": "node scripts/seed-pricelists-from-drive.js",
-    "seed:prices:dry": "node scripts/seed-pricelists-from-drive.js --dry"
+    "seed:prices:dry": "node scripts/seed-pricelists-from-drive.js --dry",
+    "make-public": "node scripts/make-drive-files-public.js",
+    "make-public:dry": "node scripts/make-drive-files-public.js --dry"
   },
   "dependencies": {
     "dotenv": "^16.6.1"

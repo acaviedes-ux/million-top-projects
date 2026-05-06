@@ -50,7 +50,7 @@
   </div>
 
   <!-- ── FOOTER ─────────────────────────────────────────────── -->
-  <footer class="site-footer">&copy; MILLION</footer>
+  <footer class="site-footer">&copy; Million Realty LLC</footer>
 
 <script>
 (function () {
@@ -207,6 +207,11 @@
       preview.src     = 'https://drive.google.com/thumbnail?id=' + driveFileId + '&sz=w400';
       preview.alt     = title || 'Document preview';
       preview.loading = 'lazy';
+      preview.onerror = function() {
+        // Replace broken thumbnail with the empty-state placeholder
+        var empty = el('div', 'doc-preview doc-preview--empty');
+        previewLink.replaceChild(empty, this);
+      };
       previewLink.appendChild(preview);
       row.appendChild(previewLink);
     } else {
