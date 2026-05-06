@@ -276,11 +276,11 @@ img { display: block; max-width: 100%; }
 }
 
 /* ── FILTERS PANEL (category list) ──────────── */
+/* top/right/left are set by JS (positionFiltersPanel) so the panel
+   aligns below whichever button (main or nav) was clicked. */
 .filters-panel {
   display: none;
   position: fixed;
-  top: 68px;
-  right: 24px;
   width: 210px;
   background: var(--white);
   border: 1.5px solid var(--gray-border);
@@ -388,33 +388,26 @@ img { display: block; max-width: 100%; }
   background: var(--gray-light);
 }
 
+/* Hide the native checkbox — visuals handled by .filter-check span */
 .filter-option input[type="checkbox"] {
-  appearance: none;
-  -webkit-appearance: none;
-  width: 15px;
-  height: 15px;
+  display: none;
+}
+
+/* Checkmark placeholder — invisible when unchecked, black when checked */
+.filter-check {
   flex-shrink: 0;
-  cursor: pointer;
-  background: transparent;
-  border: none;
-  position: relative;
-  font-size: 15px;
-  line-height: 1;
-}
-
-.filter-option input[type="checkbox"]::before {
-  content: '';
-  display: block;
-  width: 15px;
-  height: 15px;
-}
-
-.filter-option input[type="checkbox"]:checked::before {
-  content: '✓';
-  color: var(--black);
-  font-size: 14px;
-  line-height: 15px;
+  width: 14px;
+  font-size: 13px;
   font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  color: transparent;   /* invisible by default */
+  user-select: none;
+}
+
+/* Sibling selector: input:checked → the very next .filter-check */
+.filter-option input[type="checkbox"]:checked + .filter-check {
+  color: var(--black);
 }
 
 .filter-option-label {
@@ -489,11 +482,7 @@ img { display: block; max-width: 100%; }
     padding: 0 14px;
     font-size: 11px;
   }
-  .filters-panel {
-    right: 8px;
-    left: 8px;
-    width: auto;
-  }
+  /* .filters-panel top/left/right set by positionFiltersPanel() in JS */
   .filter-submenu {
     position: static;
     border: none;

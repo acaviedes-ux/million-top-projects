@@ -366,6 +366,13 @@
             render(searchEl.value);
           });
 
+          // Checkmark span — must be immediately after the checkbox input
+          // so the CSS sibling selector (input:checked + .filter-check) works
+          var checkmark = document.createElement('span');
+          checkmark.className = 'filter-check';
+          checkmark.textContent = '✓';
+          checkmark.setAttribute('aria-hidden', 'true');
+
           var lbl = document.createElement('span');
           lbl.className = 'filter-option-label';
           lbl.textContent = val;
@@ -375,6 +382,7 @@
           ct.textContent = counts[val] || 0;
 
           opt.appendChild(cb);
+          opt.appendChild(checkmark);  // must follow input directly
           opt.appendChild(lbl);
           opt.appendChild(ct);
           submenu.appendChild(opt);
@@ -464,8 +472,37 @@
     }
 
     // ── Click open/close for filters panel ───────────────────────
-    function toggleFiltersPanel() {
+
+    // Position the panel directly below whichever button triggered it.
+    // On mobile (≤640px) we stretch it edge-to-edge instead.
+    function positionFiltersPanel(btn) {
+      var rect = btn.getBoundingClientRect();
+      var panelW = 210;
+      var viewW  = window.innerWidth;
+
+      filterBarEl.style.top = (rect.bottom + 8) + 'px';
+
+      if (viewW <= 640) {
+        // Stretch edge-to-edge with small gutters
+        filterBarEl.style.left  = '8px';
+        filterBarEl.style.right = '8px';
+        filterBarEl.style.width = 'auto';
+      } else {
+        // Right-align panel to the right edge of the button
+        var rightFromEdge = viewW - rect.right;
+        // Clamp so the panel never clips the left edge
+        if (rect.right - panelW < 8) {
+          rightFromEdge = viewW - (panelW + 8);
+        }
+        filterBarEl.style.right = rightFromEdge + 'px';
+        filterBarEl.style.left  = 'auto';
+        filterBarEl.style.width = '';
+      }
+    }
+
+    function toggleFiltersPanel(btn) {
       var opening = !filtersWrapEl.classList.contains('open');
+      if (opening && btn) positionFiltersPanel(btn);
       filtersWrapEl.classList.toggle('open');
       if (!opening) {
         document.querySelectorAll('.filter-group.open').forEach(function(g) {
@@ -476,12 +513,12 @@
 
     filtersToggleEl.addEventListener('click', function(e) {
       e.stopPropagation();
-      toggleFiltersPanel();
+      toggleFiltersPanel(this);
     });
 
     navFiltersBtnEl.addEventListener('click', function(e) {
       e.stopPropagation();
-      toggleFiltersPanel();
+      toggleFiltersPanel(this);
     });
 
     document.addEventListener('click', function(e) {
