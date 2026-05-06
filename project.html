@@ -194,13 +194,18 @@
   function docItem(title, driveFileId) {
     var row = el('div', 'doc-item');
 
-    // Preview thumbnail (Drive generates a first-page JPEG for PDFs)
+    // Preview thumbnail — wrapped in a link so clicking the image also opens the doc
     if (driveFileId) {
+      var previewLink = el('a', 'doc-preview-link');
+      previewLink.href   = 'https://drive.google.com/file/d/' + driveFileId + '/view';
+      previewLink.target = '_blank';
+      previewLink.rel    = 'noopener noreferrer';
       var preview = el('img', 'doc-preview');
       preview.src     = 'https://drive.google.com/thumbnail?id=' + driveFileId + '&sz=w400';
       preview.alt     = title || 'Document preview';
       preview.loading = 'lazy';
-      row.appendChild(preview);
+      previewLink.appendChild(preview);
+      row.appendChild(previewLink);
     } else {
       row.appendChild(el('div', 'doc-preview doc-preview--empty'));
     }
@@ -352,11 +357,43 @@
 
       var sec = makeSection(id);
       sec.appendChild(sectionHeading(title));
+
+      // Carousel wrapper — provides anchor for absolutely-positioned arrows
+      var wrap = el('div', 'doc-carousel-wrap');
       var list = el('div', 'doc-list');
       real.forEach(function (item) {
         list.appendChild(docItem(item.title, item.driveFileId));
       });
-      sec.appendChild(list);
+      wrap.appendChild(list);
+
+      // Arrow buttons are added when there are multiple docs.
+      // CSS only shows them on mobile; on desktop the grid handles layout.
+      if (real.length > 1) {
+        wrap.classList.add('has-carousel');
+
+        var prevBtn = el('button', 'doc-carousel-btn doc-carousel-btn--prev');
+        prevBtn.textContent = '‹'; // single left angle quotation ‹
+        prevBtn.setAttribute('type', 'button');
+        prevBtn.setAttribute('aria-label', 'Previous document');
+        prevBtn.addEventListener('click', function () {
+          var card = list.querySelector('.doc-item');
+          list.scrollBy({ left: -(card ? card.offsetWidth + 16 : list.offsetWidth * 0.8), behavior: 'smooth' });
+        });
+
+        var nextBtn = el('button', 'doc-carousel-btn doc-carousel-btn--next');
+        nextBtn.textContent = '›'; // single right angle quotation ›
+        nextBtn.setAttribute('type', 'button');
+        nextBtn.setAttribute('aria-label', 'Next document');
+        nextBtn.addEventListener('click', function () {
+          var card = list.querySelector('.doc-item');
+          list.scrollBy({ left: card ? card.offsetWidth + 16 : list.offsetWidth * 0.8, behavior: 'smooth' });
+        });
+
+        wrap.appendChild(prevBtn);
+        wrap.appendChild(nextBtn);
+      }
+
+      sec.appendChild(wrap);
       frag.appendChild(sec);
     }
 

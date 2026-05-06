@@ -1152,6 +1152,35 @@ img { display: block; max-width: 100%; }
 .contact-email:hover { color: var(--black); border-color: var(--black); }
 
 /* ── DOCUMENT SECTIONS ───────────────────────── */
+
+/* Carousel wrapper: provides the anchor for arrow positioning */
+.doc-carousel-wrap {
+  position: relative;
+}
+
+/* Arrow nav buttons — hidden by default, shown only on mobile via media query */
+.doc-carousel-btn {
+  display: none;
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  z-index: 2;
+  width: 34px;
+  height: 34px;
+  background: var(--white);
+  border: 1px solid var(--gray-mid);
+  font-size: 20px;
+  line-height: 1;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.18s, color 0.18s, border-color 0.18s;
+  padding: 0;
+}
+.doc-carousel-btn:hover { background: var(--black); color: var(--white); border-color: var(--black); }
+.doc-carousel-btn--prev { left: -17px; }
+.doc-carousel-btn--next { right: -17px; }
+
 .doc-list {
   display: flex;
   flex-wrap: wrap;
@@ -1168,12 +1197,21 @@ img { display: block; max-width: 100%; }
   overflow: hidden;
 }
 
+/* Preview image link — fills the card top, no inline gap */
+.doc-preview-link {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+}
+.doc-preview-link:hover .doc-preview { opacity: 0.88; }
+
 .doc-preview {
   width: 100%;
   aspect-ratio: 8.5 / 11;
   object-fit: cover;
   display: block;
   background: var(--gray-light);
+  transition: opacity 0.2s;
 }
 
 .doc-preview--empty {
@@ -1262,7 +1300,31 @@ img { display: block; max-width: 100%; }
 @media (max-width: 480px) {
   .project-hero-wrap { height: 200px; }
   .renderings-grid { grid-template-columns: repeat(2, 1fr); }
+
+  /* Single-item sections: full width, centred */
   .doc-item { flex: 0 0 100%; }
+
+  /* Multi-item sections: horizontal scroll carousel */
+  .doc-carousel-wrap.has-carousel .doc-list {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;       /* Firefox */
+    padding-bottom: 2px;
+  }
+  .doc-carousel-wrap.has-carousel .doc-list::-webkit-scrollbar { display: none; }
+
+  /* Each card: ~80% viewport width so next card peeks in */
+  .doc-carousel-wrap.has-carousel .doc-item {
+    flex: 0 0 80%;
+    scroll-snap-align: start;
+  }
+
+  /* Show arrow buttons on mobile when carousel is active */
+  .doc-carousel-wrap.has-carousel .doc-carousel-btn { display: flex; }
   .nav-dropdown-menu { min-width: 200px; right: -8px; }
 }
 
