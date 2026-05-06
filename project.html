@@ -251,11 +251,17 @@
       heroLogoImg.alt  = d.name;
       heroLogoWrap.style.display = 'flex';
 
-      // 1:1 rendering — never upscale beyond the image's native pixel dimensions.
-      // This prevents blur on low-res logos that would otherwise be stretched by CSS.
+      // Crisp rendering on every screen density:
+      // - High-res logos (e.g. St. Regis 10842px): capped to CSS max (360×130)
+      // - Low-res logos (e.g. Aria Reserve 323px): capped to naturalWidth/DPR
+      //   so each source pixel maps to exactly 1 physical pixel → no blur
       heroLogoImg.onload = function() {
-        this.style.maxWidth  = this.naturalWidth  + 'px';
-        this.style.maxHeight = this.naturalHeight + 'px';
+        var dpr     = window.devicePixelRatio || 1;
+        // Mirror the CSS constraints: max-width: min(360px, 55vw); max-height: 130px
+        var cssMaxW = Math.min(360, window.innerWidth * 0.55);
+        var cssMaxH = 130;
+        this.style.maxWidth  = Math.min(this.naturalWidth  / dpr, cssMaxW) + 'px';
+        this.style.maxHeight = Math.min(this.naturalHeight / dpr, cssMaxH) + 'px';
       };
 
       // Nav logo: only appears once the hero scrolls out of view
