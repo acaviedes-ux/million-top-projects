@@ -287,10 +287,23 @@
       var hasPL = d.priceList  && d.priceList.driveFileId;
       var hasPR = d.priceRange && d.priceRange.driveFileId;
 
+      // Helper: render disclaimer banner if present on priceList
+      function appendDisclaimer(sec) {
+        var disclaimer = d.priceList && d.priceList.disclaimer;
+        if (!disclaimer) return;
+        var disc = el('div', 'pl-disclaimer pl-disclaimer--' + (disclaimer.type || 'info'));
+        var icon = el('span', 'pl-disclaimer-icon');
+        icon.textContent = disclaimer.type === 'warning' ? '⚠️' : 'ℹ️';
+        disc.appendChild(icon);
+        disc.appendChild(el('span', null, disclaimer.text));
+        sec.appendChild(disc);
+      }
+
       // ── Case A: both docs — side-by-side cards + mobile carousel ──
       if (hasPL && hasPR) {
         var sec = makeSection('price-list');
         sec.appendChild(sectionHeading('PRICE LIST / PRICE RANGE'));
+        appendDisclaimer(sec);
 
         var wrap = el('div', 'doc-carousel-wrap');
         wrap.classList.add('has-carousel');
@@ -339,16 +352,7 @@
         sec.appendChild(el('p', 'pl-date', plData.createdAt));
       }
 
-      // Disclaimer banner (warning or info) — shown before the iframe/content
-      var disclaimer = d.priceList && d.priceList.disclaimer;
-      if (disclaimer) {
-        var disc = el('div', 'pl-disclaimer pl-disclaimer--' + (disclaimer.type || 'info'));
-        var icon = el('span', 'pl-disclaimer-icon');
-        icon.textContent = disclaimer.type === 'warning' ? '⚠️' : 'ℹ️';
-        disc.appendChild(icon);
-        disc.appendChild(el('span', null, disclaimer.text));
-        sec.appendChild(disc);
-      }
+      appendDisclaimer(sec);
 
       if (plData && plData.driveFileId) {
         var iframe = document.createElement('iframe');
