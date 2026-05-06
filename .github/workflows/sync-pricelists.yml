@@ -19,6 +19,8 @@ jobs:
     timeout-minutes: 10
     permissions:
       contents: write   # allows git push
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true   # suppress Node.js 20 deprecation warning
 
     steps:
       # ── 1. Check out the repo ──────────────────────────────────────────────
