@@ -1102,7 +1102,9 @@ img { display: block; max-width: 100%; }
   letter-spacing: 2.5px;
   text-transform: uppercase;
   color: var(--gray-dark);
-  margin-top: 20px;
+  margin-top: 24px;
+  padding-top: 24px;
+  border-top: 1px solid var(--gray-mid);
   margin-bottom: 8px;
 }
 
