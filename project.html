@@ -380,7 +380,7 @@
         img.loading = 'lazy';
 
         if (r.driveFileId) {
-          img.src = 'https://drive.google.com/thumbnail?id=' + r.driveFileId + '&sz=w800';
+          img.src = 'https://drive.google.com/thumbnail?id=' + r.driveFileId + '&sz=w400';
           var a = el('a', 'rendering-link');
           a.href   = 'https://drive.google.com/file/d/' + r.driveFileId + '/view';
           a.target = '_blank';

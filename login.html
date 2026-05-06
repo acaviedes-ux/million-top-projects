@@ -3,69 +3,104 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sign in — Million</title>
+  <title>Sign In — Million Top Projects</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap">
   <style>
     *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
     :root {
-      --black:     #1c1c1c;
-      --white:     #ffffff;
-      --gray-dark: #555;
-      --serif:     'Playfair Display', 'Times New Roman', Georgia, serif;
-      --sans:      -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      --black:  #1c1c1c;
+      --white:  #ffffff;
+      --serif:  'Playfair Display', 'Times New Roman', Georgia, serif;
+      --sans:   -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     }
 
     body {
       font-family: var(--sans);
-      background: var(--black);
-      color: var(--white);
       min-height: 100vh;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      padding: 40px 20px;
+      padding: 48px 20px;
+      background: radial-gradient(ellipse at 50% 25%, #272727 0%, #0e0e0e 100%);
+      color: var(--white);
     }
 
+    /* ── Brand block ──────────────────────────────── */
     .brand {
+      text-align: center;
+      margin-bottom: 52px;
+    }
+
+    .brand-name {
       font-family: var(--serif);
-      font-size: 26px;
+      font-size: 30px;
       font-weight: 700;
-      letter-spacing: 10px;
+      letter-spacing: 14px;
       text-transform: uppercase;
-      margin-bottom: 14px;
+      color: var(--white);
+      margin-bottom: 18px;
     }
 
-    .brand-rule {
-      width: 36px;
+    .brand-tag {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 14px;
+    }
+
+    .brand-tag-line {
+      width: 48px;
       height: 1px;
-      background: rgba(255, 255, 255, 0.25);
-      margin: 0 auto 52px;
+      background: rgba(255,255,255,0.18);
     }
 
+    .brand-tag-text {
+      font-size: 9px;
+      font-weight: 400;
+      letter-spacing: 4.5px;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.35);
+    }
+
+    /* ── Card ─────────────────────────────────────── */
     .card {
       background: var(--white);
       color: var(--black);
-      padding: 52px 44px 44px;
-      max-width: 400px;
       width: 100%;
+      max-width: 420px;
+      padding: 56px 52px 44px;
       text-align: center;
+      box-shadow:
+        0 2px 4px rgba(0,0,0,0.25),
+        0 12px 40px rgba(0,0,0,0.35),
+        0 40px 80px rgba(0,0,0,0.3);
+    }
+
+    .card-eyebrow {
+      font-size: 9px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: #b0b0b0;
+      margin-bottom: 16px;
     }
 
     .card-title {
       font-family: var(--serif);
-      font-size: 22px;
+      font-size: 28px;
       font-weight: 400;
-      margin-bottom: 10px;
+      line-height: 1.2;
+      color: var(--black);
+      margin-bottom: 12px;
     }
 
     .card-desc {
       font-size: 13px;
-      color: var(--gray-dark);
-      line-height: 1.65;
-      margin-bottom: 36px;
+      color: #888;
+      line-height: 1.7;
+      margin-bottom: 40px;
     }
 
     .signin-wrap {
@@ -78,56 +113,67 @@
     .signin-spinner {
       width: 18px;
       height: 18px;
-      border: 2px solid #ddd;
-      border-top-color: var(--black);
+      border: 1.5px solid #e0e0e0;
+      border-top-color: #888;
       border-radius: 50%;
-      animation: spin 0.7s linear infinite;
+      animation: spin 0.8s linear infinite;
     }
     @keyframes spin { to { transform: rotate(360deg); } }
 
     .error-msg {
       margin-top: 20px;
       padding: 12px 16px;
-      background: #fff0f0;
-      border: 1px solid #ffcccc;
+      background: #fff4f4;
+      border-left: 3px solid #c0392b;
       color: #c0392b;
-      font-size: 13px;
-      line-height: 1.55;
+      font-size: 12.5px;
+      line-height: 1.6;
       display: none;
       text-align: left;
     }
 
-    .card-footer {
-      margin-top: 32px;
-      padding-top: 20px;
-      border-top: 1px solid #f0f0f0;
+    .card-divider {
+      border: none;
+      border-top: 1px solid #efefef;
+      margin: 32px 0 24px;
     }
 
     .logout-link {
-      font-size: 12px;
-      color: #999;
+      font-size: 10px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: #c8c8c8;
       text-decoration: none;
-      letter-spacing: 0.3px;
+      transition: color 0.2s;
     }
     .logout-link:hover { color: var(--black); }
 
+    /* ── Footer ───────────────────────────────────── */
     .site-footer {
       margin-top: 48px;
-      font-size: 11px;
-      color: rgba(255, 255, 255, 0.2);
-      letter-spacing: 0.5px;
+      font-size: 10px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.12);
     }
   </style>
 </head>
 <body>
 
-  <div class="brand">Million</div>
-  <div class="brand-rule"></div>
+  <div class="brand">
+    <div class="brand-name">Million</div>
+    <div class="brand-tag">
+      <span class="brand-tag-line"></span>
+      <span class="brand-tag-text">Top Projects</span>
+      <span class="brand-tag-line"></span>
+    </div>
+  </div>
 
   <div class="card">
-    <h1 class="card-title">Projects Portal</h1>
+    <p class="card-eyebrow">Private Access</p>
+    <h1 class="card-title">Sign In</h1>
     <p class="card-desc">
-      Sign in with your corporate Google account<br>to access the portal.
+      Access is restricted to authorized<br>Million team members.
     </p>
 
     <div class="signin-wrap" id="signin-wrap">
@@ -136,12 +182,11 @@
 
     <div class="error-msg" id="error-msg"></div>
 
-    <div class="card-footer">
-      <a href="/api/auth/logout" class="logout-link">Sign out of current session</a>
-    </div>
+    <hr class="card-divider">
+    <a href="/api/auth/logout" class="logout-link">Sign out of current session</a>
   </div>
 
-  <p class="site-footer">&copy; MILLION &middot; Restricted access</p>
+  <p class="site-footer">&copy; Million &middot; South Florida &middot; Restricted</p>
 
   <script src="https://accounts.google.com/gsi/client" onload="initAuth()" async defer></script>
   <script>
@@ -150,7 +195,6 @@
 
     async function handleCredentialResponse(response) {
       errorEl.style.display = 'none';
-
       try {
         var res = await fetch('/api/auth/google', {
           method: 'POST',
@@ -160,20 +204,15 @@
 
         if (!res.ok) {
           var data = await res.json().catch(function() { return {}; });
-          if (res.status === 403) {
-            errorEl.textContent =
-              'Access denied. This portal is exclusive to the Million team. ' +
-              'Please use your corporate email.';
-          } else {
-            errorEl.textContent = data.error || 'Sign-in error. Please try again.';
-          }
+          errorEl.textContent = res.status === 403
+            ? 'Access denied. Please sign in with your corporate Million email.'
+            : (data.error || 'Sign-in error. Please try again.');
           errorEl.style.display = 'block';
           return;
         }
 
         var params = new URLSearchParams(window.location.search);
         var from = params.get('from') || '/';
-        // Prevent open redirect — only allow same-origin relative paths
         if (!from.startsWith('/') || from.startsWith('//')) from = '/';
         window.location.href = from;
 
@@ -185,8 +224,7 @@
 
     async function initAuth() {
       try {
-        var res = await fetch('/api/auth/config');
-        var cfg = await res.json();
+        var cfg = await fetch('/api/auth/config').then(function(r) { return r.json(); });
 
         google.accounts.id.initialize({
           client_id: cfg.clientId,
@@ -194,7 +232,6 @@
           ux_mode: 'popup',
         });
 
-        // Clear spinner using safe DOM manipulation
         while (signinWrap.firstChild) signinWrap.removeChild(signinWrap.firstChild);
 
         google.accounts.id.renderButton(signinWrap, {
@@ -207,11 +244,11 @@
           width: 280,
         });
       } catch (err) {
-        var errP = document.createElement('p');
-        errP.style.cssText = 'color:#c0392b;font-size:13px';
-        errP.textContent = 'Error loading the sign-in module. Please reload the page.';
+        var p = document.createElement('p');
+        p.style.cssText = 'color:#c0392b;font-size:12px';
+        p.textContent = 'Error loading sign-in. Please reload the page.';
         while (signinWrap.firstChild) signinWrap.removeChild(signinWrap.firstChild);
-        signinWrap.appendChild(errP);
+        signinWrap.appendChild(p);
       }
     }
   </script>
