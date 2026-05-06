@@ -1241,6 +1241,14 @@ img { display: block; max-width: 100%; }
   line-height: 1.6;
 }
 
+.doc-subtitle {
+  font-size: 10px;
+  letter-spacing: 0.05em;
+  color: var(--gray-dark);
+  text-align: center;
+  margin-top: -4px;
+}
+
 .doc-btn {
   flex-shrink: 0;
   font-size: 10px;

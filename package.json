@@ -8,7 +8,9 @@
     "seed:pricelists": "node scripts/seed-pricelist-links.js",
     "seed:pricelists:other": "node scripts/seed-pricelist-links.js --section \"Other Projects\"",
     "seed:docs": "node scripts/seed-docs-from-drive.js",
-    "seed:docs:dry": "node scripts/seed-docs-from-drive.js --dry"
+    "seed:docs:dry": "node scripts/seed-docs-from-drive.js --dry",
+    "seed:prices": "node scripts/seed-pricelists-from-drive.js",
+    "seed:prices:dry": "node scripts/seed-pricelists-from-drive.js --dry"
   },
   "dependencies": {
     "dotenv": "^16.6.1"

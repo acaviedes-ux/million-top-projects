@@ -550,7 +550,11 @@
         "driveFileId": "1OdqZonuPLSSa2LcFqM7DW3XktrOTYvP6",
         "alt": "888 Brickell 42"
       }
-    ]
+    ],
+    "priceRange": {
+      "driveFileId": "1o-hD9jBBvqTeXwyVa5r8i2vIX-g8DaUJ",
+      "createdAt": "As of April, 2026"
+    }
   },
   {
     "slug": "andare-residences",
@@ -2114,7 +2118,11 @@
         "driveFileId": "13A9Kta92uY-sZK4P6nEdmZ18pgU_Q0mH",
         "alt": "IMG_5180"
       }
-    ]
+    ],
+    "priceRange": {
+      "driveFileId": "1JljK7mTbQpq_dbHHlcVxCBlqKl1b_sBN",
+      "createdAt": "As of May, 2026"
+    }
   },
   {
     "slug": "edition-residences-edgewater",
@@ -4102,10 +4110,7 @@
         "email": "chris@norahouse.com"
       }
     ],
-    "priceList": {
-      "driveFileId": "1dAYwcPD66wkFU8gAOBQrVqog0L0vpJvT",
-      "createdAt": "As of April, 2 of 2026"
-    },
+    "priceList": null,
     "projectLogo": "/images/logos/nora-house.png",
     "isNew": true,
     "filterCounty": "Palm Beach County",
@@ -4151,7 +4156,11 @@
         "driveFileId": "1gfeMbSnL8N63g9EwYhjPU0KL3s7CrjoJ",
         "alt": "Nora WPB 7"
       }
-    ]
+    ],
+    "priceRange": {
+      "driveFileId": "1dAYwcPD66wkFU8gAOBQrVqog0L0vpJvT",
+      "createdAt": "As of April, 2026"
+    }
   },
   {
     "slug": "ocean-house",
@@ -7488,7 +7497,11 @@
         "driveFileId": "1sMjfVz1kGirdq2o21DOob7_eXC4N-l58",
         "alt": "Berkeley 38"
       }
-    ]
+    ],
+    "priceRange": {
+      "driveFileId": "1xb0Qso678rDfamu9PTcIIdF1BZWdsALb",
+      "createdAt": "As of January, 2026"
+    }
   },
   {
     "slug": "the-bristol",
@@ -12137,7 +12150,11 @@
     "filterCounty": "Broward County",
     "filterLocation": "Fort Lauderdale",
     "filterStatus": "Pre-construction",
-    "filterYear": "2028"
+    "filterYear": "2028",
+    "priceRange": {
+      "driveFileId": "1n-UCDDLOHU6MFPti-65ugdy-RPLYnCvQ",
+      "createdAt": "As of February, 2026"
+    }
   },
   {
     "slug": "3200-south-ocean",
@@ -12534,7 +12551,11 @@
     "filterCounty": "Palm Beach County",
     "filterLocation": "West Palm Beach",
     "filterStatus": "Pre-construction",
-    "filterYear": "2026"
+    "filterYear": "2026",
+    "priceRange": {
+      "driveFileId": "1E3b6zzVVhxvoeUReMTaDemw1xg97HoBY",
+      "createdAt": "As of March, 2026"
+    }
   },
   {
     "slug": "alina-residences",
@@ -13255,7 +13276,11 @@
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Sunny Isles Beach",
     "filterStatus": "Pre-construction",
-    "filterYear": "2028"
+    "filterYear": "2028",
+    "priceRange": {
+      "driveFileId": "1neVDwFGoap7OLjU5naIX0t7o8jTFi2xM",
+      "createdAt": "As of May, 2026"
+    }
   },
   {
     "slug": "biltmore-row",
@@ -13647,15 +13672,16 @@
       }
     ],
     "projectLogo": "/images/logos/continuum-12000-sport-wellness-residences-miami.png",
-    "priceList": {
-      "driveFileId": "1C1syt6xaKM8SZ0_1zlMXn5Caxjtg8hco",
-      "createdAt": "As of March, 6 of 2026"
-    },
+    "priceList": null,
     "isNew": true,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "North Miami",
     "filterStatus": "Pre-construction - NEW",
-    "filterYear": "2030"
+    "filterYear": "2030",
+    "priceRange": {
+      "driveFileId": "1mQ1-dB6kVe-C10muN7JN8yemVt2mzL66",
+      "createdAt": "As of April, 2026"
+    }
   },
   {
     "slug": "continuum-club-residences-north-bay-village",
@@ -13900,7 +13926,11 @@
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Brickell",
     "filterStatus": "Pre-construction",
-    "filterYear": "2028"
+    "filterYear": "2028",
+    "priceRange": {
+      "driveFileId": "1Ndk1DlCWNbbooIdYFjPDOcdscUqk8DXl",
+      "createdAt": "As of April, 2026"
+    }
   },
   {
     "slug": "domus-brickell-park",
@@ -13946,7 +13976,11 @@
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Brickell",
     "filterStatus": "Pre-construction",
-    "filterYear": "2026"
+    "filterYear": "2026",
+    "priceRange": {
+      "driveFileId": "1bz_vQOFLupSzV6Ek4ka9uKo7wZBcV1Js",
+      "createdAt": "As of April, 2026"
+    }
   },
   {
     "slug": "edge-house-miami",
@@ -14034,15 +14068,16 @@
       }
     ],
     "projectLogo": "/images/logos/edgeworth-west-palm-beach.png",
-    "priceList": {
-      "driveFileId": "15TaGKEtVpOx1u2U8RM1Vckj8zbKcsnVe",
-      "createdAt": "As of April, 24 of 2026"
-    },
+    "priceList": null,
     "isNew": true,
     "filterCounty": "Palm Beach County",
     "filterLocation": "West Palm Beach",
     "filterStatus": "Pre-construction - NEW",
-    "filterYear": "2029"
+    "filterYear": "2029",
+    "priceRange": {
+      "driveFileId": "15TaGKEtVpOx1u2U8RM1Vckj8zbKcsnVe",
+      "createdAt": "As of April, 2026"
+    }
   },
   {
     "slug": "eighty-seven-park",
@@ -15303,15 +15338,16 @@
       }
     ],
     "projectLogo": "/images/logos/maison-d-or-south-flagler.png",
-    "priceList": {
-      "driveFileId": "1nRj4kexwkE53O4vA3HciRALHWwgnbvwd",
-      "createdAt": "As of February, 12 of 2026"
-    },
+    "priceList": null,
     "isNew": false,
     "filterCounty": "Palm Beach County",
     "filterLocation": "West Palm Beach",
     "filterStatus": "Pre-construction",
-    "filterYear": "2028"
+    "filterYear": "2028",
+    "priceRange": {
+      "driveFileId": "1nRj4kexwkE53O4vA3HciRALHWwgnbvwd",
+      "createdAt": "As of February, 2026"
+    }
   },
   {
     "slug": "mercedes-benz-places-miami",
@@ -15397,15 +15433,16 @@
       }
     ],
     "projectLogo": "/images/logos/miami-design-residences-midtown-miami.png",
-    "priceList": {
-      "driveFileId": "1QPHVY5gv_PRiphceN5s5ELaLYdxCfme9",
-      "createdAt": "As of April, 24 of 2026"
-    },
+    "priceList": null,
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Midtown Miami",
     "filterStatus": "Pre-construction",
-    "filterYear": "2030"
+    "filterYear": "2030",
+    "priceRange": {
+      "driveFileId": "1QPHVY5gv_PRiphceN5s5ELaLYdxCfme9",
+      "createdAt": "As of April, 2026"
+    }
   },
   {
     "slug": "mila-bay-harbor-islands",
@@ -16346,7 +16383,11 @@
     "filterCounty": "Palm Beach County",
     "filterLocation": "West Palm Beach",
     "filterStatus": "Pre-construction",
-    "filterYear": "2028"
+    "filterYear": "2028",
+    "priceRange": {
+      "driveFileId": "1KmK6PKoOXfgwjmW89j2NRFHCVpA19BrW",
+      "createdAt": "As of April, 2026"
+    }
   },
   {
     "slug": "ombelle-fort-lauderdale",
@@ -16385,15 +16426,16 @@
       }
     ],
     "projectLogo": "/images/logos/ombelle-fort-lauderdale.png",
-    "priceList": {
-      "driveFileId": "1JqdHhFE9v_uossWUwYUip2kuDj9C2SLb",
-      "createdAt": "As of January, 29 of 2026"
-    },
+    "priceList": null,
     "isNew": false,
     "filterCounty": "Broward County",
     "filterLocation": "Fort Lauderdale",
     "filterStatus": "Pre-construction",
-    "filterYear": "2028"
+    "filterYear": "2028",
+    "priceRange": {
+      "driveFileId": "1JqdHhFE9v_uossWUwYUip2kuDj9C2SLb",
+      "createdAt": "As of January, 2026"
+    }
   },
   {
     "slug": "onda-bay-harbor",
@@ -18734,15 +18776,16 @@
       }
     ],
     "projectLogo": "/images/logos/twenty-nine-indian-creek.png",
-    "priceList": {
-      "driveFileId": "1qJllB6Rfh2mQhiX8uiOIw7QfMLkFXFpW",
-      "createdAt": "As of February, 25 of 2026"
-    },
+    "priceList": null,
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Miami Beach",
     "filterStatus": "Pre-construction",
-    "filterYear": "2027"
+    "filterYear": "2027",
+    "priceRange": {
+      "driveFileId": "1qJllB6Rfh2mQhiX8uiOIw7QfMLkFXFpW",
+      "createdAt": "As of February, 2026"
+    }
   },
   {
     "slug": "una-residences",

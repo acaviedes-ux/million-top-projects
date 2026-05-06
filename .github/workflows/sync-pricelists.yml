@@ -1,0 +1,72 @@
+name: Sync Price Lists from Drive
+
+# ── Triggers ───────────────────────────────────────────────────────────────────
+# • schedule: runs every hour so new PDFs land within ~60 min of upload
+# • workflow_dispatch: manual button in the GitHub Actions UI
+on:
+  schedule:
+    - cron: '0 * * * *'   # top of every hour, UTC
+  workflow_dispatch:        # allows one-click manual run
+
+# Only one run at a time — if a run is still going when the next fires, skip it
+concurrency:
+  group: sync-pricelists
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write   # allows git push
+
+    steps:
+      # ── 1. Check out the repo ──────────────────────────────────────────────
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      # ── 2. Node.js setup ──────────────────────────────────────────────────
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      # ── 3. Run the seed script with --force ───────────────────────────────
+      # --force makes the script always resolve the most-recent file per
+      # project.  git diff is what prevents unnecessary commits — if the same
+      # file IDs were found again, projects.json is byte-for-byte identical.
+      - name: Seed price lists from Drive
+        env:
+          GOOGLE_SERVICE_ACCOUNT_EMAIL: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_EMAIL }}
+          GOOGLE_PRIVATE_KEY: ${{ secrets.GOOGLE_PRIVATE_KEY }}
+          PRICE_LIST_DRIVE_FOLDER_ID: ${{ secrets.PRICE_LIST_DRIVE_FOLDER_ID }}
+          PRE_CONSTRUCTION_SPREADSHEET_ID: ${{ secrets.PRE_CONSTRUCTION_SPREADSHEET_ID }}
+        run: node scripts/seed-pricelists-from-drive.js --force
+
+      # ── 4. Commit + push only if projects.json changed ────────────────────
+      - name: Check for changes
+        id: diff
+        run: |
+          if git diff --quiet data/projects.json; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "No price list changes detected."
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            echo "Changes detected in data/projects.json:"
+            git diff --stat data/projects.json
+          fi
+
+      - name: Commit and push
+        if: steps.diff.outputs.changed == 'true'
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/projects.json
+          git commit -m "chore: auto-sync price lists from Drive"
+          git push

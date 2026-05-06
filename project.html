@@ -193,7 +193,8 @@
     return wrap;
   }
 
-  function docItem(title, driveFileId) {
+  // subtitle (optional) shows a small date or variant label below the title
+  function docItem(title, driveFileId, subtitle) {
     var row = el('div', 'doc-item');
 
     // Preview thumbnail — wrapped in a link so clicking the image also opens the doc
@@ -212,9 +213,10 @@
       row.appendChild(el('div', 'doc-preview doc-preview--empty'));
     }
 
-    // Footer: title + action button
+    // Footer: title + optional subtitle (e.g. "As of April, 2026") + action button
     var footer = el('div', 'doc-item-footer');
-    if (title) footer.appendChild(el('div', 'doc-title', title));
+    if (title)    footer.appendChild(el('div', 'doc-title',    title));
+    if (subtitle) footer.appendChild(el('div', 'doc-subtitle', subtitle));
     if (driveFileId) {
       var a = el('a', 'doc-btn', 'View PDF');
       a.href   = 'https://drive.google.com/file/d/' + driveFileId + '/view';
@@ -280,36 +282,86 @@
       frag.appendChild(newBanner);
     }
 
-    // ── 1. PRICE LIST ────────────────────────────────────────
-    if (!d.priceList || !d.priceList.hidden) {
-      var plSec = makeSection('price-list');
-      var plHeading = (d.priceList && d.priceList.heading) ? d.priceList.heading : 'PRICE LIST';
-      plSec.appendChild(sectionHeading(plHeading));
-      if (d.priceList && d.priceList.createdAt) {
-        plSec.appendChild(el('p', 'pl-date', d.priceList.createdAt));
+    // ── 1. PRICE LIST / PRICE RANGE ──────────────────────────
+    (function appendPriceSection() {
+      var hasPL = d.priceList  && d.priceList.driveFileId;
+      var hasPR = d.priceRange && d.priceRange.driveFileId;
+
+      // ── Case A: both docs — side-by-side cards + mobile carousel ──
+      if (hasPL && hasPR) {
+        var sec = makeSection('price-list');
+        sec.appendChild(sectionHeading('PRICE LIST / PRICE RANGE'));
+
+        var wrap = el('div', 'doc-carousel-wrap');
+        wrap.classList.add('has-carousel');
+        var list = el('div', 'doc-list');
+        list.appendChild(docItem('PRICE LIST',  d.priceList.driveFileId,  d.priceList.createdAt));
+        list.appendChild(docItem('PRICE RANGE', d.priceRange.driveFileId, d.priceRange.createdAt));
+        wrap.appendChild(list);
+
+        var prevBtn = el('button', 'doc-carousel-btn doc-carousel-btn--prev');
+        prevBtn.textContent = '‹';
+        prevBtn.setAttribute('type', 'button');
+        prevBtn.setAttribute('aria-label', 'Previous');
+        prevBtn.addEventListener('click', function () {
+          var card = list.querySelector('.doc-item');
+          list.scrollBy({ left: -(card ? card.offsetWidth + 16 : list.offsetWidth * 0.8), behavior: 'smooth' });
+        });
+        var nextBtn = el('button', 'doc-carousel-btn doc-carousel-btn--next');
+        nextBtn.textContent = '›';
+        nextBtn.setAttribute('type', 'button');
+        nextBtn.setAttribute('aria-label', 'Next');
+        nextBtn.addEventListener('click', function () {
+          var card = list.querySelector('.doc-item');
+          list.scrollBy({ left: card ? card.offsetWidth + 16 : list.offsetWidth * 0.8, behavior: 'smooth' });
+        });
+        wrap.appendChild(prevBtn);
+        wrap.appendChild(nextBtn);
+
+        sec.appendChild(wrap);
+        frag.appendChild(sec);
+        return;
       }
-      if (d.priceList && d.priceList.driveFileId) {
+
+      // ── Case B: single doc (or no data yet) — iframe embed ────────
+      // Respect explicit hidden flag on price list
+      if (!hasPR && d.priceList && d.priceList.hidden) return;
+
+      // Pick the data object and heading for whichever doc type exists
+      var plData    = hasPR ? d.priceRange : (d.priceList || null);
+      var plHeading = hasPR ? 'PRICE RANGE'
+                    : ((d.priceList && d.priceList.heading) || 'PRICE LIST');
+
+      var sec = makeSection('price-list');
+      sec.appendChild(sectionHeading(plHeading));
+
+      if (plData && plData.createdAt) {
+        sec.appendChild(el('p', 'pl-date', plData.createdAt));
+      }
+
+      if (plData && plData.driveFileId) {
         var iframe = document.createElement('iframe');
-        iframe.src = 'https://drive.google.com/file/d/' + d.priceList.driveFileId + '/preview';
+        iframe.src = 'https://drive.google.com/file/d/' + plData.driveFileId + '/preview';
         iframe.className = 'pl-iframe';
         iframe.setAttribute('allow', 'autoplay');
         iframe.setAttribute('frameborder', '0');
-        plSec.appendChild(iframe);
-      } else if (d.priceList && d.priceList.externalUrl) {
+        sec.appendChild(iframe);
+      } else if (plData && plData.externalUrl) {
         var extBtn = el('a', 'pl-ext-btn', 'View All Units for Sale');
-        extBtn.href = d.priceList.externalUrl;
+        extBtn.href   = plData.externalUrl;
         extBtn.target = '_blank';
-        extBtn.rel = 'noopener noreferrer';
-        plSec.appendChild(extBtn);
-      } else if (d.priceList && d.priceList.message) {
-        plSec.appendChild(el('p', 'pl-message', d.priceList.message));
+        extBtn.rel    = 'noopener noreferrer';
+        sec.appendChild(extBtn);
+      } else if (plData && plData.message) {
+        sec.appendChild(el('p', 'pl-message', plData.message));
       } else if (!d.priceList || !d.priceList.heading) {
         var plList = el('div', 'doc-list');
         plList.appendChild(docItem('Price List', null));
-        plSec.appendChild(plList);
+        sec.appendChild(plList);
       }
-      frag.appendChild(plSec);
-    }
+
+      frag.appendChild(sec);
+    }());
 
     // ── 2. ADDRESS ───────────────────────────────────────────
     if (d.address) {

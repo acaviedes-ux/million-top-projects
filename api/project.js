@@ -68,6 +68,7 @@ function normalize(p) {
     priceList: p.priceList || (priceBrochure
       ? { text: null, driveFileId: priceBrochure.driveFileId || '' }
       : null),
+    priceRange:    p.priceRange      || null,
     brochures:     p.brochures_v2    || otherBrochures,
     factSheets:    p.factSheets      || [],
     presentations: p.presentations   || [],
