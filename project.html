@@ -251,6 +251,13 @@
       heroLogoImg.alt  = d.name;
       heroLogoWrap.style.display = 'flex';
 
+      // 1:1 rendering — never upscale beyond the image's native pixel dimensions.
+      // This prevents blur on low-res logos that would otherwise be stretched by CSS.
+      heroLogoImg.onload = function() {
+        this.style.maxWidth  = this.naturalWidth  + 'px';
+        this.style.maxHeight = this.naturalHeight + 'px';
+      };
+
       // Nav logo: only appears once the hero scrolls out of view
       var navLogoImg  = document.getElementById('project-logo-img');
       var navLogoWrap = document.getElementById('nav-project-logo');
