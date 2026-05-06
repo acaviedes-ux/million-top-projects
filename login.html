@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Iniciar sesión — Million</title>
+  <title>Sign in — Million</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap">
   <style>
@@ -125,9 +125,9 @@
   <div class="brand-rule"></div>
 
   <div class="card">
-    <h1 class="card-title">Portal de Proyectos</h1>
+    <h1 class="card-title">Projects Portal</h1>
     <p class="card-desc">
-      Inicia sesión con tu cuenta corporativa de Google<br>para acceder al portal.
+      Sign in with your corporate Google account<br>to access the portal.
     </p>
 
     <div class="signin-wrap" id="signin-wrap">
@@ -137,11 +137,11 @@
     <div class="error-msg" id="error-msg"></div>
 
     <div class="card-footer">
-      <a href="/api/auth/logout" class="logout-link">Cerrar sesión actual</a>
+      <a href="/api/auth/logout" class="logout-link">Sign out of current session</a>
     </div>
   </div>
 
-  <p class="site-footer">&copy; MILLION &middot; Acceso restringido al equipo</p>
+  <p class="site-footer">&copy; MILLION &middot; Restricted access</p>
 
   <script src="https://accounts.google.com/gsi/client" onload="initAuth()" async defer></script>
   <script>
@@ -162,10 +162,10 @@
           var data = await res.json().catch(function() { return {}; });
           if (res.status === 403) {
             errorEl.textContent =
-              'Acceso denegado. Este portal es exclusivo para el equipo de Million. ' +
-              'Por favor usa tu correo corporativo.';
+              'Access denied. This portal is exclusive to the Million team. ' +
+              'Please use your corporate email.';
           } else {
-            errorEl.textContent = data.error || 'Error al iniciar sesión. Intenta de nuevo.';
+            errorEl.textContent = data.error || 'Sign-in error. Please try again.';
           }
           errorEl.style.display = 'block';
           return;
@@ -178,7 +178,7 @@
         window.location.href = from;
 
       } catch (err) {
-        errorEl.textContent = 'Error de conexión. Intenta de nuevo.';
+        errorEl.textContent = 'Connection error. Please try again.';
         errorEl.style.display = 'block';
       }
     }
@@ -209,7 +209,7 @@
       } catch (err) {
         var errP = document.createElement('p');
         errP.style.cssText = 'color:#c0392b;font-size:13px';
-        errP.textContent = 'Error cargando el módulo de inicio de sesión. Recarga la página.';
+        errP.textContent = 'Error loading the sign-in module. Please reload the page.';
         while (signinWrap.firstChild) signinWrap.removeChild(signinWrap.firstChild);
         signinWrap.appendChild(errP);
       }
