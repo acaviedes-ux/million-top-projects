@@ -1078,13 +1078,15 @@ img { display: block; max-width: 100%; }
   display: contents; /* rows are CSS grid children, not wrapper divs */
 }
 
-/* Solo row: single cell spanning both columns, centered */
-.detail-row--solo {
-  display: block; /* override contents so the wrapper is visible for grid-column */
+/* Solo row: single cell spanning both columns, centered.
+   Use combined selector (.detail-row.detail-row--solo) for higher specificity
+   so display:block beats the display:contents on .detail-row. */
+.detail-row.detail-row--solo {
+  display: block !important; /* must override display:contents */
   grid-column: 1 / -1;
 }
 
-.detail-row--solo .detail-cell {
+.detail-row.detail-row--solo .detail-cell {
   border-right: none;
   max-width: 520px;
   margin: 0 auto;
