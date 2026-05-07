@@ -204,7 +204,7 @@
       previewLink.target = '_blank';
       previewLink.rel    = 'noopener noreferrer';
       var preview = el('img', 'doc-preview');
-      preview.src     = 'https://drive.google.com/thumbnail?id=' + driveFileId + '&sz=w400';
+      preview.src     = '/api/thumb?id=' + driveFileId;
       preview.alt     = title || 'Document preview';
       preview.loading = 'lazy';
       preview.onerror = function() {
@@ -504,7 +504,7 @@
         img.loading = 'lazy';
 
         if (r.driveFileId) {
-          img.src = 'https://drive.google.com/thumbnail?id=' + r.driveFileId + '&sz=w400';
+          img.src = '/api/thumb?id=' + r.driveFileId;
           var a = el('a', 'rendering-link');
           a.href   = 'https://drive.google.com/file/d/' + r.driveFileId + '/view';
           a.target = '_blank';

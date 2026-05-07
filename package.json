@@ -17,11 +17,10 @@
     "update:dates:dry": "node scripts/update-pricelist-dates.js --dry"
   },
   "dependencies": {
-    "dotenv": "^16.6.1"
-  },
-  "devDependencies": {
+    "dotenv": "^16.6.1",
     "googleapis": "^144.0.0"
   },
+  "devDependencies": {},
   "engines": {
     "node": ">=18"
   }
