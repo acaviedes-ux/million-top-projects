@@ -60,7 +60,7 @@ function formatSheetDate(dateStr) {
     month: 'long', day: 'numeric', year: 'numeric',
   }).formatToParts(d);
   const get = t => parts.find(p => p.type === t)?.value || '';
-  return `As of ${get('month')}, ${get('day')} of ${get('year')}`;
+  return `As of ${get('month')} ${get('day')}, ${get('year')}`;
 }
 
 async function main() {

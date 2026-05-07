@@ -81,7 +81,7 @@ async function listChildren(drive, folderId) {
   do {
     const res = await drive.files.list({
       q:                       `'${folderId}' in parents and trashed = false`,
-      fields:                  'nextPageToken, files(id, name, mimeType)',
+      fields:                  'nextPageToken, files(id, name, mimeType, modifiedTime)',
       pageSize:                1000,
       pageToken,
       supportsAllDrives:       true,   // required for Shared Drive access
@@ -214,7 +214,6 @@ async function main() {
 
     for (const monthFolder of monthFolders) {
       const monthName = MONTHS[monthFolder.monthNum - 1] || String(monthFolder.monthNum);
-      const createdAt = `As of ${monthName}, ${year}`;
 
       const files = await listChildren(drive, monthFolder.id);
       let matchedThisMonth = 0;
@@ -259,6 +258,16 @@ async function main() {
 
         const nd = neededDocs.get(slug);
         if (!nd) continue;
+
+        // Build createdAt from the file's modifiedTime when available (gives exact day),
+        // falling back to the folder-derived month/year if modifiedTime is absent.
+        const fileDate   = file.modifiedTime ? new Date(file.modifiedTime) : null;
+        const plDay      = fileDate ? fileDate.getUTCDate() : null;
+        const plMonth    = fileDate ? (MONTHS[fileDate.getUTCMonth()] || monthName) : monthName;
+        const plYear     = fileDate ? fileDate.getUTCFullYear() : year;
+        const createdAt  = plDay
+          ? `As of ${plMonth} ${plDay}, ${plYear}`
+          : `As of ${monthName}, ${year}`;
 
         if (docType === 'list' && nd.needsPL) {
           if (isDry) {
