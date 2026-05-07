@@ -5576,7 +5576,7 @@
     "completionDate": "2027",
     "depositStructure": [
       "20% at contract",
-      "10% at 60 days after contract",
+      "10% 60 days after contract",
       "70% at closing"
     ],
     "parkingSpaces": [
@@ -5585,7 +5585,7 @@
     "rentalRestrictions": [
       "6 months minimum. 2 times per year."
     ],
-    "hoa": "$1.74/SF",
+    "hoa": "$1.74",
     "contact": [
       {
         "name": "Merav Egozi",
