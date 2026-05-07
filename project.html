@@ -184,22 +184,7 @@
   }
 
   // Stylish Amenities cell — includes Parking Spaces as sub-field
-  function buildAmenitiesNode(amenities, parking) {
-    var wrap = el('div');
-    if (amenities) {
-      wrap.appendChild(el('div', 'detail-value', amenities));
-    }
-    if (parking && parking.length) {
-      wrap.appendChild(el('div', 'detail-sublabel', 'PARKING SPACES'));
-      var ul = el('ul', 'detail-bullets');
-      parking.forEach(function (line) { ul.appendChild(el('li', null, line)); });
-      wrap.appendChild(ul);
-    }
-    if (!amenities && !(parking && parking.length)) {
-      wrap.appendChild(el('div', 'detail-value detail-empty', '\u2014'));
-    }
-    return wrap;
-  }
+  // (buildAmenitiesNode removed \u2014 amenities and parking are now separate grid fields)
 
   // subtitle (optional) shows a small date or variant label below the title
   function docItem(title, driveFileId, subtitle) {
@@ -423,12 +408,20 @@
       detSec.appendChild(sectionHeading('DETAILS'));
       var grid = el('div', 'details-grid');
 
-      var amenNode    = buildAmenitiesNode(d.stylishAmenities, d.parkingSpaces);
-      var hasAmen     = hasData(d.stylishAmenities) || hasData(d.parkingSpaces);
       var contactNode = (d.contact && d.contact.length) ? buildContactNode(d.contact) : null;
 
-      // Build a flat ordered list of fields that have real data.
-      // Contact Card is kept separate — it always renders alone, full-width, at the end.
+      // Build parking node (bullet list) separately from amenities.
+      var parkingNode = null;
+      if (hasData(d.parkingSpaces)) {
+        parkingNode = el('div');
+        var pkUl = el('ul', 'detail-bullets');
+        d.parkingSpaces.forEach(function (line) { pkUl.appendChild(el('li', null, line)); });
+        parkingNode.appendChild(pkUl);
+      }
+
+      // Flat ordered list of every field with real data.
+      // Fields pair sequentially (two per row). If the total is odd the last
+      // field lands alone in a centered full-width row — no special-casing.
       var fields = [];
       if (hasData(d.developer))          fields.push({ label: 'DEVELOPER',           val: d.developer });
       if (hasData(d.architecture))       fields.push({ label: 'ARCHITECTURE',         val: d.architecture });
@@ -436,11 +429,13 @@
       if (hasData(d.completionDate))     fields.push({ label: 'COMPLETION DATE',      val: d.completionDate });
       if (hasData(d.theBuilding))        fields.push({ label: 'THE BUILDING',         val: d.theBuilding });
       if (hasData(d.depositStructure))   fields.push({ label: 'DEPOSIT STRUCTURE',    val: d.depositStructure });
-      if (hasAmen)                       fields.push({ label: 'STYLISH AMENITIES',    val: amenNode });
+      if (hasData(d.stylishAmenities))   fields.push({ label: 'STYLISH AMENITIES',    val: d.stylishAmenities });
       if (hasData(d.rentalRestrictions)) fields.push({ label: 'RENTAL RESTRICTIONS',  val: d.rentalRestrictions });
+      if (parkingNode)                   fields.push({ label: 'PARKING SPACES',       val: parkingNode });
       if (hasData(d.hoa))                fields.push({ label: 'HOA',                  val: d.hoa });
+      if (contactNode)                   fields.push({ label: 'CONTACT CARD',         val: contactNode });
 
-      // Render regular fields in pairs. If count is odd the last one goes solo.
+      // Render in pairs; last field goes solo + centered when count is odd.
       for (var i = 0; i < fields.length; i += 2) {
         if (i + 1 < fields.length) {
           grid.appendChild(detailRow(fields[i].label, fields[i].val,
@@ -450,13 +445,6 @@
           soloRow.appendChild(detailCell(fields[i].label, fields[i].val, false));
           grid.appendChild(soloRow);
         }
-      }
-
-      // Contact Card always appears last, always alone, centered full-width.
-      if (contactNode) {
-        var contactRow = el('div', 'detail-row detail-row--solo');
-        contactRow.appendChild(detailCell('CONTACT CARD', contactNode, false));
-        grid.appendChild(contactRow);
       }
 
       detSec.appendChild(grid);
