@@ -2,5 +2,10 @@
   "rewrites": [
     { "source": "/projects/:slug", "destination": "/project.html" },
     { "source": "/login", "destination": "/login.html" }
-  ]
+  ],
+  "functions": {
+    "api/thumb.js": {
+      "maxDuration": 30
+    }
+  }
 }
