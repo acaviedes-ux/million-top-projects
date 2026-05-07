@@ -428,31 +428,35 @@
       var contactNode = (d.contact && d.contact.length) ? buildContactNode(d.contact) : null;
 
       // Build a flat ordered list of fields that have real data.
-      // Contact Card is always appended last so it is the one left alone when count is odd.
+      // Contact Card is kept separate — it always renders alone, full-width, at the end.
       var fields = [];
-      if (hasData(d.developer))        fields.push({ label: 'DEVELOPER',          val: d.developer });
-      if (hasData(d.architecture))     fields.push({ label: 'ARCHITECTURE',        val: d.architecture });
-      if (hasData(d.interiorDesign))   fields.push({ label: 'INTERIOR DESIGN',     val: d.interiorDesign });
-      if (hasData(d.completionDate))   fields.push({ label: 'COMPLETION DATE',     val: d.completionDate });
-      if (hasData(d.theBuilding))      fields.push({ label: 'THE BUILDING',        val: d.theBuilding });
-      if (hasData(d.depositStructure)) fields.push({ label: 'DEPOSIT STRUCTURE',   val: d.depositStructure });
-      if (hasAmen)                     fields.push({ label: 'STYLISH AMENITIES',   val: amenNode });
-      if (hasData(d.rentalRestrictions)) fields.push({ label: 'RENTAL RESTRICTIONS', val: d.rentalRestrictions });
-      if (hasData(d.hoa))              fields.push({ label: 'HOA',                 val: d.hoa });
-      if (contactNode)                 fields.push({ label: 'CONTACT CARD',        val: contactNode });
+      if (hasData(d.developer))          fields.push({ label: 'DEVELOPER',           val: d.developer });
+      if (hasData(d.architecture))       fields.push({ label: 'ARCHITECTURE',         val: d.architecture });
+      if (hasData(d.interiorDesign))     fields.push({ label: 'INTERIOR DESIGN',      val: d.interiorDesign });
+      if (hasData(d.completionDate))     fields.push({ label: 'COMPLETION DATE',      val: d.completionDate });
+      if (hasData(d.theBuilding))        fields.push({ label: 'THE BUILDING',         val: d.theBuilding });
+      if (hasData(d.depositStructure))   fields.push({ label: 'DEPOSIT STRUCTURE',    val: d.depositStructure });
+      if (hasAmen)                       fields.push({ label: 'STYLISH AMENITIES',    val: amenNode });
+      if (hasData(d.rentalRestrictions)) fields.push({ label: 'RENTAL RESTRICTIONS',  val: d.rentalRestrictions });
+      if (hasData(d.hoa))                fields.push({ label: 'HOA',                  val: d.hoa });
 
-      // Render in pairs. If count is odd the last field (always Contact Card) goes solo.
+      // Render regular fields in pairs. If count is odd the last one goes solo.
       for (var i = 0; i < fields.length; i += 2) {
         if (i + 1 < fields.length) {
-          // Normal 2-column row
           grid.appendChild(detailRow(fields[i].label, fields[i].val,
                                      fields[i+1].label, fields[i+1].val));
         } else {
-          // Solo full-width row
           var soloRow = el('div', 'detail-row detail-row--solo');
           soloRow.appendChild(detailCell(fields[i].label, fields[i].val, false));
           grid.appendChild(soloRow);
         }
+      }
+
+      // Contact Card always appears last, always alone, centered full-width.
+      if (contactNode) {
+        var contactRow = el('div', 'detail-row detail-row--solo');
+        contactRow.appendChild(detailCell('CONTACT CARD', contactNode, false));
+        grid.appendChild(contactRow);
       }
 
       detSec.appendChild(grid);
