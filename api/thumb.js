@@ -86,6 +86,7 @@ module.exports = async (req, res) => {
     const { data } = await drive.files.get({
       fileId: id,
       fields: 'thumbnailLink,size',
+      supportsAllDrives: true,
     });
 
     if (data.thumbnailLink) {
@@ -125,7 +126,7 @@ async function renderPdfThumbnail(drive, fileId) {
   try {
     // Download the full PDF as an ArrayBuffer
     const response = await drive.files.get(
-      { fileId, alt: 'media' },
+      { fileId, alt: 'media', supportsAllDrives: true },
       { responseType: 'arraybuffer' }
     );
 
