@@ -157,6 +157,38 @@
     return row;
   }
 
+  // Returns true if a value counts as "has real data"
+  function hasData(val) {
+    if (!val) return false;
+    if (Array.isArray(val)) return val.length > 0;
+    return true;
+  }
+
+  // Builds a detail row only when at least one side has data.
+  // If only one side has data AND it's the last row, that cell spans both columns.
+  function smartDetailRow(leftLabel, leftVal, rightLabel, rightVal, isLastRow) {
+    var leftHas  = hasData(leftVal);
+    var rightHas = hasData(rightVal);
+
+    // Both empty → skip entirely
+    if (!leftHas && !rightHas) return null;
+
+    // Both have data → normal 2-column row
+    if (leftHas && rightHas) return detailRow(leftLabel, leftVal, rightLabel, rightVal);
+
+    // One side has data and it's the last row → full-width centred cell
+    if (isLastRow) {
+      var row = el('div', 'detail-row detail-row--solo');
+      var label = leftHas ? leftLabel : rightLabel;
+      var val   = leftHas ? leftVal   : rightVal;
+      row.appendChild(detailCell(label, val, false));
+      return row;
+    }
+
+    // One side has data but not the last row → normal row (other side shows —)
+    return detailRow(leftLabel, leftVal, rightLabel, rightVal);
+  }
+
   function buildContactNode(contacts) {
     var wrap = el('div', 'contact-list');
     contacts.forEach(function (agent) {
@@ -415,22 +447,29 @@
       detSec.appendChild(sectionHeading('DETAILS'));
       var grid = el('div', 'details-grid');
 
-      // Row 1: Developer | Architecture
-      grid.appendChild(detailRow('DEVELOPER', d.developer, 'ARCHITECTURE', d.architecture));
-
-      // Row 2: Interior Design | Completion Date
-      grid.appendChild(detailRow('INTERIOR DESIGN', d.interiorDesign, 'COMPLETION DATE', d.completionDate));
-
-      // Row 3: The Building | Deposit Structure
-      grid.appendChild(detailRow('THE BUILDING', d.theBuilding, 'DEPOSIT STRUCTURE', d.depositStructure));
-
-      // Row 4: Stylish Amenities (+Parking) | Rental Restrictions
-      var amenNode = buildAmenitiesNode(d.stylishAmenities, d.parkingSpaces);
-      grid.appendChild(detailRow('STYLISH AMENITIES', amenNode, 'RENTAL RESTRICTIONS', d.rentalRestrictions));
-
-      // Row 5: HOA | Contact Card
+      var amenNode    = buildAmenitiesNode(d.stylishAmenities, d.parkingSpaces);
       var contactNode = (d.contact && d.contact.length) ? buildContactNode(d.contact) : null;
-      grid.appendChild(detailRow('HOA', d.hoa, 'CONTACT CARD', contactNode));
+
+      // Define all rows in order; last row gets special solo treatment if only one side has data
+      var rowDefs = [
+        ['DEVELOPER',        d.developer,      'ARCHITECTURE',      d.architecture],
+        ['INTERIOR DESIGN',  d.interiorDesign, 'COMPLETION DATE',   d.completionDate],
+        ['THE BUILDING',     d.theBuilding,    'DEPOSIT STRUCTURE', d.depositStructure],
+        ['STYLISH AMENITIES',amenNode,         'RENTAL RESTRICTIONS', d.rentalRestrictions],
+        ['HOA',              d.hoa,            'CONTACT CARD',      contactNode],
+      ];
+
+      // Find index of last row that has at least one side with data
+      var lastIdx = -1;
+      for (var i = rowDefs.length - 1; i >= 0; i--) {
+        if (hasData(rowDefs[i][1]) || hasData(rowDefs[i][3])) { lastIdx = i; break; }
+      }
+
+      for (var i = 0; i < rowDefs.length; i++) {
+        var def = rowDefs[i];
+        var row = smartDetailRow(def[0], def[1], def[2], def[3], i === lastIdx);
+        if (row) grid.appendChild(row);
+      }
 
       detSec.appendChild(grid);
       frag.appendChild(detSec);

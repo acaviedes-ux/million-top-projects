@@ -1078,6 +1078,18 @@ img { display: block; max-width: 100%; }
   display: contents; /* rows are CSS grid children, not wrapper divs */
 }
 
+/* Solo row: single cell spanning both columns, centered */
+.detail-row--solo {
+  display: block; /* override contents so the wrapper is visible for grid-column */
+  grid-column: 1 / -1;
+}
+
+.detail-row--solo .detail-cell {
+  border-right: none;
+  max-width: 520px;
+  margin: 0 auto;
+}
+
 .detail-cell {
   padding: 28px 32px;
   border-bottom: 1px solid var(--gray-mid);
