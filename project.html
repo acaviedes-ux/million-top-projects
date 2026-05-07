@@ -164,30 +164,6 @@
     return true;
   }
 
-  // Builds a detail row only when at least one side has data.
-  // If only one side has data AND it's the last row, that cell spans both columns.
-  function smartDetailRow(leftLabel, leftVal, rightLabel, rightVal, isLastRow) {
-    var leftHas  = hasData(leftVal);
-    var rightHas = hasData(rightVal);
-
-    // Both empty → skip entirely
-    if (!leftHas && !rightHas) return null;
-
-    // Both have data → normal 2-column row
-    if (leftHas && rightHas) return detailRow(leftLabel, leftVal, rightLabel, rightVal);
-
-    // One side has data and it's the last row → full-width centred cell
-    if (isLastRow) {
-      var row = el('div', 'detail-row detail-row--solo');
-      var label = leftHas ? leftLabel : rightLabel;
-      var val   = leftHas ? leftVal   : rightVal;
-      row.appendChild(detailCell(label, val, false));
-      return row;
-    }
-
-    // One side has data but not the last row → normal row (other side shows —)
-    return detailRow(leftLabel, leftVal, rightLabel, rightVal);
-  }
 
   function buildContactNode(contacts) {
     var wrap = el('div', 'contact-list');
@@ -448,27 +424,35 @@
       var grid = el('div', 'details-grid');
 
       var amenNode    = buildAmenitiesNode(d.stylishAmenities, d.parkingSpaces);
+      var hasAmen     = hasData(d.stylishAmenities) || hasData(d.parkingSpaces);
       var contactNode = (d.contact && d.contact.length) ? buildContactNode(d.contact) : null;
 
-      // Define all rows in order; last row gets special solo treatment if only one side has data
-      var rowDefs = [
-        ['DEVELOPER',        d.developer,      'ARCHITECTURE',      d.architecture],
-        ['INTERIOR DESIGN',  d.interiorDesign, 'COMPLETION DATE',   d.completionDate],
-        ['THE BUILDING',     d.theBuilding,    'DEPOSIT STRUCTURE', d.depositStructure],
-        ['STYLISH AMENITIES',amenNode,         'RENTAL RESTRICTIONS', d.rentalRestrictions],
-        ['HOA',              d.hoa,            'CONTACT CARD',      contactNode],
-      ];
+      // Build a flat ordered list of fields that have real data.
+      // Contact Card is always appended last so it is the one left alone when count is odd.
+      var fields = [];
+      if (hasData(d.developer))        fields.push({ label: 'DEVELOPER',          val: d.developer });
+      if (hasData(d.architecture))     fields.push({ label: 'ARCHITECTURE',        val: d.architecture });
+      if (hasData(d.interiorDesign))   fields.push({ label: 'INTERIOR DESIGN',     val: d.interiorDesign });
+      if (hasData(d.completionDate))   fields.push({ label: 'COMPLETION DATE',     val: d.completionDate });
+      if (hasData(d.theBuilding))      fields.push({ label: 'THE BUILDING',        val: d.theBuilding });
+      if (hasData(d.depositStructure)) fields.push({ label: 'DEPOSIT STRUCTURE',   val: d.depositStructure });
+      if (hasAmen)                     fields.push({ label: 'STYLISH AMENITIES',   val: amenNode });
+      if (hasData(d.rentalRestrictions)) fields.push({ label: 'RENTAL RESTRICTIONS', val: d.rentalRestrictions });
+      if (hasData(d.hoa))              fields.push({ label: 'HOA',                 val: d.hoa });
+      if (contactNode)                 fields.push({ label: 'CONTACT CARD',        val: contactNode });
 
-      // Find index of last row that has at least one side with data
-      var lastIdx = -1;
-      for (var i = rowDefs.length - 1; i >= 0; i--) {
-        if (hasData(rowDefs[i][1]) || hasData(rowDefs[i][3])) { lastIdx = i; break; }
-      }
-
-      for (var i = 0; i < rowDefs.length; i++) {
-        var def = rowDefs[i];
-        var row = smartDetailRow(def[0], def[1], def[2], def[3], i === lastIdx);
-        if (row) grid.appendChild(row);
+      // Render in pairs. If count is odd the last field (always Contact Card) goes solo.
+      for (var i = 0; i < fields.length; i += 2) {
+        if (i + 1 < fields.length) {
+          // Normal 2-column row
+          grid.appendChild(detailRow(fields[i].label, fields[i].val,
+                                     fields[i+1].label, fields[i+1].val));
+        } else {
+          // Solo full-width row
+          var soloRow = el('div', 'detail-row detail-row--solo');
+          soloRow.appendChild(detailCell(fields[i].label, fields[i].val, false));
+          grid.appendChild(soloRow);
+        }
       }
 
       detSec.appendChild(grid);
