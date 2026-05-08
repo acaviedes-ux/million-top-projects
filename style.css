@@ -923,7 +923,8 @@ img { display: block; max-width: 100%; }
   pointer-events: none;
 }
 
-/* White card wrapper — background is NOT filtered */
+/* White card wrapper — isolation: isolate ensures mix-blend-mode on the
+   child img composites against this card's white background, not the hero */
 .hero-logo-card {
   background: rgba(255, 255, 255, 0.92);
   padding: 18px 32px;
@@ -932,10 +933,13 @@ img { display: block; max-width: 100%; }
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  isolation: isolate;
 }
 
-/* filter only on the <img> so brightness(0) turns ANY artwork black
-   without affecting the parent card's white background */
+/* mix-blend-mode: multiply on white background:
+   - dark/colored artwork × white = dark/colored (logos look authentic)
+   - white background pixels × white = white (opaque-bg PNGs show correctly)
+   Works for transparent PNGs, SVGs, and opaque white-background PNGs. */
 .hero-logo-img {
   max-height: 130px;
   max-width: min(360px, 55vw);
@@ -943,7 +947,7 @@ img { display: block; max-width: 100%; }
   height: auto;
   object-fit: contain;
   display: block;
-  filter: brightness(0);
+  mix-blend-mode: multiply;
 }
 
 /* ── NAV PROJECT LOGO ────────────────────────── */

@@ -66,8 +66,11 @@ function getCreateCanvas() {
   return _createCanvas;
 }
 
-// Skip PDF rendering for files larger than this (avoids Lambda timeout)
-const MAX_RENDER_BYTES = 30 * 1024 * 1024; // 30 MB
+// Skip PDF rendering for files larger than this (avoids Lambda timeout).
+// Lambda ↔ GCP internal network is fast (~1 Gbps) so even 150 MB downloads in ~1s.
+// PDF.js renders only page 1 at 400px — bounded by page complexity, not file size.
+// Files above this threshold (e.g. 359 MB site plans) fall back to placeholder SVG.
+const MAX_RENDER_BYTES = 150 * 1024 * 1024; // 150 MB
 
 // Target thumbnail width in pixels
 const THUMB_WIDTH = 400;
