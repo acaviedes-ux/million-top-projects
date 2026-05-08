@@ -171,7 +171,7 @@
       var entry = el('div', 'contact-entry');
       entry.appendChild(el('div', 'contact-name', agent.name));
       if (agent.phone) entry.appendChild(el('div', 'contact-detail', agent.phone));
-      if (agent.email) {
+      if (agent.email && agent.email.toLowerCase() !== 'n/a') {
         var emailRow = el('div', 'contact-detail');
         var a = el('a', 'contact-email', agent.email);
         a.href = 'mailto:' + agent.email;
