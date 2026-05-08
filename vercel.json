@@ -3,9 +3,11 @@
     { "source": "/projects/:slug", "destination": "/project.html" },
     { "source": "/login", "destination": "/login.html" }
   ],
+  "installCommand": "npm install",
   "functions": {
     "api/thumb.js": {
-      "maxDuration": 30
+      "maxDuration": 30,
+      "includeFiles": "node_modules/@napi-rs/canvas-linux-x64-gnu/**"
     }
   }
 }
