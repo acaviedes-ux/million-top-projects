@@ -186,26 +186,104 @@
   // Stylish Amenities cell — includes Parking Spaces as sub-field
   // (buildAmenitiesNode removed \u2014 amenities and parking are now separate grid fields)
 
+  // ── Client-side PDF thumbnail renderer ──────────────────────────
+  // Uses pdfjs-dist from CDN so no native binary is needed on the server.
+  // /api/pdf-proxy authenticates the Drive download; pdfjs uses HTTP range
+  // requests so it only fetches the bytes it needs for page 1 (~50-300 KB
+  // regardless of total PDF size).
+
+  var _pdfjsLoading = false;
+  var _pdfjsReady   = false;
+  var _pdfjsQueue   = [];
+
+  function ensurePdfJs(cb) {
+    if (_pdfjsReady) { cb(); return; }
+    _pdfjsQueue.push(cb);
+    if (_pdfjsLoading) return;
+    _pdfjsLoading = true;
+    var s = document.createElement('script');
+    s.src = 'https://cdn.jsdelivr.net/npm/pdfjs-dist@3.11.174/legacy/build/pdf.min.js';
+    s.onload = function () {
+      window.pdfjsLib.GlobalWorkerOptions.workerSrc =
+        'https://cdn.jsdelivr.net/npm/pdfjs-dist@3.11.174/legacy/build/pdf.worker.min.js';
+      _pdfjsReady = true;
+      var q = _pdfjsQueue.slice(); _pdfjsQueue = [];
+      q.forEach(function (fn) { fn(); });
+    };
+    s.onerror = function () {
+      _pdfjsLoading = false;
+      _pdfjsQueue = [];
+    };
+    document.head.appendChild(s);
+  }
+
+  function renderPdfCanvas(canvas) {
+    var fileId = canvas.dataset.pdfId;
+    ensurePdfJs(function () {
+      window.pdfjsLib.getDocument({
+        url: '/api/pdf-proxy?id=' + fileId,
+        rangeChunkSize: 65536,
+        disableFontFace: true,
+        cMapUrl: null,
+        standardFontDataUrl: null,
+      }).promise.then(function (pdf) {
+        return pdf.getPage(1);
+      }).then(function (page) {
+        var vp0   = page.getViewport({ scale: 1 });
+        var scale = 400 / vp0.width;
+        var vp    = page.getViewport({ scale: scale });
+        canvas.width  = Math.round(vp.width);
+        canvas.height = Math.round(vp.height);
+        var ctx = canvas.getContext('2d');
+        ctx.fillStyle = '#ffffff';
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+        return page.render({ canvasContext: ctx, viewport: vp }).promise;
+      }).then(function () {
+        canvas.classList.add('pdf-ready');
+      }).catch(function (err) {
+        console.warn('[pdf-thumb] ' + fileId + ':', err.message);
+        var empty = el('div', 'doc-preview doc-preview--empty');
+        if (canvas.parentNode) canvas.parentNode.replaceChild(empty, canvas);
+      });
+    });
+  }
+
+  function initPdfPreviews() {
+    var canvases = document.querySelectorAll('canvas.doc-preview-canvas');
+    if (!canvases.length) return;
+
+    if (!window.IntersectionObserver) {
+      canvases.forEach(function (c) { renderPdfCanvas(c); });
+      return;
+    }
+    var obs = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (!entry.isIntersecting) return;
+        obs.unobserve(entry.target);
+        renderPdfCanvas(entry.target);
+      });
+    }, { rootMargin: '400px 0px' });
+    canvases.forEach(function (c) { obs.observe(c); });
+  }
+
   // subtitle (optional) shows a small date or variant label below the title
   function docItem(title, driveFileId, subtitle) {
     var row = el('div', 'doc-item');
 
-    // Preview thumbnail — wrapped in a link so clicking the image also opens the doc
+    // Preview thumbnail — canvas rendered client-side via pdfjs-dist
     if (driveFileId) {
       var previewLink = el('a', 'doc-preview-link');
       previewLink.href   = 'https://drive.google.com/file/d/' + driveFileId + '/view';
       previewLink.target = '_blank';
       previewLink.rel    = 'noopener noreferrer';
-      var preview = el('img', 'doc-preview');
-      preview.src     = '/api/thumb?id=' + driveFileId;
-      preview.alt     = title || 'Document preview';
-      preview.loading = 'lazy';
-      preview.onerror = function() {
-        // Replace broken thumbnail with the empty-state placeholder
-        var empty = el('div', 'doc-preview doc-preview--empty');
-        previewLink.replaceChild(empty, this);
-      };
-      previewLink.appendChild(preview);
+      var canvas = el('canvas', 'doc-preview-canvas');
+      canvas.dataset.pdfId = driveFileId;
+      canvas.width  = 400;
+      canvas.height = 518;   // ~8.5/11 ratio placeholder while loading
+      // Draw initial grey placeholder so the card has correct dimensions immediately
+      var ctx0 = canvas.getContext('2d');
+      if (ctx0) { ctx0.fillStyle = '#fbfbfb'; ctx0.fillRect(0, 0, 400, 518); }
+      previewLink.appendChild(canvas);
       row.appendChild(previewLink);
     } else {
       row.appendChild(el('div', 'doc-preview doc-preview--empty'));
@@ -539,6 +617,9 @@
     }
 
     pageContent.appendChild(frag);
+
+    // Activate lazy PDF thumbnail rendering for all doc canvases now in DOM
+    initPdfPreviews();
   }
 
   // ── Fetch & boot ─────────────────────────────────────────────

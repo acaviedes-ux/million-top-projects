@@ -1253,6 +1253,20 @@ img { display: block; max-width: 100%; }
   transition: opacity 0.2s;
 }
 
+/* Canvas-based PDF thumbnail (client-side pdfjs rendering) */
+.doc-preview-canvas {
+  width: 100%;
+  height: auto;
+  display: block;
+  background: var(--gray-light);
+  transition: opacity 0.3s;
+  opacity: 0.6;
+}
+.doc-preview-canvas.pdf-ready {
+  opacity: 1;
+}
+.doc-preview-link:hover .doc-preview-canvas { opacity: 0.88; }
+
 .doc-preview--empty {
   width: 100%;
   aspect-ratio: 8.5 / 11;

@@ -8,6 +8,9 @@
     "api/thumb.js": {
       "maxDuration": 30,
       "includeFiles": "node_modules/@napi-rs/canvas-linux-x64-gnu/**"
+    },
+    "api/pdf-proxy.js": {
+      "maxDuration": 30
     }
   }
 }
