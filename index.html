@@ -597,10 +597,17 @@
 
     function onScroll() {
       var threshold = heroEl.offsetTop + heroEl.offsetHeight + 50;
-      if (window.scrollY > threshold) {
+      var isScrolled = window.scrollY > threshold;
+      if (isScrolled) {
         siteNav.classList.add('scrolled');
       } else {
         siteNav.classList.remove('scrolled');
+      }
+
+      // If the filter panel is open, keep it anchored below the visible button.
+      // When scrolled the nav Filters button is shown; otherwise use the main one.
+      if (filtersWrapEl.classList.contains('open')) {
+        positionFiltersPanel(isScrolled ? navFiltersBtnEl : filtersToggleEl);
       }
     }
     window.addEventListener('scroll', onScroll, { passive: true });
