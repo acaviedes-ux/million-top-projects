@@ -941,8 +941,8 @@ img { display: block; max-width: 100%; }
    - white background pixels × white = white (opaque-bg PNGs show correctly)
    Works for transparent PNGs, SVGs, and opaque white-background PNGs. */
 .hero-logo-img {
-  max-height: 130px;
-  max-width: min(360px, 55vw);
+  max-height: 155px;
+  max-width: min(440px, 60vw);
   width: auto;
   height: auto;
   object-fit: contain;

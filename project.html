@@ -331,9 +331,9 @@
         // In that case skip the DPR override — CSS max-width/max-height handles sizing.
         if (!this.naturalWidth) return;
         var dpr     = window.devicePixelRatio || 1;
-        // Mirror the CSS constraints: max-width: min(360px, 55vw); max-height: 130px
-        var cssMaxW = Math.min(360, window.innerWidth * 0.55);
-        var cssMaxH = 130;
+        // Mirror the CSS constraints: max-width: min(440px, 60vw); max-height: 155px
+        var cssMaxW = Math.min(440, window.innerWidth * 0.60);
+        var cssMaxH = 155;
         this.style.maxWidth  = Math.min(this.naturalWidth  / dpr, cssMaxW) + 'px';
         this.style.maxHeight = Math.min(this.naturalHeight / dpr, cssMaxH) + 'px';
       };
