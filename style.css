@@ -1236,10 +1236,11 @@ img { display: block; max-width: 100%; }
   overflow: hidden;
 }
 
-/* Preview image link — fills the card top, no inline gap */
+/* Preview image link — fills the card top, fixed height regardless of PDF dimensions */
 .doc-preview-link {
   display: block;
   width: 100%;
+  aspect-ratio: 8.5 / 11;
   overflow: hidden;
 }
 .doc-preview-link:hover .doc-preview { opacity: 0.88; }
