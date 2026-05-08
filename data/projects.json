@@ -10836,8 +10836,8 @@
     ],
     "projectLogo": "/images/logos/tula-residences.png",
     "priceList": {
-      "driveFileId": "1PcJZ3Za42WNhk_2GZvio6Kp8W0a25fZE",
-      "createdAt": "As of March 27, 2026"
+      "driveFileId": "1aceMT84zQMmiZ84T-TQ7CrqS7Lg2NNHJ",
+      "createdAt": "As of May 8, 2026"
     },
     "isNew": true,
     "filterCounty": "Miami-Dade County",
@@ -18789,10 +18789,7 @@
     "filterLocation": "Miami Beach",
     "filterStatus": "Pre-construction",
     "filterYear": "2027",
-    "priceRange": {
-      "driveFileId": "1qJllB6Rfh2mQhiX8uiOIw7QfMLkFXFpW",
-      "createdAt": "As of March 9, 2026"
-    }
+    "priceRange": null
   },
   {
     "slug": "una-residences",
