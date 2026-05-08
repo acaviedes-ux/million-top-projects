@@ -161,7 +161,8 @@ async function renderPdfThumbnail(drive, fileId) {
 
     await page.render({ canvasContext: ctx, viewport }).promise;
 
-    return canvas.toBuffer('image/jpeg', { quality: 0.85 });
+    // @napi-rs/canvas toBuffer quality is a plain integer 0–100 (not a node-canvas {quality:0-1} object)
+    return canvas.toBuffer('image/jpeg', 85);
 
   } catch (err) {
     console.error('[/api/thumb] renderPdfThumbnail failed:', err.message);
