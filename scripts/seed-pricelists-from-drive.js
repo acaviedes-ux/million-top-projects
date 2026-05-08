@@ -97,10 +97,16 @@ async function listChildren(drive, folderId) {
 
 async function main() {
   const args       = process.argv.slice(2);
-  const isDry      = args.includes('--dry');
-  const isForce    = args.includes('--force');
-  const slugIdx    = args.indexOf('--slug');
-  const targetSlug = slugIdx !== -1 ? args[slugIdx + 1] : null;
+  const isDry           = args.includes('--dry');
+  const isForce         = args.includes('--force');
+  const isCurrentMonth  = args.includes('--current-month');
+  const slugIdx         = args.indexOf('--slug');
+  const targetSlug      = slugIdx !== -1 ? args[slugIdx + 1] : null;
+
+  // When --current-month is set, restrict the search to today's year + month only.
+  const now            = new Date();
+  const todayYear      = now.getFullYear();
+  const todayMonthNum  = now.getMonth() + 1; // 1-based
 
   if (!PRICE_FOLDER_ID) {
     console.error('Error: PRICE_LIST_DRIVE_FOLDER_ID must be set in .env');
@@ -186,7 +192,7 @@ async function main() {
   let updatedPR = 0;
 
   if (neededDocs.size > 0) {
-    const yearFolders = (await listChildren(drive, PRICE_FOLDER_ID))
+    let yearFolders = (await listChildren(drive, PRICE_FOLDER_ID))
       .filter(f => f.mimeType === 'application/vnd.google-apps.folder')
       .filter(f => /price list \d{4}/i.test(f.name))
       .sort((a, b) => {
@@ -195,13 +201,21 @@ async function main() {
         return yb - ya; // most-recent year first
       });
 
+    // --current-month: only look at this year's folder (skips all historical years)
+    if (isCurrentMonth) {
+      yearFolders = yearFolders.filter(f =>
+        parseInt((f.name.match(/\d{4}/) || ['0'])[0], 10) === todayYear
+      );
+      console.log(`[--current-month] Restricting to year ${todayYear}, month ${todayMonthNum} (${MONTHS[todayMonthNum - 1]})\n`);
+    }
+
     console.log(`Found ${yearFolders.length} year folder(s): ${yearFolders.map(f => f.name).join(', ')}\n`);
 
   outer: for (const yearFolder of yearFolders) {
     const year = parseInt((yearFolder.name.match(/\d{4}/) || ['0'])[0], 10);
 
     // List and sort month folders descending by month number
-    const monthFolders = (await listChildren(drive, yearFolder.id))
+    let monthFolders = (await listChildren(drive, yearFolder.id))
       .filter(f => f.mimeType === 'application/vnd.google-apps.folder')
       .map(f => {
         const m = f.name.match(/price list (\d+)/i);
@@ -209,6 +223,11 @@ async function main() {
       })
       .filter(f => f.monthNum > 0)
       .sort((a, b) => b.monthNum - a.monthNum); // most-recent month first
+
+    // --current-month: only look at this month's folder
+    if (isCurrentMonth) {
+      monthFolders = monthFolders.filter(f => f.monthNum === todayMonthNum);
+    }
 
     console.log(`  ${yearFolder.name}: ${monthFolders.length} month folder(s)`);
 

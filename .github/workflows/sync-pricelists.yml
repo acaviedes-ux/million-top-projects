@@ -1,12 +1,20 @@
 name: Sync Price Lists from Drive
 
 # ── Triggers ───────────────────────────────────────────────────────────────────
-# • schedule: runs every hour so new PDFs land within ~60 min of upload
-# • workflow_dispatch: manual button in the GitHub Actions UI
+# • schedule: runs every hour — scans ONLY the current month's folder (fast)
+# • workflow_dispatch: manual run from GitHub Actions UI
+#   - full_sweep input: set to true to scan ALL historical year/month folders
 on:
   schedule:
     - cron: '0 * * * *'   # top of every hour, UTC
-  workflow_dispatch:        # allows one-click manual run
+  workflow_dispatch:
+    inputs:
+      full_sweep:
+        description: 'Scan all historical folders instead of current month only'
+        required: false
+        default: 'false'
+        type: choice
+        options: ['false', 'true']
 
 # Only one run at a time — if a run is still going when the next fires, skip it
 concurrency:
@@ -20,16 +28,14 @@ jobs:
     permissions:
       contents: write   # allows git push
     env:
-      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true   # suppress Node.js 20 deprecation warning
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
     steps:
-      # ── 1. Check out the repo ──────────────────────────────────────────────
       - name: Checkout
         uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      # ── 2. Node.js setup ──────────────────────────────────────────────────
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
@@ -39,11 +45,19 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      # ── 3. Run the seed script with --force ───────────────────────────────
-      # --force makes the script always resolve the most-recent file per
-      # project.  git diff is what prevents unnecessary commits — if the same
-      # file IDs were found again, projects.json is byte-for-byte identical.
-      - name: Seed price lists from Drive
+      # Hourly / default: only check this month's folder (fast — one API list call)
+      - name: Seed price lists — current month
+        if: github.event_name == 'schedule' || inputs.full_sweep == 'false'
+        env:
+          GOOGLE_SERVICE_ACCOUNT_EMAIL: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_EMAIL }}
+          GOOGLE_PRIVATE_KEY: ${{ secrets.GOOGLE_PRIVATE_KEY }}
+          PRICE_LIST_DRIVE_FOLDER_ID: ${{ secrets.PRICE_LIST_DRIVE_FOLDER_ID }}
+          PRE_CONSTRUCTION_SPREADSHEET_ID: ${{ secrets.PRE_CONSTRUCTION_SPREADSHEET_ID }}
+        run: node scripts/seed-pricelists-from-drive.js --force --current-month
+
+      # Manual full sweep: all year/month folders (use after uploading older PDFs)
+      - name: Seed price lists — full sweep
+        if: inputs.full_sweep == 'true'
         env:
           GOOGLE_SERVICE_ACCOUNT_EMAIL: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_EMAIL }}
           GOOGLE_PRIVATE_KEY: ${{ secrets.GOOGLE_PRIVATE_KEY }}
@@ -51,7 +65,14 @@ jobs:
           PRE_CONSTRUCTION_SPREADSHEET_ID: ${{ secrets.PRE_CONSTRUCTION_SPREADSHEET_ID }}
         run: node scripts/seed-pricelists-from-drive.js --force
 
-      # ── 4. Commit + push only if projects.json changed ────────────────────
+      # Refresh createdAt for files modified in Drive without being re-uploaded
+      - name: Update price list dates
+        env:
+          GOOGLE_SERVICE_ACCOUNT_EMAIL: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_EMAIL }}
+          GOOGLE_PRIVATE_KEY: ${{ secrets.GOOGLE_PRIVATE_KEY }}
+          GOOGLE_IMPERSONATE_EMAIL: ${{ secrets.GOOGLE_IMPERSONATE_EMAIL }}
+        run: node scripts/update-pricelist-dates.js
+
       - name: Check for changes
         id: diff
         run: |
@@ -60,7 +81,6 @@ jobs:
             echo "No price list changes detected."
           else
             echo "changed=true" >> "$GITHUB_OUTPUT"
-            echo "Changes detected in data/projects.json:"
             git diff --stat data/projects.json
           fi
 
