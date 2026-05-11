@@ -18035,7 +18035,13 @@
     "parkingSpaces": null,
     "rentalRestrictions": null,
     "hoa": null,
-    "contact": null,
+    "contact": [
+      {
+        "name": "Anniella Tabraue",
+        "phone": null,
+        "email": null
+      }
+    ],
     "projectLogo": "/images/logos/the-george-residences-coral-gables.png",
     "priceList": {
       "driveFileId": "1xAH9O0ha02AX-1mJepYewb2wuEh2izEM",
