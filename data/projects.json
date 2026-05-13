@@ -11790,8 +11790,8 @@
       "60% closing"
     ],
     "parkingSpaces": [
-      "1 assigned parking space per unit",
-      "1 valet parking space per unit"
+      "1 assigned parking space per unit.",
+      "1 valet parking service available per unit."
     ],
     "rentalRestrictions": null,
     "hoa": "$2.16",
