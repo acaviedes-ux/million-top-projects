@@ -11789,7 +11789,10 @@
       "10% top off",
       "60% closing"
     ],
-    "parkingSpaces": null,
+    "parkingSpaces": [
+      "1 assigned parking space per unit",
+      "1 valet parking space per unit"
+    ],
     "rentalRestrictions": null,
     "hoa": "$2.16",
     "contact": [
