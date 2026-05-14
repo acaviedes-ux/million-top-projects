@@ -10624,8 +10624,10 @@
       "60% at closing"
     ],
     "parkingSpaces": [
-      "For 2-bedroom units: 1 assigned parking space and 1 valet space.",
-      "For 3- or 4-bedroom units: 2 valet spaces."
+      "1 parking space assigned for 2 bedroom units",
+      "2 parking spaces assigned for 3 and 4 bedroom units",
+      "1 valet space for 2 bedroom units",
+      "2 valet spaces for 3 and 4 bedroom units"
     ],
     "rentalRestrictions": [
       "6 months minimum. Twice a year."
