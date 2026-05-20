@@ -616,6 +616,7 @@ img { display: block; max-width: 100%; }
   aspect-ratio: 4/3;
   object-fit: cover;
   background: var(--gray-light);
+  border-radius: 8px;
 }
 
 .card-img-placeholder {
@@ -771,7 +772,8 @@ img { display: block; max-width: 100%; }
 .pdf-link-btn {
   display: inline-block;
   padding: 10px 24px;
-  border: 1px solid var(--black);
+  border: 1px solid #000000;
+  border-radius: 8px;
   font-size: 12px;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -1062,7 +1064,8 @@ img { display: block; max-width: 100%; }
 .section-cta {
   display: inline-block;
   padding: 11px 28px;
-  border: 1px solid var(--black);
+  border: 1px solid #000000;
+  border-radius: 8px;
   font-size: 11px;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -1075,6 +1078,9 @@ img { display: block; max-width: 100%; }
 .details-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  border: 1px solid var(--gray-mid);
+  border-radius: 8px;
+  overflow: hidden;
 }
 
 .detail-row {
@@ -1112,6 +1118,7 @@ img { display: block; max-width: 100%; }
 }
 
 .detail-label {
+  font-family: var(--serif);
   font-size: 14px;
   font-weight: 400;
   letter-spacing: 3px;
@@ -1250,6 +1257,7 @@ img { display: block; max-width: 100%; }
   flex-direction: column;
   align-items: center;
   border: 1px solid var(--gray-mid);
+  border-radius: 8px;
   overflow: hidden;
 }
 
@@ -1323,7 +1331,8 @@ img { display: block; max-width: 100%; }
   letter-spacing: 2px;
   text-transform: uppercase;
   padding: 9px 22px;
-  border: 1px solid var(--black);
+  border: 1px solid #000000;
+  border-radius: 8px;
   color: var(--black);
   transition: background 0.2s, color 0.2s;
   white-space: nowrap;
