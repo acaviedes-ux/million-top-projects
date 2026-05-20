@@ -532,27 +532,48 @@
       }
     });
 
-    // ── Lobby state persistence (scroll + search) ────────────────
+    // ── Lobby state persistence (scroll + search + filters) ──────
+    // Captured when the user clicks into a project card so that
+    // back-navigation lands them where they left off.
     function saveState() {
       sessionStorage.setItem('lobbyScrollY', window.scrollY);
       sessionStorage.setItem('lobbySearchQuery', searchEl.value);
+
+      var filtersOut = {};
+      Object.keys(activeFilters).forEach(function(k) {
+        filtersOut[k] = Array.from(activeFilters[k]);
+      });
+      sessionStorage.setItem('lobbyFilters', JSON.stringify(filtersOut));
     }
 
+    // Reads saved state, hydrates filter Sets and the search input, and
+    // returns { query, scrollY } so the caller can run buildFilterBar /
+    // render / scroll in the right order.
     function restoreState() {
       var q = sessionStorage.getItem('lobbySearchQuery') || '';
       var y = parseInt(sessionStorage.getItem('lobbyScrollY') || '0', 10);
+      var rawFilters = sessionStorage.getItem('lobbyFilters');
       sessionStorage.removeItem('lobbyScrollY');
       sessionStorage.removeItem('lobbySearchQuery');
+      sessionStorage.removeItem('lobbyFilters');
+
+      if (rawFilters) {
+        try {
+          var parsed = JSON.parse(rawFilters);
+          Object.keys(parsed).forEach(function(k) {
+            if (activeFilters[k] && Array.isArray(parsed[k])) {
+              activeFilters[k] = new Set(parsed[k]);
+            }
+          });
+        } catch (e) { /* ignore malformed state */ }
+      }
 
       if (q) {
         searchEl.value = q;
         navSearchEl.value = q;
-        render(q.toLowerCase().trim());
       }
 
-      if (y) {
-        requestAnimationFrame(function() { window.scrollTo(0, y); });
-      }
+      return { query: q, scrollY: y };
     }
 
     contentEl.addEventListener('click', function(e) {
@@ -573,9 +594,14 @@
         .then(function(res) { return res.json(); })
         .then(function(data) {
           allProjects = data;
+          // Hydrate filter Sets + search input BEFORE the bar is built so
+          // restored selections show up as checked options and chips.
+          var restored = restoreState();
           buildFilterBar();
-          render('');
-          restoreState();
+          render((restored.query || '').toLowerCase().trim());
+          if (restored.scrollY) {
+            requestAnimationFrame(function() { window.scrollTo(0, restored.scrollY); });
+          }
         })
         .catch(showError);
     }
