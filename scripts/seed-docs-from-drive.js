@@ -96,6 +96,32 @@ async function listChildrenPaged(drive, folderId) {
   return all;
 }
 
+// Recursively list all non-folder files under a folder.
+// Each returned file carries `_subPath` (array of subfolder names, [] for
+// files at the root of the search) so callers can preserve grouping context.
+async function listFilesRecursive(drive, folderId, pathSegments = []) {
+  const all = [];
+  let pageToken;
+  do {
+    const res = await drive.files.list({
+      q: `'${folderId}' in parents and trashed = false`,
+      fields: 'nextPageToken, files(id, name, mimeType)',
+      pageSize: 1000,
+      pageToken,
+    });
+    for (const f of res.data.files || []) {
+      if (f.mimeType === 'application/vnd.google-apps.folder') {
+        const children = await listFilesRecursive(drive, f.id, [...pathSegments, f.name]);
+        all.push(...children);
+      } else {
+        all.push({ ...f, _subPath: pathSegments });
+      }
+    }
+    pageToken = res.data.nextPageToken;
+  } while (pageToken);
+  return all;
+}
+
 // ── Title extraction ──────────────────────────────────────────
 // Input:  "Cipriani Residences - Fact Sheet - Canaletto Collection - EN.pdf"
 // Output: "Canaletto Collection - EN"
@@ -130,7 +156,12 @@ function buildDocItems(files) {
     const mime = (f.mimeType || '').toLowerCase();
 
     if (mime === 'application/pdf' || f.name.toLowerCase().endsWith('.pdf')) {
-      items.push({ title: extractTitle(f.name), driveFileId: f.id });
+      const baseTitle = extractTitle(f.name);
+      const sub = (f._subPath || []).join(' / ');
+      const title = sub
+        ? (baseTitle ? `${sub} - ${baseTitle}` : sub)
+        : baseTitle;
+      items.push({ title, driveFileId: f.id });
     }
   }
   // Sort by filename so order is deterministic
@@ -147,7 +178,9 @@ function buildRenderItems(files) {
   for (const f of files) {
     const mime = (f.mimeType || '').toLowerCase();
     if (IMAGE_MIMES.has(mime) || mime.startsWith('image/')) {
-      const alt = f.name.replace(/\.(jpe?g|png|webp|gif|heic|heif)$/i, '').trim();
+      const baseAlt = f.name.replace(/\.(jpe?g|png|webp|gif|heic|heif)$/i, '').trim();
+      const sub = (f._subPath || []).join(' / ');
+      const alt = sub ? `${sub} - ${baseAlt}` : baseAlt;
       items.push({ driveFileId: f.id, alt });
     }
   }
@@ -278,8 +311,8 @@ async function main() {
 
         if (!catFolder) continue;
 
-        // List files inside the category subfolder
-        const files = await listChildrenPaged(drive, catFolder.id);
+        // List files inside the category subfolder, recursing into any nested subfolders
+        const files = await listFilesRecursive(drive, catFolder.id);
 
         if (cat.field === 'renderings') {
           updates[cat.field] = buildRenderItems(files);
