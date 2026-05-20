@@ -167,6 +167,16 @@
   }
 
 
+  // Insert a missing space when a sentence-ending punctuation is glued to the
+  // next capitalized word (e.g. "Sq Ft each.This configuration" →
+  // "Sq Ft each. This configuration"). Safe by design: only matches the
+  // no-space case, so already-spaced phrases like "St. Regis" or "Sq. Ft."
+  // are left untouched.
+  function normalizeProse(s) {
+    if (typeof s !== 'string') return s;
+    return s.replace(/([.:;])([A-Z])/g, '$1 $2');
+  }
+
   // Deposit Structure: when the array contains lines ending in ':' (e.g.
   // "Regency Collection:"), treat them as group headers and the lines that
   // follow as that group's bullet list. Falls back to a flat bullet list.
@@ -548,14 +558,14 @@
       if (hasData(d.architecture))       fields.push({ label: 'ARCHITECTURE',         val: d.architecture });
       if (hasData(d.interiorDesign))     fields.push({ label: 'INTERIOR DESIGN',      val: d.interiorDesign });
       if (hasData(d.completionDate))     fields.push({ label: 'COMPLETION DATE',      val: d.completionDate });
-      if (hasData(d.theBuilding))        fields.push({ label: 'THE BUILDING',         val: d.theBuilding });
+      if (hasData(d.theBuilding))        fields.push({ label: 'THE BUILDING',         val: normalizeProse(d.theBuilding) });
       if (hasData(d.depositStructure)) {
         var depositVal = Array.isArray(d.depositStructure)
           ? buildDepositStructureNode(d.depositStructure)
           : d.depositStructure;
         fields.push({ label: 'DEPOSIT STRUCTURE', val: depositVal });
       }
-      if (hasData(d.stylishAmenities))   fields.push({ label: 'STYLISH AMENITIES',    val: d.stylishAmenities });
+      if (hasData(d.stylishAmenities))   fields.push({ label: 'STYLISH AMENITIES',    val: normalizeProse(d.stylishAmenities) });
       if (hasData(d.rentalRestrictions)) fields.push({ label: 'RENTAL RESTRICTIONS',  val: d.rentalRestrictions });
       if (parkingNode)                   fields.push({ label: 'PARKING SPACES',       val: parkingNode });
       if (hasData(d.hoa))                fields.push({ label: 'HOA',                  val: d.hoa });
