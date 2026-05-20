@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Project — Million</title>
+  <link rel="icon" type="image/jpeg" href="/images/favicon.jpg">
+  <link rel="apple-touch-icon" href="/images/favicon.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="/style.css">
@@ -164,6 +166,36 @@
     return true;
   }
 
+
+  // Deposit Structure: when the array contains lines ending in ':' (e.g.
+  // "Regency Collection:"), treat them as group headers and the lines that
+  // follow as that group's bullet list. Falls back to a flat bullet list.
+  function buildDepositStructureNode(lines) {
+    var hasGroups = lines.some(function (line) { return /:\s*$/.test(line); });
+    if (!hasGroups) {
+      var flat = el('ul', 'detail-bullets');
+      lines.forEach(function (line) { flat.appendChild(el('li', null, line)); });
+      return flat;
+    }
+
+    var wrap = el('div', 'deposit-groups');
+    var currentList = null;
+    lines.forEach(function (line) {
+      if (/:\s*$/.test(line)) {
+        var header = el('div', 'deposit-group-header', line.replace(/:\s*$/, ''));
+        wrap.appendChild(header);
+        currentList = el('ul', 'detail-bullets');
+        wrap.appendChild(currentList);
+      } else {
+        if (!currentList) {
+          currentList = el('ul', 'detail-bullets');
+          wrap.appendChild(currentList);
+        }
+        currentList.appendChild(el('li', null, line));
+      }
+    });
+    return wrap;
+  }
 
   function buildContactNode(contacts) {
     var wrap = el('div', 'contact-list');
@@ -517,7 +549,12 @@
       if (hasData(d.interiorDesign))     fields.push({ label: 'INTERIOR DESIGN',      val: d.interiorDesign });
       if (hasData(d.completionDate))     fields.push({ label: 'COMPLETION DATE',      val: d.completionDate });
       if (hasData(d.theBuilding))        fields.push({ label: 'THE BUILDING',         val: d.theBuilding });
-      if (hasData(d.depositStructure))   fields.push({ label: 'DEPOSIT STRUCTURE',    val: d.depositStructure });
+      if (hasData(d.depositStructure)) {
+        var depositVal = Array.isArray(d.depositStructure)
+          ? buildDepositStructureNode(d.depositStructure)
+          : d.depositStructure;
+        fields.push({ label: 'DEPOSIT STRUCTURE', val: depositVal });
+      }
       if (hasData(d.stylishAmenities))   fields.push({ label: 'STYLISH AMENITIES',    val: d.stylishAmenities });
       if (hasData(d.rentalRestrictions)) fields.push({ label: 'RENTAL RESTRICTIONS',  val: d.rentalRestrictions });
       if (parkingNode)                   fields.push({ label: 'PARKING SPACES',       val: parkingNode });

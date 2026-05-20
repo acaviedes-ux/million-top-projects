@@ -85,6 +85,44 @@ async function getRange(sheets, spreadsheetId, range) {
   return res.data.values || [];
 }
 
+// Fetch per-cell notes for a single-column range. Returns an array of strings
+// (one per row), aligned with the rows returned by getRange for the same range.
+async function getColumnNotes(sheets, spreadsheetId, range) {
+  const res = await sheets.spreadsheets.get({
+    spreadsheetId,
+    ranges: [range],
+    fields: 'sheets.data.rowData.values.note',
+  });
+  const rowData = res.data.sheets?.[0]?.data?.[0]?.rowData || [];
+  return rowData.map(r => ((r.values && r.values[0] && r.values[0].note) || '').trim());
+}
+
+// HOA value + cell note → label-pair when both have the same line count.
+// Skips value lines that are already labeled (contain letters), so cells
+// formatted inline like "$1.85 Residences" or "Condos (F): $2,079" stay intact.
+// For bare-price lines (e.g. "$1.81"), extracts the label from the matching
+// note line, stripping any duplicate value and leading "for "/"de " filler.
+function buildHoaValue(value, note) {
+  if (!value) return null;
+  const valueLines = value.split('\n').map(s => s.trim()).filter(Boolean);
+  if (valueLines.length <= 1 || !note) return value;
+
+  const noteLines = note.split('\n').map(s => s.trim()).filter(Boolean);
+  if (noteLines.length !== valueLines.length) return value;
+
+  return valueLines.map((v, i) => {
+    if (/[A-Za-z]/.test(v)) return v; // already labeled inline
+    let label = noteLines[i];
+    const escVal = v.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    label = label
+      .replace(new RegExp('^' + escVal + '\\s*'), '')
+      .replace(/^(?:for\s+|de\s+|por\s+)/i, '')
+      .replace(/[,.;:]+\s*$/, '')
+      .trim();
+    return label ? `${v} (${label})` : v;
+  }).join('\n');
+}
+
 function cell(row, idx) {
   return (row[idx] || '').toString().trim();
 }
@@ -142,11 +180,11 @@ async function seedProject(projectName, tpDataName = null, preloaded = null) {
   const tpLookup = tpDataName || projectName;
   if (tpDataName) console.log(`  TP DATA lookup name: "${tpLookup}"`);
 
-  let esqData, tpData;
+  let esqData, tpData, hoaNotes;
 
   if (preloaded) {
     // --all mode: use already-fetched arrays
-    ({ esqData, tpData } = preloaded);
+    ({ esqData, tpData, hoaNotes } = preloaded);
   } else {
     // Single-project mode: fetch now
     const auth   = makeAuth();
@@ -158,16 +196,20 @@ async function seedProject(projectName, tpDataName = null, preloaded = null) {
 
     const tpRows = await getRange(sheets, TP_DATA_ID, `${TP_DATA_TAB}!A:E`);
     tpData = tpRows.slice(1); // skip header row
+
+    // HOA per-cell notes (column V, data starts at row 3). Aligned with esqData.
+    hoaNotes = await getColumnNotes(sheets, ESQUELETO_ID, 'Projects Overview!V3:V');
   }
 
-  // Match Esqueleto row
-  const esqRow = esqData.find(r =>
+  // Match Esqueleto row (track index so we can look up the aligned HOA note)
+  const esqRowIdx = esqData.findIndex(r =>
     cell(r, ESQ.name).toLowerCase() === projectName.toLowerCase()
   );
-  if (!esqRow) {
+  if (esqRowIdx === -1) {
     console.warn(`  ⚠ "${projectName}" not found in Esqueleto — skipping.`);
     return null;
   }
+  const esqRow = esqData[esqRowIdx];
   console.log('  ✓ Found in Esqueleto');
 
   // Match TP DATA row
@@ -193,7 +235,7 @@ async function seedProject(projectName, tpDataName = null, preloaded = null) {
     stylishAmenities:   tpRow ? cell(tpRow, TP.stylishAmenities)  || null : undefined,
     parkingSpaces:      multiline(esqRow, ESQ.parkingSpaces),
     rentalRestrictions: multiline(esqRow, ESQ.rentalRestrictions),
-    hoa:                cell(esqRow, ESQ.hoa)                    || null,
+    hoa:                buildHoaValue(cell(esqRow, ESQ.hoa), (hoaNotes && hoaNotes[esqRowIdx]) || ''),
     contact:            extractOptionAContact(esqRow),
   };
 
@@ -275,9 +317,10 @@ async function main() {
     const auth   = makeAuth();
     const sheets = google.sheets({ version: 'v4', auth });
 
-    const [esqRows, tpRows] = await Promise.all([
+    const [esqRows, tpRows, hoaNotes] = await Promise.all([
       getRange(sheets, ESQUELETO_ID, 'Projects Overview!A:AH'),
       getRange(sheets, TP_DATA_ID,   `${TP_DATA_TAB}!A:E`),
+      getColumnNotes(sheets, ESQUELETO_ID, 'Projects Overview!V3:V'),
     ]);
 
     if (esqRows.length < 3) {
@@ -286,11 +329,13 @@ async function main() {
     }
 
     preloaded = {
-      esqData: esqRows.slice(2), // skip title row (1) + headers row (2)
-      tpData:  tpRows.slice(1),  // skip header row
+      esqData:  esqRows.slice(2), // skip title row (1) + headers row (2)
+      tpData:   tpRows.slice(1),  // skip header row
+      hoaNotes,                   // aligned with esqData (V3:V)
     };
     console.log(`  ✓ Esqueleto: ${preloaded.esqData.length} data rows`);
     console.log(`  ✓ TP DATA: ${preloaded.tpData.length} data rows`);
+    console.log(`  ✓ HOA notes: ${preloaded.hoaNotes.filter(Boolean).length} cells with notes`);
   }
 
   let ok = 0, failed = 0;
