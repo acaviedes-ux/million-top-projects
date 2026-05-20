@@ -47,6 +47,7 @@ function normalize(p) {
     thumbnail:     p.thumbnail      || null,
     hero:          p.hero           || null,
     projectLogo:   p.projectLogo    || null,
+    heroLogoStyle: p.heroLogoStyle  || null,
 
     // Address section
     address: p.address || null,
