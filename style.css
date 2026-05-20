@@ -1078,9 +1078,6 @@ img { display: block; max-width: 100%; }
 .details-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  border: 1px solid var(--gray-mid);
-  border-radius: 8px;
-  overflow: hidden;
 }
 
 .detail-row {
