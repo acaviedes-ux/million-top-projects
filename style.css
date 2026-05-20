@@ -1042,9 +1042,9 @@ img { display: block; max-width: 100%; }
 
 .section-heading {
   font-family: var(--serif);
-  font-size: 10px;
-  font-weight: 700;
-  letter-spacing: 4.5px;
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: 0;
   text-transform: uppercase;
   color: var(--gray-dark);
   margin-bottom: 32px;
@@ -1193,8 +1193,8 @@ img { display: block; max-width: 100%; }
 
 .contact-name {
   font-family: var(--serif);
-  font-size: 15px;
-  font-weight: 700;
+  font-size: 20px;
+  font-weight: 400;
   margin-bottom: 5px;
   color: var(--black);
 }
