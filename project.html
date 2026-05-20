@@ -127,8 +127,13 @@
     return s;
   }
 
+  function toTitleCase(s) {
+    if (typeof s !== 'string') return s;
+    return s.toLowerCase().replace(/\b([a-z])/g, function (m) { return m.toUpperCase(); });
+  }
+
   function sectionHeading(text) {
-    return el('div', 'section-heading', text);
+    return el('div', 'section-heading', toTitleCase(text));
   }
 
   // Detail cell: label + value (string, array of lines, or pre-built node)

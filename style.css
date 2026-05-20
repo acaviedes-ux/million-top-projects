@@ -1045,8 +1045,7 @@ img { display: block; max-width: 100%; }
   font-size: 30px;
   font-weight: 400;
   letter-spacing: 0;
-  text-transform: uppercase;
-  color: var(--gray-dark);
+  color: #000000;
   margin-bottom: 32px;
   text-align: center;
 }
@@ -1113,11 +1112,11 @@ img { display: block; max-width: 100%; }
 }
 
 .detail-label {
-  font-size: 10px;
-  font-weight: 700;
+  font-size: 14px;
+  font-weight: 400;
   letter-spacing: 3px;
   text-transform: uppercase;
-  color: var(--gray-dark);
+  color: #000000;
   margin-bottom: 12px;
   text-align: center;
 }
