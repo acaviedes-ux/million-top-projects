@@ -925,23 +925,14 @@ img { display: block; max-width: 100%; }
   pointer-events: none;
 }
 
-/* White card wrapper — isolation: isolate ensures mix-blend-mode on the
-   child img composites against this card's white background, not the hero */
 .hero-logo-card {
-  background: rgba(255, 255, 255, 0.92);
-  padding: 18px 32px;
-  border-radius: 4px;
-  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.35);
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  isolation: isolate;
 }
 
-/* mix-blend-mode: multiply on white background:
-   - dark/colored artwork × white = dark/colored (logos look authentic)
-   - white background pixels × white = white (opaque-bg PNGs show correctly)
-   Works for transparent PNGs, SVGs, and opaque white-background PNGs. */
+/* White-knockout treatment: collapses any non-transparent pixel of the
+   PNG to pure white, matching the .nav-project-logo look. */
 .hero-logo-img {
   max-height: 155px;
   max-width: min(440px, 60vw);
@@ -949,20 +940,6 @@ img { display: block; max-width: 100%; }
   height: auto;
   object-fit: contain;
   display: block;
-  mix-blend-mode: multiply;
-}
-
-/* Transparent variant: white letters over the hero image, no card.
-   Matches the .nav-project-logo treatment so the same PNG can be
-   reused without an explicit white-knockout asset. */
-.hero-logo-wrap--transparent .hero-logo-card {
-  background: transparent;
-  box-shadow: none;
-  padding: 0;
-  isolation: auto;
-}
-.hero-logo-wrap--transparent .hero-logo-img {
-  mix-blend-mode: normal;
   filter: brightness(0) invert(1);
 }
 
