@@ -952,6 +952,20 @@ img { display: block; max-width: 100%; }
   mix-blend-mode: multiply;
 }
 
+/* Transparent variant: white letters over the hero image, no card.
+   Matches the .nav-project-logo treatment so the same PNG can be
+   reused without an explicit white-knockout asset. */
+.hero-logo-wrap--transparent .hero-logo-card {
+  background: transparent;
+  box-shadow: none;
+  padding: 0;
+  isolation: auto;
+}
+.hero-logo-wrap--transparent .hero-logo-img {
+  mix-blend-mode: normal;
+  filter: brightness(0) invert(1);
+}
+
 /* ── NAV PROJECT LOGO ────────────────────────── */
 /* Hidden by default; JS adds .nav-logo-visible once hero scrolls out */
 .nav-project-logo {

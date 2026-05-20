@@ -374,6 +374,14 @@
       heroLogoImg.alt  = d.name;
       heroLogoWrap.style.display = 'flex';
 
+      // Optional per-project variant: render the hero logo as white letters
+      // over a transparent background (matching the nav-bar treatment) instead
+      // of the default dark-on-white card.
+      heroLogoWrap.classList.toggle(
+        'hero-logo-wrap--transparent',
+        d.heroLogoStyle === 'transparent'
+      );
+
       // Crisp rendering on every screen density:
       // - High-res logos (e.g. St. Regis 10842px): capped to CSS max (440×155)
       // - Low-res logos (e.g. Aria Reserve 323px): capped to naturalWidth/effDpr
