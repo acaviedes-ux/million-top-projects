@@ -1540,7 +1540,7 @@
     "completionDate": "2028",
     "depositStructure": [
       "20% at contract",
-      "10% 90 days from contract",
+      "10% 90 days after contract",
       "10% at reaching rooftop level (Q1 2027)",
       "60% at closing (Q4 2027)"
     ],
