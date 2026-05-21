@@ -13027,7 +13027,181 @@
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Brickell",
     "filterStatus": "Pre-construction",
-    "filterYear": "2026"
+    "filterYear": "2026",
+    "factSheets": [
+      {
+        "title": "EN",
+        "driveFileId": "1NGrziNSjZGTMcnzevzMPhg2NdNYRpvmz"
+      },
+      {
+        "title": "ES",
+        "driveFileId": "10dT_HNjPq7QxkbWdjx_yvKLPrI-FbhK5"
+      },
+      {
+        "title": "FR",
+        "driveFileId": "12_tQWo-9ctRuMhdrLx0cweAByhY4-2AM"
+      },
+      {
+        "title": "PT",
+        "driveFileId": "1fNDnm1ewrRKWRQBQeAi-3GtA5GVwfBEW"
+      }
+    ],
+    "presentations": [
+      {
+        "title": "EN",
+        "driveFileId": "1QD_tkZ2FFwBhkwKWvIht9azNsf2xwPKP"
+      },
+      {
+        "title": "ES",
+        "driveFileId": "1Z16phmZjBywB60LyJ7v-YFR9AfECxo-i"
+      },
+      {
+        "title": "FR",
+        "driveFileId": "1N5SXoi_L3N9frhqrGRVxphN0dAtwMkF2"
+      },
+      {
+        "title": "PT",
+        "driveFileId": "1arGAnjTKWTZMulJCfEhcji1O3z6yGMcQ"
+      }
+    ],
+    "renderings": [
+      {
+        "driveFileId": "1JwOUdnGlc0PYzr9v6GFyAHsaM1cPH_4j",
+        "alt": "Aerial Birdseye"
+      },
+      {
+        "driveFileId": "1e60KKPx-CXRetXxRb2FIfxSrA_BopMOs",
+        "alt": "Bathroom"
+      },
+      {
+        "driveFileId": "1BcicfClO12tFmUnD745pZtZgbrncxt0A",
+        "alt": "Childrens Playground"
+      },
+      {
+        "driveFileId": "17KdOql73bIzLpNAta5gWWV94gP8-OP95",
+        "alt": "Gym"
+      },
+      {
+        "driveFileId": "1tUS1ZvxHGqSMhHn2rg26dY-sCuKgOUlo",
+        "alt": "Hallway"
+      },
+      {
+        "driveFileId": "14HLq1IxxCjqNXC225cUkaOUzFWVj9ONP",
+        "alt": "Kids Playroom"
+      },
+      {
+        "driveFileId": "1cXMHRGjCFG9dhv6N3Z-rbuafg3cKebur",
+        "alt": "Kitchen"
+      },
+      {
+        "driveFileId": "1eCKmw87TeeWlcpcbRrdQ-2qsxO6IaU-W",
+        "alt": "Living 1 Townhouse"
+      },
+      {
+        "driveFileId": "1CNglujWS041hZsmMlcdpjhyrEbbIaYg5",
+        "alt": "Living 2 Townhouse"
+      },
+      {
+        "driveFileId": "1C0xT6qpX4kujRFsbmghZIh1DZafFTvFr",
+        "alt": "Living 3 West View"
+      },
+      {
+        "driveFileId": "1JTtXSEwTeVnDKPiGqOJ8hVg71qqG9H4A",
+        "alt": "Living 5 SE View"
+      },
+      {
+        "driveFileId": "1pGLIvlk6ZgUkrKAY798YUBKVHkh8dvT1",
+        "alt": "Living Villa"
+      },
+      {
+        "driveFileId": "1Rl21ybK5kc9dl_9J99nj6BRQOnNl90B_",
+        "alt": "Pergola"
+      },
+      {
+        "driveFileId": "1nATI-hYBJ4gnMyTVTcwsg70yd5vFArWB",
+        "alt": "Pickleball Court"
+      },
+      {
+        "driveFileId": "1eP0JJS0HQalWcOw-2SyoRuxCRR7UlLG5",
+        "alt": "Pool"
+      },
+      {
+        "driveFileId": "1xV_TEAHeGjuGHD2tq2Z0rx3f7ZfP50sF",
+        "alt": "Secondary Bathroom"
+      },
+      {
+        "driveFileId": "1Y_vPmeJz4jns3sJB8zWEQeZ78nNJJ5Sz",
+        "alt": "Summer Kitchen"
+      },
+      {
+        "driveFileId": "1zHkhLwzCBei8ZjBGGv3Ul5WrlC6MnkBA",
+        "alt": "Villa Garden Exterior"
+      },
+      {
+        "driveFileId": "1uQiorLBpfQC7ocSQ4txuZPpCjBjSm91f",
+        "alt": "Entrance 1"
+      },
+      {
+        "driveFileId": "1pWYBj4qTtY-hLwZM71rPDfYEgfGO3QYP",
+        "alt": "Hero 1"
+      },
+      {
+        "driveFileId": "17SnYHmwGrUGr6hq3rIpiXLstv1hfMUI6",
+        "alt": "Living 1"
+      },
+      {
+        "driveFileId": "145KqBSlnUqfsm6scFTmvH_PzI8Qbsh-l",
+        "alt": "Lobby 1"
+      },
+      {
+        "driveFileId": "1xr1dqngnP5jn41WksFDumcG_ihItlxiU",
+        "alt": "Lounge 1"
+      },
+      {
+        "driveFileId": "1ODLA-7l7vVwZvgd7uOebgRfshi435tgL",
+        "alt": "Master Bedroom 1"
+      },
+      {
+        "driveFileId": "1VNppxYXH2GNzooFzXz2iUDpqP6VSESuc",
+        "alt": "Powder Room 1"
+      },
+      {
+        "driveFileId": "1RYF6Mxonmyqp3l7jEfdDiO1IX_hDgMkW",
+        "alt": "Private Residence Entry 1"
+      },
+      {
+        "driveFileId": "1Q8NMjHo0cSono8TshCtaVvfTErEyy-aN",
+        "alt": "Hero 2"
+      },
+      {
+        "driveFileId": "1S4C6DtsXf3IuiTb7G7xJNAXyQZeNPpZF",
+        "alt": "Living 2"
+      },
+      {
+        "driveFileId": "1acbThAQAfVB_8fDsJjgXFZS-RovUn13V",
+        "alt": "Lobby 2"
+      },
+      {
+        "driveFileId": "1fjBuGEXW_dLiJLpSvp8-JxVGliXg2T_h",
+        "alt": "Lounge Work 2"
+      },
+      {
+        "driveFileId": "1ZxommEFOyeWYnc3MMQG_vSAAJumgOKm_",
+        "alt": "Powder Room 2"
+      },
+      {
+        "driveFileId": "14Q-maFCRYENg6NthfC4kVtEbaLUT-uB5",
+        "alt": "Private Residence Entry 2"
+      },
+      {
+        "driveFileId": "1UymakayZEC2cOhFVmfh12EK8fXSzbvni",
+        "alt": "Hero 3"
+      },
+      {
+        "driveFileId": "1nXXFTwvJlLoNSbybBSCq5ZUPHDVSBaxX",
+        "alt": "Hero 4"
+      }
+    ]
   },
   {
     "slug": "3000-waterside-fort-lauderdale",
