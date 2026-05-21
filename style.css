@@ -985,20 +985,74 @@ img { display: block; max-width: 100%; }
 
 .nav-dropdown-arrow { font-size: 10px; opacity: 0.6; }
 
+.nav-search-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 4px;
+  color: var(--gray-mid);
+  cursor: pointer;
+  transition: color 0.15s, border-color 0.15s, background 0.15s;
+}
+.nav-search-btn:hover,
+.nav-search-btn[aria-expanded="true"] {
+  color: var(--white);
+  border-color: rgba(255, 255, 255, 0.55);
+}
+.nav-search-btn[aria-expanded="true"] {
+  background: rgba(255, 255, 255, 0.06);
+}
+
 .nav-dropdown-menu {
   position: absolute;
   right: 0;
   top: calc(100% + 12px);
   background: var(--black);
   border: 1px solid rgba(255, 255, 255, 0.1);
-  min-width: 260px;
-  max-height: 400px;
-  overflow-y: auto;
+  min-width: 280px;
+  max-height: 440px;
+  overflow: hidden;
   display: none;
   z-index: 200;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  flex-direction: column;
 }
-.nav-dropdown-menu.open { display: block; }
+.nav-dropdown-menu.open { display: flex; }
+
+.nav-dropdown-search {
+  padding: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  flex-shrink: 0;
+  background: var(--black);
+}
+.nav-dropdown-search input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 8px 12px 8px 34px;
+  background: rgba(255, 255, 255, 0.08)
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%23aaa' stroke-width='2'%3E%3Ccircle cx='11' cy='11' r='8'/%3E%3Cline x1='21' y1='21' x2='16.65' y2='16.65'/%3E%3C/svg%3E")
+    11px center no-repeat;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 4px;
+  color: var(--white);
+  font-size: 12px;
+  letter-spacing: 0.3px;
+  font-family: var(--sans);
+  outline: none;
+}
+.nav-dropdown-search input::placeholder { color: rgba(255, 255, 255, 0.4); }
+.nav-dropdown-search input:focus { border-color: rgba(255, 255, 255, 0.4); }
+
+.nav-dropdown-list {
+  overflow-y: auto;
+  flex: 1 1 auto;
+  min-height: 0;
+}
 
 .nav-dropdown-item {
   display: block;

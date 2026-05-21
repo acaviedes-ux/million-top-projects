@@ -24,10 +24,18 @@
     </div>
 
     <div class="nav-dropdown" id="nav-dropdown">
-      <button class="nav-dropdown-btn" id="nav-dropdown-btn" aria-expanded="false">
-        Top Projects <span class="nav-dropdown-arrow">&#9662;</span>
+      <button class="nav-search-btn" id="nav-dropdown-btn" aria-expanded="false" aria-label="Search projects" title="Search projects">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="11" cy="11" r="8"/>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+        </svg>
       </button>
-      <div class="nav-dropdown-menu" id="nav-dropdown-menu" role="menu"></div>
+      <div class="nav-dropdown-menu" id="nav-dropdown-menu" role="dialog" aria-label="Search projects">
+        <div class="nav-dropdown-search">
+          <input type="text" id="nav-dropdown-search-input" placeholder="Search projects..." autocomplete="off" aria-label="Search projects">
+        </div>
+        <div class="nav-dropdown-list" id="nav-dropdown-list" role="listbox"></div>
+      </div>
     </div>
   </nav>
 
@@ -80,42 +88,89 @@
 
   var dropdownBtn    = document.getElementById('nav-dropdown-btn');
   var dropdownMenu   = document.getElementById('nav-dropdown-menu');
+  var dropdownList   = document.getElementById('nav-dropdown-list');
+  var dropdownInput  = document.getElementById('nav-dropdown-search-input');
   var dropdownLoaded = false;
+  var allProjects    = [];
+
+  function openDropdown() {
+    dropdownMenu.classList.add('open');
+    dropdownBtn.setAttribute('aria-expanded', 'true');
+    if (!dropdownLoaded) loadDropdown();
+    // Defer focus so the click doesn't immediately blur the input
+    setTimeout(function () { dropdownInput.focus(); }, 0);
+  }
+
+  function closeDropdown() {
+    dropdownMenu.classList.remove('open');
+    dropdownBtn.setAttribute('aria-expanded', 'false');
+  }
 
   dropdownBtn.addEventListener('click', function () {
-    var isOpen = dropdownMenu.classList.toggle('open');
-    dropdownBtn.setAttribute('aria-expanded', String(isOpen));
-    if (isOpen && !dropdownLoaded) loadDropdown();
+    if (dropdownMenu.classList.contains('open')) {
+      closeDropdown();
+    } else {
+      openDropdown();
+    }
   });
 
   document.addEventListener('click', function (e) {
     if (!document.getElementById('nav-dropdown').contains(e.target)) {
-      dropdownMenu.classList.remove('open');
-      dropdownBtn.setAttribute('aria-expanded', 'false');
+      closeDropdown();
     }
   });
 
+  dropdownInput.addEventListener('input', function () {
+    renderDropdownList(dropdownInput.value);
+  });
+
+  dropdownInput.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') {
+      closeDropdown();
+      dropdownBtn.focus();
+    } else if (e.key === 'Enter') {
+      var first = dropdownList.querySelector('.nav-dropdown-item');
+      if (first && first.href) window.location.href = first.href;
+    }
+  });
+
+  function renderDropdownList(query) {
+    clearEl(dropdownList);
+    var q = (query || '').trim().toLowerCase();
+    var filtered = q
+      ? allProjects.filter(function (p) {
+          return (p.name || '').toLowerCase().indexOf(q) !== -1;
+        })
+      : allProjects.slice();
+
+    if (!filtered.length) {
+      dropdownList.appendChild(el('div', 'nav-dropdown-loading', 'No matches.'));
+      return;
+    }
+    filtered.forEach(function (p) {
+      var a = el('a', 'nav-dropdown-item' + (p.slug === slug ? ' active' : ''), p.name);
+      a.href = '/projects/' + p.slug;
+      a.setAttribute('role', 'option');
+      dropdownList.appendChild(a);
+    });
+  }
+
   function loadDropdown() {
     dropdownLoaded = true;
-    clearEl(dropdownMenu);
-    dropdownMenu.appendChild(el('div', 'nav-dropdown-loading', 'Loading\u2026'));
+    clearEl(dropdownList);
+    dropdownList.appendChild(el('div', 'nav-dropdown-loading', 'Loading\u2026'));
 
     fetch('/api/projects')
       .then(function (r) { return r.json(); })
       .then(function (list) {
-        clearEl(dropdownMenu);
-        list
-          .filter(function (p) { return p.section === 'Top Projects'; })
-          .forEach(function (p) {
-            var a = el('a', 'nav-dropdown-item' + (p.slug === slug ? ' active' : ''), p.name);
-            a.href = '/projects/' + p.slug;
-            a.setAttribute('role', 'menuitem');
-            dropdownMenu.appendChild(a);
-          });
+        allProjects = (list || []).slice().sort(function (a, b) {
+          return (a.name || '').localeCompare(b.name || '');
+        });
+        renderDropdownList(dropdownInput.value);
       })
       .catch(function () {
-        clearEl(dropdownMenu);
-        dropdownMenu.appendChild(el('div', 'nav-dropdown-loading', 'Could not load.'));
+        clearEl(dropdownList);
+        dropdownList.appendChild(el('div', 'nav-dropdown-loading', 'Could not load.'));
       });
   }
 
