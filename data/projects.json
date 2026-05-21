@@ -37424,7 +37424,11 @@
         "title": "",
         "driveFileId": "1Wa0AliKDZjxlq_qwdQfThvh7_INo8D7N"
       }
-    ]
+    ],
+    "priceList": {
+      "driveFileId": "1Da-CFxSCtg0x5abrq98AB5XuIdmAsSyE",
+      "createdAt": "As of May 1, 2026"
+    }
   },
   {
     "slug": "palazzo-at-bayfront-naples",
