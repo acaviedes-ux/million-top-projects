@@ -37097,6 +37097,336 @@
     ]
   },
   {
+    "slug": "pagani-north-bay-village",
+    "name": "Pagani North Bay Village",
+    "esqueletoName": "Pagani North Bay Village",
+    "tpDataName": "Pagani North Bay Village",
+    "section": "Other Projects",
+    "startingPrice": "$4M",
+    "thumbnail": "/images/renders/pagani-north-bay-village.jpg",
+    "hero": "/images/renders/pagani-north-bay-village.jpg",
+    "address": "7940 West Dr, North Bay Village, FL 33141",
+    "developer": "Riviera Horizons",
+    "architecture": "Revuelta Architecture International",
+    "interiorDesign": "A++",
+    "completionDate": "2028",
+    "depositStructure": [
+      "20% at contract",
+      "10% at groundbreaking (Q1 2026)",
+      "10% at reaching the amenity deck (Q3 2026)",
+      "10% at top-off (Q2 2027)",
+      "50% at closing (Q1 2028)"
+    ],
+    "parkingSpaces": [
+      "1 assigned space and 1 valet for 2-bedroom units.",
+      "2 assigned spaces and 1 valet for 3-bedroom units.",
+      "3 assigned spaces and 1 valet for 4-bedroom units."
+    ],
+    "rentalRestrictions": [
+      "6 months minimum. 2 times per year."
+    ],
+    "hoa": "$1.65",
+    "contact": [
+      {
+        "name": "Diego Mila",
+        "phone": "+1 (954) 812-5627",
+        "email": "diego@paganiresidences.com"
+      }
+    ],
+    "projectLogo": "/images/logos/pagani-north-bay-village.png",
+    "isNew": true,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "North Bay Village",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2028",
+    "brochures": [
+      {
+        "title": "",
+        "driveFileId": "11uoj7H9GYrwHTwS6POwt9tRmyP5VcLBE"
+      },
+      {
+        "title": "",
+        "driveFileId": "1tFE8Y6mkLv2NwGkLJiZxZ7xUzzIQI4j1"
+      },
+      {
+        "title": "",
+        "driveFileId": "11_tW3q7r75c42hkY26yf-xgxcvkamyRL"
+      }
+    ],
+    "factSheets": [
+      {
+        "title": "",
+        "driveFileId": "14SMgN5w40geGnn_56PEEmMzaHEjSVN6r"
+      },
+      {
+        "title": "",
+        "driveFileId": "1ZT8wFK3Qh128E6QgNH5fAPYq7BnytMT0"
+      }
+    ],
+    "presentations": [
+      {
+        "title": "",
+        "driveFileId": "1t4nSOiZWyqVq09vhy-wfw7JyOSY2rny0"
+      }
+    ],
+    "renderings": [
+      {
+        "driveFileId": "16YJNMy3MZn-fpMss4I46kQMPvwCmHef8",
+        "alt": "Exterior - Pagani Resdiences - Hero Dusk"
+      },
+      {
+        "driveFileId": "1WcRy78P_U4N1MzWmISHwlqJCYrU-5rcN",
+        "alt": "Exterior - Pagani Residences - Broadwalk Marina"
+      },
+      {
+        "driveFileId": "1YGs1ZdDKTR6k4sK-wJ049MilizUj8-XJ",
+        "alt": "Exterior - Pagani Residences - Day Hero"
+      },
+      {
+        "driveFileId": "1rkNRo_KskNXD6zcaCRuJPrS5Apgb9gEF",
+        "alt": "Exterior - Pagani Residences - Hero"
+      },
+      {
+        "driveFileId": "1bRs5YdO3zj8ard1owuyJLHAZbolhsHYt",
+        "alt": "Exterior - Pagani Residences - Hummingbird"
+      },
+      {
+        "driveFileId": "1YtZHNnZtMGW17Qh_z7QEKIufbSRqkqR9",
+        "alt": "Exterior - Pagani Residences - Hummingbird Dusk"
+      },
+      {
+        "driveFileId": "1mHBsPhtOVYuoOUJNgZ_Ibr00nCbxA6oJ",
+        "alt": "Exterior - Pagani Residences - Nighttime Hero"
+      },
+      {
+        "driveFileId": "19evXna_JwEm9Tg19P8qZysC37t8ni1Jm",
+        "alt": "Exterior - Pagani Residences - Porte Cochere"
+      },
+      {
+        "driveFileId": "1nbqwR5n_4v6Jz8vqbQuejv5uCFGAU7Gw",
+        "alt": "Exterior - Pagani Residences - Residence 04 Hummingbird"
+      },
+      {
+        "driveFileId": "1HRQ4xAPsnQmiYA7VE2pnJ1-3LH1zbS-m",
+        "alt": "Interior - Pagani Residences - Amenties Entrance"
+      },
+      {
+        "driveFileId": "1tUsFR96FEX8JjJT06msJJgoeebQ0uN30",
+        "alt": "Interior - Pagani Residences - Bathroom Lobby"
+      },
+      {
+        "driveFileId": "101dTJeBCE9_CmsZvyUD1bMtv5ShbejLm",
+        "alt": "Interior - Pagani Residences - Business Center"
+      },
+      {
+        "driveFileId": "1IsfFeSKTFhEHagrQ6tFotZmvdobLGY0K",
+        "alt": "Interior - Pagani Residences - Elevator"
+      },
+      {
+        "driveFileId": "1I5okgSfiSXupkVTSE25z3Ca3c21siLT_",
+        "alt": "Interior - Pagani Residences - Gym Reception"
+      },
+      {
+        "driveFileId": "1OIAZkRtwtchdNGiprSsoXyLxnX75snHQ",
+        "alt": "Interior - Pagani Residences - Hallway"
+      },
+      {
+        "driveFileId": "1q2sHwhMWVhdaIWigmSjfEl5zDPh-cYc_",
+        "alt": "Interior - Pagani Residences - Lobby"
+      },
+      {
+        "driveFileId": "1_y9Q91Qx4LzKBER9cAT__7rtjnQfBxb4",
+        "alt": "Interior - Pagani Residences - Mailroom"
+      },
+      {
+        "driveFileId": "1wGoQJjl9WMhN0Yglj2v_Rp_7bcCoXCvy",
+        "alt": "Interior - Pagani Residences - Movie Theater"
+      },
+      {
+        "driveFileId": "1MCWrCFNVzHlOSar0mkc_JajrrEbSYvSU",
+        "alt": "Interior - Pagani Residences - Rooftop Pool"
+      },
+      {
+        "driveFileId": "10MZhp7Yvvs8Rb5OBn_4J_2rap1k-0OVS",
+        "alt": "Interior - Pagani Residences - Spa Shower Room"
+      },
+      {
+        "driveFileId": "1rXVhsK8vhNXHLXktYtiGvv512aCbcK1Q",
+        "alt": "Interior - Pagani Residences - Spa Vanity"
+      },
+      {
+        "driveFileId": "1l_K0l_cwSUikGHoW1XlVzRK4O4FlqcM-",
+        "alt": "Interior - Pagani Residences - Waterfront Spa"
+      },
+      {
+        "driveFileId": "1jrlut1m8Bquin6wQVvEJES6mxE6_ru_7",
+        "alt": "Units - Pagani Residences - Black Lacquer Tile"
+      },
+      {
+        "driveFileId": "1A_rMWu1h8R81V_3TQHOGqV1EXAdW_L7q",
+        "alt": "Units - Pagani Residences - Black Lacquer Wood"
+      },
+      {
+        "driveFileId": "1P0tDr78kbS27TG8YdPScFXn9CNqPBZ9P",
+        "alt": "Units - Pagani Residences - Black Wood Herringbone"
+      },
+      {
+        "driveFileId": "1Q67MIZpGLGGv55CUQuA06Ytbiv-KFC97",
+        "alt": "Units - Pagani Residences - Black Wood Tile"
+      },
+      {
+        "driveFileId": "1Cfs5PzjlrdVfQvjH8SJfmqFXZ_IY8UxI",
+        "alt": "Units - Pagani Residences - J'Adore Evening"
+      },
+      {
+        "driveFileId": "19WB7UGq1rHmo-5cbCyd-e9ZTwIg3uUdd",
+        "alt": "Units - Pagani Residences - J'Adore Lacquer Tile"
+      },
+      {
+        "driveFileId": "17hKICRjfeN0WHMrNzl-HLekB3ind0KgW",
+        "alt": "Units - Pagani Residences - J'Adore Lacquer Wood"
+      },
+      {
+        "driveFileId": "1wql9Ao17vCP_GfIVUTPuAE_rx4Dq2TxK",
+        "alt": "Units - Pagani Residences - J'Adore Wood Herringbone"
+      },
+      {
+        "driveFileId": "1RylLSGVfnXOK8ZNkfxVV8ujyx5NCTSvY",
+        "alt": "Units - Pagani Residences - J'Adore Wood Tile"
+      },
+      {
+        "driveFileId": "1-lqbRhwMErQ03vnsdzug-Kng8PqApqCa",
+        "alt": "Units - Pagani Residences - Penthouse Chef's Kitchen"
+      },
+      {
+        "driveFileId": "1xD8eDQp89-YYUHB2H_BABlGmwUnJZEXu",
+        "alt": "Units - Pagani Residences - Penthouse Great Room"
+      },
+      {
+        "driveFileId": "1Yzt3lMbdzU4grnw4woHoHossUDlRD6EI",
+        "alt": "Units - Pagani Residences - Penthouse Indoor Outdoor Living"
+      },
+      {
+        "driveFileId": "1gpKmr8q_p7Dbfe1EGLHSfkhz6No79ha0",
+        "alt": "Units - Pagani Residences - Penthouse Primary Bedroom"
+      },
+      {
+        "driveFileId": "1QVdr0g32f8PHp0DPXkf8PWBneatLGZHv",
+        "alt": "Units - Pagani Residences - Penthouse Private Terraces"
+      },
+      {
+        "driveFileId": "1-N_TkG-K3k4YmeGJDSeM6w504A9MTvd-",
+        "alt": "Units - Pagani Residences - Primary Bathroom"
+      },
+      {
+        "driveFileId": "1bU6zbAfnPr23--C9su-J8pTrtHTtJQBS",
+        "alt": "Units - Pagani Residences - Primary Bedroom"
+      },
+      {
+        "driveFileId": "1tGcGcUMruobaHZo6M5bv42OnycxV1KF-",
+        "alt": "Units - Pagani Residences - Residence 02 Living Room"
+      },
+      {
+        "driveFileId": "1jZbC4c4EBNJlLMIYM9aPK7T2ynortnx1",
+        "alt": "Units - Pagani Residences - Statuario Lacquer Wood"
+      },
+      {
+        "driveFileId": "1cOKV66pC6Mq4cxw7xxCiDVR8fxNDQY4j",
+        "alt": "Units - Pagani Residences - Terrace"
+      },
+      {
+        "driveFileId": "1yg-BY-2PePSZHOPXb0yPhm0ltj-8fnIt",
+        "alt": "Units - Pagani Residences - Travertine Evening"
+      },
+      {
+        "driveFileId": "1bFWH4CWBpTP9W6_jqGO-6YYeI3ZUjreW",
+        "alt": "Units - Pagani Residences - Travertine Lacquer Tile"
+      },
+      {
+        "driveFileId": "1cgADvES_k3OwJ-MZUynZOCSslFu9k2gz",
+        "alt": "Units - Pagani Residences - Travertine Lacquer Wood"
+      },
+      {
+        "driveFileId": "1z2948r9yMOfy0rUH1IKQ-G38IE5YeCa1",
+        "alt": "Units - Pagani Residences - Travertine Wood Herringbone"
+      },
+      {
+        "driveFileId": "1RAlAXphPQ5WGn4SyJbGPBM7dDAWrB08B",
+        "alt": "Units - Pagani Residences - Travertine Wood Tile"
+      },
+      {
+        "driveFileId": "1P8MnVwxshxqLG8dZuLx82LJIGKVMLtJ2",
+        "alt": "Units - Pagani Residences - White Statuario Lacquer Tile"
+      },
+      {
+        "driveFileId": "1O1m-eu2lKcaZQmOvoEjRnYyHLknYQcNr",
+        "alt": "Units - Pagani Residences - White Statuario Wood Herringbone"
+      },
+      {
+        "driveFileId": "1bwYUKKXJxWBMKYR3PWil2RinFxgEw8tk",
+        "alt": "Units - Pagani Residences - White Statuario Wood Tile"
+      },
+      {
+        "driveFileId": "1mhmnQjqR3as54PQ_SMHVVQLp50typZ0J",
+        "alt": "Interior - Pagani Residences - Gym 1"
+      },
+      {
+        "driveFileId": "1mu_AH3neFH-x_BEfPF0_zy1Vvj86sjn3",
+        "alt": "Interior - Pagani Residences - Library 1"
+      },
+      {
+        "driveFileId": "1ow1s_QG6x7kXu8DL5riwqUlgkR73QoSQ",
+        "alt": "Interior - Pagani Residences - Lounge 1"
+      },
+      {
+        "driveFileId": "1nJHA294I8V6SCrfXflBKyrQSJNU-kNtz",
+        "alt": "Interior - Pagani Residences - Spa 1"
+      },
+      {
+        "driveFileId": "17iurLr8SelOsAZqYBMe0HdcAkQhBYHS0",
+        "alt": "Units - Pagani Residences - Garage 1"
+      },
+      {
+        "driveFileId": "1AgBwoqOvPfuhRrTZv9y0USRIMSRjK-kO",
+        "alt": "Interior - Pagani Residences - Gym 2"
+      },
+      {
+        "driveFileId": "1cplvBfVM5zqHVrhBjVGftF4attAtwQrx",
+        "alt": "Interior - Pagani Residences - Library 2"
+      },
+      {
+        "driveFileId": "1B3oBUR5earQzIFCifatlni5IMi1nBZGd",
+        "alt": "Interior - Pagani Residences - Lounge 2"
+      },
+      {
+        "driveFileId": "1b25i5lurnPqHgxCsHDH1elIStLU_ntbz",
+        "alt": "Interior - Pagani Residences - Spa 2"
+      },
+      {
+        "driveFileId": "150ocbt9iA3UNAPIIPk5LMlV-s-vv17D1",
+        "alt": "Units - Pagani Residences - Garage 2"
+      },
+      {
+        "driveFileId": "1X8aQYmbhkyWHKUBlJ9wj5i7ERQwRoZYs",
+        "alt": "Interior - Pagani Residences - Lounge 3"
+      },
+      {
+        "driveFileId": "1MGv8Ieh9UGjFF9fC15NRLF1K6VH_zDrT",
+        "alt": "Units - Pagani Residences - Garage 3"
+      },
+      {
+        "driveFileId": "1qF6ujYBqstVfNt9hGGjhh59rBqNyjYnF",
+        "alt": "Units - Pagani Residences - Garage 4"
+      }
+    ],
+    "floorPlans": [
+      {
+        "title": "",
+        "driveFileId": "1Wa0AliKDZjxlq_qwdQfThvh7_INo8D7N"
+      }
+    ]
+  },
+  {
     "slug": "palazzo-at-bayfront-naples",
     "name": "Palazzo at Bayfront Naples",
     "tpDataName": "Palazzo at Bayfront Naples",
