@@ -175,6 +175,13 @@
 
   function buildNavFilterPanel() {
     while (navFiltersPanelEl.firstChild) navFiltersPanelEl.removeChild(navFiltersPanelEl.firstChild);
+
+    // Section header inside the filters panel
+    var panelHeader = document.createElement('div');
+    panelHeader.className = 'nav-dd-section-label';
+    panelHeader.textContent = 'Filter by';
+    navFiltersPanelEl.appendChild(panelHeader);
+
     NAV_FILTER_DEFS.forEach(function(def) {
       var counts, values;
       if (def.staticValues) {
@@ -362,10 +369,16 @@
       return nameOk && projectMatchesNavFilters(p);
     });
 
-    if (!filtered.length) {
-      dropdownList.appendChild(el('div', 'nav-dropdown-loading', 'No matches.'));
-      return;
-    }
+    // Results count label — gives a clear visual break between filters and list
+    var countLabel = document.createElement('div');
+    countLabel.className = 'nav-dd-section-label';
+    countLabel.textContent = filtered.length
+      ? filtered.length + ' project' + (filtered.length !== 1 ? 's' : '')
+      : 'No matches';
+    dropdownList.appendChild(countLabel);
+
+    if (!filtered.length) return;
+
     filtered.forEach(function (p) {
       var a = el('a', 'nav-dropdown-item' + (p.slug === slug ? ' active' : ''), p.name);
       a.href = '/projects/' + p.slug;
