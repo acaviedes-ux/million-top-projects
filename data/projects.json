@@ -579,7 +579,7 @@
   },
   {
     "slug": "andare-residences",
-    "name": "Andare Residences",
+    "name": "Andare Residences Fort Lauderdale",
     "tpDataName": "Andare Residences",
     "section": "Top Projects",
     "startingPrice": "$2.2M",
@@ -745,7 +745,7 @@
   },
   {
     "slug": "aria-reserve",
-    "name": "Aria Reserve",
+    "name": "Aria Reserve Miami",
     "tpDataName": "Aria Reserve",
     "section": "Top Projects",
     "startingPrice": "$1.2M",
@@ -1039,7 +1039,7 @@
   },
   {
     "slug": "armani-casa-pompano-beach",
-    "name": "Armani Casa Pompano Beach",
+    "name": "Armani Casa Residences Pompano Beach",
     "tpDataName": "Armani Casa Pompano Beach",
     "section": "Top Projects",
     "startingPrice": "$5M",
@@ -1539,7 +1539,7 @@
   },
   {
     "slug": "cipriani-residences",
-    "name": "Cipriani Residences",
+    "name": "Cipriani Residences Brickell",
     "tpDataName": "Cipriani Residences",
     "section": "Top Projects",
     "startingPrice": "$1.7M",
@@ -2191,7 +2191,7 @@
   },
   {
     "slug": "edition-residences-edgewater",
-    "name": "EDITION® Residences Edgewater",
+    "name": "EDITION Edgewater",
     "tpDataName": "EDITION® Residences Edgewater",
     "section": "Top Projects",
     "startingPrice": "$3.2M",
@@ -2412,7 +2412,7 @@
   },
   {
     "slug": "faena-house",
-    "name": "Faena House",
+    "name": "Faena House Miami Beach",
     "esqueletoName": "Faena House Miami Beach",
     "startingPrice": "$7M",
     "thumbnail": "/images/renders/faena-house.jpg",
@@ -2575,7 +2575,7 @@
   },
   {
     "slug": "faena-residences-downtown-miami",
-    "name": "Faena Residences Downtown Miami",
+    "name": "Faena Residences Miami Downtown Miami",
     "tpDataName": "Faena Residences Downtown Miami",
     "section": "Top Projects",
     "startingPrice": "$1.2M",
@@ -3154,7 +3154,7 @@
   },
   {
     "slug": "la-mare",
-    "name": "La Maré",
+    "name": "La Maré Bay Harbor Islands",
     "tpDataName": "La Maré",
     "section": "Top Projects",
     "startingPrice": "$1.9M",
@@ -3796,7 +3796,7 @@
   },
   {
     "slug": "mr-c-residences-tigertail",
-    "name": "Mr. C Residences Tigertail",
+    "name": "Mr. C Tigertail Coconut Grove",
     "tpDataName": "Mr. C Residences Tigertail",
     "section": "Top Projects",
     "startingPrice": "$999K",
@@ -4474,7 +4474,7 @@
   },
   {
     "slug": "ocean-house",
-    "name": "Ocean House",
+    "name": "Ocean House Surfside",
     "tpDataName": "Ocean House",
     "section": "Top Projects",
     "startingPrice": "$7M",
@@ -4642,7 +4642,7 @@
   },
   {
     "slug": "ora-casa-tua",
-    "name": "ORA by Casa Tua",
+    "name": "ORA by Casa Tua Brickell",
     "esqueletoName": "ORA by Casa Tua Brickell",
     "startingPrice": "$993K",
     "thumbnail": "/images/renders/ora-casa-tua.jpg",
@@ -6027,7 +6027,7 @@
   },
   {
     "slug": "shore-club-private-collection-residences",
-    "name": "Shore Club Private Collection Residences",
+    "name": "Shore Club Private Collections Miami Beach",
     "tpDataName": "Shore Club Private Collection Residences",
     "section": "Top Projects",
     "startingPrice": "$9M",
@@ -6156,7 +6156,7 @@
   },
   {
     "slug": "shorecrest-west-palm-beach",
-    "name": "Shorecrest West Palm Beach",
+    "name": "Shorecrest Flagler Drive West Palm Beach",
     "tpDataName": "Shorecrest West Palm Beach",
     "section": "Top Projects",
     "startingPrice": "$3M",
@@ -6348,7 +6348,7 @@
   },
   {
     "slug": "st-regis-residences-bahia-mar-fort-lauderdale",
-    "name": "St. Regis Residences Bahia Mar Fort Lauderdale",
+    "name": "St. Regis® Residences Bahia Mar Fort Lauderdale",
     "tpDataName": "St. Regis Residences Bahia Mar Fort Lauderdale",
     "section": "Top Projects",
     "startingPrice": "$3M",
@@ -8653,7 +8653,7 @@
   },
   {
     "slug": "the-raleigh",
-    "name": "The Raleigh",
+    "name": "The Raleigh by Rosewood",
     "tpDataName": "The Raleigh",
     "section": "Top Projects",
     "startingPrice": "No Pricing Available",
@@ -9332,7 +9332,7 @@
   },
   {
     "slug": "the-residences-at-mandarin-oriental-west-palm-beach",
-    "name": "The Residences at Mandarin Oriental, West Palm Beach",
+    "name": "Mandarin Oriental Residences, West Palm Beach",
     "tpDataName": "The Residences at Mandarin Oriental, West Palm Beach",
     "section": "Top Projects",
     "startingPrice": "$3.5M",
@@ -12680,7 +12680,7 @@
   },
   {
     "slug": "1-hotel-homes",
-    "name": "1 Hotel & Homes",
+    "name": "1 Hotel & Homes South Beach",
     "tpDataName": "1 Hotel & Homes",
     "section": "Other Projects",
     "startingPrice": "Check Availability on MLS",
@@ -13137,7 +13137,7 @@
   },
   {
     "slug": "2000-ocean",
-    "name": "2000 Ocean",
+    "name": "2000 Ocean Hallandale Beach",
     "tpDataName": "2000 Ocean",
     "section": "Other Projects",
     "startingPrice": "$3.5M",
@@ -13816,7 +13816,7 @@
   },
   {
     "slug": "3200-south-ocean",
-    "name": "3200 South Ocean",
+    "name": "3200 South Ocean Highland Beach",
     "tpDataName": "3200 South Ocean",
     "section": "Other Projects",
     "startingPrice": "Check Availability on MLS",
@@ -14001,7 +14001,7 @@
   },
   {
     "slug": "321-ocean",
-    "name": "321 Ocean",
+    "name": "321 Ocean Miami Beach",
     "tpDataName": "321 Ocean",
     "section": "Other Projects",
     "startingPrice": "Check Availability on MLS",
@@ -14122,7 +14122,7 @@
   },
   {
     "slug": "5000-north-ocean",
-    "name": "5000 North Ocean",
+    "name": "5000 North Ocean Singer Island",
     "tpDataName": "5000 North Ocean",
     "section": "Other Projects",
     "startingPrice": "Check Availability on MLS",
@@ -14257,7 +14257,7 @@
   },
   {
     "slug": "57-ocean",
-    "name": "57 Ocean",
+    "name": "57 Ocean Miami Beach",
     "tpDataName": "57 Ocean",
     "section": "Other Projects",
     "startingPrice": "$2.8M",
@@ -14771,7 +14771,7 @@
   },
   {
     "slug": "72-park",
-    "name": "72 Park",
+    "name": "72 Park Miami Beach",
     "tpDataName": "72 Park",
     "section": "Other Projects",
     "startingPrice": "$749K",
@@ -14878,7 +14878,7 @@
   },
   {
     "slug": "9900-west",
-    "name": "9900 West",
+    "name": "9900 West Bay Harbor Islands",
     "tpDataName": "9900 West",
     "section": "Other Projects",
     "startingPrice": "$3.2M",
@@ -15684,7 +15684,7 @@
   },
   {
     "slug": "alina-residences",
-    "name": "Alina Residences",
+    "name": "Alina Residences Boca Raton",
     "tpDataName": "Alina Residences",
     "section": "Other Projects",
     "startingPrice": "$4.6M",
@@ -16497,7 +16497,7 @@
   },
   {
     "slug": "apogee",
-    "name": "Apogee",
+    "name": "Apogee South Beach",
     "tpDataName": "Apogee",
     "section": "Other Projects",
     "startingPrice": "$8.4M",
@@ -16852,7 +16852,7 @@
   },
   {
     "slug": "armani-casa",
-    "name": "Armani Casa",
+    "name": "Armani Casa Sunny Isles Beach",
     "tpDataName": "Armani Casa",
     "section": "Other Projects",
     "startingPrice": "$650K",
@@ -17468,7 +17468,7 @@
   },
   {
     "slug": "asia-brickell",
-    "name": "Asia Brickell",
+    "name": "Asia Brickell Key",
     "tpDataName": "Asia Brickell",
     "section": "Other Projects",
     "startingPrice": "Check Availability on MLS",
@@ -17600,7 +17600,7 @@
   },
   {
     "slug": "aston-martin-residences",
-    "name": "Aston Martin Residences",
+    "name": "Aston Martin Residences Downtown Miami",
     "tpDataName": "Aston Martin Residences",
     "section": "Other Projects",
     "startingPrice": "$379K",
@@ -18345,7 +18345,7 @@
   },
   {
     "slug": "baccarat-residences",
-    "name": "Baccarat Residences",
+    "name": "Baccarat Residences Brickell",
     "tpDataName": "Baccarat Residences",
     "section": "Other Projects",
     "startingPrice": "$4.1M",
@@ -18985,7 +18985,7 @@
   },
   {
     "slug": "bayview-village",
-    "name": "Bayview Village",
+    "name": "Bayview Village Fisher Island",
     "tpDataName": "Bayview Village",
     "section": "Other Projects",
     "startingPrice": "Check Availability on MLS",
@@ -19133,7 +19133,7 @@
   },
   {
     "slug": "beach-house-8",
-    "name": "Beach House 8",
+    "name": "Beach House 8 Miami Beach",
     "tpDataName": "Beach House 8",
     "section": "Other Projects",
     "startingPrice": "Check Availability on MLS",
@@ -19653,7 +19653,7 @@
   },
   {
     "slug": "biltmore-row",
-    "name": "Biltmore Row",
+    "name": "Biltmore Row Coral Gables",
     "tpDataName": "Biltmore Row",
     "section": "Other Projects",
     "startingPrice": "Check Availability on MLS",
@@ -19729,7 +19729,7 @@
   },
   {
     "slug": "blue-green-diamond-towers",
-    "name": "Blue & Green Diamond Towers",
+    "name": "Blue & Green Diamond Towers Miami Beach",
     "tpDataName": "Blue & Green Diamond Towers",
     "section": "Other Projects",
     "startingPrice": "Check Availability on MLS",
@@ -19780,7 +19780,7 @@
   },
   {
     "slug": "brickell-city-centre",
-    "name": "Brickell City Centre",
+    "name": "Brickell City Centre Miami",
     "tpDataName": "Brickell City Centre",
     "section": "Other Projects",
     "startingPrice": "Check Availability on MLS",
@@ -20147,7 +20147,7 @@
   },
   {
     "slug": "bristol-tower",
-    "name": "Bristol Tower",
+    "name": "Bristol Tower Brickell",
     "tpDataName": "Bristol Tower",
     "section": "Other Projects",
     "startingPrice": "Check Availability on MLS",
@@ -20267,7 +20267,7 @@
   },
   {
     "slug": "caribbean",
-    "name": "Caribbean",
+    "name": "Caribbean Miami Beach",
     "tpDataName": "Caribbean",
     "section": "Other Projects",
     "startingPrice": "Check Availability on MLS",
@@ -20395,7 +20395,7 @@
   },
   {
     "slug": "casa-bella-residences-miami",
-    "name": "Casa Bella Residences Miami",
+    "name": "Casa Bella by B&B Italia Downtown Miami",
     "tpDataName": "Casa Bella Residences Miami",
     "section": "Other Projects",
     "startingPrice": "$1.2M",
@@ -20971,7 +20971,7 @@
   },
   {
     "slug": "chateau-beach-residences",
-    "name": "Château Beach Residences",
+    "name": "Château Beach Residences Sunny Isles Beach",
     "tpDataName": "Château Beach Residences",
     "section": "Other Projects",
     "startingPrice": "Check Availability on MLS",
@@ -21410,7 +21410,7 @@
   },
   {
     "slug": "continuum-south-beach",
-    "name": "Continuum South Beach",
+    "name": "Continuum on South Beach",
     "tpDataName": "Continuum South Beach",
     "section": "Other Projects",
     "startingPrice": "$1.7M",
@@ -22856,7 +22856,7 @@
   },
   {
     "slug": "eighty-seven-park",
-    "name": "Eighty Seven Park",
+    "name": "Eighty Seven Park Surfside",
     "tpDataName": "Eighty Seven Park",
     "section": "Other Projects",
     "startingPrice": "$1.9M",
@@ -23875,7 +23875,7 @@
   },
   {
     "slug": "fendi-chateau",
-    "name": "Fendi Château",
+    "name": "Fendi Château Residences Surfside",
     "tpDataName": "Fendi Château",
     "section": "Other Projects",
     "startingPrice": "$11M",
@@ -24735,7 +24735,7 @@
   },
   {
     "slug": "forte-on-flagler",
-    "name": "Forté on Flagler",
+    "name": "Forté on Flagler West Palm Beach",
     "tpDataName": "Forté on Flagler",
     "section": "Other Projects",
     "startingPrice": "$14.6M",
@@ -24938,7 +24938,7 @@
   },
   {
     "slug": "four-seasons-hotel-private-residences",
-    "name": "Four Seasons Hotel & Private Residences",
+    "name": "Four Seasons Hotel & Private Residences Fort Lauderdale",
     "tpDataName": "Four Seasons Hotel & Private Residences",
     "section": "Other Projects",
     "startingPrice": "$4.4M",
@@ -25139,7 +25139,7 @@
   },
   {
     "slug": "four-seasons-residences-las-vegas",
-    "name": "Four Seasons Residences Las Vegas",
+    "name": "Four Seasons Private Residences Las Vegas",
     "tpDataName": "Four Seasons Residences Las Vegas",
     "section": "Other Projects",
     "startingPrice": "$3.9M",
@@ -25456,7 +25456,7 @@
   },
   {
     "slug": "gale-miami",
-    "name": "Gale Miami",
+    "name": "Gale Miami Hotel & Residences",
     "tpDataName": "Gale Miami",
     "section": "Other Projects",
     "startingPrice": "$635K",
@@ -25748,7 +25748,7 @@
   },
   {
     "slug": "glass-miami-beach",
-    "name": "Glass Miami Beach",
+    "name": "Glass South Beach",
     "tpDataName": "Glass Miami Beach",
     "section": "Other Projects",
     "startingPrice": "Check Availability on MLS",
@@ -26378,7 +26378,7 @@
   },
   {
     "slug": "hub-miami",
-    "name": "HUB Miami",
+    "name": "HUB Miami Downtown Miami",
     "tpDataName": "HUB Miami",
     "section": "Other Projects",
     "startingPrice": "$510K",
@@ -26793,7 +26793,7 @@
   },
   {
     "slug": "il-villaggio",
-    "name": "Il Villaggio",
+    "name": "Il Villaggio Miami",
     "tpDataName": "Il Villaggio",
     "section": "Other Projects",
     "startingPrice": "Check Availability on MLS",
@@ -26949,7 +26949,7 @@
   },
   {
     "slug": "jade-beach",
-    "name": "Jade Beach",
+    "name": "Jade Beach Sunny Isles",
     "tpDataName": "Jade Beach",
     "section": "Other Projects",
     "startingPrice": "Check Availability on MLS",
@@ -27065,7 +27065,7 @@
   },
   {
     "slug": "jade-ocean",
-    "name": "Jade Ocean",
+    "name": "Jade Ocean Sunny Isles Beach",
     "tpDataName": "Jade Ocean",
     "section": "Other Projects",
     "startingPrice": "$1.1M",
@@ -27250,7 +27250,7 @@
   },
   {
     "slug": "jade-signature",
-    "name": "Jade Signature",
+    "name": "Jade Signature Sunny Isles Beach",
     "tpDataName": "Jade Signature",
     "section": "Other Projects",
     "startingPrice": "$2.1M",
@@ -27517,7 +27517,7 @@
   },
   {
     "slug": "jem-residences",
-    "name": "JEM Residences",
+    "name": "JEM Residences Brickell",
     "tpDataName": "JEM Residences",
     "section": "Other Projects",
     "startingPrice": "$606K",
@@ -27709,7 +27709,7 @@
   },
   {
     "slug": "l-atelier",
-    "name": "L’Atelier",
+    "name": "L’atelier Miami Beach",
     "tpDataName": "L’Atelier",
     "section": "Other Projects",
     "startingPrice": "Check Availability on MLS",
@@ -27803,7 +27803,7 @@
   },
   {
     "slug": "la-baia-north-bay-harbor",
-    "name": "La Baia North Bay Harbor",
+    "name": "La Baia North Bay Harbor Islands",
     "tpDataName": "La Baia North Bay Harbor",
     "section": "Other Projects",
     "startingPrice": "$1.5M",
@@ -27970,7 +27970,7 @@
   },
   {
     "slug": "la-santa-maria",
-    "name": "La Santa Maria",
+    "name": "La Santa Maria Brickell",
     "tpDataName": "La Santa Maria",
     "section": "Other Projects",
     "startingPrice": "Check Availability on MLS",
@@ -28118,7 +28118,7 @@
   },
   {
     "slug": "lofty-residences",
-    "name": "Lofty Residences",
+    "name": "Lofty Residences Brickell",
     "tpDataName": "Lofty Residences",
     "section": "Other Projects",
     "startingPrice": "$2.3M",
@@ -29071,7 +29071,7 @@
   },
   {
     "slug": "missoni-baia",
-    "name": "Missoni Baia",
+    "name": "Missoni Baia Edgewater",
     "tpDataName": "Missoni Baia",
     "section": "Other Projects",
     "startingPrice": "Check Availability on MLS",
@@ -29271,7 +29271,7 @@
   },
   {
     "slug": "monaco-yacht-club-residences",
-    "name": "Monaco Yacht Club & Residences",
+    "name": "Monaco Yacht Club & Residences Miami Beach",
     "tpDataName": "Monaco Yacht Club & Residences",
     "section": "Other Projects",
     "startingPrice": "Check Availability on MLS",
@@ -29443,7 +29443,7 @@
   },
   {
     "slug": "monad-terrace",
-    "name": "Monad Terrace",
+    "name": "Monad Terrace Miami Beach",
     "tpDataName": "Monad Terrace",
     "section": "Other Projects",
     "startingPrice": "Check Availability on MLS",
@@ -29549,7 +29549,7 @@
   },
   {
     "slug": "murano-at-portofino",
-    "name": "Murano at Portofino",
+    "name": "Murano at Portofino South Beach",
     "tpDataName": "Murano at Portofino",
     "section": "Other Projects",
     "startingPrice": "Check Availability on MLS",
@@ -29829,7 +29829,7 @@
   },
   {
     "slug": "muse-residences",
-    "name": "Muse Residences",
+    "name": "Muse Residences Sunny Isles Beach",
     "tpDataName": "Muse Residences",
     "section": "Other Projects",
     "startingPrice": "$3.3M",
@@ -30760,7 +30760,7 @@
   },
   {
     "slug": "ocean-delray",
-    "name": "Ocean Delray",
+    "name": "Ocean Delray Beach",
     "tpDataName": "Ocean Delray",
     "section": "Other Projects",
     "startingPrice": "Check Availability on MLS",
@@ -30874,7 +30874,7 @@
   },
   {
     "slug": "ocean-house-2",
-    "name": "Ocean House",
+    "name": "Ocean House South Beach",
     "tpDataName": "Ocean House",
     "section": "Other Projects",
     "startingPrice": "$7M",
@@ -31052,7 +31052,7 @@
   },
   {
     "slug": "ocean-park",
-    "name": "Ocean Park",
+    "name": "Ocean Park South Beach",
     "tpDataName": "Ocean Park",
     "section": "Other Projects",
     "startingPrice": "Check Availability on MLS",
@@ -31189,7 +31189,7 @@
   },
   {
     "slug": "ocean-terrace",
-    "name": "Ocean Terrace",
+    "name": "Ocean Terrace Miami Beach",
     "tpDataName": "Ocean Terrace",
     "section": "Other Projects",
     "startingPrice": "$10.1M",
@@ -31887,7 +31887,7 @@
   },
   {
     "slug": "oceanside",
-    "name": "Oceanside",
+    "name": "Oceanside Fisher Island",
     "tpDataName": "Oceanside",
     "section": "Other Projects",
     "startingPrice": "Check Availability on MLS",
@@ -32027,7 +32027,7 @@
   },
   {
     "slug": "okan-tower",
-    "name": "Okan Tower",
+    "name": "Okan Tower Downtown Miami",
     "tpDataName": "Okan Tower",
     "section": "Other Projects",
     "startingPrice": "$1.1M",
@@ -33034,7 +33034,7 @@
   },
   {
     "slug": "one-ocean",
-    "name": "One Ocean",
+    "name": "One Ocean South Beach",
     "tpDataName": "One Ocean",
     "section": "Other Projects",
     "startingPrice": "Check Availability on MLS",
@@ -33143,7 +33143,7 @@
   },
   {
     "slug": "one-park-tower-by-turnberry",
-    "name": "One Park Tower by Turnberry",
+    "name": "One Park Tower by Turnberry North Miami",
     "tpDataName": "One Park Tower by Turnberry",
     "section": "Other Projects",
     "startingPrice": "$1M",
@@ -33596,7 +33596,7 @@
   },
   {
     "slug": "one-thousand-museum",
-    "name": "One Thousand Museum",
+    "name": "One Thousand Museum Downtown Miami",
     "tpDataName": "One Thousand Museum",
     "section": "Other Projects",
     "startingPrice": "$5.9M",
@@ -34124,7 +34124,7 @@
   },
   {
     "slug": "origin",
-    "name": "Origin",
+    "name": "Origin Bay Harbor Islands",
     "tpDataName": "Origin",
     "section": "Other Projects",
     "startingPrice": "$3.8M",
@@ -36607,7 +36607,7 @@
   },
   {
     "slug": "park-grove",
-    "name": "Park Grove",
+    "name": "Park Grove Coconut Grove",
     "tpDataName": "Park Grove",
     "section": "Other Projects",
     "startingPrice": "$1.8M",
@@ -36881,7 +36881,7 @@
   },
   {
     "slug": "parque-towers",
-    "name": "Parque Towers",
+    "name": "Parque Towers Sunny Isles Beach",
     "tpDataName": "Parque Towers",
     "section": "Other Projects",
     "startingPrice": "Check Availability on MLS",
@@ -37641,7 +37641,7 @@
   },
   {
     "slug": "porsche-design-tower",
-    "name": "Porsche Design Tower",
+    "name": "Porsche Design Tower Sunny Isles Beach",
     "tpDataName": "Porsche Design Tower",
     "section": "Other Projects",
     "startingPrice": "Check Availability on MLS",
@@ -37931,7 +37931,7 @@
   },
   {
     "slug": "portofino-tower",
-    "name": "Portofino Tower",
+    "name": "Portofino Tower South Beach",
     "tpDataName": "Portofino Tower",
     "section": "Other Projects",
     "startingPrice": "Check Availability on MLS",
@@ -38051,7 +38051,7 @@
   },
   {
     "slug": "prive-island",
-    "name": "Privé Island",
+    "name": "Privé Island Aventura",
     "tpDataName": "Privé Island",
     "section": "Other Projects",
     "startingPrice": "Check Availability on MLS",
@@ -38261,7 +38261,7 @@
   },
   {
     "slug": "regalia",
-    "name": "Regalia",
+    "name": "Regalia Sunny Isles Beach",
     "tpDataName": "Regalia",
     "section": "Other Projects",
     "startingPrice": "$13.9M",
@@ -39166,7 +39166,7 @@
   },
   {
     "slug": "salato",
-    "name": "Salato",
+    "name": "Salato Pompano Beach",
     "tpDataName": "Salato",
     "section": "Other Projects",
     "startingPrice": "$2.6M",
@@ -39324,7 +39324,7 @@
   },
   {
     "slug": "setai-residences",
-    "name": "Setai Residences",
+    "name": "Setai Residences Miami Beach",
     "tpDataName": "Setai Residences",
     "section": "Other Projects",
     "startingPrice": "$2.3M",
@@ -39444,7 +39444,7 @@
   },
   {
     "slug": "shell-bay-by-auberge",
-    "name": "Shell Bay by Auberge",
+    "name": "Shell Bay by Auberge Hallandale",
     "tpDataName": "Shell Bay by Auberge",
     "section": "Other Projects",
     "startingPrice": "$1.8M",
@@ -39669,7 +39669,7 @@
   },
   {
     "slug": "shoma-bay",
-    "name": "Shoma Bay",
+    "name": "Shoma Bay North Bay Village",
     "tpDataName": "Shoma Bay",
     "section": "Other Projects",
     "startingPrice": "$941K",
@@ -40059,7 +40059,7 @@
   },
   {
     "slug": "sixth-rio",
-    "name": "Sixth & Rio",
+    "name": "Sixth & Rio Fort Lauderdale",
     "tpDataName": "Sixth & Rio",
     "section": "Other Projects",
     "startingPrice": "$799K",
@@ -40281,7 +40281,7 @@
   },
   {
     "slug": "south-flagler-house",
-    "name": "South Flagler House",
+    "name": "South Flagler House West Palm Beach",
     "tpDataName": "South Flagler House",
     "section": "Other Projects",
     "startingPrice": "$7.4M",
@@ -40558,7 +40558,7 @@
   },
   {
     "slug": "st-regis-residences-bal-harbour",
-    "name": "St Regis® Residences Bal Harbour",
+    "name": "St. Regis® Residences Bal Harbour",
     "tpDataName": "St Regis® Residences Bal Harbour",
     "section": "Other Projects",
     "startingPrice": "Check Availability on MLS",
@@ -40767,7 +40767,7 @@
   },
   {
     "slug": "surf-row",
-    "name": "Surf Row",
+    "name": "Surf Row Residences Surfside",
     "tpDataName": "Surf Row",
     "section": "Other Projects",
     "startingPrice": "$1.3M",
@@ -40926,7 +40926,7 @@
   },
   {
     "slug": "the-avenue",
-    "name": "The Avenue",
+    "name": "The Avenue Coral Gables",
     "tpDataName": "The Avenue",
     "section": "Other Projects",
     "startingPrice": "$848K",
@@ -41095,7 +41095,7 @@
   },
   {
     "slug": "the-bath-club",
-    "name": "The Bath Club",
+    "name": "The Bath Club Miami Beach",
     "tpDataName": "The Bath Club",
     "section": "Other Projects",
     "startingPrice": "Check Availability on MLS",
@@ -41219,7 +41219,7 @@
   },
   {
     "slug": "the-cove-residences",
-    "name": "The Cove Residences",
+    "name": "The Cove Residences Edgewater",
     "tpDataName": "The Cove Residences",
     "section": "Other Projects",
     "startingPrice": "$895K",
@@ -41348,7 +41348,7 @@
   },
   {
     "slug": "the-estates-at-acqualina",
-    "name": "The Estates at Acqualina",
+    "name": "The Estates at Acqualina Sunny Isles",
     "tpDataName": "The Estates at Acqualina",
     "section": "Other Projects",
     "startingPrice": "$6.1M",
@@ -41844,7 +41844,7 @@
   },
   {
     "slug": "the-fairchild",
-    "name": "The Fairchild",
+    "name": "The Fairchild Coconut Grove",
     "tpDataName": "The Fairchild",
     "section": "Other Projects",
     "startingPrice": "Check Availability on MLS",
@@ -42295,7 +42295,7 @@
   },
   {
     "slug": "the-links-estates",
-    "name": "The Links Estates",
+    "name": "The Links Estates at Fisher Island",
     "tpDataName": "The Links Estates",
     "section": "Other Projects",
     "startingPrice": "$29.9M",
@@ -42583,7 +42583,7 @@
   },
   {
     "slug": "the-mansions-at-acqualina",
-    "name": "The Mansions at Acqualina",
+    "name": "The Mansions at Acqualina Sunny Isles",
     "tpDataName": "The Mansions at Acqualina",
     "section": "Other Projects",
     "startingPrice": "Check Availability on MLS",
@@ -43476,7 +43476,7 @@
   },
   {
     "slug": "the-residences-at-the-miami-beach-edition",
-    "name": "The Residences at The Miami Beach EDITION®",
+    "name": "The Residences at The Miami Beach Edition®",
     "tpDataName": "The Residences at The Miami Beach EDITION®",
     "section": "Other Projects",
     "startingPrice": "Check Availability on MLS",
@@ -44917,7 +44917,7 @@
   },
   {
     "slug": "the-standard-residences",
-    "name": "The Standard Residences",
+    "name": "The Standard Residences Brickell",
     "tpDataName": "The Standard Residences",
     "section": "Other Projects",
     "startingPrice": "$630K",
@@ -45109,7 +45109,7 @@
   },
   {
     "slug": "turnberry-ocean-club",
-    "name": "Turnberry Ocean Club",
+    "name": "Turnberry Ocean Club Sunny Isles",
     "tpDataName": "Turnberry Ocean Club",
     "section": "Other Projects",
     "startingPrice": "$5.1M",
@@ -45899,7 +45899,7 @@
   },
   {
     "slug": "turnberry-ocean-colony",
-    "name": "Turnberry Ocean Colony",
+    "name": "Turnberry Ocean Colony Sunny Isles Beach",
     "tpDataName": "Turnberry Ocean Colony",
     "section": "Other Projects",
     "startingPrice": "Check Availability on MLS",
@@ -46003,7 +46003,7 @@
   },
   {
     "slug": "twenty-nine-indian-creek",
-    "name": "Twenty Nine Indian Creek",
+    "name": "Twenty Nine Indian Creek Miami Beach",
     "tpDataName": "Twenty Nine Indian Creek",
     "section": "Other Projects",
     "startingPrice": "$1.4M",
@@ -46145,7 +46145,7 @@
   },
   {
     "slug": "una-residences",
-    "name": "UNA Residences",
+    "name": "Una Residences Brickell",
     "tpDataName": "UNA Residences",
     "section": "Other Projects",
     "startingPrice": "$6.2M",
@@ -46883,7 +46883,7 @@
   },
   {
     "slug": "villa-valencia",
-    "name": "Villa Valencia",
+    "name": "Villa Valencia Coral Gables",
     "tpDataName": "Villa Valencia",
     "section": "Other Projects",
     "startingPrice": "Check Availability on MLS",
@@ -47046,7 +47046,7 @@
   },
   {
     "slug": "w-south-beach-residences",
-    "name": "W South Beach® Residences",
+    "name": "W South Beach® Florida",
     "tpDataName": "W South Beach® Residences",
     "section": "Other Projects",
     "startingPrice": "Check Availability on MLS",
@@ -47773,7 +47773,7 @@
   },
   {
     "slug": "west-eleventh-residences",
-    "name": "West Eleventh Residences",
+    "name": "West Eleventh Residences Downtown Miami",
     "tpDataName": "West Eleventh Residences",
     "section": "Other Projects",
     "startingPrice": "$573K",
