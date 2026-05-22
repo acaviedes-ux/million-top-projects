@@ -369,9 +369,9 @@
       return nameOk && projectMatchesNavFilters(p);
     });
 
-    // Results count label — gives a clear visual break between filters and list
+    // Results count label — hard visual divider between the filter zone and project list
     var countLabel = document.createElement('div');
-    countLabel.className = 'nav-dd-section-label';
+    countLabel.className = 'nav-dd-section-label nav-dd-results-label';
     countLabel.textContent = filtered.length
       ? filtered.length + ' project' + (filtered.length !== 1 ? 's' : '')
       : 'No matches';
