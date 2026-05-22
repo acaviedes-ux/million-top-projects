@@ -188,7 +188,8 @@
     var collapseBtn = document.createElement('button');
     collapseBtn.type = 'button';
     collapseBtn.className = 'nav-dd-collapse-btn';
-    collapseBtn.textContent = '↑ Hide filters';
+    collapseBtn.setAttribute('aria-label', 'Hide filters');
+    collapseBtn.title = 'Hide filters';
     collapseBtn.addEventListener('click', function(e) {
       e.stopPropagation();
       navFiltersOpen = false;
