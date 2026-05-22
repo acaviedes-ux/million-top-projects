@@ -18,7 +18,10 @@
  * Requires .env with:
  *   GOOGLE_SERVICE_ACCOUNT_EMAIL
  *   GOOGLE_PRIVATE_KEY
- *   DOCS_DRIVE_FOLDER_ID   ← ID of the top-level folder containing one subfolder per project
+ *   DOCS_DRIVE_FOLDER_ID        ← ID of folder whose direct children are project folders
+ *   EXTRA_DOCS_FOLDER_IDS       ← (optional) comma-separated IDs of additional folders
+ *                                  whose direct children are also project folders
+ *                                  (e.g. the Preconstruction and Resale subfolders)
  * ─────────────────────────────────────────────────────────────
  */
 
@@ -29,8 +32,12 @@ const { google } = require('googleapis');
 const fs   = require('fs');
 const path = require('path');
 
-const PROJECTS_JSON    = path.join(__dirname, '../data/projects.json');
-const DOCS_FOLDER_ID   = process.env.DOCS_DRIVE_FOLDER_ID;
+const PROJECTS_JSON  = path.join(__dirname, '../data/projects.json');
+const DOCS_FOLDER_ID = process.env.DOCS_DRIVE_FOLDER_ID;
+
+// Additional folders to scan (comma-separated IDs in env var)
+const EXTRA_FOLDER_IDS = (process.env.EXTRA_DOCS_FOLDER_IDS || '')
+  .split(',').map(s => s.trim()).filter(Boolean);
 
 // Category subfolder names → projects.json field
 const CATEGORY_MAP = [
@@ -71,8 +78,17 @@ function norm(s) {
 
 // ── Drive helpers ─────────────────────────────────────────────
 
+// supportsAllDrives + includeItemsFromAllDrives are required for folders
+// that live outside the service account's own Drive (personal Drive shares,
+// non-member shared drives, etc.)
+const DRIVE_LIST_OPTS = {
+  supportsAllDrives: true,
+  includeItemsFromAllDrives: true,
+};
+
 async function listChildren(drive, folderId) {
   const res = await drive.files.list({
+    ...DRIVE_LIST_OPTS,
     q: `'${folderId}' in parents and trashed = false`,
     fields: 'files(id, name, mimeType)',
     pageSize: 1000,
@@ -85,6 +101,7 @@ async function listChildrenPaged(drive, folderId) {
   let pageToken;
   do {
     const res = await drive.files.list({
+      ...DRIVE_LIST_OPTS,
       q: `'${folderId}' in parents and trashed = false`,
       fields: 'nextPageToken, files(id, name, mimeType)',
       pageSize: 1000,
@@ -104,6 +121,7 @@ async function listFilesRecursive(drive, folderId, pathSegments = []) {
   let pageToken;
   do {
     const res = await drive.files.list({
+      ...DRIVE_LIST_OPTS,
       q: `'${folderId}' in parents and trashed = false`,
       fields: 'nextPageToken, files(id, name, mimeType)',
       pageSize: 1000,
@@ -203,8 +221,8 @@ async function main() {
   const slugIdx    = args.indexOf('--slug');
   const targetSlug = slugIdx !== -1 ? args[slugIdx + 1] : null;
 
-  if (!DOCS_FOLDER_ID) {
-    console.error('Error: DOCS_DRIVE_FOLDER_ID must be set in .env');
+  if (!DOCS_FOLDER_ID && EXTRA_FOLDER_IDS.length === 0) {
+    console.error('Error: DOCS_DRIVE_FOLDER_ID (or EXTRA_DOCS_FOLDER_IDS) must be set in .env');
     process.exit(1);
   }
 
@@ -221,13 +239,22 @@ async function main() {
     }
   }
 
-  // ── List top-level project folders ───────────────────────
-  console.log(`\nScanning top-level folder: ${DOCS_FOLDER_ID}`);
-  const topFolders = await listChildren(drive, DOCS_FOLDER_ID);
-  const projectFolders = topFolders.filter(
-    f => f.mimeType === 'application/vnd.google-apps.folder'
-  );
-  console.log(`  ${projectFolders.length} project folders found\n`);
+  // ── Collect project folders from all configured roots ─────
+  // Each root folder is expected to have direct children that are project folders.
+  const allRoots = [
+    ...(DOCS_FOLDER_ID ? [DOCS_FOLDER_ID] : []),
+    ...EXTRA_FOLDER_IDS,
+  ];
+
+  const projectFolders = [];
+  for (const rootId of allRoots) {
+    console.log(`\nScanning root folder: ${rootId}`);
+    const children = await listChildren(drive, rootId);
+    const folders  = children.filter(f => f.mimeType === 'application/vnd.google-apps.folder');
+    console.log(`  ${folders.length} project folders found`);
+    projectFolders.push(...folders);
+  }
+  console.log(`\nTotal project folders: ${projectFolders.length}`);
 
   // ── Match Drive folders → projects.json entries ───────────
   const matched   = [];

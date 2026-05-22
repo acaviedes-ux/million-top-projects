@@ -36889,7 +36889,20 @@
     "hero": "/images/renders/parque-towers.jpg",
     "theBuilding": "Year Built: 2019Bedrooms: 2-5Total floors: 29Total units: 160Sq. ft. range:.1,799 to 2,400sq. ft.",
     "stylishAmenities": null,
-    "brochures": [],
+    "brochures": [
+      {
+        "title": "EN",
+        "driveFileId": "1OiIvmUFgkfzZgyWjXiwAPOL81TVkheTu"
+      },
+      {
+        "title": "ES",
+        "driveFileId": "1Zb2OGd6bkdTr-DlMVWdfVmKVVVLrCaD5"
+      },
+      {
+        "title": "PT",
+        "driveFileId": "1KXpLxY2H_EG-DRAwCkRdk4JZNgaHzVyD"
+      }
+    ],
     "esqueletoName": "Parque Towers Sunny Isles Beach",
     "address": "300 Sunny Isles Blvd Sunny Isles Beach, FL 33160\n330 Sunny Isles Blvd Sunny Isles Beach, FL 33160-5624",
     "developer": "J. Milton & Associates",
@@ -36925,10 +36938,221 @@
     "filterLocation": "Sunny Isles Beach",
     "filterStatus": "Resale",
     "filterYear": "2019",
-    "factSheets": [],
+    "factSheets": [
+      {
+        "title": "",
+        "driveFileId": "1jSR-MCBQglkZU32yv5tE69qMLOkAbjOx"
+      }
+    ],
     "presentations": [],
-    "renderings": [],
-    "floorPlans": []
+    "renderings": [
+      {
+        "driveFileId": "1jA-GsMwDuLKndnJvo9kOPRh3qZJ5-8Vq",
+        "alt": "kitchen"
+      },
+      {
+        "driveFileId": "1hPo6ip7omfXsPeCp1D5yhBKc6zRnNp3j",
+        "alt": "kitliving.penthouse"
+      },
+      {
+        "driveFileId": "1bBWltseMXo-2BEKO746VVgOeRez-xoEM",
+        "alt": "Lanai-4-High-Resolution"
+      },
+      {
+        "driveFileId": "1E31UOnek_9uZKItd1p43E7IvykgTvpjF",
+        "alt": "living"
+      },
+      {
+        "driveFileId": "1KpcBhsGR_osDMFJB20RZE2uOYmPBmwSS",
+        "alt": "new_pool"
+      },
+      {
+        "driveFileId": "1BiGb7zEGbB3RGbNnTHMnH7chUua6u7RS",
+        "alt": "North East view"
+      },
+      {
+        "driveFileId": "1Css7449_-ZCGhpdpfxz3Jj0achK7Gmym",
+        "alt": "Parque Platinum Terrace bedroom"
+      },
+      {
+        "driveFileId": "1vkTrPJUTj0lN67xqP6FLQHLMeiATVPUA",
+        "alt": "parque towers"
+      },
+      {
+        "driveFileId": "1EyHqleoy40Qe4hgBn2AO0qlZOtLtO1_b",
+        "alt": "Parque Towers Bath"
+      },
+      {
+        "driveFileId": "1G2S9glPvgMC43SY7mvavSeqQLHX36tYC",
+        "alt": "Parque Towers Kitchen"
+      },
+      {
+        "driveFileId": "1wCQRUXty9lMRKYNNQu0_dybOFeIl3kdy",
+        "alt": "Parque Towers Living"
+      },
+      {
+        "driveFileId": "1p4z4ql7mt_JEfirk4CQMCjjrSLyUDEFa",
+        "alt": "PT North East view"
+      },
+      {
+        "driveFileId": "1yWRfGiuXwXspk0YG8wmnpgIf3kM6M1q7",
+        "alt": "PT NW view"
+      },
+      {
+        "driveFileId": "1O2gfEELnGSnaIgLJ2cawQ_KAy-BfJ6uq",
+        "alt": "PT South view"
+      },
+      {
+        "driveFileId": "1T5foxSlZjyKqaydfYzGl2EJhmqGNYA25",
+        "alt": "PT South West View"
+      },
+      {
+        "driveFileId": "1dVqNCkoCcyyxMjv2xEyPStFOQyGRrj35",
+        "alt": "Tower Suite Terrace"
+      },
+      {
+        "driveFileId": "124w2t945v9rfAc8hCbZ8ejpT8_aDCOoj",
+        "alt": "Photography - Parque Towers 1"
+      },
+      {
+        "driveFileId": "1IPDYoGU-RiOF285HO0jarRZ8qpJPsVnN",
+        "alt": "r1"
+      },
+      {
+        "driveFileId": "1IRkxay23mwDUnKAUQq1e6sBdEtugzGkv",
+        "alt": "Building view2"
+      },
+      {
+        "driveFileId": "1gXV1qRGP2tlZJdSbjUOSNRT7-h_t0kOi",
+        "alt": "parquetower2"
+      },
+      {
+        "driveFileId": "1V4txe0QbHM5gX4IE1icGpwDk0XgXCcRz",
+        "alt": "Photography - Parque Towers 2"
+      },
+      {
+        "driveFileId": "1Mebzp_fBLyUV78ip3JTw7tJmM_5Uu0on",
+        "alt": "r2"
+      },
+      {
+        "driveFileId": "1AfRolHXU6SDRAHvL9-wTmMFkbCIN_z1D",
+        "alt": "Photography - Parque Towers 3"
+      },
+      {
+        "driveFileId": "1QWrnKqc_StLuup_fHIezVNdbj_ax3jhn",
+        "alt": "r3"
+      },
+      {
+        "driveFileId": "16TCpbhntNBSO5hp8gxLuCMXcDx79Ryzj",
+        "alt": "Photography - Parque Towers 4"
+      },
+      {
+        "driveFileId": "1q2ZpELvEjq2QeyeMA_hqWrAnSIc4ngDG",
+        "alt": "r4"
+      },
+      {
+        "driveFileId": "1j-Z2pOpynkW5OQzN66D17nnenw-l314n",
+        "alt": "Photography - Parque Towers 5"
+      },
+      {
+        "driveFileId": "1XcdQEPUkjkrWboMVDC5ddUlhWddeKA4m",
+        "alt": "r5"
+      },
+      {
+        "driveFileId": "1uXJLK7lCHzFhB2vzFvjh1sJCL3Nl66PC",
+        "alt": "Photography - Parque Towers 6"
+      },
+      {
+        "driveFileId": "1iKCDV8Cmz1aTIUFBHprWt0vGZN6QkFKh",
+        "alt": "r6"
+      },
+      {
+        "driveFileId": "1jXFR9GqP332UfbNEM7tTUVdQ0pqPzs1L",
+        "alt": "r7"
+      },
+      {
+        "driveFileId": "1uTLX9a2NRBW8t5iVGLDQZ9UieEIv_gZ4",
+        "alt": "r8"
+      },
+      {
+        "driveFileId": "13tUTDXfXCyyeVjctz_W19VLl6kokszti",
+        "alt": "r9"
+      },
+      {
+        "driveFileId": "1LC3QnGBbRUnnax2qmFKV4HZ3pt7vh3lO",
+        "alt": "r10"
+      },
+      {
+        "driveFileId": "1FkzpC37SldHJ3Kr7cqJ4yvjf1GzLvXrq",
+        "alt": "r11"
+      },
+      {
+        "driveFileId": "1J_rW2bybIxg2X4B2ceXuLbOkVzYQ4dKi",
+        "alt": "r12"
+      },
+      {
+        "driveFileId": "16MWdKK-4OO9zkBIwDjewmEA2zlzyDUGh",
+        "alt": "r13"
+      },
+      {
+        "driveFileId": "1sAVbs_xMkWz4aVlgBWeWQl_sF4FZfAdd",
+        "alt": "r14"
+      },
+      {
+        "driveFileId": "1vQozx07NWn9uOMTf4D64W7xB09HzT4Py",
+        "alt": "r15"
+      },
+      {
+        "driveFileId": "11ECKlQDtvOm6z8YpB5peuJ0XrIQ1kQqO",
+        "alt": "r16"
+      },
+      {
+        "driveFileId": "1NalYUWPgW8YzaC3T6uB68_Nf1uno3Eks",
+        "alt": "r17"
+      },
+      {
+        "driveFileId": "1hUkTskfxfPoc6-ffH4gwEtr8AbTQnFgJ",
+        "alt": "r18"
+      },
+      {
+        "driveFileId": "1BB0bMHmGJSOsQXsVOiY9v3QCH6aggUjb",
+        "alt": "Lanai Rendering T4-501"
+      },
+      {
+        "driveFileId": "1kyTWkah0h8mt7E4M9kEKCwh25pEbHvww",
+        "alt": "Lanai Rendering T4-502"
+      },
+      {
+        "driveFileId": "1C0JASDfmgZLen3rWXls9C_qFMJZ1tI_s",
+        "alt": "Lanai Rendering T5-502"
+      }
+    ],
+    "floorPlans": [
+      {
+        "title": "",
+        "driveFileId": "1I5GKCX_isEof_j_h-kWn6BErQjTCQT1_"
+      },
+      {
+        "title": "Individuals - Lanai 5-505-A",
+        "driveFileId": "15rpVKwDVLkBJ2t0-Td7Zjl1Yg98hoWmM"
+      },
+      {
+        "title": "Individuals - PH 2 & 3",
+        "driveFileId": "1rxDBne2-8Saqo9uWqN0ttrk3lHzbdOKb"
+      },
+      {
+        "title": "Individuals - Tower Suite 1 & 4",
+        "driveFileId": "1E-Y01ZsPded3xUazQbVr38XsKhP10Jlp"
+      },
+      {
+        "title": "Individuals - Tower Suite Unit C",
+        "driveFileId": "1u2MihwkK0o7_pC8chaFlLwUcMhNo8WZe"
+      },
+      {
+        "title": "Individuals - Unit B",
+        "driveFileId": "1JR_kNqQQ1w7PEap8L3eSPwbDvfjximi7"
+      }
+    ]
   },
   {
     "slug": "pier-sixty-six-fort-lauderdale",
