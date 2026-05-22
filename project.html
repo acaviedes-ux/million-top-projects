@@ -31,14 +31,9 @@
         </svg>
       </button>
       <div class="nav-dropdown-menu" id="nav-dropdown-menu" role="dialog" aria-label="Search projects">
-        <div class="nav-dd-search-row">
+        <div class="nav-dropdown-search">
           <input type="text" id="nav-dropdown-search-input" placeholder="Search projects..." autocomplete="off" aria-label="Search projects">
-          <button type="button" class="nav-dd-filters-btn" id="nav-dd-filters-btn">
-            Filters
-            <span class="nav-dd-filters-count" id="nav-dd-filters-count" style="display:none">0</span>
-          </button>
         </div>
-        <div class="nav-dd-filters-panel" id="nav-dd-filters-panel"></div>
         <div class="nav-dropdown-list" id="nav-dropdown-list" role="listbox"></div>
       </div>
     </div>
@@ -98,238 +93,6 @@
   var dropdownLoaded = false;
   var allProjects    = [];
 
-  // ── Nav filter state ─────────────────────────────────────────
-  var navFiltersPanelEl    = document.getElementById('nav-dd-filters-panel');
-  var navDdFiltersBtnEl    = document.getElementById('nav-dd-filters-btn');
-  var navDdFiltersCountEl  = document.getElementById('nav-dd-filters-count');
-
-  var activeNavFilters = {
-    section: new Set(), price: new Set(),
-    county: new Set(), location: new Set(), status: new Set(), year: new Set()
-  };
-
-  function parsePriceToMillions(str) {
-    var m = str && str.match(/\$([0-9.]+)\s*M/i);
-    if (m) return parseFloat(m[1]);
-    var k = str && str.match(/\$([0-9.]+)\s*K/i);
-    if (k) return parseFloat(k[1]) / 1000;
-    return null;
-  }
-  var PRICE_BUCKETS = ['Less than $3M', '$3M – $5M', '$5M – $8M', 'More than $8M'];
-  function getPriceBucket(str) {
-    var v = parsePriceToMillions(str);
-    if (v === null) return null;
-    if (v < 3)  return 'Less than $3M';
-    if (v <= 5) return '$3M – $5M';
-    if (v <= 8) return '$5M – $8M';
-    return 'More than $8M';
-  }
-  var YEAR_BUCKET_ORDER = ['From 2021 – 2025', 'From 2010 – 2020', 'From 2000 – 2010', 'Before 2000'];
-  function getYearBucket(yearStr) {
-    var y = parseInt(yearStr, 10);
-    if (isNaN(y)) return null;
-    if (y < 2000)  return 'Before 2000';
-    if (y <= 2010) return 'From 2000 – 2010';
-    if (y <= 2020) return 'From 2010 – 2020';
-    if (y <= 2025) return 'From 2021 – 2025';
-    return yearStr;
-  }
-
-  var NAV_FILTER_DEFS = [
-    { key: 'section',  label: 'Top Projects',     staticValues: ['Top Projects', 'Other Projects'],
-      getFieldValue: function(p) { return p.section; } },
-    { key: 'price',    label: 'Starting Price',   staticValues: PRICE_BUCKETS,
-      getFieldValue: function(p) { return getPriceBucket(p.startingPrice); } },
-    { key: 'county',   label: 'County',           field: 'filterCounty'   },
-    { key: 'location', label: 'Area',             field: 'filterLocation' },
-    { key: 'status',   label: 'Status',           field: 'filterStatus'   },
-    { key: 'year',     label: 'Construction Year',field: 'filterYear',
-      getFieldValue: function(p) { return getYearBucket(p.filterYear); },
-      sortValues: function(vals) {
-        var bucketSet = new Set(YEAR_BUCKET_ORDER);
-        var presentBuckets = YEAR_BUCKET_ORDER.filter(function(b) { return vals.indexOf(b) !== -1; });
-        var individual = vals.filter(function(v) { return !bucketSet.has(v); })
-                             .sort(function(a, b) { return Number(b) - Number(a); });
-        return individual.concat(presentBuckets);
-      }
-    },
-  ];
-
-  function projectMatchesNavFilters(p) {
-    return NAV_FILTER_DEFS.every(function(def) {
-      var sel = activeNavFilters[def.key];
-      if (!sel.size) return true;
-      var val = def.getFieldValue ? def.getFieldValue(p) : p[def.field];
-      return sel.has(val);
-    });
-  }
-
-  function navValueCounts(field) {
-    var counts = {};
-    allProjects.forEach(function(p) {
-      var v = p[field];
-      if (v) counts[v] = (counts[v] || 0) + 1;
-    });
-    return counts;
-  }
-
-  function buildNavFilterPanel() {
-    while (navFiltersPanelEl.firstChild) navFiltersPanelEl.removeChild(navFiltersPanelEl.firstChild);
-
-    // Header row: "Filter by" label + collapse button
-    var panelHeader = document.createElement('div');
-    panelHeader.className = 'nav-dd-filter-header';
-
-    var headerLabel = document.createElement('span');
-    headerLabel.className = 'nav-dd-filter-header-label';
-    headerLabel.textContent = 'Filter by';
-    panelHeader.appendChild(headerLabel);
-
-    var collapseBtn = document.createElement('button');
-    collapseBtn.type = 'button';
-    collapseBtn.className = 'nav-dd-collapse-btn';
-    collapseBtn.setAttribute('aria-label', 'Hide filters');
-    collapseBtn.title = 'Hide filters';
-    collapseBtn.addEventListener('click', function(e) {
-      e.stopPropagation();
-      navFiltersOpen = false;
-      navFiltersPanelEl.style.display = 'none';
-    });
-    panelHeader.appendChild(collapseBtn);
-    navFiltersPanelEl.appendChild(panelHeader);
-
-    NAV_FILTER_DEFS.forEach(function(def) {
-      var counts, values;
-      if (def.staticValues) {
-        counts = {};
-        def.staticValues.forEach(function(v) { counts[v] = 0; });
-        allProjects.forEach(function(p) {
-          var v = def.getFieldValue(p);
-          if (v && counts.hasOwnProperty(v)) counts[v]++;
-        });
-        values = def.staticValues;
-      } else if (def.getFieldValue) {
-        counts = {};
-        allProjects.forEach(function(p) {
-          var v = def.getFieldValue(p);
-          if (v) counts[v] = (counts[v] || 0) + 1;
-        });
-        values = def.sortValues
-          ? def.sortValues(Object.keys(counts))
-          : Object.keys(counts).sort(function(a, b) { return a.localeCompare(b); });
-      } else {
-        counts = navValueCounts(def.field);
-        values = Object.keys(counts).sort(function(a, b) { return a.localeCompare(b); });
-      }
-      if (!values.length) return;
-
-      var group = document.createElement('div');
-      group.className = 'filter-group';
-      group.dataset.key = def.key;
-
-      var groupLabel = document.createElement('div');
-      groupLabel.className = 'filter-group-label';
-      var labelText = document.createElement('span');
-      labelText.textContent = def.label;
-      groupLabel.appendChild(labelText);
-
-      var labelRight = document.createElement('span');
-      labelRight.style.cssText = 'display:flex;align-items:center;gap:6px';
-      var countBadge = document.createElement('span');
-      countBadge.className = 'filter-group-count';
-      countBadge.style.display = 'none';
-      labelRight.appendChild(countBadge);
-      var arrow = document.createElement('span');
-      arrow.className = 'filter-group-arrow';
-      labelRight.appendChild(arrow);
-      groupLabel.appendChild(labelRight);
-
-      groupLabel.addEventListener('click', function(e) {
-        e.stopPropagation();
-        var isOpen = group.classList.toggle('open');
-        if (isOpen) {
-          navFiltersPanelEl.querySelectorAll('.filter-group.open').forEach(function(g) {
-            if (g !== group) g.classList.remove('open');
-          });
-        }
-      });
-      group.appendChild(groupLabel);
-
-      var submenu = document.createElement('div');
-      submenu.className = 'filter-submenu';
-      values.forEach(function(val) {
-        var opt = document.createElement('label');
-        opt.className = 'filter-option';
-        var cb = document.createElement('input');
-        cb.type = 'checkbox';
-        cb.value = val;
-        cb.checked = activeNavFilters[def.key].has(val);
-        cb.addEventListener('change', function() {
-          if (this.checked) activeNavFilters[def.key].add(val);
-          else              activeNavFilters[def.key].delete(val);
-          refreshNavFilterUI();
-          renderDropdownList(dropdownInput.value);
-        });
-        var checkmark = document.createElement('span');
-        checkmark.className = 'filter-check';
-        checkmark.textContent = '✓';
-        checkmark.setAttribute('aria-hidden', 'true');
-        var lbl = document.createElement('span');
-        lbl.className = 'filter-option-label';
-        lbl.textContent = val;
-        var ct = document.createElement('span');
-        ct.className = 'filter-option-count';
-        ct.textContent = counts[val] || 0;
-        opt.appendChild(cb);
-        opt.appendChild(checkmark);
-        opt.appendChild(lbl);
-        opt.appendChild(ct);
-        submenu.appendChild(opt);
-      });
-      group.appendChild(submenu);
-      navFiltersPanelEl.appendChild(group);
-    });
-  }
-
-  function refreshNavFilterUI() {
-    var total = 0;
-    NAV_FILTER_DEFS.forEach(function(d) { total += activeNavFilters[d.key].size; });
-    if (total > 0) {
-      navDdFiltersBtnEl.classList.add('active');
-      navDdFiltersCountEl.textContent = total;
-      navDdFiltersCountEl.style.display = 'inline-block';
-    } else {
-      navDdFiltersBtnEl.classList.remove('active');
-      navDdFiltersCountEl.style.display = 'none';
-    }
-    navFiltersPanelEl.querySelectorAll('.filter-group').forEach(function(group) {
-      var key   = group.dataset.key;
-      var sel   = activeNavFilters[key];
-      var badge = group.querySelector('.filter-group-count');
-      if (badge) {
-        if (sel && sel.size > 0) {
-          badge.textContent = sel.size;
-          badge.style.display = 'inline-block';
-          group.classList.add('has-active');
-        } else {
-          badge.style.display = 'none';
-          group.classList.remove('has-active');
-        }
-      }
-      group.querySelectorAll('input[type="checkbox"]').forEach(function(cb) {
-        cb.checked = sel && sel.has(cb.value);
-      });
-    });
-  }
-
-  // Toggle filters panel open/close
-  var navFiltersOpen = false;
-  navDdFiltersBtnEl.addEventListener('click', function(e) {
-    e.stopPropagation();
-    navFiltersOpen = !navFiltersOpen;
-    navFiltersPanelEl.style.display = navFiltersOpen ? 'block' : 'none';
-  });
-
   function openDropdown() {
     dropdownMenu.classList.add('open');
     dropdownBtn.setAttribute('aria-expanded', 'true');
@@ -341,12 +104,6 @@
   function closeDropdown() {
     dropdownMenu.classList.remove('open');
     dropdownBtn.setAttribute('aria-expanded', 'false');
-    // Collapse filter panel (keep selections, just hide the panel)
-    navFiltersOpen = false;
-    navFiltersPanelEl.style.display = 'none';
-    navFiltersPanelEl.querySelectorAll('.filter-group.open').forEach(function(g) {
-      g.classList.remove('open');
-    });
   }
 
   dropdownBtn.addEventListener('click', function () {
@@ -380,21 +137,16 @@
   function renderDropdownList(query) {
     clearEl(dropdownList);
     var q = (query || '').trim().toLowerCase();
-    var filtered = allProjects.filter(function(p) {
-      var nameOk = !q || (p.name || '').toLowerCase().indexOf(q) !== -1;
-      return nameOk && projectMatchesNavFilters(p);
-    });
+    var filtered = q
+      ? allProjects.filter(function(p) {
+          return (p.name || '').toLowerCase().indexOf(q) !== -1;
+        })
+      : allProjects.slice();
 
-    // Results count label — hard visual divider between the filter zone and project list
-    var countLabel = document.createElement('div');
-    countLabel.className = 'nav-dd-section-label nav-dd-results-label';
-    countLabel.textContent = filtered.length
-      ? filtered.length + ' project' + (filtered.length !== 1 ? 's' : '')
-      : 'No matches';
-    dropdownList.appendChild(countLabel);
-
-    if (!filtered.length) return;
-
+    if (!filtered.length) {
+      dropdownList.appendChild(el('div', 'nav-dropdown-loading', 'No matches.'));
+      return;
+    }
     filtered.forEach(function (p) {
       var a = el('a', 'nav-dropdown-item' + (p.slug === slug ? ' active' : ''), p.name);
       a.href = '/projects/' + p.slug;
@@ -414,7 +166,6 @@
         allProjects = (list || []).slice().sort(function (a, b) {
           return (a.name || '').localeCompare(b.name || '');
         });
-        buildNavFilterPanel();
         renderDropdownList(dropdownInput.value);
       })
       .catch(function () {
