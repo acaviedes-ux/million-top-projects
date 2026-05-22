@@ -176,10 +176,25 @@
   function buildNavFilterPanel() {
     while (navFiltersPanelEl.firstChild) navFiltersPanelEl.removeChild(navFiltersPanelEl.firstChild);
 
-    // Section header inside the filters panel
+    // Header row: "Filter by" label + collapse button
     var panelHeader = document.createElement('div');
-    panelHeader.className = 'nav-dd-section-label';
-    panelHeader.textContent = 'Filter by';
+    panelHeader.className = 'nav-dd-filter-header';
+
+    var headerLabel = document.createElement('span');
+    headerLabel.className = 'nav-dd-filter-header-label';
+    headerLabel.textContent = 'Filter by';
+    panelHeader.appendChild(headerLabel);
+
+    var collapseBtn = document.createElement('button');
+    collapseBtn.type = 'button';
+    collapseBtn.className = 'nav-dd-collapse-btn';
+    collapseBtn.textContent = '↑ Hide filters';
+    collapseBtn.addEventListener('click', function(e) {
+      e.stopPropagation();
+      navFiltersOpen = false;
+      navFiltersPanelEl.style.display = 'none';
+    });
+    panelHeader.appendChild(collapseBtn);
     navFiltersPanelEl.appendChild(panelHeader);
 
     NAV_FILTER_DEFS.forEach(function(def) {
