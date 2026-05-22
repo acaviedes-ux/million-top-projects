@@ -1,12 +1,14 @@
 name: Sync Price Lists from Drive
 
 # ── Triggers ───────────────────────────────────────────────────────────────────
-# • schedule: runs every hour — scans ONLY the current month's folder (fast)
+# • schedule: every 15 min, Mon–Fri, 8 AM–5 PM Colombia time (COT = UTC-5)
+#     8:00 AM COT = 13:00 UTC  |  5:00 PM COT = 22:00 UTC
+#     cron runs at :00 :15 :30 :45 of each UTC hour 13–22, weekdays only
 # • workflow_dispatch: manual run from GitHub Actions UI
 #   - full_sweep input: set to true to scan ALL historical year/month folders
 on:
   schedule:
-    - cron: '0 * * * *'   # top of every hour, UTC
+    - cron: '*/15 13-22 * * 1-5'   # every 15 min, Mon–Fri, 8 AM–5 PM COT
   workflow_dispatch:
     inputs:
       full_sweep:
