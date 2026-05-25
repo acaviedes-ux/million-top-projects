@@ -725,9 +725,10 @@
         if (r.driveFileId) {
           img.src = '/api/thumb?id=' + r.driveFileId;
           var a = el('a', 'rendering-link');
-          a.href   = 'https://drive.google.com/file/d/' + r.driveFileId + '/view';
+          a.href   = '/api/render?id=' + r.driveFileId;
           a.target = '_blank';
           a.rel    = 'noopener noreferrer';
+          a.title  = 'Click to view full resolution';
           a.appendChild(img);
           gallery.appendChild(a);
         } else {

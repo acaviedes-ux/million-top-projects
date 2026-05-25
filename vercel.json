@@ -11,6 +11,9 @@
     },
     "api/pdf-proxy.js": {
       "maxDuration": 30
+    },
+    "api/render.js": {
+      "maxDuration": 30
     }
   }
 }
