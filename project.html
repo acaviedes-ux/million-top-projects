@@ -68,7 +68,6 @@
 
   // ── SVG icons (trusted static strings) ──────────────────────────────────
   var SVG_DOWNLOAD = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>';
-  var SVG_EXPAND   = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/></svg>';
   var SVG_CLOSE    = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>';
 
   function svgNode(svgStr) {
@@ -531,29 +530,18 @@
       syncNavLogo(); // run once to set correct state on load
     }
 
-    // Hero image + action buttons (download + expand)
+    // Hero image — clickable to open full-res lightbox
     if (d.hero) {
-      var heroImg = el('img', 'hero-img');
-      heroImg.src = d.hero;
-      heroImg.alt = d.name;
+      var heroImg = el('img', 'hero-img hero-img--clickable');
+      heroImg.src   = d.hero;
+      heroImg.alt   = d.name;
+      heroImg.title = 'Click to view full resolution';
       heroWrap.insertBefore(heroImg, heroWrap.firstChild);
-
-      var dlBtn = el('a', 'hero-download-btn');
-      dlBtn.href      = d.hero;
-      dlBtn.download  = d.slug + '.jpg';
-      dlBtn.title     = 'Download render';
-      dlBtn.setAttribute('aria-label', 'Download render image');
-      dlBtn.appendChild(svgNode(SVG_DOWNLOAD));
-      heroWrap.appendChild(dlBtn);
-
-      var expandBtn = el('button', 'hero-expand-btn');
-      expandBtn.title = 'View full size';
-      expandBtn.setAttribute('aria-label', 'View render full size');
-      expandBtn.appendChild(svgNode(SVG_EXPAND));
-      expandBtn.addEventListener('click', function () {
+      heroWrap.addEventListener('click', function (e) {
+        // Only open lightbox when clicking the image area, not the logo card
+        if (e.target.closest('.hero-logo-card')) return;
         openLightbox(d.hero, d.slug, d.name);
       });
-      heroWrap.appendChild(expandBtn);
     }
 
     var frag = document.createDocumentFragment();
