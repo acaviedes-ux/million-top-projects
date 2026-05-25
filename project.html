@@ -414,70 +414,69 @@
     return row;
   }
 
-  // ── Lightbox ──────────────────────────────────────────────────
-  var _lightbox = null;
+  // ── Lightbox (native <dialog> — browser handles z-index, backdrop, Escape) ──
+  var _dialog = null;
 
-  function openLightbox(heroPath, projectSlug, projectName) {
-    if (!_lightbox) {
-      // Styles applied inline so lightbox works even if style.css is cached
-      _lightbox = document.createElement('div');
-      Object.assign(_lightbox.style, {
-        position: 'fixed', inset: '0', zIndex: '99999',
-        background: 'rgba(0,0,0,0.92)', display: 'none',
-        alignItems: 'center', justifyContent: 'center'
-      });
-      _lightbox.setAttribute('role', 'dialog');
-      _lightbox.setAttribute('aria-modal', 'true');
+  function openLightbox(heroPath) {
+    if (!_dialog) {
+      // Inject ::backdrop style once
+      var bk = document.createElement('style');
+      bk.textContent = 'dialog.hero-dialog::backdrop{background:rgba(0,0,0,0.92)}';
+      document.head.appendChild(bk);
 
-      var lbImg = document.createElement('img');
-      Object.assign(lbImg.style, {
-        maxWidth: '95vw', maxHeight: '90vh',
-        objectFit: 'contain', display: 'block'
-      });
-      lbImg.alt = '';
-      _lightbox._img = lbImg;
-      _lightbox.appendChild(lbImg);
+      _dialog = document.createElement('dialog');
+      _dialog.className = 'hero-dialog';
+      _dialog.style.cssText = [
+        'background:transparent', 'border:none', 'padding:0',
+        'margin:auto', 'max-width:95vw', 'max-height:90vh', 'outline:none'
+      ].join(';');
+
+      var img = document.createElement('img');
+      img.style.cssText = 'max-width:95vw;max-height:90vh;object-fit:contain;display:block;cursor:default';
+      img.alt = '';
+      _dialog._img = img;
+      _dialog.appendChild(img);
 
       var closeBtn = document.createElement('button');
-      Object.assign(closeBtn.style, {
-        position: 'absolute', top: '16px', right: '16px',
-        width: '40px', height: '40px',
-        background: 'rgba(255,255,255,0.15)',
-        border: '1px solid rgba(255,255,255,0.35)',
-        borderRadius: '4px', cursor: 'pointer',
-        color: '#fff', fontSize: '22px', lineHeight: '1',
-        display: 'flex', alignItems: 'center',
-        justifyContent: 'center', padding: '0'
-      });
+      closeBtn.style.cssText = [
+        'position:absolute', 'top:-14px', 'right:-14px',
+        'width:32px', 'height:32px',
+        'background:rgba(255,255,255,0.9)', 'border:none',
+        'border-radius:50%', 'cursor:pointer',
+        'font-size:18px', 'line-height:1',
+        'display:flex', 'align-items:center', 'justify-content:center',
+        'color:#111', 'padding:0', 'font-weight:bold'
+      ].join(';');
       closeBtn.setAttribute('aria-label', 'Close');
-      closeBtn.textContent = '\u00d7';
-      closeBtn.addEventListener('click', closeLightbox);
-      _lightbox.appendChild(closeBtn);
-
-      _lightbox.addEventListener('click', function (e) {
-        if (e.target === _lightbox) closeLightbox();
+      closeBtn.textContent = '×';
+      closeBtn.addEventListener('click', function(e) {
+        e.stopPropagation();
+        closeLightbox();
       });
 
-      document.body.appendChild(_lightbox);
+      // Wrap img + button in a relative container so close btn positions correctly
+      var wrap = document.createElement('div');
+      wrap.style.cssText = 'position:relative;display:inline-block;line-height:0';
+      wrap.appendChild(img);
+      wrap.appendChild(closeBtn);
+      _dialog.appendChild(wrap);
+
+      // Click on backdrop (the dialog element itself) closes it
+      _dialog.addEventListener('click', function(e) {
+        if (e.target === _dialog) closeLightbox();
+      });
+
+      document.body.appendChild(_dialog);
     }
 
-    _lightbox._img.src           = heroPath;
-    _lightbox._img.alt           = projectName;
-    document.body.style.overflow = 'hidden';
-    _lightbox.style.display      = 'flex';
-    document.addEventListener('keydown', _lightboxKeyHandler);
+    _dialog._img.src = heroPath;
+    _dialog.showModal();
   }
 
   function closeLightbox() {
-    if (!_lightbox) return;
-    _lightbox.style.display      = 'none';
-    document.body.style.overflow = '';
-    document.removeEventListener('keydown', _lightboxKeyHandler);
+    if (_dialog && _dialog.open) _dialog.close();
   }
 
-  function _lightboxKeyHandler(e) {
-    if (e.key === 'Escape') closeLightbox();
-  }
 
   // ── Main render ──────────────────────────────────────────────
 
@@ -541,9 +540,11 @@
       heroImg.title = 'Click to view full resolution';
       heroWrap.insertBefore(heroImg, heroWrap.firstChild);
       heroWrap.addEventListener('click', function (e) {
-        // Only open lightbox when clicking the image area, not the logo card
+        // Ignore clicks on the logo card
         if (e.target.closest('.hero-logo-card')) return;
-        openLightbox(d.hero, d.slug, d.name);
+        e.preventDefault();
+        e.stopPropagation();
+        openLightbox(d.hero);
       });
     }
 
