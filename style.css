@@ -564,6 +564,21 @@ img { display: block; max-width: 100%; }
   text-align: center;
 }
 
+.lobby-suggestions-heading {
+  max-width: 1200px;
+  margin: 32px auto 4px;
+  padding: 0 24px;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 600;
+  color: var(--gray-dark);
+}
+
+.lobby-suggestions-grid {
+  opacity: 0.82;
+}
+
 /* ── PROJECTS GRID ───────────────────────────── */
 .projects-grid {
   max-width: 1200px;
@@ -895,11 +910,15 @@ img { display: block; max-width: 100%; }
   z-index: 1;
 }
 
-/* ── HERO CLICKABLE (opens full-res lightbox) ── */
-.hero-img--clickable {
+/* ── HERO LINK OVERLAY (opens full-res render in new tab) ── */
+.hero-link-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
   cursor: zoom-in;
+  display: block;
 }
-.project-hero-wrap:has(.hero-img--clickable):hover .hero-overlay {
+.project-hero-wrap:has(.hero-link-overlay):hover .hero-overlay {
   background: rgba(0, 0, 0, 0.30);
   transition: background 0.2s;
 }

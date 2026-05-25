@@ -214,6 +214,62 @@
       return wrap;
     }
 
+    // ── Fuzzy search helpers ─────────────────────────────────────
+
+    function levenshtein(a, b) {
+      var m = a.length, n = b.length;
+      var dp = [];
+      for (var i = 0; i <= m; i++) { dp[i] = [i]; }
+      for (var j = 0; j <= n; j++) { dp[0][j] = j; }
+      for (var i = 1; i <= m; i++) {
+        for (var j = 1; j <= n; j++) {
+          dp[i][j] = a[i-1] === b[j-1]
+            ? dp[i-1][j-1]
+            : 1 + Math.min(dp[i-1][j], dp[i][j-1], dp[i-1][j-1]);
+        }
+      }
+      return dp[m][n];
+    }
+
+    function fuzzyScore(name, query) {
+      var n = name.toLowerCase();
+      var q = query.toLowerCase();
+      var score = 0;
+
+      // Strong bonus: name contains query as substring
+      if (n.indexOf(q) !== -1) score += 40;
+
+      // Word-level bonus: any query word appears in any name word
+      var qWords = q.split(/\s+/).filter(Boolean);
+      var nWords = n.split(/\s+/).filter(Boolean);
+      qWords.forEach(function(qw) {
+        nWords.forEach(function(nw) {
+          if (nw.indexOf(qw) === 0) score += 20;       // prefix match
+          else if (nw.indexOf(qw) !== -1) score += 10; // contains match
+        });
+      });
+
+      // Edit-distance bonus (normalised so shorter distance = higher score)
+      var maxLen = Math.max(n.length, q.length) || 1;
+      var dist   = levenshtein(n, q);
+      score += Math.round((1 - dist / maxLen) * 15);
+
+      return score;
+    }
+
+    function getFuzzySuggestions(query, pool) {
+      if (!query || !pool.length) return [];
+      var scored = pool.map(function(p) {
+        return { project: p, score: fuzzyScore(p.name, query) };
+      });
+      scored.sort(function(a, b) { return b.score - a.score; });
+      // Only return results with a meaningful score
+      return scored
+        .filter(function(s) { return s.score > 5; })
+        .slice(0, 5)
+        .map(function(s) { return s.project; });
+    }
+
     // ── Render logic ─────────────────────────────────────────────
     function render(query) {
       contentEl.textContent = '';
@@ -249,6 +305,30 @@
           none.className = 'lobby-no-results';
           none.textContent = 'No projects found.';
           searchWrap.appendChild(none);
+
+          if (hasSearch) {
+            // Fuzzy suggestions: search across ALL projects (ignoring active filters)
+            // so the pool isn't accidentally empty when filters narrow things down
+            var suggPool = hasFilters
+              ? allProjects.filter(function(p) { return projectMatchesFilters(p); })
+              : allProjects;
+            // Fall back to full pool if filtered pool is too small
+            if (suggPool.length < 3) suggPool = allProjects;
+            var suggestions = getFuzzySuggestions(searchQ, suggPool);
+            if (suggestions.length) {
+              var suggHeading = document.createElement('div');
+              suggHeading.className = 'lobby-suggestions-heading';
+              suggHeading.textContent = 'Did you mean…';
+              searchWrap.appendChild(suggHeading);
+
+              var suggGrid = document.createElement('div');
+              suggGrid.className = 'projects-grid lobby-suggestions-grid';
+              var sfrag = document.createDocumentFragment();
+              suggestions.forEach(function(p) { sfrag.appendChild(buildCard(p)); });
+              suggGrid.appendChild(sfrag);
+              searchWrap.appendChild(suggGrid);
+            }
+          }
         }
 
         frag.appendChild(searchWrap);
