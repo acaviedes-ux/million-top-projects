@@ -15,6 +15,8 @@
     "seed:prices:month:dry": "node scripts/seed-pricelists-from-drive.js --force --current-month --dry",
     "make-public": "node scripts/make-drive-files-public.js",
     "make-public:dry": "node scripts/make-drive-files-public.js --dry",
+    "find:missing": "node scripts/find-missing-docs.js",
+    "find:missing:apply": "node scripts/find-missing-docs.js --apply",
     "update:dates": "node scripts/update-pricelist-dates.js",
     "update:dates:dry": "node scripts/update-pricelist-dates.js --dry"
   },
