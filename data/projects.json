@@ -11,16 +11,8 @@
     "stylishAmenities": "Bayfront resort pool terrace, private lounges, next‑generation fitness and spa, and on‑site dining curated to elevate daily life.",
     "brochures": [
       {
-        "title": "Price List",
-        "driveFileId": ""
-      },
-      {
-        "title": "Presentation",
-        "driveFileId": ""
-      },
-      {
-        "title": "Floor Plans",
-        "driveFileId": ""
+        "title": "Neighborhood Book",
+        "driveFileId": "1-cb6wLEOZM0nNpg0aEh391Bx_0gL7zTr"
       }
     ],
     "address": "619 Brickell Ave, Miami, FL 33131",
@@ -66,161 +58,261 @@
     "floorPlans": [
       {
         "title": "",
-        "driveFileId": "1-grrgwZH4jCXgTwowiDY5glnbGkqjalA"
+        "driveFileId": "1g-Z3OmZ2qwD0WShuIUL03tX-baqqczN0"
       },
       {
-        "title": "Amenities",
-        "driveFileId": "1mImCveKbUh2BVIeiF0S5BY0F9z-sKE2I"
+        "title": "Individuals - Collection (1) One Levels 5-8 Model A",
+        "driveFileId": "1hBqFsoQnWZjX9uHaBIsCC2HVC3bZgad7"
       },
       {
-        "title": "Collections",
-        "driveFileId": "1fJmtljmJJ-D1TnUYpROYRJjTFtgn0FFO"
+        "title": "Individuals - Collection (1) One Levels 5-8 Model B",
+        "driveFileId": "1ebwHIU2E7mPcVtQPh3E480JN-HS8l9Wq"
+      },
+      {
+        "title": "Individuals - Collection (1) One Levels 5-8 Model C",
+        "driveFileId": "10uFf1ilcIwoO84aylkuMTjUSgOMjo1Wy"
+      },
+      {
+        "title": "Individuals - Collection (1) One Levels 5-8 Model D",
+        "driveFileId": "1U50JCbUUYw-8FwLRf8yIuJjDtiy99_yH"
+      },
+      {
+        "title": "Individuals - Collection (2) Two Levels 12-27 Model A",
+        "driveFileId": "1UcNy08G861397yYUP00mzxP7taehM8Mg"
+      },
+      {
+        "title": "Individuals - Collection (2) Two Levels 12-27 Model B",
+        "driveFileId": "1JAMpY6_kLpitC0SJMi3mV-7wwsiE1jIr"
+      },
+      {
+        "title": "Individuals - Collection (2) Two Levels 12-27 Model C",
+        "driveFileId": "1_E69SOPbc7Lh1Zp0Noa8y2zzEZ9_-20D"
+      },
+      {
+        "title": "Individuals - Collection (2) Two Levels 12-27 Model D",
+        "driveFileId": "1QMOr2EiFobD4rw7yR80r-9aEoXcjxvzn"
+      },
+      {
+        "title": "Individuals - Collection (2) Two Levels 12-27 Model E",
+        "driveFileId": "1SuDdCJ_8KSfDnBTxaLYEzjvVTIhADRcI"
+      },
+      {
+        "title": "Individuals - Collection (2) Two Levels 12-27 Model F",
+        "driveFileId": "1zi4RYlVxKkHDuLl8lMOAqs35aRYXCnne"
+      },
+      {
+        "title": "Individuals - Collection (3) Three Levels 30-43 Model A",
+        "driveFileId": "1XwksTKfzNm7D5An6w5mK5I2iI8eRgwLX"
+      },
+      {
+        "title": "Individuals - Collection (3) Three Levels 30-43 Model B",
+        "driveFileId": "1E9bS4a-3cFmfnpjHXY53WHZwfxDwa5-2"
+      },
+      {
+        "title": "Individuals - Collection (3) Three Levels 30-43 Model C",
+        "driveFileId": "1P9aaEYQM8pnQzbpfE6WUasFRs_GMhdPD"
+      },
+      {
+        "title": "Individuals - Collection (3) Three Levels 30-43 Model D",
+        "driveFileId": "14Yi9t8s3dh17lZaBH15ZnMtUGNmmr_vx"
+      },
+      {
+        "title": "Individuals - Collection (3) Three Levels 30-43 Model E",
+        "driveFileId": "1rtuMpvKnTY5JdQ_kGkKbO4fspH8n8nsV"
+      },
+      {
+        "title": "Individuals - Collection (3) Three Levels 30-43 Model F",
+        "driveFileId": "1eihDA7oLNXafmqPotk4yN080IrdWWcA2"
+      },
+      {
+        "title": "Individuals - Collection (4) Four Levels 46-59 Model A",
+        "driveFileId": "1S5nKIjD92UNSNGjAHWLRhAceqLsaVqCu"
+      },
+      {
+        "title": "Individuals - Collection (4) Four Levels 46-59 Model B",
+        "driveFileId": "1-J_-UU6f3rvr-zVQbV7iEQX3ygYhWL3_"
+      },
+      {
+        "title": "Individuals - Collection (4) Four Levels 46-59 Model C",
+        "driveFileId": "1P5V9afpMV7wHoyLmL5rSJaH3gf7F44_5"
+      },
+      {
+        "title": "Individuals - Collection (4) Four Levels 46-59 Model D",
+        "driveFileId": "13l4VJ13B_p5LiVEwjwT83XwialwuwrvX"
+      },
+      {
+        "title": "Individuals - Collection (4) Four Levels 46-59 Model E",
+        "driveFileId": "1BCAvl7Jhrv962Z_sFmmKxk50jjlk71sg"
+      },
+      {
+        "title": "Individuals - Collection (5) Five Levels 62-71 Model A",
+        "driveFileId": "1Dwa4YTYD8HwRMWd1siasSDy9fM2fKhy7"
+      },
+      {
+        "title": "Individuals - Collection (5) Five Levels 62-71 Model C",
+        "driveFileId": "1Gxrm46k6OTg17qySGs_kmJqaBsSLvtZ1"
+      },
+      {
+        "title": "Individuals - Collection (5) Five Levels 62-71 Model D",
+        "driveFileId": "1zxcLPdLFu-DJFhtXxk4NMIPXjkGsMgRG"
+      },
+      {
+        "title": "Other Floor Plans - Brickell Nobu - Amenities Floor Plates",
+        "driveFileId": "1WdyxMFQGf8lIV0ySoeSgIvjaSoSoR_Jn"
+      },
+      {
+        "title": "Other Floor Plans - Brickell Nobu - Collections Floor Plates",
+        "driveFileId": "1mXBxkt3IHSK_9B1EJ1x3x624fgfkp_jb"
+      },
+      {
+        "title": "Other Floor Plans - Collection Floor Plates & Amenities",
+        "driveFileId": "1J3oqiXrajr6PcS50fAa2JffYNV8BAvOn"
       }
     ],
     "presentations": [
       {
-        "title": "EN",
-        "driveFileId": "1I653tHB1WDoEBCJ5g0G374t4iQlkQYhi"
+        "title": "",
+        "driveFileId": "1F0uZDYgXzr7shaeMYTuKOctkYZ2OZ4B9"
       }
     ],
     "renderings": [
       {
-        "driveFileId": "1ks-b85XUEv90bGRIQ2eUiLvLHxD0-0Lz",
-        "alt": "619 Residences 2"
+        "driveFileId": "1pPuRuIrJpx_a3B_T116lrAFyx4x5GpqG",
+        "alt": "619 Residences Brickell Nobu - Balcony View"
       },
       {
-        "driveFileId": "11MN1_HfnOXGo5VcVtFFToTFO1xv5b4FF",
-        "alt": "619 Residences 3"
+        "driveFileId": "1capLZa_Hv9h1djpj9B_WRbxupi-2HZba",
+        "alt": "619 Residences Brickell Nobu - Bath Tub"
       },
       {
-        "driveFileId": "14NV9givZWK7Cdhv8xSWV_6hdG7FfHgFZ",
-        "alt": "IMG_5145"
+        "driveFileId": "1L9EVt3-Q1EOPz3MoRRFOA9ZRcv2nQku0",
+        "alt": "619 Residences Brickell Nobu - Bathroom"
       },
       {
-        "driveFileId": "1nBDHqojMI4sImBblzGc3p-nymWXR3GST",
-        "alt": "IMG_5146"
+        "driveFileId": "1P4dhd7dcjf18jDIVIcduH-N7XWEshFlE",
+        "alt": "619 Residences Brickell Nobu - Bathroom Vanity"
       },
       {
-        "driveFileId": "19Z5oA1ML0TGGrUALr665WTTgJoLLqDbn",
-        "alt": "IMG_5147"
+        "driveFileId": "1rjtkJtNW2aic5Oz1oEmwYDjJGQvtZaUo",
+        "alt": "619 Residences Brickell Nobu - BBQ Area"
       },
       {
-        "driveFileId": "1UYqKBbrviVc1x3C0dDU4obco6nKuK2Xq",
-        "alt": "IMG_5148"
+        "driveFileId": "1sWM-FuXjzRv1uxSMwGa1H1WtZ-KklsXU",
+        "alt": "619 Residences Brickell Nobu - Building"
       },
       {
-        "driveFileId": "1qAcVRYUHGg_RU1pqM3olK5QkkIcRji4H",
-        "alt": "IMG_5149"
+        "driveFileId": "1MznyEG3XvAXxEuyxiSHjMYXp6jgg_QqQ",
+        "alt": "619 Residences Brickell Nobu - Entrance"
       },
       {
-        "driveFileId": "1-xEvxUdePK2L2McVJODjoetjJm5eJDs0",
-        "alt": "IMG_5150"
+        "driveFileId": "1mTatqhehm9P5RXC13_CDWkARlAJxrvR7",
+        "alt": "619 Residences Brickell Nobu - Fitness Center"
       },
       {
-        "driveFileId": "1E4HA49ToOUJ2q5uitBjgrVO_bABVKsWt",
-        "alt": "IMG_5151"
+        "driveFileId": "1jglf4ERK7j3_Iio2Xn6XHSagsTaJ1PC7",
+        "alt": "619 Residences Brickell Nobu - Hammam"
       },
       {
-        "driveFileId": "1-b0QDfMT1QJTKoQmLLtM776Qv6atLycM",
-        "alt": "IMG_5152"
+        "driveFileId": "1Nr_y7Vjt4Q7pyhtRV4EjVhl2OQNKVe9q",
+        "alt": "619 Residences Brickell Nobu - Hero"
       },
       {
-        "driveFileId": "13t82Jm3M5eXc9kvwTYYEu0g7tmY1nJut",
-        "alt": "IMG_5153"
+        "driveFileId": "1Za0HKzuN6_7UQi5Aj95Dwd-jIQkGqJzI",
+        "alt": "619 Residences Brickell Nobu - Kid Play"
       },
       {
-        "driveFileId": "1YmR08FTr_XZ-oo6yZFqoCWUHzvc_zOgn",
-        "alt": "IMG_5154"
+        "driveFileId": "1LHEfrmvZrzTEHRXEG4s8f40K8rV24TZM",
+        "alt": "619 Residences Brickell Nobu - Kitchen"
       },
       {
-        "driveFileId": "1oi9Uo3IwDRZhSVyroGGTVrBpUjA90dW4",
-        "alt": "IMG_5155"
+        "driveFileId": "17apt4e2Gi2VoIvhy7Pny7htjM43vPZeJ",
+        "alt": "619 Residences Brickell Nobu - LivingRoom"
       },
       {
-        "driveFileId": "1K9Q6lTeQNof8LFWN4KRpik9pQ755L4z5",
-        "alt": "IMG_5156"
+        "driveFileId": "1CKQlHjuDz-4cq-qhKnP4DKcHtkSJ3GYG",
+        "alt": "619 Residences Brickell Nobu - Livingroom B&C"
       },
       {
-        "driveFileId": "1v9T7pbYfhjTvvs7X0FNs3MCZ_pNzM_jL",
-        "alt": "IMG_5157"
+        "driveFileId": "1PrmJ3ey3LP1aiNqjnjMji1-sWrl_1kBt",
+        "alt": "619 Residences Brickell Nobu - Lobby"
       },
       {
-        "driveFileId": "1Van3cIbJ5TmM37Z8K40qXjWM3LmHTcVl",
-        "alt": "IMG_5158"
+        "driveFileId": "133NS4l6EjoEB2dJQuFLhwrBDFOCFthX5",
+        "alt": "619 Residences Brickell Nobu - Outdoor Yoga"
       },
       {
-        "driveFileId": "1H89SK6FnYsKpaxVUwjyJd6e7xKUzM0o1",
-        "alt": "IMG_5159"
+        "driveFileId": "1Sk8SoqjiPHqbBrdNruwh2eTVbdrQ67T3",
+        "alt": "619 Residences Brickell Nobu - Owners Lounge"
       },
       {
-        "driveFileId": "1uqe5mJJDjPU0fO64_UQq44lICNZdbGDF",
-        "alt": "IMG_5160"
+        "driveFileId": "1VOcv622BGv5l99y9lTBPds7VWwONwRhR",
+        "alt": "619 Residences Brickell Nobu - Padel Court"
       },
       {
-        "driveFileId": "1bQ6oAd8uTIj9Gv3yE-EZ79RCvgJmn1F9",
-        "alt": "IMG_5161"
+        "driveFileId": "103e0eVrs_3ixqqVtl6XOlA1IojcqUF1R",
+        "alt": "619 Residences Brickell Nobu - Plunge Pool"
       },
       {
-        "driveFileId": "1Dv1_f4cgo4-E-2Zf6ZyWmMdOH35YuGAm",
-        "alt": "IMG_5162"
+        "driveFileId": "1W-BdkHA-1eyBp24Jv5hN0fHCjW53m8B8",
+        "alt": "619 Residences Brickell Nobu - Pool Cabana"
       },
       {
-        "driveFileId": "1ieW9dr6zAQ4rpkFi1qgAInG8AzPBPJ69",
-        "alt": "IMG_5163"
+        "driveFileId": "1wxBMnrhm7ja6Tgrr2BIbgH039G1mL4xy",
+        "alt": "619 Residences Brickell Nobu - Porte Cochere"
       },
       {
-        "driveFileId": "1_9zcJZfiCbtZAykwcR00nQ3tSGgno1tX",
-        "alt": "IMG_5164"
+        "driveFileId": "1p6y43IcrTvQ_qm_Zd0CcOEv2KjmV98Mw",
+        "alt": "619 Residences Brickell Nobu - Primary Bedroom"
       },
       {
-        "driveFileId": "1zb4BdF430lfaGsMen6BnvxXguxnrs5MJ",
-        "alt": "IMG_5165"
+        "driveFileId": "1fKuupbTtH45bNPzmfFJfFupD9xbOznTx",
+        "alt": "619 Residences Brickell Nobu - Salt Pool"
       },
       {
-        "driveFileId": "1o2jmJZv2kiRbrPqNtlUWV5WwIY3zaRdN",
-        "alt": "IMG_5166"
+        "driveFileId": "1dKsrlkgqDN5yssKDLjjoxk_tbKW2qd41",
+        "alt": "619 Residences Brickell Nobu - Screening Room"
       },
       {
-        "driveFileId": "1k2FkxScnI6JuwLX6EJk-3YHbVFesFCju",
-        "alt": "IMG_5167"
+        "driveFileId": "1-dVMU_2MpmSCN7S1Uq8rUcg0wEHF8Kwa",
+        "alt": "619 Residences Brickell Nobu - Spa"
       },
       {
-        "driveFileId": "1ae2hLQjkLE7Q5lNR5IaKZ6r_sCWx7b7m",
-        "alt": "IMG_5168"
+        "driveFileId": "19ECagVBr7IFVy8M3ImlVCljgfnFV2Dij",
+        "alt": "619 Residences Brickell Nobu - Summer Kitchen"
       },
       {
-        "driveFileId": "1wDc6mx96d8eeoWRZe0TSc-vujR3k0O1N",
-        "alt": "IMG_5169"
+        "driveFileId": "1TyrXHQUV49H_dCQk_ZrxS2sNpXd-1iBM",
+        "alt": "619 Residences Brickell Nobu - Terrace"
       },
       {
-        "driveFileId": "1X8mzwQUjRgDaEpEax9lwk_kSLstqIs93",
-        "alt": "IMG_5170"
+        "driveFileId": "1b-kkKnRecZp1-0nv8OaXWsRiWhtD2T9s",
+        "alt": "619 Residences Brickell Nobu - Wine Room"
       },
       {
-        "driveFileId": "1QDnAJ3ey0C8oAsV5vq4HzQyOHEL8VOk2",
-        "alt": "IMG_5171"
+        "driveFileId": "1Y-EecjEqoGJu1T_BigtH1HNMbgLdqunH",
+        "alt": "619 Residences Brickell Nobu - Nobu Cafe 1"
       },
       {
-        "driveFileId": "15IFevFoWJXfuwy3NBcMryWSTA94Ddtdw",
-        "alt": "IMG_5172"
+        "driveFileId": "1kvenpJpOz5S8f4tMvjYGc42KXaL2JXcI",
+        "alt": "619 Residences Brickell Nobu - Pool Deck 1"
       },
       {
-        "driveFileId": "1p53ZNFfQ2vR47IzNc_gc6yKqjrEJm_x0",
-        "alt": "IMG_5173"
+        "driveFileId": "1zAasURAlcbcdGVbyxNaWE8GGEJLdadWO",
+        "alt": "619 Residences Brickell Nobu - Nobu Cafe 2"
       },
       {
-        "driveFileId": "1rujql9cqb8HUcazGxwdace6uBat-zmFC",
-        "alt": "IMG_5174"
+        "driveFileId": "1muwRQuEUmjuhmP-Iw58GAvgjW8W-DyAN",
+        "alt": "619 Residences Brickell Nobu - Pool Deck 2"
       },
       {
-        "driveFileId": "1D-ineGotPFxOiow518OwfOkIglLna3MS",
-        "alt": "IMG_5175"
+        "driveFileId": "1W19ZxNAWLNyC2UDDQWxH3HDg9dfqR7Lh",
+        "alt": "619 Residences Brickell Nobu - Pool Deck 3"
       }
     ],
     "factSheets": [
       {
         "title": "",
-        "driveFileId": "1qf1kMt6MarIcmhLjDKu17vP6GgrzW1CH"
+        "driveFileId": "1JN5FO_GyFHFxWnq965o08EYeDxAgDpGJ"
       }
     ]
   },
