@@ -338,17 +338,20 @@ async function main() {
 
         if (!catFolder) continue;
 
-        // List ONLY the direct children of the category folder — never recurse.
-        // Subfolders like "Individuals" or "Other Floor Plans" are internal
-        // organization and should not be flattened into the doc list.
-        const allChildren = await listChildren(drive, catFolder.id);
-        const files = allChildren.filter(
-          f => f.mimeType !== 'application/vnd.google-apps.folder'
-        );
-
+        // Renderings: recurse into nested subfolders (luxury projects often
+        // organize their large galleries by theme: Exterior/, Interior/, etc.)
+        // Docs (brochures, fact sheets, floor plans, presentations): root only.
+        // Internal subfolders like "Individuals" or "Other Floor Plans" are
+        // editorial organization and must NOT be flattened into the doc list.
+        let files;
         if (cat.field === 'renderings') {
+          files = await listFilesRecursive(drive, catFolder.id);
           updates[cat.field] = buildRenderItems(files);
         } else {
+          const allChildren = await listChildren(drive, catFolder.id);
+          files = allChildren.filter(
+            f => f.mimeType !== 'application/vnd.google-apps.folder'
+          );
           updates[cat.field] = buildDocItems(files);
         }
       }
