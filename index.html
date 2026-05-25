@@ -236,23 +236,31 @@
       var q = query.toLowerCase();
       var score = 0;
 
-      // Strong bonus: name contains query as substring
+      // Strong bonus: full name contains the whole query as a substring
       if (n.indexOf(q) !== -1) score += 40;
 
-      // Word-level bonus: any query word appears in any name word
+      // Word-level scoring: compare each query word against each name word.
+      // Using per-word edit distance (normalised by the shorter word's length)
+      // avoids the "long name dilutes the score" problem — "bosue" scores
+      // well against "Bosques" even though the full name is 19 chars long.
       var qWords = q.split(/\s+/).filter(Boolean);
       var nWords = n.split(/\s+/).filter(Boolean);
       qWords.forEach(function(qw) {
+        var best = 0;
         nWords.forEach(function(nw) {
-          if (nw.indexOf(qw) === 0) score += 20;       // prefix match
-          else if (nw.indexOf(qw) !== -1) score += 10; // contains match
+          if (nw === qw)                  { best = Math.max(best, 30); return; }
+          if (nw.indexOf(qw) === 0)       { best = Math.max(best, 20); return; }
+          if (nw.indexOf(qw) !== -1)      { best = Math.max(best, 12); return; }
+          // Per-word edit distance (only worth computing for longer tokens)
+          if (qw.length >= 3) {
+            var maxLen = Math.max(nw.length, qw.length) || 1;
+            var dist   = levenshtein(nw, qw);
+            var es     = Math.round((1 - dist / maxLen) * 20);
+            if (es > best) best = es;
+          }
         });
+        score += best;
       });
-
-      // Edit-distance bonus (normalised so shorter distance = higher score)
-      var maxLen = Math.max(n.length, q.length) || 1;
-      var dist   = levenshtein(n, q);
-      score += Math.round((1 - dist / maxLen) * 15);
 
       return score;
     }
@@ -263,9 +271,10 @@
         return { project: p, score: fuzzyScore(p.name, query) };
       });
       scored.sort(function(a, b) { return b.score - a.score; });
-      // Only return results with a meaningful score
+      // Threshold of 4 keeps genuinely unrelated results out while
+      // still surfacing real typo/partial-match suggestions
       return scored
-        .filter(function(s) { return s.score > 5; })
+        .filter(function(s) { return s.score > 4; })
         .slice(0, 5)
         .map(function(s) { return s.project; });
     }
