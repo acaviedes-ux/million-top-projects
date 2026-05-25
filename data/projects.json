@@ -3548,8 +3548,8 @@
     ],
     "projectLogo": "/images/logos/la-mare.png",
     "priceList": {
-      "driveFileId": "1KhVwBh-E4LpwzykJYQInuPDzibhUgMv1",
-      "createdAt": "As of May 22, 2026"
+      "driveFileId": "1DeGPwGpG7DBByOV1C5pGFRQ0bjdG2-pq",
+      "createdAt": "As of May 25, 2026"
     },
     "isNew": false,
     "filterCounty": "Miami-Dade County",
@@ -11423,7 +11423,11 @@
         "alt": "Pool 5"
       }
     ],
-    "presentations": []
+    "presentations": [],
+    "priceRange": {
+      "driveFileId": "1cyBx7C-9G2kGSvaKcK7UWhrNAoi0W5dq",
+      "createdAt": "As of May 25, 2026"
+    }
   },
   {
     "slug": "ritz-carlton-south-beach",
