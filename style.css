@@ -566,17 +566,19 @@ img { display: block; max-width: 100%; }
 
 .lobby-suggestions-heading {
   max-width: 1200px;
-  margin: 32px auto 4px;
+  margin: 8px auto 24px;
   padding: 0 24px;
-  font-size: 11px;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  font-weight: 600;
+  font-family: var(--serif);
+  font-size: 16px;
+  font-weight: 400;
+  font-style: italic;
+  letter-spacing: 0.04em;
   color: var(--gray-dark);
+  text-align: center;
 }
 
 .lobby-suggestions-grid {
-  opacity: 0.82;
+  opacity: 0.92;
 }
 
 /* ── PROJECTS GRID ───────────────────────────── */
