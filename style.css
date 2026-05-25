@@ -895,6 +895,92 @@ img { display: block; max-width: 100%; }
   z-index: 1;
 }
 
+/* ── HERO ACTION BUTTONS (download + expand) ── */
+.hero-download-btn,
+.hero-expand-btn {
+  position: absolute;
+  bottom: 12px;
+  z-index: 3;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.55);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s;
+  text-decoration: none;
+  padding: 0;
+  line-height: 1;
+}
+.hero-download-btn          { right: 12px; }
+.hero-expand-btn            { right: 56px; }
+.hero-download-btn:hover,
+.hero-expand-btn:hover      { background: rgba(0, 0, 0, 0.85); }
+.hero-download-btn svg,
+.hero-expand-btn svg        { display: block; pointer-events: none; }
+
+/* ── HERO LIGHTBOX ───────────────────────────── */
+.hero-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  background: rgba(0, 0, 0, 0.92);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero-lightbox-img {
+  max-width: 95vw;
+  max-height: 90vh;
+  object-fit: contain;
+  display: block;
+}
+.hero-lightbox-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 0;
+  transition: background 0.2s;
+}
+.hero-lightbox-close:hover  { background: rgba(255, 255, 255, 0.22); }
+.hero-lightbox-close svg    { display: block; filter: brightness(0) invert(1); }
+.hero-lightbox-download {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 10px 20px;
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--white, #fff);
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+.hero-lightbox-download:hover { background: rgba(255, 255, 255, 0.22); }
+.hero-lightbox-download svg   { display: block; filter: brightness(0) invert(1); }
+
+@media (max-width: 480px) {
+  .hero-expand-btn { display: none; }
+}
+
 /* ── BACK BAR (below hero, scrolls with page) ── */
 .back-bar {
   padding: 24px 32px;
