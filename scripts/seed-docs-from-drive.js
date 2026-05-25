@@ -338,8 +338,13 @@ async function main() {
 
         if (!catFolder) continue;
 
-        // List files inside the category subfolder, recursing into any nested subfolders
-        const files = await listFilesRecursive(drive, catFolder.id);
+        // List ONLY the direct children of the category folder — never recurse.
+        // Subfolders like "Individuals" or "Other Floor Plans" are internal
+        // organization and should not be flattened into the doc list.
+        const allChildren = await listChildren(drive, catFolder.id);
+        const files = allChildren.filter(
+          f => f.mimeType !== 'application/vnd.google-apps.folder'
+        );
 
         if (cat.field === 'renderings') {
           updates[cat.field] = buildRenderItems(files);
