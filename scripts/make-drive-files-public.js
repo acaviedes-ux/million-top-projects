@@ -58,38 +58,64 @@ async function main() {
 
   const drive = google.drive({ version: 'v3', auth: makeAuth() });
 
-  let ok = 0, skip = 0, err = 0;
+  // Counters are shared across parallel workers
+  let ok = 0, skip = 0, err = 0, done = 0;
+  const total = fileIds.size;
 
-  for (const fileId of fileIds) {
+  // Process one file: check direct permission, add anyone:reader if missing.
+  // The Drive API returns inherited permissions from parent folders. Those
+  // grants are real for normal viewing but DON'T satisfy the
+  // drive.google.com/file/d/ID/preview iframe embed — that needs a direct
+  // file-level grant. permissionDetails[].inherited === false flags it.
+  async function processFile(fileId) {
     try {
-      // Check existing permissions first — skip if already public
       const existing = await drive.permissions.list({
         fileId,
         supportsAllDrives: true,
-        fields: 'permissions(id,type,role)',
+        fields: 'permissions(id,type,role,permissionDetails)',
       });
-      const alreadyPublic = (existing.data.permissions || [])
-        .some(p => p.type === 'anyone' && p.role === 'reader');
+      const hasDirectPublic = (existing.data.permissions || []).some(p =>
+        p.type === 'anyone' &&
+        p.role === 'reader' &&
+        (p.permissionDetails || []).some(d => d.inherited === false)
+      );
 
-      if (alreadyPublic) {
+      if (hasDirectPublic) {
         skip++;
-        continue;
+      } else {
+        await drive.permissions.create({
+          fileId,
+          supportsAllDrives: true,
+          requestBody: { type: 'anyone', role: 'reader' },
+        });
+        ok++;
       }
-
-      await drive.permissions.create({
-        fileId,
-        supportsAllDrives: true,
-        requestBody: { type: 'anyone', role: 'reader' },
-      });
-      ok++;
-      process.stdout.write('.');
     } catch (e) {
       err++;
       console.error(`\n  ✗ ${fileId}: ${e.message}`);
+    } finally {
+      done++;
+      // Progress every 50 files: keeps GitHub Actions log readable
+      if (done % 50 === 0) {
+        console.log(`  ${done}/${total} (${ok} added, ${skip} skipped, ${err} errors)`);
+      }
     }
   }
 
-  console.log(`\n\n✓ Done`);
+  // Concurrency-limited worker pool. 8 parallel requests is well below
+  // Drive's 1000/100s quota and keeps total runtime under ~3 min for ~10k
+  // files — comfortably within the workflow's 10-min timeout.
+  const CONCURRENCY = 8;
+  const queue = [...fileIds];
+  const workers = Array.from({ length: CONCURRENCY }, async () => {
+    while (queue.length) {
+      const fileId = queue.shift();
+      if (fileId) await processFile(fileId);
+    }
+  });
+  await Promise.all(workers);
+
+  console.log(`\n✓ Done`);
   console.log(`  ${ok} files made public`);
   console.log(`  ${skip} already public (skipped)`);
   if (err) console.log(`  ${err} errors`);
