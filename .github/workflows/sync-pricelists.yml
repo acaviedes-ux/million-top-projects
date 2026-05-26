@@ -75,6 +75,15 @@ jobs:
           GOOGLE_IMPERSONATE_EMAIL: ${{ secrets.GOOGLE_IMPERSONATE_EMAIL }}
         run: node scripts/update-pricelist-dates.js
 
+      # Make every Drive file referenced in projects.json publicly readable.
+      # Runs unconditionally so newly-seeded files are always accessible —
+      # skips files that are already public (idempotent, ~100 ms per file).
+      - name: Make Drive files public
+        env:
+          GOOGLE_SERVICE_ACCOUNT_EMAIL: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_EMAIL }}
+          GOOGLE_PRIVATE_KEY: ${{ secrets.GOOGLE_PRIVATE_KEY }}
+        run: node scripts/make-drive-files-public.js
+
       - name: Check for changes
         id: diff
         run: |
