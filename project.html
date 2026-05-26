@@ -288,109 +288,22 @@
   // Stylish Amenities cell — includes Parking Spaces as sub-field
   // (buildAmenitiesNode removed \u2014 amenities and parking are now separate grid fields)
 
-  // ── Client-side PDF thumbnail renderer ──────────────────────────
-  // Uses pdfjs-dist from CDN so no native binary is needed on the server.
-  // /api/pdf-proxy authenticates the Drive download; pdfjs uses HTTP range
-  // requests so it only fetches the bytes it needs for page 1 (~50-300 KB
-  // regardless of total PDF size).
-
-  var _pdfjsLoading = false;
-  var _pdfjsReady   = false;
-  var _pdfjsQueue   = [];
-
-  function ensurePdfJs(cb) {
-    if (_pdfjsReady) { cb(); return; }
-    _pdfjsQueue.push(cb);
-    if (_pdfjsLoading) return;
-    _pdfjsLoading = true;
-    var s = document.createElement('script');
-    s.src = 'https://cdn.jsdelivr.net/npm/pdfjs-dist@3.11.174/legacy/build/pdf.min.js';
-    s.onload = function () {
-      window.pdfjsLib.GlobalWorkerOptions.workerSrc =
-        'https://cdn.jsdelivr.net/npm/pdfjs-dist@3.11.174/legacy/build/pdf.worker.min.js';
-      _pdfjsReady = true;
-      var q = _pdfjsQueue.slice(); _pdfjsQueue = [];
-      q.forEach(function (fn) { fn(); });
-    };
-    s.onerror = function () {
-      _pdfjsLoading = false;
-      _pdfjsQueue = [];
-    };
-    document.head.appendChild(s);
-  }
-
-  function renderPdfCanvas(canvas) {
-    var fileId = canvas.dataset.pdfId;
-    ensurePdfJs(function () {
-      window.pdfjsLib.getDocument({
-        url: '/api/pdf-proxy?id=' + fileId,
-        rangeChunkSize: 131072,  // 128 KB chunks — fewer round-trips vs 64 KB default
-        disableFontFace: true,
-        cMapUrl: null,
-        standardFontDataUrl: null,
-      }).promise.then(function (pdf) {
-        return pdf.getPage(1);
-      }).then(function (page) {
-        var vp0   = page.getViewport({ scale: 1 });
-        var scale = 260 / vp0.width;  // 260px wide — faster render, still sharp enough for thumbnail
-        var vp    = page.getViewport({ scale: scale });
-        canvas.width  = Math.round(vp.width);
-        canvas.height = Math.round(vp.height);
-        var ctx = canvas.getContext('2d');
-        ctx.fillStyle = '#ffffff';
-        ctx.fillRect(0, 0, canvas.width, canvas.height);
-        return page.render({ canvasContext: ctx, viewport: vp }).promise;
-      }).then(function () {
-        canvas.classList.add('pdf-ready');
-      }).catch(function (err) {
-        console.warn('[pdf-thumb] ' + fileId + ':', err.message);
-        var empty = el('div', 'doc-preview doc-preview--empty');
-        if (canvas.parentNode) canvas.parentNode.replaceChild(empty, canvas);
-      });
-    });
-  }
-
-  function initPdfPreviews() {
-    var canvases = document.querySelectorAll('canvas.doc-preview-canvas');
-    if (!canvases.length) return;
-
-    // Pre-warm pdfjs-dist immediately — CDN download starts now, in parallel
-    // with the user scrolling toward the first card, so the library is ready
-    // by the time IntersectionObserver fires for the first canvas.
-    ensurePdfJs(function () {});
-
-    if (!window.IntersectionObserver) {
-      canvases.forEach(function (c) { renderPdfCanvas(c); });
-      return;
-    }
-    var obs = new IntersectionObserver(function (entries) {
-      entries.forEach(function (entry) {
-        if (!entry.isIntersecting) return;
-        obs.unobserve(entry.target);
-        renderPdfCanvas(entry.target);
-      });
-    }, { rootMargin: '400px 0px' });
-    canvases.forEach(function (c) { obs.observe(c); });
-  }
-
   // subtitle (optional) shows a small date or variant label below the title
   function docItem(title, driveFileId, subtitle) {
     var row = el('div', 'doc-item');
 
-    // Preview thumbnail — canvas rendered client-side via pdfjs-dist
+    // Preview thumbnail — served by /api/thumb (server-side: thumbnailLink → pdfjs render → SVG)
     if (driveFileId) {
       var previewLink = el('a', 'doc-preview-link');
       previewLink.href   = 'https://drive.google.com/file/d/' + driveFileId + '/view';
       previewLink.target = '_blank';
       previewLink.rel    = 'noopener noreferrer';
-      var canvas = el('canvas', 'doc-preview-canvas');
-      canvas.dataset.pdfId = driveFileId;
-      canvas.width  = 260;
-      canvas.height = 337;   // ~8.5/11 ratio placeholder while loading
-      // Draw initial grey placeholder so the card has correct dimensions immediately
-      var ctx0 = canvas.getContext('2d');
-      if (ctx0) { ctx0.fillStyle = '#fbfbfb'; ctx0.fillRect(0, 0, 260, 337); }
-      previewLink.appendChild(canvas);
+      var img = document.createElement('img');
+      img.src       = '/api/thumb?id=' + driveFileId;
+      img.className = 'doc-preview';
+      img.alt       = title || 'Preview';
+      img.loading   = 'lazy';
+      previewLink.appendChild(img);
       row.appendChild(previewLink);
     } else {
       row.appendChild(el('div', 'doc-preview doc-preview--empty'));
@@ -741,9 +654,6 @@
     }
 
     pageContent.appendChild(frag);
-
-    // Activate lazy PDF thumbnail rendering for all doc canvases now in DOM
-    initPdfPreviews();
   }
 
   // ── Fetch & boot ─────────────────────────────────────────────
