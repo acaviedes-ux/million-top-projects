@@ -75,6 +75,15 @@ jobs:
           GOOGLE_IMPERSONATE_EMAIL: ${{ secrets.GOOGLE_IMPERSONATE_EMAIL }}
         run: node scripts/update-pricelist-dates.js
 
+      # Heal references to files that were trashed in Drive after seeding.
+      # End users see "File is in owner's trash" otherwise — silent breakage.
+      - name: Heal trashed price list references
+        env:
+          GOOGLE_SERVICE_ACCOUNT_EMAIL: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_EMAIL }}
+          GOOGLE_PRIVATE_KEY: ${{ secrets.GOOGLE_PRIVATE_KEY }}
+          PRICE_LIST_DRIVE_FOLDER_ID: ${{ secrets.PRICE_LIST_DRIVE_FOLDER_ID }}
+        run: node scripts/heal-trashed-pricelists.js
+
       # Make every Drive file referenced in projects.json publicly readable.
       # Runs unconditionally so newly-seeded files are always accessible —
       # skips files that are already public (idempotent, ~100 ms per file).

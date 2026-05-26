@@ -18,7 +18,9 @@
     "find:missing": "node scripts/find-missing-docs.js",
     "find:missing:apply": "node scripts/find-missing-docs.js --apply",
     "update:dates": "node scripts/update-pricelist-dates.js",
-    "update:dates:dry": "node scripts/update-pricelist-dates.js --dry"
+    "update:dates:dry": "node scripts/update-pricelist-dates.js --dry",
+    "heal:trashed": "node scripts/heal-trashed-pricelists.js",
+    "heal:trashed:dry": "node scripts/heal-trashed-pricelists.js --dry"
   },
   "dependencies": {
     "@napi-rs/canvas": "^0.1.67",
