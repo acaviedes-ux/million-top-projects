@@ -235,6 +235,14 @@ async function main() {
       const monthName = MONTHS[monthFolder.monthNum - 1] || String(monthFolder.monthNum);
 
       const files = await listChildren(drive, monthFolder.id);
+      // Sort newest-first by modifiedTime — when admins replace a price list by
+      // uploading a NEW file with the same name (instead of "Manage versions"),
+      // Drive ends up with multiple files matching the same project. The script
+      // stops at the first match per project, so we must scan the newest first
+      // to guarantee the latest version wins.
+      files.sort((a, b) =>
+        new Date(b.modifiedTime || 0).getTime() - new Date(a.modifiedTime || 0).getTime()
+      );
       let matchedThisMonth = 0;
 
       for (const file of files) {
