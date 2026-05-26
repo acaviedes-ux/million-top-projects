@@ -20,7 +20,9 @@
     "update:dates": "node scripts/update-pricelist-dates.js",
     "update:dates:dry": "node scripts/update-pricelist-dates.js --dry",
     "heal:trashed": "node scripts/heal-trashed-pricelists.js",
-    "heal:trashed:dry": "node scripts/heal-trashed-pricelists.js --dry"
+    "heal:trashed:dry": "node scripts/heal-trashed-pricelists.js --dry",
+    "audit:prices": "node scripts/audit-pricelists.js",
+    "audit:prices:bad": "node scripts/audit-pricelists.js --only-bad"
   },
   "dependencies": {
     "@napi-rs/canvas": "^0.1.67",
