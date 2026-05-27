@@ -1,0 +1,88 @@
+name: Sync Project Docs from Drive
+
+# ── Triggers ───────────────────────────────────────────────────────────────────
+# • schedule: every 30 min, Mon–Fri, 8 AM–5 PM Bogotá time (COT = UTC-5)
+#     8:00 AM COT = 13:00 UTC  |  5:00 PM COT = 22:00 UTC
+#     Offset to :05 / :35 (instead of :00 / :30) so this never fires at the same
+#     minute as sync-pricelists.yml (:00 :15 :30 :45), reducing git-push contention.
+# • workflow_dispatch: manual run from the GitHub Actions UI
+#
+# Scope: brochures, fact sheets, presentations, floor plans (ROOT files only —
+# editorial subfolders like "Individuals" / "Other Floor Plans" are ignored) and
+# renderings (recursive, since large galleries are organised in themed subfolders).
+on:
+  schedule:
+    - cron: '5,35 13-22 * * 1-5'   # every 30 min, Mon–Fri, 8 AM–5 PM COT
+  workflow_dispatch:
+
+# Only one docs sync at a time. A full --force scan touches hundreds of Drive
+# folders, so if a run is still going when the next fires, let it finish.
+concurrency:
+  group: sync-docs
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20      # full scan of ~700 folders × 5 categories
+    permissions:
+      contents: write        # allows git push
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      # Full --force sweep across all three roots (Top Projects, Preconstruction,
+      # Resale). Docs are read root-only; renderings recurse. Folder IDs are not
+      # secrets (just Drive identifiers) so they live inline; only the Google
+      # service-account credentials come from repository secrets.
+      - name: Seed docs and renders from Drive
+        env:
+          GOOGLE_SERVICE_ACCOUNT_EMAIL: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_EMAIL }}
+          GOOGLE_PRIVATE_KEY: ${{ secrets.GOOGLE_PRIVATE_KEY }}
+          DOCS_DRIVE_FOLDER_ID: '1OEO2oOrNuIQkmsdnLfJXwObui_CYpGqv'
+          EXTRA_DOCS_FOLDER_IDS: '1U0J0ETnBVMgLEcTjOqpsfVA_gF8kz9jF,1XR1IKZ9kz0SNtOYy0PQc1hSzGJ09S7aj'
+        run: node scripts/seed-docs-from-drive.js --force
+
+      # Make every Drive file referenced in projects.json publicly readable so the
+      # PDF proxy and thumbnails work. Idempotent — skips already-public files.
+      - name: Make Drive files public
+        env:
+          GOOGLE_SERVICE_ACCOUNT_EMAIL: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_EMAIL }}
+          GOOGLE_PRIVATE_KEY: ${{ secrets.GOOGLE_PRIVATE_KEY }}
+        run: node scripts/make-drive-files-public.js
+
+      - name: Check for changes
+        id: diff
+        run: |
+          if git diff --quiet data/projects.json; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "No document changes detected."
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            git diff --stat data/projects.json
+          fi
+
+      # Rebase onto any commit the price-list workflow pushed while we were
+      # scanning, then push. Prevents non-fast-forward failures when both
+      # workflows touch data/projects.json near the same time.
+      - name: Commit and push
+        if: steps.diff.outputs.changed == 'true'
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/projects.json
+          git commit -m "chore: auto-sync project docs from Drive"
+          git pull --rebase origin main
+          git push
