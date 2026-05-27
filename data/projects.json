@@ -12613,7 +12613,7 @@
     "startingPrice": "$1.4M",
     "thumbnail": "/images/renders/the-well-coconut-grove.jpg",
     "hero": "/images/renders/the-well-coconut-grove.jpg",
-    "theBuilding": "A boutique collection of 194 residences, featuring 1-4 bedroom layouts, within an intimate 8-story building.",
+    "theBuilding": null,
     "stylishAmenities": "Including a resident herb garden, a conservatory, tea garden, a library, private dining room, children's room, fitness center, and multiple pools with cabanas.",
     "brochures": [
       {
@@ -12627,7 +12627,6 @@
     ],
     "tpDataName": "The Well Coconut Grove",
     "section": "Top Projects",
-    "theBuilding": null,
     "address": "2835 Tigertail Ave, Miami, FL 33133",
     "developer": "Terra",
     "architecture": "Arquitectonica",
