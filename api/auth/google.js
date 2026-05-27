@@ -44,7 +44,7 @@ export default async function handler(req, res) {
   const session = {
     email,
     name: tokenData.name || email,
-    exp: Date.now() + 24 * 60 * 60 * 1000,
+    exp: Date.now() + 3 * 24 * 60 * 60 * 1000,
   };
 
   const cookieValue = signSession(session, process.env.SESSION_SECRET);
@@ -53,7 +53,7 @@ export default async function handler(req, res) {
 
   res.setHeader(
     'Set-Cookie',
-    `auth=${cookieValue}; HttpOnly; SameSite=Lax; Path=/; Max-Age=86400${secureFlag}`
+    `auth=${cookieValue}; HttpOnly; SameSite=Lax; Path=/; Max-Age=259200${secureFlag}`
   );
 
   return res.status(200).json({ ok: true });
