@@ -1996,10 +1996,6 @@
         "alt": "Arrival"
       },
       {
-        "driveFileId": "1DbjbJM4bOcW8yv716sYGUsbzSAKeFzIw",
-        "alt": "Balcony"
-      },
-      {
         "driveFileId": "1xXZNuEB3tBUEVMhJuluI7B-_LV4yKnJw",
         "alt": "BalconyToLiving"
       },
@@ -2042,10 +2038,6 @@
       {
         "driveFileId": "1mxLCbHDCc-J1_znk8GZyW5GGwd9JOan4",
         "alt": "Cipriani Residences Miami EXT view"
-      },
-      {
-        "driveFileId": "1V620ITYNJE_3C0ZUJz36EDr0NSFT-Wgs",
-        "alt": "Cipriani Residences Miami EXT View - No building"
       },
       {
         "driveFileId": "14ZYHh97wZrJiMp-2k7Khckt9kgPCRVMe",
@@ -4111,7 +4103,7 @@
     "brochures": [
       {
         "title": "",
-        "driveFileId": "1Hm8bi1UCFpS97EpjGpcCTaIOz5xqyh7m"
+        "driveFileId": "1KUKA33CM0L-sToFq6NK3JdPOmkdswvco"
       }
     ],
     "esqueletoName": "Mr. C Residences Boca Raton",
@@ -4152,219 +4144,55 @@
     "factSheets": [
       {
         "title": "",
-        "driveFileId": "1qW-eKgrBCkIAR-XH4KIjGwDFfpLhyiow"
-      },
-      {
-        "title": "",
-        "driveFileId": "1yiTptGlXVGlIpUKUEmV0NBncjfwEd51_"
+        "driveFileId": "1CFqaW8m0_9-qZDlransHtSrYSctCImqK"
       }
     ],
     "floorPlans": [
       {
         "title": "",
-        "driveFileId": "16tpBJtAAB7JlG_Cyc0z8CXLW0kFG-dh4"
+        "driveFileId": "1AUOmInHnhTbgCPMaDmT-lYiIzy3o2F31"
       }
     ],
     "renderings": [
       {
-        "driveFileId": "17S7qF7dPjkphpzzCLjEz3Xp725ZgHj8D",
-        "alt": "BoteggaCafe_Stations image"
+        "driveFileId": "1i17XXx24rvPWJ-1BOHmlUhbCZkwVmZKR",
+        "alt": "Mr. C Residences Boca Raton (1)"
       },
       {
-        "driveFileId": "1hD3E4BXvNp4OfbMAYgJnaQ0TgfOAWfGf",
-        "alt": "Mr C Residences Master Bath All"
+        "driveFileId": "16isd6hsix9GfSpATcJbPEuIQNZxESjdM",
+        "alt": "Mr. C Residences Boca Raton (10)"
       },
       {
-        "driveFileId": "1_cgH8poFC-B7X96m1MGe7BHO3PhQsYkt",
-        "alt": "Mr C Residences Unit 01 Kitchen"
+        "driveFileId": "1YOsSnZAWUgZhx9dm2Ugg79v2ra-olU1_",
+        "alt": "Mr. C Residences Boca Raton (2)"
       },
       {
-        "driveFileId": "1ObXs6Eg0XUnvlrtxmM21T7zLCBxJULeb",
-        "alt": "Mr C Residences Unit 01 Kitchen - Living"
+        "driveFileId": "1T7PsvBZBVnYuY6NPd1eCcXCM5VQHzw82",
+        "alt": "Mr. C Residences Boca Raton (3)"
       },
       {
-        "driveFileId": "1l5rTedqnCyVPqRenX3VjXxKYCs1PWnIp",
-        "alt": "Mr C Residences Unit 01 Kitchen Dining"
+        "driveFileId": "1vIdRqCdLmMS7kH8nWOfHaTcyNRpDD8_6",
+        "alt": "Mr. C Residences Boca Raton (4)"
       },
       {
-        "driveFileId": "1CH35Jv2dvUayfIyTYyBQz6lTTpkpRR6Y",
-        "alt": "Mr C Residences Unit 01 Master Bed"
+        "driveFileId": "1e38AmSBFZY9YKJYcheXP9NcXcnaXZXHI",
+        "alt": "Mr. C Residences Boca Raton (5)"
       },
       {
-        "driveFileId": "1e7TZOcbeG14Jna_RltoTW8r21OmJgfC5",
-        "alt": "Mr C Residences Unit 02 Bayfront"
+        "driveFileId": "1FOnvPMKyGpnWd7SYC_JfD1H-aE-hqhiX",
+        "alt": "Mr. C Residences Boca Raton (6)"
       },
       {
-        "driveFileId": "1CBpyCwfhEfSJ0j0c6rAFzlWojwxMBdks",
-        "alt": "Mr C Residences Unit 02 kitchen"
+        "driveFileId": "1-YxxnwbdUFS1DnXMLBnOTWah1GuMzGcU",
+        "alt": "Mr. C Residences Boca Raton (7)"
       },
       {
-        "driveFileId": "1btYi1DL41GL1eSBGdyw2kz73RNfzruT5",
-        "alt": "Mr C Residences Unit 02 kitchen and dining"
+        "driveFileId": "1um1f06pYTPn5S39LsHlHNoM5lXnKNXDJ",
+        "alt": "Mr. C Residences Boca Raton (8)"
       },
       {
-        "driveFileId": "1-xNaGEDs5u44Si8efh4I6uHTIfBF5PzD",
-        "alt": "Mr C Residences Unit 02 Living"
-      },
-      {
-        "driveFileId": "1W7u_yB7NGP-47EzShyDE2mRFsb6MIlvt",
-        "alt": "Mr C Residences Unit 02 Master Bed"
-      },
-      {
-        "driveFileId": "1Yc3K5YhTAWmnpjHBHkhp1tviZO-vvv6f",
-        "alt": "Mr C Residences Unit 09 Living"
-      },
-      {
-        "driveFileId": "1XEUPZQ40JhYXbieQO-d_gq3zHXbDCgSH",
-        "alt": "Mr C Residences Unit 09 Living - Kitchen"
-      },
-      {
-        "driveFileId": "1LecearzlvUXTkypV5OzSnuQ8MtDhW-Gk",
-        "alt": "Mr C Residences Unit 10 Living Room"
-      },
-      {
-        "driveFileId": "1N4G_kNZsT_XlZlpGxiwOEFvB4ziNWL1U",
-        "alt": "Mr C Residences Unit Combo 01-02 Living - Kitchen"
-      },
-      {
-        "driveFileId": "1aKGR85JhZmXBQE0pmMWOYUoKM_qhvnEF",
-        "alt": "Mr C Residences Unit Combo 01-02 Living Room"
-      },
-      {
-        "driveFileId": "19ZOTRBI988-XKgxbWhlHL6MC003MpmQi",
-        "alt": "Mr C Residences Unit Combo 01-02 Master Bed"
-      },
-      {
-        "driveFileId": "13_8YGkzyhlKoV93bDYJU1XjK0TVVBhLX",
-        "alt": "Mr. C Residences - Bay Shore"
-      },
-      {
-        "driveFileId": "1juo0lKAxssh38sXjET4C0WmIujnsP3vx",
-        "alt": "Mr. C Residences - Cafe"
-      },
-      {
-        "driveFileId": "1fOdFFVLVqNAEkrD1Lbs_riH_qwOlkFWW",
-        "alt": "Mr. C Residences - Game Room"
-      },
-      {
-        "driveFileId": "1onUDecHFe5Q770W6IyUe8uw68eODD3EX",
-        "alt": "Mr. C Residences - GYM"
-      },
-      {
-        "driveFileId": "1MtvxszXEBKLykjrW8pGpwZVEIKh36dJg",
-        "alt": "Mr. C Residences - Interior - NS"
-      },
-      {
-        "driveFileId": "1ro_KmcwGWAQHoL4gLbq3i7SM5C6XHDpL",
-        "alt": "Mr. C Residences - Marina Final"
-      },
-      {
-        "driveFileId": "1PvgFvkxuDMXtMIE4T1H6Kjqfoil6uyT5",
-        "alt": "Mr. C Residences - Marina2 Final"
-      },
-      {
-        "driveFileId": "1-CtPcS59yrNPu9WGIp8V2dyENOni9LAP",
-        "alt": "Mr. C Residences - Media Room"
-      },
-      {
-        "driveFileId": "1_gvsKDgg8sE8__l5mLEhdZA9I_TM3fTg",
-        "alt": "Mr. C Residences - Pool"
-      },
-      {
-        "driveFileId": "18GIAxFyLay2yaPC7g6_e0PWm4eU26kXw",
-        "alt": "Mr. C Residences - PoolLounge"
-      },
-      {
-        "driveFileId": "1yShcsiYV7ZZ_p6NNzKOnLQFcKFsTgOmO",
-        "alt": "Mr. C Residences - Sauna"
-      },
-      {
-        "driveFileId": "11gVGumzR564AMl9T_s9-9v3TK3hGgXDQ",
-        "alt": "Mr. C Residences - Wellness"
-      },
-      {
-        "driveFileId": "1TX8h406RoX2yfUOUzZJ7ZAUJppoS6XMN",
-        "alt": "Mr. C Residences EXT AERIAL Final"
-      },
-      {
-        "driveFileId": "1QSkzlhqw2M-JCrVEbUfXlNtrSRs9icRX",
-        "alt": "Corner Units - Mr. C Residences - Corner Units 1"
-      },
-      {
-        "driveFileId": "13q0f8-1P1R_lUM9q5lDZ3hOjKehZEcy4",
-        "alt": "Mr. C Residences 1-1"
-      },
-      {
-        "driveFileId": "13qgf4CrO_JB3eArzIgQAi_VtLbokVRdJ",
-        "alt": "Mr. C Residences 2-1"
-      },
-      {
-        "driveFileId": "1SZnDW3AhErD81l3r8rl7g060fPjy6uP5",
-        "alt": "Mr. C Residences 3-1"
-      },
-      {
-        "driveFileId": "1iDxySRuhFX3FoIyH5qah7eL9rj_wT0Dx",
-        "alt": "Mr. C Residences 4-1"
-      },
-      {
-        "driveFileId": "1c7dX42K8kpTVK4pbWgBD48DQ7HoyQJ7r",
-        "alt": "Mr. C Residences 5-1"
-      },
-      {
-        "driveFileId": "1Pc5p59m_8kZr8p7FUAkRtwuYiiktLpEA",
-        "alt": "Mr. C Residences 6-1"
-      },
-      {
-        "driveFileId": "16KlEDwpGv88NTlKDaG9EaLbDvb3UXuPu",
-        "alt": "Mr. C Residences 7-1"
-      },
-      {
-        "driveFileId": "1gx2vD_2gMSByxn3ayP5p-lT6iUTJnsKo",
-        "alt": "Mr. C Residences 8-1"
-      },
-      {
-        "driveFileId": "1_ZSGzNaqB1ZNe4uz9_VdNu68sTR-zN-l",
-        "alt": "Mr. C Residences 9-1"
-      },
-      {
-        "driveFileId": "1653qQOMGFehunDhzZiXjb7cKso_3yd3x",
-        "alt": "Corner Units - Mr. C Residences - Corner Units 2"
-      },
-      {
-        "driveFileId": "1UwAqXPJhxaXXbU_wRwqzZcZgMdHTEmV4",
-        "alt": "Corner Units - Mr. C Residences - Corner Units 3"
-      },
-      {
-        "driveFileId": "1q-uJhiNcU33IoQzSMSTIE9FXHbZsYKiw",
-        "alt": "New_Renderings_JAN2021_Page_3"
-      },
-      {
-        "driveFileId": "1CP1qssymzbfR-lK77iPM8flILeU3eMja",
-        "alt": "Corner Units - Mr. C Residences - Corner Units 4"
-      },
-      {
-        "driveFileId": "1g5Ln5bKyxyj8D8UqaZ9hfbM2_8lG5La0",
-        "alt": "Corner Units - Mr. C Residences - Corner Units 5"
-      },
-      {
-        "driveFileId": "1BLtCdx7vlQp5XaqxMRF7ZEnlWLUrd0Tv",
-        "alt": "New_Renderings_JAN2021_Page_5"
-      },
-      {
-        "driveFileId": "1KDxOCrKn2NQCK0FOBLpzCxOpnZ9VPh0Y",
-        "alt": "New_Renderings_JAN2021_Page_6"
-      },
-      {
-        "driveFileId": "1I1N4r_frr4EhQzEyn-O2KJkc8E1zzmZW",
-        "alt": "New_Renderings_JAN2021_Page_7"
-      },
-      {
-        "driveFileId": "1cyofjh6F2hmpx-tkd7zq7mdOQcy7CmWj",
-        "alt": "Mr. C Residences 17"
-      },
-      {
-        "driveFileId": "1V-TtlNwsooeehsDNd6QGWh-n2-VYTmbN",
-        "alt": "Mr. C Residences - 18"
+        "driveFileId": "1He_GgQxqLja8pqoRPGnsg2i35-4uZNgj",
+        "alt": "Mr. C Residences Boca Raton (9)"
       }
     ],
     "presentations": []
@@ -10084,7 +9912,12 @@
     "hero": "/images/renders/1428-brickell.jpg",
     "buildingDescription": "",
     "stylishAmenities": "An unprecedented 80,000 square feet of amenities exclusively dedicated to the 189 residences with the primary goal to create purposefully designed spaces that are extensions of the home. These spaces feature both intimate places for private contemplation and expansive areas for public celebration.",
-    "brochures": [],
+    "brochures": [
+      {
+        "title": "",
+        "driveFileId": "1vqTOOwHxDXLuBfRzgZJeQ52IIO2z_7Zu"
+      }
+    ],
     "tpDataName": "The Residences at 1428 Brickell",
     "section": "Top Projects",
     "theBuilding": "A landmark of modern design, rising with graceful form and surrounded by a lush botanical base. Conceived as a private sanctuary in the city's vibrant core, it offers a rare balance of energy and tranquility.",
@@ -10126,14 +9959,26 @@
     "filterYear": "2028",
     "factSheets": [
       {
-        "title": "",
-        "driveFileId": "1B_RlnAV-VdczB66gVwmBOEtn0Vn5sQzt"
+        "title": "EN",
+        "driveFileId": "10qX1N9sw_1LCuuHvQ9wiO4O1gprBWm1z"
+      },
+      {
+        "title": "ES",
+        "driveFileId": "1bqhQkb2XMiN1Cyyp9CPemk5ijuy3FEZx"
+      },
+      {
+        "title": "PH",
+        "driveFileId": "1bQy1gufm0R4TZ3vQRPdznkaQmfnyp2p9"
+      },
+      {
+        "title": "Services",
+        "driveFileId": "1YWv6UXWXP66hOar0uLY9wYdH32ongpoP"
       }
     ],
     "floorPlans": [
       {
         "title": "",
-        "driveFileId": "1WEXWZKbZtNuXoKMPNCGpS_0fL64vbyuD"
+        "driveFileId": "1JI9qSGYmvhOuQmKZJLDyjafc4FScS0Sj"
       }
     ],
     "presentations": [
@@ -10148,32 +9993,292 @@
     ],
     "renderings": [
       {
-        "driveFileId": "1jRxozpChteVpA954zDUWr0Knz64SOAQW",
-        "alt": "0"
+        "driveFileId": "1iPg6rLjB-RQjGJkSQbF1AfMPfqwrd51g",
+        "alt": "Cinema Room"
       },
       {
-        "driveFileId": "1noBNOPcFE1mA-a06E3VtYB1f2dK4FvLN",
-        "alt": "01"
+        "driveFileId": "1sMe2qqFdpEKF5FCF7nv5KrdT-Lbdwayn",
+        "alt": "Garden"
       },
       {
-        "driveFileId": "1nUIYuMYXOxckLmhB6wfL7nMActseW-az",
-        "alt": "02"
+        "driveFileId": "12yhQaeVl2tqXaPvOMBc0OWtHawmQswOe",
+        "alt": "Guest Suite"
       },
       {
-        "driveFileId": "1nGGd0v20oR-9978UfYhYGd4ndvnfVI3e",
-        "alt": "03"
+        "driveFileId": "1sdnJYSyl-fJ_RAkoAo-yDq5O3qrwpsCD",
+        "alt": "Gym"
       },
       {
-        "driveFileId": "1XewORobq5WXfCdQRJE9qFCPbVRHyPogD",
-        "alt": "04"
+        "driveFileId": "1VC48GHtki3EnQ9NLqZfUssE41uBMJ4cN",
+        "alt": "Hot Tub"
       },
       {
-        "driveFileId": "1fd9ut87QVYOCRtAGsIo5vMXU-Ut1kPgP",
-        "alt": "05"
+        "driveFileId": "1ZEOZw4qPecLZIPYBx5LjR-DepZmbziZg",
+        "alt": "Kids Imaginarium"
       },
       {
-        "driveFileId": "1E3fjQXw_yVS-zpG2hMjiheMdInrF5O6q",
-        "alt": "06"
+        "driveFileId": "1No3GXgH5U6UQJz6Ev-GaoN-6lKxmnO_l",
+        "alt": "Living Room"
+      },
+      {
+        "driveFileId": "1TrlziMICau38OMNeFKjRLj-sw9GG0R_t",
+        "alt": "Mail Room"
+      },
+      {
+        "driveFileId": "1G_ptwvbOxTaUodcGTceMkxtzHiVlY7iC",
+        "alt": "Panoramic View"
+      },
+      {
+        "driveFileId": "1z1fOosqwJgzjZpIVbiL3l5z6Zo-h2nv5",
+        "alt": "Penthouse Balcony View"
+      },
+      {
+        "driveFileId": "1Evy0Rfe3DRK97ZQ9DAMpSAJeKxpB-hRn",
+        "alt": "PH Residence (1)"
+      },
+      {
+        "driveFileId": "1JelNkWFf-l9QLrxQt3ognRhRjybuIE37",
+        "alt": "PH Residence (10)"
+      },
+      {
+        "driveFileId": "1R6qqfw2PNLkeEx6-2O3-rwRx75bGcYb7",
+        "alt": "PH Residence (11)"
+      },
+      {
+        "driveFileId": "1AxC33NtUziGNwdbPzgE076I71PQ9C69q",
+        "alt": "PH Residence (12)"
+      },
+      {
+        "driveFileId": "1pVTWNmisx4vXfDFeyZlc5stdGNDM9zSE",
+        "alt": "PH Residence (2)"
+      },
+      {
+        "driveFileId": "1bfKPodu7UcAxuLp7VdbG2jpfHTZmAQc2",
+        "alt": "PH Residence (3)"
+      },
+      {
+        "driveFileId": "1602L-CtUR5fyX7niD6Fi6cObGEHazFxO",
+        "alt": "PH Residence (4)"
+      },
+      {
+        "driveFileId": "1GDFCSJvKOh1wHp2RkWKmlt7luggb915w",
+        "alt": "PH Residence (5)"
+      },
+      {
+        "driveFileId": "1cMEuI897kFkIOQs_vyqXLRLLwCdz0Sm5",
+        "alt": "PH Residence (6)"
+      },
+      {
+        "driveFileId": "1HPOKkseR70-S-NxvDD_Sb8wYYTk9Ep4x",
+        "alt": "PH Residence (7)"
+      },
+      {
+        "driveFileId": "1nu0n2w4EHqpRveQemNtUpBTwRhPXVQ1F",
+        "alt": "PH Residence (8)"
+      },
+      {
+        "driveFileId": "1Ufaun1REOcpwaaTF5YQuq1nU_9dLwcpf",
+        "alt": "PH Residence (9)"
+      },
+      {
+        "driveFileId": "1DnWsaC0RJu6j-3dlg9OmVSAC--9al5BC",
+        "alt": "Private Dining Balcony"
+      },
+      {
+        "driveFileId": "1QPovEOscIr4-sQKrfKyOtjHxN9bkiJ7M",
+        "alt": "Private Dining Interior"
+      },
+      {
+        "driveFileId": "19NTshyBUMpZse2gUhn2BxZFtcWXzLQK_",
+        "alt": "Roof Atrium Stage"
+      },
+      {
+        "driveFileId": "1vsuNQER7OgAOufl9HUGz-zdPscx6G1t8",
+        "alt": "Unit B - Entrance"
+      },
+      {
+        "driveFileId": "1UAtFJDltuK9_soPQZ1Wcv_45z9l-6W-D",
+        "alt": "Unit B Kitchen"
+      },
+      {
+        "driveFileId": "1asytoQKOsS7-6A7YIyAJa4b80jGYlfon",
+        "alt": "Unit F - Kitchen"
+      },
+      {
+        "driveFileId": "1E12wSmNJ4R_u1iSbrjXzm-HhyYRZ37Th",
+        "alt": "Unit G - Balcony"
+      },
+      {
+        "driveFileId": "1VGIemqZHQ2Ry8czJMITJMEO63L-PznY6",
+        "alt": "Unit L - Balcony"
+      },
+      {
+        "driveFileId": "1obCm32sU6rt3x5p4I_GlhLcPOg66X-7F",
+        "alt": "Unit L - Dining"
+      },
+      {
+        "driveFileId": "1JPr0df_hMdsrJRq70KIf0NwfwQMBJCEy",
+        "alt": "Unit L - Kitchen"
+      },
+      {
+        "driveFileId": "1s-Tbk6RypfI3BxjPTjA-H0Vrv8MjVFfy",
+        "alt": "Unit L - Living Room"
+      },
+      {
+        "driveFileId": "10BYGSCAiEdar9dDmHi8YAliiFeIgPXAV",
+        "alt": "Unit L - Living Stairs"
+      },
+      {
+        "driveFileId": "1L_Cxp1N-Gsgw1s7dSXciV9c4U7JJgcaJ",
+        "alt": "Upshot"
+      },
+      {
+        "driveFileId": "1VbZjnOYPpdHDtfVXuyL-s_0cDcFDSKsX",
+        "alt": "Wellness"
+      },
+      {
+        "driveFileId": "1IhXU397M2TTKSQFFEwSKF5ucYV1STzmx",
+        "alt": "Wellness Arrival"
+      },
+      {
+        "driveFileId": "1N_bhWrhoYFRONt-S6PQderUtcKrXrb50",
+        "alt": "Wine and Spirit Lounge"
+      },
+      {
+        "driveFileId": "1vKynZK66zLfqaOadnbaVWhBL7Ekqaajg",
+        "alt": "Wine Cellar"
+      },
+      {
+        "driveFileId": "1oJ0GVIiUnYYHV279WehmHulZnnacNbrl",
+        "alt": "Yoga Lounge"
+      },
+      {
+        "driveFileId": "1sKICGmC3pgKp9WSgg-I6Q4wBbjFgHjs1",
+        "alt": "Abstract 1"
+      },
+      {
+        "driveFileId": "12dzowI-SAoOWL_j4V3gjQlY8sF3pW5Lb",
+        "alt": "Club Bar 1"
+      },
+      {
+        "driveFileId": "1A_ZQoQhvFb46fWN_GR3WsUMJLbi-G2qW",
+        "alt": "Entrance 1"
+      },
+      {
+        "driveFileId": "1e1WjynvsXZ9_raeP8O8lhLj0YTYBJ1fu",
+        "alt": "Exterior 1"
+      },
+      {
+        "driveFileId": "1Hh-YQDcaDpxTFJYnvbfHNNjuD4bPMl07",
+        "alt": "Hero 1"
+      },
+      {
+        "driveFileId": "15kE4_TWhIpd3r2njhsRdR6aBsdH12J4d",
+        "alt": "Library Lounge 1"
+      },
+      {
+        "driveFileId": "17Nango8nnoilYte5osHNB-C83sN9L8Y5",
+        "alt": "Lobby 1"
+      },
+      {
+        "driveFileId": "1EqOJI9qddkEOQBrDjtTr43iIyRhb4zBX",
+        "alt": "Lobby Lift 1"
+      },
+      {
+        "driveFileId": "14BMUTpxAAoJ-Umu3Ul-n4Ksob19icTtF",
+        "alt": "Pool 1"
+      },
+      {
+        "driveFileId": "1OhQVSMp6wrlEos-rQn9hdmpSw9STvNhf",
+        "alt": "Porte Cochere 1"
+      },
+      {
+        "driveFileId": "1GYYFNgV5Gcm_ALG_EPn32mD38qCG24a0",
+        "alt": "Unit B - Staircase 1"
+      },
+      {
+        "driveFileId": "1NxQPQX3Y8gqGoaw44M99-lR82_cLgDrB",
+        "alt": "Unit G - Kitchen 1"
+      },
+      {
+        "driveFileId": "1-nJEXw5ceMuFB6v2KwaiztwQfy7MC7ul",
+        "alt": "Unit G - Living 1"
+      },
+      {
+        "driveFileId": "1_HKH8__iYBpjo567h5Vd8ZWvftk7Zg6v",
+        "alt": "Unit G - Master Bathroom 1"
+      },
+      {
+        "driveFileId": "1FRi4IcFL9LXxfDCTyjBD_jnwzIwPo8aM",
+        "alt": "Unit G - Master Bedroom 1"
+      },
+      {
+        "driveFileId": "136jvrutNqzxnj83yt5Y7d818FqoXcerM",
+        "alt": "Abstract 2"
+      },
+      {
+        "driveFileId": "11ofB2YBfXgvlgL0z0Uv0jDev9aoa9HbL",
+        "alt": "Club Bar 2"
+      },
+      {
+        "driveFileId": "1QXqjf96p9lY2FMqgh9gbetpFSQuvt6MU",
+        "alt": "Entrance 2"
+      },
+      {
+        "driveFileId": "1D76R0LCstHtxYzLG25GJUuSkuM4miGd9",
+        "alt": "Exterior 2"
+      },
+      {
+        "driveFileId": "1oVbQ4hyjWhZtNpbS4fTzUNpTSFDouSbn",
+        "alt": "Hero 2"
+      },
+      {
+        "driveFileId": "1D3WqT6WUTIEZnwNBG1oFQlvUN9Nef900",
+        "alt": "Library Lounge 2"
+      },
+      {
+        "driveFileId": "1hIFqtyFZNjhCgeHC6MYBF2UoRjMhMj9e",
+        "alt": "Lobby 2"
+      },
+      {
+        "driveFileId": "1o0PJTU5ZjTN-XLOBbQgrJffzFUZx5UAb",
+        "alt": "Lobby Lift 2"
+      },
+      {
+        "driveFileId": "1tZhVf6DvGDAnWZZkvS6qYP1DxbYuFDpT",
+        "alt": "Master Bathroom 2"
+      },
+      {
+        "driveFileId": "1Rc3vyJRklX5GlUjDGl9ZzzlcEs0HQ3CD",
+        "alt": "Pool 2"
+      },
+      {
+        "driveFileId": "17coBNXKglhHOe31NhjJz_AGBdVB9T6Bc",
+        "alt": "Porte Cochere 2"
+      },
+      {
+        "driveFileId": "17bwIPX2WTYkKERZxzNbysJV_Eew5YNYZ",
+        "alt": "Unit B - Staircase 2"
+      },
+      {
+        "driveFileId": "1b49K3EbHWv9YgYRTg58nWknlHeLYqgzD",
+        "alt": "Unit G - Kitchen 2"
+      },
+      {
+        "driveFileId": "18qdjEwkkOQfgDML0jDLXjVxvryM9WELO",
+        "alt": "Unit G - Living 2"
+      },
+      {
+        "driveFileId": "1mIet8Q4NxpUKRkpP7gSys3ff5_tC09v5",
+        "alt": "Unit G - Master Bedroom 2"
+      },
+      {
+        "driveFileId": "1eZLUk8HCYccck6FHuwfQhDMVyeFZvivX",
+        "alt": "Exterior 3"
+      },
+      {
+        "driveFileId": "1rR1vEE6Aj0Poa1YL6lXrcSyAL4DeANQA",
+        "alt": "Porte Cochere 3"
       }
     ]
   },
@@ -12613,7 +12718,7 @@
     "startingPrice": "$1.4M",
     "thumbnail": "/images/renders/the-well-coconut-grove.jpg",
     "hero": "/images/renders/the-well-coconut-grove.jpg",
-    "theBuilding": "A boutique collection of 194 residences, featuring 1-4 bedroom layouts, within an intimate 8-story building.",
+    "theBuilding": null,
     "stylishAmenities": "Including a resident herb garden, a conservatory, tea garden, a library, private dining room, children's room, fitness center, and multiple pools with cabanas.",
     "brochures": [
       {
@@ -14190,59 +14295,135 @@
     "factSheets": [
       {
         "title": "",
-        "driveFileId": "1Wz4Byi4ftxXfLWGyJva_43e_ibe-CVcz"
+        "driveFileId": "1j1hWbS6NMSwHwwkjSuSL5CGNRueoGAOk"
       }
     ],
     "floorPlans": [
       {
         "title": "",
-        "driveFileId": "1mnbFrqx7eqnrDZu3pQOKnCoC3hl36Zef"
-      },
-      {
-        "title": "",
-        "driveFileId": "14pQq7Y3mboZZC0PStdEjdqTRhI9sIBw8"
+        "driveFileId": "14Y1ZJaDq1ISTAIeNlJtdTV-ZsHWNeNpo"
       }
     ],
     "renderings": [
       {
-        "driveFileId": "1Riu7qmmjrkR-ssJyj2eFxTibeLiG2v_E",
-        "alt": "Waldorf Astoria Residences St. Petersburg - Dining Room"
+        "driveFileId": "1qBSCij-tgcpNuGBwcSvH_FXbZkpWe5kY",
+        "alt": "Beachfront Pool Deck"
       },
       {
-        "driveFileId": "1RC0dXVOz3NMlB1NGoKAsBVDmD1MWTyRd",
-        "alt": "Waldorf Astoria Residences St. Petersburg - Foyer"
+        "driveFileId": "1CjepqGrUbti-CIe0M72H9T84HaTiq0c6",
+        "alt": "Bedroom"
       },
       {
-        "driveFileId": "1sB2TDdH8ni21Voyz_Dyp2SjoMGuX7sYK",
-        "alt": "Waldorf Astoria Residences St. Petersburg - Hero"
+        "driveFileId": "15AtnK9tUeXa50tsSyttYDP46Chvfh469",
+        "alt": "Crown"
       },
       {
-        "driveFileId": "1-ohpKxbfyJD7OeV_dtCvG4p73BTNOu-n",
-        "alt": "Waldorf Astoria Residences St. Petersburg - Hummingbird"
+        "driveFileId": "1FvmUByuhOgOHdoqiT2Xz4yvha2IIPo_R",
+        "alt": "Fitness Area"
       },
       {
-        "driveFileId": "1yykWYKEpLDkSnYe9hKo2HHdmi6778kSm",
-        "alt": "Waldorf Astoria Residences St. Petersburg - Kitchen"
+        "driveFileId": "1f-LxfrvYyaBM3z0QLucmZqUdqyOZsMJB",
+        "alt": "Game Room"
       },
       {
-        "driveFileId": "1ROPKvbIKd40OTStIUMa79Aq_mNccSxmQ",
-        "alt": "Waldorf Astoria Residences St. Petersburg - Living Room"
+        "driveFileId": "1QIkg1iMh70PbS7cFi5Gsi-u72Q1RANcv",
+        "alt": "Honor Bar - dining area"
       },
       {
-        "driveFileId": "167hfBynJpqb6r3ApqquUw5h0w1d6H_aP",
-        "alt": "Waldorf Astoria Residences St. Petersburg - Primary Bathroom"
+        "driveFileId": "1wxjFYUxlbwMNh1xSgVAA-rpWQLi426T2",
+        "alt": "Kitchen"
       },
       {
-        "driveFileId": "1pDtrVvmBiXvpFoQBcrWXkWGuDOHegvJF",
-        "alt": "Waldorf Astoria Residences St. Petersburg - Primary Bedroom"
+        "driveFileId": "1XeG0Kz68-Bpl-mdgEcoMMDN22Z1fJuOQ",
+        "alt": "Livingroom"
       },
       {
-        "driveFileId": "1_76dIgf5_TNq7uJh_hScQ3arwyX0iYxw",
-        "alt": "Waldorf Astoria Residences St. Petersburg - Primary Closet"
+        "driveFileId": "1RUeEOgy4YIuNnmMFLw8y8CmqPLMCXnmQ",
+        "alt": "Lobby"
       },
       {
-        "driveFileId": "1XODIC89bObfQ-Dp-1142n_Cmy_H4JYzB",
-        "alt": "Waldorf Astoria Residences St. Petersburg - Terrace"
+        "driveFileId": "1GrEQkatKbqz60Le4lLAZy_KFyd2ONHH-",
+        "alt": "Multi Sport Simulator"
+      },
+      {
+        "driveFileId": "1Jb1xnOmfMRwzpIBS0VeMaSZGzjsfqkEP",
+        "alt": "Peacock Alley"
+      },
+      {
+        "driveFileId": "1-y7RXPvqhcV_4GcFDG-Fabf066qTv-A_",
+        "alt": "Penthouse Bedroom"
+      },
+      {
+        "driveFileId": "1HujSp_wQV5GBuYczKF8W_BNQsEl1vqpY",
+        "alt": "Penthouse Living Room"
+      },
+      {
+        "driveFileId": "1N61j4_FbRXd6S08qI1gm5dXbVPbw72Kc",
+        "alt": "Penthouse Living Room."
+      },
+      {
+        "driveFileId": "1AUMyjZPGbnnbbLzSkkHheQ6vTs3q4z8b",
+        "alt": "Penthouse Rooftop Pool"
+      },
+      {
+        "driveFileId": "1i-T6nChEkuvOhP2BPzb7sbm5ZIsIy6WT",
+        "alt": "Penthouse Terrace"
+      },
+      {
+        "driveFileId": "16keiERUbxbinjzHoz4b5riTGcXQ1aeqi",
+        "alt": "Pool"
+      },
+      {
+        "driveFileId": "1Z5aRK8gKmAefa-H6ztlu3BFL8rcZWoCx",
+        "alt": "Porte Cochere"
+      },
+      {
+        "driveFileId": "1gz2XTHo877UybSnS2MmdNj1lNJTz06tV",
+        "alt": "Salon"
+      },
+      {
+        "driveFileId": "1BXx68HmYDG8GJAuEqeYeqGB-2-_8epou",
+        "alt": "Spa"
+      },
+      {
+        "driveFileId": "18rk8Va87z-4FWWICGa55YcosO2p4YkuZ",
+        "alt": "Teens Room"
+      },
+      {
+        "driveFileId": "1DYuX34MP570TsJgW2qCob30gAwif05kr",
+        "alt": "West Residence"
+      },
+      {
+        "driveFileId": "1dgqk4sP4uQ5hXjNQAilRcEQt5h05ffxX",
+        "alt": "Balcony 1"
+      },
+      {
+        "driveFileId": "11A-FBCjDAxgEBuMYnE6G6wjS6yuDLS3c",
+        "alt": "Bathroom 1"
+      },
+      {
+        "driveFileId": "1Ybc6S-xX8sNTBwbD7CR3k_40ZPM3GYEn",
+        "alt": "Hero 1"
+      },
+      {
+        "driveFileId": "1WL5fUNynRwve7qeXMvan8fYpJJDqg9HY",
+        "alt": "Balcony 2"
+      },
+      {
+        "driveFileId": "1b0DpozrGqkQBfx9rB6HzvxYh2Vi9YTdW",
+        "alt": "Bathroom 2"
+      },
+      {
+        "driveFileId": "1AE6UEwQN9eQ2e3EYiQXG1xpvquUsPjXZ",
+        "alt": "Hero 2"
+      },
+      {
+        "driveFileId": "1Qn08dgroN21f9bKaWLjS6XMND8k-LWMo",
+        "alt": "Hero 3"
+      },
+      {
+        "driveFileId": "1XSJ6t18R5P5AS4GkJ4w2wABO-kiRheZH",
+        "alt": "Hero 4"
       }
     ],
     "presentations": [
@@ -29363,8 +29544,8 @@
     "stylishAmenities": null,
     "brochures": [
       {
-        "title": "",
-        "driveFileId": "1INoTfW75KCb6s3qD1a5e4kq5DOfMdAdy"
+        "title": "EN",
+        "driveFileId": "1sK-ONYmjxLcPKxPvTjZ-YC74c8bch7Yo"
       }
     ],
     "esqueletoName": "Jade Signature Sunny Isles Beach",
@@ -29415,122 +29596,206 @@
     "presentations": [],
     "renderings": [
       {
-        "driveFileId": "1905HawY9-zkMiLy1flUT5_1beotR51iy",
-        "alt": "gallery-2"
+        "driveFileId": "18BKjTSt1PxZTntpG-ATF1e73rRNopU6q",
+        "alt": "Jade-Signature-Building"
       },
       {
-        "driveFileId": "1GhYcsvcN6KOSXEhv9-2NIT-1ibQ2o47M",
-        "alt": "gallery-3"
+        "driveFileId": "1KNyoIo6cPI3vt8kvIoH7wlAHWk_meeUi",
+        "alt": "Jade Signature 1"
       },
       {
-        "driveFileId": "1TpRha726yj0uhSP3dvtBSTvEdYd-dmxX",
-        "alt": "gallery-4"
+        "driveFileId": "11YQD7i3jsGylKckArwfW0oU3whSJx2Fl",
+        "alt": "Jade-Signature-1"
       },
       {
-        "driveFileId": "1Ss_e-JKudXeLQ5GikGvrbOPG-o7AmlpW",
-        "alt": "gallery-5"
+        "driveFileId": "1OJ2M-6rjAq002oFKz1XQ-QEbcuzOxsDB",
+        "alt": "Photography - Jade Signature Sunny Isles Beach Beach - Image 1"
       },
       {
-        "driveFileId": "1j_0ffpd8tPsJp07UW6Cvm_VcHtuUrWH1",
-        "alt": "gallery-6"
+        "driveFileId": "1s9toNnt4p02dyJBF1N4vugmoXl4PdnfE",
+        "alt": "Jade Signature 2"
       },
       {
-        "driveFileId": "1DwWb9wYUU1P6JH9J8Bc42qluze8ezviF",
-        "alt": "gallery-7"
+        "driveFileId": "1bIKOq2hxff5SZ1154xL9QHrGtHnR5Vi-",
+        "alt": "Jade-Signature-2"
       },
       {
-        "driveFileId": "1RzQuChJHnyViJfxwTF47-75U85a0f8HW",
-        "alt": "gallery-8"
+        "driveFileId": "19olizHcvZboZ21oTsCQtan9jJG7_JxJr",
+        "alt": "Photography - Jade Signature Sunny Isles Beach Beach - Image 2"
       },
       {
-        "driveFileId": "1XGwvWDlcw65RnsJzpkzQWtZ8DPWj1-cC",
-        "alt": "gallery-9"
+        "driveFileId": "1Im0DZ4Ue0ACq9zAXxFH9V_VMKmjDMzIS",
+        "alt": "Jade Signature 3"
       },
       {
-        "driveFileId": "1QAtsjtk_sMqmu6HMHvhOFhbfrbcggRUR",
-        "alt": "gallery-10"
+        "driveFileId": "1vQ7MwjHC6-vJRaBdSWYrZOJFO-0CdiFG",
+        "alt": "Jade-Signature-3"
       },
       {
-        "driveFileId": "17bOFbCZRMGNvNSe9T2Q_Py_Km64VNadR",
-        "alt": "gallery-11"
+        "driveFileId": "1yIJuS-wZVb5MJqwm6fxiWwzkfb6yF3Fj",
+        "alt": "Photography - Jade Signature Sunny Isles Beach Beach - Image 3"
       },
       {
-        "driveFileId": "1KZNAiLx0b9E29VtIu06TVfPfhc-QFfyS",
-        "alt": "gallery-12"
+        "driveFileId": "1Mg9gygDPIvcFBdWC2dDSwpBIdHiC2KA2",
+        "alt": "Jade Signature 4"
       },
       {
-        "driveFileId": "1Hpcj_0pBakAP8pkQ5QBrXVu2i8UYIufJ",
-        "alt": "gallery-13"
+        "driveFileId": "1GT0aB3ULJ3PVNb7NYXxrAWqEEqWN9c1L",
+        "alt": "Jade-Signature-4"
       },
       {
-        "driveFileId": "1vKfvqrcr4AJzmi3xQrl9gwPHTLX8EHwa",
-        "alt": "gallery-14"
+        "driveFileId": "1TUlZGgOHbalnEmSz8V1oStWHWBh9odzk",
+        "alt": "Photography - Jade Signature Sunny Isles Beach Beach - Image 4"
       },
       {
-        "driveFileId": "1livt9uR4p2u-UbvHMHvVkNXEiWzKOvtC",
-        "alt": "gallery-15"
+        "driveFileId": "1fNZ9mrMW6AaE0AhScMr2NI1cE_ohv4MX",
+        "alt": "Jade Signature 5"
       },
       {
-        "driveFileId": "1z4CmYRheTnBa6Q6ND5AmtXZAP5Fkg7ej",
-        "alt": "gallery-16"
+        "driveFileId": "1rQXIEr0buTz_-8tS3QS3vJPLG7BiDjS6",
+        "alt": "Jade-Signature-5"
       },
       {
-        "driveFileId": "1F_PSzVHyLMxfeVb0JgO5jWvNv3Edlgj5",
-        "alt": "gallery-17"
+        "driveFileId": "1qym0QV6lpGHQzmH0wHtT9J-wFKFPPCu8",
+        "alt": "Photography - Jade Signature Sunny Isles Beach Beach - Image 5"
       },
       {
-        "driveFileId": "16J79mBkCvOI5pjhpUMTiBJ1dkZuXpZY_",
-        "alt": "gallery-18"
+        "driveFileId": "1b3a5Uxyrpa8rXh5eUom4_C86JX_OVX1e",
+        "alt": "Jade Signature 6"
       },
       {
-        "driveFileId": "1BF4avVHJn80LwJfwgwJy8hUO19o7CHHG",
-        "alt": "gallery-19"
+        "driveFileId": "1zPNb-QsqdYMlU0_hh7BvBKrul9q-1o5b",
+        "alt": "Jade-Signature-6"
       },
       {
-        "driveFileId": "14AuT5H7nahlardhmFLH0zDkdL0P2mLd8",
-        "alt": "gallery-20"
+        "driveFileId": "1NTOQ26u9VlUjRKefz0F_PdIxAiPM2tZp",
+        "alt": "Photography - Jade Signature Sunny Isles Beach Beach - Image 6"
       },
       {
-        "driveFileId": "1n45Sn_6FhY4BYhTOJyBCLWOS82ipwEgk",
-        "alt": "gallery-21"
+        "driveFileId": "1LeqofKvnXbQpsrZkRmSdGXOchg6R34Pg",
+        "alt": "Jade Signature 7"
       },
       {
-        "driveFileId": "1wgjWmRxWCW0rEfq_7Vtd6M4cHxinnc5X",
-        "alt": "gallery-22"
+        "driveFileId": "1i8PZX2F3D-TmDQJU-mA-z-i3TNK-HI9-",
+        "alt": "Jade-Signature-7"
       },
       {
-        "driveFileId": "1Ggyi5A5_45CwTEUbYtxpc2F0NLI0GrzE",
-        "alt": "gallery-23"
+        "driveFileId": "1V0MYGv43B3PXCAriXvWLHMTyqLvdeqoK",
+        "alt": "Photography - Jade Signature Sunny Isles Beach Beach - Image 7"
       },
       {
-        "driveFileId": "1gDEDlTUO0EjPz0kJdgoX-UiooIT0PkDr",
-        "alt": "gallery-24"
+        "driveFileId": "1TsDr79jFRM9AwlC4sdeDX_8MA2zYDcnf",
+        "alt": "Jade Signature 8"
       },
       {
-        "driveFileId": "13UhQghQie2Kp0J5_YdKMEG4tjuYZZAv8",
-        "alt": "gallery-25"
+        "driveFileId": "1BDA4Ybft9FnSxEmHBmYXjATYrD2VQiOM",
+        "alt": "Jade-Signature-8"
       },
       {
-        "driveFileId": "1Ab6N7_yUeSYSFbdhK56TY_m4W2gbafRE",
-        "alt": "gallery-26"
+        "driveFileId": "1zt4IRmKGUi9OKt-1VmaYFF6Ma1JBB2V5",
+        "alt": "Photography - Jade Signature Sunny Isles Beach Beach - Image 8"
       },
       {
-        "driveFileId": "1Fe1ChU5cYQHJgRXTxcwCWQ3EVdAM-eQJ",
-        "alt": "gallery-27"
+        "driveFileId": "1KlGNNg-w6rUOQ0SmfRnOVWutLLIpghc3",
+        "alt": "Jade Signature 9"
       },
       {
-        "driveFileId": "1IKgaFPQjERerQobd_NBoKhj6TK9m-UwK",
-        "alt": "gallery-28"
+        "driveFileId": "15yYzhTGT80e9OU6_0dZ2bTADaPXdhaQr",
+        "alt": "Jade-Signature-9"
       },
       {
-        "driveFileId": "1fwJJv_dwpyFQ0QoLDEQX4rPPcRv1HgSW",
-        "alt": "gallery-29"
+        "driveFileId": "1k42zENmBvb99MPcSXz8J0TRgUyWVU2Hq",
+        "alt": "Photography - Jade Signature Sunny Isles Beach Beach - Image 9"
+      },
+      {
+        "driveFileId": "1I4Zx7X3fvMiAXIUFYUDgcZYatBrR9ye0",
+        "alt": "Jade Signature 10"
+      },
+      {
+        "driveFileId": "1TalM9BnxP14oyJEtHKafEUqhr7L8q20G",
+        "alt": "Jade-Signature-10"
+      },
+      {
+        "driveFileId": "1mNyMLuYETox5NRb4VNETVZ-mnH-j3iR7",
+        "alt": "Photography - Jade Signature Sunny Isles Beach Beach - Image 10"
+      },
+      {
+        "driveFileId": "1Kiis0haq8qLR8UAiMQa-t0oJoLWLF76R",
+        "alt": "Jade Signature 11"
+      },
+      {
+        "driveFileId": "1zc1TuqOMMsfWW9q5xjj3t-Xda56MWeAe",
+        "alt": "Jade-Signature-11"
+      },
+      {
+        "driveFileId": "1m_r9gMb3qlOLrcF5MwmQNUZahJHlXrE8",
+        "alt": "Photography - Jade Signature Sunny Isles Beach Beach - Image 11"
+      },
+      {
+        "driveFileId": "1jqggRzsoaRRhj61W9sjArre9gZn0XFij",
+        "alt": "Jade Signature 12"
+      },
+      {
+        "driveFileId": "1Q32VzzfM8h1SBdG0CQx2QIMvZT7Kd8Df",
+        "alt": "Jade-Signature-12"
+      },
+      {
+        "driveFileId": "1aZDdZLMvuXDDZsOFK6liDdooNUYPSEGv",
+        "alt": "Photography - Jade Signature Sunny Isles Beach Beach - Image 12"
+      },
+      {
+        "driveFileId": "1TWhA7qYqxpmDlvskfSpFZQHKdNcBECaW",
+        "alt": "Jade-Signature-13"
+      },
+      {
+        "driveFileId": "13VduxZVnn_gWYs9NrrtocbZzDXPKGhur",
+        "alt": "Photography - Jade Signature Sunny Isles Beach Beach - Image 13"
+      },
+      {
+        "driveFileId": "1wBxDZd9vZoq7YrCdyzDLmq9RIiSzWLEQ",
+        "alt": "Jade-Signature-14"
+      },
+      {
+        "driveFileId": "1qj3miZPHdZwPUySZEAQvVQ7W85SUmqLz",
+        "alt": "Photography - Jade Signature Sunny Isles Beach Beach - Image 14"
+      },
+      {
+        "driveFileId": "1AWDLNGVyNQXZift1vZdirE4qmJREYKSG",
+        "alt": "Jade-Signature-15"
+      },
+      {
+        "driveFileId": "1QAIrZTe0XDmIIWNwFagzM7tXHovJF7zG",
+        "alt": "Photography - Jade Signature Sunny Isles Beach Beach - Image 15"
+      },
+      {
+        "driveFileId": "1KPvUUmPQFAeBQZcIoOQqNd82LPsJT4RM",
+        "alt": "Jade-Signature-16"
+      },
+      {
+        "driveFileId": "1VFr02f7SfCb4JKqVRtIPunWI02h94maS",
+        "alt": "Photography - Jade Signature Sunny Isles Beach Beach - Image 16"
+      },
+      {
+        "driveFileId": "1c54z9R-3J0DIbdXN0kxchliOMhgY5lRf",
+        "alt": "Jade-Signature-17"
+      },
+      {
+        "driveFileId": "1M12Sx2JP3Ij_BP7lOjaXerLkq0NjRuoc",
+        "alt": "Photography - Jade Signature Sunny Isles Beach Beach - Image 17"
+      },
+      {
+        "driveFileId": "1AJBFxuJLeKUkqXdQBusNhrPaRsDehJOE",
+        "alt": "Jade-Signature-18"
+      },
+      {
+        "driveFileId": "1O09ClBkyQNgMeNwd6Ok51-5wt2LO1oX1",
+        "alt": "Jade-Signature-19"
       }
     ],
     "floorPlans": [
       {
         "title": "",
-        "driveFileId": "1XXQQKfbdiC3wpz5grB3UEZVMUp142jox"
+        "driveFileId": "1Rcet1n795QBF28ILJdexlW4ubFk7JKu4"
       }
     ]
   },
@@ -35578,16 +35843,16 @@
     "stylishAmenities": null,
     "brochures": [
       {
-        "title": "",
-        "driveFileId": "1wZXYnzY030dTp9-eKCqJKRLCYQ9R2VTH"
+        "title": "EN",
+        "driveFileId": "1AH3EQgujU_FrXPMADWFvSo25NQzXzB7H"
       },
       {
-        "title": "",
-        "driveFileId": "1-JT8T9o_snPZ75SImFkOyJlWwVxiGCG3"
+        "title": "ES",
+        "driveFileId": "1QWClOH3_9wBLIoQl0yENlBdoY4614X0x"
       },
       {
-        "title": "",
-        "driveFileId": "1BFHRJL4A5YHEGjB2_Pzw6emenpKaoTZZ"
+        "title": "PT",
+        "driveFileId": "1Lsriu0d6W0Nig4ImfSigqpCCxqB2UqHB"
       }
     ],
     "esqueletoName": "One Thousand Museum Downtown Miami",
@@ -35622,8 +35887,28 @@
     "filterYear": "2019",
     "factSheets": [
       {
-        "title": "",
-        "driveFileId": "1u4qYekxruYDULHt0J5Ixv_qFfmMowMGy"
+        "title": "CN",
+        "driveFileId": "1KmyYfL_nYsApM7hWJ037PR6uqcMNPpIi"
+      },
+      {
+        "title": "EN",
+        "driveFileId": "15KtD35CNLch9UK3TOqNV4Qpi8WAcPN5G"
+      },
+      {
+        "title": "ES",
+        "driveFileId": "1Tke04RVc_5HTF-DW0zXpRcF4ZOTgRm72"
+      },
+      {
+        "title": "FR",
+        "driveFileId": "1jv159meSNuy5Bgd2WmIyXE53tbcidLmW"
+      },
+      {
+        "title": "PT",
+        "driveFileId": "1-TztYBGSq6PV32drKDcDedYKzuUuGpYY"
+      },
+      {
+        "title": "RU",
+        "driveFileId": "1zYQ1hDUwvxaVwOkw8YqbLYYx1eBm9ApZ"
       }
     ],
     "presentations": [],
@@ -43293,7 +43578,15 @@
     "brochures": [
       {
         "title": "",
-        "driveFileId": "1mRTm2Y-K40omcnL2Z5j8s46dTS9IDSUh"
+        "driveFileId": "1RO3UKCjmR--zZ0ZfrlGrCD5b_EUf1Rra"
+      },
+      {
+        "title": "Facts",
+        "driveFileId": "1VeejCHQpHZbSTzauvZh7vD9NMHqKTO1s"
+      },
+      {
+        "title": "Ultra Platinum - EN",
+        "driveFileId": "1K2A85NaQWvN51itpaPOJI04KKTsQrxfj"
       }
     ],
     "esqueletoName": "The Estates at Acqualina Sunny Isles",

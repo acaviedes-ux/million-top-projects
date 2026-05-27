@@ -76,6 +76,26 @@ function norm(s) {
     .trim();
 }
 
+// Filler words carry no distinguishing meaning between projects. Removing them
+// lets "Mr. C Residences Tigertail Coconut Grove" match "Mr. C Tigertail
+// Coconut Grove" (extra "Residences") while still keeping the distinguishing
+// LOCATION tokens (boca/raton vs coconut/grove) intact so different projects
+// in the same family never collide.
+const FILLERS = new Set([
+  'the', 'at', 'by', 'of', 'and', 'a',
+  'residences', 'residence', 'hotel', 'homes', 'home',
+]);
+
+// Sorted core-token signature: normalized tokens minus fillers, sorted.
+// Two names share a coreKey only when their meaningful tokens are identical.
+function coreKey(s) {
+  return norm(s)
+    .split(' ')
+    .filter(t => t && !FILLERS.has(t))
+    .sort()
+    .join(' ');
+}
+
 // ── Drive helpers ─────────────────────────────────────────────
 
 // supportsAllDrives + includeItemsFromAllDrives are required for folders
@@ -229,15 +249,22 @@ async function main() {
   const auth  = makeAuth();
   const drive = google.drive({ version: 'v3', auth });
 
-  // ── Build project lookup map ──────────────────────────────
+  // ── Build project lookup maps ─────────────────────────────
   const projects = JSON.parse(fs.readFileSync(PROJECTS_JSON, 'utf8'));
-  const projectMap = new Map(); // norm(key) → project entry
+  const projectMap = new Map(); // norm(key)  → project entry  (exact match)
+  const coreMap    = new Map(); // coreKey(key) → Set<slug>    (filler-insensitive)
   for (const p of projects) {
     for (const key of [p.name, p.esqueletoName, p.tpDataName].filter(Boolean)) {
       const n = norm(key);
       if (!projectMap.has(n)) projectMap.set(n, p);
+      const c = coreKey(key);
+      if (c) {
+        if (!coreMap.has(c)) coreMap.set(c, new Set());
+        coreMap.get(c).add(p.slug);
+      }
     }
   }
+  const slugToProject = new Map(projects.map(p => [p.slug, p]));
 
   // ── Collect project folders from all configured roots ─────
   // Each root folder is expected to have direct children that are project folders.
@@ -265,14 +292,17 @@ async function main() {
 
     let project = projectMap.get(folderNorm);
 
-    // Prefix fallback (handles minor name length differences)
+    // Core-token fallback: match on meaningful tokens (fillers removed), but
+    // ONLY when exactly one project shares that core signature. This handles
+    // harmless wording differences ("Residences", "The", "Hotel") while
+    // refusing to guess when a folder could belong to multiple projects in
+    // the same family (e.g. several "Mr. C Residences <location>" folders).
+    // Ambiguous or zero matches are left unmatched on purpose.
     if (!project) {
-      for (const [key, p] of projectMap) {
-        const len = Math.min(folderNorm.length, key.length, 12);
-        if (len >= 8 && folderNorm.substring(0, len) === key.substring(0, len)) {
-          project = p;
-          break;
-        }
+      const c = coreKey(folder.name);
+      const slugs = coreMap.get(c);
+      if (slugs && slugs.size === 1) {
+        project = slugToProject.get([...slugs][0]);
       }
     }
 
