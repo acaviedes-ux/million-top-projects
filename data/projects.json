@@ -4839,7 +4839,8 @@
     "renderings": [
       {
         "driveFileId": "1zkGmmNPX5R7HXQY9v2qSxvkmafo0LHn2",
-        "alt": "Nora House West Palm Beach - 4th Floor Pool"
+        "alt": "Nora House West Palm Beach - 4th Floor Pool",
+        "tooLarge": true
       },
       {
         "driveFileId": "1u1pV02nFK4w8gp6VwKyeT-Me6uQP0zI9",
@@ -6317,7 +6318,8 @@
       },
       {
         "driveFileId": "10ih6vHe1HYaedIUzwwpAN0-jbf1m_4ny",
-        "alt": "Site Map"
+        "alt": "Site Map",
+        "tooLarge": true
       },
       {
         "driveFileId": "1hGm9zWhZQ9qgnixzNlPKHI6KlEoNWzPG",
@@ -11807,7 +11809,12 @@
     "hero": "/images/renders/ritz-carlton-west-palm.jpg",
     "buildingDescription": "",
     "stylishAmenities": "Features include stunning spa with dedicated treatment rooms and on-demand services, expansive deck with swimming pool, state-of-the-art gym and fitness studio, children's playroom, adult game room, multiple indoor and outdoor lounge areas and much more.",
-    "brochures": [],
+    "brochures": [
+      {
+        "title": "Purchaser's Guide",
+        "driveFileId": "1oJChGuJGepuhhIK7okhhqC4yRr8SRATV"
+      }
+    ],
     "tpDataName": "The Ritz-Carlton Residences® West Palm Beach",
     "section": "Top Projects",
     "theBuilding": "A 27-story residential building with 144 expansive 2-to-4-bedroom residences, from 1,532 to 3,331 Sq. Ft.",
@@ -11846,7 +11853,12 @@
     "filterLocation": "West Palm Beach",
     "filterStatus": "Pre-construction",
     "filterYear": "2028",
-    "factSheets": [],
+    "factSheets": [
+      {
+        "title": "Services Booklet",
+        "driveFileId": "1-MDMHbcSzME_ilVL0ZwTgBTbo7nTOgYS"
+      }
+    ],
     "floorPlans": [
       {
         "title": "",
@@ -11939,7 +11951,12 @@
         "alt": "The Ritz-Carlton West Palm Beach - Model Living Room C3"
       }
     ],
-    "presentations": []
+    "presentations": [
+      {
+        "title": "WPB Development",
+        "driveFileId": "11oOuomiJdiZYtyyZvuvCnH6Mxr51p9JJ"
+      }
+    ]
   },
   {
     "slug": "surf-club-four-seasons",
@@ -13867,7 +13884,8 @@
       },
       {
         "driveFileId": "1ybNvesKxVpNTQQnIuFerpQ3H1aT3D60W",
-        "alt": "Penthouse Poolside"
+        "alt": "Penthouse Poolside",
+        "tooLarge": true
       },
       {
         "driveFileId": "1t_y4ZGMHIDbUARwN8imMVdx4BpboYJvD",
@@ -34530,11 +34548,13 @@
       },
       {
         "driveFileId": "1f0BXolarJZtlFy8sBacmKPAH-cfZxUij",
-        "alt": "Okan Tower Palm Trees.tif"
+        "alt": "Okan Tower Palm Trees.tif",
+        "tooLarge": true
       },
       {
         "driveFileId": "1S1P521aygXX6AAq06zkp5EehvNkCK1ql",
-        "alt": "Okan Tower Restaurant Sky.tif"
+        "alt": "Okan Tower Restaurant Sky.tif",
+        "tooLarge": true
       },
       {
         "driveFileId": "1rWCdOtqqD-OvC8VrGwNGRiXrFR_9zowD",
@@ -36857,7 +36877,8 @@
       },
       {
         "driveFileId": "1cOKV66pC6Mq4cxw7xxCiDVR8fxNDQY4j",
-        "alt": "Units - Pagani Residences - Terrace"
+        "alt": "Units - Pagani Residences - Terrace",
+        "tooLarge": true
       },
       {
         "driveFileId": "1yg-BY-2PePSZHOPXb0yPhm0ltj-8fnIt",

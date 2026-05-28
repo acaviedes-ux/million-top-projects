@@ -638,10 +638,19 @@
         if (r.driveFileId) {
           img.src = '/api/thumb?id=' + r.driveFileId;
           var a = el('a', 'rendering-link');
-          a.href   = '/api/render?id=' + r.driveFileId;
+          // Files marked tooLarge (>100 MB) can't be served inline by any of
+          // Google's CDNs — link directly to the Drive viewer and surface a
+          // tooltip explaining why this one render behaves differently.
+          if (r.tooLarge) {
+            a.classList.add('rendering-link--toolarge');
+            a.href  = 'https://drive.google.com/file/d/' + r.driveFileId + '/view';
+            a.title = 'Archivo muy pesado. Para descargar, abrir en Drive.';
+          } else {
+            a.href  = '/api/render?id=' + r.driveFileId;
+            a.title = 'Click to view full resolution';
+          }
           a.target = '_blank';
           a.rel    = 'noopener noreferrer';
-          a.title  = 'Click to view full resolution';
           a.appendChild(img);
           gallery.appendChild(a);
         } else {

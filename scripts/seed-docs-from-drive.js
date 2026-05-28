@@ -123,7 +123,7 @@ async function listChildrenPaged(drive, folderId) {
     const res = await drive.files.list({
       ...DRIVE_LIST_OPTS,
       q: `'${folderId}' in parents and trashed = false`,
-      fields: 'nextPageToken, files(id, name, mimeType)',
+      fields: 'nextPageToken, files(id, name, mimeType, size)',
       pageSize: 1000,
       pageToken,
     });
@@ -143,7 +143,7 @@ async function listFilesRecursive(drive, folderId, pathSegments = []) {
     const res = await drive.files.list({
       ...DRIVE_LIST_OPTS,
       q: `'${folderId}' in parents and trashed = false`,
-      fields: 'nextPageToken, files(id, name, mimeType)',
+      fields: 'nextPageToken, files(id, name, mimeType, size)',
       pageSize: 1000,
       pageToken,
     });
@@ -211,6 +211,13 @@ function buildDocItems(files) {
   return items;
 }
 
+// Google's image CDN (lh3.googleusercontent.com) silently 404s for very large
+// files (~>100 MB) — they get marked "too large to scan for viruses" and
+// served only via an HTML interstitial. We flag those items so the front-end
+// can show a tooltip and link straight to the Drive viewer instead of trying
+// to render them inline.
+const RENDER_SIZE_LIMIT_BYTES = 100 * 1024 * 1024;
+
 function buildRenderItems(files) {
   const items = [];
   for (const f of files) {
@@ -219,7 +226,10 @@ function buildRenderItems(files) {
       const baseAlt = f.name.replace(/\.(jpe?g|png|webp|gif|heic|heif)$/i, '').trim();
       const sub = (f._subPath || []).join(' / ');
       const alt = sub ? `${sub} - ${baseAlt}` : baseAlt;
-      items.push({ driveFileId: f.id, alt });
+      const item = { driveFileId: f.id, alt };
+      const size = parseInt(f.size || '0', 10);
+      if (size > RENDER_SIZE_LIMIT_BYTES) item.tooLarge = true;
+      items.push(item);
     }
   }
   // Sort numerically by the trailing number in the filename if present
