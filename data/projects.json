@@ -1868,7 +1868,7 @@
     "priceList": {
       "heading": "NO UNITS AVAILABLE"
     },
-    "projectLogo": "/images/logos/casa-cipriani.svg",
+    "projectLogo": "/images/logos/casa-cipriani.png",
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Miami Beach",
@@ -2822,7 +2822,7 @@
     "priceList": {
       "externalUrl": "https://www.faenahousemiami.com/for-sale.html"
     },
-    "projectLogo": "/images/logos/faena-house.svg",
+    "projectLogo": "/images/logos/faena-house.png",
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Miami Beach",
@@ -4237,7 +4237,7 @@
     "priceList": {
       "externalUrl": "https://www.mrcresidencemiami.com/for-sale.html"
     },
-    "projectLogo": "/images/logos/mr-c-residences-tigertail.svg",
+    "projectLogo": "/images/logos/mr-c-residences-tigertail.png",
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Coconut Grove",
@@ -12000,7 +12000,7 @@
     "priceList": {
       "externalUrl": "https://www.thesurfclubs.com/for-sale.html"
     },
-    "projectLogo": "/images/logos/surf-club-four-seasons.svg",
+    "projectLogo": "/images/logos/surf-club-four-seasons.png",
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Surfside",
@@ -14631,7 +14631,7 @@
     "priceList": {
       "hidden": true
     },
-    "projectLogo": "/images/logos/1-hotel-homes.svg",
+    "projectLogo": "/images/logos/1-hotel-homes.png",
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "South Beach",
@@ -15059,7 +15059,7 @@
     "priceList": {
       "externalUrl": "https://www.2000oceaninhallandale.com/for-sale.html"
     },
-    "projectLogo": "/images/logos/2000-ocean.svg",
+    "projectLogo": "/images/logos/2000-ocean.png",
     "isNew": false,
     "filterCounty": "Broward County",
     "filterLocation": "Hallandale",
@@ -15807,7 +15807,7 @@
     "priceList": {
       "hidden": true
     },
-    "projectLogo": "/images/logos/3200-south-ocean.svg",
+    "projectLogo": "/images/logos/3200-south-ocean.png",
     "isNew": false,
     "filterCounty": "Palm Beach County",
     "filterLocation": "Highland Beach",
@@ -15992,7 +15992,7 @@
     "priceList": {
       "hidden": true
     },
-    "projectLogo": "/images/logos/321-ocean.svg",
+    "projectLogo": "/images/logos/321-ocean.png",
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Miami Beach",
@@ -16115,7 +16115,7 @@
     "priceList": {
       "hidden": true
     },
-    "projectLogo": "/images/logos/5000-north-ocean.svg",
+    "projectLogo": "/images/logos/5000-north-ocean.png",
     "isNew": false,
     "filterCounty": "Palm Beach County",
     "filterLocation": "Riviera Beach",
@@ -16252,7 +16252,7 @@
     "priceList": {
       "externalUrl": "https://www.57oceancondomiami.com/for-sale.html"
     },
-    "projectLogo": "/images/logos/57-ocean.svg",
+    "projectLogo": "/images/logos/57-ocean.png",
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Miami Beach",
@@ -17190,7 +17190,7 @@
     "priceList": {
       "hidden": true
     },
-    "projectLogo": "/images/logos/adagio-fort-lauderdale.svg",
+    "projectLogo": "/images/logos/adagio-fort-lauderdale.png",
     "isNew": false,
     "filterCounty": "Broward County",
     "filterLocation": "Fort Lauderdale",
@@ -18964,7 +18964,7 @@
     "priceList": {
       "externalUrl": "https://www.apogeecondosouthbeach.com/for-sale.html"
     },
-    "projectLogo": "/images/logos/apogee.svg",
+    "projectLogo": "/images/logos/apogee.png",
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "South Beach",
@@ -19299,7 +19299,7 @@
     "priceList": {
       "externalUrl": "https://www.armaniresidencesmiami.com/for-sale.html"
     },
-    "projectLogo": "/images/logos/armani-casa.svg",
+    "projectLogo": "/images/logos/armani-casa.png",
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Sunny Isles Beach",
@@ -19577,7 +19577,7 @@
     "priceList": {
       "hidden": true
     },
-    "projectLogo": "/images/logos/arte-surfside.svg",
+    "projectLogo": "/images/logos/arte-surfside.png",
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Surfside",
@@ -19846,7 +19846,7 @@
     "priceList": {
       "hidden": true
     },
-    "projectLogo": "/images/logos/asia-brickell.svg",
+    "projectLogo": "/images/logos/asia-brickell.png",
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Brickell Key",
@@ -20016,7 +20016,7 @@
     "priceList": {
       "externalUrl": "https://astonmartinresidencesdowntownmiami.nestcapitals.com/for-sale.html"
     },
-    "projectLogo": "/images/logos/aston-martin-residences.svg",
+    "projectLogo": "/images/logos/aston-martin-residences.png",
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Downtown Miami",
@@ -20378,7 +20378,7 @@
     "priceList": {
       "externalUrl": "https://www.aubergebeachsresidences.com/for-sale.html"
     },
-    "projectLogo": "/images/logos/auberge-beach-residences-spa-fort-lauderdale.svg",
+    "projectLogo": "/images/logos/auberge-beach-residences-spa-fort-lauderdale.png",
     "isNew": false,
     "filterCounty": "Broward County",
     "filterLocation": "Fort Lauderdale",
@@ -20677,7 +20677,7 @@
     "priceList": {
       "hidden": true
     },
-    "projectLogo": "/images/logos/aurora-sunny-isles-beach.svg",
+    "projectLogo": "/images/logos/aurora-sunny-isles-beach.png",
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Sunny Isles Beach",
@@ -21002,7 +21002,7 @@
     "priceList": {
       "hidden": true
     },
-    "projectLogo": "/images/logos/bal-harbour-tower.svg",
+    "projectLogo": "/images/logos/bal-harbour-tower.png",
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Bal Harbour",
@@ -21347,7 +21347,7 @@
     "priceList": {
       "hidden": true
     },
-    "projectLogo": "/images/logos/bayview-village.svg",
+    "projectLogo": "/images/logos/bayview-village.png",
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Fisher Island",
@@ -21495,7 +21495,7 @@
     "priceList": {
       "hidden": true
     },
-    "projectLogo": "/images/logos/beach-house-8.svg",
+    "projectLogo": "/images/logos/beach-house-8.png",
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Miami Beach",
@@ -22022,7 +22022,7 @@
     "priceList": {
       "hidden": true
     },
-    "projectLogo": "/images/logos/biltmore-row.svg",
+    "projectLogo": "/images/logos/biltmore-row.png",
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Coral Gables",
@@ -22091,7 +22091,7 @@
     "priceList": {
       "hidden": true
     },
-    "projectLogo": "/images/logos/blue-green-diamond-towers.svg",
+    "projectLogo": "/images/logos/blue-green-diamond-towers.png",
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Miami Beach",
@@ -22156,7 +22156,7 @@
     "priceList": {
       "hidden": true
     },
-    "projectLogo": "/images/logos/brickell-city-centre.svg",
+    "projectLogo": "/images/logos/brickell-city-centre.png",
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Brickell",
@@ -22509,7 +22509,7 @@
     "priceList": {
       "hidden": true
     },
-    "projectLogo": "/images/logos/bristol-tower.svg",
+    "projectLogo": "/images/logos/bristol-tower.png",
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Brickell",
@@ -22629,7 +22629,7 @@
     "priceList": {
       "hidden": true
     },
-    "projectLogo": "/images/logos/caribbean.svg",
+    "projectLogo": "/images/logos/caribbean.png",
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Miami Beach",
@@ -23334,7 +23334,7 @@
     "priceList": {
       "hidden": true
     },
-    "projectLogo": "/images/logos/chateau-beach-residences.svg",
+    "projectLogo": "/images/logos/chateau-beach-residences.png",
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Sunny Isles Beach",
@@ -23771,7 +23771,7 @@
     "priceList": {
       "externalUrl": "https://www.continummsouthbeach.com/for-sale.html"
     },
-    "projectLogo": "/images/logos/continuum-south-beach.svg",
+    "projectLogo": "/images/logos/continuum-south-beach.png",
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "South Beach",
@@ -25207,7 +25207,7 @@
     "priceList": {
       "externalUrl": "https://www.eightysevenparkcondo.com/for-sale.html"
     },
-    "projectLogo": "/images/logos/eighty-seven-park.svg",
+    "projectLogo": "/images/logos/eighty-seven-park.png",
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Miami Beach",
@@ -25909,7 +25909,7 @@
     "priceList": {
       "hidden": true
     },
-    "projectLogo": "/images/logos/elysee-miami.svg",
+    "projectLogo": "/images/logos/elysee-miami.png",
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Edgewater",
@@ -26222,7 +26222,7 @@
     "priceList": {
       "externalUrl": "https://www.fendichateaumiami.com/for-sale.html"
     },
-    "projectLogo": "/images/logos/fendi-chateau.svg",
+    "projectLogo": "/images/logos/fendi-chateau.png",
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Surfside",
@@ -27288,7 +27288,7 @@
     "priceList": {
       "externalUrl": "https://fourseasonsresidencesfortlauderdale.nestcapitals.com/for-sale.html"
     },
-    "projectLogo": "/images/logos/four-seasons-hotel-private-residences.svg",
+    "projectLogo": "/images/logos/four-seasons-hotel-private-residences.png",
     "isNew": false,
     "filterCounty": "Broward County",
     "filterLocation": "Fort Lauderdale",
@@ -28088,7 +28088,7 @@
     "priceList": {
       "hidden": true
     },
-    "projectLogo": "/images/logos/glass-miami-beach.svg",
+    "projectLogo": "/images/logos/glass-miami-beach.png",
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Miami Beach",
@@ -28257,7 +28257,7 @@
     "priceList": {
       "externalUrl": "https://www.groveatgranbay.com/for-sale.html"
     },
-    "projectLogo": "/images/logos/grove-at-grand-bay.svg",
+    "projectLogo": "/images/logos/grove-at-grand-bay.png",
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Coconut Grove",
@@ -29128,7 +29128,7 @@
     "priceList": {
       "hidden": true
     },
-    "projectLogo": "/images/logos/il-villaggio.svg",
+    "projectLogo": "/images/logos/il-villaggio.png",
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Miami Beach",
@@ -29284,7 +29284,7 @@
     "priceList": {
       "hidden": true
     },
-    "projectLogo": "/images/logos/jade-beach.svg",
+    "projectLogo": "/images/logos/jade-beach.png",
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Sunny Isles Beach",
@@ -29405,7 +29405,7 @@
     "priceList": {
       "externalUrl": "https://www.jadeoceancondo.com/for-sale.html"
     },
-    "projectLogo": "/images/logos/jade-ocean.svg",
+    "projectLogo": "/images/logos/jade-ocean.png",
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Sunny Isles Beach",
@@ -29595,7 +29595,7 @@
     "priceList": {
       "externalUrl": "https://www.jadesignatures.com/for-sale.html"
     },
-    "projectLogo": "/images/logos/jade-signature.svg",
+    "projectLogo": "/images/logos/jade-signature.png",
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Sunny Isles Beach",
@@ -30053,7 +30053,7 @@
     "priceList": {
       "hidden": true
     },
-    "projectLogo": "/images/logos/l-atelier.svg",
+    "projectLogo": "/images/logos/l-atelier.png",
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Miami Beach",
@@ -30305,7 +30305,7 @@
     "priceList": {
       "hidden": true
     },
-    "projectLogo": "/images/logos/la-santa-maria.svg",
+    "projectLogo": "/images/logos/la-santa-maria.png",
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Brickell",
@@ -31421,7 +31421,7 @@
     "priceList": {
       "hidden": true
     },
-    "projectLogo": "/images/logos/missoni-baia.svg",
+    "projectLogo": "/images/logos/missoni-baia.png",
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Edgewater",
@@ -31617,7 +31617,7 @@
     "priceList": {
       "hidden": true
     },
-    "projectLogo": "/images/logos/monaco-yacht-club-residences.svg",
+    "projectLogo": "/images/logos/monaco-yacht-club-residences.png",
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Miami Beach",
@@ -31783,7 +31783,7 @@
     "priceList": {
       "hidden": true
     },
-    "projectLogo": "/images/logos/monad-terrace.svg",
+    "projectLogo": "/images/logos/monad-terrace.png",
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "South Beach",
@@ -31884,7 +31884,7 @@
     "priceList": {
       "hidden": true
     },
-    "projectLogo": "/images/logos/murano-at-portofino.svg",
+    "projectLogo": "/images/logos/murano-at-portofino.png",
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "South Beach",
@@ -32016,7 +32016,7 @@
     "priceList": {
       "hidden": true
     },
-    "projectLogo": "/images/logos/murano-grande-at-portofino.svg",
+    "projectLogo": "/images/logos/murano-grande-at-portofino.png",
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "South Beach",
@@ -32177,7 +32177,7 @@
     "priceList": {
       "externalUrl": "https://www.museresidencesmiami.com/for-sale.html"
     },
-    "projectLogo": "/images/logos/muse-residences.svg",
+    "projectLogo": "/images/logos/muse-residences.png",
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Sunny Isles Beach",
@@ -33101,7 +33101,7 @@
     "priceList": {
       "hidden": true
     },
-    "projectLogo": "/images/logos/ocean-delray.svg",
+    "projectLogo": "/images/logos/ocean-delray.png",
     "isNew": false,
     "filterCounty": "Palm Beach County",
     "filterLocation": "Delray Beach",
@@ -33216,7 +33216,7 @@
       "driveFileId": "1YeAo1MsJuaY--y6ypwjaPpMVuPFBOvVk",
       "createdAt": "As of December 12, 2025"
     },
-    "projectLogo": "/images/logos/ocean-house-2.svg",
+    "projectLogo": "/images/logos/ocean-house-2.png",
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "South Beach",
@@ -33396,7 +33396,7 @@
     "priceList": {
       "hidden": true
     },
-    "projectLogo": "/images/logos/ocean-park.svg",
+    "projectLogo": "/images/logos/ocean-park.png",
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "South Beach",
@@ -33733,7 +33733,7 @@
     "priceList": {
       "externalUrl": "https://www.oceanaballlharbour.com/for-sale.html"
     },
-    "projectLogo": "/images/logos/oceana-bal-harbour.svg",
+    "projectLogo": "/images/logos/oceana-bal-harbour.png",
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Bal Harbour",
@@ -34019,7 +34019,7 @@
     "priceList": {
       "externalUrl": "https://www.oceanakeybisscayne.com/for-sale.html"
     },
-    "projectLogo": "/images/logos/oceana-key-biscayne.svg",
+    "projectLogo": "/images/logos/oceana-key-biscayne.png",
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Key Biscayne",
@@ -34223,7 +34223,7 @@
     "priceList": {
       "hidden": true
     },
-    "projectLogo": "/images/logos/oceanside.svg",
+    "projectLogo": "/images/logos/oceanside.png",
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Fisher Island",
@@ -35329,7 +35329,7 @@
     "priceList": {
       "hidden": true
     },
-    "projectLogo": "/images/logos/one-ocean.svg",
+    "projectLogo": "/images/logos/one-ocean.png",
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "South Beach",
@@ -35899,7 +35899,7 @@
     "priceList": {
       "externalUrl": "https://www.1000museumiami.com/for-sale.html"
     },
-    "projectLogo": "/images/logos/one-thousand-museum.svg",
+    "projectLogo": "/images/logos/one-thousand-museum.png",
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Downtown Miami",
@@ -37148,7 +37148,7 @@
     "priceList": {
       "externalUrl": "https://www.palazzodellsol.com/for-sale.html"
     },
-    "projectLogo": "/images/logos/palazzo-del-sol.svg",
+    "projectLogo": "/images/logos/palazzo-del-sol.png",
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Fisher Island",
@@ -37786,7 +37786,7 @@
     "priceList": {
       "externalUrl": "https://www.palazzoodellaluna.com/for-sale.html"
     },
-    "projectLogo": "/images/logos/palazzo-della-luna.svg",
+    "projectLogo": "/images/logos/palazzo-della-luna.png",
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Fisher Island",
@@ -38643,7 +38643,7 @@
     "priceList": {
       "hidden": true
     },
-    "projectLogo": "/images/logos/paramount-fort-lauderdale-beach.svg",
+    "projectLogo": "/images/logos/paramount-fort-lauderdale-beach.png",
     "isNew": false,
     "filterCounty": "Broward County",
     "filterLocation": "Fort Lauderdale",
@@ -38909,7 +38909,7 @@
     "priceList": {
       "externalUrl": "https://www.parkgrovecondomiami.com/for-sale.html"
     },
-    "projectLogo": "/images/logos/park-grove.svg",
+    "projectLogo": "/images/logos/park-grove.png",
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Coconut Grove",
@@ -39192,7 +39192,7 @@
     "priceList": {
       "hidden": true
     },
-    "projectLogo": "/images/logos/parque-towers.svg",
+    "projectLogo": "/images/logos/parque-towers.png",
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Sunny Isles Beach",
@@ -39923,7 +39923,7 @@
     "priceList": {
       "hidden": true
     },
-    "projectLogo": "/images/logos/porsche-design-tower.svg",
+    "projectLogo": "/images/logos/porsche-design-tower.png",
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Sunny Isles Beach",
@@ -40204,7 +40204,7 @@
     "priceList": {
       "hidden": true
     },
-    "projectLogo": "/images/logos/portofino-tower.svg",
+    "projectLogo": "/images/logos/portofino-tower.png",
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "South Beach",
@@ -40329,7 +40329,7 @@
     "priceList": {
       "hidden": true
     },
-    "projectLogo": "/images/logos/prive-island.svg",
+    "projectLogo": "/images/logos/prive-island.png",
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Aventura",
@@ -40539,7 +40539,7 @@
     "priceList": {
       "externalUrl": "https://www.regaliaresidenses.com/for-sale.html"
     },
-    "projectLogo": "/images/logos/regalia.svg",
+    "projectLogo": "/images/logos/regalia.png",
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Sunny Isles Beach",
@@ -41597,7 +41597,7 @@
     "priceList": {
       "externalUrl": "https://setaimiamibeach.nestcapitals.com/for-sale.html"
     },
-    "projectLogo": "/images/logos/setai-residences.svg",
+    "projectLogo": "/images/logos/setai-residences.png",
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Miami Beach",
@@ -42691,7 +42691,7 @@
     "priceList": {
       "hidden": true
     },
-    "projectLogo": "/images/logos/south-pointe-towers.svg",
+    "projectLogo": "/images/logos/south-pointe-towers.png",
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "South Beach",
@@ -42836,7 +42836,7 @@
     "priceList": {
       "hidden": true
     },
-    "projectLogo": "/images/logos/st-regis-residences-bal-harbour.svg",
+    "projectLogo": "/images/logos/st-regis-residences-bal-harbour.png",
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Bal Harbour",
@@ -43368,7 +43368,7 @@
     "priceList": {
       "hidden": true
     },
-    "projectLogo": "/images/logos/the-bath-club.svg",
+    "projectLogo": "/images/logos/the-bath-club.png",
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Miami Beach",
@@ -43636,7 +43636,7 @@
     "priceList": {
       "externalUrl": "https://www.estatessatacqualina.com/for-sale.html"
     },
-    "projectLogo": "/images/logos/the-estates-at-acqualina.svg",
+    "projectLogo": "/images/logos/the-estates-at-acqualina.png",
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Sunny Isles Beach",
@@ -44134,7 +44134,7 @@
     "priceList": {
       "hidden": true
     },
-    "projectLogo": "/images/logos/the-fairchild.svg",
+    "projectLogo": "/images/logos/the-fairchild.png",
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Coconut Grove",
@@ -44861,7 +44861,7 @@
     "priceList": {
       "hidden": true
     },
-    "projectLogo": "/images/logos/the-mansions-at-acqualina.svg",
+    "projectLogo": "/images/logos/the-mansions-at-acqualina.png",
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Sunny Isles Beach",
@@ -45241,7 +45241,7 @@
     "priceList": {
       "hidden": true
     },
-    "projectLogo": "/images/logos/the-palace-at-bal-harbour.svg",
+    "projectLogo": "/images/logos/the-palace-at-bal-harbour.png",
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Bal Harbour",
@@ -45757,7 +45757,7 @@
     "priceList": {
       "hidden": true
     },
-    "projectLogo": "/images/logos/the-residences-at-the-miami-beach-edition.svg",
+    "projectLogo": "/images/logos/the-residences-at-the-miami-beach-edition.png",
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Miami Beach",
@@ -47619,7 +47619,7 @@
     "priceList": {
       "externalUrl": "https://www.turnberryoceansclub.com/for-sale.html"
     },
-    "projectLogo": "/images/logos/turnberry-ocean-club.svg",
+    "projectLogo": "/images/logos/turnberry-ocean-club.png",
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Sunny Isles Beach",
@@ -48400,7 +48400,7 @@
     "priceList": {
       "hidden": true
     },
-    "projectLogo": "/images/logos/turnberry-ocean-colony.svg",
+    "projectLogo": "/images/logos/turnberry-ocean-colony.png",
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Sunny Isles Beach",
@@ -49306,7 +49306,7 @@
     "priceList": {
       "hidden": true
     },
-    "projectLogo": "/images/logos/villa-valencia.svg",
+    "projectLogo": "/images/logos/villa-valencia.png",
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Coral Gables",
@@ -49460,7 +49460,7 @@
     "priceList": {
       "hidden": true
     },
-    "projectLogo": "/images/logos/w-south-beach-residences.svg",
+    "projectLogo": "/images/logos/w-south-beach-residences.png",
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "South Beach",
