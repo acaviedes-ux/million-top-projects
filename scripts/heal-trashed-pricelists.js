@@ -4,23 +4,26 @@
  * heal-trashed-pricelists.js
  * ─────────────────────────────────────────────────────────────────────────
  * Detects price list / price range Drive files that have been moved to the
- * trash AFTER being seeded into projects.json. When found, searches the
- * year/month price-list folder tree (newest first) for a non-trashed file
- * matching the project name and re-points projects.json at it.
+ * trash AFTER being seeded into projects.json, and removes the broken
+ * references so end users don't see "File is in owner's trash".
  *
- * Background
- * ──────────
- * seed-pricelists-from-drive.js queries Drive with `trashed = false`, so it
- * never picks up a trashed file. But it can't react when a file goes to the
- * trash LATER — the projects.json reference becomes broken. End users see
- * "File is in owner's trash" instead of the PDF preview.
+ * Why we don't search for replacements here anymore
+ * ────────────────────────────────────────────────
+ * Under the old central-folder system (Price List YYYY / Price List MM …)
+ * this script had to walk the entire year/month tree to find a fallback.
+ * Under the new per-project source (each project's "Price Lists" subfolder),
+ * the `seed-pricelists-from-project-folders.js` script already scans the
+ * canonical location and writes whatever is currently there — trashed files
+ * vanish automatically from the next seed run. This script's job is just to
+ * close the small window where the seed hasn't run yet but a file has been
+ * trashed.
  *
- * This script closes that gap:
- *   1. Reads every driveFileId from projects.json (priceList + priceRange).
- *   2. Asks Drive for each file's `trashed` flag (8-way parallel).
- *   3. For trashed files, scans price-list year/month folders newest-first
- *      and picks the first non-trashed file whose name matches the project.
- *   4. Writes the corrected IDs back to projects.json.
+ * Behaviour:
+ *   - Single-doc legacy fields (priceList / priceRange) pointing at a trashed
+ *     file → delete the field. The UI falls back to "Coming soon".
+ *   - priceDocs[] containing a trashed entry → filter it out. If only one
+ *     entry remains, collapse back to legacy shape (priceList or priceRange).
+ *     If zero remain, clear the field.
  *
  * Usage
  * ─────
@@ -29,8 +32,7 @@
  *
  * Env
  * ───
- *   GOOGLE_SERVICE_ACCOUNT_EMAIL, GOOGLE_PRIVATE_KEY  — Drive auth
- *   PRICE_LIST_DRIVE_FOLDER_ID                        — root price folder
+ *   GOOGLE_SERVICE_ACCOUNT_EMAIL, GOOGLE_PRIVATE_KEY
  * ─────────────────────────────────────────────────────────────────────────
  */
 
@@ -39,13 +41,7 @@ const { google } = require('googleapis');
 const fs   = require('fs');
 const path = require('path');
 
-const PROJECTS_JSON   = path.join(__dirname, '../data/projects.json');
-const PRICE_FOLDER_ID = process.env.PRICE_LIST_DRIVE_FOLDER_ID;
-
-const MONTHS = [
-  'January','February','March','April','May','June',
-  'July','August','September','October','November','December',
-];
+const PROJECTS_JSON = path.join(__dirname, '../data/projects.json');
 
 function makeAuth() {
   return new google.auth.JWT({
@@ -55,103 +51,6 @@ function makeAuth() {
   });
 }
 
-// ── Drive helpers ────────────────────────────────────────────────────────────
-
-async function listChildren(drive, folderId, extraQuery = '') {
-  const all = [];
-  let pageToken;
-  do {
-    const res = await drive.files.list({
-      q: `'${folderId}' in parents and trashed = false ${extraQuery}`,
-      fields: 'nextPageToken, files(id, name, mimeType, modifiedTime, trashed)',
-      pageSize: 1000,
-      pageToken,
-      supportsAllDrives: true,
-      includeItemsFromAllDrives: true,
-    });
-    all.push(...(res.data.files || []));
-    pageToken = res.data.nextPageToken;
-  } while (pageToken);
-  return all;
-}
-
-// Normalize project names for fuzzy matching (handles ® ™ accents, etc.)
-function norm(s) {
-  return (s || '')
-    .toLowerCase()
-    .normalize('NFD').replace(/[̀-ͯ]/g, '')
-    .replace(/[®™''']/g, '')
-    .replace(/[^a-z0-9]+/g, ' ')
-    .trim();
-}
-
-// ── Replacement finder ───────────────────────────────────────────────────────
-
-/**
- * Build a `slug → { yearFolder, monthFolder, file }` index of non-trashed
- * price-list files, sorted newest first. Used to quickly find a replacement
- * for a trashed file without re-scanning Drive per project.
- */
-async function buildIndex(drive, project, docType /* 'list' | 'range' */) {
-  if (!PRICE_FOLDER_ID) throw new Error('PRICE_LIST_DRIVE_FOLDER_ID is required');
-
-  const candidates = [];
-  const targetNames = [project.name, project.esqueletoName, project.tpDataName]
-    .filter(Boolean)
-    .map(norm);
-
-  // Year folders, newest first
-  const yearFolders = (await listChildren(drive, PRICE_FOLDER_ID))
-    .filter(f => f.mimeType === 'application/vnd.google-apps.folder')
-    .filter(f => /price list \d{4}/i.test(f.name))
-    .map(f => ({ ...f, year: parseInt((f.name.match(/\d{4}/) || ['0'])[0], 10) }))
-    .sort((a, b) => b.year - a.year);
-
-  for (const yearFolder of yearFolders) {
-    const monthFolders = (await listChildren(drive, yearFolder.id))
-      .filter(f => f.mimeType === 'application/vnd.google-apps.folder')
-      .map(f => ({ ...f, monthNum: parseInt((f.name.match(/price list (\d+)/i) || ['','0'])[1], 10) }))
-      .filter(f => f.monthNum > 0)
-      .sort((a, b) => b.monthNum - a.monthNum); // newest month first
-
-    for (const monthFolder of monthFolders) {
-      const files = await listChildren(drive, monthFolder.id);
-
-      for (const file of files) {
-        if (!file.name.toLowerCase().endsWith('.pdf')) continue;
-        const m = file.name.match(/^(.+?)\s*-\s*Price (List|Range)\s+\d+\.pdf$/i);
-        if (!m) continue;
-        if (m[2].toLowerCase() !== docType) continue;
-
-        const fileNorm = norm(m[1]);
-        const matches = targetNames.some(n => {
-          if (fileNorm === n) return true;
-          const shorter = fileNorm.length < n.length ? fileNorm : n;
-          if (shorter.length >= 8 && (fileNorm.includes(n) || n.includes(fileNorm))) return true;
-          // West Palm Beach / Palm Beach fallback
-          const strip = s => s.replace(/\bwest\b\s*/g, '').replace(/\s+/g, ' ').trim();
-          return strip(fileNorm) === strip(n);
-        });
-
-        if (matches) {
-          // Return the first match — folders are already iterated newest-first
-          const fileDate = file.modifiedTime ? new Date(file.modifiedTime) : null;
-          const day      = fileDate ? fileDate.getUTCDate() : null;
-          const month    = fileDate ? MONTHS[fileDate.getUTCMonth()] : null;
-          const year     = fileDate ? fileDate.getUTCFullYear() : yearFolder.year;
-          const createdAt = day
-            ? `As of ${month} ${day}, ${year}`
-            : `As of ${MONTHS[monthFolder.monthNum - 1]}, ${yearFolder.year}`;
-          return { fileId: file.id, fileName: file.name, createdAt, folder: yearFolder.name + ' / ' + monthFolder.name };
-        }
-      }
-    }
-  }
-  return null;
-}
-
-// ── Main ─────────────────────────────────────────────────────────────────────
-
 async function main() {
   const isDry = process.argv.includes('--dry');
   if (isDry) console.log('[DRY RUN] No changes will be written\n');
@@ -159,81 +58,100 @@ async function main() {
   const drive = google.drive({ version: 'v3', auth: makeAuth() });
   const projects = JSON.parse(fs.readFileSync(PROJECTS_JSON, 'utf8'));
 
-  // Step 1 — collect every (slug, kind, id) tuple we need to verify
-  const docs = [];
+  // Step 1: collect every (slug, where, fileId) reference
+  const refs = [];
   for (const p of projects) {
-    if (p.priceList?.driveFileId)  docs.push({ slug: p.slug, project: p, kind: 'list',  id: p.priceList.driveFileId });
-    if (p.priceRange?.driveFileId) docs.push({ slug: p.slug, project: p, kind: 'range', id: p.priceRange.driveFileId });
+    if (p.priceList?.driveFileId)
+      refs.push({ slug: p.slug, where: 'priceList', fileId: p.priceList.driveFileId });
+    if (p.priceRange?.driveFileId)
+      refs.push({ slug: p.slug, where: 'priceRange', fileId: p.priceRange.driveFileId });
+    if (Array.isArray(p.priceDocs)) {
+      p.priceDocs.forEach((doc, i) => {
+        if (doc?.driveFileId)
+          refs.push({ slug: p.slug, where: 'priceDocs', index: i, fileId: doc.driveFileId });
+      });
+    }
   }
-  console.log(`Verifying ${docs.length} price documents...`);
 
-  // Step 2 — check trashed status in parallel (Drive API quota allows this safely)
+  console.log(`Verifying ${refs.length} price doc reference(s)...`);
+
+  // Step 2: check trashed status in parallel
   const trashed = [];
-  const queue = [...docs];
+  const queue = [...refs];
   await Promise.all(Array.from({ length: 8 }, async () => {
     while (queue.length) {
-      const doc = queue.shift();
-      if (!doc) continue;
+      const ref = queue.shift();
+      if (!ref) continue;
       try {
         const { data } = await drive.files.get({
-          fileId: doc.id,
+          fileId: ref.fileId,
           supportsAllDrives: true,
           fields: 'trashed,name',
         });
-        if (data.trashed) trashed.push({ ...doc, name: data.name });
+        if (data.trashed) trashed.push({ ...ref, name: data.name });
       } catch (e) {
         // 404 / not found also counts as broken
-        trashed.push({ ...doc, name: '(not found)', error: e.message });
+        trashed.push({ ...ref, name: '(not found)', error: e.message });
       }
     }
   }));
 
   if (!trashed.length) {
-    console.log('✓ All price documents are healthy — nothing to heal.');
+    console.log('✓ All price doc references are healthy — nothing to heal.');
     return;
   }
 
-  console.log(`\nFound ${trashed.length} trashed/missing reference(s):`);
-  trashed.forEach(t => console.log(`  ✗ ${t.slug} (${t.kind === 'list' ? 'PL' : 'PR'}): ${t.name}`));
+  console.log(`\nFound ${trashed.length} broken reference(s):`);
+  trashed.forEach(t => {
+    const loc = t.where === 'priceDocs' ? `priceDocs[${t.index}]` : t.where;
+    console.log(`  ✗ ${t.slug} (${loc}): ${t.name}`);
+  });
 
-  // Step 3 — for each broken reference, search for a replacement
-  console.log('\nSearching for replacements...');
-  const fixes = [];
-  for (const t of trashed) {
-    const replacement = await buildIndex(drive, t.project, t.kind);
-    if (replacement) {
-      console.log(`  ✓ ${t.slug} (${t.kind === 'list' ? 'PL' : 'PR'}) → ${replacement.fileName} (${replacement.folder})`);
-      fixes.push({ ...t, replacement });
-    } else {
-      // No replacement anywhere — remove the broken reference so the UI falls
-      // back to "Coming soon" instead of showing a trash error.
-      console.log(`  ⚠ ${t.slug} (${t.kind === 'list' ? 'PL' : 'PR'}): no replacement found → will REMOVE reference`);
-      fixes.push({ ...t, replacement: null });
-    }
-  }
-
-  // Step 4 — apply fixes
   if (isDry) {
     console.log('\n[DRY RUN] Run without --dry to apply.');
     return;
   }
 
-  for (const fix of fixes) {
-    const proj = projects.find(p => p.slug === fix.slug);
+  // Step 3: apply removals. Group by slug so we mutate each project once.
+  // For priceDocs[] we filter out broken indices; if exactly one survives we
+  // collapse it back into the matching legacy field (priceList / priceRange).
+  const bySlug = new Map();
+  for (const t of trashed) {
+    if (!bySlug.has(t.slug)) bySlug.set(t.slug, []);
+    bySlug.get(t.slug).push(t);
+  }
+
+  for (const [slug, items] of bySlug) {
+    const proj = projects.find(p => p.slug === slug);
     if (!proj) continue;
-    const field = fix.kind === 'list' ? 'priceList' : 'priceRange';
-    if (fix.replacement) {
-      proj[field] = {
-        driveFileId: fix.replacement.fileId,
-        createdAt:   fix.replacement.createdAt,
-      };
-    } else {
-      delete proj[field];
+
+    // Legacy single fields → just delete
+    if (items.some(i => i.where === 'priceList'))  delete proj.priceList;
+    if (items.some(i => i.where === 'priceRange')) delete proj.priceRange;
+
+    // priceDocs[] → filter out broken indices
+    const docItems = items.filter(i => i.where === 'priceDocs');
+    if (docItems.length && Array.isArray(proj.priceDocs)) {
+      const badIdx = new Set(docItems.map(i => i.index));
+      proj.priceDocs = proj.priceDocs.filter((_, i) => !badIdx.has(i));
+
+      // Collapse to legacy shape when only one remains
+      if (proj.priceDocs.length === 1) {
+        const d = proj.priceDocs[0];
+        if (d.kind === 'range') {
+          proj.priceRange = { driveFileId: d.driveFileId, createdAt: d.createdAt };
+        } else {
+          proj.priceList  = { driveFileId: d.driveFileId, createdAt: d.createdAt };
+        }
+        delete proj.priceDocs;
+      } else if (proj.priceDocs.length === 0) {
+        delete proj.priceDocs;
+      }
     }
   }
 
   fs.writeFileSync(PROJECTS_JSON, JSON.stringify(projects, null, 2) + '\n', 'utf8');
-  console.log(`\n✓ Applied ${fixes.length} fix(es) to projects.json`);
+  console.log(`\n✓ Applied ${trashed.length} removal(s) to projects.json`);
 }
 
 main().catch(err => { console.error(err); process.exit(1); });

@@ -78,11 +78,21 @@ async function main() {
   const projects = JSON.parse(fs.readFileSync(PROJECTS_JSON, 'utf8'));
   const targets  = targetSlug ? projects.filter(p => p.slug === targetSlug) : projects;
 
-  // Collect all (slug, field, fileId) triples to update
+  // Collect all (slug, field, fileId, [index]) tuples to update.
+  // Single-doc projects use the legacy `priceList` / `priceRange` fields.
+  // Multi-doc projects use `priceDocs[]` — we carry the array index so we
+  // know which element to mutate.
   const work = [];
   for (const p of targets) {
     if (p.priceList  && p.priceList.driveFileId)  work.push({ slug: p.slug, field: 'priceList',  fileId: p.priceList.driveFileId });
     if (p.priceRange && p.priceRange.driveFileId) work.push({ slug: p.slug, field: 'priceRange', fileId: p.priceRange.driveFileId });
+    if (Array.isArray(p.priceDocs)) {
+      p.priceDocs.forEach((doc, i) => {
+        if (doc && doc.driveFileId) {
+          work.push({ slug: p.slug, field: 'priceDocs', index: i, fileId: doc.driveFileId });
+        }
+      });
+    }
   }
 
   if (work.length === 0) {
@@ -107,14 +117,22 @@ async function main() {
       const project = projects.find(p => p.slug === item.slug);
       if (!project) return;
 
-      const current = project[item.field]?.createdAt || '(none)';
-      if (current === newCreatedAt) return; // already correct, skip
+      // Resolve current value depending on legacy vs priceDocs[] shape
+      const target = item.field === 'priceDocs'
+        ? project.priceDocs?.[item.index]
+        : project[item.field];
+      const current = target?.createdAt || '(none)';
+      if (!target || current === newCreatedAt) return; // missing or already correct
 
-      if (!isDry) {
-        project[item.field].createdAt = newCreatedAt;
-      }
+      if (!isDry) target.createdAt = newCreatedAt;
 
-      updated.push({ name: project.name, field: item.field, from: current, to: newCreatedAt });
+      const tagSuffix = item.field === 'priceDocs' ? `[${item.index}]` : '';
+      updated.push({
+        name:  project.name,
+        field: item.field + tagSuffix,
+        from:  current,
+        to:    newCreatedAt,
+      });
     }));
   }
 
@@ -123,7 +141,9 @@ async function main() {
     console.log('All entries already have the correct date format — nothing to update.');
   } else {
     for (const u of updated) {
-      const tag = u.field === 'priceRange' ? '[PR]' : '[PL]';
+      const tag = u.field.startsWith('priceRange') ? '[PR]'
+                : u.field.startsWith('priceDocs')  ? '[D' + (u.field.match(/\[(\d+)\]/) || ['','?'])[1] + ']'
+                : '[PL]';
       console.log(`  ${isDry ? '(dry) ' : '✓ '}${tag} ${u.name}`);
       console.log(`       ${u.from}  →  ${u.to}`);
     }

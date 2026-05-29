@@ -5,18 +5,10 @@ name: Sync Price Lists from Drive
 #     8:00 AM COT = 13:00 UTC  |  5:00 PM COT = 22:00 UTC
 #     cron runs at :00 :15 :30 :45 of each UTC hour 13–22, weekdays only
 # • workflow_dispatch: manual run from GitHub Actions UI
-#   - full_sweep input: set to true to scan ALL historical year/month folders
 on:
   schedule:
     - cron: '*/15 13-22 * * 1-5'   # every 15 min, Mon–Fri, 8 AM–5 PM COT
   workflow_dispatch:
-    inputs:
-      full_sweep:
-        description: 'Scan all historical folders instead of current month only'
-        required: false
-        default: 'false'
-        type: choice
-        options: ['false', 'true']
 
 # Only one run at a time — if a run is still going when the next fires, skip it
 concurrency:
@@ -47,25 +39,18 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      # Hourly / default: only check this month's folder (fast — one API list call)
-      - name: Seed price lists — current month
-        if: github.event_name == 'schedule' || inputs.full_sweep == 'false'
+      # Seed price docs from each project's "Price Lists" subfolder. This
+      # replaces the old central-folder seeder. The seeder is idempotent:
+      # it reads whatever is currently in each project's Price Lists folder
+      # and writes it to projects.json (single-doc → legacy fields, 2+ docs
+      # → priceDocs[] array).
+      - name: Seed price lists from project folders
         env:
           GOOGLE_SERVICE_ACCOUNT_EMAIL: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_EMAIL }}
           GOOGLE_PRIVATE_KEY: ${{ secrets.GOOGLE_PRIVATE_KEY }}
-          PRICE_LIST_DRIVE_FOLDER_ID: ${{ secrets.PRICE_LIST_DRIVE_FOLDER_ID }}
-          PRE_CONSTRUCTION_SPREADSHEET_ID: ${{ secrets.PRE_CONSTRUCTION_SPREADSHEET_ID }}
-        run: node scripts/seed-pricelists-from-drive.js --force --current-month
-
-      # Manual full sweep: all year/month folders (use after uploading older PDFs)
-      - name: Seed price lists — full sweep
-        if: inputs.full_sweep == 'true'
-        env:
-          GOOGLE_SERVICE_ACCOUNT_EMAIL: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_EMAIL }}
-          GOOGLE_PRIVATE_KEY: ${{ secrets.GOOGLE_PRIVATE_KEY }}
-          PRICE_LIST_DRIVE_FOLDER_ID: ${{ secrets.PRICE_LIST_DRIVE_FOLDER_ID }}
-          PRE_CONSTRUCTION_SPREADSHEET_ID: ${{ secrets.PRE_CONSTRUCTION_SPREADSHEET_ID }}
-        run: node scripts/seed-pricelists-from-drive.js --force
+          DOCS_DRIVE_FOLDER_ID: ${{ secrets.DOCS_DRIVE_FOLDER_ID }}
+          EXTRA_DOCS_FOLDER_IDS: ${{ secrets.EXTRA_DOCS_FOLDER_IDS }}
+        run: node scripts/seed-pricelists-from-project-folders.js
 
       # Refresh createdAt for files modified in Drive without being re-uploaded
       - name: Update price list dates

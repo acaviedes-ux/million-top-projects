@@ -407,8 +407,9 @@
 
     // ── 1. PRICE LIST / PRICE RANGE ──────────────────────────
     (function appendPriceSection() {
-      var hasPL = d.priceList  && d.priceList.driveFileId;
-      var hasPR = d.priceRange && d.priceRange.driveFileId;
+      var hasPL    = d.priceList  && d.priceList.driveFileId;
+      var hasPR    = d.priceRange && d.priceRange.driveFileId;
+      var hasDocs  = Array.isArray(d.priceDocs) && d.priceDocs.length >= 2;
 
       // Helper: render disclaimer banner if present on priceList
       function appendDisclaimer(sec) {
@@ -422,19 +423,13 @@
         sec.appendChild(disc);
       }
 
-      // ── Case A: both docs — side-by-side cards + mobile carousel ──
-      if (hasPL && hasPR) {
-        var sec = makeSection('price-list');
-        sec.appendChild(sectionHeading('PRICE LIST / PRICE RANGE'));
-        appendDisclaimer(sec);
-
+      // Helper: wrap a doc list in the carousel UI with prev/next buttons.
+      // Pulled out so both the new priceDocs[] path and the legacy Case A can
+      // share the same arrow-button logic without copy-paste.
+      function buildCarousel(list) {
         var wrap = el('div', 'doc-carousel-wrap');
         wrap.classList.add('has-carousel');
-        var list = el('div', 'doc-list');
-        list.appendChild(docItem('PRICE LIST',  d.priceList.driveFileId,  d.priceList.createdAt));
-        list.appendChild(docItem('PRICE RANGE', d.priceRange.driveFileId, d.priceRange.createdAt));
         wrap.appendChild(list);
-
         var prevBtn = el('button', 'doc-carousel-btn doc-carousel-btn--prev');
         prevBtn.textContent = '‹';
         prevBtn.setAttribute('type', 'button');
@@ -453,8 +448,38 @@
         });
         wrap.appendChild(prevBtn);
         wrap.appendChild(nextBtn);
+        return wrap;
+      }
 
-        sec.appendChild(wrap);
+      // ── Case 0: NEW priceDocs[] schema — N cards in a carousel ──
+      // Used by projects with 2+ docs (e.g. 888 Brickell with PL/Penthouse/
+      // Residences/Range; Mandarin Oriental Miami with PL/NT/ST). The seed
+      // script writes priceDocs[] only when N>=2; single-doc projects keep
+      // the legacy priceList/priceRange shape, handled below.
+      if (hasDocs) {
+        var sec = makeSection('price-list');
+        sec.appendChild(sectionHeading('PRICE LIST / PRICE RANGE'));
+        appendDisclaimer(sec);
+
+        var list = el('div', 'doc-list');
+        d.priceDocs.forEach(function (doc) {
+          list.appendChild(docItem(doc.title || 'PRICE LIST', doc.driveFileId, doc.createdAt));
+        });
+        sec.appendChild(buildCarousel(list));
+        frag.appendChild(sec);
+        return;
+      }
+
+      // ── Case A: both legacy docs — side-by-side cards + mobile carousel ──
+      if (hasPL && hasPR) {
+        var sec = makeSection('price-list');
+        sec.appendChild(sectionHeading('PRICE LIST / PRICE RANGE'));
+        appendDisclaimer(sec);
+
+        var list = el('div', 'doc-list');
+        list.appendChild(docItem('PRICE LIST',  d.priceList.driveFileId,  d.priceList.createdAt));
+        list.appendChild(docItem('PRICE RANGE', d.priceRange.driveFileId, d.priceRange.createdAt));
+        sec.appendChild(buildCarousel(list));
         frag.appendChild(sec);
         return;
       }

@@ -3,6 +3,19 @@
 /**
  * audit-pricelists.js
  * ─────────────────────────────────────────────────────────────────────────
+ * ⚠ DEPRECATED for the new per-project-folder pipeline.
+ *
+ * This audit was designed for the OLD central-folder source
+ * (Price List YYYY / Price List MM …). The system now sources price docs
+ * from each project's own "Price Lists" subfolder. This script still works
+ * for projects that haven't migrated (those without a "Price Lists" subfolder
+ * in their project folder, still being fed by the legacy seeder if used).
+ *
+ * For the new pipeline, a fresh audit is needed that compares projects.json
+ * against the contents of each project's Price Lists subfolder. Track this
+ * as TODO — until then, run the new seeder dry to spot discrepancies.
+ * ─────────────────────────────────────────────────────────────────────────
+ *
  * Compares what projects.json claims is each project's current price list /
  * price range against what's actually available in Drive RIGHT NOW. Reports
  * every mismatch so admins know which files need a fresh upload, which are

@@ -47,6 +47,10 @@ async function main() {
     }
     if (p.priceList  && p.priceList.driveFileId)  fileIds.add(p.priceList.driveFileId);
     if (p.priceRange && p.priceRange.driveFileId) fileIds.add(p.priceRange.driveFileId);
+    // New schema: priceDocs[] for projects with 2+ docs (e.g. 888 Brickell)
+    for (const doc of (p.priceDocs || [])) {
+      if (doc && doc.driveFileId) fileIds.add(doc.driveFileId);
+    }
   }
 
   console.log(`Found ${fileIds.size} unique Drive file IDs\n`);
