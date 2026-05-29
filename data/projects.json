@@ -25089,22 +25089,15 @@
       }
     ],
     "projectLogo": "/images/logos/edgeworth-west-palm-beach.png",
-    "priceList": {
-      "driveFileId": "14RNcI48OgH6wUiFA-oK3lzcEHsrXtGTK",
-      "createdAt": "As of May 2026",
-      "disclaimer": {
-        "type": "warning",
-        "text": "Do not share the Price List or specific prices with clients. Price List for reference only. As the project is in its pre-launch phase, prices may vary. Share price ranges only and verify them with the in-house before."
-      }
-    },
+    "priceList": null,
     "isNew": true,
     "filterCounty": "Palm Beach County",
     "filterLocation": "West Palm Beach",
     "filterStatus": "Pre-construction - NEW",
     "filterYear": "2029",
     "priceRange": {
-      "driveFileId": "15TaGKEtVpOx1u2U8RM1Vckj8zbKcsnVe",
-      "createdAt": "As of April 24, 2026"
+      "driveFileId": "14RNcI48OgH6wUiFA-oK3lzcEHsrXtGTK",
+      "createdAt": "As of May 2026"
     },
     "factSheets": [
       {
