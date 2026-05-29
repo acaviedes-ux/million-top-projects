@@ -48,8 +48,10 @@ jobs:
         env:
           GOOGLE_SERVICE_ACCOUNT_EMAIL: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_EMAIL }}
           GOOGLE_PRIVATE_KEY: ${{ secrets.GOOGLE_PRIVATE_KEY }}
-          DOCS_DRIVE_FOLDER_ID: ${{ secrets.DOCS_DRIVE_FOLDER_ID }}
-          EXTRA_DOCS_FOLDER_IDS: ${{ secrets.EXTRA_DOCS_FOLDER_IDS }}
+          # Same folder IDs as sync-docs.yml — hardcoded because they're the
+          # canonical project-folder roots (not secret values).
+          DOCS_DRIVE_FOLDER_ID: '1OEO2oOrNuIQkmsdnLfJXwObui_CYpGqv'
+          EXTRA_DOCS_FOLDER_IDS: '1U0J0ETnBVMgLEcTjOqpsfVA_gF8kz9jF,1XR1IKZ9kz0SNtOYy0PQc1hSzGJ09S7aj'
         run: node scripts/seed-pricelists-from-project-folders.js
 
       # Refresh createdAt for files modified in Drive without being re-uploaded
