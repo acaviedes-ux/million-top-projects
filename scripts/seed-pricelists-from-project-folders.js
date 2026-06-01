@@ -219,6 +219,20 @@ async function main() {
     const project = slugToProject.get(slug);
     if (!project) continue;
 
+    // Respect special priceList configs (MLS banner, UNITS FOR SALE link,
+    // SOLD OUT, PAUSED, custom message). These are managed by
+    // configure-special-projects.js — the auto-sweeper must leave them
+    // untouched even if a "Price Lists" subfolder shows up later.
+    // Note: Five Park-style hybrid projects keep their real driveFileId on
+    // priceList AND have a separate top-level unitsForSale field. Their
+    // priceList has no heading, so this guard doesn't skip them — the
+    // seeder updates the PDF normally while unitsForSale stays intact.
+    const pl = project.priceList;
+    if (pl && (pl.heading || pl.externalUrl || pl.message || pl.hidden || pl.kind)) {
+      skipped++;
+      continue;
+    }
+
     // Look for "Price Lists" subfolder in each project folder
     const collectedFiles = [];
     let foundPriceListsFolder = false;

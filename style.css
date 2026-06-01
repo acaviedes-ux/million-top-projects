@@ -1693,6 +1693,50 @@ img { display: block; max-width: 100%; }
   margin-top: 1rem;
 }
 
+/* Status banner — used for MLS / SOLD OUT / PAUSED / custom messages.
+   The `kind` variant lets each category have its own accent color while
+   sharing the same large-text centered layout. */
+.pl-status {
+  display: block;
+  text-align: center;
+  font-size: 22px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  padding: 32px 16px;
+  margin-top: 1.25rem;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+.pl-status--mls {
+  background: #f7f4ef;
+  color: var(--black);
+  border: 1px solid #d9cfb8;
+}
+.pl-status--sold-out {
+  background: #1f1f1f;
+  color: var(--white);
+}
+.pl-status--paused {
+  background: #fef3c7;
+  color: #92400e;
+  border: 1px solid #fbbf24;
+}
+.pl-status--message {
+  background: #f3f4f6;
+  color: var(--gray-dark);
+  border: 1px solid #d1d5db;
+}
+
+/* UFS button variant in hybrid case (Five Park) — sits above the PDF iframe.
+   Slightly more prominent than the legacy bottom-of-section variant. */
+.pl-ext-btn--ufs {
+  display: block;
+  width: fit-content;
+  margin: 0 auto 1.25rem;
+}
+
 @media (max-width: 768px) {
   .pl-iframe { height: 480px; }
+  .pl-status { font-size: 17px; letter-spacing: 3px; padding: 24px 12px; }
 }

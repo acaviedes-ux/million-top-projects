@@ -70,6 +70,7 @@ function normalize(p) {
       : null),
     priceRange:    p.priceRange      || null,
     priceDocs:     p.priceDocs       || null,
+    unitsForSale:  p.unitsForSale    || null,
     brochures:     p.brochures_v2    || otherBrochures,
     factSheets:    p.factSheets      || [],
     presentations: p.presentations   || [],

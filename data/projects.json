@@ -1884,7 +1884,8 @@
     "hoa": null,
     "contact": null,
     "priceList": {
-      "heading": "NO UNITS AVAILABLE"
+      "heading": "No Units Available",
+      "kind": "message"
     },
     "projectLogo": "/images/logos/casa-cipriani.png",
     "isNew": false,
@@ -4992,8 +4993,8 @@
     ],
     "projectLogo": "/images/logos/ocean-house.png",
     "priceList": {
-      "driveFileId": "17SwVR3Jk0NwniNWWzMhNn6H4TJgb0ABK",
-      "createdAt": "As of May 26, 2026"
+      "heading": "Check Availability on MLS",
+      "kind": "mls"
     },
     "isNew": false,
     "filterCounty": "Miami-Dade County",
@@ -9015,8 +9016,8 @@
       }
     ],
     "priceList": {
-      "driveFileId": "1ZHn-3jY27uAiw08kbxuVD88sRMkE-4ZJ",
-      "createdAt": "As of May 26, 2026"
+      "heading": "Check Availability on MLS",
+      "kind": "mls"
     },
     "projectLogo": "/images/logos/the-bristol.png",
     "isNew": false,
@@ -9872,8 +9873,8 @@
     ],
     "projectLogo": "/images/logos/the-raleigh.png",
     "priceList": {
-      "driveFileId": "1fAGLW9xCNteStEXPsnwfhobR1bNh0yr2",
-      "createdAt": "As of May 26, 2026"
+      "heading": "No Pricing Available",
+      "kind": "message"
     },
     "isNew": false,
     "filterCounty": "Miami-Dade County",
@@ -14742,7 +14743,8 @@
       }
     ],
     "priceList": {
-      "hidden": true
+      "heading": "Check Availability on MLS",
+      "kind": "mls"
     },
     "projectLogo": "/images/logos/1-hotel-homes.png",
     "isNew": false,
@@ -15170,8 +15172,9 @@
       }
     ],
     "priceList": {
-      "driveFileId": "1fNVWUr6LKgOtxgzTh1o65b3c7AclxodK",
-      "createdAt": "As of May 26, 2026"
+      "heading": "UNITS FOR SALE",
+      "externalUrl": "https://www.2000oceaninhallandale.com/",
+      "kind": "ufs"
     },
     "projectLogo": "/images/logos/2000-ocean.png",
     "isNew": false,
@@ -15925,8 +15928,8 @@
       }
     ],
     "priceList": {
-      "driveFileId": "1O0-vPOsNNvQ92M9a25beQVtJafsWMWYI",
-      "createdAt": "As of May 26, 2026"
+      "heading": "Check Availability on MLS",
+      "kind": "mls"
     },
     "projectLogo": "/images/logos/3200-south-ocean.png",
     "isNew": false,
@@ -16111,7 +16114,8 @@
       }
     ],
     "priceList": {
-      "hidden": true
+      "heading": "Check Availability on MLS",
+      "kind": "mls"
     },
     "projectLogo": "/images/logos/321-ocean.png",
     "isNew": false,
@@ -16234,8 +16238,8 @@
       }
     ],
     "priceList": {
-      "driveFileId": "1DrRD3oz4nTEXdWXeTGK-uhnV-AVKMm-b",
-      "createdAt": "As of May 26, 2026"
+      "heading": "Check Availability on MLS",
+      "kind": "mls"
     },
     "projectLogo": "/images/logos/5000-north-ocean.png",
     "isNew": false,
@@ -16372,8 +16376,9 @@
       }
     ],
     "priceList": {
-      "driveFileId": "1O0dt73K6Rfs1LVW8BMH_0sQcPmnxMeqR",
-      "createdAt": "As of May 26, 2026"
+      "heading": "UNITS FOR SALE",
+      "externalUrl": "https://www.57oceancondomiami.com/",
+      "kind": "ufs"
     },
     "projectLogo": "/images/logos/57-ocean.png",
     "isNew": false,
@@ -17311,8 +17316,8 @@
       }
     ],
     "priceList": {
-      "driveFileId": "1MRb56v-1oXZEZsaQzcwYIJ1ZJ2zvEbyk",
-      "createdAt": "As of May 26, 2026"
+      "heading": "Check Availability on MLS",
+      "kind": "mls"
     },
     "projectLogo": "/images/logos/adagio-fort-lauderdale.png",
     "isNew": false,
@@ -19092,7 +19097,9 @@
       }
     ],
     "priceList": {
-      "externalUrl": "https://www.apogeecondosouthbeach.com/for-sale.html"
+      "heading": "UNITS FOR SALE",
+      "externalUrl": "https://www.apogeecondosouthbeach.com/",
+      "kind": "ufs"
     },
     "projectLogo": "/images/logos/apogee.png",
     "isNew": false,
@@ -19427,8 +19434,9 @@
       }
     ],
     "priceList": {
-      "driveFileId": "1p4rBYUFSXBa5Iyx91WFmiXQi0LufvZa3",
-      "createdAt": "As of May 26, 2026"
+      "heading": "UNITS FOR SALE",
+      "externalUrl": "https://www.armaniresidencesmiami.com/",
+      "kind": "ufs"
     },
     "projectLogo": "/images/logos/armani-casa.png",
     "isNew": false,
@@ -19706,8 +19714,8 @@
       }
     ],
     "priceList": {
-      "driveFileId": "1GVtQAogrWef9el6lMeS2wiEbYbPNgJvS",
-      "createdAt": "As of May 26, 2026"
+      "heading": "Check Availability on MLS",
+      "kind": "mls"
     },
     "projectLogo": "/images/logos/arte-surfside.png",
     "isNew": false,
@@ -19976,7 +19984,8 @@
       }
     ],
     "priceList": {
-      "hidden": true
+      "heading": "Check Availability on MLS",
+      "kind": "mls"
     },
     "projectLogo": "/images/logos/asia-brickell.png",
     "isNew": false,
@@ -20146,8 +20155,9 @@
       }
     ],
     "priceList": {
-      "driveFileId": "1vyUOCpyGPMT-rKAkiL_lKK_FGjYsvV5X",
-      "createdAt": "As of May 26, 2026"
+      "heading": "UNITS FOR SALE",
+      "externalUrl": "https://astonmartinresidencesdowntownmiami.nestcapitals.com/",
+      "kind": "ufs"
     },
     "projectLogo": "/images/logos/aston-martin-residences.png",
     "isNew": false,
@@ -20509,8 +20519,9 @@
       }
     ],
     "priceList": {
-      "driveFileId": "1--Up4BGP-RBC4tGIlTwy4nX-5DTqJl7e",
-      "createdAt": "As of May 26, 2026"
+      "heading": "UNITS FOR SALE",
+      "externalUrl": "https://www.aubergebeachsresidences.com",
+      "kind": "ufs"
     },
     "projectLogo": "/images/logos/auberge-beach-residences-spa-fort-lauderdale.png",
     "isNew": false,
@@ -20809,8 +20820,8 @@
       }
     ],
     "priceList": {
-      "driveFileId": "1YNn6DwCftegQS3wnl9Ivimepmja2BNs5",
-      "createdAt": "As of May 26, 2026"
+      "heading": "Check Availability on MLS",
+      "kind": "mls"
     },
     "projectLogo": "/images/logos/aurora-sunny-isles-beach.png",
     "isNew": false,
@@ -21135,7 +21146,8 @@
       }
     ],
     "priceList": {
-      "hidden": true
+      "heading": "Check Availability on MLS",
+      "kind": "mls"
     },
     "projectLogo": "/images/logos/bal-harbour-tower.png",
     "isNew": false,
@@ -21480,7 +21492,8 @@
       }
     ],
     "priceList": {
-      "hidden": true
+      "heading": "Check Availability on MLS",
+      "kind": "mls"
     },
     "projectLogo": "/images/logos/bayview-village.png",
     "isNew": false,
@@ -21628,7 +21641,8 @@
       }
     ],
     "priceList": {
-      "hidden": true
+      "heading": "Check Availability on MLS",
+      "kind": "mls"
     },
     "projectLogo": "/images/logos/beach-house-8.png",
     "isNew": false,
@@ -22161,8 +22175,8 @@
       }
     ],
     "priceList": {
-      "driveFileId": "1cME4Uph8TuegrhK-YmiKfssvnBvavoeO",
-      "createdAt": "As of May 26, 2026"
+      "heading": "Check Availability on MLS",
+      "kind": "mls"
     },
     "projectLogo": "/images/logos/biltmore-row.png",
     "isNew": false,
@@ -22231,7 +22245,8 @@
       }
     ],
     "priceList": {
-      "hidden": true
+      "heading": "Check Availability on MLS",
+      "kind": "mls"
     },
     "projectLogo": "/images/logos/blue-green-diamond-towers.png",
     "isNew": false,
@@ -22296,8 +22311,8 @@
       }
     ],
     "priceList": {
-      "driveFileId": "1S-F6TnjZEpVU3-UDmKgqF2NvLWJ_LcXu",
-      "createdAt": "As of May 26, 2026"
+      "heading": "Check Availability on MLS",
+      "kind": "mls"
     },
     "projectLogo": "/images/logos/brickell-city-centre.png",
     "isNew": false,
@@ -22650,7 +22665,8 @@
       }
     ],
     "priceList": {
-      "hidden": true
+      "heading": "Check Availability on MLS",
+      "kind": "mls"
     },
     "projectLogo": "/images/logos/bristol-tower.png",
     "isNew": false,
@@ -22770,7 +22786,8 @@
       }
     ],
     "priceList": {
-      "hidden": true
+      "heading": "Check Availability on MLS",
+      "kind": "mls"
     },
     "projectLogo": "/images/logos/caribbean.png",
     "isNew": false,
@@ -23475,7 +23492,8 @@
       }
     ],
     "priceList": {
-      "hidden": true
+      "heading": "Check Availability on MLS",
+      "kind": "mls"
     },
     "projectLogo": "/images/logos/chateau-beach-residences.png",
     "isNew": false,
@@ -23911,7 +23929,9 @@
       }
     ],
     "priceList": {
-      "externalUrl": "https://www.continummsouthbeach.com/for-sale.html"
+      "heading": "UNITS FOR SALE",
+      "externalUrl": "https://www.continummsouthbeach.com/",
+      "kind": "ufs"
     },
     "projectLogo": "/images/logos/continuum-south-beach.png",
     "isNew": false,
@@ -25353,8 +25373,9 @@
       }
     ],
     "priceList": {
-      "driveFileId": "1uIJe3EoYhj6KgxW_xlJK3fJsXuHJmANK",
-      "createdAt": "As of May 26, 2026"
+      "heading": "UNITS FOR SALE",
+      "externalUrl": "https://www.eightysevenparkcondo.com/",
+      "kind": "ufs"
     },
     "projectLogo": "/images/logos/eighty-seven-park.png",
     "isNew": false,
@@ -26056,8 +26077,8 @@
       }
     ],
     "priceList": {
-      "driveFileId": "1CemvZWHQAeFi6ddpD2Gjr85i5djPcN-b",
-      "createdAt": "As of May 26, 2026"
+      "heading": "Check Availability on MLS",
+      "kind": "mls"
     },
     "projectLogo": "/images/logos/elysee-miami.png",
     "isNew": false,
@@ -26370,8 +26391,9 @@
       }
     ],
     "priceList": {
-      "driveFileId": "1jcuRW3RovphSvmH3-VM-PYf57bTw41gc",
-      "createdAt": "As of May 26, 2026"
+      "heading": "UNITS FOR SALE",
+      "externalUrl": "https://www.fendichateaumiami.com/",
+      "kind": "ufs"
     },
     "projectLogo": "/images/logos/fendi-chateau.png",
     "isNew": false,
@@ -27191,7 +27213,10 @@
         "title": "",
         "driveFileId": "10XczhhJnWKEwrJzdndhFpcQ8KPJYKOpu"
       }
-    ]
+    ],
+    "unitsForSale": {
+      "externalUrl": "https://www.fiveparkresidenses.com/"
+    }
   },
   {
     "slug": "forte-on-flagler",
@@ -27437,7 +27462,9 @@
       }
     ],
     "priceList": {
-      "externalUrl": "https://fourseasonsresidencesfortlauderdale.nestcapitals.com/for-sale.html"
+      "heading": "UNITS FOR SALE",
+      "externalUrl": "https://fourseasonsresidencesfortlauderdale.nestcapitals.com/",
+      "kind": "ufs"
     },
     "projectLogo": "/images/logos/four-seasons-hotel-private-residences.png",
     "isNew": false,
@@ -28240,7 +28267,8 @@
       }
     ],
     "priceList": {
-      "hidden": true
+      "heading": "Check Availability on MLS",
+      "kind": "mls"
     },
     "projectLogo": "/images/logos/glass-miami-beach.png",
     "isNew": false,
@@ -28409,7 +28437,9 @@
       }
     ],
     "priceList": {
-      "externalUrl": "https://www.groveatgranbay.com/for-sale.html"
+      "heading": "UNITS FOR SALE",
+      "externalUrl": "https://www.groveatgranbay.com/",
+      "kind": "ufs"
     },
     "projectLogo": "/images/logos/grove-at-grand-bay.png",
     "isNew": false,
@@ -29280,7 +29310,8 @@
       }
     ],
     "priceList": {
-      "hidden": true
+      "heading": "Check Availability on MLS",
+      "kind": "mls"
     },
     "projectLogo": "/images/logos/il-villaggio.png",
     "isNew": false,
@@ -29436,8 +29467,8 @@
       }
     ],
     "priceList": {
-      "driveFileId": "1tEhdOWH5JNOYIXa-gG_Dt0drmHnpRlKU",
-      "createdAt": "As of May 26, 2026"
+      "heading": "Check Availability on MLS",
+      "kind": "mls"
     },
     "projectLogo": "/images/logos/jade-beach.png",
     "isNew": false,
@@ -29558,7 +29589,9 @@
       }
     ],
     "priceList": {
-      "externalUrl": "https://www.jadeoceancondo.com/for-sale.html"
+      "heading": "UNITS FOR SALE",
+      "externalUrl": "https://www.jadeoceancondo.com/",
+      "kind": "ufs"
     },
     "projectLogo": "/images/logos/jade-ocean.png",
     "isNew": false,
@@ -29748,7 +29781,9 @@
       }
     ],
     "priceList": {
-      "externalUrl": "https://www.jadesignatures.com/for-sale.html"
+      "heading": "UNITS FOR SALE",
+      "externalUrl": "https://www.jadesignatures.com/",
+      "kind": "ufs"
     },
     "projectLogo": "/images/logos/jade-signature.png",
     "isNew": false,
@@ -30206,8 +30241,8 @@
       }
     ],
     "priceList": {
-      "driveFileId": "1ywKM8_kg6NKpttoHN9BSYtuROoTcRo-u",
-      "createdAt": "As of May 26, 2026"
+      "heading": "Check Availability on MLS",
+      "kind": "mls"
     },
     "projectLogo": "/images/logos/l-atelier.png",
     "isNew": false,
@@ -30459,7 +30494,8 @@
       }
     ],
     "priceList": {
-      "hidden": true
+      "heading": "Check Availability on MLS",
+      "kind": "mls"
     },
     "projectLogo": "/images/logos/la-santa-maria.png",
     "isNew": false,
@@ -31573,8 +31609,8 @@
       }
     ],
     "priceList": {
-      "driveFileId": "1e7LHXM_JjPrr53xaWMV_skMCFpJtTHJX",
-      "createdAt": "As of May 26, 2026"
+      "heading": "Check Availability on MLS",
+      "kind": "mls"
     },
     "projectLogo": "/images/logos/missoni-baia.png",
     "isNew": false,
@@ -31770,8 +31806,8 @@
       }
     ],
     "priceList": {
-      "driveFileId": "1v-bs60gFjTrWsrJrfZSob2tjdNSfgbyg",
-      "createdAt": "As of May 26, 2026"
+      "heading": "Check Availability on MLS",
+      "kind": "mls"
     },
     "projectLogo": "/images/logos/monaco-yacht-club-residences.png",
     "isNew": false,
@@ -31937,8 +31973,8 @@
       }
     ],
     "priceList": {
-      "driveFileId": "1mWseZ_vn6qT2tRBO-wzM61TdZJVhqgAV",
-      "createdAt": "As of May 26, 2026"
+      "heading": "Check Availability on MLS",
+      "kind": "mls"
     },
     "projectLogo": "/images/logos/monad-terrace.png",
     "isNew": false,
@@ -32039,7 +32075,8 @@
       }
     ],
     "priceList": {
-      "hidden": true
+      "heading": "Check Availability on MLS",
+      "kind": "mls"
     },
     "projectLogo": "/images/logos/murano-at-portofino.png",
     "isNew": false,
@@ -32171,7 +32208,8 @@
       }
     ],
     "priceList": {
-      "hidden": true
+      "heading": "Check Availability on MLS",
+      "kind": "mls"
     },
     "projectLogo": "/images/logos/murano-grande-at-portofino.png",
     "isNew": false,
@@ -32332,8 +32370,9 @@
       }
     ],
     "priceList": {
-      "driveFileId": "1YOtpjuOPXu3w1jwE2UYLenSHuRNWwzEV",
-      "createdAt": "As of May 26, 2026"
+      "heading": "UNITS FOR SALE",
+      "externalUrl": "https://www.museresidencesmiami.com/",
+      "kind": "ufs"
     },
     "projectLogo": "/images/logos/muse-residences.png",
     "isNew": false,
@@ -33257,7 +33296,8 @@
       }
     ],
     "priceList": {
-      "hidden": true
+      "heading": "Check Availability on MLS",
+      "kind": "mls"
     },
     "projectLogo": "/images/logos/ocean-delray.png",
     "isNew": false,
@@ -33552,8 +33592,8 @@
       }
     ],
     "priceList": {
-      "driveFileId": "1SPpZMe1aV3nHt3GHU69N4fDXaxsNaaFp",
-      "createdAt": "As of May 26, 2026"
+      "heading": "Check Availability on MLS",
+      "kind": "mls"
     },
     "projectLogo": "/images/logos/ocean-park.png",
     "isNew": false,
@@ -33890,8 +33930,9 @@
       }
     ],
     "priceList": {
-      "driveFileId": "1jYqnVm3J9vvoiEf6BnNfKVLaxmWU2DbV",
-      "createdAt": "As of May 26, 2026"
+      "heading": "UNITS FOR SALE",
+      "externalUrl": "https://www.oceanaballlharbour.com/",
+      "kind": "ufs"
     },
     "projectLogo": "/images/logos/oceana-bal-harbour.png",
     "isNew": false,
@@ -34177,8 +34218,9 @@
       }
     ],
     "priceList": {
-      "driveFileId": "18mJmJ0fEmXqNNRYZnY15jIk1-uK5q3VD",
-      "createdAt": "As of May 26, 2026"
+      "heading": "UNITS FOR SALE",
+      "externalUrl": "https://www.oceanakeybisscayne.com/",
+      "kind": "ufs"
     },
     "projectLogo": "/images/logos/oceana-key-biscayne.png",
     "isNew": false,
@@ -34382,7 +34424,8 @@
       }
     ],
     "priceList": {
-      "hidden": true
+      "heading": "Check Availability on MLS",
+      "kind": "mls"
     },
     "projectLogo": "/images/logos/oceanside.png",
     "isNew": false,
@@ -35493,7 +35536,8 @@
       }
     ],
     "priceList": {
-      "hidden": true
+      "heading": "Check Availability on MLS",
+      "kind": "mls"
     },
     "projectLogo": "/images/logos/one-ocean.png",
     "isNew": false,
@@ -36063,8 +36107,9 @@
       }
     ],
     "priceList": {
-      "driveFileId": "1zTlkUltZzQ205qZwzVdkgqJgJ-FqG4pE",
-      "createdAt": "As of May 26, 2026"
+      "heading": "UNITS FOR SALE",
+      "externalUrl": "https://www.1000museumiami.com/",
+      "kind": "ufs"
     },
     "projectLogo": "/images/logos/one-thousand-museum.png",
     "isNew": false,
@@ -37905,9 +37950,10 @@
         "driveFileId": "10Nk-sEiIjpJQCDGWiCZSK9FpVzknXSlV"
       }
     ],
-    "priceRange": {
-      "driveFileId": "1vBPStCGkNEhp7jTig5wTM7LqvuYfmHMt",
-      "createdAt": "As of May 26, 2026"
+    "priceList": {
+      "heading": "UNITS FOR SALE",
+      "externalUrl": "https://www.palazzodellsol.com/",
+      "kind": "ufs"
     }
   },
   {
@@ -37952,8 +37998,9 @@
       }
     ],
     "priceList": {
-      "driveFileId": "1cO60IiuoldSuhyPnxaRVa6vbGetCAanc",
-      "createdAt": "As of May 26, 2026"
+      "heading": "UNITS FOR SALE",
+      "externalUrl": "https://www.palazzoodellaluna.com/",
+      "kind": "ufs"
     },
     "projectLogo": "/images/logos/palazzo-della-luna.png",
     "isNew": false,
@@ -38810,7 +38857,8 @@
       }
     ],
     "priceList": {
-      "hidden": true
+      "heading": "Check Availability on MLS",
+      "kind": "mls"
     },
     "projectLogo": "/images/logos/paramount-fort-lauderdale-beach.png",
     "isNew": false,
@@ -39076,8 +39124,9 @@
       }
     ],
     "priceList": {
-      "driveFileId": "1-EYhdeykMJARBQkRMt73iFM1hHqgw2gk",
-      "createdAt": "As of May 26, 2026"
+      "heading": "UNITS FOR SALE",
+      "externalUrl": "https://www.parkgrovecondomiami.com/",
+      "kind": "ufs"
     },
     "projectLogo": "/images/logos/park-grove.png",
     "isNew": false,
@@ -39360,8 +39409,8 @@
       }
     ],
     "priceList": {
-      "driveFileId": "1cBYd8N3mFJowZ9npDwjJGQB8RWQOLwXS",
-      "createdAt": "As of May 26, 2026"
+      "heading": "Check Availability on MLS",
+      "kind": "mls"
     },
     "projectLogo": "/images/logos/parque-towers.png",
     "isNew": false,
@@ -40092,8 +40141,8 @@
       }
     ],
     "priceList": {
-      "driveFileId": "16hDbcfc75xjSCjbAmE4Xx0qrqcAji9oS",
-      "createdAt": "As of May 26, 2026"
+      "heading": "Check Availability on MLS",
+      "kind": "mls"
     },
     "projectLogo": "/images/logos/porsche-design-tower.png",
     "isNew": false,
@@ -40374,7 +40423,8 @@
       }
     ],
     "priceList": {
-      "hidden": true
+      "heading": "Check Availability on MLS",
+      "kind": "mls"
     },
     "projectLogo": "/images/logos/portofino-tower.png",
     "isNew": false,
@@ -40499,8 +40549,8 @@
       }
     ],
     "priceList": {
-      "driveFileId": "1asTOCbY4JmZ6bgZWkW7v1buKBRPxXn44",
-      "createdAt": "As of May 26, 2026"
+      "heading": "Check Availability on MLS",
+      "kind": "mls"
     },
     "projectLogo": "/images/logos/prive-island.png",
     "isNew": false,
@@ -40710,7 +40760,9 @@
       }
     ],
     "priceList": {
-      "externalUrl": "https://www.regaliaresidenses.com/for-sale.html"
+      "heading": "UNITS FOR SALE",
+      "externalUrl": "https://www.regaliaresidenses.com/",
+      "kind": "ufs"
     },
     "projectLogo": "/images/logos/regalia.png",
     "isNew": false,
@@ -41768,7 +41820,9 @@
       }
     ],
     "priceList": {
-      "externalUrl": "https://setaimiamibeach.nestcapitals.com/for-sale.html"
+      "heading": "UNITS FOR SALE",
+      "externalUrl": "https://setaimiamibeach.nestcapitals.com/",
+      "kind": "ufs"
     },
     "projectLogo": "/images/logos/setai-residences.png",
     "isNew": false,
@@ -42862,7 +42916,8 @@
       }
     ],
     "priceList": {
-      "hidden": true
+      "heading": "Check Availability on MLS",
+      "kind": "mls"
     },
     "projectLogo": "/images/logos/south-pointe-towers.png",
     "isNew": false,
@@ -43539,7 +43594,8 @@
       }
     ],
     "priceList": {
-      "hidden": true
+      "heading": "Check Availability on MLS",
+      "kind": "mls"
     },
     "projectLogo": "/images/logos/the-bath-club.png",
     "isNew": false,
@@ -43807,8 +43863,9 @@
       }
     ],
     "priceList": {
-      "driveFileId": "1KT7ms0_9_mIky23sZ4b8rodNORHxE2dE",
-      "createdAt": "As of May 26, 2026"
+      "heading": "UNITS FOR SALE",
+      "externalUrl": "https://www.estatessatacqualina.com/",
+      "kind": "ufs"
     },
     "projectLogo": "/images/logos/the-estates-at-acqualina.png",
     "isNew": false,
@@ -44306,8 +44363,8 @@
       }
     ],
     "priceList": {
-      "driveFileId": "1fzbCk3h9qmmMdSBOIdcLEDx72GSowtpl",
-      "createdAt": "As of May 26, 2026"
+      "heading": "Check Availability on MLS",
+      "kind": "mls"
     },
     "projectLogo": "/images/logos/the-fairchild.png",
     "isNew": false,
@@ -45034,7 +45091,8 @@
       }
     ],
     "priceList": {
-      "hidden": true
+      "heading": "Check Availability on MLS",
+      "kind": "mls"
     },
     "projectLogo": "/images/logos/the-mansions-at-acqualina.png",
     "isNew": false,
@@ -45414,7 +45472,8 @@
       }
     ],
     "priceList": {
-      "hidden": true
+      "heading": "Check Availability on MLS",
+      "kind": "mls"
     },
     "projectLogo": "/images/logos/the-palace-at-bal-harbour.png",
     "isNew": false,
@@ -45930,7 +45989,8 @@
       }
     ],
     "priceList": {
-      "hidden": true
+      "heading": "Check Availability on MLS",
+      "kind": "mls"
     },
     "projectLogo": "/images/logos/the-residences-at-the-miami-beach-edition.png",
     "isNew": false,
@@ -46150,7 +46210,8 @@
       }
     ],
     "priceList": {
-      "hidden": true
+      "heading": "Check Availability on MLS",
+      "kind": "mls"
     },
     "projectLogo": "/images/logos/the-ritz-carlton-residences-bal-harbour.png",
     "isNew": false,
@@ -46902,8 +46963,9 @@
       }
     ],
     "priceList": {
-      "driveFileId": "1s91n5c90KBuYBaa_1G78DvZk-G7yVe-v",
-      "createdAt": "As of May 26, 2026"
+      "heading": "UNITS FOR SALE",
+      "externalUrl": "https://ritzcarltonsunnyisles.nestcapitals.com/",
+      "kind": "ufs"
     },
     "projectLogo": "/images/logos/the-ritz-carlton-residences-sunny-isles.png",
     "isNew": false,
@@ -47793,8 +47855,9 @@
       }
     ],
     "priceList": {
-      "driveFileId": "1_z8iFrndmuLjNtztPWu2pVG2ubDS4gxP",
-      "createdAt": "As of May 26, 2026"
+      "heading": "UNITS FOR SALE",
+      "externalUrl": "https://www.turnberryoceansclub.com/",
+      "kind": "ufs"
     },
     "projectLogo": "/images/logos/turnberry-ocean-club.png",
     "isNew": false,
@@ -48575,7 +48638,8 @@
       }
     ],
     "priceList": {
-      "hidden": true
+      "heading": "Check Availability on MLS",
+      "kind": "mls"
     },
     "projectLogo": "/images/logos/turnberry-ocean-colony.png",
     "isNew": false,
@@ -49483,8 +49547,8 @@
       }
     ],
     "priceList": {
-      "driveFileId": "1oG5FiLGSHjCpPjXXG0HfixC1nnFuxWCY",
-      "createdAt": "As of May 26, 2026"
+      "heading": "Check Availability on MLS",
+      "kind": "mls"
     },
     "projectLogo": "/images/logos/villa-valencia.png",
     "isNew": false,
@@ -49638,8 +49702,8 @@
       }
     ],
     "priceList": {
-      "driveFileId": "1xP5cf3lO4TrWq57TLQBHya_e0llwuRki",
-      "createdAt": "As of May 26, 2026"
+      "heading": "Check Availability on MLS",
+      "kind": "mls"
     },
     "projectLogo": "/images/logos/w-south-beach-residences.png",
     "isNew": false,

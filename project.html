@@ -490,11 +490,31 @@
 
       // Pick the data object and heading for whichever doc type exists
       var plData    = hasPR ? d.priceRange : (d.priceList || null);
+      var plKind    = plData && plData.kind;   // 'mls' | 'ufs' | 'sold-out' | 'paused' | 'message'
       var plHeading = hasPR ? 'PRICE RANGE'
                     : ((d.priceList && d.priceList.heading) || 'PRICE LIST');
 
+      // Special-text cards (MLS, SOLD OUT, PAUSED, custom message):
+      // these projects have NO price list and NO link — only a heading.
+      // The section heading stays "PRICE LIST" for context; the bold
+      // status text is rendered as a banner inside the section.
+      var isStatusBanner = plKind === 'mls' || plKind === 'sold-out'
+                        || plKind === 'paused' || plKind === 'message';
+
       var sec = makeSection('price-list');
-      sec.appendChild(sectionHeading(plHeading));
+      sec.appendChild(sectionHeading(isStatusBanner ? 'PRICE LIST' : plHeading));
+
+      // Hybrid (Five Park): button ABOVE the PDF iframe.
+      // unitsForSale is a top-level field on the project, independent of
+      // priceList — so a project can have BOTH a developer-units PDF and
+      // a UFS button that links to the MLS-style site.
+      if (d.unitsForSale && d.unitsForSale.externalUrl) {
+        var ufsBtn = el('a', 'pl-ext-btn pl-ext-btn--ufs', 'UNITS FOR SALE');
+        ufsBtn.href   = d.unitsForSale.externalUrl;
+        ufsBtn.target = '_blank';
+        ufsBtn.rel    = 'noopener noreferrer';
+        sec.appendChild(ufsBtn);
+      }
 
       if (plData && plData.createdAt) {
         sec.appendChild(el('p', 'pl-date', plData.createdAt));
@@ -502,7 +522,13 @@
 
       appendDisclaimer(sec);
 
-      if (plData && plData.driveFileId) {
+      if (isStatusBanner) {
+        // Render the heading text as a centered status banner. CSS class
+        // pl-status--<kind> lets us style each category distinctly.
+        var banner = el('div', 'pl-status pl-status--' + plKind);
+        banner.textContent = plHeading;
+        sec.appendChild(banner);
+      } else if (plData && plData.driveFileId) {
         var iframe = document.createElement('iframe');
         iframe.src = 'https://drive.google.com/file/d/' + plData.driveFileId + '/preview';
         iframe.className = 'pl-iframe';
@@ -510,7 +536,11 @@
         iframe.setAttribute('frameborder', '0');
         sec.appendChild(iframe);
       } else if (plData && plData.externalUrl) {
-        var extBtn = el('a', 'pl-ext-btn', 'View All Units for Sale');
+        // Use the heading as button text — "UNITS FOR SALE" by default for
+        // UFS-kind, falls back to the legacy "View All Units for Sale" if
+        // no heading is provided.
+        var btnText = (plData.heading && plData.heading.trim()) || 'View All Units for Sale';
+        var extBtn = el('a', 'pl-ext-btn', btnText);
         extBtn.href   = plData.externalUrl;
         extBtn.target = '_blank';
         extBtn.rel    = 'noopener noreferrer';
