@@ -226,7 +226,7 @@
     "tpDataName": "72 Carlyle Miami Beach",
     "section": "Top Projects",
     "theBuilding": "Boasting remarkable views of the bay and city, the building stands elegantly with 21 floors. Featuring a collection of 139 luxurious units and floorplans ranging from 1,200 square feet, it offers both form and function in a brilliantly designed residential space.",
-    "address": "600 72nd St, Miami Beach, FL 33141",
+    "address": "600 72nd Street, Miami Beach, FL 33141",
     "developer": "Lefferts",
     "architecture": "Arquitectonica",
     "interiorDesign": "Piero Lissoni",
@@ -246,7 +246,7 @@
       {
         "name": "Brandon Goldfarb",
         "phone": "+1 (973) 570-4886",
-        "email": "N/A"
+        "email": null
       }
     ],
     "projectLogo": "/images/logos/72-carlyle.png",
@@ -1256,7 +1256,7 @@
       {
         "name": "Marie Mangouta",
         "phone": "+1 (954) 882-9746",
-        "email": "N/A"
+        "email": null
       }
     ],
     "projectLogo": "/images/logos/armani-casa-pompano-beach.png",
@@ -1485,7 +1485,7 @@
       {
         "name": "Kendall Corso",
         "phone": "+1 (561) 901-4138",
-        "email": "N/A"
+        "email": null
       }
     ],
     "projectLogo": "/images/logos/banyan-tree.png",
@@ -1940,7 +1940,7 @@
     "developer": "Mast Capital",
     "architecture": "Arquitectonica",
     "interiorDesign": "1508 London",
-    "completionDate": "2028",
+    "completionDate": "2027",
     "depositStructure": [
       "20% at contract",
       "10% 90 days after contract",
@@ -2604,10 +2604,7 @@
     "interiorDesign": "Studio Munge",
     "completionDate": "2028",
     "depositStructure": [
-      "20% at contract",
-      "10% at groundbreaking (End of summer 2025)",
-      "10% at pouring of unit floor",
-      "60% balance at closing."
+      "N/A"
     ],
     "parkingSpaces": [
       "1 assigned space and 1 valet parking space for 1-bed and 2-bed units."
@@ -2841,7 +2838,7 @@
       {
         "name": "N/A",
         "phone": "N/A",
-        "email": "N/A"
+        "email": null
       }
     ],
     "priceList": {
@@ -3533,21 +3530,21 @@
     "developer": "Regency Development Group",
     "architecture": "Kobi Karp Architecture & Interior Design",
     "interiorDesign": "Debora Aguiar Arquitetos",
-    "completionDate": "2027 (Regency Collection)\n2026 (Signature Collection)\n2028 (Bay Collection)",
+    "completionDate": "2027 (Regency Collection)\n2027 (Signature Collection)\n2028 (Bay Collection)",
     "depositStructure": [
       "Regency Collection:",
       "20% at contract",
       "20% 90 days after contract",
-      "60% at closing (Q1 2027)",
+      "60% at closing (April 2027)",
       "Signature Collection:",
       "20% at contract",
       "20% 90 days after contract",
-      "60% at closing (December 2026)",
+      "60% at closing (January 2027)",
       "Bay Collection:",
       "20% at contract",
       "10% at groundbreaking",
       "10% at top-off",
-      "60% at closing (2028)"
+      "60% at closing (December 2028)"
     ],
     "parkingSpaces": [
       "2 assigned parking spaces per unit."
@@ -4825,7 +4822,7 @@
     "tpDataName": "Nora House West Palm Beach",
     "section": "Top Projects",
     "theBuilding": null,
-    "address": "-",
+    "address": "1105 N. Dixie Highway, West Palm Beach, FL",
     "developer": "The Ronto Group",
     "architecture": "Swedroe Architecture",
     "interiorDesign": "Lillian Wu Studio",
@@ -4841,7 +4838,7 @@
       "Two parking spaces per residence, one with EV outlet (charger not included)."
     ],
     "rentalRestrictions": null,
-    "hoa": null,
+    "hoa": "$1.15 - $1.40",
     "contact": [
       {
         "name": "Chris Scott",
@@ -9186,7 +9183,7 @@
       {
         "name": "Farid Moussallem",
         "phone": "+1 (305) 889-8470",
-        "email": "N/A"
+        "email": null
       }
     ],
     "projectLogo": "/images/logos/the-delmore.png",
@@ -10394,7 +10391,7 @@
     "depositStructure": [
       "10% at contract",
       "10% 90 days after contract",
-      "10% at groundbreaking (Mid 2026)",
+      "10% at groundbreaking (October 2026)",
       "10% at top-off (Mid 2028)",
       "60% at closing (2030)"
     ],
@@ -11202,7 +11199,7 @@
     "depositStructure": [
       "10% at contract",
       "25% 15 days after contract",
-      "65% at closing (Q3 2026)"
+      "65% at closing"
     ],
     "parkingSpaces": [
       "Arrival porte cochère with valet service.",
@@ -12095,8 +12092,7 @@
     "interiorDesign": "Joseph Dirand",
     "completionDate": "2017",
     "depositStructure": [
-      "50% at Contract",
-      "Balance at closing"
+      "N/A"
     ],
     "parkingSpaces": null,
     "rentalRestrictions": [
@@ -14187,12 +14183,12 @@
     "rentalRestrictions": [
       "6 months minimum. Twice a year."
     ],
-    "hoa": "$1.81 (residences)\n$1.78 (suites)",
+    "hoa": "$1.81\n$1.78",
     "contact": [
       {
         "name": "Sivan Koster",
         "phone": "+1 (305) 799-1405",
-        "email": "N/A"
+        "email": null
       }
     ],
     "projectLogo": "/images/logos/w-pompano-beach-hotel-residences.png",
@@ -15075,7 +15071,7 @@
       {
         "name": "Adriana Marrero",
         "phone": "+1 (786) 325‑3373",
-        "email": "N/A"
+        "email": null
       }
     ],
     "projectLogo": "/images/logos/14-roc-miami.png",
@@ -15155,8 +15151,7 @@
     "interiorDesign": "Minotti and MinottiCucine",
     "completionDate": "2021",
     "depositStructure": [
-      "40% at Contract",
-      "Balance at Closing"
+      "N/A"
     ],
     "parkingSpaces": [
       "2 valet parking spaces for each residence."
@@ -16111,7 +16106,7 @@
       {
         "name": "N/A",
         "phone": "N/A",
-        "email": "N/A"
+        "email": null
       }
     ],
     "priceList": {
@@ -17807,7 +17802,7 @@
       {
         "name": "Patrick Elber",
         "phone": "+1 (440) 487-1798",
-        "email": "N/A"
+        "email": null
       }
     ],
     "projectLogo": "/images/logos/alina-residences.png",
@@ -19094,7 +19089,7 @@
       {
         "name": "N/A",
         "phone": "N/A",
-        "email": "N/A"
+        "email": null
       }
     ],
     "priceList": {
@@ -19981,7 +19976,7 @@
       {
         "name": "N/A",
         "phone": "N/A",
-        "email": "N/A"
+        "email": null
       }
     ],
     "priceList": {
@@ -21143,7 +21138,7 @@
       {
         "name": "N/A",
         "phone": "N/A",
-        "email": "N/A"
+        "email": null
       }
     ],
     "priceList": {
@@ -21489,7 +21484,7 @@
       {
         "name": "N/A",
         "phone": "N/A",
-        "email": "N/A"
+        "email": null
       }
     ],
     "priceList": {
@@ -21638,7 +21633,7 @@
       {
         "name": "N/A",
         "phone": "N/A",
-        "email": "N/A"
+        "email": null
       }
     ],
     "priceList": {
@@ -22242,7 +22237,7 @@
       {
         "name": "N/A",
         "phone": "N/A",
-        "email": "N/A"
+        "email": null
       }
     ],
     "priceList": {
@@ -22662,7 +22657,7 @@
       {
         "name": "N/A",
         "phone": "N/A",
-        "email": "N/A"
+        "email": null
       }
     ],
     "priceList": {
@@ -22783,7 +22778,7 @@
       {
         "name": "N/A",
         "phone": "N/A",
-        "email": "N/A"
+        "email": null
       }
     ],
     "priceList": {
@@ -22926,7 +22921,7 @@
       {
         "name": "Daniela Gutierrez",
         "phone": "+1 (786) 397-5767",
-        "email": "N/A"
+        "email": null
       }
     ],
     "projectLogo": "/images/logos/casa-bella-residences-miami.png",
@@ -23489,7 +23484,7 @@
       {
         "name": "N/A",
         "phone": "N/A",
-        "email": "N/A"
+        "email": null
       }
     ],
     "priceList": {
@@ -23646,7 +23641,7 @@
       {
         "name": "Janet Hoyos",
         "phone": "+1 (786) 443-0808",
-        "email": "N/A"
+        "email": null
       }
     ],
     "projectLogo": "/images/logos/continuum-12000-sport-wellness-residences-miami.png",
@@ -23926,7 +23921,7 @@
       {
         "name": "N/A",
         "phone": "N/A",
-        "email": "N/A"
+        "email": null
       }
     ],
     "priceList": {
@@ -25890,7 +25885,7 @@
       {
         "name": "Yenny Hanley",
         "phone": "+1 (305) 469-9470",
-        "email": "N/A"
+        "email": null
       }
     ],
     "projectLogo": "/images/logos/elle-residences-edgewater.png",
@@ -27257,7 +27252,7 @@
       {
         "name": "John Reynolds",
         "phone": "+1 (561) 346-9365",
-        "email": "N/A"
+        "email": null
       }
     ],
     "projectLogo": "/images/logos/forte-on-flagler.png",
@@ -27445,8 +27440,7 @@
     "interiorDesign": "Tara Bernerd & Partners",
     "completionDate": "2022",
     "depositStructure": [
-      "50% at contract",
-      "50% at closing"
+      "N/A"
     ],
     "parkingSpaces": [
       "One valet parking and one assigned parking space for each residence."
@@ -28264,7 +28258,7 @@
       {
         "name": "N/A",
         "phone": "N/A",
-        "email": "N/A"
+        "email": null
       }
     ],
     "priceList": {
@@ -28434,7 +28428,7 @@
       {
         "name": "N/A",
         "phone": "N/A",
-        "email": "N/A"
+        "email": null
       }
     ],
     "priceList": {
@@ -29094,9 +29088,9 @@
     "completionDate": "2027",
     "depositStructure": [
       "20% at contract",
-      "20% at groundbreaking (Q2 2026)",
+      "20% at groundbreaking",
       "10% at top off",
-      "⁠50% at closing (Q3 2027)"
+      "50% at closing"
     ],
     "parkingSpaces": [
       "1 assigned parking space per unit, and valet service."
@@ -29307,7 +29301,7 @@
       {
         "name": "N/A",
         "phone": "N/A",
-        "email": "N/A"
+        "email": null
       }
     ],
     "priceList": {
@@ -29464,7 +29458,7 @@
       {
         "name": "N/A",
         "phone": "N/A",
-        "email": "N/A"
+        "email": null
       }
     ],
     "priceList": {
@@ -29586,7 +29580,7 @@
       {
         "name": "N/A",
         "phone": "N/A",
-        "email": "N/A"
+        "email": null
       }
     ],
     "priceList": {
@@ -30491,7 +30485,7 @@
       {
         "name": "N/A",
         "phone": "N/A",
-        "email": "N/A"
+        "email": null
       }
     ],
     "priceList": {
@@ -30866,7 +30860,7 @@
       {
         "name": "Andreea Fodor",
         "phone": "+1 (561) 504-5278",
-        "email": "N/A"
+        "email": null
       }
     ],
     "projectLogo": "/images/logos/maison-d-or-south-flagler.png",
@@ -31031,7 +31025,7 @@
       {
         "name": "Mónica Martínez",
         "phone": "+1 (305) 890-2457",
-        "email": "N/A"
+        "email": null
       }
     ],
     "projectLogo": "/images/logos/mercedes-benz-places-miami.png",
@@ -31265,7 +31259,7 @@
       {
         "name": "Ximena Peñuela",
         "phone": "+1 (786) 202-2005",
-        "email": "N/A"
+        "email": null
       }
     ],
     "projectLogo": "/images/logos/miami-design-residences-midtown-miami.png",
@@ -31786,9 +31780,7 @@
     "interiorDesign": "Paris Forino Interior Design",
     "completionDate": "2022",
     "depositStructure": [
-      "20% at contract",
-      "20% 45 days after contract",
-      "60% at closing"
+      "N/A"
     ],
     "parkingSpaces": [
       "1 assigned parking space for 1-to-2-bedroom units.",
@@ -32072,7 +32064,7 @@
       {
         "name": "N/A",
         "phone": "N/A",
-        "email": "N/A"
+        "email": null
       }
     ],
     "priceList": {
@@ -32205,7 +32197,7 @@
       {
         "name": "N/A",
         "phone": "N/A",
-        "email": "N/A"
+        "email": null
       }
     ],
     "priceList": {
@@ -33014,7 +33006,7 @@
       {
         "name": "Daria Tumanova",
         "phone": "+1 (305) 776-0148",
-        "email": "N/A"
+        "email": null
       }
     ],
     "projectLogo": "/images/logos/oasis-hallandale.png",
@@ -33166,7 +33158,7 @@
       {
         "name": "Cindy Leventhal",
         "phone": "+1 (954) 254-6122‬",
-        "email": "N/A"
+        "email": null
       }
     ],
     "projectLogo": "/images/logos/ocean-580-pompano-beach.png",
@@ -33408,7 +33400,7 @@
       {
         "name": "N/A",
         "phone": "N/A",
-        "email": "N/A"
+        "email": null
       }
     ],
     "priceList": {
@@ -34215,7 +34207,7 @@
       {
         "name": "N/A",
         "phone": "N/A",
-        "email": "N/A"
+        "email": null
       }
     ],
     "priceList": {
@@ -34421,7 +34413,7 @@
       {
         "name": "N/A",
         "phone": "N/A",
-        "email": "N/A"
+        "email": null
       }
     ],
     "priceList": {
@@ -35533,7 +35525,7 @@
       {
         "name": "N/A",
         "phone": "N/A",
-        "email": "N/A"
+        "email": null
       }
     ],
     "priceList": {
@@ -36892,7 +36884,7 @@
       }
     ],
     "projectLogo": "/images/logos/pagani-north-bay-village.png",
-    "isNew": true,
+    "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "North Bay Village",
     "filterStatus": "Pre-construction",
@@ -39390,8 +39382,7 @@
     "interiorDesign": null,
     "completionDate": "2019",
     "depositStructure": [
-      "40% at Contract",
-      "Balance at Closing"
+      "N/A"
     ],
     "parkingSpaces": [
       "2 assigned parking spaces for residential units.",
@@ -40123,7 +40114,7 @@
     "interiorDesign": null,
     "completionDate": "2016",
     "depositStructure": [
-      "Negotiable"
+      "N/A"
     ],
     "parkingSpaces": [
       "One to four in-unit parking spaces according to floorplan garage.",
@@ -40420,7 +40411,7 @@
       {
         "name": "N/A",
         "phone": "N/A",
-        "email": "N/A"
+        "email": null
       }
     ],
     "priceList": {
@@ -40757,7 +40748,7 @@
       {
         "name": "N/A",
         "phone": "N/A",
-        "email": "N/A"
+        "email": null
       }
     ],
     "priceList": {
@@ -41817,7 +41808,7 @@
       {
         "name": "N/A",
         "phone": "N/A",
-        "email": "N/A"
+        "email": null
       }
     ],
     "priceList": {
@@ -42786,7 +42777,7 @@
       {
         "name": "Adam McPherson",
         "phone": "+1 (561) 309-2326",
-        "email": "N/A"
+        "email": null
       }
     ],
     "projectLogo": "/images/logos/south-flagler-house.png",
@@ -42913,7 +42904,7 @@
       {
         "name": "N/A",
         "phone": "N/A",
-        "email": "N/A"
+        "email": null
       }
     ],
     "priceList": {
@@ -43059,7 +43050,7 @@
       {
         "name": "N/A",
         "phone": "N/A",
-        "email": "N/A"
+        "email": null
       }
     ],
     "priceList": {
@@ -43591,7 +43582,7 @@
       {
         "name": "N/A",
         "phone": "N/A",
-        "email": "N/A"
+        "email": null
       }
     ],
     "priceList": {
@@ -44804,7 +44795,7 @@
       {
         "name": "Pili Gomez",
         "phone": "+1 (786) 253-7315",
-        "email": "N/A"
+        "email": null
       }
     ],
     "projectLogo": "/images/logos/the-links-estates.png",
@@ -45088,7 +45079,7 @@
       {
         "name": "N/A",
         "phone": "N/A",
-        "email": "N/A"
+        "email": null
       }
     ],
     "priceList": {
@@ -45469,7 +45460,7 @@
       {
         "name": "N/A",
         "phone": "N/A",
-        "email": "N/A"
+        "email": null
       }
     ],
     "priceList": {
@@ -45986,7 +45977,7 @@
       {
         "name": "N/A",
         "phone": "N/A",
-        "email": "N/A"
+        "email": null
       }
     ],
     "priceList": {
@@ -46207,7 +46198,7 @@
       {
         "name": "N/A",
         "phone": "N/A",
-        "email": "N/A"
+        "email": null
       }
     ],
     "priceList": {
@@ -46944,10 +46935,7 @@
     "interiorDesign": "Michele Bönan",
     "completionDate": "2020",
     "depositStructure": [
-      "25% at contract",
-      "5% 120 days after contract execution",
-      "10% 270 days after contract execution",
-      "Balance at closing"
+      "N/A"
     ],
     "parkingSpaces": [
       "2 assigned valet-only parking space for each unit."
@@ -48635,7 +48623,7 @@
       {
         "name": "N/A",
         "phone": "N/A",
-        "email": "N/A"
+        "email": null
       }
     ],
     "priceList": {
@@ -48749,7 +48737,7 @@
       {
         "name": "Albert Bell",
         "phone": "+1 (305) 606-4212",
-        "email": "N/A"
+        "email": null
       }
     ],
     "projectLogo": "/images/logos/twenty-nine-indian-creek.png",
@@ -48899,7 +48887,7 @@
       {
         "name": "Claudia Laverde",
         "phone": "+1 (754) 234-3457",
-        "email": "N/A"
+        "email": null
       }
     ],
     "projectLogo": "/images/logos/una-residences.png",
@@ -49528,12 +49516,7 @@
     "interiorDesign": "CMA Design Studio Integrates",
     "completionDate": "2022",
     "depositStructure": [
-      "10% at Contract",
-      "10% at 15 Days",
-      "10% at Groundbreaking",
-      "10% at Foundation Pour",
-      "10% at Top Off",
-      "Balance at Closing"
+      "N/A"
     ],
     "parkingSpaces": null,
     "rentalRestrictions": [
@@ -49699,7 +49682,7 @@
       {
         "name": "N/A",
         "phone": "N/A",
-        "email": "N/A"
+        "email": null
       }
     ],
     "priceList": {
