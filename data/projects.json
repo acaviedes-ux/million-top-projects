@@ -12111,8 +12111,9 @@
       }
     ],
     "priceList": {
-      "driveFileId": "1Ez7KFY2GLyFVMm6pAHk9E_s8R4Ie60GU",
-      "createdAt": "As of May 26, 2026"
+      "heading": "UNITS FOR SALE",
+      "externalUrl": "https://www.thesurfclubs.com/for-sale.html",
+      "kind": "ufs"
     },
     "projectLogo": "/images/logos/surf-club-four-seasons.png",
     "isNew": false,

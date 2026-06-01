@@ -93,6 +93,7 @@ const UFS_URLS = {
   'park-grove':                                'https://www.parkgrovecondomiami.com/',
   'regalia':                                   'https://www.regaliaresidenses.com/',
   'setai-residences':                          'https://setaimiamibeach.nestcapitals.com/',
+  'surf-club-four-seasons':                    'https://www.thesurfclubs.com/for-sale.html',
   'the-estates-at-acqualina':                  'https://www.estatessatacqualina.com/',
   'the-ritz-carlton-residences-sunny-isles':   'https://ritzcarltonsunnyisles.nestcapitals.com/',
   'turnberry-ocean-club':                      'https://www.turnberryoceansclub.com/',
