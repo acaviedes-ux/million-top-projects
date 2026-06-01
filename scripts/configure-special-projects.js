@@ -55,8 +55,9 @@ const MLS_SLUGS = [
   'il-villaggio', 'jade-beach', 'l-atelier', 'la-santa-maria',
   'missoni-baia', 'monaco-yacht-club-residences', 'monad-terrace',
   'murano-at-portofino', 'murano-grande-at-portofino', 'ocean-delray',
-  'ocean-house',    // Ocean House Surfside
-  'ocean-house-2',  // Ocean House South Beach — same tpDataName as Surfside, needs explicit MLS entry
+  // Note: Ocean House Surfside (slug: ocean-house) KEEPS its real price list —
+  // do NOT add it here. Only the South Beach building is MLS-only.
+  'ocean-house-2',  // Ocean House South Beach
   'ocean-park', 'oceanside', 'one-ocean',
   'paramount-fort-lauderdale-beach', 'parque-towers',
   'porsche-design-tower', 'portofino-tower', 'prive-island',

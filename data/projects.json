@@ -4992,10 +4992,6 @@
       }
     ],
     "projectLogo": "/images/logos/ocean-house.png",
-    "priceList": {
-      "heading": "Check Availability on MLS",
-      "kind": "mls"
-    },
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Surfside",
@@ -5115,7 +5111,11 @@
         "alt": "Ocean House - Vitality Pool"
       }
     ],
-    "presentations": []
+    "presentations": [],
+    "priceList": {
+      "driveFileId": "17SwVR3Jk0NwniNWWzMhNn6H4TJgb0ABK",
+      "createdAt": "As of May 26, 2026"
+    }
   },
   {
     "slug": "ora-casa-tua",

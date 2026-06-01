@@ -728,6 +728,9 @@
     return;
   }
 
+  // Silently renew the session cookie on each visit.
+  fetch('/api/auth/refresh', { method: 'POST' }).catch(function() {});
+
   fetch('/api/project?slug=' + encodeURIComponent(slug))
     .then(function (r) {
       if (!r.ok) throw new Error('HTTP ' + r.status);

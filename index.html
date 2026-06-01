@@ -730,6 +730,10 @@
     window.addEventListener('scroll', onScroll, { passive: true });
     onScroll();
 
+    // Silently renew the session cookie on each visit so returning users
+    // on known devices are never asked to re-authenticate.
+    fetch('/api/auth/refresh', { method: 'POST' }).catch(function() {});
+
     loadProjects();
   </script>
 </body>
