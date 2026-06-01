@@ -33411,8 +33411,8 @@
       }
     ],
     "priceList": {
-      "driveFileId": "1liokKIAfUUXC5-lvxqNR2jpDAtEtY-7m",
-      "createdAt": "As of May 26, 2026"
+      "heading": "Check Availability on MLS",
+      "kind": "mls"
     },
     "projectLogo": "/images/logos/ocean-house-2.png",
     "isNew": false,

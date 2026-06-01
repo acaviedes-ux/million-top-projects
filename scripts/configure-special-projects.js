@@ -55,7 +55,9 @@ const MLS_SLUGS = [
   'il-villaggio', 'jade-beach', 'l-atelier', 'la-santa-maria',
   'missoni-baia', 'monaco-yacht-club-residences', 'monad-terrace',
   'murano-at-portofino', 'murano-grande-at-portofino', 'ocean-delray',
-  'ocean-house', 'ocean-park', 'oceanside', 'one-ocean',
+  'ocean-house',    // Ocean House Surfside
+  'ocean-house-2',  // Ocean House South Beach — same tpDataName as Surfside, needs explicit MLS entry
+  'ocean-park', 'oceanside', 'one-ocean',
   'paramount-fort-lauderdale-beach', 'parque-towers',
   'porsche-design-tower', 'portofino-tower', 'prive-island',
   'south-pointe-towers', 'the-bath-club', 'the-bristol', 'the-fairchild',
