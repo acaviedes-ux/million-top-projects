@@ -3891,12 +3891,9 @@
     "completionDate": "2029",
     "depositStructure": [
       "10% at contract",
-      "5% 90 days after contract",
-      "5% 180 days after contract",
-      "5% 90 days after groundbreaking",
-      "5% 180 days after groundbreaking",
-      "10% at top-off",
-      "60% at closing (Q1 2029)"
+      "10% at groundbreaking",
+      "10% at top off",
+      "70% at closing (Q1 2029)"
     ],
     "parkingSpaces": [
       "1 valet-only parking space for 1-bed units.",
