@@ -341,8 +341,84 @@ async function main() {
 
   let updated = 0, skipped = 0, failed = 0;
 
-  for (const { folder, project } of targets) {
-    // Skip already-populated projects unless --force
+  // Group matching folders by project slug so all folders that resolve to the
+  // SAME project are processed back-to-back. This preserves the original
+  // "last folder wins per field" semantics (TopProjects → Preconstruction →
+  // Resale order is unchanged inside each project) even when different
+  // projects run on different workers in parallel.
+  const foldersBySlug = new Map();
+  for (const t of targets) {
+    if (!foldersBySlug.has(t.project.slug)) foldersBySlug.set(t.project.slug, []);
+    foldersBySlug.get(t.project.slug).push(t);
+  }
+  const allSlugs = [...foldersBySlug.keys()];
+
+  // Process one folder's category scan and apply its updates to the project.
+  // Pure per-folder logic — returns true on success, throws on Drive errors.
+  async function processFolder({ folder, project }) {
+    const subfolders = await listChildren(drive, folder.id);
+    const subMap = new Map();
+    for (const sf of subfolders) {
+      if (sf.mimeType === 'application/vnd.google-apps.folder') {
+        subMap.set(norm(sf.name), sf);
+      }
+    }
+
+    const updates = {};
+    for (const cat of CATEGORY_MAP) {
+      let catFolder = null;
+      for (const name of cat.names) {
+        catFolder = subMap.get(name);
+        if (catFolder) break;
+      }
+      if (!catFolder) continue;
+
+      // Renderings: recurse into nested subfolders (luxury projects often
+      // organize their large galleries by theme). Docs: root only — editorial
+      // subfolders like "Individuals" or "Other Floor Plans" must NOT flatten.
+      if (cat.field === 'renderings') {
+        const files = await listFilesRecursive(drive, catFolder.id);
+        updates[cat.field] = buildRenderItems(files);
+      } else {
+        const allChildren = await listChildren(drive, catFolder.id);
+        const files = allChildren.filter(
+          f => f.mimeType !== 'application/vnd.google-apps.folder'
+        );
+        updates[cat.field] = buildDocItems(files);
+      }
+    }
+
+    if (isDry) {
+      console.log(`  ✓ ${project.slug}`);
+      for (const [field, items] of Object.entries(updates)) {
+        console.log(`      ${field}: ${items.length} items`);
+        items.slice(0, 3).forEach(it => {
+          const label = it.title !== undefined
+            ? (it.title || '(no variant)')
+            : (it.alt || '');
+          console.log(`        • "${label}" (${it.driveFileId})`);
+        });
+        if (items.length > 3) console.log(`        … and ${items.length - 3} more`);
+      }
+    } else {
+      const idx = projects.findIndex(p => p.slug === project.slug);
+      if (idx !== -1) {
+        for (const [field, items] of Object.entries(updates)) {
+          projects[idx][field] = items;
+        }
+      }
+      const counts = Object.entries(updates)
+        .map(([f, items]) => `${f}:${items.length}`)
+        .join(' ');
+      console.log(`  ✓ ${project.slug}  [${counts}]`);
+    }
+  }
+
+  // Process a single project: skip-check + serial folder loop.
+  async function processProject(slug) {
+    const folderList = foldersBySlug.get(slug);
+    const project = folderList[0].project;
+
     const alreadyDone =
       (project.brochures && project.brochures.length) ||
       (project.factSheets && project.factSheets.length) ||
@@ -352,81 +428,35 @@ async function main() {
 
     if (!isForce && alreadyDone) {
       skipped++;
-      if (isDry) console.log(`  ↷ ${project.slug} (already populated, use --force)`);
-      continue;
+      if (isDry) console.log(`  ↷ ${slug} (already populated, use --force)`);
+      return;
     }
 
-    try {
-      // List subfolders inside this project folder
-      const subfolders = await listChildren(drive, folder.id);
-      const subMap = new Map(); // norm(name) → folder item
-      for (const sf of subfolders) {
-        if (sf.mimeType === 'application/vnd.google-apps.folder') {
-          subMap.set(norm(sf.name), sf);
-        }
+    let projectFailed = false;
+    for (const t of folderList) {
+      try {
+        await processFolder(t);
+      } catch (err) {
+        projectFailed = true;
+        console.error(`  ✗ ${slug}: ${err.message}`);
       }
+    }
+    if (projectFailed) failed++;
+    else updated++;
+  }
 
-      const updates = {};
-
-      for (const cat of CATEGORY_MAP) {
-        // Find the matching subfolder (try each known name variant)
-        let catFolder = null;
-        for (const name of cat.names) {
-          catFolder = subMap.get(name);
-          if (catFolder) break;
-        }
-
-        if (!catFolder) continue;
-
-        // Renderings: recurse into nested subfolders (luxury projects often
-        // organize their large galleries by theme: Exterior/, Interior/, etc.)
-        // Docs (brochures, fact sheets, floor plans, presentations): root only.
-        // Internal subfolders like "Individuals" or "Other Floor Plans" are
-        // editorial organization and must NOT be flattened into the doc list.
-        let files;
-        if (cat.field === 'renderings') {
-          files = await listFilesRecursive(drive, catFolder.id);
-          updates[cat.field] = buildRenderItems(files);
-        } else {
-          const allChildren = await listChildren(drive, catFolder.id);
-          files = allChildren.filter(
-            f => f.mimeType !== 'application/vnd.google-apps.folder'
-          );
-          updates[cat.field] = buildDocItems(files);
-        }
-      }
-
-      if (isDry) {
-        console.log(`  ✓ ${project.slug}`);
-        for (const [field, items] of Object.entries(updates)) {
-          console.log(`      ${field}: ${items.length} items`);
-          items.slice(0, 3).forEach(it => {
-            const label = it.title !== undefined
-              ? (it.title || '(no variant)')
-              : (it.alt || '');
-            console.log(`        • "${label}" (${it.driveFileId})`);
-          });
-          if (items.length > 3) console.log(`        … and ${items.length - 3} more`);
-        }
-      } else {
-        // Apply updates to the in-memory array
-        const idx = projects.findIndex(p => p.slug === project.slug);
-        if (idx !== -1) {
-          for (const [field, items] of Object.entries(updates)) {
-            projects[idx][field] = items;
-          }
-        }
-        updated++;
-        const counts = Object.entries(updates)
-          .map(([f, items]) => `${f}:${items.length}`)
-          .join(' ');
-        console.log(`  ✓ ${project.slug}  [${counts}]`);
-      }
-    } catch (err) {
-      failed++;
-      console.error(`  ✗ ${project.slug}: ${err.message}`);
+  // Worker pool: 6 projects in parallel, each project's folders serial inside.
+  // 6 = sweet spot — Drive's per-user quota is ~10 req/s sustained, and with
+  // 6 workers we average well below that while cutting wall time ~4-5×.
+  const CONCURRENCY = 6;
+  let nextIdx = 0;
+  async function worker() {
+    while (nextIdx < allSlugs.length) {
+      const i = nextIdx++;
+      await processProject(allSlugs[i]);
     }
   }
+  await Promise.all(Array.from({ length: CONCURRENCY }, () => worker()));
 
   // ── Write projects.json ───────────────────────────────────
   if (!isDry) {

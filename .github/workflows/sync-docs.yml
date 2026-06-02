@@ -24,7 +24,7 @@ concurrency:
 jobs:
   sync:
     runs-on: ubuntu-latest
-    timeout-minutes: 20      # full scan of ~700 folders × 5 categories
+    timeout-minutes: 30      # safety net; with parallel seed real runs ≈ 4-8 min
     permissions:
       contents: write        # allows git push
 

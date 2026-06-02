@@ -13,20 +13,26 @@
  * Categories:
  *   MLS         → priceList = { heading: 'Check Availability on MLS', kind: 'mls' }
  *   UFS         → priceList = { heading: 'UNITS FOR SALE',
- *                               externalUrl: '<from esqueleto col AM>',
+ *                               externalUrl: '<from sheet col E>',
  *                               kind: 'ufs' }
  *   SOLD OUT    → priceList = { heading: 'SOLD OUT',          kind: 'sold-out' }
  *   PAUSED      → priceList = { heading: 'PAUSED PROJECT',    kind: 'paused' }
  *   CUSTOM      → priceList = { heading: '<text>',            kind: 'message' }
- *   HYBRID      → priceList unchanged + unitsForSale: { externalUrl }
- *                 (only Five Park Miami Beach)
  *
- * Wipe policy: all existing priceList/priceRange/priceDocs are REPLACED for
- * categories MLS, UFS, SOLD-OUT, PAUSED, CUSTOM. The HYBRID category keeps
- * its existing priceList and only adds the unitsForSale field.
+ * Source of truth for UFS URLs
+ * ────────────────────────────
+ * The UFS URLs live in a Google Sheet (UFS_URLS_SHEET_ID below) column E
+ * "BOTÓN UNITS FOR SALE URL". Column C contains the project URL on the live
+ * site (e.g. https://top-projects.millionluxury.com/projects/<slug>) — we
+ * parse the slug out of that path rather than fuzzy-matching by name, so
+ * ambiguous cases like "Ocean House Surfside" vs "Ocean House South Beach"
+ * resolve deterministically.
  *
- * URLs are baked in below — pulled once from the esqueleto sheet column AM
- * (Website Million). Re-run only when those URLs change.
+ * Conflict resolution
+ * ───────────────────
+ * UFS is applied LAST so any slug that appears in both MLS_SLUGS and the
+ * sheet ends up as UFS (the sheet wins). Wipe policy: all existing
+ * priceList/priceRange/priceDocs/unitsForSale are REPLACED.
  *
  * Usage
  * ─────
@@ -35,8 +41,12 @@
  * ─────────────────────────────────────────────────────────────────────────
  */
 
+require('dotenv').config();
 const fs   = require('fs');
 const path = require('path');
+const { google } = require('googleapis');
+
+const UFS_URLS_SHEET_ID = '1rogHcsBWK3qVM94NU4fKxKMiYwLUX-mrx4u5ZTNF7rs';
 
 const PROJECTS_JSON = path.join(__dirname, '../data/projects.json');
 
@@ -69,41 +79,8 @@ const MLS_SLUGS = [
   'villa-valencia', 'w-south-beach-residences',
 ];
 
-// UFS map: slug → external URL (from esqueleto col AM)
-const UFS_URLS = {
-  '2000-ocean':                                'https://www.2000oceaninhallandale.com/',
-  '57-ocean':                                  'https://www.57oceancondomiami.com/',
-  'apogee':                                    'https://www.apogeecondosouthbeach.com/',
-  'armani-casa':                               'https://www.armaniresidencesmiami.com/',
-  'aston-martin-residences':                   'https://astonmartinresidencesdowntownmiami.nestcapitals.com/',
-  'auberge-beach-residences-spa-fort-lauderdale': 'https://www.aubergebeachsresidences.com',
-  'continuum-south-beach':                     'https://www.continummsouthbeach.com/',
-  'eighty-seven-park':                         'https://www.eightysevenparkcondo.com/',
-  'fendi-chateau':                             'https://www.fendichateaumiami.com/',
-  'four-seasons-hotel-private-residences':     'https://fourseasonsresidencesfortlauderdale.nestcapitals.com/',
-  'grove-at-grand-bay':                        'https://www.groveatgranbay.com/',
-  'jade-ocean':                                'https://www.jadeoceancondo.com/',
-  'jade-signature':                            'https://www.jadesignatures.com/',
-  'muse-residences':                           'https://www.museresidencesmiami.com/',
-  'oceana-bal-harbour':                        'https://www.oceanaballlharbour.com/',
-  'oceana-key-biscayne':                       'https://www.oceanakeybisscayne.com/',
-  'one-thousand-museum':                       'https://www.1000museumiami.com/',
-  'palazzo-del-sol':                           'https://www.palazzodellsol.com/',
-  'palazzo-della-luna':                        'https://www.palazzoodellaluna.com/',
-  'park-grove':                                'https://www.parkgrovecondomiami.com/',
-  'regalia':                                   'https://www.regaliaresidenses.com/',
-  'setai-residences':                          'https://setaimiamibeach.nestcapitals.com/',
-  'surf-club-four-seasons':                    'https://www.thesurfclubs.com/for-sale.html',
-  'the-estates-at-acqualina':                  'https://www.estatessatacqualina.com/',
-  'the-ritz-carlton-residences-sunny-isles':   'https://ritzcarltonsunnyisles.nestcapitals.com/',
-  'turnberry-ocean-club':                      'https://www.turnberryoceansclub.com/',
-};
-
-// Hybrid: Five Park keeps its existing priceList AND gets a UFS button.
-// Stored separately so it doesn't overwrite the developer-units price list.
-const HYBRID_UFS = {
-  'five-park-miami-beach': 'https://www.fiveparkresidenses.com/',
-};
+// UFS URLs are now read from the spreadsheet on every run (see fetchUfsUrls).
+// To change a URL, edit column E of the sheet and re-run this script.
 
 const CUSTOM_TEXTS = {
   'casa-cipriani': 'No Units Available',
@@ -125,22 +102,63 @@ const MISSING_FROM_JSON = [
   { name: '7918 West Drive',                              category: 'PAUSED' },
 ];
 
-// Projects whose current price list must be left alone.
-const KEEP_AS_IS = [
-  'alana-bay-harbor-islands',
-  'alina-residences',
-  'five-park-miami-beach',     // hybrid — its priceList stays; UFS button added separately
-  'forte-on-flagler',
-];
+// ── UFS URL fetcher ──────────────────────────────────────────────────────────
+
+/**
+ * Read column E (BOTÓN UNITS FOR SALE URL) from the source-of-truth sheet
+ * and extract the slug from column C (project page URL, where the slug is
+ * embedded in the /projects/<slug> path). Returns { slug → url }.
+ * Rows without an HTTP URL in col E are silently dropped.
+ */
+async function fetchUfsUrls() {
+  const auth = new google.auth.JWT({
+    email: process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL,
+    key:   (process.env.GOOGLE_PRIVATE_KEY || '').replace(/\\n/g, '\n'),
+    scopes: ['https://www.googleapis.com/auth/spreadsheets.readonly'],
+  });
+  const sheets = google.sheets({ version: 'v4', auth });
+  const res = await sheets.spreadsheets.values.get({
+    spreadsheetId: UFS_URLS_SHEET_ID,
+    range: 'Sheet1!A2:E',
+    valueRenderOption: 'UNFORMATTED_VALUE',
+  });
+  const rows = res.data.values || [];
+
+  const out = {};
+  const malformed = [];
+  for (const r of rows) {
+    const projectUrl = String(r[2] || '');
+    const ufsUrl     = String(r[4] || '').trim();
+    if (!/^https?:\/\//i.test(ufsUrl)) continue;
+    const m = projectUrl.match(/\/projects\/([^/?#]+)/);
+    if (!m) { malformed.push({ name: r[1], projectUrl, ufsUrl }); continue; }
+    out[m[1]] = ufsUrl;
+  }
+  return { urls: out, malformed };
+}
 
 // ── Main ─────────────────────────────────────────────────────────────────────
 
-function main() {
+async function main() {
   const isDry = process.argv.includes('--dry');
   const projects = JSON.parse(fs.readFileSync(PROJECTS_JSON, 'utf8'));
   const slugToIdx = new Map(projects.map((p, i) => [p.slug, i]));
 
-  const log = { mls: [], ufs: [], soldOut: [], paused: [], custom: [], hybrid: [], notFound: [] };
+  console.log('Fetching UFS URLs from sheet…');
+  const { urls: ufsUrls, malformed } = await fetchUfsUrls();
+  console.log('  → ' + Object.keys(ufsUrls).length + ' UFS URLs loaded');
+  if (malformed.length) {
+    console.log('  ⚠ ' + malformed.length + ' rows had URL in col E but no slug in col C:');
+    malformed.forEach(m => console.log('    -', m.name, '(' + m.projectUrl + ')'));
+  }
+
+  const log = { mls: [], ufs: [], soldOut: [], paused: [], custom: [], notFound: [], overrides: [] };
+
+  // Clear any prior unitsForSale field — hybrid mode was removed; UFS is now
+  // always a full priceList replacement.
+  if (!isDry) {
+    for (const p of projects) delete p.unitsForSale;
+  }
 
   function setPriceList(slug, config, category) {
     const i = slugToIdx.get(slug);
@@ -156,58 +174,54 @@ function main() {
     return true;
   }
 
-  // MLS
+  // 1. MLS first (UFS will override below if same slug is in the sheet)
   for (const slug of MLS_SLUGS) {
     if (setPriceList(slug, { heading: 'Check Availability on MLS', kind: 'mls' }, 'MLS')) {
       log.mls.push(slug);
     }
   }
 
-  // UFS
-  for (const [slug, url] of Object.entries(UFS_URLS)) {
-    if (setPriceList(slug, { heading: 'UNITS FOR SALE', externalUrl: url, kind: 'ufs' }, 'UFS')) {
-      log.ufs.push(slug);
-    }
-  }
-
-  // SOLD OUT
+  // 2. SOLD OUT
   for (const slug of SOLD_OUT_SLUGS) {
     if (setPriceList(slug, { heading: 'SOLD OUT', kind: 'sold-out' }, 'SOLD OUT')) {
       log.soldOut.push(slug);
     }
   }
 
-  // PAUSED
+  // 3. PAUSED
   for (const slug of PAUSED_SLUGS) {
     if (setPriceList(slug, { heading: 'PAUSED PROJECT', kind: 'paused' }, 'PAUSED')) {
       log.paused.push(slug);
     }
   }
 
-  // CUSTOM
+  // 4. CUSTOM
   for (const [slug, text] of Object.entries(CUSTOM_TEXTS)) {
     if (setPriceList(slug, { heading: text, kind: 'message' }, 'CUSTOM')) {
       log.custom.push(slug + ' ("' + text + '")');
     }
   }
 
-  // HYBRID: priceList stays, unitsForSale is added on top
-  for (const [slug, url] of Object.entries(HYBRID_UFS)) {
-    const i = slugToIdx.get(slug);
-    if (i === undefined) { log.notFound.push({ slug, category: 'HYBRID' }); continue; }
-    if (!isDry) projects[i].unitsForSale = { externalUrl: url };
-    log.hybrid.push(slug);
+  // 5. UFS LAST — sheet wins. If a slug was also in MLS_SLUGS, this overwrites.
+  for (const [slug, url] of Object.entries(ufsUrls)) {
+    const wasMls = log.mls.includes(slug);
+    if (setPriceList(slug, { heading: 'UNITS FOR SALE', externalUrl: url, kind: 'ufs' }, 'UFS')) {
+      log.ufs.push(slug);
+      if (wasMls) log.overrides.push(slug + ' (MLS → UFS)');
+    }
   }
 
   // ── Report ─────────────────────────────────────────────────────────────
-  console.log('=== CONFIGURE SPECIAL PROJECTS' + (isDry ? ' [DRY RUN]' : '') + ' ===\n');
-  console.log('MLS banner          :', log.mls.length, 'projects');
+  console.log('\n=== CONFIGURE SPECIAL PROJECTS' + (isDry ? ' [DRY RUN]' : '') + ' ===');
+  console.log('MLS banner          :', log.mls.length - log.overrides.length, 'projects (after UFS overrides)');
   console.log('UNITS FOR SALE      :', log.ufs.length, 'projects');
   console.log('SOLD OUT            :', log.soldOut.length, 'projects');
   console.log('PAUSED              :', log.paused.length, 'projects');
   console.log('CUSTOM message      :', log.custom.length, 'projects');
-  console.log('HYBRID (PDF + UFS)  :', log.hybrid.length, 'projects (' + log.hybrid.join(', ') + ')');
-  console.log('KEEP AS-IS (untouched):', KEEP_AS_IS.length, 'projects');
+  if (log.overrides.length) {
+    console.log('\nUFS overrides (sheet won over hardcoded category):');
+    log.overrides.forEach(o => console.log('  -', o));
+  }
 
   if (log.notFound.length) {
     console.log('\n⚠ Slugs not in projects.json (skipped):');
@@ -222,11 +236,13 @@ function main() {
 
   if (!isDry) {
     fs.writeFileSync(PROJECTS_JSON, JSON.stringify(projects, null, 2) + '\n', 'utf8');
-    const total = log.mls.length + log.ufs.length + log.soldOut.length + log.paused.length + log.custom.length + log.hybrid.length;
+    // Total = MLS_remaining + UFS + SOLD + PAUSED + CUSTOM (no double counting)
+    const total = (log.mls.length - log.overrides.length) + log.ufs.length
+                + log.soldOut.length + log.paused.length + log.custom.length;
     console.log('\n✓ Applied configs to ' + total + ' project(s)');
   } else {
     console.log('\n[DRY RUN — no files written]');
   }
 }
 
-main();
+main().catch(err => { console.error(err); process.exit(1); });
