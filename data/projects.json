@@ -9189,7 +9189,11 @@
     "projectLogo": "/images/logos/the-delmore.png",
     "priceList": {
       "driveFileId": "17NVyXQ67eXayZKXhHGyFuKekTAesYfWL",
-      "createdAt": "As of May 26, 2026"
+      "createdAt": "As of May 26, 2026",
+      "disclaimer": {
+        "type": "info",
+        "text": "It is set to be relaunched in January 2027, and the developer remains fully committed. They are currently in the process of bringing on a local joint venture partner to move the project forward."
+      }
     },
     "isNew": false,
     "filterCounty": "Miami-Dade County",
@@ -12890,7 +12894,11 @@
     "projectLogo": "/images/logos/the-well-coconut-grove.png",
     "priceList": {
       "driveFileId": "1mi21hzlrRre5vyaNk2fkx9YfwuTooeh8",
-      "createdAt": "As of May 26, 2026"
+      "createdAt": "As of May 26, 2026",
+      "disclaimer": {
+        "type": "warning",
+        "text": "Do not share the complete Price List with clients. Price List for reference only. Share only the Price Range, or specific available units based on the client's search criteria, such as bedroom count, budget, or preferred layout."
+      }
     },
     "isNew": false,
     "filterCounty": "Miami-Dade County",
@@ -22129,7 +22137,13 @@
         "title": "Bentley Residences Sunny Isles - Price Range",
         "kind": "range"
       }
-    ]
+    ],
+    "priceList": {
+      "disclaimer": {
+        "type": "warning",
+        "text": "Do not share the Price List or specific prices with clients. Price List for reference only. Share price ranges only."
+      }
+    }
   },
   {
     "slug": "biltmore-row",
@@ -25325,7 +25339,13 @@
         "alt": "Edge Worth - 6"
       }
     ],
-    "floorPlans": []
+    "floorPlans": [],
+    "priceList": {
+      "disclaimer": {
+        "type": "warning",
+        "text": "Do not share the Price List, specific prices, or Floor Plans with clients. All pricing information and Floor Plans are for reference only and may be subject to change during the pre-launch phase. Share price ranges only and verify all information with the in-house team before presenting it to clients."
+      }
+    }
   },
   {
     "slug": "eighty-seven-park",
@@ -31031,7 +31051,11 @@
     "projectLogo": "/images/logos/mercedes-benz-places-miami.png",
     "priceList": {
       "driveFileId": "1XzwRlxC6ezra9i-3pYnno3dCAzLFJA01",
-      "createdAt": "As of May 1, 2026"
+      "createdAt": "As of May 1, 2026",
+      "disclaimer": {
+        "type": "info",
+        "text": "The project has been temporarily paused due to bankruptcy. According to local media, Mercedes-Benz Places is facing an $80 million foreclosure lawsuit because the developer allegedly defaulted on a construction loan that was due in January 2025."
+      }
     },
     "isNew": false,
     "filterCounty": "Miami-Dade County",
@@ -45606,7 +45630,11 @@
     "projectLogo": "/images/logos/the-residences-at-mandarin-oriental-boca-raton.png",
     "priceList": {
       "driveFileId": "1i4hXjI7d9ckX6dZqEWzGle5hVHM67YwI",
-      "createdAt": "As of May 26, 2026"
+      "createdAt": "As of May 26, 2026",
+      "disclaimer": {
+        "type": "warning",
+        "text": "Price List for reference only. Share price ranges only and verify them with the in-house team before sharing. As the project is in its pre-launch phase, brokers are not permitted to advertise or promote the project in any capacity, including email campaigns, digital marketing, or creating websites that reference the offering. Brokers are only able to offer private in-person appointments with broker and select clients."
+      }
     },
     "isNew": false,
     "filterCounty": "Palm Beach County",

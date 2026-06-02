@@ -269,7 +269,12 @@ async function main() {
       // Price Lists folder exists but is empty → clear any legacy fields
       const idx = projects.findIndex(p => p.slug === slug);
       if (idx !== -1 && !isDry) {
-        if (projects[idx].priceList?.driveFileId)  delete projects[idx].priceList;
+        // Preserve any manually-set disclaimer before clearing price docs
+        const savedDisclaimer = projects[idx].priceList?.disclaimer;
+        if (projects[idx].priceList?.driveFileId) {
+          if (savedDisclaimer) projects[idx].priceList = { disclaimer: savedDisclaimer };
+          else                 delete projects[idx].priceList;
+        }
         if (projects[idx].priceRange?.driveFileId) delete projects[idx].priceRange;
         if (projects[idx].priceDocs)               delete projects[idx].priceDocs;
       }
@@ -329,20 +334,28 @@ async function main() {
       docs.forEach(d => console.log(`      [${d.kind}] "${d.title}" — ${d.createdAt}`));
     } else if (docs.length === 1) {
       // Single doc → legacy fields
+      // Always preserve any manually-set disclaimer — it is permanent editorial
+      // data that must survive Drive-folder rescans.
+      const savedDisclaimer = projects[idx].priceList?.disclaimer;
       const d = docs[0];
       if (d.kind === 'list') {
-        projects[idx].priceList  = { driveFileId: d.driveFileId, createdAt: d.createdAt };
+        projects[idx].priceList = { driveFileId: d.driveFileId, createdAt: d.createdAt };
+        if (savedDisclaimer) projects[idx].priceList.disclaimer = savedDisclaimer;
         delete projects[idx].priceRange;
       } else {
         projects[idx].priceRange = { driveFileId: d.driveFileId, createdAt: d.createdAt };
-        delete projects[idx].priceList;
+        if (savedDisclaimer) projects[idx].priceList = { disclaimer: savedDisclaimer };
+        else                 delete projects[idx].priceList;
       }
       delete projects[idx].priceDocs;
       updated++;
     } else {
       // Multiple docs → priceDocs[] (and clear legacy)
+      // Preserve disclaimer as a disclaimer-only priceList shell.
+      const savedDisclaimer = projects[idx].priceList?.disclaimer;
       projects[idx].priceDocs = docs;
-      delete projects[idx].priceList;
+      if (savedDisclaimer) projects[idx].priceList = { disclaimer: savedDisclaimer };
+      else                 delete projects[idx].priceList;
       delete projects[idx].priceRange;
       updated++;
       multiDocProjects++;
