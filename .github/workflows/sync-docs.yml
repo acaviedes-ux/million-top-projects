@@ -55,24 +55,30 @@ jobs:
           EXTRA_DOCS_FOLDER_IDS: '1U0J0ETnBVMgLEcTjOqpsfVA_gF8kz9jF,1XR1IKZ9kz0SNtOYy0PQc1hSzGJ09S7aj'
         run: node scripts/seed-docs-from-drive.js --force
 
-      # Make every Drive file referenced in projects.json publicly readable so the
-      # PDF proxy and thumbnails work. Idempotent — skips already-public files.
-      - name: Make Drive files public
-        env:
-          GOOGLE_SERVICE_ACCOUNT_EMAIL: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_EMAIL }}
-          GOOGLE_PRIVATE_KEY: ${{ secrets.GOOGLE_PRIVATE_KEY }}
-        run: node scripts/make-drive-files-public.js
-
+      # Check diff BEFORE make-public so we can skip the slow public-permission
+      # sweep when nothing changed. Saves ~7 min on every no-op run, which is
+      # the vast majority — Drive contents rarely change between 30-min cycles.
       - name: Check for changes
         id: diff
         run: |
           if git diff --quiet data/projects.json; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
-            echo "No document changes detected."
+            echo "No document changes detected — skipping make-public + push."
           else
             echo "changed=true" >> "$GITHUB_OUTPUT"
             git diff --stat data/projects.json
           fi
+
+      # Make every Drive file referenced in projects.json publicly readable so
+      # /api/render redirect and /api/thumb work without auth. ONLY runs when
+      # the seed produced changes — new file IDs are the only files that might
+      # not yet be public; all previously-seen IDs were processed in prior runs.
+      - name: Make Drive files public
+        if: steps.diff.outputs.changed == 'true'
+        env:
+          GOOGLE_SERVICE_ACCOUNT_EMAIL: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_EMAIL }}
+          GOOGLE_PRIVATE_KEY: ${{ secrets.GOOGLE_PRIVATE_KEY }}
+        run: node scripts/make-drive-files-public.js
 
       # Rebase onto any commit the price-list workflow pushed while we were
       # scanning, then push. Prevents non-fast-forward failures when both
