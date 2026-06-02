@@ -658,8 +658,8 @@
     ],
     "priceDocs": [
       {
-        "driveFileId": "1ES3glqNJvXonKqGIt6-nRdSByUkgdxLy",
-        "createdAt": "As of May 28, 2026",
+        "driveFileId": "1ylQXXB6Nv1b56bjWqnvdQ8heHdMkmqKN",
+        "createdAt": "As of June 2, 2026",
         "title": "888 Brickell by Dolce & Gabbana - Price List",
         "kind": "list"
       },
@@ -670,8 +670,8 @@
         "kind": "list"
       },
       {
-        "driveFileId": "12vKGxDzARwrlpEFjB8vOSjO0z8WRnYrZ",
-        "createdAt": "As of May 28, 2026",
+        "driveFileId": "1f0y-WnMkaBohx1taWASeTlBo-Bo2G26C",
+        "createdAt": "As of June 2, 2026",
         "title": "888 Brickell by Dolce & Gabbana - Price List - Residences",
         "kind": "list"
       },
@@ -679,6 +679,12 @@
         "driveFileId": "121vC4VsugYU41nkPpzyKKnN7maaFcUNw",
         "createdAt": "As of May 26, 2026",
         "title": "888 Brickell by Dolce & Gabbana - Price Range",
+        "kind": "range"
+      },
+      {
+        "driveFileId": "1XOciHJi3SGkctDZScOfgloyqk6GrbTb_",
+        "createdAt": "As of June 2, 2026",
+        "title": "888 Brickell by Dolce & Gabbana - Price Range -",
         "kind": "range"
       }
     ]
@@ -5113,8 +5119,8 @@
     ],
     "presentations": [],
     "priceList": {
-      "driveFileId": "17SwVR3Jk0NwniNWWzMhNn6H4TJgb0ABK",
-      "createdAt": "As of May 26, 2026"
+      "driveFileId": "1g7HEE354PLcNGywxWUQnT43vMDESr2VJ",
+      "createdAt": "As of June 2, 2026"
     }
   },
   {
@@ -21335,8 +21341,8 @@
     ],
     "projectLogo": "/images/logos/banyan-tree-bimini-bahamas.png",
     "priceList": {
-      "driveFileId": "1gOdrOKQOdytWM_PxhLk4_CBH3I76Bjir",
-      "createdAt": "As of May 26, 2026"
+      "driveFileId": "1RhOsxrzdF3afuVpmf574osmGnJUv6uwn",
+      "createdAt": "As of June 2, 2026"
     },
     "isNew": false,
     "filterCounty": "Bimini",
@@ -25275,8 +25281,8 @@
     "filterStatus": "Pre-construction - NEW",
     "filterYear": "2029",
     "priceRange": {
-      "driveFileId": "14RNcI48OgH6wUiFA-oK3lzcEHsrXtGTK",
-      "createdAt": "As of May 29, 2026"
+      "driveFileId": "1CYZWGF9ctwsjUP9MaB8Ark1b3mA9ZTln",
+      "createdAt": "As of June 2, 2026"
     },
     "factSheets": [
       {
@@ -33042,8 +33048,8 @@
     ],
     "projectLogo": "/images/logos/oasis-hallandale.png",
     "priceList": {
-      "driveFileId": "11ZWQbjOidLuCym93aEwuxQ40iI9Cp6Yq",
-      "createdAt": "As of May 26, 2026"
+      "driveFileId": "1zJ9URqECMSvRpFJVbkFjbKm6mK7971px",
+      "createdAt": "As of June 2, 2026"
     },
     "isNew": false,
     "filterCounty": "Broward County",
@@ -42214,8 +42220,8 @@
     ],
     "projectLogo": "/images/logos/shoma-bay.png",
     "priceList": {
-      "driveFileId": "1x83uBvoIoduH2BIrIO09ByaYR0j0bRDz",
-      "createdAt": "As of May 26, 2026"
+      "driveFileId": "1dBp0liw0mgqaUeOtyQy87XaNDExr2hIF",
+      "createdAt": "As of June 2, 2026"
     },
     "isNew": false,
     "filterCounty": "Miami-Dade County",
