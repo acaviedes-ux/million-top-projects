@@ -2,3 +2,6 @@ node_modules/
 .env
 .env.local
 .vercel
+
+# Local audit reports (regenerable via npm run audit:docs)
+heavy-docs-report.txt
