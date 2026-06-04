@@ -32,10 +32,6 @@
     "filterLocation": "Edgewater",
     "filterStatus": "Pre-construction",
     "filterYear": "2029",
-    "priceList": {
-      "driveFileId": "1e4k3irfVN0vqTJhW3TnhWHVn376A45eM",
-      "createdAt": "As of May 13, 2026"
-    },
     "brochures": [
       {
         "title": "",
@@ -130,7 +126,11 @@
         "phone": "+1 (786) 234-4168",
         "email": "jonathan@LILLImiami.com"
       }
-    ]
+    ],
+    "priceRange": {
+      "driveFileId": "1e4k3irfVN0vqTJhW3TnhWHVn376A45eM",
+      "createdAt": "As of May 26, 2026"
+    }
   },
   {
     "slug": "619-residences",
@@ -3383,8 +3383,8 @@
     ],
     "projectLogo": "/images/logos/four-seasons-coconut-grove.png",
     "priceList": {
-      "driveFileId": "1hzjnhcJ4gk9I2WEg-Z2jaeUC4MVJarbW",
-      "createdAt": "As of May 26, 2026"
+      "driveFileId": "1rLyBz6OL29FJ830cimpwq_0YSzeNhP2i",
+      "createdAt": "As of June 4, 2026"
     },
     "isNew": false,
     "filterCounty": "Miami-Dade County",
