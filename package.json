@@ -26,7 +26,9 @@
     "audit:prices": "node scripts/audit-pricelists.js",
     "audit:prices:bad": "node scripts/audit-pricelists.js --only-bad",
     "audit:docs": "node scripts/audit-heavy-docs.js",
-    "audit:docs:json": "node scripts/audit-heavy-docs.js --json"
+    "audit:docs:json": "node scripts/audit-heavy-docs.js --json",
+    "audit:preview": "node scripts/verify-preview-failures.js",
+    "audit:preview:json": "node scripts/verify-preview-failures.js --json"
   },
   "dependencies": {
     "@napi-rs/canvas": "^0.1.67",

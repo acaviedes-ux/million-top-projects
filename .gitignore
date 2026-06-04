@@ -5,3 +5,4 @@ node_modules/
 
 # Local audit reports (regenerable via npm run audit:docs)
 heavy-docs-report.txt
+preview-failures-report.txt
