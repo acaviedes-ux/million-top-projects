@@ -13034,8 +13034,6 @@
     ],
     "projectLogo": "/images/logos/the-well-coconut-grove.png",
     "priceList": {
-      "driveFileId": "1mi21hzlrRre5vyaNk2fkx9YfwuTooeh8",
-      "createdAt": "As of May 26, 2026",
       "disclaimer": {
         "type": "warning",
         "text": "Do not share the complete Price List with clients. Price List for reference only. Share only the Price Range, or specific available units based on the client's search criteria, such as bedroom count, budget, or preferred layout."
@@ -13292,7 +13290,21 @@
         "alt": "The Well Coconut Grove - Residents Pool 2"
       }
     ],
-    "presentations": []
+    "presentations": [],
+    "priceDocs": [
+      {
+        "driveFileId": "15_X3Peh5MjSGbipt42zMmaWKkYeJwHLM",
+        "createdAt": "As of June 4, 2026",
+        "title": "The Well Coconut Grove - Price List",
+        "kind": "list"
+      },
+      {
+        "driveFileId": "1BAOvGYgAcY_nQSB4QxgsX3nQEcMQ3trB",
+        "createdAt": "As of June 4, 2026",
+        "title": "The Well Coconut Grove - Price Range",
+        "kind": "range"
+      }
+    ]
   },
   {
     "slug": "tula-residences",
