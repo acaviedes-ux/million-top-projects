@@ -9446,10 +9446,6 @@
     "brochures": [
       {
         "title": "",
-        "driveFileId": "1UyFTL-eoyIHPkvGDs7TtjsD2eUlSoHPO"
-      },
-      {
-        "title": "",
         "driveFileId": "1X7C8Xp1T0Kq4LZtET9P_9D_lXpSthrZ9"
       },
       {
@@ -9465,28 +9461,36 @@
         "driveFileId": "1Ysyf67LkfMQQgOBz8N9sYJHsEYZ1ZsX-"
       },
       {
-        "title": "Rack Brochure - DE",
+        "title": "Resumed DE",
         "driveFileId": "1sNk4-ju2maT-vSO1CAhhBhALqrL51nP_"
       },
       {
-        "title": "Rack Brochure - EN",
+        "title": "Resumed EN",
         "driveFileId": "1IjvUJ3hnQCURpvDzsp7u_c2KwlaURm25"
       },
       {
-        "title": "Rack Brochure - ES",
+        "title": "Resumed ES",
         "driveFileId": "13TP5i-L7ldiZ-xPy0vZrfpdSvq1OAgwE"
       },
       {
-        "title": "Rack Brochure - FR",
+        "title": "Resumed FR",
         "driveFileId": "1QHqeqtkL9a6DK1IWT_yQmS7vW7jkbssW"
       },
       {
-        "title": "Rack Brochure - IT",
+        "title": "Resumed IT",
         "driveFileId": "1O3GLPCkjTx5sKeLb7pu32dJ6Y9Yf-uak"
       },
       {
-        "title": "Rack Brochure - PT",
+        "title": "Resumed PT",
         "driveFileId": "1Yc0yEui6DWScj3Q0HesfEoc6SYsfa1Ky"
+      },
+      {
+        "title": "Upper Penthouses",
+        "driveFileId": "1TfSIVusvq3bU5lfKfD0xQSe4A9zs_Jjy"
+      },
+      {
+        "title": "Upper Penthouses",
+        "driveFileId": "1UyFTL-eoyIHPkvGDs7TtjsD2eUlSoHPO"
       }
     ],
     "tpDataName": "The Perigon Miami Beach",
@@ -44810,7 +44814,7 @@
     "stylishAmenities": "Boasting resort-style areas including a rooftop oasis with a heated lap pool, a zen spa-inspired wellness center, and a state-of-the-art fitness center.",
     "brochures": [
       {
-        "title": "Rack",
+        "title": "",
         "driveFileId": "153ys2QpSIdmbWjPlE8AU_ClFdd5HmOLz"
       }
     ],
@@ -45796,10 +45800,6 @@
       {
         "title": "",
         "driveFileId": "1Nnm548p4gLE_-XHzoKdhgWZpKmEbCe4Q"
-      },
-      {
-        "title": "",
-        "driveFileId": "1_gnMVcGFDeuMsD7i9ZyYE7vq5_veAnP6"
       }
     ],
     "renderings": [
