@@ -161,8 +161,10 @@
       "60% at closing (September 2030)"
     ],
     "parkingSpaces": [
-      "For 1-bedroom units valet parking.",
-      "For 2-, 3- and 4-bedroom units 1 assigned parking space."
+      "Valet parking for 1 bedroom units",
+      "1 parking space assigned for 2 bedroom units",
+      "1 parking space assigned for 3 bedroom units",
+      "1 parking space assigned for 4 bedroom units"
     ],
     "rentalRestrictions": [
       "3 months minimum. 2 times per year.",
