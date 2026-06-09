@@ -26055,7 +26055,9 @@
       "50% at closing"
     ],
     "parkingSpaces": null,
-    "rentalRestrictions": null,
+    "rentalRestrictions": [
+      "1 day minimum. No black out dates."
+    ],
     "hoa": null,
     "contact": [
       {
