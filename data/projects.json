@@ -26050,9 +26050,8 @@
     "depositStructure": [
       "20% at contract",
       "10% at groundbreaking (Q4 2026)",
-      "10% 90 days after groundbreaking or at Amenity Level",
       "10% at top-off",
-      "50% at closing"
+      "60% at closing"
     ],
     "parkingSpaces": null,
     "rentalRestrictions": [
