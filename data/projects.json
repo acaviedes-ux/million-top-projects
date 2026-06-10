@@ -1,5 +1,183 @@
 [
   {
+    "slug": "the-standard-residences-midtown",
+    "name": "The Standard Residences Midtown Miami",
+    "esqueletoName": "The Standard Residences Midtown Miami",
+    "section": "Other Projects",
+    "isNew": false,
+    "startingPrice": "$558K",
+    "thumbnail": "/api/render?id=1hyQsF275-vRAIR0IiR5r5tPjT6JO7Ced",
+    "hero": "/api/render?id=1hyQsF275-vRAIR0IiR5r5tPjT6JO7Ced",
+    "projectLogo": "/images/logos/the-standard-residences-midtown.jpg",
+    "address": "3100 NE 1st Avenue, Miami, FL 33137",
+    "developer": "Rosso Development and Midtown Development",
+    "architecture": "Arquitectonica",
+    "interiorDesign": "Urban Robot",
+    "completionDate": "2025",
+    "depositStructure": [
+      "20% at contract",
+      "80% at closing"
+    ],
+    "parkingSpaces": [
+      "Parking is not deeded with the units. A garage attached can be found with direct entrance and can be rented for $90/monthly.",
+      "No valet."
+    ],
+    "rentalRestrictions": [
+      "30 days minimum. 12 times per year."
+    ],
+    "hoa": "$1.07",
+    "theBuilding": "A 12-floor, 228-residence pied-à-terre collection in Midtown Miami, offering move-in-ready studio to two-bedroom homes with 34,000-square-foot amenities and 10,000-square-foot retail.",
+    "stylishAmenities": "Curated live/work/play amenities span five floors, with a 60-foot rooftop sunset pool, restaurant and bar, wellness, coworking, social, cinema, and pet spa.",
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Midtown Miami",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2025",
+    "priceList": {
+      "driveFileId": "1a25vAD7Zo5klRPXZjqcpkevnRfMCweMO",
+      "createdAt": "As of May 2026"
+    },
+    "brochures": [
+      {
+        "title": "Brochure",
+        "driveFileId": "1fOR-kGKAwV5OPh1FYNpluzsOW5Zy7b3r"
+      }
+    ],
+    "factSheets": [
+      {
+        "title": "",
+        "driveFileId": "19BFkX-RQP-yayvk8obwNyczIedq184cB"
+      }
+    ],
+    "floorPlans": [
+      {
+        "title": "",
+        "driveFileId": "1EeVYKZugMkOTrma0hVqJit2rsApmsdIy"
+      }
+    ],
+    "renderings": [
+      {
+        "driveFileId": "1UE-xQ93Ovo31FHWNbANk4C7W86PsQkcp",
+        "alt": "The Standard Residences Midtown Miami - Aerial"
+      },
+      {
+        "driveFileId": "1mbJ4RaADBS8A5A-YZJoYX9AwHMwIkOVX",
+        "alt": "The Standard Residences Midtown Miami - Exterior 2"
+      },
+      {
+        "driveFileId": "1hyQsF275-vRAIR0IiR5r5tPjT6JO7Ced",
+        "alt": "The Standard Residences Midtown Miami - Exterior"
+      },
+      {
+        "driveFileId": "1l-npOIiE4rSgIYwwieIOl3xBnQ5NA6Hk",
+        "alt": "The Standard Residences Midtown Miami - Fitness Center"
+      },
+      {
+        "driveFileId": "15NqGqt3Ela4uhEAKzITukSPpFyzW0p7A",
+        "alt": "The Standard Residences Midtown Miami - Hero 2"
+      },
+      {
+        "driveFileId": "1DLqcpBtW1AT5MTRCnGW3ySpGGD89uiuy",
+        "alt": "The Standard Residences Midtown Miami - Interior"
+      },
+      {
+        "driveFileId": "1QX2a6CzU3BabOnXz6PCm8HV_Fm4NrFGC",
+        "alt": "The Standard Residences Midtown Miami - Lobby Lounge 2"
+      },
+      {
+        "driveFileId": "1KkBNGAts8IuXF81IfuqM37Jfe6RknD-p",
+        "alt": "The Standard Residences Midtown Miami - Lobby Lounge Night 2"
+      },
+      {
+        "driveFileId": "1YJqPC_KBu9HZc5QRgfID2gRxNTu6mjZR",
+        "alt": "The Standard Residences Midtown Miami - Lobby Lounge Night"
+      },
+      {
+        "driveFileId": "1Wa9jTfQbBuqmD8rH_k1xAgpg5DyQy25Y",
+        "alt": "The Standard Residences Midtown Miami - Lobby Lounge"
+      },
+      {
+        "driveFileId": "1WYHRTH3IbHGQs_15XtBbLOTm13BiZvdX",
+        "alt": "The Standard Residences Midtown Miami - Location"
+      },
+      {
+        "driveFileId": "1flY0VwGjnf2yH1g8CYXjPZzvt7gDdLGU",
+        "alt": "The Standard Residences Midtown Miami - Neighborhood"
+      },
+      {
+        "driveFileId": "1_Fk3BFk1mmp_yODuvsJknydXxRbWHJw1",
+        "alt": "The Standard Residences Midtown Miami - Pickleball"
+      },
+      {
+        "driveFileId": "1ZccwnwoDkBUd45JyCckZ8iD5EdONwuUS",
+        "alt": "The Standard Residences Midtown Miami - Pool 2"
+      },
+      {
+        "driveFileId": "1i6rbcf4M2ctvzL8uFbvWlWTbcOCzNYKd",
+        "alt": "The Standard Residences Midtown Miami - Pool"
+      },
+      {
+        "driveFileId": "13dWtQ0mdbr-85q878hstIztXpMfp9bwJ",
+        "alt": "The Standard Residences Midtown Miami - Rooftop Restaurant Night"
+      },
+      {
+        "driveFileId": "1W5soC9N5MU3tc9t8GrNO2Ni2Vn9XSULU",
+        "alt": "The Standard Residences Midtown Miami - Rooftop Restaurant"
+      },
+      {
+        "driveFileId": "1a6QJvzYQeTdB09VS803gUhAVOjIEjQio",
+        "alt": "The Standard Residences Midtown Miami - Social Club"
+      },
+      {
+        "driveFileId": "1j5lw6janj2457xC9LCq_2iLWrxO58nZy",
+        "alt": "The Standard Residences Midtown Miami - Bathroom"
+      },
+      {
+        "driveFileId": "1rDUt4-8F5tg2RccHiRSzEGbOMSS-p87E",
+        "alt": "The Standard Residences Midtown Miami - Suite Dining"
+      },
+      {
+        "driveFileId": "1qtUyrStmgxHtusuEXEk65EAD0102GpiO",
+        "alt": "The Standard Residences Midtown Miami - Suite Kitchen"
+      },
+      {
+        "driveFileId": "1kBIKfJhMbvv1TpYVHgFbLv3eSn_TPeKL",
+        "alt": "The Standard Residences Midtown Miami - Suite Living Dining"
+      },
+      {
+        "driveFileId": "1Gwg3uB0M_SYvx2xrDubRIDzkullA2kCg",
+        "alt": "The Standard Residences Midtown Miami - Suite Bedroom Detail"
+      },
+      {
+        "driveFileId": "1iDIHGX2M9ZzgctmFawz2EpM9nNUsgwLu",
+        "alt": "The Standard Residences Midtown Miami - Suite Bedroom"
+      },
+      {
+        "driveFileId": "18-fE5TmaWOzhDwrNaQcwhBdoDzhAFhEe",
+        "alt": "The Standard Residences Midtown Miami - Suite Living Corner"
+      },
+      {
+        "driveFileId": "1lx1wh5fKA48T1KOBn7DqdIW8tYyDNZym",
+        "alt": "The Standard Residences Midtown Miami - Suite Living Dining 2"
+      },
+      {
+        "driveFileId": "12CGY4GtstpxW6U8t36663upMUAz61xcc",
+        "alt": "The Standard Residences Midtown Miami - Suite Section"
+      },
+      {
+        "driveFileId": "1hMe9ulgtcAIsQgj5JzUVUc6-PCHylmJf",
+        "alt": "The Standard Residences Midtown Miami - Studio Suite"
+      },
+      {
+        "driveFileId": "1Xuk_gCHC30VyEFIY956EO0gcvAfGCtUq",
+        "alt": "The Standard Residences Midtown Miami - Studio Terrace"
+      },
+      {
+        "driveFileId": "1xSysgqB_Ew-jgTimS4mT9X8wnahRUK4A",
+        "alt": "The Standard Residences Midtown Miami - Terrace"
+      }
+    ]
+  },
+  {
     "slug": "lilli-miami-edgewater",
     "name": "Lilli Miami Edgewater",
     "esqueletoName": "Lilli Miami Edgewater",
@@ -47743,8 +47921,8 @@
     "tpDataName": "The Standard Residences",
     "section": "Other Projects",
     "startingPrice": "$630K",
-    "thumbnail": "/images/renders/the-standard-residences.jpg",
-    "hero": "/images/renders/the-standard-residences.jpg",
+    "thumbnail": "/api/render?id=18m3njoLS2bIsTE6nWN4CD2RDCdmr4SaP",
+    "hero": "/api/render?id=18m3njoLS2bIsTE6nWN4CD2RDCdmr4SaP",
     "theBuilding": "A total of 12 levels and 228 studio-to-2-bedroom residences, spanning between 445 to 965 square feet.",
     "stylishAmenities": "Tropically landscaped, resort-style rooftop deck featuring a 60-foot-long swimming pool, whirlpool spa and outdoor rain showers. Global-inspired rooftop restaurant and bar with poolside service and on-demand delivery to residences. A pet-friendly community with grooming spa. Coworking rooms and bicycle storage spaces are also available.",
     "brochures": [
