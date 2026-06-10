@@ -38,7 +38,7 @@
     },
     "brochures": [
       {
-        "title": "Brochure",
+        "title": "",
         "driveFileId": "1fOR-kGKAwV5OPh1FYNpluzsOW5Zy7b3r"
       }
     ],
@@ -57,123 +57,123 @@
     "renderings": [
       {
         "driveFileId": "1UE-xQ93Ovo31FHWNbANk4C7W86PsQkcp",
-        "alt": "The Standard Residences Midtown Miami - Aerial"
-      },
-      {
-        "driveFileId": "1mbJ4RaADBS8A5A-YZJoYX9AwHMwIkOVX",
-        "alt": "The Standard Residences Midtown Miami - Exterior 2"
+        "alt": "AERIAL"
       },
       {
         "driveFileId": "1hyQsF275-vRAIR0IiR5r5tPjT6JO7Ced",
-        "alt": "The Standard Residences Midtown Miami - Exterior"
+        "alt": "EXTERIOR"
       },
       {
         "driveFileId": "1l-npOIiE4rSgIYwwieIOl3xBnQ5NA6Hk",
-        "alt": "The Standard Residences Midtown Miami - Fitness Center"
-      },
-      {
-        "driveFileId": "15NqGqt3Ela4uhEAKzITukSPpFyzW0p7A",
-        "alt": "The Standard Residences Midtown Miami - Hero 2"
+        "alt": "FITNESS CENTER"
       },
       {
         "driveFileId": "1DLqcpBtW1AT5MTRCnGW3ySpGGD89uiuy",
-        "alt": "The Standard Residences Midtown Miami - Interior"
-      },
-      {
-        "driveFileId": "1QX2a6CzU3BabOnXz6PCm8HV_Fm4NrFGC",
-        "alt": "The Standard Residences Midtown Miami - Lobby Lounge 2"
-      },
-      {
-        "driveFileId": "1KkBNGAts8IuXF81IfuqM37Jfe6RknD-p",
-        "alt": "The Standard Residences Midtown Miami - Lobby Lounge Night 2"
-      },
-      {
-        "driveFileId": "1YJqPC_KBu9HZc5QRgfID2gRxNTu6mjZR",
-        "alt": "The Standard Residences Midtown Miami - Lobby Lounge Night"
+        "alt": "INTERIOR"
       },
       {
         "driveFileId": "1Wa9jTfQbBuqmD8rH_k1xAgpg5DyQy25Y",
-        "alt": "The Standard Residences Midtown Miami - Lobby Lounge"
+        "alt": "LOBBY LOUNGE"
+      },
+      {
+        "driveFileId": "1YJqPC_KBu9HZc5QRgfID2gRxNTu6mjZR",
+        "alt": "LOBBY LOUNGE NIGHT"
       },
       {
         "driveFileId": "1WYHRTH3IbHGQs_15XtBbLOTm13BiZvdX",
-        "alt": "The Standard Residences Midtown Miami - Location"
+        "alt": "LOCATION"
       },
       {
         "driveFileId": "1flY0VwGjnf2yH1g8CYXjPZzvt7gDdLGU",
-        "alt": "The Standard Residences Midtown Miami - Neighborhood"
+        "alt": "NEIGHBORHOOD"
       },
       {
         "driveFileId": "1_Fk3BFk1mmp_yODuvsJknydXxRbWHJw1",
-        "alt": "The Standard Residences Midtown Miami - Pickleball"
-      },
-      {
-        "driveFileId": "1ZccwnwoDkBUd45JyCckZ8iD5EdONwuUS",
-        "alt": "The Standard Residences Midtown Miami - Pool 2"
+        "alt": "PICKLEBALL"
       },
       {
         "driveFileId": "1i6rbcf4M2ctvzL8uFbvWlWTbcOCzNYKd",
-        "alt": "The Standard Residences Midtown Miami - Pool"
-      },
-      {
-        "driveFileId": "13dWtQ0mdbr-85q878hstIztXpMfp9bwJ",
-        "alt": "The Standard Residences Midtown Miami - Rooftop Restaurant Night"
+        "alt": "POOL"
       },
       {
         "driveFileId": "1W5soC9N5MU3tc9t8GrNO2Ni2Vn9XSULU",
-        "alt": "The Standard Residences Midtown Miami - Rooftop Restaurant"
+        "alt": "ROOFTOP RESTAURANT"
+      },
+      {
+        "driveFileId": "13dWtQ0mdbr-85q878hstIztXpMfp9bwJ",
+        "alt": "ROOFTOP RESTAURANT NIGHT"
       },
       {
         "driveFileId": "1a6QJvzYQeTdB09VS803gUhAVOjIEjQio",
-        "alt": "The Standard Residences Midtown Miami - Social Club"
-      },
-      {
-        "driveFileId": "1j5lw6janj2457xC9LCq_2iLWrxO58nZy",
-        "alt": "The Standard Residences Midtown Miami - Bathroom"
+        "alt": "SOCIAL CLUB"
       },
       {
         "driveFileId": "1rDUt4-8F5tg2RccHiRSzEGbOMSS-p87E",
-        "alt": "The Standard Residences Midtown Miami - Suite Dining"
+        "alt": "STANDARD MIDTOWN_SUITE_01_08_CAM DINING"
       },
       {
         "driveFileId": "1qtUyrStmgxHtusuEXEk65EAD0102GpiO",
-        "alt": "The Standard Residences Midtown Miami - Suite Kitchen"
+        "alt": "STANDARD MIDTOWN_SUITE_01_08_CAM KITCHEN"
       },
       {
         "driveFileId": "1kBIKfJhMbvv1TpYVHgFbLv3eSn_TPeKL",
-        "alt": "The Standard Residences Midtown Miami - Suite Living Dining"
-      },
-      {
-        "driveFileId": "1Gwg3uB0M_SYvx2xrDubRIDzkullA2kCg",
-        "alt": "The Standard Residences Midtown Miami - Suite Bedroom Detail"
+        "alt": "STANDARD MIDTOWN_SUITE_01_09_CAM LIVING-DINIG"
       },
       {
         "driveFileId": "1iDIHGX2M9ZzgctmFawz2EpM9nNUsgwLu",
-        "alt": "The Standard Residences Midtown Miami - Suite Bedroom"
+        "alt": "STANDARD MIDTOWN_SUITE_01_11_CAM BEDROOM"
+      },
+      {
+        "driveFileId": "1Gwg3uB0M_SYvx2xrDubRIDzkullA2kCg",
+        "alt": "STANDARD MIDTOWN_SUITE_01_11_CAM BEDROOM DETAIL"
       },
       {
         "driveFileId": "18-fE5TmaWOzhDwrNaQcwhBdoDzhAFhEe",
-        "alt": "The Standard Residences Midtown Miami - Suite Living Corner"
-      },
-      {
-        "driveFileId": "1lx1wh5fKA48T1KOBn7DqdIW8tYyDNZym",
-        "alt": "The Standard Residences Midtown Miami - Suite Living Dining 2"
+        "alt": "STANDARD MIDTOWN_SUITE_01_11_CAM LIVING CORNER"
       },
       {
         "driveFileId": "12CGY4GtstpxW6U8t36663upMUAz61xcc",
-        "alt": "The Standard Residences Midtown Miami - Suite Section"
+        "alt": "STANDARD MIDTOWN_SUITE_SECTION_01_09_CAM SECTION"
       },
       {
         "driveFileId": "1hMe9ulgtcAIsQgj5JzUVUc6-PCHylmJf",
-        "alt": "The Standard Residences Midtown Miami - Studio Suite"
+        "alt": "STUDIO SUITE"
       },
       {
         "driveFileId": "1Xuk_gCHC30VyEFIY956EO0gcvAfGCtUq",
-        "alt": "The Standard Residences Midtown Miami - Studio Terrace"
+        "alt": "STUDIO TERRACE"
       },
       {
         "driveFileId": "1xSysgqB_Ew-jgTimS4mT9X8wnahRUK4A",
-        "alt": "The Standard Residences Midtown Miami - Terrace"
+        "alt": "TERRACE"
+      },
+      {
+        "driveFileId": "1mbJ4RaADBS8A5A-YZJoYX9AwHMwIkOVX",
+        "alt": "EXTERIOR 2"
+      },
+      {
+        "driveFileId": "15NqGqt3Ela4uhEAKzITukSPpFyzW0p7A",
+        "alt": "hero 2"
+      },
+      {
+        "driveFileId": "1QX2a6CzU3BabOnXz6PCm8HV_Fm4NrFGC",
+        "alt": "LOBBY LOUNGE 2"
+      },
+      {
+        "driveFileId": "1KkBNGAts8IuXF81IfuqM37Jfe6RknD-p",
+        "alt": "LOBBY LOUNGE NIGHT 2"
+      },
+      {
+        "driveFileId": "1ZccwnwoDkBUd45JyCckZ8iD5EdONwuUS",
+        "alt": "pool 2"
+      },
+      {
+        "driveFileId": "1lx1wh5fKA48T1KOBn7DqdIW8tYyDNZym",
+        "alt": "STANDARD MIDTOWN_SUITE_01_12_CAM LIVING-DINING 03"
+      },
+      {
+        "driveFileId": "1j5lw6janj2457xC9LCq_2iLWrxO58nZy",
+        "alt": "STANDARD MIDTOWN_BATHROOM_01_08_RC04"
       }
     ]
   },
