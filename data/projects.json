@@ -44,40 +44,40 @@
     "floorPlans": [],
     "renderings": [
       {
-        "driveFileId": "14UPRB52AqB2EnsiX2o6w9YTd0T8c6ABY",
-        "alt": "EXTERIOR 1"
-      },
-      {
-        "driveFileId": "1xjPxrkigyLCXraZLQeCLHyf-cMm0JPbi",
-        "alt": "EXTERIOR 2"
-      },
-      {
         "driveFileId": "13k5sdJAeWpOw43BRZEUg1gb-HEIscQoU",
-        "alt": "AERIAL"
+        "alt": "Anantara Residences Miami - Aerial"
       },
       {
         "driveFileId": "1aL7U4WGwG9sglqG3f2z9zT95ol4MLLQw",
-        "alt": "EXTERIOR CITY"
-      },
-      {
-        "driveFileId": "1xjcceE8CcPFBtpUEOffRYLuOPQK5YwlN",
-        "alt": "GARDEN 1"
-      },
-      {
-        "driveFileId": "1WUi4GbMTXs75xUjwccwUc9h3Rgo9M_iW",
-        "alt": "GARDEN 2"
+        "alt": "Anantara Residences Miami - Exterior City"
       },
       {
         "driveFileId": "1fFNZ8WFHBzCemeUlJHzWguHHm_X3hNPm",
-        "alt": "LOCATION"
+        "alt": "Anantara Residences Miami - Location"
       },
       {
         "driveFileId": "1dCYMA9mTF5U9NjlZd1mEhCGJIHQe-A3n",
-        "alt": "POOLS"
+        "alt": "Anantara Residences Miami - Pools"
       },
       {
         "driveFileId": "17lyyDLC2VSY-IepnvZU40uWYDy5-bMby",
-        "alt": "ROOFTOP HELIPAD"
+        "alt": "Anantara Residences Miami - Rooftop Helipad"
+      },
+      {
+        "driveFileId": "14UPRB52AqB2EnsiX2o6w9YTd0T8c6ABY",
+        "alt": "Anantara Residences Miami - Exterior 1"
+      },
+      {
+        "driveFileId": "1xjcceE8CcPFBtpUEOffRYLuOPQK5YwlN",
+        "alt": "Anantara Residences Miami - Garden 1"
+      },
+      {
+        "driveFileId": "1xjPxrkigyLCXraZLQeCLHyf-cMm0JPbi",
+        "alt": "Anantara Residences Miami - Exterior 2"
+      },
+      {
+        "driveFileId": "1WUi4GbMTXs75xUjwccwUc9h3Rgo9M_iW",
+        "alt": "Anantara Residences Miami - Garden 2"
       }
     ]
   },
