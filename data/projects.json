@@ -39,17 +39,23 @@
         "driveFileId": "1R_snEWOk4Tn2x6cGMrFS0OVYX-Qc2DH3"
       }
     ],
-    "brochures": [],
-    "factSheets": [],
+    "brochures": [
+      {
+        "title": "",
+        "driveFileId": "1LpuiccrQRU5EFOSBe1LYzKPAZrekbtzI"
+      }
+    ],
+    "factSheets": [
+      {
+        "title": "Purchaser's Guide",
+        "driveFileId": "162jC0JhniIjV922I__7eMri7BZoFP4LY"
+      }
+    ],
     "floorPlans": [],
     "renderings": [
       {
         "driveFileId": "13k5sdJAeWpOw43BRZEUg1gb-HEIscQoU",
         "alt": "Anantara Residences Miami - Aerial"
-      },
-      {
-        "driveFileId": "1aL7U4WGwG9sglqG3f2z9zT95ol4MLLQw",
-        "alt": "Anantara Residences Miami - Exterior City"
       },
       {
         "driveFileId": "1fFNZ8WFHBzCemeUlJHzWguHHm_X3hNPm",
@@ -60,12 +66,64 @@
         "alt": "Anantara Residences Miami - Pools"
       },
       {
-        "driveFileId": "17lyyDLC2VSY-IepnvZU40uWYDy5-bMby",
-        "alt": "Anantara Residences Miami - Rooftop Helipad"
+        "driveFileId": "1q11DkL6wzZj-NMs7CmU9wskrjPc4HU3_",
+        "alt": "Anantara Residences Miami Edgewater - Amenity Deck"
       },
       {
-        "driveFileId": "14UPRB52AqB2EnsiX2o6w9YTd0T8c6ABY",
-        "alt": "Anantara Residences Miami - Exterior 1"
+        "driveFileId": "1u8VD6NRml3Au66lYkfLcx0tvYkfkquES",
+        "alt": "Anantara Residences Miami Edgewater - Condo Dropoff"
+      },
+      {
+        "driveFileId": "1rA3raDpQYB1kMuwmJT-nEDHEFeZl6-x2",
+        "alt": "Anantara Residences Miami Edgewater - Exterior"
+      },
+      {
+        "driveFileId": "1P-4uzW8at6KfCu2oB-ilNChS4f-OjCTV",
+        "alt": "Anantara Residences Miami Edgewater - Garden Night"
+      },
+      {
+        "driveFileId": "1HE4xKBG9jVvkIGUPFrKRm2jq9ZfLziDU",
+        "alt": "Anantara Residences Miami Edgewater - Garden North"
+      },
+      {
+        "driveFileId": "1bPe21hAXkPj0tTnRUsQI8kRzU5OMCPJm",
+        "alt": "Anantara Residences Miami Edgewater - Garden West"
+      },
+      {
+        "driveFileId": "19kwMSvlHw5zERe5vysfB6VS-dzT7vIrf",
+        "alt": "Anantara Residences Miami Edgewater - Garden West Night"
+      },
+      {
+        "driveFileId": "1YVLM0ys0zM4Akr_JcjjosfJzIoZRkn3l",
+        "alt": "Anantara Residences Miami Edgewater - Hero"
+      },
+      {
+        "driveFileId": "1LT_pkvIsF_LsHo67LIQE0p_G9rsCOXHr",
+        "alt": "Anantara Residences Miami Edgewater - Hummingbird"
+      },
+      {
+        "driveFileId": "17jbvsaa7p510d0zRBSdsuxkQZeTVsZNg",
+        "alt": "Anantara Residences Miami Edgewater - Hummingbird Daytime"
+      },
+      {
+        "driveFileId": "1Kgw2ZrSGr1VzI7NwE6JVic5OwfWAugqM",
+        "alt": "Anantara Residences Miami Edgewater - Lobby"
+      },
+      {
+        "driveFileId": "1mjkIFTa3Sw9PLtXNFp2YlzAVPUIidIvT",
+        "alt": "Anantara Residences Miami Edgewater - Motor Court"
+      },
+      {
+        "driveFileId": "1J1tohUFp-jeuO2SES0l8oWGhwE3Yeeiu",
+        "alt": "Anantara Residences Miami Edgewater - Motorcourt"
+      },
+      {
+        "driveFileId": "1KRxAZ1zvFFEwAJguySsuMj8G_dDgy3kn",
+        "alt": "Anantara Residences Miami Edgewater - Outdoor Amenity Night"
+      },
+      {
+        "driveFileId": "1WquimpRDhIWyCOq3P3WkrXAKiTyMFN-h",
+        "alt": "Anantara Residences Miami Edgewater - Pool"
       },
       {
         "driveFileId": "1xjcceE8CcPFBtpUEOffRYLuOPQK5YwlN",
@@ -74,10 +132,6 @@
       {
         "driveFileId": "1xjPxrkigyLCXraZLQeCLHyf-cMm0JPbi",
         "alt": "Anantara Residences Miami - Exterior 2"
-      },
-      {
-        "driveFileId": "1WUi4GbMTXs75xUjwccwUc9h3Rgo9M_iW",
-        "alt": "Anantara Residences Miami - Garden 2"
       }
     ]
   },
