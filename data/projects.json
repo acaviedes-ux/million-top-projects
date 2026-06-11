@@ -1,5 +1,87 @@
 [
   {
+    "slug": "anantara-residences-miami-edgewater",
+    "name": "Anantara Residences Miami Edgewater",
+    "esqueletoName": "Anantara Residences Miami Edgewater",
+    "section": "Other Projects",
+    "isNew": true,
+    "startingPrice": "$1.8M",
+    "thumbnail": "/api/render?id=14UPRB52AqB2EnsiX2o6w9YTd0T8c6ABY",
+    "hero": "/api/render?id=14UPRB52AqB2EnsiX2o6w9YTd0T8c6ABY",
+    "projectLogo": "/images/logos/anantara-residences-miami-edgewater.png",
+    "address": "3601 Biscayne Blvd, Miami, FL 33137",
+    "developer": "One Thousand Group",
+    "architecture": "Kohn Pedersen Fox",
+    "interiorDesign": "Patricia Urquiola",
+    "completionDate": "2031",
+    "depositStructure": [
+      "10% at contract",
+      "10% 90 days after contract",
+      "10% at groundbreaking",
+      "10% at top-off",
+      "60% at closing"
+    ],
+    "brokerCommission": "6%",
+    "beds": "1-5",
+    "units": 294,
+    "stories": 50,
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Edgewater",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2031",
+    "priceList": {
+      "driveFileId": "1qni-Lv990STkewZdoEcpDAPGtt-RE5gp",
+      "createdAt": "As of June 2026"
+    },
+    "presentations": [
+      {
+        "title": "",
+        "driveFileId": "1R_snEWOk4Tn2x6cGMrFS0OVYX-Qc2DH3"
+      }
+    ],
+    "brochures": [],
+    "factSheets": [],
+    "floorPlans": [],
+    "renderings": [
+      {
+        "driveFileId": "14UPRB52AqB2EnsiX2o6w9YTd0T8c6ABY",
+        "alt": "EXTERIOR 1"
+      },
+      {
+        "driveFileId": "1xjPxrkigyLCXraZLQeCLHyf-cMm0JPbi",
+        "alt": "EXTERIOR 2"
+      },
+      {
+        "driveFileId": "13k5sdJAeWpOw43BRZEUg1gb-HEIscQoU",
+        "alt": "AERIAL"
+      },
+      {
+        "driveFileId": "1aL7U4WGwG9sglqG3f2z9zT95ol4MLLQw",
+        "alt": "EXTERIOR CITY"
+      },
+      {
+        "driveFileId": "1xjcceE8CcPFBtpUEOffRYLuOPQK5YwlN",
+        "alt": "GARDEN 1"
+      },
+      {
+        "driveFileId": "1WUi4GbMTXs75xUjwccwUc9h3Rgo9M_iW",
+        "alt": "GARDEN 2"
+      },
+      {
+        "driveFileId": "1fFNZ8WFHBzCemeUlJHyf-cMm0JPbi",
+        "alt": "LOCATION"
+      },
+      {
+        "driveFileId": "1dCYMA9mTF5U9NjlZd1mEhCGJIHQe-A3n",
+        "alt": "POOLS"
+      },
+      {
+        "driveFileId": "17lyyDLC2VSY-IepnvZU40uWYDy5-bMby",
+        "alt": "ROOFTOP HELIPAD"
+      }
+    ]
+  },
+  {
     "slug": "the-standard-residences-midtown",
     "name": "The Standard Residences Midtown Miami",
     "esqueletoName": "The Standard Residences Midtown Miami",
