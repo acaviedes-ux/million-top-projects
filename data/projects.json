@@ -3,7 +3,7 @@
     "slug": "anantara-residences-miami-edgewater",
     "name": "Anantara Residences Miami Edgewater",
     "esqueletoName": "Anantara Residences Miami Edgewater",
-    "section": "Other Projects",
+    "section": "Top Projects",
     "isNew": true,
     "startingPrice": "$1.8M",
     "thumbnail": "/api/render?id=14UPRB52AqB2EnsiX2o6w9YTd0T8c6ABY",
@@ -14,6 +14,8 @@
     "architecture": "Kohn Pedersen Fox",
     "interiorDesign": "Patricia Urquiola",
     "completionDate": "2031",
+    "theBuilding": "A 50-story, 650-foot Edgewater landmark offering 100 condominium residences, 120 resort residences, and 50 hotel suites with panoramic Biscayne Bay and Atlantic views.",
+    "stylishAmenities": "Over 130,000 square feet of Anantara-serviced amenities include a Vitality & Longevity Center, Thai-inspired gardens, pools, dining, private club spaces, and helipad access.",
     "depositStructure": [
       "10% at contract",
       "10% 90 days after contract",
