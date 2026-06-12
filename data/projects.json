@@ -2907,8 +2907,8 @@
     ],
     "priceDocs": [
       {
-        "driveFileId": "1ylQXXB6Nv1b56bjWqnvdQ8heHdMkmqKN",
-        "createdAt": "As of June 2, 2026",
+        "driveFileId": "1kWVHukRf8ww9UGyCqTzPaJWn4USvcTqu",
+        "createdAt": "As of June 12, 2026",
         "title": "888 Brickell by Dolce & Gabbana - Price List",
         "kind": "list"
       },
@@ -2919,8 +2919,8 @@
         "kind": "list"
       },
       {
-        "driveFileId": "1f0y-WnMkaBohx1taWASeTlBo-Bo2G26C",
-        "createdAt": "As of June 2, 2026",
+        "driveFileId": "1Zm5hgB5AQbtKqN9xFlHraNNILIOfAHRd",
+        "createdAt": "As of June 12, 2026",
         "title": "888 Brickell by Dolce & Gabbana - Price List - Residences",
         "kind": "list"
       },
@@ -2928,6 +2928,12 @@
         "driveFileId": "1XOciHJi3SGkctDZScOfgloyqk6GrbTb_",
         "createdAt": "As of June 5, 2026",
         "title": "888 Brickell by Dolce & Gabbana - Price Range",
+        "kind": "range"
+      },
+      {
+        "driveFileId": "1uLf2fdotixesnjhaGKRQg5c0YKxsdamq",
+        "createdAt": "As of June 12, 2026",
+        "title": "888 Brickell by Dolce & Gabbana - Price Range -",
         "kind": "range"
       }
     ]
@@ -36261,8 +36267,8 @@
     ],
     "projectLogo": "/images/logos/st-regis-residences-bahia-mar-fort-lauderdale.png",
     "priceList": {
-      "driveFileId": "1qQjmll2_E1DPM-iZbR9tEKsxzT6F08ff",
-      "createdAt": "As of May 26, 2026"
+      "driveFileId": "16OlE7eMMUzTjYKCw8I_Y2PrkbP4apXUI",
+      "createdAt": "As of June 12, 2026"
     },
     "isNew": false,
     "filterCounty": "Broward County",
@@ -49633,8 +49639,8 @@
     ],
     "projectLogo": "/images/logos/w-pompano-beach-hotel-residences.png",
     "priceList": {
-      "driveFileId": "12zTb6w33XmgSv_kqjjwdm7Y1fGaddE3b",
-      "createdAt": "As of May 26, 2026"
+      "driveFileId": "1dflXnaHhP96dyGlMfCz5ig_Jr3-GhWC-",
+      "createdAt": "As of June 12, 2026"
     },
     "isNew": false,
     "filterCounty": "Broward County",
