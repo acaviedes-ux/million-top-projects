@@ -48555,7 +48555,7 @@
     "slug": "villa-miami",
     "name": "Villa Miami",
     "esqueletoName": "Villa Miami",
-    "startingPrice": "$5.9M",
+    "startingPrice": "$5.4M",
     "thumbnail": "/images/renders/villa-miami.jpg",
     "hero": "/images/renders/villa-miami.jpg",
     "buildingDescription": "",
@@ -48580,10 +48580,10 @@
     "completionDate": "2027",
     "depositStructure": [
       "10% at contract",
-      "10% 90 days after contract",
-      "10% 6 months after second deposit",
-      "10% 6 months after third deposit",
-      "60% at closing (Q3 2027)"
+      "10% at 90 days",
+      "10% at 6 months",
+      "10% at 6 months thereafter",
+      "60% at closing"
     ],
     "parkingSpaces": [
       "2 valet parking spaces for half floor units.",
