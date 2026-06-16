@@ -48580,9 +48580,9 @@
     "completionDate": "2027",
     "depositStructure": [
       "10% at contract",
-      "10% at 90 days",
-      "10% at 6 months",
-      "10% at 6 months thereafter",
+      "10% 90 days after contract",
+      "10% 6 months after contract",
+      "10% 12 months after contract",
       "60% at closing"
     ],
     "parkingSpaces": [
