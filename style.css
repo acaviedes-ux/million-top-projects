@@ -1639,7 +1639,23 @@ img { display: block; max-width: 100%; }
    the legacy PL+PR pair. Up to 2 cards per row; odd count centers the
    trailing card (flex+wrap+justify-content:center). Every iframe in the
    grid has identical dimensions regardless of PDF aspect ratio — Drive's
-   preview viewer fits the document inside. */
+   preview viewer fits the document inside.
+
+   Breakout: the parent .project-content caps at max-width: 860px, which is
+   too narrow for 2 readable Drive iframes side-by-side. When the price-list
+   section contains a docs grid we break out to ~1400px using :has() so the
+   iframes are wide enough that the PDF inside renders at a legible size
+   without the user having to zoom. :has() is supported in all evergreen
+   browsers (Safari 15.4+, Chrome 105+, Firefox 121+); older clients fall
+   back to the cramped 860px layout, which degrades gracefully (still
+   functional, just smaller iframes). */
+.page-section#price-list:has(.pl-docs-grid) {
+  width: min(1400px, calc(100vw - 48px));
+  max-width: none;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  position: relative;
+}
 .pl-docs-grid {
   display: flex;
   flex-wrap: wrap;
@@ -1648,28 +1664,29 @@ img { display: block; max-width: 100%; }
   margin-top: 1rem;
 }
 .pl-doc-card {
-  flex: 0 0 calc(50% - 0.75rem);
+  flex: 1 1 calc(50% - 0.75rem);
+  max-width: calc(50% - 0.75rem);
   display: flex;
   flex-direction: column;
   min-width: 0;
 }
 .pl-doc-title {
-  font-size: 11px;
+  font-size: 13px;
   letter-spacing: 2px;
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: 600;
   color: var(--black);
-  margin: 0 0 0.35rem;
+  margin: 0 0 0.4rem;
 }
 .pl-doc-date {
-  font-size: 11px;
+  font-size: 12px;
   letter-spacing: 1px;
   color: var(--gray-dark);
-  margin: 0 0 0.75rem;
+  margin: 0 0 0.9rem;
 }
 .pl-doc-iframe {
   width: 100%;
-  height: 578px;
+  height: 760px;
   border: none;
   display: block;
 }
@@ -1780,9 +1797,14 @@ img { display: block; max-width: 100%; }
 
 @media (max-width: 768px) {
   /* Mobile: full-width single iframe (no point in 15% reduction at this width),
-     and stacked single-column grid for multi-doc projects. */
+     and stacked single-column grid for multi-doc projects. Also undo the
+     breakout — at mobile widths the section fits naturally inside the
+     viewport, no need to break out of project-content. */
   .pl-iframe { width: 100%; height: 408px; }
-  .pl-doc-card { flex: 0 0 100%; }
-  .pl-doc-iframe { height: 408px; }
+  .page-section#price-list:has(.pl-docs-grid) {
+    width: auto; margin-left: 0; transform: none;
+  }
+  .pl-doc-card { flex: 1 1 100%; max-width: 100%; }
+  .pl-doc-iframe { height: 520px; }
   .pl-status { font-size: 17px; letter-spacing: 3px; padding: 24px 12px; }
 }
