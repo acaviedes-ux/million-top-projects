@@ -575,14 +575,45 @@
             'cursor: pointer;' +
             'display: flex;align-items: center;justify-content: center;' +
             'z-index: 2;' +
-            'box-shadow: 0 2px 6px rgba(0,0,0,0.08);';
+            'box-shadow: 0 2px 6px rgba(0,0,0,0.08);' +
+            'transition: opacity 0.15s ease;';
           btn.addEventListener('click', function () {
             track.scrollBy({ left: dir * track.clientWidth, behavior: 'smooth' });
           });
           return btn;
         }
-        wrap.appendChild(makeArrow('‹', -1, 'left'));
-        wrap.appendChild(makeArrow('›',  1, 'right'));
+        var prevBtn = makeArrow('‹', -1, 'left');
+        var nextBtn = makeArrow('›',  1, 'right');
+        wrap.appendChild(prevBtn);
+        wrap.appendChild(nextBtn);
+
+        // Hide arrows at the ends — once the user has scrolled to the first
+        // or last card, the corresponding arrow disappears so they don't
+        // wonder why clicking it does nothing. 2px tolerance covers sub-pixel
+        // rounding from scroll-snap; without it, atEnd flickered on/off near
+        // the boundary. rAF throttle prevents layout thrashing during inertial
+        // scroll on touch.
+        function updateArrows() {
+          var atStart = track.scrollLeft <= 2;
+          var atEnd   = track.scrollLeft + track.clientWidth >= track.scrollWidth - 2;
+          prevBtn.style.display = atStart ? 'none' : 'flex';
+          nextBtn.style.display = atEnd   ? 'none' : 'flex';
+        }
+        var scrollPending = false;
+        track.addEventListener('scroll', function () {
+          if (scrollPending) return;
+          scrollPending = true;
+          requestAnimationFrame(function () {
+            updateArrows();
+            scrollPending = false;
+          });
+        });
+        // Initial state: iframes don't affect scrollWidth until they render,
+        // but the flex tracks' scrollWidth is already correct from the cards.
+        // Run once now (synchronously) and once after rAF in case fonts/iframe
+        // shells shift the measurement.
+        updateArrows();
+        requestAnimationFrame(updateArrows);
 
         return wrap;
       }
