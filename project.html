@@ -424,38 +424,87 @@
       }
 
       // Helper: build one card for the multi-doc grid (title + date + iframe).
-      // Each card renders the PDF inline via Drive's preview URL instead of
-      // showing a thumbnail with a "View PDF" link — same UX as the single-doc
-      // Case B below, just laid out side-by-side. All iframes in the grid
-      // share identical dimensions even if the source PDFs are landscape vs
-      // portrait; Drive's viewer fits the PDF inside the iframe.
-      function buildDocCard(title, driveFileId, dateLabel) {
+      // Inline-style approach: we set the critical layout properties directly
+      // on the elements via .style.cssText so this works even if the CSS file
+      // is cache-stuck on an older version (Vercel CDN, browser cache, etc.).
+      // The CSS rules in style.css still apply as a fallback / for theming.
+      function buildDocCard(title, driveFileId, dateLabel, totalDocs) {
         var card = el('div', 'pl-doc-card');
-        if (title) card.appendChild(el('h4', 'pl-doc-title', title));
-        if (dateLabel) card.appendChild(el('p', 'pl-doc-date', dateLabel));
+        // For 2+ docs: lock card to 50% (minus gap) so two fit per row.
+        // For 1 doc (shouldn't happen here, but defensive): take full width.
+        var cardWidth = totalDocs >= 2 ? 'calc(50% - 12px)' : '100%';
+        card.style.cssText =
+          'flex: 0 0 ' + cardWidth + ';' +
+          'max-width: ' + cardWidth + ';' +
+          'min-width: 0;' +
+          'display: flex;' +
+          'flex-direction: column;' +
+          'box-sizing: border-box;';
+        if (title) {
+          var titleEl = el('h4', 'pl-doc-title', title);
+          titleEl.style.cssText = 'font-size:13px;letter-spacing:2px;text-transform:uppercase;font-weight:600;color:#000;margin:0 0 6px;';
+          card.appendChild(titleEl);
+        }
+        if (dateLabel) {
+          var dateEl = el('p', 'pl-doc-date', dateLabel);
+          dateEl.style.cssText = 'font-size:12px;letter-spacing:1px;color:#666;margin:0 0 12px;';
+          card.appendChild(dateEl);
+        }
         var iframe = document.createElement('iframe');
         iframe.src = 'https://drive.google.com/file/d/' + driveFileId + '/preview';
         iframe.className = 'pl-doc-iframe';
         iframe.setAttribute('allow', 'autoplay');
         iframe.setAttribute('frameborder', '0');
+        iframe.style.cssText = 'width:100%;height:760px;border:none;display:block;';
         card.appendChild(iframe);
         return card;
       }
 
+      // Helper: stamp the breakout styles on a section element. Used by both
+      // Case 0 (priceDocs[]) and Case A (legacy PL+PR). Inline because the
+      // .page-section parent has max-width:1060px and we need to force past
+      // that regardless of which CSS revision is loaded.
+      function applyWideSectionStyles(sec) {
+        sec.classList.add('pl-section--wide');
+        sec.style.cssText =
+          'max-width: none;' +
+          'width: min(1400px, calc(100vw - 48px));' +
+          'margin-left: 50%;' +
+          'margin-right: 0;' +
+          'transform: translateX(-50%);' +
+          'position: relative;' +
+          'padding: 52px 24px;' +
+          'border-top: 1px solid #e5e5e5;' +
+          'text-align: center;';
+      }
+
+      // Helper: stamp grid container styles inline.
+      function applyDocsGridStyles(grid) {
+        grid.style.cssText =
+          'display: flex;' +
+          'flex-wrap: wrap;' +
+          'gap: 24px;' +
+          'justify-content: center;' +
+          'margin-top: 1rem;' +
+          'width: 100%;' +
+          'box-sizing: border-box;';
+      }
+
       // ── Case 0: NEW priceDocs[] schema — N iframes in a 2-up grid ──
-      // Used by projects with 2+ docs (e.g. 888 Brickell with PL/Penthouse/
-      // Residences/Range; Mandarin Oriental Miami with PL/NT/ST). We add
-      // the `pl-section--wide` class on the section itself so CSS can
-      // break it out of the 860px content cap WITHOUT relying on :has().
+      // Layout is forced via inline styles (see helpers above) so we don't
+      // depend on the CSS file being the latest revision — the live deploy
+      // works even mid-cache-warmup.
       if (hasDocs) {
         var sec = makeSection('price-list');
-        sec.classList.add('pl-section--wide');
+        applyWideSectionStyles(sec);
         sec.appendChild(sectionHeading('PRICE LIST / PRICE RANGE'));
         appendDisclaimer(sec);
 
         var grid = el('div', 'pl-docs-grid');
+        applyDocsGridStyles(grid);
+        var n = d.priceDocs.length;
         d.priceDocs.forEach(function (doc) {
-          grid.appendChild(buildDocCard(doc.title || 'PRICE LIST', doc.driveFileId, doc.createdAt));
+          grid.appendChild(buildDocCard(doc.title || 'PRICE LIST', doc.driveFileId, doc.createdAt, n));
         });
         sec.appendChild(grid);
         frag.appendChild(sec);
@@ -465,13 +514,14 @@
       // ── Case A: legacy PL + PR — same 2-up grid as Case 0 ──
       if (hasPL && hasPR) {
         var sec = makeSection('price-list');
-        sec.classList.add('pl-section--wide');
+        applyWideSectionStyles(sec);
         sec.appendChild(sectionHeading('PRICE LIST / PRICE RANGE'));
         appendDisclaimer(sec);
 
         var grid = el('div', 'pl-docs-grid');
-        grid.appendChild(buildDocCard('PRICE LIST',  d.priceList.driveFileId,  d.priceList.createdAt));
-        grid.appendChild(buildDocCard('PRICE RANGE', d.priceRange.driveFileId, d.priceRange.createdAt));
+        applyDocsGridStyles(grid);
+        grid.appendChild(buildDocCard('PRICE LIST',  d.priceList.driveFileId,  d.priceList.createdAt, 2));
+        grid.appendChild(buildDocCard('PRICE RANGE', d.priceRange.driveFileId, d.priceRange.createdAt, 2));
         sec.appendChild(grid);
         frag.appendChild(sec);
         return;
