@@ -428,10 +428,12 @@
       // on the elements via .style.cssText so this works even if the CSS file
       // is cache-stuck on an older version (Vercel CDN, browser cache, etc.).
       // The CSS rules in style.css still apply as a fallback / for theming.
-      // Inline styles win over CSS rules, but we still need mobile to stack.
-      // matchMedia gives us the breakpoint at JS time. The price-list section
-      // renders once per page load, so we read this once at the top.
-      var isMobile = window.matchMedia('(max-width: 768px)').matches;
+      // Inline styles win over CSS rules, but we still need narrow viewports
+      // to use the carousel instead of the 2-up grid. Threshold is 1024px
+      // (was 768px — narrower viewports between 769-1023px still don't have
+      // room for two readable PDF iframes side-by-side). window.innerWidth
+      // is more reliable than matchMedia for some Safari-on-iOS edge cases.
+      var isMobile = (window.innerWidth || document.documentElement.clientWidth) <= 1024;
 
       function buildDocCard(title, driveFileId, dateLabel, totalDocs) {
         var card = el('div', 'pl-doc-card');
@@ -442,14 +444,14 @@
         //   - Desktop multi-doc → aspect-ratio 5/4 (height ~80% of width).
         //     Trying square (1/1) made cards too tall and dominated the
         //     page; 5/4 is 20% shorter while staying landscape-ish.
-        //   - Mobile multi-doc → fixed 520px height (carousel mode renders
-        //     one card at full width, so we want a comfortable reading
-        //     height like single-doc).
+        //   - Mobile multi-doc → carousel mode shows one card at full
+        //     width. Match the single-doc-mobile size (~520px tall) so
+        //     each swipeable card reads the same as a single-doc page.
         //   - Single doc (legacy path) → fixed pixel height.
         var iframeSizing;
         if (totalDocs >= 2 && !isMobile) iframeSizing = 'width:100%;aspect-ratio:5/4;';
         else if (totalDocs >= 2)         iframeSizing = 'width:100%;height:520px;';
-        else                              iframeSizing = 'width:100%;height:' + (isMobile ? '520px' : '760px') + ';';
+        else                              iframeSizing = 'width:100%;height:' + (isMobile ? '408px' : '760px') + ';';
         card.style.cssText =
           'flex: 0 0 ' + cardWidth + ';' +
           'max-width: ' + cardWidth + ';' +
