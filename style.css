@@ -1624,12 +1624,54 @@ img { display: block; max-width: 100%; }
 }
 
 /* ── Price List section ──────────────────────────────────── */
+/* Single-doc iframe — reduced 15% in both axes vs the pre-2026-06 layout
+   (was 100% × 680px). Centered horizontally so the section header line and
+   the iframe align on a vertical axis. */
 .pl-iframe {
-  width: 100%;
-  height: 680px;
+  width: 85%;
+  height: 578px;
   border: none;
   display: block;
+  margin: 1rem auto 0;
+}
+
+/* Multi-doc grid — used when a project has priceDocs[] (2+ documents) or
+   the legacy PL+PR pair. Up to 2 cards per row; odd count centers the
+   trailing card (flex+wrap+justify-content:center). Every iframe in the
+   grid has identical dimensions regardless of PDF aspect ratio — Drive's
+   preview viewer fits the document inside. */
+.pl-docs-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
   margin-top: 1rem;
+}
+.pl-doc-card {
+  flex: 0 0 calc(50% - 0.75rem);
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+.pl-doc-title {
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: var(--black);
+  margin: 0 0 0.35rem;
+}
+.pl-doc-date {
+  font-size: 11px;
+  letter-spacing: 1px;
+  color: var(--gray-dark);
+  margin: 0 0 0.75rem;
+}
+.pl-doc-iframe {
+  width: 100%;
+  height: 578px;
+  border: none;
+  display: block;
 }
 
 .pl-date {
@@ -1737,6 +1779,10 @@ img { display: block; max-width: 100%; }
 }
 
 @media (max-width: 768px) {
-  .pl-iframe { height: 480px; }
+  /* Mobile: full-width single iframe (no point in 15% reduction at this width),
+     and stacked single-column grid for multi-doc projects. */
+  .pl-iframe { width: 100%; height: 408px; }
+  .pl-doc-card { flex: 0 0 100%; }
+  .pl-doc-iframe { height: 408px; }
   .pl-status { font-size: 17px; letter-spacing: 3px; padding: 24px 12px; }
 }

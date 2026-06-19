@@ -423,63 +423,52 @@
         sec.appendChild(disc);
       }
 
-      // Helper: wrap a doc list in the carousel UI with prev/next buttons.
-      // Pulled out so both the new priceDocs[] path and the legacy Case A can
-      // share the same arrow-button logic without copy-paste.
-      function buildCarousel(list) {
-        var wrap = el('div', 'doc-carousel-wrap');
-        wrap.classList.add('has-carousel');
-        wrap.appendChild(list);
-        var prevBtn = el('button', 'doc-carousel-btn doc-carousel-btn--prev');
-        prevBtn.textContent = '‹';
-        prevBtn.setAttribute('type', 'button');
-        prevBtn.setAttribute('aria-label', 'Previous');
-        prevBtn.addEventListener('click', function () {
-          var card = list.querySelector('.doc-item');
-          list.scrollBy({ left: -(card ? card.offsetWidth + 16 : list.offsetWidth * 0.8), behavior: 'smooth' });
-        });
-        var nextBtn = el('button', 'doc-carousel-btn doc-carousel-btn--next');
-        nextBtn.textContent = '›';
-        nextBtn.setAttribute('type', 'button');
-        nextBtn.setAttribute('aria-label', 'Next');
-        nextBtn.addEventListener('click', function () {
-          var card = list.querySelector('.doc-item');
-          list.scrollBy({ left: card ? card.offsetWidth + 16 : list.offsetWidth * 0.8, behavior: 'smooth' });
-        });
-        wrap.appendChild(prevBtn);
-        wrap.appendChild(nextBtn);
-        return wrap;
+      // Helper: build one card for the multi-doc grid (title + date + iframe).
+      // Each card renders the PDF inline via Drive's preview URL instead of
+      // showing a thumbnail with a "View PDF" link — same UX as the single-doc
+      // Case B below, just laid out side-by-side. All iframes in the grid
+      // share identical dimensions even if the source PDFs are landscape vs
+      // portrait; Drive's viewer fits the PDF inside the iframe.
+      function buildDocCard(title, driveFileId, dateLabel) {
+        var card = el('div', 'pl-doc-card');
+        if (title) card.appendChild(el('h4', 'pl-doc-title', title));
+        if (dateLabel) card.appendChild(el('p', 'pl-doc-date', dateLabel));
+        var iframe = document.createElement('iframe');
+        iframe.src = 'https://drive.google.com/file/d/' + driveFileId + '/preview';
+        iframe.className = 'pl-doc-iframe';
+        iframe.setAttribute('allow', 'autoplay');
+        iframe.setAttribute('frameborder', '0');
+        card.appendChild(iframe);
+        return card;
       }
 
-      // ── Case 0: NEW priceDocs[] schema — N cards in a carousel ──
+      // ── Case 0: NEW priceDocs[] schema — N iframes in a 2-up grid ──
       // Used by projects with 2+ docs (e.g. 888 Brickell with PL/Penthouse/
-      // Residences/Range; Mandarin Oriental Miami with PL/NT/ST). The seed
-      // script writes priceDocs[] only when N>=2; single-doc projects keep
-      // the legacy priceList/priceRange shape, handled below.
+      // Residences/Range; Mandarin Oriental Miami with PL/NT/ST).
       if (hasDocs) {
         var sec = makeSection('price-list');
         sec.appendChild(sectionHeading('PRICE LIST / PRICE RANGE'));
         appendDisclaimer(sec);
 
-        var list = el('div', 'doc-list');
+        var grid = el('div', 'pl-docs-grid');
         d.priceDocs.forEach(function (doc) {
-          list.appendChild(docItem(doc.title || 'PRICE LIST', doc.driveFileId, doc.createdAt));
+          grid.appendChild(buildDocCard(doc.title || 'PRICE LIST', doc.driveFileId, doc.createdAt));
         });
-        sec.appendChild(buildCarousel(list));
+        sec.appendChild(grid);
         frag.appendChild(sec);
         return;
       }
 
-      // ── Case A: both legacy docs — side-by-side cards + mobile carousel ──
+      // ── Case A: legacy PL + PR — same 2-up grid as Case 0 ──
       if (hasPL && hasPR) {
         var sec = makeSection('price-list');
         sec.appendChild(sectionHeading('PRICE LIST / PRICE RANGE'));
         appendDisclaimer(sec);
 
-        var list = el('div', 'doc-list');
-        list.appendChild(docItem('PRICE LIST',  d.priceList.driveFileId,  d.priceList.createdAt));
-        list.appendChild(docItem('PRICE RANGE', d.priceRange.driveFileId, d.priceRange.createdAt));
-        sec.appendChild(buildCarousel(list));
+        var grid = el('div', 'pl-docs-grid');
+        grid.appendChild(buildDocCard('PRICE LIST',  d.priceList.driveFileId,  d.priceList.createdAt));
+        grid.appendChild(buildDocCard('PRICE RANGE', d.priceRange.driveFileId, d.priceRange.createdAt));
+        sec.appendChild(grid);
         frag.appendChild(sec);
         return;
       }
