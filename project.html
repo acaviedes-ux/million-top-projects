@@ -428,11 +428,17 @@
       // on the elements via .style.cssText so this works even if the CSS file
       // is cache-stuck on an older version (Vercel CDN, browser cache, etc.).
       // The CSS rules in style.css still apply as a fallback / for theming.
+      // Inline styles win over CSS rules, but we still need mobile to stack.
+      // matchMedia gives us the breakpoint at JS time. The price-list section
+      // renders once per page load, so we read this once at the top.
+      var isMobile = window.matchMedia('(max-width: 768px)').matches;
+
       function buildDocCard(title, driveFileId, dateLabel, totalDocs) {
         var card = el('div', 'pl-doc-card');
-        // For 2+ docs: lock card to 50% (minus gap) so two fit per row.
-        // For 1 doc (shouldn't happen here, but defensive): take full width.
-        var cardWidth = totalDocs >= 2 ? 'calc(50% - 12px)' : '100%';
+        // Desktop with 2+ docs: lock card to 50% (minus gap) so two fit per
+        // row. Mobile or 1 doc: 100% so it stacks/fills.
+        var cardWidth = (!isMobile && totalDocs >= 2) ? 'calc(50% - 12px)' : '100%';
+        var iframeHeight = isMobile ? '520px' : '760px';
         card.style.cssText =
           'flex: 0 0 ' + cardWidth + ';' +
           'max-width: ' + cardWidth + ';' +
@@ -455,7 +461,7 @@
         iframe.className = 'pl-doc-iframe';
         iframe.setAttribute('allow', 'autoplay');
         iframe.setAttribute('frameborder', '0');
-        iframe.style.cssText = 'width:100%;height:760px;border:none;display:block;';
+        iframe.style.cssText = 'width:100%;height:' + iframeHeight + ';border:none;display:block;';
         card.appendChild(iframe);
         return card;
       }
@@ -464,18 +470,25 @@
       // Case 0 (priceDocs[]) and Case A (legacy PL+PR). Inline because the
       // .page-section parent has max-width:1060px and we need to force past
       // that regardless of which CSS revision is loaded.
+      // On mobile we skip the breakout (the viewport is narrow enough that
+      // the default section width is fine; the transform would only cause
+      // a horizontal-scroll glitch).
       function applyWideSectionStyles(sec) {
         sec.classList.add('pl-section--wide');
-        sec.style.cssText =
-          'max-width: none;' +
-          'width: min(1400px, calc(100vw - 48px));' +
-          'margin-left: 50%;' +
-          'margin-right: 0;' +
-          'transform: translateX(-50%);' +
-          'position: relative;' +
-          'padding: 52px 24px;' +
-          'border-top: 1px solid #e5e5e5;' +
-          'text-align: center;';
+        if (isMobile) {
+          sec.style.cssText = 'padding: 52px 16px;border-top: 1px solid #e5e5e5;text-align: center;';
+        } else {
+          sec.style.cssText =
+            'max-width: none;' +
+            'width: min(1400px, calc(100vw - 48px));' +
+            'margin-left: 50%;' +
+            'margin-right: 0;' +
+            'transform: translateX(-50%);' +
+            'position: relative;' +
+            'padding: 52px 24px;' +
+            'border-top: 1px solid #e5e5e5;' +
+            'text-align: center;';
+        }
       }
 
       // Helper: stamp grid container styles inline.
