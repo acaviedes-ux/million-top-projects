@@ -1643,18 +1643,19 @@ img { display: block; max-width: 100%; }
    grid has identical dimensions regardless of PDF aspect ratio — Drive's
    preview viewer fits the document inside.
 
-   Breakout: the parent .project-content caps at max-width: 860px, which is
-   too narrow for 2 readable Drive iframes side-by-side. When the price-list
-   section contains a docs grid we break out to ~1400px using :has() so the
-   iframes are wide enough that the PDF inside renders at a legible size
-   without the user having to zoom. :has() is supported in all evergreen
-   browsers (Safari 15.4+, Chrome 105+, Firefox 121+); older clients fall
-   back to the cramped 860px layout, which degrades gracefully (still
-   functional, just smaller iframes). */
-.page-section#price-list:has(.pl-docs-grid) {
+   Breakout: .page-section caps at max-width: 1060px, which leaves room
+   for two iframes but Drive's viewer forces a minimum readable width per
+   iframe and squeezes them awkwardly. The .pl-section--wide class added
+   by the renderer (project.html) signals "I have a grid, give me room".
+   We grow to ~1400px or 100vw minus a small gutter, whichever is smaller.
+   The classic centering trick — margin-left: 50% + transform: translateX(-50%)
+   — works even when the parent has a smaller max-width because the
+   transform takes the element out of the normal flow's width contract. */
+.page-section.pl-section--wide {
+  max-width: none !important;
   width: min(1400px, calc(100vw - 48px));
-  max-width: none;
-  margin-left: 50%;
+  margin-left: 50% !important;
+  margin-right: 0 !important;
   transform: translateX(-50%);
   position: relative;
 }
@@ -1803,8 +1804,8 @@ img { display: block; max-width: 100%; }
      breakout — at mobile widths the section fits naturally inside the
      viewport, no need to break out of project-content. */
   .pl-iframe { width: 100%; height: 408px; }
-  .page-section#price-list:has(.pl-docs-grid) {
-    width: auto; margin-left: 0; transform: none;
+  .page-section.pl-section--wide {
+    width: auto; margin-left: auto !important; margin-right: auto !important; transform: none;
   }
   .pl-doc-card { flex: 1 1 100%; max-width: 100%; }
   .pl-doc-iframe { height: 520px; }

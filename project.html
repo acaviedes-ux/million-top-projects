@@ -444,9 +444,12 @@
 
       // ── Case 0: NEW priceDocs[] schema — N iframes in a 2-up grid ──
       // Used by projects with 2+ docs (e.g. 888 Brickell with PL/Penthouse/
-      // Residences/Range; Mandarin Oriental Miami with PL/NT/ST).
+      // Residences/Range; Mandarin Oriental Miami with PL/NT/ST). We add
+      // the `pl-section--wide` class on the section itself so CSS can
+      // break it out of the 860px content cap WITHOUT relying on :has().
       if (hasDocs) {
         var sec = makeSection('price-list');
+        sec.classList.add('pl-section--wide');
         sec.appendChild(sectionHeading('PRICE LIST / PRICE RANGE'));
         appendDisclaimer(sec);
 
@@ -462,6 +465,7 @@
       // ── Case A: legacy PL + PR — same 2-up grid as Case 0 ──
       if (hasPL && hasPR) {
         var sec = makeSection('price-list');
+        sec.classList.add('pl-section--wide');
         sec.appendChild(sectionHeading('PRICE LIST / PRICE RANGE'));
         appendDisclaimer(sec);
 
