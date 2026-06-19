@@ -438,7 +438,16 @@
         // Desktop with 2+ docs: lock card to 50% (minus gap) so two fit per
         // row. Mobile or 1 doc: 100% so it stacks/fills.
         var cardWidth = (!isMobile && totalDocs >= 2) ? 'calc(50% - 12px)' : '100%';
-        var iframeHeight = isMobile ? '520px' : '760px';
+        // Iframe sizing:
+        //   - Desktop multi-doc → square (aspect-ratio 1/1). Height tracks
+        //     width so the row stays compact instead of dominating the page.
+        //   - Mobile multi-doc → fixed 520px height; a square on a ~360px-
+        //     wide phone would be too small to read the PDF.
+        //   - Single doc (only legacy path through this helper) → fixed.
+        var iframeSizing;
+        if (totalDocs >= 2 && !isMobile) iframeSizing = 'width:100%;aspect-ratio:1/1;';
+        else if (totalDocs >= 2)         iframeSizing = 'width:100%;height:520px;';
+        else                              iframeSizing = 'width:100%;height:' + (isMobile ? '520px' : '760px') + ';';
         card.style.cssText =
           'flex: 0 0 ' + cardWidth + ';' +
           'max-width: ' + cardWidth + ';' +
@@ -461,7 +470,7 @@
         iframe.className = 'pl-doc-iframe';
         iframe.setAttribute('allow', 'autoplay');
         iframe.setAttribute('frameborder', '0');
-        iframe.style.cssText = 'width:100%;height:' + iframeHeight + ';border:none;display:block;';
+        iframe.style.cssText = iframeSizing + 'border:none;display:block;';
         card.appendChild(iframe);
         return card;
       }
