@@ -439,13 +439,15 @@
         // row. Mobile or 1 doc: 100% so it stacks/fills.
         var cardWidth = (!isMobile && totalDocs >= 2) ? 'calc(50% - 12px)' : '100%';
         // Iframe sizing:
-        //   - Desktop multi-doc → square (aspect-ratio 1/1). Height tracks
-        //     width so the row stays compact instead of dominating the page.
-        //   - Mobile multi-doc → fixed 520px height; a square on a ~360px-
-        //     wide phone would be too small to read the PDF.
-        //   - Single doc (only legacy path through this helper) → fixed.
+        //   - Desktop multi-doc → aspect-ratio 5/4 (height ~80% of width).
+        //     Trying square (1/1) made cards too tall and dominated the
+        //     page; 5/4 is 20% shorter while staying landscape-ish.
+        //   - Mobile multi-doc → fixed 520px height (carousel mode renders
+        //     one card at full width, so we want a comfortable reading
+        //     height like single-doc).
+        //   - Single doc (legacy path) → fixed pixel height.
         var iframeSizing;
-        if (totalDocs >= 2 && !isMobile) iframeSizing = 'width:100%;aspect-ratio:1/1;';
+        if (totalDocs >= 2 && !isMobile) iframeSizing = 'width:100%;aspect-ratio:5/4;';
         else if (totalDocs >= 2)         iframeSizing = 'width:100%;height:520px;';
         else                              iframeSizing = 'width:100%;height:' + (isMobile ? '520px' : '760px') + ';';
         card.style.cssText =
@@ -500,51 +502,122 @@
         }
       }
 
-      // Helper: stamp grid container styles inline.
-      function applyDocsGridStyles(grid) {
-        grid.style.cssText =
+      // Helper: build the docs container.
+      //   Desktop → flex grid (wrap, gap, centered) — multiple cards visible
+      //     at once, max 2 per row enforced by card max-width: calc(50%-12px)
+      //   Mobile  → horizontal scroll carousel with snap points + prev/next
+      //     arrows. Only one card visible at a time; user swipes or taps
+      //     arrows to advance. This mirrors the renderings carousel pattern.
+      // Returns the OUTER wrapper to be appended to the section (the carousel
+      // version wraps the track in a positioned container so buttons can sit
+      // absolutely over the edges).
+      function buildDocsContainer(docs, buildCard, fallbackTitlePair) {
+        if (!isMobile || docs.length < 2) {
+          // Desktop OR single-doc-collapsed-here → simple grid
+          var grid = el('div', 'pl-docs-grid');
+          grid.style.cssText =
+            'display: flex;flex-wrap: wrap;gap: 24px;justify-content: center;' +
+            'margin-top: 1rem;width: 100%;box-sizing: border-box;';
+          docs.forEach(function (cardData, i) {
+            grid.appendChild(buildCard(cardData, docs.length, i));
+          });
+          return grid;
+        }
+
+        // Mobile multi-doc → carousel
+        var wrap = el('div', 'pl-docs-carousel-wrap');
+        wrap.style.cssText = 'position: relative;margin-top: 1rem;width: 100%;';
+
+        var track = el('div', 'pl-docs-carousel-track');
+        track.style.cssText =
           'display: flex;' +
-          'flex-wrap: wrap;' +
-          'gap: 24px;' +
-          'justify-content: center;' +
-          'margin-top: 1rem;' +
-          'width: 100%;' +
-          'box-sizing: border-box;';
+          'gap: 16px;' +
+          'overflow-x: auto;' +
+          'scroll-snap-type: x mandatory;' +
+          '-webkit-overflow-scrolling: touch;' +
+          'scrollbar-width: none;' +
+          'padding-bottom: 4px;';
+        // Hide scrollbar in WebKit (added below as a one-off style tag for
+        // ::-webkit-scrollbar pseudo-element since cssText can't set it)
+        track.setAttribute('data-no-scrollbar', '1');
+
+        docs.forEach(function (cardData, i) {
+          var card = buildCard(cardData, docs.length, i);
+          // Override the card width set by buildCard — in carousel mode each
+          // card must fill the viewport (100% width with snap-align).
+          card.style.flex      = '0 0 100%';
+          card.style.maxWidth  = '100%';
+          card.style.scrollSnapAlign = 'start';
+          track.appendChild(card);
+        });
+        wrap.appendChild(track);
+
+        // Prev / next arrows — absolute over the edges, paginate one card
+        // at a time using scrollBy by the track's client width.
+        function makeArrow(label, dir, leftOrRight) {
+          var btn = el('button', 'pl-carousel-arrow pl-carousel-arrow--' + leftOrRight);
+          btn.textContent = label;
+          btn.setAttribute('type', 'button');
+          btn.setAttribute('aria-label', leftOrRight === 'left' ? 'Previous' : 'Next');
+          btn.style.cssText =
+            'position: absolute;' +
+            'top: 50%;' +
+            'transform: translateY(-50%);' +
+            (leftOrRight === 'left' ? 'left: -4px;' : 'right: -4px;') +
+            'width: 38px;height: 38px;' +
+            'border-radius: 50%;' +
+            'border: 1px solid rgba(0,0,0,0.15);' +
+            'background: rgba(255,255,255,0.92);' +
+            'color: #000;' +
+            'font-size: 20px;line-height: 1;' +
+            'cursor: pointer;' +
+            'display: flex;align-items: center;justify-content: center;' +
+            'z-index: 2;' +
+            'box-shadow: 0 2px 6px rgba(0,0,0,0.08);';
+          btn.addEventListener('click', function () {
+            track.scrollBy({ left: dir * track.clientWidth, behavior: 'smooth' });
+          });
+          return btn;
+        }
+        wrap.appendChild(makeArrow('‹', -1, 'left'));
+        wrap.appendChild(makeArrow('›',  1, 'right'));
+
+        return wrap;
       }
 
-      // ── Case 0: NEW priceDocs[] schema — N iframes in a 2-up grid ──
-      // Layout is forced via inline styles (see helpers above) so we don't
-      // depend on the CSS file being the latest revision — the live deploy
-      // works even mid-cache-warmup.
+      // ── Case 0: NEW priceDocs[] schema — N iframes ──
+      // Layout adapts to viewport (see buildDocsContainer):
+      //   desktop → flex grid (max 2 per row)
+      //   mobile  → swipeable carousel with prev/next arrows
       if (hasDocs) {
         var sec = makeSection('price-list');
         applyWideSectionStyles(sec);
         sec.appendChild(sectionHeading('PRICE LIST / PRICE RANGE'));
         appendDisclaimer(sec);
 
-        var grid = el('div', 'pl-docs-grid');
-        applyDocsGridStyles(grid);
-        var n = d.priceDocs.length;
-        d.priceDocs.forEach(function (doc) {
-          grid.appendChild(buildDocCard(doc.title || 'PRICE LIST', doc.driveFileId, doc.createdAt, n));
+        var container = buildDocsContainer(d.priceDocs, function (doc, total) {
+          return buildDocCard(doc.title || 'PRICE LIST', doc.driveFileId, doc.createdAt, total);
         });
-        sec.appendChild(grid);
+        sec.appendChild(container);
         frag.appendChild(sec);
         return;
       }
 
-      // ── Case A: legacy PL + PR — same 2-up grid as Case 0 ──
+      // ── Case A: legacy PL + PR — same grid/carousel as Case 0 ──
       if (hasPL && hasPR) {
         var sec = makeSection('price-list');
         applyWideSectionStyles(sec);
         sec.appendChild(sectionHeading('PRICE LIST / PRICE RANGE'));
         appendDisclaimer(sec);
 
-        var grid = el('div', 'pl-docs-grid');
-        applyDocsGridStyles(grid);
-        grid.appendChild(buildDocCard('PRICE LIST',  d.priceList.driveFileId,  d.priceList.createdAt, 2));
-        grid.appendChild(buildDocCard('PRICE RANGE', d.priceRange.driveFileId, d.priceRange.createdAt, 2));
-        sec.appendChild(grid);
+        var legacyDocs = [
+          { title: 'PRICE LIST',  driveFileId: d.priceList.driveFileId,  createdAt: d.priceList.createdAt  },
+          { title: 'PRICE RANGE', driveFileId: d.priceRange.driveFileId, createdAt: d.priceRange.createdAt },
+        ];
+        var container = buildDocsContainer(legacyDocs, function (doc, total) {
+          return buildDocCard(doc.title, doc.driveFileId, doc.createdAt, total);
+        });
+        sec.appendChild(container);
         frag.appendChild(sec);
         return;
       }
