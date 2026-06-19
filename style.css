@@ -1624,12 +1624,14 @@ img { display: block; max-width: 100%; }
 }
 
 /* ── Price List section ──────────────────────────────────── */
-/* Single-doc iframe — reduced 15% in both axes vs the pre-2026-06 layout
-   (was 100% × 680px). Centered horizontally so the section header line and
-   the iframe align on a vertical axis. */
+/* Single-doc iframe — sized ~65% of the parent for a compact, centered
+   look. Pre-2026-06 was 100% × 680px (too imposing for one document);
+   first revision 85% × 578px; current 65% × 520px reads "framed document"
+   instead of "page-dominating embed". The narrower the iframe, the smaller
+   the PDF renders inside, so 520px height keeps the proportions natural. */
 .pl-iframe {
-  width: 85%;
-  height: 578px;
+  width: 65%;
+  height: 520px;
   border: none;
   display: block;
   margin: 1rem auto 0;
