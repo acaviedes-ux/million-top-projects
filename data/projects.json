@@ -1176,8 +1176,8 @@
         "kind": "list"
       },
       {
-        "driveFileId": "1QhGBheUsvAqRRw6MFxyV8e1jsG-jpZAD",
-        "createdAt": "As of May 26, 2026",
+        "driveFileId": "1jqNTecohlWX4I_wwE7Lry3iFIMU9Dt5G",
+        "createdAt": "As of June 22, 2026",
         "title": "3000 Waterside Fort Lauderdale - Price Range",
         "kind": "range"
       }
@@ -5726,8 +5726,8 @@
     ],
     "projectLogo": "/images/logos/aria-reserve.png",
     "priceList": {
-      "driveFileId": "1sMX9eeFhE03ftwrpiKphGccMpuF9lUgs",
-      "createdAt": "As of June 1, 2026"
+      "driveFileId": "1DykeSe0Onwyb3efXsrCrlef9jIJKMbIx",
+      "createdAt": "As of June 22, 2026"
     },
     "isNew": false,
     "filterCounty": "Miami-Dade County",
@@ -9422,7 +9422,11 @@
         "driveFileId": "13JiRvEeWHNKkQvupiXo64HKnyBL4WO2a",
         "createdAt": "As of May 26, 2026",
         "title": "Bentley Residences Sunny Isles - Price List",
-        "kind": "list"
+        "kind": "list",
+        "disclaimer": {
+          "type": "warning",
+          "text": "Do not share the Price List or specific prices with clients. Price List for reference only. Share price ranges only."
+        }
       },
       {
         "driveFileId": "1m40jHg7l7Xt5D2nLIxb0B7siKf-J56QT",
@@ -9430,13 +9434,7 @@
         "title": "Bentley Residences Sunny Isles - Price Range",
         "kind": "range"
       }
-    ],
-    "priceList": {
-      "disclaimer": {
-        "type": "warning",
-        "text": "Do not share the Price List or specific prices with clients. Price List for reference only. Share price ranges only."
-      }
-    }
+    ]
   },
   {
     "slug": "biltmore-row",
@@ -13278,7 +13276,11 @@
     "filterYear": "2029",
     "priceRange": {
       "driveFileId": "1A9odn2TDL5SfpLONtdnYSXi-mTLsadFU",
-      "createdAt": "As of June 5, 2026"
+      "createdAt": "As of June 5, 2026",
+      "disclaimer": {
+        "type": "warning",
+        "text": "Do not share the Price List, specific prices, or Floor Plans with clients. All pricing information and Floor Plans are for reference only and may be subject to change during the pre-launch phase. Share price ranges only and verify all information with the in-house team before presenting it to clients."
+      }
     },
     "factSheets": [
       {
@@ -13349,13 +13351,7 @@
         "alt": "Edge Worth - 6"
       }
     ],
-    "floorPlans": [],
-    "priceList": {
-      "disclaimer": {
-        "type": "warning",
-        "text": "Do not share the Price List, specific prices, or Floor Plans with clients. All pricing information and Floor Plans are for reference only and may be subject to change during the pre-launch phase. Share price ranges only and verify all information with the in-house team before presenting it to clients."
-      }
-    }
+    "floorPlans": []
   },
   {
     "slug": "edition-residences-edgewater",
@@ -35995,8 +35991,8 @@
     ],
     "projectLogo": "/images/logos/south-flagler-house.png",
     "priceList": {
-      "driveFileId": "1JNABD7xE7fUPRqoGA1KT_DLk9uu-SNKy",
-      "createdAt": "As of May 26, 2026"
+      "driveFileId": "1NazOJXa-rj9jsmXspIiWISxRRtvBcemg",
+      "createdAt": "As of June 22, 2026"
     },
     "isNew": false,
     "filterCounty": "Palm Beach County",
@@ -42159,20 +42155,20 @@
     ],
     "priceDocs": [
       {
-        "driveFileId": "1KSGAF4QL160wEEz87gNxiDht7oZvCgm8",
-        "createdAt": "As of May 26, 2026",
+        "driveFileId": "1NysocfKXfOPNScxoikGzmvgx17eBPT06",
+        "createdAt": "As of June 22, 2026",
         "title": "The Residences at Mandarin Oriental, Miami - Price List",
         "kind": "list"
       },
       {
-        "driveFileId": "1N6ljnRJ4ABPcwfXbNo4mF-Lp6rS75Fq3",
-        "createdAt": "As of May 26, 2026",
+        "driveFileId": "1S0XCRzQY5uqAsqHSejxBUd29PEtX-8Im",
+        "createdAt": "As of June 22, 2026",
         "title": "The Residences at Mandarin Oriental, Miami - Price List - NT",
         "kind": "list"
       },
       {
-        "driveFileId": "1DpbkA2f29-mj7ZX2lwboODabZNRv4_U1",
-        "createdAt": "As of May 26, 2026",
+        "driveFileId": "1ejjEAyyq7Wa6ORgL__Q70hUhrFAl2jbG",
+        "createdAt": "As of June 22, 2026",
         "title": "The Residences at Mandarin Oriental, Miami - Price List - ST",
         "kind": "list"
       }
@@ -46480,12 +46476,6 @@
       }
     ],
     "projectLogo": "/images/logos/the-well-coconut-grove.png",
-    "priceList": {
-      "disclaimer": {
-        "type": "warning",
-        "text": "Do not share the complete Price List with clients. Price List for reference only. Share only the Price Range, or specific available units based on the client's search criteria, such as bedroom count, budget, or preferred layout."
-      }
-    },
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Coconut Grove",
@@ -46743,7 +46733,11 @@
         "driveFileId": "15_X3Peh5MjSGbipt42zMmaWKkYeJwHLM",
         "createdAt": "As of June 4, 2026",
         "title": "The Well Coconut Grove - Price List",
-        "kind": "list"
+        "kind": "list",
+        "disclaimer": {
+          "type": "warning",
+          "text": "Do not share the complete Price List with clients. Price List for reference only. Share only the Price Range, or specific available units based on the client's search criteria, such as bedroom count, budget, or preferred layout."
+        }
       },
       {
         "driveFileId": "1BAOvGYgAcY_nQSB4QxgsX3nQEcMQ3trB",
