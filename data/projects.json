@@ -13401,10 +13401,6 @@
       }
     ],
     "projectLogo": "/images/logos/edition-residences-edgewater.png",
-    "priceList": {
-      "driveFileId": "1ZjhRfjlUCZtuyaLdSGa4BcCnsQkBKJra",
-      "createdAt": "As of May 26, 2026"
-    },
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Edgewater",
@@ -13581,7 +13577,15 @@
         "driveFileId": "1_1gBMcQGBUAdB5nGI2bc1m4G23RnffHK",
         "alt": "Pool Lounge 2"
       }
-    ]
+    ],
+    "priceRange": {
+      "driveFileId": "1gOFe5jXvoaFIM11lAcNKvqvNRD3a2Vhh",
+      "createdAt": "As of June 22, 2026",
+      "disclaimer": {
+        "type": "warning",
+        "text": "Do not share the Price List or specific prices with clients. As prices will increase in July, the Price Range available is temporary and provided for reference only. Please verify all pricing information with the in-house team before presenting it to clients."
+      }
+    }
   },
   {
     "slug": "eighty-seven-park",

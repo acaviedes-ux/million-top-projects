@@ -411,9 +411,17 @@
       var hasPR    = d.priceRange && d.priceRange.driveFileId;
       var hasDocs  = Array.isArray(d.priceDocs) && d.priceDocs.length >= 2;
 
-      // Helper: render disclaimer banner if present on priceList
+      // Helper: render disclaimer banner if present on any doc.
+      // A project may have a disclaimer attached to priceList, priceRange,
+      // or to the first doc in priceDocs[] — whichever is present is used.
+      // Use case: EDITION Edgewater is range-only, so the disclaimer lives
+      // on priceRange. Other projects historically kept it on priceList.
       function appendDisclaimer(sec) {
-        var disclaimer = d.priceList && d.priceList.disclaimer;
+        var disclaimer =
+          (d.priceList  && d.priceList.disclaimer) ||
+          (d.priceRange && d.priceRange.disclaimer) ||
+          (Array.isArray(d.priceDocs) && d.priceDocs[0] && d.priceDocs[0].disclaimer) ||
+          null;
         if (!disclaimer) return;
         var disc = el('div', 'pl-disclaimer pl-disclaimer--' + (disclaimer.type || 'info'));
         var icon = el('span', 'pl-disclaimer-icon');

@@ -265,18 +265,28 @@ async function main() {
 
     processed++;
 
+    // Helper: find any manually-set disclaimer on the project. May live on
+    // priceList, priceRange, or the first entry of priceDocs[]. Returned as
+    // the disclaimer object so it can be re-attached to whichever doc shape
+    // we write back below.
+    function findExistingDisclaimer(p) {
+      return (p.priceList && p.priceList.disclaimer)
+        || (p.priceRange && p.priceRange.disclaimer)
+        || (Array.isArray(p.priceDocs) && p.priceDocs[0] && p.priceDocs[0].disclaimer)
+        || null;
+    }
+
     if (collectedFiles.length === 0) {
-      // Price Lists folder exists but is empty → clear any legacy fields
+      // Price Lists folder exists but is empty → clear any legacy fields,
+      // but preserve a disclaimer-only priceList shell so the editorial
+      // message survives even when no PDF is currently published.
       const idx = projects.findIndex(p => p.slug === slug);
       if (idx !== -1 && !isDry) {
-        // Preserve any manually-set disclaimer before clearing price docs
-        const savedDisclaimer = projects[idx].priceList?.disclaimer;
-        if (projects[idx].priceList?.driveFileId) {
-          if (savedDisclaimer) projects[idx].priceList = { disclaimer: savedDisclaimer };
-          else                 delete projects[idx].priceList;
-        }
+        const savedDisclaimer = findExistingDisclaimer(projects[idx]);
+        if (projects[idx].priceList?.driveFileId)  delete projects[idx].priceList;
         if (projects[idx].priceRange?.driveFileId) delete projects[idx].priceRange;
         if (projects[idx].priceDocs)               delete projects[idx].priceDocs;
+        if (savedDisclaimer) projects[idx].priceList = { disclaimer: savedDisclaimer };
       }
       console.log(`  ◌ ${slug}: empty Price Lists folder — cleared`);
       continue;
@@ -333,10 +343,9 @@ async function main() {
       console.log(`  ✓ ${slug} (${docs.length} doc${docs.length === 1 ? '' : 's'})`);
       docs.forEach(d => console.log(`      [${d.kind}] "${d.title}" — ${d.createdAt}`));
     } else if (docs.length === 1) {
-      // Single doc → legacy fields
-      // Always preserve any manually-set disclaimer — it is permanent editorial
-      // data that must survive Drive-folder rescans.
-      const savedDisclaimer = projects[idx].priceList?.disclaimer;
+      // Single doc → legacy fields. Disclaimer survives Drive rescans by
+      // being re-attached to whichever doc shape is written back.
+      const savedDisclaimer = findExistingDisclaimer(projects[idx]);
       const d = docs[0];
       if (d.kind === 'list') {
         projects[idx].priceList = { driveFileId: d.driveFileId, createdAt: d.createdAt };
@@ -344,18 +353,19 @@ async function main() {
         delete projects[idx].priceRange;
       } else {
         projects[idx].priceRange = { driveFileId: d.driveFileId, createdAt: d.createdAt };
-        if (savedDisclaimer) projects[idx].priceList = { disclaimer: savedDisclaimer };
-        else                 delete projects[idx].priceList;
+        if (savedDisclaimer) projects[idx].priceRange.disclaimer = savedDisclaimer;
+        delete projects[idx].priceList;
       }
       delete projects[idx].priceDocs;
       updated++;
     } else {
-      // Multiple docs → priceDocs[] (and clear legacy)
-      // Preserve disclaimer as a disclaimer-only priceList shell.
-      const savedDisclaimer = projects[idx].priceList?.disclaimer;
+      // Multiple docs → priceDocs[] (and clear legacy).
+      // Attach disclaimer to the first doc — appendDisclaimer reads it from
+      // priceDocs[0].disclaimer for the multi-doc case.
+      const savedDisclaimer = findExistingDisclaimer(projects[idx]);
+      if (savedDisclaimer) docs[0].disclaimer = savedDisclaimer;
       projects[idx].priceDocs = docs;
-      if (savedDisclaimer) projects[idx].priceList = { disclaimer: savedDisclaimer };
-      else                 delete projects[idx].priceList;
+      delete projects[idx].priceList;
       delete projects[idx].priceRange;
       updated++;
       multiDocProjects++;
