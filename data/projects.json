@@ -10997,7 +10997,7 @@
     "depositStructure": [
       "20% at contract",
       "10% 90 days after contract",
-      "10% in March 2027",
+      "10% 180 days after contract",
       "60% at closing (Q4 2027)"
     ],
     "parkingSpaces": [
