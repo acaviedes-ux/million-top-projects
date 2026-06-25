@@ -42935,7 +42935,9 @@
       "60% at closing"
     ],
     "parkingSpaces": null,
-    "rentalRestrictions": null,
+    "rentalRestrictions": [
+      "1 year minimum."
+    ],
     "hoa": "$2.20",
     "contact": [
       {
