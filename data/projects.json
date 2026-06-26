@@ -4911,8 +4911,8 @@
     ],
     "projectLogo": "/images/logos/alma-bay-harbor-islands.png",
     "priceList": {
-      "driveFileId": "1J7VH499L-2_QfQCDi4F0AueovY7w9x9w",
-      "createdAt": "As of May 26, 2026"
+      "driveFileId": "1b2Z_oon1G7x1owUC33gy-eGgxMUR8jpl",
+      "createdAt": "As of June 26, 2026"
     },
     "isNew": false,
     "filterCounty": "Miami-Dade County",
@@ -7641,8 +7641,8 @@
     ],
     "projectLogo": "/images/logos/avenia-aventura.png",
     "priceList": {
-      "driveFileId": "1HYmaeoxUlR5QbTf1nhiPMl7QMRkfXbSh",
-      "createdAt": "As of May 26, 2026"
+      "driveFileId": "1663S4HHeaMrlMYjIFFg4k9QEtP0lOdXZ",
+      "createdAt": "As of June 26, 2026"
     },
     "isNew": false,
     "filterCounty": "Miami-Dade County",
@@ -11352,8 +11352,8 @@
     ],
     "projectLogo": "/images/logos/colette-brickell.png",
     "priceList": {
-      "driveFileId": "1IGTpFVzuDXbXjqhar-a0YZImYHzaypnr",
-      "createdAt": "As of May 26, 2026"
+      "driveFileId": "1x2PrRFOE14t8A83ZlV-QmbbjGKe6gh0G",
+      "createdAt": "As of June 26, 2026"
     },
     "isNew": false,
     "filterCounty": "Miami-Dade County",
@@ -14826,10 +14826,6 @@
       }
     ],
     "projectLogo": "/images/logos/faena-residences-downtown-miami.png",
-    "priceList": {
-      "driveFileId": "1NbQDpPhF26T8DI4R7HP2M3u79HHngm_G",
-      "createdAt": "As of May 26, 2026"
-    },
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Downtown Miami",
@@ -15001,7 +14997,21 @@
         "alt": "Faena Residences Miami - South River Loft Combo 901"
       }
     ],
-    "presentations": []
+    "presentations": [],
+    "priceDocs": [
+      {
+        "driveFileId": "1rChBHPmajf_hO6Fn6V_BYaDk0ZfuLrxH",
+        "createdAt": "As of June 26, 2026",
+        "title": "Faena Residences Miami Downtown Miami - Price List",
+        "kind": "list"
+      },
+      {
+        "driveFileId": "1IMQbGhLbuLFN-Fbb6wffsdVj_EqCbJwy",
+        "createdAt": "As of June 26, 2026",
+        "title": "Faena Residences Miami Downtown Miami - Price Range",
+        "kind": "range"
+      }
+    ]
   },
   {
     "slug": "fendi-chateau",
@@ -19292,8 +19302,8 @@
     ],
     "projectLogo": "/images/logos/la-baia-north-bay-harbor.png",
     "priceList": {
-      "driveFileId": "1-WhoCihnkG7rmwj9emStHeXzisBnKmvU",
-      "createdAt": "As of June 9, 2026"
+      "driveFileId": "1RjwxUVAu-GAGlKd9hoL49lFbxsLmSsuC",
+      "createdAt": "As of June 26, 2026"
     },
     "isNew": false,
     "filterCounty": "Miami-Dade County",
@@ -21241,8 +21251,8 @@
     ],
     "projectLogo": "/images/logos/mila-bay-harbor-islands.png",
     "priceList": {
-      "driveFileId": "1-6ptiEmrXv7DcUeh_9o1pFVUaFfuwaBw",
-      "createdAt": "As of May 26, 2026"
+      "driveFileId": "1JYzHbh38FxvQMusDiU3dtOFu3E9tbFtS",
+      "createdAt": "As of June 26, 2026"
     },
     "isNew": false,
     "filterCounty": "Miami-Dade County",
@@ -28421,8 +28431,8 @@
       }
     ],
     "priceList": {
-      "driveFileId": "1QyRvxqRerRq2QMeKW8luau1PV3DM-vYe",
-      "createdAt": "As of May 26, 2026"
+      "driveFileId": "15ryfrNOpOegGz06QDj9IEuP06jrTnF7u",
+      "createdAt": "As of June 26, 2026"
     },
     "theBuilding": "Standing 30 stories tall, The Pagani encompasses a total of 70 unparalleled units. Designed to cater to various preferences, the building offers a range of 2 to 4-bedroom residences with spacious layouts.",
     "stylishAmenities": "Equipped with a diverse array of upscale amenities, residents can enjoy access to a dedicated kids' room, library, co-working space, lounge, and movie room for leisure and relaxation. Elevating the living experience further, the rooftop offers an additional amenity deck, featuring a pristine pool, state-of-the-art gym, and a rejuvenating spa."
@@ -46241,8 +46251,8 @@
     ],
     "projectLogo": "/images/logos/the-well-bay-harbor.png",
     "priceList": {
-      "driveFileId": "1UA8OWrKYgvFSMjpC7Pa9ewvdqz55EY39",
-      "createdAt": "As of June 9, 2026"
+      "driveFileId": "1oOh0Dibyqq44TdNK4sM4d3gQlHr6WNF2",
+      "createdAt": "As of June 26, 2026"
     },
     "isNew": false,
     "filterCounty": "Miami-Dade County",
