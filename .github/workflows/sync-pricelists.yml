@@ -1,42 +1,44 @@
 name: Sync Price Lists from Drive
 
-# ── Triggers ───────────────────────────────────────────────────────────────────
-# • schedule: GitHub Actions does NOT honor cron precisely for low-traffic
-#   repos — runs often get delayed 60-120 min during peak load (verified
-#   via gh run list — observed 90-120 min gaps despite a 15 min schedule).
-#   We fire FIVE overlapping crons offset by 3 min to maximize the chance
-#   that at least one fires every ~15 min during business hours. The
-#   concurrency guard below dedupes if two land too close together.
-# • workflow_dispatch: manual run from GitHub Actions UI or via API call.
+# ── Strategy ───────────────────────────────────────────────────────────────────
+# GitHub's cron scheduler is unreliable for low-traffic repos (verified: runs
+# every 90-120 min instead of the 15 min we ask for). Instead of fighting
+# that, we fire ONE master cron per business day and run a self-paced loop
+# inside the job — sleep 900s between iterations gives us deterministic
+# 15-minute timing under our own control.
+#
+# Two chained jobs cover the 9-hour business day because GitHub's per-job
+# timeout caps at 6 hours. `afternoon: if: always()` ensures it runs even
+# if `morning` failed, so a mid-day crash doesn't kill the whole day.
+#
+# Triggers
+# ────────
+# • schedule: ONE cron, daily at 8 AM COT (13:00 UTC). GitHub honors this
+#   reliably because it's a low-frequency schedule. A second cron at 1 PM
+#   COT serves as a safety net in case morning never started.
+# • workflow_dispatch: manual run from the Actions UI (also supports
+#   external triggers via the GitHub API).
 on:
   schedule:
-    - cron: '0,15,30,45 13-22 * * 1-5'   # primary :00 :15 :30 :45
-    - cron: '3,18,33,48 13-22 * * 1-5'   # +3 offset (catches missed primary)
-    - cron: '6,21,36,51 13-22 * * 1-5'   # +6 offset
-    - cron: '9,24,39,54 13-22 * * 1-5'   # +9 offset
-    - cron: '12,27,42,57 13-22 * * 1-5'  # +12 offset
+    - cron: '0 13 * * 1-5'  # 8 AM COT — master trigger
+    - cron: '0 18 * * 1-5'  # 1 PM COT — backup if morning didn't start
   workflow_dispatch:
 
-# Skip a new run if one is already in flight (don't cancel the in-flight
-# one). With 5 cron schedules overlapping, this prevents duplicate work:
-# the first one wins, the others bow out at the queue stage.
+# If a daily run is still going when the backup cron fires, skip the backup.
 concurrency:
-  group: sync-pricelists
+  group: sync-pricelists-daily
   cancel-in-progress: false
 
 jobs:
-  sync:
+  morning:
     runs-on: ubuntu-latest
-    # Was 10 min — ~30% of runs were killed at exactly 10m 17s by the
-    # timeout (verified via gh run list). 25 min gives comfortable
-    # headroom for the ~9700-file make-public step plus Drive API
-    # latency, without leaving runaway jobs hanging forever.
-    timeout-minutes: 25
+    timeout-minutes: 320  # 5h 20m — covers 8 AM to ~1:20 PM COT
     permissions:
-      contents: write   # allows git push
+      contents: write
     env:
       FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
-
+      # Stop the loop at this UTC hour. 18 = 1 PM COT — hand off to afternoon.
+      END_HOUR_UTC: '18'
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -52,64 +54,48 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      # Seed price docs from each project's "Price Lists" subfolder. This
-      # replaces the old central-folder seeder. The seeder is idempotent:
-      # it reads whatever is currently in each project's Price Lists folder
-      # and writes it to projects.json (single-doc → legacy fields, 2+ docs
-      # → priceDocs[] array).
-      - name: Seed price lists from project folders
-        env:
-          GOOGLE_SERVICE_ACCOUNT_EMAIL: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_EMAIL }}
-          GOOGLE_PRIVATE_KEY: ${{ secrets.GOOGLE_PRIVATE_KEY }}
-          # Same folder IDs as sync-docs.yml — hardcoded because they're the
-          # canonical project-folder roots (not secret values).
-          DOCS_DRIVE_FOLDER_ID: '1OEO2oOrNuIQkmsdnLfJXwObui_CYpGqv'
-          EXTRA_DOCS_FOLDER_IDS: '1U0J0ETnBVMgLEcTjOqpsfVA_gF8kz9jF,1XR1IKZ9kz0SNtOYy0PQc1hSzGJ09S7aj'
-        run: node scripts/seed-pricelists-from-project-folders.js
-
-      # Refresh createdAt for files modified in Drive without being re-uploaded
-      - name: Update price list dates
+      - name: Sync loop (8 AM – 1 PM COT)
         env:
           GOOGLE_SERVICE_ACCOUNT_EMAIL: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_EMAIL }}
           GOOGLE_PRIVATE_KEY: ${{ secrets.GOOGLE_PRIVATE_KEY }}
           GOOGLE_IMPERSONATE_EMAIL: ${{ secrets.GOOGLE_IMPERSONATE_EMAIL }}
-        run: node scripts/update-pricelist-dates.js
-
-      # Heal references to files that were trashed in Drive after seeding.
-      # End users see "File is in owner's trash" otherwise — silent breakage.
-      - name: Heal trashed price list references
-        env:
-          GOOGLE_SERVICE_ACCOUNT_EMAIL: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_EMAIL }}
-          GOOGLE_PRIVATE_KEY: ${{ secrets.GOOGLE_PRIVATE_KEY }}
           PRICE_LIST_DRIVE_FOLDER_ID: ${{ secrets.PRICE_LIST_DRIVE_FOLDER_ID }}
-        run: node scripts/heal-trashed-pricelists.js
+          DOCS_DRIVE_FOLDER_ID: '1OEO2oOrNuIQkmsdnLfJXwObui_CYpGqv'
+          EXTRA_DOCS_FOLDER_IDS: '1U0J0ETnBVMgLEcTjOqpsfVA_gF8kz9jF,1XR1IKZ9kz0SNtOYy0PQc1hSzGJ09S7aj'
+        run: bash .github/scripts/sync-loop.sh
 
-      # Make every Drive file referenced in projects.json publicly readable.
-      # Runs unconditionally so newly-seeded files are always accessible —
-      # skips files that are already public (idempotent, ~100 ms per file).
-      - name: Make Drive files public
+  afternoon:
+    needs: morning
+    if: always()  # run even if morning crashed — don't lose the back half of the day
+    runs-on: ubuntu-latest
+    timeout-minutes: 260  # 4h 20m — covers 1 PM to ~5:20 PM COT
+    permissions:
+      contents: write
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+      # Stop at 22:00 UTC = 5 PM COT — end of business day.
+      END_HOUR_UTC: '22'
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Sync loop (1 PM – 5 PM COT)
         env:
           GOOGLE_SERVICE_ACCOUNT_EMAIL: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_EMAIL }}
           GOOGLE_PRIVATE_KEY: ${{ secrets.GOOGLE_PRIVATE_KEY }}
-        run: node scripts/make-drive-files-public.js
-
-      - name: Check for changes
-        id: diff
-        run: |
-          if git diff --quiet data/projects.json; then
-            echo "changed=false" >> "$GITHUB_OUTPUT"
-            echo "No price list changes detected."
-          else
-            echo "changed=true" >> "$GITHUB_OUTPUT"
-            git diff --stat data/projects.json
-          fi
-
-      - name: Commit and push
-        if: steps.diff.outputs.changed == 'true'
-        run: |
-          git config user.name  "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/projects.json
-          git commit -m "chore: auto-sync price lists from Drive"
-          git pull --rebase origin main
-          git push
+          GOOGLE_IMPERSONATE_EMAIL: ${{ secrets.GOOGLE_IMPERSONATE_EMAIL }}
+          PRICE_LIST_DRIVE_FOLDER_ID: ${{ secrets.PRICE_LIST_DRIVE_FOLDER_ID }}
+          DOCS_DRIVE_FOLDER_ID: '1OEO2oOrNuIQkmsdnLfJXwObui_CYpGqv'
+          EXTRA_DOCS_FOLDER_IDS: '1U0J0ETnBVMgLEcTjOqpsfVA_gF8kz9jF,1XR1IKZ9kz0SNtOYy0PQc1hSzGJ09S7aj'
+        run: bash .github/scripts/sync-loop.sh
