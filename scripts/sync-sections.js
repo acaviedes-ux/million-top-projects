@@ -1,28 +1,57 @@
 /**
  * sync-sections.js
  * ─────────────────────────────────────────────────────────────
- * Reads all projects from the TP DATA spreadsheet and rebuilds
- * data/projects.json so every TP DATA project has an entry with
- * the correct `section` ("Top Projects" | "Other Projects").
+ * ⚠ DESTRUCTIVE — NOT FOR ROUTINE USE.
  *
- * Matching strategy (priority order):
+ * This script REBUILDS data/projects.json from the TP DATA spreadsheet and
+ * DELETES any project not listed there. TP DATA is the static catalog of
+ * Top/Other Projects and is not the source of truth for which projects
+ * exist on the site — projects.json + Drive + Esqueleto are.
+ *
+ * Historical incident: running this script removed 4 live projects
+ * (kempinski, anantara, lilli, the-standard-residences-midtown) that
+ * had real content but were missing from TP DATA. They were recovered
+ * from git history. Don't repeat that mistake.
+ *
+ * If you genuinely need to onboard new TP DATA projects, ADD them to
+ * TP DATA first, manually verify the spreadsheet is complete, then run:
+ *
+ *     node scripts/sync-sections.js --i-understand-this-deletes-projects
+ *
+ * Without that flag this script refuses to run. The automated workflows
+ * (sync-pricelists.yml, sync-docs.yml) deliberately do NOT call this.
+ *
+ * Matching strategy (when allowed to run):
  *   1. Exact `tpDataName` field match
  *   2. Exact case-insensitive normalized name match (strips ®™)
  *   3. Word-overlap score ≥ 0.4 on meaningful words (length ≥ 2)
  *   4. No match → create new stub entry with generated slug
- *
- * Existing entries NOT found in TP DATA are removed (e.g. test projects).
- * Existing entries that ARE matched keep their slug and all existing data.
- *
- * Usage:
- *   node scripts/sync-sections.js
- *
- * Requires .env with GOOGLE_SERVICE_ACCOUNT_EMAIL, GOOGLE_PRIVATE_KEY,
- * TP_DATA_SPREADSHEET_ID.
  * ─────────────────────────────────────────────────────────────
  */
 
 'use strict';
+
+// Hard guard — refuse to run without the explicit acknowledgement flag.
+// Anyone who actually wants to run this has to opt in by spelling out the
+// consequence, which makes accidental invocation (a typo, a missed warning
+// in a runbook, an AI agent running automation) impossible.
+if (!process.argv.includes('--i-understand-this-deletes-projects')) {
+  console.error('');
+  console.error('  ⚠  sync-sections.js refused to run.');
+  console.error('');
+  console.error('  This script DELETES projects from data/projects.json that are');
+  console.error('  not listed in the TP DATA spreadsheet. TP DATA is incomplete');
+  console.error('  for at least 4 live projects (kempinski, anantara, lilli,');
+  console.error('  the-standard-residences-midtown). Running this would remove');
+  console.error('  them from the site.');
+  console.error('');
+  console.error('  If you have manually verified that TP DATA is complete and');
+  console.error('  want to proceed anyway, re-run with:');
+  console.error('');
+  console.error('      node scripts/sync-sections.js --i-understand-this-deletes-projects');
+  console.error('');
+  process.exit(1);
+}
 
 require('dotenv').config();
 const { google } = require('googleapis');
