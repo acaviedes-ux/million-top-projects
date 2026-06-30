@@ -178,7 +178,7 @@
     "name": "123 Ocean Palm Beach Shores",
     "tpDataName": "123 Ocean Palm Beach Shores",
     "section": "Other Projects",
-    "startingPrice": "$1.5M",
+    "startingPrice": "$1.7M",
     "thumbnail": "/images/renders/123-ocean-palm-beach-shores.png",
     "hero": "/images/renders/123-ocean-palm-beach-shores.png",
     "theBuilding": "This building offers 27 residences distributed in 6 floors from 1 to 3 bedrooms ranging from 1,581 - 3,100 Sq. Ft.",
@@ -368,7 +368,7 @@
       {
         "name": "Adriana Marrero",
         "phone": "+1 (786) 325‑3373",
-        "email": null
+        "email": "N/A"
       }
     ],
     "projectLogo": "/images/logos/14-roc-miami.png",
@@ -1020,7 +1020,7 @@
       {
         "name": "Barry Levinson",
         "phone": "+1 (954) 592-9339",
-        "email": null
+        "email": "N/A"
       }
     ],
     "projectLogo": "/images/logos/3000-waterside-fort-lauderdale.png",
@@ -1403,7 +1403,7 @@
       {
         "name": "N/A",
         "phone": "N/A",
-        "email": null
+        "email": "N/A"
       }
     ],
     "priceList": {
@@ -2144,7 +2144,7 @@
     "name": "619 Residences by Foster + Partners + Nobu Hospitality",
     "esqueletoName": "619 Residences by Foster + Partners + Nobu Hospitality",
     "tpDataName": "619 Brickell - NOBU",
-    "startingPrice": "$2.2M",
+    "startingPrice": "$2.6M",
     "thumbnail": "/images/renders/619-residences.jpg",
     "hero": "/images/renders/619-residences.jpg",
     "buildingDescription": "A modern Brickell landmark marrying bay-oriented architecture with Nobu's understated elegance.",
@@ -2388,7 +2388,7 @@
       {
         "name": "Brandon Goldfarb",
         "phone": "+1 (973) 570-4886",
-        "email": null
+        "email": "N/A"
       }
     ],
     "projectLogo": "/images/logos/72-carlyle.png",
@@ -2522,7 +2522,7 @@
     "name": "72 Park Miami Beach",
     "tpDataName": "72 Park",
     "section": "Other Projects",
-    "startingPrice": "$806K",
+    "startingPrice": "$749K",
     "thumbnail": "/images/renders/72-park.jpg",
     "hero": "/images/renders/72-park.jpg",
     "theBuilding": "22 levels with 270 units, contemporary open floorplans ranging from 470 to 1,177 Sq. Ft. and a variety of Jr-to-3-bedroom residences.",
@@ -2628,7 +2628,7 @@
     "slug": "888-brickell",
     "name": "888 Brickell by Dolce & Gabbana",
     "esqueletoName": "888 Brickell by Dolce & Gabbana",
-    "startingPrice": "$2.2M",
+    "startingPrice": "$2.1M",
     "thumbnail": "/images/renders/888-brickell.jpg",
     "hero": "/images/renders/888-brickell.jpg",
     "buildingDescription": "",
@@ -2937,7 +2937,7 @@
     "name": "9900 West Bay Harbor Islands",
     "tpDataName": "9900 West",
     "section": "Other Projects",
-    "startingPrice": "$3.9M",
+    "startingPrice": "$3.2M",
     "thumbnail": "/images/renders/9900-west.jpg",
     "hero": "/images/renders/9900-west.jpg",
     "theBuilding": "9900 West offers a variety of units with different sizes ranging from 1,258 to 3,360 Sq. Ft. The building comprises seven floors and 23 two-to-four-bedroom residences.",
@@ -3786,7 +3786,7 @@
       {
         "name": "Patrick Elber",
         "phone": "+1 (440) 487-1798",
-        "email": null
+        "email": "N/A"
       }
     ],
     "projectLogo": "/images/logos/alina-residences.png",
@@ -5176,6 +5176,16 @@
         "driveFileId": "1xjPxrkigyLCXraZLQeCLHyf-cMm0JPbi",
         "alt": "Anantara Residences Miami - Exterior 2"
       }
+    ],
+    "parkingSpaces": null,
+    "rentalRestrictions": null,
+    "hoa": null,
+    "contact": [
+      {
+        "name": "Ignacio Gonzalez",
+        "phone": "+1 (786) 717-9545",
+        "email": "N/A"
+      }
     ]
   },
   {
@@ -5377,7 +5387,7 @@
       {
         "name": "N/A",
         "phone": "N/A",
-        "email": null
+        "email": "N/A"
       }
     ],
     "priceList": {
@@ -6047,7 +6057,7 @@
     "name": "Armani Casa Residences Pompano Beach",
     "tpDataName": "Armani Casa Pompano Beach",
     "section": "Top Projects",
-    "startingPrice": "$5.1M",
+    "startingPrice": "$5M",
     "thumbnail": "/images/renders/armani-casa-pompano-beach.jpg",
     "hero": "/images/renders/armani-casa-pompano-beach.jpg",
     "theBuilding": "Featuring two towers, each with 19 floors, encompassing 28 units starting at 3,250 Sq Ft each. This configuration offers expansive, upscale living environments for discerning residents.",
@@ -6088,7 +6098,7 @@
       {
         "name": "Marie Mangouta",
         "phone": "+1 (954) 882-9746",
-        "email": null
+        "email": "N/A"
       }
     ],
     "projectLogo": "/images/logos/armani-casa-pompano-beach.png",
@@ -6746,7 +6756,7 @@
       {
         "name": "N/A",
         "phone": "N/A",
-        "email": null
+        "email": "N/A"
       }
     ],
     "priceList": {
@@ -7604,7 +7614,7 @@
     "slug": "avenia-aventura",
     "name": "Avenia Aventura",
     "esqueletoName": "Avenia Aventura",
-    "startingPrice": "$5.5M",
+    "startingPrice": "$5.2M",
     "thumbnail": "/images/renders/avenia-aventura.jpg",
     "hero": "/images/renders/avenia-aventura.jpg",
     "buildingDescription": "",
@@ -7722,7 +7732,7 @@
     "name": "Baccarat Residences Brickell",
     "tpDataName": "Baccarat Residences",
     "section": "Other Projects",
-    "startingPrice": "$5.6M",
+    "startingPrice": "$4.1M",
     "thumbnail": "/images/renders/baccarat-residences.jpg",
     "hero": "/images/renders/baccarat-residences.jpg",
     "theBuilding": "Baccarat Residences is a majestic development of 360 units spanning between 1 to 5 bedrooms, ranging from 1,386 to 9,074 Sq. Ft. This luxury condo project includes a 75-story tower with hotel services, offices, and the most exclusive shopping.",
@@ -8025,7 +8035,7 @@
       {
         "name": "N/A",
         "phone": "N/A",
-        "email": null
+        "email": "N/A"
       }
     ],
     "priceList": {
@@ -8346,7 +8356,7 @@
     "slug": "banyan-tree",
     "name": "Banyan Tree Residences West Palm Beach",
     "esqueletoName": "Banyan Tree Residences West Palm Beach",
-    "startingPrice": "$1.8M",
+    "startingPrice": "$1.9M",
     "thumbnail": "/images/renders/banyan-tree.jpg",
     "hero": "/images/renders/banyan-tree.jpg",
     "buildingDescription": "",
@@ -8381,7 +8391,7 @@
       {
         "name": "Kendall Corso",
         "phone": "+1 (561) 901-4138",
-        "email": null
+        "email": "N/A"
       }
     ],
     "projectLogo": "/images/logos/banyan-tree.png",
@@ -8437,7 +8447,7 @@
     "slug": "bay-harbor-towers",
     "name": "Bay Harbor Towers",
     "esqueletoName": "Bay Harbor Towers",
-    "startingPrice": "$5.3M",
+    "startingPrice": "$4.5M",
     "thumbnail": "/images/renders/bay-harbor-towers.jpg",
     "hero": "/images/renders/bay-harbor-towers.jpg",
     "buildingDescription": "",
@@ -8785,7 +8795,7 @@
       {
         "name": "N/A",
         "phone": "N/A",
-        "email": null
+        "email": "N/A"
       }
     ],
     "priceList": {
@@ -8934,7 +8944,7 @@
       {
         "name": "N/A",
         "phone": "N/A",
-        "email": null
+        "email": "N/A"
       }
     ],
     "priceList": {
@@ -9542,7 +9552,7 @@
       {
         "name": "N/A",
         "phone": "N/A",
-        "email": null
+        "email": "N/A"
       }
     ],
     "priceList": {
@@ -9962,7 +9972,7 @@
       {
         "name": "N/A",
         "phone": "N/A",
-        "email": null
+        "email": "N/A"
       }
     ],
     "priceList": {
@@ -10083,7 +10093,7 @@
       {
         "name": "N/A",
         "phone": "N/A",
-        "email": null
+        "email": "N/A"
       }
     ],
     "priceList": {
@@ -10226,7 +10236,7 @@
       {
         "name": "Daniela Gutierrez",
         "phone": "+1 (786) 397-5767",
-        "email": null
+        "email": "N/A"
       }
     ],
     "projectLogo": "/images/logos/casa-bella-residences-miami.png",
@@ -10616,7 +10626,7 @@
     "name": "Cassia Coral Gables",
     "tpDataName": "Cassia Coral Gables",
     "section": "Other Projects",
-    "startingPrice": "$863K",
+    "startingPrice": "$824K",
     "thumbnail": "/images/renders/cassia-coral-gables.jpg",
     "hero": "/images/renders/cassia-coral-gables.jpg",
     "theBuilding": "An elegant structure with 12 floors, comprising a total of 174 residential units. These spacious accommodations offer a range of options, including one to three-bedroom configurations.",
@@ -10840,7 +10850,7 @@
       {
         "name": "N/A",
         "phone": "N/A",
-        "email": null
+        "email": "N/A"
       }
     ],
     "priceList": {
@@ -10969,7 +10979,7 @@
     "name": "Cipriani Residences Brickell",
     "tpDataName": "Cipriani Residences",
     "section": "Top Projects",
-    "startingPrice": "$1.9M",
+    "startingPrice": "$1.7M",
     "thumbnail": "/images/renders/cipriani-residences.jpg",
     "hero": "/images/renders/cipriani-residences.jpg",
     "theBuilding": "Rising gracefully in Brickell, the tower captures the brand's Italian spirit through a striking curved design, sunlit amenities, and spaces infused with effortless elegance.",
@@ -11317,7 +11327,7 @@
     "slug": "colette-brickell",
     "name": "Colette Residences Brickell",
     "esqueletoName": "Colette Residences Brickell",
-    "startingPrice": "$2.8M",
+    "startingPrice": "$3.3M",
     "thumbnail": "/images/renders/colette-brickell.png",
     "hero": "/images/renders/colette-brickell.png",
     "buildingDescription": "",
@@ -11469,7 +11479,7 @@
       {
         "name": "Janet Hoyos",
         "phone": "+1 (786) 443-0808",
-        "email": null
+        "email": "N/A"
       }
     ],
     "projectLogo": "/images/logos/continuum-12000-sport-wellness-residences-miami.png",
@@ -11550,7 +11560,7 @@
     "name": "Continuum Club & Residences North Bay Village",
     "tpDataName": "Continuum Club & Residences North Bay Village",
     "section": "Other Projects",
-    "startingPrice": "$1.8M",
+    "startingPrice": "$1.6M",
     "thumbnail": "/images/renders/continuum-club-residences-north-bay-village.jpg",
     "hero": "/images/renders/continuum-club-residences-north-bay-village.jpg",
     "theBuilding": "Nestled amid breathtaking bay views, the 31-story Continuum Club & Residences features a single, majestic tower comprising 198 luxurious units.",
@@ -11749,7 +11759,7 @@
       {
         "name": "N/A",
         "phone": "N/A",
-        "email": null
+        "email": "N/A"
       }
     ],
     "priceList": {
@@ -11926,7 +11936,7 @@
     "slug": "cora-merrick",
     "name": "Cora Merrick Park",
     "esqueletoName": "Cora Merrick Park",
-    "startingPrice": "$994K",
+    "startingPrice": "$969K",
     "thumbnail": "/images/renders/cora-merrick.jpg",
     "hero": "/images/renders/cora-merrick.jpg",
     "buildingDescription": "",
@@ -11960,7 +11970,7 @@
       {
         "name": "Carlos Escoto",
         "phone": "+1 (305) 916-8826",
-        "email": null
+        "email": "N/A"
       }
     ],
     "projectLogo": "/images/logos/cora-merrick.png",
@@ -12121,7 +12131,7 @@
     "name": "Delano Residences & Hotel Miami",
     "tpDataName": "Delano Residences & Hotel Miami",
     "section": "Other Projects",
-    "startingPrice": "$745K",
+    "startingPrice": "$723K",
     "thumbnail": "/images/renders/delano-residences-hotel-miami.jpg",
     "hero": "/images/renders/delano-residences-hotel-miami.jpg",
     "theBuilding": "This 90-floors magnific residential building offers 421 fully-finished residences with views of downtown, Miami Beach and the Atlantic Ocean. The units range from 311 - 1,645 Sq. Ft.Delano Collections (Floors 20 - 47): Studios, 1, and 2 bedrooms.Delano Residences (Floors 49 - 75): 1, 2 and 3 bedrooms including a deeded office space.",
@@ -12697,7 +12707,7 @@
     "name": "Domus Brickell Center",
     "tpDataName": "Domus Brickell Center",
     "section": "Other Projects",
-    "startingPrice": "$533K",
+    "startingPrice": "$523K",
     "thumbnail": "/images/renders/domus-brickell-center.jpg",
     "hero": "/images/renders/domus-brickell-center.jpg",
     "theBuilding": "A 35-story, 579-unit condo-hotel project with 9 ft ceilings and keyless smart lock system. Residences range from studios to two-bedroom units, and from 372 Sq. Ft. to 864 Sq. Ft.",
@@ -12907,7 +12917,7 @@
     "name": "Domus Brickell Park",
     "tpDataName": "Domus Brickell Park",
     "section": "Other Projects",
-    "startingPrice": "$630K",
+    "startingPrice": "$599K",
     "thumbnail": "/images/renders/domus-brickell-park.jpg",
     "hero": "/images/renders/domus-brickell-park.jpg",
     "theBuilding": "A 12-story, 171-unit condo-hotel project with 9 ft ceilings and keyless smart lock system. Residences range from studios to two-bedroom units, and from 330 Sq. Ft. to 975 Sq. Ft.",
@@ -13096,7 +13106,7 @@
     "name": "Edge House Miami",
     "tpDataName": "Edge House Miami",
     "section": "Other Projects",
-    "startingPrice": "$545K",
+    "startingPrice": "$514K",
     "thumbnail": "/images/renders/edge-house-miami.jpg",
     "hero": "/images/renders/edge-house-miami.jpg",
     "theBuilding": "An architecturally iconic 57-story high rise residential building, offering 592 residences from studios to 3 bedrooms.",
@@ -13236,7 +13246,7 @@
     "name": "Edgeworth West Palm Beach",
     "tpDataName": "Edgeworth West Palm Beach",
     "section": "Other Projects",
-    "startingPrice": "$4.6M",
+    "startingPrice": "$4.9M",
     "thumbnail": "/images/renders/edgeworth-west-palm-beach.jpg",
     "hero": "/images/renders/edgeworth-west-palm-beach.jpg",
     "theBuilding": "Two-tower development with 168 total residences from 1 to 4 bedrooms and penthouses.",
@@ -13956,7 +13966,7 @@
     "name": "Ella Miami Beach",
     "tpDataName": "Ella Miami Beach",
     "section": "Other Projects",
-    "startingPrice": "$633K",
+    "startingPrice": "$570K",
     "thumbnail": "/images/renders/ella-miami-beach.jpg",
     "hero": "/images/renders/ella-miami-beach.jpg",
     "theBuilding": "A residential building comprising 10 floors, offering 95 residences that range from 434 to 1,076 square feet in size. The floorplans include options for studios, one-bedroom, and two-bedroom residences.",
@@ -14102,7 +14112,7 @@
     "name": "Elle Residences Edgewater",
     "tpDataName": "Elle Residences Edgewater",
     "section": "Other Projects",
-    "startingPrice": "$590K",
+    "startingPrice": "$543K",
     "thumbnail": "/images/renders/elle-residences-edgewater.jpg",
     "hero": "/images/renders/elle-residences-edgewater.jpg",
     "theBuilding": "A 26-story tower with 189 residences configured from 1- to 2- bedroom units ranging from 450 Sq. Ft. to 855 Sq. Ft.",
@@ -14641,7 +14651,7 @@
       {
         "name": "N/A",
         "phone": "N/A",
-        "email": null
+        "email": "N/A"
       }
     ],
     "priceList": {
@@ -14772,7 +14782,7 @@
     "name": "Faena Residences Miami Downtown Miami",
     "tpDataName": "Faena Residences Downtown Miami",
     "section": "Top Projects",
-    "startingPrice": "$1.3M",
+    "startingPrice": "$1.2M",
     "thumbnail": "/images/renders/faena-residences-downtown-miami.jpg",
     "hero": "/images/renders/faena-residences-downtown-miami.jpg",
     "theBuilding": "Two 68-floor towers with a total of 434 units range from 1 to 4 bedrooms, catering to diverse needs and preferences.",
@@ -15226,7 +15236,7 @@
     "name": "Five Park Miami Beach",
     "tpDataName": "Five Park Miami Beach",
     "section": "Other Projects",
-    "startingPrice": "$908K",
+    "startingPrice": "$710K",
     "thumbnail": "/images/renders/five-park-miami-beach.jpg",
     "hero": "/images/renders/five-park-miami-beach.jpg",
     "theBuilding": "This majestic tower was completed in 2024 and boasts a total of 230 units from 1 to 3 bedrooms and layouts from 878 to 2,300 Sq. Ft.Showings: Mondays to Saturdays from 9:00am to 6:00pm. No Sundays.",
@@ -15881,7 +15891,7 @@
     "name": "Forté on Flagler West Palm Beach",
     "tpDataName": "Forté on Flagler",
     "section": "Other Projects",
-    "startingPrice": "$13.2M",
+    "startingPrice": "$14.6M",
     "thumbnail": "/images/renders/forte-on-flagler.jpg",
     "hero": "/images/renders/forte-on-flagler.jpg",
     "theBuilding": "This elegant condo in West Palm Beach will boast a total of 41 units and 4 to 6 bedrooms in expansive residences from 4,420 to 9,155 square feet.",
@@ -15914,7 +15924,7 @@
       {
         "name": "John Reynolds",
         "phone": "+1 (561) 346-9365",
-        "email": null
+        "email": "N/A"
       }
     ],
     "projectLogo": "/images/logos/forte-on-flagler.png",
@@ -16287,7 +16297,7 @@
     "name": "Four Seasons Private Residences Las Vegas",
     "tpDataName": "Four Seasons Residences Las Vegas",
     "section": "Other Projects",
-    "startingPrice": "$5.1M",
+    "startingPrice": "$3.9M",
     "thumbnail": "/images/renders/four-seasons-residences-las-vegas.jpg",
     "hero": "/images/renders/four-seasons-residences-las-vegas.jpg",
     "theBuilding": "Featuring 24 and 25 floors, 2 towers, and a total of 171 units with mountain views and 2-to-5-bedroom layouts.",
@@ -16467,7 +16477,7 @@
     "slug": "four-seasons-coconut-grove",
     "name": "Four Seasons Residences Coconut Grove",
     "esqueletoName": "Four Seasons Residences Coconut Grove",
-    "startingPrice": "$6.2M",
+    "startingPrice": "$5.6M",
     "thumbnail": "/images/renders/four-seasons-coconut-grove.jpg",
     "hero": "/images/renders/four-seasons-coconut-grove.jpg",
     "buildingDescription": "",
@@ -16784,7 +16794,7 @@
     "name": "Gale Miami Hotel & Residences",
     "tpDataName": "Gale Miami",
     "section": "Other Projects",
-    "startingPrice": "$636K",
+    "startingPrice": "$635K",
     "thumbnail": "/images/renders/gale-miami.jpg",
     "hero": "/images/renders/gale-miami.jpg",
     "theBuilding": "Featuring a total of 160 luxurious units, and 51 floors, offering a variety of living spaces ranging from cozy studios to spacious 2-bedroom residences. Unit sizes vary from 389 to 900 Sq. Ft.",
@@ -16936,7 +16946,7 @@
     "name": "Glass House Boca Raton",
     "tpDataName": "Glass House Boca Raton",
     "section": "Other Projects",
-    "startingPrice": "$2.7M",
+    "startingPrice": "$3.9M",
     "thumbnail": "/images/renders/glass-house-boca-raton.jpg",
     "hero": "/images/renders/glass-house-boca-raton.jpg",
     "theBuilding": "Standing ten floors tall, this opulent property comprises a total of 28 luxurious units. Featuring a variety of 2-4 bedroom residences, ensuring ample living space for all residents.",
@@ -17105,7 +17115,7 @@
       {
         "name": "N/A",
         "phone": "N/A",
-        "email": null
+        "email": "N/A"
       }
     ],
     "priceList": {
@@ -17275,7 +17285,7 @@
       {
         "name": "N/A",
         "phone": "N/A",
-        "email": null
+        "email": "N/A"
       }
     ],
     "priceList": {
@@ -17517,7 +17527,7 @@
     "name": "House of Wellness Brickell",
     "tpDataName": "House of Wellness Brickell",
     "section": "Other Projects",
-    "startingPrice": "$388K",
+    "startingPrice": "$387K",
     "thumbnail": "/images/renders/house-of-wellness-brickell.png",
     "hero": "/images/renders/house-of-wellness-brickell.png",
     "theBuilding": "This 34 floors building features 656 units from Studios to 2-bedroom residences ranging 337 - 676 Sq. Ft.",
@@ -17921,7 +17931,7 @@
     "name": "Icon Beach Residences Hollywood",
     "tpDataName": "Icon Beach Residences Hollywood",
     "section": "Other Projects",
-    "startingPrice": "$1.2M",
+    "startingPrice": "$1.1M",
     "thumbnail": "/images/renders/icon-beach-residences-hollywood.jpg",
     "hero": "/images/renders/icon-beach-residences-hollywood.jpg",
     "theBuilding": "Boasting stunning bay and ocean views, this 38-story building houses 350 exclusive units. Designed to cater to varied needs, it offers one to three-bedroom options.",
@@ -18148,7 +18158,7 @@
       {
         "name": "N/A",
         "phone": "N/A",
-        "email": null
+        "email": "N/A"
       }
     ],
     "priceList": {
@@ -18305,7 +18315,7 @@
       {
         "name": "N/A",
         "phone": "N/A",
-        "email": null
+        "email": "N/A"
       }
     ],
     "priceList": {
@@ -18427,7 +18437,7 @@
       {
         "name": "N/A",
         "phone": "N/A",
-        "email": null
+        "email": "N/A"
       }
     ],
     "priceList": {
@@ -19268,7 +19278,7 @@
     "name": "La Baia North Bay Harbor Islands",
     "tpDataName": "La Baia North Bay Harbor",
     "section": "Other Projects",
-    "startingPrice": "$3.6M",
+    "startingPrice": "$1.5M",
     "thumbnail": "/images/renders/la-baia-north-bay-harbor.jpg",
     "hero": "/images/renders/la-baia-north-bay-harbor.jpg",
     "theBuilding": "Featuring 57 luxurious, two-to-four-bedroom residences spanning between 1,400 to 2,100 square feet with views of Biscayne Bay, the Atlantic Ocean, Bal Harbour, Miami Beach, and downtown Miami, La Baia North is sure to make a statement in Bay Harbor Islands.",
@@ -19435,7 +19445,7 @@
     "name": "La Maré Bay Harbor Islands",
     "tpDataName": "La Maré",
     "section": "Top Projects",
-    "startingPrice": "$2.1M",
+    "startingPrice": "$1.9M",
     "thumbnail": "/images/renders/la-mare.jpg",
     "hero": "/images/renders/la-mare.jpg",
     "theBuilding": "A collection of 3 impeccably designed boutique towers with these configurations:Regency Collection: 33 units from 2- to 4- bedrooms ranging 1,567 - 4,200 Sq. Ft.Signature Collection: 9 units from 2- to 4- bedrooms ranging 2,100 - 4,200 Sq. Ft.Bay Collection: 9 units from 3- to 4- bedrooms ranging 2,300 - 4,700 Sq. Ft.",
@@ -19808,7 +19818,7 @@
       {
         "name": "N/A",
         "phone": "N/A",
-        "email": null
+        "email": "N/A"
       }
     ],
     "priceList": {
@@ -20066,7 +20076,7 @@
     "name": "Lofty Residences Brickell",
     "tpDataName": "Lofty Residences",
     "section": "Other Projects",
-    "startingPrice": "$2.4M",
+    "startingPrice": "$2.3M",
     "thumbnail": "/images/renders/lofty-residences.jpg",
     "hero": "/images/renders/lofty-residences.jpg",
     "theBuilding": "This condo in Brickell Riverfront boasts 362 units from studios to 3 bedrooms residences ranging from 539 Sq. Ft. to 2,224 Sq. Ft.",
@@ -20289,7 +20299,7 @@
     "name": "Maison D'Or South Flagler",
     "tpDataName": "Maison D'Or South Flagler",
     "section": "Other Projects",
-    "startingPrice": "$5.8M",
+    "startingPrice": "$5.7M",
     "thumbnail": "/images/renders/maison-d-or-south-flagler.jpg",
     "hero": "/images/renders/maison-d-or-south-flagler.jpg",
     "theBuilding": "This 18-floors ultra-luxury residential condo boasts 39 grand and furniture-ready waterfront residences from 2 to 4 bedrooms with expansive terraces, impeccable interiors, and designer curated finishes.",
@@ -20316,7 +20326,7 @@
       {
         "name": "Andreea Fodor",
         "phone": "+1 (561) 504-5278",
-        "email": null
+        "email": "N/A"
       }
     ],
     "projectLogo": "/images/logos/maison-d-or-south-flagler.png",
@@ -20446,7 +20456,7 @@
     "name": "Mandarin Oriental Residences, West Palm Beach",
     "tpDataName": "The Residences at Mandarin Oriental, West Palm Beach",
     "section": "Top Projects",
-    "startingPrice": "$4.3M",
+    "startingPrice": "$3.5M",
     "thumbnail": "/images/renders/the-residences-at-mandarin-oriental-west-palm-beach.jpg",
     "hero": "/images/renders/the-residences-at-mandarin-oriental-west-palm-beach.jpg",
     "theBuilding": "A 31-story residential tower planned as a limited collection of 87 private homes with direct waterfront presence on the Intracoastal Waterway.The private homes range from 2 to 4 bedrooms and from 2,151 Sq. Ft. to 3,714 Sq. Ft.",
@@ -20555,7 +20565,7 @@
     "name": "Mercedes-Benz Places Miami",
     "tpDataName": "Mercedes-Benz Places Miami",
     "section": "Other Projects",
-    "startingPrice": "$716K",
+    "startingPrice": "$685K",
     "thumbnail": "/images/renders/mercedes-benz-places-miami.jpg",
     "hero": "/images/renders/mercedes-benz-places-miami.jpg",
     "theBuilding": "Mercedes-Benz Places is a stunning 67-story residential project in Miami, featuring 791 units with 1-3 bedrooms and offering breathtaking bay and city views.",
@@ -20590,7 +20600,7 @@
       {
         "name": "Mónica Martínez",
         "phone": "+1 (305) 890-2457",
-        "email": null
+        "email": "N/A"
       }
     ],
     "projectLogo": "/images/logos/mercedes-benz-places-miami.png",
@@ -20797,7 +20807,7 @@
     "name": "Miami Design Residences Midtown Miami",
     "tpDataName": "Miami Design Residences Midtown Miami",
     "section": "Other Projects",
-    "startingPrice": "$2.4M",
+    "startingPrice": "$1.7M",
     "thumbnail": "/images/renders/miami-design-residences-midtown-miami.jpg",
     "hero": "/images/renders/miami-design-residences-midtown-miami.jpg",
     "theBuilding": "This 25-floors condo offers 143 residences from 1 to 4 bedrooms with interior designs defined by the careful calibration of scale, materiality and light with its terrazzo floors and fluted walls.",
@@ -20828,7 +20838,7 @@
       {
         "name": "Ximena Peñuela",
         "phone": "+1 (786) 202-2005",
-        "email": null
+        "email": "N/A"
       }
     ],
     "projectLogo": "/images/logos/miami-design-residences-midtown-miami.png",
@@ -20961,7 +20971,7 @@
     "slug": "miami-tropic",
     "name": "Miami Tropic Residences",
     "esqueletoName": "Miami Tropic Residences",
-    "startingPrice": "$982K",
+    "startingPrice": "$1.1M",
     "thumbnail": "/images/renders/miami-tropic.jpg",
     "hero": "/images/renders/miami-tropic.jpg",
     "buildingDescription": "",
@@ -21213,7 +21223,7 @@
     "name": "Mila Bay Harbor Islands",
     "tpDataName": "Mila Bay Harbor Islands",
     "section": "Other Projects",
-    "startingPrice": "$2M",
+    "startingPrice": "$1.9M",
     "thumbnail": "/images/renders/mila-bay-harbor-islands.jpg",
     "hero": "/images/renders/mila-bay-harbor-islands.jpg",
     "theBuilding": "This boutique includes only 9 exclusive residences from 2- to 4-bedroom units ranging from 2,100 to 3,900 Sq. Ft.",
@@ -21860,7 +21870,7 @@
     "name": "Mr. C Residences Boca Raton",
     "tpDataName": "Mr. C Residences Boca Raton",
     "section": "Top Projects",
-    "startingPrice": "$2.1M",
+    "startingPrice": "$1.8M",
     "thumbnail": "/images/renders/mr-c-residences-boca-raton.jpg",
     "hero": "/images/renders/mr-c-residences-boca-raton.jpg",
     "theBuilding": "This magnificent building with 12 floors includes 133 units ranging from 2- to 3-bedrooms and from 1,700 Sq. Ft. to 2,400 Sq. Ft. No furnished.",
@@ -21967,7 +21977,7 @@
     "name": "Mr. C Residences West Palm Beach",
     "tpDataName": "Mr. C Residences West Palm Beach",
     "section": "Top Projects",
-    "startingPrice": "$1.7M",
+    "startingPrice": "$1.6M",
     "thumbnail": "/images/renders/mr-c-residences-west-palm-beach.jpg",
     "hero": "/images/renders/mr-c-residences-west-palm-beach.jpg",
     "theBuilding": "This magnificent building stands tall with 27 floors, comprising a total of 146 units with a diverse array of floor plans.•  57 Hotel Residences (Floors 2-7) •  89 Tower Residences (Floors 9-20)•  100 Hotel Rooms (Floors 21-25)•  No penthouses as the building has 26 floors, but the residences run from 9 to 20.",
@@ -22577,7 +22587,7 @@
       {
         "name": "N/A",
         "phone": "N/A",
-        "email": null
+        "email": "N/A"
       }
     ],
     "priceList": {
@@ -22710,7 +22720,7 @@
       {
         "name": "N/A",
         "phone": "N/A",
-        "email": null
+        "email": "N/A"
       }
     ],
     "priceList": {
@@ -23176,7 +23186,7 @@
     "name": "Nexo North Miami Beach",
     "tpDataName": "Nexo North Miami Beach",
     "section": "Other Projects",
-    "startingPrice": "$633K",
+    "startingPrice": "$632K",
     "thumbnail": "/images/renders/nexo-north-miami-beach.jpg",
     "hero": "/images/renders/nexo-north-miami-beach.jpg",
     "theBuilding": "Nexo's 254 units range from studios to 4-bedroom townhouses, spanning between 525 Sq Ft to 2,190 Sq Ft in a 15-story building. Each turnkey residence is fully finished and includes floor-to-ceiling windows.",
@@ -23322,7 +23332,7 @@
     "name": "NoMad Residences Wynwood",
     "tpDataName": "NoMad Residences Wynwood",
     "section": "Other Projects",
-    "startingPrice": "$671K",
+    "startingPrice": "$689K",
     "thumbnail": "/images/renders/nomad-residences-wynwood.jpg",
     "hero": "/images/renders/nomad-residences-wynwood.jpg",
     "theBuilding": "A 9-story luxury tower featuring 329 residences from 464 to 931 Sq Ft with private balconies, adaptable layouts, and top-of-the-line appliances.",
@@ -23657,7 +23667,7 @@
       {
         "name": "Sean Joseph",
         "phone": "+1 (954) 305-7926",
-        "email": null
+        "email": "N/A"
       }
     ],
     "projectLogo": "/images/logos/oasis-hallandale.png",
@@ -23779,7 +23789,7 @@
     "name": "Ocean 580 Pompano Beach",
     "tpDataName": "Ocean 580 Pompano Beach",
     "section": "Other Projects",
-    "startingPrice": "$4.4M",
+    "startingPrice": "$4.2M",
     "thumbnail": "/images/renders/ocean-580-pompano-beach.jpg",
     "hero": "/images/renders/ocean-580-pompano-beach.jpg",
     "theBuilding": "Every detail, from the private entrances to the expansive terraces, was carefully designed to harmonize with the natural beauty of the ocean and create an intimate residential experience.",
@@ -23809,7 +23819,7 @@
       {
         "name": "Cindy Leventhal",
         "phone": "+1 (954) 254-6122‬",
-        "email": null
+        "email": "N/A"
       }
     ],
     "projectLogo": "/images/logos/ocean-580-pompano-beach.png",
@@ -24051,7 +24061,7 @@
       {
         "name": "N/A",
         "phone": "N/A",
-        "email": null
+        "email": "N/A"
       }
     ],
     "priceList": {
@@ -24200,7 +24210,7 @@
     "name": "Ocean House Surfside",
     "tpDataName": "Ocean House",
     "section": "Top Projects",
-    "startingPrice": "$10M",
+    "startingPrice": "$7M",
     "thumbnail": "/images/renders/ocean-house.jpg",
     "hero": "/images/renders/ocean-house.jpg",
     "theBuilding": "11 levels with 25 luxury residences from 2 to 5 bedrooms, several parking spots, and plenty of social areas.",
@@ -24510,7 +24520,7 @@
     "name": "Ocean Terrace Miami Beach",
     "tpDataName": "Ocean Terrace",
     "section": "Other Projects",
-    "startingPrice": "$3.4M",
+    "startingPrice": "$10.1M",
     "thumbnail": "/images/renders/ocean-terrace.jpg",
     "hero": "/images/renders/ocean-terrace.jpg",
     "theBuilding": "Residences with bay and ocean views, comprising 76 total units across 20 floors, with options ranging from 1 to 5 bedrooms and 1,250 to 5,600 square feet.",
@@ -25030,7 +25040,7 @@
       {
         "name": "N/A",
         "phone": "N/A",
-        "email": null
+        "email": "N/A"
       }
     ],
     "priceList": {
@@ -25236,7 +25246,7 @@
       {
         "name": "N/A",
         "phone": "N/A",
-        "email": null
+        "email": "N/A"
       }
     ],
     "priceList": {
@@ -25353,7 +25363,7 @@
     "name": "Okan Tower Downtown Miami",
     "tpDataName": "Okan Tower",
     "section": "Other Projects",
-    "startingPrice": "$750K",
+    "startingPrice": "$1.1M",
     "thumbnail": "/images/renders/okan-tower.jpg",
     "hero": "/images/renders/okan-tower.jpg",
     "theBuilding": null,
@@ -25625,7 +25635,7 @@
     "name": "Olara West Palm Beach",
     "tpDataName": "Olara West Palm Beach",
     "section": "Other Projects",
-    "startingPrice": "$2M",
+    "startingPrice": "$1.7M",
     "thumbnail": "/images/renders/olara-west-palm-beach.jpg",
     "hero": "/images/renders/olara-west-palm-beach.jpg",
     "theBuilding": "Rising 26 stories with 275 exceptional residences, from 2 to 4 bedrooms spanning between 1,450 and 5,000 Sq. Ft.",
@@ -25908,7 +25918,7 @@
     "name": "Ombelle Fort Lauderdale",
     "tpDataName": "Ombelle Fort Lauderdale",
     "section": "Other Projects",
-    "startingPrice": "$501K",
+    "startingPrice": "$479K",
     "thumbnail": "/images/renders/ombelle-fort-lauderdale.jpg",
     "hero": "/images/renders/ombelle-fort-lauderdale.jpg",
     "theBuilding": "Redefines the downtown skyline with 2 landmark residential towers, with 44 floors and 754 residences from Studios to 4-bedroom units and Penthouses, ranging from 465 to 2,618 Sq. Ft.",
@@ -26348,7 +26358,7 @@
       {
         "name": "N/A",
         "phone": "N/A",
-        "email": null
+        "email": "N/A"
       }
     ],
     "priceList": {
@@ -27230,7 +27240,7 @@
     "name": "Opus Coconut Grove",
     "tpDataName": "Opus Coconut Grove",
     "section": "Other Projects",
-    "startingPrice": "$2.9M",
+    "startingPrice": "$3.1M",
     "thumbnail": "/images/renders/opus-coconut-grove.jpg",
     "hero": "/images/renders/opus-coconut-grove.jpg",
     "theBuilding": "Featuring city views, this six-story building comprises 14 units with 3 to 4 bedrooms.",
@@ -27411,7 +27421,7 @@
     "slug": "ora-casa-tua",
     "name": "ORA by Casa Tua Brickell",
     "esqueletoName": "ORA by Casa Tua Brickell",
-    "startingPrice": "$994K",
+    "startingPrice": "$993K",
     "thumbnail": "/images/renders/ora-casa-tua.jpg",
     "hero": "/images/renders/ora-casa-tua.jpg",
     "buildingDescription": "",
@@ -27847,7 +27857,7 @@
     "name": "Origin Bay Harbor Islands",
     "tpDataName": "Origin",
     "section": "Other Projects",
-    "startingPrice": "$3.7M",
+    "startingPrice": "$3.8M",
     "thumbnail": "/images/renders/origin.jpg",
     "hero": "/images/renders/origin.jpg",
     "theBuilding": "A collection of 27 unique residences with 2, 3, and 4 bedrooms, and expansive layouts from 1,367 to 2,328 Sq. Ft. in a 7-story modern building.",
@@ -28110,7 +28120,7 @@
     "esqueletoName": "Pagani North Bay Village",
     "tpDataName": "Pagani North Bay Village",
     "section": "Other Projects",
-    "startingPrice": "$4M",
+    "startingPrice": "$3.7M",
     "thumbnail": "/images/renders/pagani-north-bay-village.jpg",
     "hero": "/images/renders/pagani-north-bay-village.jpg",
     "address": "7940 West Dr, North Bay Village, FL 33141",
@@ -29940,7 +29950,7 @@
     "name": "Palma Miami Beach",
     "tpDataName": "Palma Miami Beach",
     "section": "Other Projects",
-    "startingPrice": "$630K",
+    "startingPrice": "$609K",
     "thumbnail": "/images/renders/palma-miami-beach.jpg",
     "hero": "/images/renders/palma-miami-beach.jpg",
     "theBuilding": "This remarkable building comprises 14 floors, offering a total of 126 exquisite units with 1 to 2-bedroom options for residents to choose from.",
@@ -30865,7 +30875,7 @@
     "name": "Pier Sixty-Six Fort Lauderdale",
     "tpDataName": "Pier Sixty-Six Fort Lauderdale",
     "section": "Other Projects",
-    "startingPrice": "$3M",
+    "startingPrice": "$3.3M",
     "thumbnail": "/images/renders/pier-sixty-six-fort-lauderdale.jpg",
     "hero": "/images/renders/pier-sixty-six-fort-lauderdale.jpg",
     "theBuilding": "Four towers with 92 carefully designed residences, from 2 to 5 bedrooms, and floor plans from 1,645 to 3,800 Sq. Ft.",
@@ -31817,7 +31827,7 @@
       {
         "name": "N/A",
         "phone": "N/A",
-        "email": null
+        "email": "N/A"
       }
     ],
     "priceList": {
@@ -32154,7 +32164,7 @@
       {
         "name": "N/A",
         "phone": "N/A",
-        "email": null
+        "email": "N/A"
       }
     ],
     "priceList": {
@@ -32327,7 +32337,7 @@
     "slug": "riva-residenze",
     "name": "Riva Residenze Fort Lauderdale",
     "esqueletoName": "Riva Residenze Fort Lauderdale",
-    "startingPrice": "$3.8M",
+    "startingPrice": "$3.7M",
     "thumbnail": "/images/renders/riva-residenze.jpg",
     "hero": "/images/renders/riva-residenze.jpg",
     "buildingDescription": "",
@@ -33562,7 +33572,7 @@
     "name": "River District 14 Miami",
     "tpDataName": "River District 14 Miami",
     "section": "Other Projects",
-    "startingPrice": "$639K",
+    "startingPrice": "$660K",
     "thumbnail": "/images/renders/river-district-14-miami.jpg",
     "hero": "/images/renders/river-district-14-miami.jpg",
     "theBuilding": "A single 16-story tower features 283 units, offering a range of studio to 2-bedroom residences.",
@@ -34163,7 +34173,7 @@
     "name": "Rosewood Residences Naples",
     "tpDataName": "Rosewood Residences Naples",
     "section": "Other Projects",
-    "startingPrice": "$13.8M",
+    "startingPrice": "$13.7M",
     "thumbnail": "/images/renders/rosewood-residences-naples.png",
     "hero": "/images/renders/rosewood-residences-naples.png",
     "theBuilding": "This development includes 2 towers of 7 floors each featuring 42 thoughtfully designed homes. The units range from 3 to 6 bedrooms and 4,226 - 9,673 Sq. Ft.",
@@ -34373,7 +34383,7 @@
     "name": "Sage Fort Lauderdale",
     "tpDataName": "Sage Fort Lauderdale",
     "section": "Other Projects",
-    "startingPrice": "$3M",
+    "startingPrice": "$2.9M",
     "thumbnail": "/images/renders/sage-fort-lauderdale.jpg",
     "hero": "/images/renders/sage-fort-lauderdale.jpg",
     "theBuilding": "This impressive tower offers stunning bay views within 28 floors. With a total of 44 luxurious units, residents can choose from 3 or 4-bedroom options, guaranteeing an exclusive and sophisticated living experience.",
@@ -34515,7 +34525,7 @@
     "name": "Salato Pompano Beach",
     "tpDataName": "Salato",
     "section": "Other Projects",
-    "startingPrice": "$2.7M",
+    "startingPrice": "$2.6M",
     "thumbnail": "/images/renders/salato.jpg",
     "hero": "/images/renders/salato.jpg",
     "theBuilding": "40 private oceanfront residences, including six exquisite penthouses ranging from 2,106 to 3,354 Sq. Ft. with 3-bedroom layouts and expansive deep terraces.",
@@ -34697,7 +34707,7 @@
       {
         "name": "N/A",
         "phone": "N/A",
-        "email": null
+        "email": "N/A"
       }
     ],
     "priceList": {
@@ -34795,7 +34805,7 @@
     "name": "Shell Bay by Auberge Hallandale",
     "tpDataName": "Shell Bay by Auberge",
     "section": "Other Projects",
-    "startingPrice": "$2.4M",
+    "startingPrice": "$1.8M",
     "thumbnail": "/images/renders/shell-bay-by-auberge.jpg",
     "hero": "/images/renders/shell-bay-by-auberge.jpg",
     "theBuilding": "100 luxurious residences over 20 stories with one-to-four-bedroom floor plans. Also featuring an exclusive collection of penthouses with private outdoor spaces and plunge pools in select units.",
@@ -35020,7 +35030,7 @@
     "name": "Shoma Bay North Bay Village",
     "tpDataName": "Shoma Bay",
     "section": "Other Projects",
-    "startingPrice": "$966K",
+    "startingPrice": "$941K",
     "thumbnail": "/images/renders/shoma-bay.jpg",
     "hero": "/images/renders/shoma-bay.jpg",
     "theBuilding": "333 residences on 21 levels with floor plans starting at 376 Sq. Ft. up to 2,964 Sq. Ft. From studios to 3-bedroom units.",
@@ -35410,7 +35420,7 @@
     "name": "Shore Club Private Collections Miami Beach",
     "tpDataName": "Shore Club Private Collection Residences",
     "section": "Top Projects",
-    "startingPrice": "$10.2M",
+    "startingPrice": "$9M",
     "thumbnail": "/images/renders/shore-club-private-collection-residences.jpg",
     "hero": "/images/renders/shore-club-private-collection-residences.jpg",
     "theBuilding": "This reimagined landmark offers private homes, blending classic yacht design and Art Deco allure for an exceptional oceanfront lifestyle.",
@@ -35571,7 +35581,7 @@
     "name": "Shorecrest Flagler Drive West Palm Beach",
     "tpDataName": "Shorecrest West Palm Beach",
     "section": "Top Projects",
-    "startingPrice": "$3.7M",
+    "startingPrice": "$3M",
     "thumbnail": "/images/renders/shorecrest-west-palm-beach.jpg",
     "hero": "/images/renders/shorecrest-west-palm-beach.jpg",
     "theBuilding": "Boasting bay views, this building stands tall with 28 floors in a single tower, housing 100 units. Featuring 2- to 4-bedroom options to cater to varying residential needs.",
@@ -36029,7 +36039,7 @@
     "name": "South Flagler House West Palm Beach",
     "tpDataName": "South Flagler House",
     "section": "Other Projects",
-    "startingPrice": "$5.7M",
+    "startingPrice": "$7.4M",
     "thumbnail": "/images/renders/south-flagler-house.jpg",
     "hero": "/images/renders/south-flagler-house.jpg",
     "theBuilding": "A two-towered 28-story development, boasting a total of 108 stunning units from 2 to 5 bedrooms.",
@@ -36063,7 +36073,7 @@
       {
         "name": "Adam McPherson",
         "phone": "+1 (561) 309-2326",
-        "email": null
+        "email": "N/A"
       }
     ],
     "projectLogo": "/images/logos/south-flagler-house.png",
@@ -36190,7 +36200,7 @@
       {
         "name": "N/A",
         "phone": "N/A",
-        "email": null
+        "email": "N/A"
       }
     ],
     "priceList": {
@@ -36307,7 +36317,7 @@
     "name": "St. Regis® Residences Bahia Mar Fort Lauderdale",
     "tpDataName": "St. Regis Residences Bahia Mar Fort Lauderdale",
     "section": "Top Projects",
-    "startingPrice": "$3.1M",
+    "startingPrice": "$3M",
     "thumbnail": "/images/renders/st-regis-residences-bahia-mar-fort-lauderdale.jpg",
     "hero": "/images/renders/st-regis-residences-bahia-mar-fort-lauderdale.jpg",
     "theBuilding": "Two elegant 23-story towers with 160 residences, offering breathtaking bay and ocean views and a variety of floor plans with one to four bedrooms.",
@@ -36518,7 +36528,7 @@
       {
         "name": "N/A",
         "phone": "N/A",
-        "email": null
+        "email": "N/A"
       }
     ],
     "priceList": {
@@ -36698,7 +36708,7 @@
     "name": "St. Regis® Residences Brickell",
     "tpDataName": "St. Regis® Residences Brickell",
     "section": "Top Projects",
-    "startingPrice": "$7.2M",
+    "startingPrice": "$6M",
     "thumbnail": "/images/renders/st-regis-residences-brickell.jpg",
     "hero": "/images/renders/st-regis-residences-brickell.jpg",
     "theBuilding": "A luxurious waterfront tower with 152 unique residences across 50 levels.",
@@ -37168,7 +37178,7 @@
     "name": "St. Regis® Residences Sunny Isles",
     "tpDataName": "St. Regis® Residences Sunny Isles",
     "section": "Top Projects",
-    "startingPrice": "$5.1M",
+    "startingPrice": "$5M",
     "thumbnail": "/images/renders/st-regis-residences-sunny-isles.jpg",
     "hero": "/images/renders/st-regis-residences-sunny-isles.jpg",
     "theBuilding": "Featuring two towers and 62 floors with 352 lavish residences, from 2 to 5 bedrooms.",
@@ -37748,7 +37758,7 @@
     "name": "Surf Row Residences Surfside",
     "tpDataName": "Surf Row",
     "section": "Other Projects",
-    "startingPrice": "$1.4M",
+    "startingPrice": "$1.3M",
     "thumbnail": "/images/renders/surf-row.jpg",
     "hero": "/images/renders/surf-row.jpg",
     "theBuilding": "Is an exclusive collection of 24 luxury homes in the heart of Surfside from 1- to 3- bedroom units ranging from 894 Sq. Ft. to 2,004 Sq. Ft.",
@@ -37907,7 +37917,7 @@
     "name": "The Avenue Coral Gables",
     "tpDataName": "The Avenue",
     "section": "Other Projects",
-    "startingPrice": "$988K",
+    "startingPrice": "$848K",
     "thumbnail": "/images/renders/the-avenue.jpg",
     "hero": "/images/renders/the-avenue.jpg",
     "theBuilding": "The Avenue rises to 9 floors and includes 54 modern 1-to-2-bedroom residences, with layouts ranging from 571 to 978 Sq. Ft.",
@@ -38100,7 +38110,7 @@
       {
         "name": "N/A",
         "phone": "N/A",
-        "email": null
+        "email": "N/A"
       }
     ],
     "priceList": {
@@ -38200,7 +38210,7 @@
     "slug": "the-berkeley",
     "name": "The Berkeley Palm Beach",
     "esqueletoName": "The Berkeley Palm Beach",
-    "startingPrice": "$2.6M",
+    "startingPrice": "$2.2M",
     "thumbnail": "/images/renders/the-berkeley.jpg",
     "hero": "/images/renders/the-berkeley.jpg",
     "buildingDescription": "",
@@ -38612,7 +38622,7 @@
     "name": "The Cove Residences Edgewater",
     "tpDataName": "The Cove Residences",
     "section": "Other Projects",
-    "startingPrice": "$845K",
+    "startingPrice": "$895K",
     "thumbnail": "/images/renders/the-cove-residences.jpg",
     "hero": "/images/renders/the-cove-residences.jpg",
     "theBuilding": "This 40-story building offers 134 waterfront residences from 1- to 4- bedroom units ranging from 868 Sq. Ft to 2,763 Sq. Ft. with breathtaking views of the Biscayne Bay.",
@@ -38773,7 +38783,7 @@
       {
         "name": "Farid Moussallem",
         "phone": "+1 (305) 889-8470",
-        "email": null
+        "email": "N/A"
       }
     ],
     "projectLogo": "/images/logos/the-delmore.png",
@@ -39548,7 +39558,7 @@
     "name": "The George Residences Coral Gables",
     "tpDataName": "The George Residences Coral Gables",
     "section": "Other Projects",
-    "startingPrice": "$6.4M",
+    "startingPrice": "No Pricing Available",
     "thumbnail": "/images/renders/the-george-residences-coral-gables.jpg",
     "hero": "/images/renders/the-george-residences-coral-gables.jpg",
     "theBuilding": "This projects offers 13 townhomes of 3 floors each of 4 bedrooms and 4.5 bathrooms ranging 4,348 - 4,408 Sq. Ft.",
@@ -39717,7 +39727,7 @@
     "name": "The Lincoln Coconut Grove",
     "tpDataName": "The Lincoln Coconut Grove",
     "section": "Other Projects",
-    "startingPrice": "$1.5M",
+    "startingPrice": "$1.7M",
     "thumbnail": "/images/renders/the-lincoln-coconut-grove.jpg",
     "hero": "/images/renders/the-lincoln-coconut-grove.jpg",
     "theBuilding": "The Lincoln, an 8-story architectural gem in the heart of Coconut Grove, offers 48 exclusive residences ranging from 1 to 4 bedrooms.",
@@ -39878,7 +39888,7 @@
       {
         "name": "Pili Gomez",
         "phone": "+1 (786) 253-7315",
-        "email": null
+        "email": "N/A"
       }
     ],
     "projectLogo": "/images/logos/the-links-estates.png",
@@ -40162,7 +40172,7 @@
       {
         "name": "N/A",
         "phone": "N/A",
-        "email": null
+        "email": "N/A"
       }
     ],
     "priceList": {
@@ -40543,7 +40553,7 @@
       {
         "name": "N/A",
         "phone": "N/A",
-        "email": null
+        "email": "N/A"
       }
     ],
     "priceList": {
@@ -41168,7 +41178,7 @@
     "name": "The Raleigh by Rosewood",
     "tpDataName": "The Raleigh",
     "section": "Top Projects",
-    "startingPrice": "$7M",
+    "startingPrice": "No Pricing Available",
     "thumbnail": "/images/renders/the-raleigh.png",
     "hero": "/images/renders/the-raleigh.png",
     "theBuilding": "A 17-story oceanfront tower with only 40 residences, set within a three-acre estate with 220 feet of beach.",
@@ -41184,7 +41194,7 @@
     "developer": "SHVO",
     "architecture": "Peter Marino & Kobi Karp Architecture",
     "interiorDesign": "Peter Marino",
-    "completionDate": "2027",
+    "completionDate": "2029",
     "depositStructure": [
       "30% at contract",
       "10% at pouring of grade floor slab",
@@ -41321,7 +41331,7 @@
     "slug": "1428-brickell",
     "name": "The Residences at 1428 Brickell",
     "esqueletoName": "The Residences at 1428 Brickell",
-    "startingPrice": "$3.8M",
+    "startingPrice": "$4.3M",
     "thumbnail": "/images/renders/1428-brickell.jpg",
     "hero": "/images/renders/1428-brickell.jpg",
     "buildingDescription": "",
@@ -41853,7 +41863,7 @@
     "slug": "mandarin-oriental-miami",
     "name": "The Residences at Mandarin Oriental, Miami",
     "esqueletoName": "The Residences at Mandarin Oriental, Miami",
-    "startingPrice": "$7.3M",
+    "startingPrice": "$3.9M",
     "thumbnail": "/images/renders/mandarin-oriental-miami.jpg",
     "hero": "/images/renders/mandarin-oriental-miami.jpg",
     "buildingDescription": "",
@@ -42256,7 +42266,7 @@
     "name": "The Residences at Six Fisher Island",
     "tpDataName": "The Residences at Six Fisher Island",
     "section": "Other Projects",
-    "startingPrice": "$16.8M",
+    "startingPrice": "$16.9M",
     "thumbnail": "/images/renders/the-residences-at-six-fisher-island.jpg",
     "hero": "/images/renders/the-residences-at-six-fisher-island.jpg",
     "theBuilding": null,
@@ -42527,7 +42537,7 @@
       {
         "name": "N/A",
         "phone": "N/A",
-        "email": null
+        "email": "N/A"
       }
     ],
     "priceList": {
@@ -42748,7 +42758,7 @@
       {
         "name": "N/A",
         "phone": "N/A",
-        "email": null
+        "email": "N/A"
       }
     ],
     "priceList": {
@@ -42981,7 +42991,7 @@
     "slug": "ritz-carlton-fort-lauderdale",
     "name": "The Ritz-Carlton Residences® Fort Lauderdale",
     "esqueletoName": "The Ritz-Carlton Residences® Fort Lauderdale",
-    "startingPrice": "$2.5M",
+    "startingPrice": "No Pricing Available",
     "thumbnail": "/images/renders/ritz-carlton-fort-lauderdale.png",
     "hero": "/images/renders/ritz-carlton-fort-lauderdale.png",
     "buildingDescription": "",
@@ -43015,7 +43025,7 @@
       {
         "name": "Eric Feather",
         "phone": "+1 (610) 349-8311",
-        "email": null
+        "email": "N/A"
       }
     ],
     "projectLogo": "/images/logos/ritz-carlton-fort-lauderdale.png",
@@ -44060,7 +44070,7 @@
     "name": "The Ritz-Carlton Residences® Pompano Beach",
     "tpDataName": "The Ritz-Carlton Residences® Pompano Beach",
     "section": "Other Projects",
-    "startingPrice": "$6.4M",
+    "startingPrice": "$5.7M",
     "thumbnail": "/images/renders/the-ritz-carlton-residences-pompano-beach.jpg",
     "hero": "/images/renders/the-ritz-carlton-residences-pompano-beach.jpg",
     "theBuilding": "This residential masterpiece offers a total of 206 ultra-luxurious 1 to 5 bedroom units with spaces ranging from 1,170 to 12,503 square feet, designed by Luis Revuelta.",
@@ -44239,7 +44249,7 @@
     "slug": "ritz-carlton-south-beach",
     "name": "The Ritz-Carlton Residences® South Beach",
     "esqueletoName": "The Ritz-Carlton Residences® South Beach",
-    "startingPrice": "$4.3M",
+    "startingPrice": "$4.2M",
     "thumbnail": "/images/renders/ritz-carlton-south-beach.jpg",
     "hero": "/images/renders/ritz-carlton-south-beach.jpg",
     "buildingDescription": "",
@@ -44693,7 +44703,7 @@
     "slug": "ritz-carlton-west-palm",
     "name": "The Ritz-Carlton Residences® West Palm Beach",
     "esqueletoName": "The Ritz-Carlton Residences® West Palm Beach",
-    "startingPrice": "$7.8M",
+    "startingPrice": "$2.4M",
     "thumbnail": "/images/renders/ritz-carlton-west-palm.jpg",
     "hero": "/images/renders/ritz-carlton-west-palm.jpg",
     "buildingDescription": "",
@@ -44852,7 +44862,7 @@
     "name": "The Roads Townhomes Brickell",
     "tpDataName": "The Roads Townhomes Brickell",
     "section": "Other Projects",
-    "startingPrice": "$2M",
+    "startingPrice": "$1.9M",
     "thumbnail": "/images/renders/the-roads-townhomes-brickell.jpg",
     "hero": "/images/renders/the-roads-townhomes-brickell.jpg",
     "theBuilding": "This projects offers 7 townhomes of 3 floors each of 3 or 4 bedrooms ranging 2,749 - 2,885 Sq. Ft.COMPLETION DATEThese townhomes were completed by 2025 ready to be occupied.",
@@ -45320,7 +45330,7 @@
     "name": "The Standard Residences Brickell",
     "tpDataName": "The Standard Residences",
     "section": "Other Projects",
-    "startingPrice": "$585K",
+    "startingPrice": "$630K",
     "thumbnail": "/api/render?id=18m3njoLS2bIsTE6nWN4CD2RDCdmr4SaP",
     "hero": "/api/render?id=18m3njoLS2bIsTE6nWN4CD2RDCdmr4SaP",
     "theBuilding": "A total of 12 levels and 228 studio-to-2-bedroom residences, spanning between 445 to 965 square feet.",
@@ -46016,7 +46026,7 @@
     "slug": "the-village-coral-gables",
     "name": "The Village at Coral Gables",
     "esqueletoName": "The Village at Coral Gables",
-    "startingPrice": "$2.5M",
+    "startingPrice": "$2.2M",
     "thumbnail": "/images/renders/the-village-coral-gables.jpg",
     "hero": "/images/renders/the-village-coral-gables.jpg",
     "buildingDescription": "",
@@ -46196,7 +46206,7 @@
     "slug": "the-well-bay-harbor",
     "name": "The Well Bay Harbor Islands",
     "esqueletoName": "The Well Bay Harbor Islands",
-    "startingPrice": "$1.5M",
+    "startingPrice": "$1.3M",
     "thumbnail": "/images/renders/the-well-bay-harbor.jpg",
     "hero": "/images/renders/the-well-bay-harbor.jpg",
     "buildingDescription": "",
@@ -46510,10 +46520,10 @@
     "slug": "the-well-coconut-grove",
     "name": "The Well Coconut Grove",
     "esqueletoName": "The Well Coconut Grove",
-    "startingPrice": "$1.6M",
+    "startingPrice": "$1.4M",
     "thumbnail": "/images/renders/the-well-coconut-grove.jpg",
     "hero": "/images/renders/the-well-coconut-grove.jpg",
-    "theBuilding": null,
+    "theBuilding": "A boutique collection of 194 residences, featuring 1-4 bedroom layouts, within an intimate 8-story building.",
     "stylishAmenities": "Including a resident herb garden, a conservatory, tea garden, a library, private dining room, children's room, fitness center, and multiple pools with cabanas.",
     "brochures": [
       {
@@ -47766,7 +47776,7 @@
       {
         "name": "N/A",
         "phone": "N/A",
-        "email": null
+        "email": "N/A"
       }
     ],
     "priceList": {
@@ -47880,7 +47890,7 @@
       {
         "name": "Albert Bell",
         "phone": "+1 (305) 606-4212",
-        "email": null
+        "email": "N/A"
       }
     ],
     "projectLogo": "/images/logos/twenty-nine-indian-creek.png",
@@ -47991,7 +48001,7 @@
     "name": "Una Residences Brickell",
     "tpDataName": "UNA Residences",
     "section": "Other Projects",
-    "startingPrice": "$6.4M",
+    "startingPrice": "$6.2M",
     "thumbnail": "/images/renders/una-residences.jpg",
     "hero": "/images/renders/una-residences.jpg",
     "theBuilding": "UNA, an elegant tower with a sweeping curve, rises high above Brickell. The building features 135 waterfront units ranging from 1,100 to 4,786 square feet, distributed in spacious 2 to 5-bedroom residences.",
@@ -48030,7 +48040,7 @@
       {
         "name": "Claudia Laverde",
         "phone": "+1 (754) 234-3457",
-        "email": null
+        "email": "N/A"
       }
     ],
     "projectLogo": "/images/logos/una-residences.png",
@@ -48176,7 +48186,7 @@
     "name": "Viceroy Brickell",
     "tpDataName": "Viceroy Brickell",
     "section": "Other Projects",
-    "startingPrice": "$626K",
+    "startingPrice": "$609K",
     "thumbnail": "/images/renders/viceroy-brickell.jpg",
     "hero": "/images/renders/viceroy-brickell.jpg",
     "theBuilding": "Viceroy Brickell boasts stunning city views, with its soaring single tower standing 45 floors tall. The property offers a total of 498 units, ranging from studios to 2-bedroom residences, each designed to provide upscale living.",
@@ -48357,7 +48367,7 @@
     "name": "Viceroy Fort Lauderdale",
     "tpDataName": "Viceroy Fort Lauderdale",
     "section": "Other Projects",
-    "startingPrice": "$745K",
+    "startingPrice": "$730K",
     "thumbnail": "/images/renders/viceroy-fort-lauderdale.jpg",
     "hero": "/images/renders/viceroy-fort-lauderdale.jpg",
     "theBuilding": "Viceroy Fort Lauderdale features 2 towers with 45 floors each including 251 units from 1- to 4-bedroom residences and penthouses, ranging from 679 to 2,585 Sq. Ft.",
@@ -48636,7 +48646,7 @@
     "slug": "villa-miami",
     "name": "Villa Miami",
     "esqueletoName": "Villa Miami",
-    "startingPrice": "$5.4M",
+    "startingPrice": "$5.3M",
     "thumbnail": "/images/renders/villa-miami.jpg",
     "hero": "/images/renders/villa-miami.jpg",
     "buildingDescription": "",
@@ -49369,7 +49379,7 @@
     "name": "Vita at Grove Isle",
     "tpDataName": "Vita at Grove Isle",
     "section": "Top Projects",
-    "startingPrice": "$8.7M",
+    "startingPrice": "$6.5M",
     "thumbnail": "/images/renders/vita-at-grove-isle.jpg",
     "hero": "/images/renders/vita-at-grove-isle.jpg",
     "theBuilding": "Vita residential development boasts 7 stories above the pristine waters of Grove Isle. Its 65 luxurious and sophisticated residences offer breath-taking ocean views in spacious layouts ranging from 2,500 to 6,600 Sq. Ft.",
@@ -49689,7 +49699,7 @@
     "name": "W Pompano Beach Hotel & Residences",
     "tpDataName": "W Pompano Beach Hotel & Residences",
     "section": "Top Projects",
-    "startingPrice": "$909K",
+    "startingPrice": "$814K",
     "thumbnail": "/images/renders/w-pompano-beach-hotel-residences.jpg",
     "hero": "/images/renders/w-pompano-beach-hotel-residences.jpg",
     "theBuilding": "A 24-story singular tower, offering 77 private residences and 296 condo-hotel units with breathtaking ocean and bay views. These residences range from 2 to 4 bedrooms and the suites range from studios to 2 bedrooms.",
@@ -49719,7 +49729,7 @@
       {
         "name": "Sivan Koster",
         "phone": "+1 (305) 799-1405",
-        "email": null
+        "email": "N/A"
       }
     ],
     "projectLogo": "/images/logos/w-pompano-beach-hotel-residences.png",
@@ -49938,7 +49948,7 @@
       {
         "name": "N/A",
         "phone": "N/A",
-        "email": null
+        "email": "N/A"
       }
     ],
     "priceList": {
@@ -50071,7 +50081,7 @@
     "name": "Waldorf Astoria Residences Downtown Miami",
     "tpDataName": "Waldorf Astoria Residences Downtown Miami",
     "section": "Other Projects",
-    "startingPrice": "$3.2M",
+    "startingPrice": "$3.1M",
     "thumbnail": "/images/renders/waldorf-astoria-residences-downtown-miami.jpg",
     "hero": "/images/renders/waldorf-astoria-residences-downtown-miami.jpg",
     "theBuilding": "Waldorf Astoria Residences Miami will be a massive 100-story residential tower (Miami's tallest at 1,049 feet above the ground!) and will be located in the heart of downtown Miami. This spectacular high-rise will cover 800,000 square feet of land overlooking Biscayne Bay, Brickell Avenue, Downtown Miami, Key Biscayne, and South Beach.",
@@ -50809,7 +50819,7 @@
     "name": "West Eleventh Residences Downtown Miami",
     "tpDataName": "West Eleventh Residences",
     "section": "Other Projects",
-    "startingPrice": "$1.1M",
+    "startingPrice": "$573K",
     "thumbnail": "/images/renders/west-eleventh-residences.jpg",
     "hero": "/images/renders/west-eleventh-residences.jpg",
     "theBuilding": "This 44-story tower features 659 luxurious residences, ranging from cozy studios to spacious two-bedroom units.",
@@ -50937,7 +50947,7 @@
     "slug": "ziggurat-coconut-grove",
     "name": "Ziggurat Coconut Grove",
     "esqueletoName": "Ziggurat Coconut Grove",
-    "startingPrice": "$4.1M",
+    "startingPrice": "$3.8M",
     "thumbnail": "/images/renders/ziggurat-coconut-grove.jpg",
     "hero": "/images/renders/ziggurat-coconut-grove.jpg",
     "buildingDescription": "",
