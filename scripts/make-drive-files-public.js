@@ -106,10 +106,12 @@ async function main() {
     }
   }
 
-  // Concurrency-limited worker pool. 8 parallel requests is well below
-  // Drive's 1000/100s quota and keeps total runtime under ~3 min for ~10k
-  // files — comfortably within the workflow's 10-min timeout.
-  const CONCURRENCY = 8;
+  // Concurrency-limited worker pool. 16 parallel requests (was 8) — still
+  // well below Drive's 1000/100s quota but cuts wall-clock roughly in half.
+  // Bumped after observing ~30% of workflow runs being killed at the old
+  // 10-min timeout. The workflow timeout is now 25 min but we still want
+  // make-public to finish in <5 min so subsequent steps have headroom.
+  const CONCURRENCY = 16;
   const queue = [...fileIds];
   const workers = Array.from({ length: CONCURRENCY }, async () => {
     while (queue.length) {

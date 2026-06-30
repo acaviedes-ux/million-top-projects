@@ -1,16 +1,25 @@
 name: Sync Price Lists from Drive
 
 # ── Triggers ───────────────────────────────────────────────────────────────────
-# • schedule: every 15 min, Mon–Fri, 8 AM–5 PM Colombia time (COT = UTC-5)
-#     8:00 AM COT = 13:00 UTC  |  5:00 PM COT = 22:00 UTC
-#     cron runs at :00 :15 :30 :45 of each UTC hour 13–22, weekdays only
-# • workflow_dispatch: manual run from GitHub Actions UI
+# • schedule: GitHub Actions does NOT honor cron precisely for low-traffic
+#   repos — runs often get delayed 60-120 min during peak load (verified
+#   via gh run list — observed 90-120 min gaps despite a 15 min schedule).
+#   We fire FIVE overlapping crons offset by 3 min to maximize the chance
+#   that at least one fires every ~15 min during business hours. The
+#   concurrency guard below dedupes if two land too close together.
+# • workflow_dispatch: manual run from GitHub Actions UI or via API call.
 on:
   schedule:
-    - cron: '*/15 13-22 * * 1-5'   # every 15 min, Mon–Fri, 8 AM–5 PM COT
+    - cron: '0,15,30,45 13-22 * * 1-5'   # primary :00 :15 :30 :45
+    - cron: '3,18,33,48 13-22 * * 1-5'   # +3 offset (catches missed primary)
+    - cron: '6,21,36,51 13-22 * * 1-5'   # +6 offset
+    - cron: '9,24,39,54 13-22 * * 1-5'   # +9 offset
+    - cron: '12,27,42,57 13-22 * * 1-5'  # +12 offset
   workflow_dispatch:
 
-# Only one run at a time — if a run is still going when the next fires, skip it
+# Skip a new run if one is already in flight (don't cancel the in-flight
+# one). With 5 cron schedules overlapping, this prevents duplicate work:
+# the first one wins, the others bow out at the queue stage.
 concurrency:
   group: sync-pricelists
   cancel-in-progress: false
@@ -18,7 +27,11 @@ concurrency:
 jobs:
   sync:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    # Was 10 min — ~30% of runs were killed at exactly 10m 17s by the
+    # timeout (verified via gh run list). 25 min gives comfortable
+    # headroom for the ~9700-file make-public step plus Drive API
+    # latency, without leaving runaway jobs hanging forever.
+    timeout-minutes: 25
     permissions:
       contents: write   # allows git push
     env:
