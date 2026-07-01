@@ -21870,7 +21870,7 @@
     "name": "Mr. C Residences Boca Raton",
     "tpDataName": "Mr. C Residences Boca Raton",
     "section": "Top Projects",
-    "startingPrice": "$1.8M",
+    "startingPrice": "$2.1M",
     "thumbnail": "/images/renders/mr-c-residences-boca-raton.jpg",
     "hero": "/images/renders/mr-c-residences-boca-raton.jpg",
     "theBuilding": "This magnificent building with 12 floors includes 133 units ranging from 2- to 3-bedrooms and from 1,700 Sq. Ft. to 2,400 Sq. Ft. No furnished.",
@@ -21894,10 +21894,10 @@
       "10% at top-off (15 months post-groundbreaking)",
       "60% at closing"
     ],
-    "parkingSpaces": [
+    "parkingSpaces": null,
+    "rentalRestrictions": [
       "6 months minimum. 2 times per year."
     ],
-    "rentalRestrictions": null,
     "hoa": "$1.70",
     "contact": [
       {
