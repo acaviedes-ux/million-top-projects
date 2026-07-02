@@ -49723,7 +49723,7 @@
     "name": "W Pompano Beach Hotel & Residences",
     "tpDataName": "W Pompano Beach Hotel & Residences",
     "section": "Top Projects",
-    "startingPrice": "$814K",
+    "startingPrice": "$909K",
     "thumbnail": "/images/renders/w-pompano-beach-hotel-residences.jpg",
     "hero": "/images/renders/w-pompano-beach-hotel-residences.jpg",
     "theBuilding": "A 24-story singular tower, offering 77 private residences and 296 condo-hotel units with breathtaking ocean and bay views. These residences range from 2 to 4 bedrooms and the suites range from studios to 2 bedrooms.",
@@ -49737,7 +49737,7 @@
     "completionDate": "2029",
     "depositStructure": [
       "15% at contract",
-      "15% at groundbreaking (Fall 2026)",
+      "15% at groundbreaking (Q4 2026)",
       "5% at top-off",
       "65% at closing (Fall 2029)"
     ],
@@ -49753,7 +49753,7 @@
       {
         "name": "Sivan Koster",
         "phone": "+1 (305) 799-1405",
-        "email": "N/A"
+        "email": null
       }
     ],
     "projectLogo": "/images/logos/w-pompano-beach-hotel-residences.png",
