@@ -19054,7 +19054,7 @@
   {
     "slug": "kempinski-residences-miami-design-district",
     "name": "Kempinski Residences Miami Design District",
-    "isNew": true,
+    "isNew": false,
     "esqueletoName": "Kempinski Residences Miami Design District",
     "tpDataName": "Kempinski Residences Miami Design District",
     "startingPrice": "$3.8M",
@@ -20836,7 +20836,7 @@
     "hoa": null,
     "contact": [
       {
-        "name": "Carole Tremoulet",
+        "name": "Carole",
         "phone": "+1 (310) 903-0731",
         "email": null
       }
