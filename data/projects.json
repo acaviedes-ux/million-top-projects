@@ -23545,7 +23545,7 @@
       }
     ],
     "projectLogo": "/images/logos/nora-house.png",
-    "isNew": true,
+    "isNew": false,
     "filterCounty": "Palm Beach County",
     "filterLocation": "West Palm Beach",
     "filterStatus": "Pre-construction",
@@ -46898,7 +46898,7 @@
       "driveFileId": "1n2anS4SxCfs9xTb2TVE0iM3g7WOM6AyV",
       "createdAt": "As of June 1, 2026"
     },
-    "isNew": false,
+    "isNew": true,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "North Bay Village",
     "filterStatus": "Pre-construction",
