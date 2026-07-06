@@ -8399,7 +8399,7 @@
       "driveFileId": "1lp9prfApMQQ_1gPwdm7le5Cv-MwabsJ6",
       "createdAt": "As of May 26, 2026"
     },
-    "isNew": false,
+    "isNew": true,
     "filterCounty": "Palm Beach County",
     "filterLocation": "West Palm Beach",
     "filterStatus": "Pre-construction",
@@ -46898,7 +46898,7 @@
       "driveFileId": "1n2anS4SxCfs9xTb2TVE0iM3g7WOM6AyV",
       "createdAt": "As of June 1, 2026"
     },
-    "isNew": true,
+    "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "North Bay Village",
     "filterStatus": "Pre-construction",
