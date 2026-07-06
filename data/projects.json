@@ -13279,7 +13279,7 @@
       }
     ],
     "projectLogo": "/images/logos/edgeworth-west-palm-beach.png",
-    "isNew": true,
+    "isNew": false,
     "filterCounty": "Palm Beach County",
     "filterLocation": "West Palm Beach",
     "filterStatus": "Pre-construction",
@@ -16703,7 +16703,7 @@
       "driveFileId": "1vUkh8ROUcCTPfSI0GZ6dLglMr7vT-BJw",
       "createdAt": "As of May 26, 2026"
     },
-    "isNew": false,
+    "isNew": true,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Wynwood",
     "filterStatus": "Pre-construction",
