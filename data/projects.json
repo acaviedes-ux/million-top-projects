@@ -8399,7 +8399,7 @@
       "driveFileId": "1lp9prfApMQQ_1gPwdm7le5Cv-MwabsJ6",
       "createdAt": "As of May 26, 2026"
     },
-    "isNew": true,
+    "isNew": false,
     "filterCounty": "Palm Beach County",
     "filterLocation": "West Palm Beach",
     "filterStatus": "Pre-construction",
@@ -13279,7 +13279,7 @@
       }
     ],
     "projectLogo": "/images/logos/edgeworth-west-palm-beach.png",
-    "isNew": false,
+    "isNew": true,
     "filterCounty": "Palm Beach County",
     "filterLocation": "West Palm Beach",
     "filterStatus": "Pre-construction",
