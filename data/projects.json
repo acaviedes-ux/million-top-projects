@@ -11483,7 +11483,7 @@
       }
     ],
     "projectLogo": "/images/logos/continuum-12000-sport-wellness-residences-miami.png",
-    "isNew": false,
+    "isNew": true,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "North Miami",
     "filterStatus": "Pre-construction",
@@ -16703,7 +16703,7 @@
       "driveFileId": "1vUkh8ROUcCTPfSI0GZ6dLglMr7vT-BJw",
       "createdAt": "As of May 26, 2026"
     },
-    "isNew": true,
+    "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Wynwood",
     "filterStatus": "Pre-construction",
