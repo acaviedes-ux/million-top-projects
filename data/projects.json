@@ -20965,8 +20965,12 @@
     "stylishAmenities": "Includes a 70-foot rooftop pool with cabanas, a fitness center and private training studio, sauna, steam room, and cold plunge, yoga and pilates rooms, a golf simulator and screening room, a 1,000-square-foot lounge and party room, on-site dining with two restaurants and a bar, and personalized services such as housekeeping and a private chauffeur.",
     "brochures": [
       {
-        "title": "",
-        "driveFileId": "1Ngne3MVQH6Uwm6QEE4mSfIjUO6ODaefW"
+        "title": "EN",
+        "driveFileId": "1Py8YiMurLFvp2C-2WBJxx_WPxyNIImor"
+      },
+      {
+        "title": "ES",
+        "driveFileId": "1_d0D7hvJz13iawn7dcrPuVRlcbAYlsQw"
       }
     ],
     "esqueletoName": "Miami Design Residences Midtown Miami",
@@ -21004,8 +21008,16 @@
     },
     "factSheets": [
       {
-        "title": "",
-        "driveFileId": "1kF-bWE275UZ-QhjcPialhCNcoKbp7RdK"
+        "title": "EN",
+        "driveFileId": "1avfA13YE76HDZjxa3dk6hQeh23cmSNaW"
+      },
+      {
+        "title": "ES",
+        "driveFileId": "1VAAuflGMFb_qtspk44TZkn1Rp8yQLyxV"
+      },
+      {
+        "title": "PT",
+        "driveFileId": "1Sh7_1Lj1znmuh9JgJXChrMZGh_BCEmKJ"
       }
     ],
     "presentations": [],
