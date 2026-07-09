@@ -20978,8 +20978,8 @@
     "depositStructure": [
       "10% at contract",
       "10% 90 days after contract",
-      "10% within 5 days after groundbreaking",
-      "10% within 5 days after top-off",
+      "10% within 5 days after notice of groundbreaking",
+      "10% within 5 days after notice of top-off",
       "60% at closing"
     ],
     "parkingSpaces": null,
