@@ -46734,9 +46734,9 @@
     "completionDate": "2028",
     "depositStructure": [
       "10% at contract",
-      "10% in July 2026",
-      "10% in January 2027",
+      "10% at vertical construction",
       "10% at top-off",
+      "10% 6 months after top-off",
       "60% at closing"
     ],
     "parkingSpaces": [
