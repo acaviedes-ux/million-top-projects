@@ -14811,13 +14811,11 @@
     "interiorDesign": "Bryan O’Sullivan Studio",
     "completionDate": "2029",
     "depositStructure": [
-      "5% at contract",
-      "5% 45 days after contract",
-      "10% 120 days after contract",
-      "10% at groundbreaking (Summer 2026)",
-      "10% 12 months after groundbreaking",
-      "10% at top-off of the highest unit",
-      "50% at closing (Q4 2029)"
+      "20% at contract",
+      "10% at 120 days after contract",
+      "10% at one year after signing of contract",
+      "10% at pouring off the highest residential unit",
+      "50% at closing"
     ],
     "parkingSpaces": [
       "1 parking space for 3-bed units + 2 valet spaces",
