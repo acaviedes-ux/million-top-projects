@@ -9471,13 +9471,7 @@
         "title": "Bentley Residences Sunny Isles - Price Range",
         "kind": "range"
       }
-    ],
-    "priceList": {
-      "disclaimer": {
-        "type": "warning",
-        "text": "Do not share the Price List or specific prices with clients. Price List for reference only. Share price ranges only."
-      }
-    }
+    ]
   },
   {
     "slug": "biltmore-row",
@@ -12207,8 +12201,8 @@
     ],
     "projectLogo": "/images/logos/delano-residences-hotel-miami.png",
     "priceList": {
-      "driveFileId": "1G21o4WdLv-NPXsI9saKyQIy3_KhZUKbB",
-      "createdAt": "As of June 30, 2026"
+      "driveFileId": "12eYf1jLkqtyXpwii1tMSnNEaHOb6h_ro",
+      "createdAt": "As of July 14, 2026"
     },
     "isNew": false,
     "filterCounty": "Miami-Dade County",
@@ -13313,7 +13307,11 @@
     "filterYear": "2029",
     "priceRange": {
       "driveFileId": "1_yQxIIhvFDxMal4lkaJYYMOiKFs_go3e",
-      "createdAt": "As of July 2, 2026"
+      "createdAt": "As of July 2, 2026",
+      "disclaimer": {
+        "type": "warning",
+        "text": "Do not share the Price List, specific prices, or Floor Plans with clients. All pricing information and Floor Plans are for reference only and may be subject to change during the pre-launch phase. Share price ranges only and verify all information with the in-house team before presenting it to clients."
+      }
     },
     "factSheets": [
       {
@@ -13384,13 +13382,7 @@
         "alt": "Edge Worth - 6"
       }
     ],
-    "floorPlans": [],
-    "priceList": {
-      "disclaimer": {
-        "type": "warning",
-        "text": "Do not share the Price List, specific prices, or Floor Plans with clients. All pricing information and Floor Plans are for reference only and may be subject to change during the pre-launch phase. Share price ranges only and verify all information with the in-house team before presenting it to clients."
-      }
-    }
+    "floorPlans": []
   },
   {
     "slug": "edition-residences-edgewater",
@@ -47166,13 +47158,7 @@
         "title": "The Well Coconut Grove - Price Range",
         "kind": "range"
       }
-    ],
-    "priceList": {
-      "disclaimer": {
-        "type": "warning",
-        "text": "Do not share the complete Price List with clients. Price List for reference only. Share only the Price Range, or specific available units based on the client's search criteria, such as bedroom count, budget, or preferred layout."
-      }
-    }
+    ]
   },
   {
     "slug": "tula-residences",
@@ -51006,7 +50992,7 @@
     ],
     "projectLogo": "/images/logos/waldorf-astoria-pompano.png",
     "priceList": {
-      "driveFileId": "1Re5ZEmVGSr0uiUR0xpxOfdr9fQ9HdBIk",
+      "driveFileId": "1czRy70hEtCn2BpBO4jLrFdMG_RAsJhCJ",
       "createdAt": "As of July 14, 2026"
     },
     "isNew": false,
