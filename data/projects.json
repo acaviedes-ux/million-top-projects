@@ -12186,9 +12186,9 @@
     "completionDate": "2031",
     "depositStructure": [
       "10% at contract",
-      "10% at December 2026",
-      "10% at June 2027 (estimated groundbreaking)",
-      "10% at June 2028 (1 year after groundbreaking)",
+      "10% in December 2026",
+      "10% in June 2027 (estimated groundbreaking)",
+      "10% in June 2028 (1 year after groundbreaking)",
       "60% at closing"
     ],
     "parkingSpaces": null,
