@@ -12167,7 +12167,7 @@
     "name": "Delano Residences & Hotel Miami",
     "tpDataName": "Delano Residences & Hotel Miami",
     "section": "Other Projects",
-    "startingPrice": "$763K",
+    "startingPrice": "$759K",
     "thumbnail": "/images/renders/delano-residences-hotel-miami.jpg",
     "hero": "/images/renders/delano-residences-hotel-miami.jpg",
     "theBuilding": "This 90-floors magnific residential building offers 421 fully-finished residences with views of downtown, Miami Beach and the Atlantic Ocean. The units range from 311 - 1,645 Sq. Ft.Delano Collections (Floors 20 - 47): Studios, 1, and 2 bedrooms.Delano Residences (Floors 49 - 75): 1, 2 and 3 bedrooms including a deeded office space.",
@@ -12185,19 +12185,11 @@
     "interiorDesign": "Meyer Davis Studio",
     "completionDate": "2031",
     "depositStructure": [
-      "Studios:",
-      "5% at contract",
-      "5% 90 days after contract",
-      "10% in October 2026",
-      "10% at groundbreaking (June 2027)",
-      "10% 1 year after groundbreaking",
-      "60% at closing (2031)",
-      "Residences:",
       "10% at contract",
-      "10% in October 2026",
-      "10% at groundbreaking (June 2027)",
-      "10% 1 year after groundbreaking",
-      "60% at closing (2031)"
+      "10% at December 2026",
+      "10% at June 2027 - estimated groundbreaking",
+      "10% at June 2028 - 1 year after GB",
+      "60% at closing"
     ],
     "parkingSpaces": null,
     "rentalRestrictions": [
