@@ -1,4 +1,11 @@
 {
+  "redirects": [
+    {
+      "source": "/projects/miami-design-residences-midtown-miami",
+      "destination": "/projects/fouquets-hotel-residences-miami-design-district",
+      "permanent": true
+    }
+  ],
   "rewrites": [
     { "source": "/projects/:slug", "destination": "/project.html" },
     { "source": "/login", "destination": "/login.html" }
