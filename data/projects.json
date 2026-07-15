@@ -50330,9 +50330,9 @@
     "completionDate": "2028",
     "depositStructure": [
       "10% at contract",
-      "10% 1 year after contract",
-      "10% 2 years after contract",
-      "70% at closing (May 2028)"
+      "10% at 1 year after contract",
+      "10% at 2 years after contract",
+      "70% at closing"
     ],
     "parkingSpaces": [
       "Valet-only for all units.",
