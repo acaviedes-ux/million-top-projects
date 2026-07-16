@@ -43263,10 +43263,6 @@
       }
     ],
     "projectLogo": "/images/logos/ritz-carlton-fort-lauderdale.png",
-    "priceList": {
-      "driveFileId": "1TleE2NhOnFsU6iHCRJADI5v5YIlnRuga",
-      "createdAt": "As of May 26, 2026"
-    },
     "isNew": false,
     "filterCounty": "Broward County",
     "filterLocation": "Fort Lauderdale",
@@ -43326,7 +43322,21 @@
         "alt": "The Ritz-Carlton Residences Fort Lauderdale - Rendering (9)"
       }
     ],
-    "presentations": []
+    "presentations": [],
+    "priceDocs": [
+      {
+        "driveFileId": "1TleE2NhOnFsU6iHCRJADI5v5YIlnRuga",
+        "createdAt": "As of May 26, 2026",
+        "title": "The Ritz-Carlton Residences® Fort Lauderdale - Price List",
+        "kind": "list"
+      },
+      {
+        "driveFileId": "1cIA0SE1NjEo295YuoZIYrwkP-Ik2QnRc",
+        "createdAt": "As of July 16, 2026",
+        "title": "The Ritz-Carlton Residences® Fort Lauderdale - Price Range",
+        "kind": "range"
+      }
+    ]
   },
   {
     "slug": "ritz-carlton-miami-beach",
