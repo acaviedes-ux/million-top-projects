@@ -21203,10 +21203,6 @@
       }
     ],
     "projectLogo": "/images/logos/miami-tropic.png",
-    "priceList": {
-      "driveFileId": "1MlpUS3ttOoky9umac34V8FjPI0Vxyzah",
-      "createdAt": "As of June 26, 2026"
-    },
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Miami",
@@ -21406,7 +21402,21 @@
         "alt": "Miami Tropic Residences (9)"
       }
     ],
-    "presentations": []
+    "presentations": [],
+    "priceDocs": [
+      {
+        "driveFileId": "1MlpUS3ttOoky9umac34V8FjPI0Vxyzah",
+        "createdAt": "As of June 26, 2026",
+        "title": "Miami Tropic Residences - Price List",
+        "kind": "list"
+      },
+      {
+        "driveFileId": "1F7cWhS0yMQtlj3JnlIZQJzi6tHVXRThL",
+        "createdAt": "As of July 16, 2026",
+        "title": "Miami Tropic Residences - Price Range",
+        "kind": "range"
+      }
+    ]
   },
   {
     "slug": "mila-bay-harbor-islands",
