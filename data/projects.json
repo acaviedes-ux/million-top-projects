@@ -5178,7 +5178,9 @@
       }
     ],
     "parkingSpaces": null,
-    "rentalRestrictions": null,
+    "rentalRestrictions": [
+      "Daily Rentals Allowed"
+    ],
     "hoa": "$2.30",
     "contact": [
       {
