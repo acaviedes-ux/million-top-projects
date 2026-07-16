@@ -21181,10 +21181,10 @@
     "interiorDesign": "Yabu Pushelberg",
     "completionDate": "2029",
     "depositStructure": [
-      "10% at contract",
-      "10% at groundbreaking",
-      "10% at top off",
-      "70% at closing (Q1 2029)"
+      "20% at contract",
+      "10% at groundbreaking (Q3 2026)",
+      "10% at top off (Q3 2027)",
+      "60% at closing (Q2 2029)"
     ],
     "parkingSpaces": [
       "1 valet-only parking space for 1-bed units.",
