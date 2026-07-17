@@ -51331,380 +51331,40 @@
     "slug": "selene-oceanfront-residences",
     "name": "Selene Oceanfront Residences",
     "esqueletoName": "Selene Oceanfront Residences",
-    "tpDataName": "Selene Oceanfront Residences",
     "section": "Other Projects",
-    "theBuilding": "Two iconic 26-story oceanfront towers by Kobi Karp featuring spacious two- and three-bedroom residences and penthouses with panoramic Atlantic, Intracoastal, and city views.",
-    "stylishAmenities": "Resort-style amenity deck with ocean-view pools, fitness center, spa, private dining, theater, entertainment lounges, coworking spaces, concierge, valet, beachfront service, and exclusive resident hospitality.",
-    "filterCounty": "Broward County",
-    "filterLocation": "Fort Lauderdale",
-    "filterStatus": "Pre-construction",
-    "filterYear": "2025",
     "isNew": false,
+    "startingPrice": "$1.9M",
+    "thumbnail": "/api/render?id=1PmsWnC6-vaIK62070ZC54B6JuYdGIWv8",
+    "hero": "/api/render?id=1PmsWnC6-vaIK62070ZC54B6JuYdGIWv8",
+    "projectLogo": "/images/logos/selene-oceanfront-residences.png",
     "address": "151 N Seabreeze Blvd, Fort Lauderdale, FL 33304",
-    "startingPrice": "$2M",
-    "completionDate": "2025",
     "developer": "Kolter Urban",
     "architecture": "Kobi Karp Architecture",
     "interiorDesign": null,
-    "rentalRestrictions": [
-      "3 months minimum. 2 times per year."
-    ],
-    "parkingSpaces": null,
+    "completionDate": "2025",
+    "theBuilding": null,
+    "stylishAmenities": null,
     "depositStructure": [
       "10% at contract",
       "90% balance at closing"
     ],
+    "rentalRestrictions": [
+      "3 months minimum. 2 times per year."
+    ],
+    "parkingSpaces": null,
     "hoa": "$1.20",
-    "contact": [
-      {
-        "name": "Mark Shannon",
-        "phone": "+1 (561) 386-5666",
-        "email": "mark@seleneftl.com"
-      }
-    ],
-    "brochures": [
-      {
-        "title": "",
-        "driveFileId": "1ud-pXSFpPJMzAPWjvoEEr6g1sJT-cDeG"
-      },
-      {
-        "title": "",
-        "driveFileId": "16vr6uhixXDG1REVu2l-jl9uBkUbHJUC3"
-      },
-      {
-        "title": "",
-        "driveFileId": "17W46NnyrmO-sHzYX1m8BZsFOyvnXzhmw"
-      }
-    ],
-    "factSheets": [
-      {
-        "title": "",
-        "driveFileId": "1twnlVDz2naLGi8RFfeCsPDI_qoWqOpcm"
-      },
-      {
-        "title": "",
-        "driveFileId": "187wn9UGx-ULp3wzeOPGCI3MT0QGJkcn1"
-      },
-      {
-        "title": "",
-        "driveFileId": "1W3b6eNTsGlBXvJTkfIKcTWRBpAqgvY6k"
-      }
-    ],
-    "floorPlans": [
-      {
-        "title": "",
-        "driveFileId": "125SaVUlgtouMeH2QZQ32DXxIxdrCND81"
-      }
-    ],
-    "presentations": [
-      {
-        "title": "",
-        "driveFileId": "1ZieR8VXY3t7Ibx15n2G9gkuPzAaRFC-u"
-      }
-    ],
-    "renderings": [
-      {
-        "driveFileId": "1iLTzytJaDsaIHq28u3-ebiTiqBj4Q9M-",
-        "alt": "Amenity Renderings - Selene _The Wave Entertainment Lounge"
-      },
-      {
-        "driveFileId": "1Fl0v_HGFVLBR3vnnAf1fqGds0gsYQuN8",
-        "alt": "Amenity Renderings - Selene Oceanfront Residences"
-      },
-      {
-        "driveFileId": "1KIc1ObM5lwFyM6IiypY94T-9MUYLY-h_",
-        "alt": "Amenity Renderings - Selene Oceanfront Residences Beachfront"
-      },
-      {
-        "driveFileId": "1zuf8idiWnQjurWjZsjPvNCVMJ2QO0b-B",
-        "alt": "Amenity Renderings - Selene Oceanfront Residences Lap and Fitness Pool"
-      },
-      {
-        "driveFileId": "1oZLHQQAjBixtmJTgN3EERVpGV4cPgL9B",
-        "alt": "Amenity Renderings - Selene Oceanfront Residences Planned Restaurant Space"
-      },
-      {
-        "driveFileId": "1_DMaNfrtSBfV5eGbxGo5U4uihl9U9h_3",
-        "alt": "Amenity Renderings - Selene Oceanfront Residences Resort_Style Pool"
-      },
-      {
-        "driveFileId": "1cymLIFhTd3xHDTrn6JmkejG20CI-ZP2B",
-        "alt": "Amenity Renderings - Selene Oceanfront Residences Sunrise View"
-      },
-      {
-        "driveFileId": "186VmOPEr0HMIXESkbnS6JjPjgZU0EloJ",
-        "alt": "Amenity Renderings - Selene Oceanfront Residences_East Tower Lobby"
-      },
-      {
-        "driveFileId": "1GhFmz48igLkas_qCx6Ub8I7JPkZYV12N",
-        "alt": "Amenity Renderings - Selene Oceanfront Residences_South Tower Lobby"
-      },
-      {
-        "driveFileId": "19fqMh29WNj5MPWbDgYbOksIF_PjeJOfb",
-        "alt": "Amenity Renderings - Selene_ Private Movie Theater"
-      },
-      {
-        "driveFileId": "1_obRBzjZREvZPcVVLTohRdrhy1oHG-pE",
-        "alt": "Amenity Renderings - Selene_Fitness Center"
-      },
-      {
-        "driveFileId": "1kfqvp6HDzO_ksNRzVSUyZyQGCkTJBKgd",
-        "alt": "Amenity Renderings - Selene_Seasons Gathering Lounge"
-      },
-      {
-        "driveFileId": "1aQk9eM3CGlcGxSUqg4KSTQ7DeBjdzo-Q",
-        "alt": "Amenity Renderings - Selene_The Hub_Co Working Space"
-      },
-      {
-        "driveFileId": "1pDo5vn0qZLvjsnTgBubovq0bDUrBzhpS",
-        "alt": "Amenity Renderings - Selene_The Wave Entertainment Lounge _HR"
-      },
-      {
-        "driveFileId": "18cCUui3pc_wB9tNeZbSyO0aQdVNlXasP",
-        "alt": "Exterior Renderings - 01 - Selene Oceanfront Residences"
-      },
-      {
-        "driveFileId": "17YwLXtZlMBsGU6l6PNippzI0iQzTg-1o",
-        "alt": "Exterior Renderings - 02 - Selene Oceanfront Residences"
-      },
-      {
-        "driveFileId": "1hNLJtNmHX2RKX-CXxwf0qlfISc6YBtjk",
-        "alt": "Exterior Renderings - 03 - Selene Oceanfront Residences"
-      },
-      {
-        "driveFileId": "1t7FYKkFgresVP7WxLYfCGircT2dbxChS",
-        "alt": "Exterior Renderings - 04 - Selene Oceanfront Residences"
-      },
-      {
-        "driveFileId": "1OGHZHVWuNeljOiJivbv3PRVk1_1Qjfrj",
-        "alt": "Exterior Renderings - 05 - Selene Oceanfront Residences"
-      },
-      {
-        "driveFileId": "1tAkKuByBza5ddvbBg2pfPkvFXeVF006q",
-        "alt": "Exterior Renderings - 06 - Main Arrival Plaza"
-      },
-      {
-        "driveFileId": "1Le34DRvkE8G1nZ6EfImo_dT3-AjKkDOG",
-        "alt": "Exterior Renderings - 07 - Main Arrival Level"
-      },
-      {
-        "driveFileId": "1H8AKwDECA0o54Aouq6EDrMdlI1UNuJl7",
-        "alt": "Exterior Renderings - 08 - South Street Level"
-      },
-      {
-        "driveFileId": "1BzZMjkL_i3d3Q2uTkEUBdLCWZLklQ4Ij",
-        "alt": "Exterior Renderings - 09 - South Street Level"
-      },
-      {
-        "driveFileId": "1JrvVOO3H1MB9VgHB0rzj5u_C_IVSGI1Q",
-        "alt": "Exterior Renderings - 10 - East Restaurant & Plaza"
-      },
-      {
-        "driveFileId": "1ZYaubDKF93g3cCta8NtvcHV-G2sjGgWG",
-        "alt": "Exterior Renderings - 11 - North Street Level"
-      },
-      {
-        "driveFileId": "1ju_D9hPIEhRcP8WZROZnEEjASLTl5YHo",
-        "alt": "Exterior Renderings - 12 - North Street Level"
-      },
-      {
-        "driveFileId": "1b0UX7KwJ-Bjt4ID5b6_-WXllP2iihHAZ",
-        "alt": "Exterior Renderings - 13 - Northwest Street Corner"
-      },
-      {
-        "driveFileId": "10yTH_aBH3xS1I2RZyV3tz57eEim0Xldp",
-        "alt": "Exterior Renderings - Selene Oceanfront Residences"
-      },
-      {
-        "driveFileId": "1oy7JFeWOh4g0dDFBQX-ytpR93jVHvob2",
-        "alt": "Exterior Renderings - Selene Oceanfront Residences Beachfront"
-      },
-      {
-        "driveFileId": "19r7knVJT0vMwpkj4vgGZjPbnjooJqDOG",
-        "alt": "Exterior Renderings - Selene Oceanfront Residences Coast View"
-      },
-      {
-        "driveFileId": "1490S6sV8ILRI4L24HSU7SNcSYVTidq1w",
-        "alt": "Exterior Renderings - Selene Oceanfront Residences Dusk View"
-      },
-      {
-        "driveFileId": "1PmsWnC6-vaIK62070ZC54B6JuYdGIWv8",
-        "alt": "Exterior Renderings - Selene Oceanfront Residences East View"
-      },
-      {
-        "driveFileId": "1bEB1PYjxeP5ggOj2-isc-q7RISuj3mrC",
-        "alt": "Exterior Renderings - Selene Oceanfront Residences Grand Arrival"
-      },
-      {
-        "driveFileId": "1ILozA69mSbL6tScqwu75OVCMfwFfqinB",
-        "alt": "Exterior Renderings - Selene Oceanfront Residences Ground Level View"
-      },
-      {
-        "driveFileId": "1WdTUglytebjwMDC_igTTMzNvmXxtopYs",
-        "alt": "Exterior Renderings - Selene Oceanfront Residences Sunrise"
-      },
-      {
-        "driveFileId": "1ZzcR2vUmAxr--ltGrgYoRJ2YWECSSzrD",
-        "alt": "Exterior Renderings - Selene Oceanfront Residences Sunrise_web"
-      },
-      {
-        "driveFileId": "1aJVoSetRB1bkzVWz-QPgezlTMIJT0JB7",
-        "alt": "Exterior Renderings - Selene Terrace with furniture"
-      },
-      {
-        "driveFileId": "1mRZbIpcMA9mByH4mlgW0HpRyj9Qx9ylW",
-        "alt": "Exterior Renderings - Selene_Pool Terraces Birds Eye View"
-      },
-      {
-        "driveFileId": "1fDCYQJguLdm-cRgkxeaMAHEcJP4oy2fz",
-        "alt": "Hero Images - Selene Oceanfront Residence Location Image"
-      },
-      {
-        "driveFileId": "1s4s5amFb_a2QG8TN-waJhLxxDM81esDr",
-        "alt": "Hero Images - Selene Oceanfront Residences"
-      },
-      {
-        "driveFileId": "1U1loiKlpmhHdS2CABa0hmFuIxWGwd5rM",
-        "alt": "Hero Images - Selene Oceanfront Residences Resort_Style Pool"
-      },
-      {
-        "driveFileId": "1qilywDcYRFx-wDJh0j9SYCxFD96zPR8z",
-        "alt": "Hero Images - Selene Oceanfront Residences Sunrise View"
-      },
-      {
-        "driveFileId": "1WAcdAoxdlQCsVfu8i20frh98cazgu5Mn",
-        "alt": "Hero Images - Selene Oceanfront Residences Terrace View"
-      },
-      {
-        "driveFileId": "1IVzbJBauFs01a-t0Rcdfo1PnyYeatJ2c",
-        "alt": "Hero Images - Selene Oceanfront Residences_Golden Hour"
-      },
-      {
-        "driveFileId": "1wv2NyKBzzuxPknUwpQ5xeCQPZ7Pb3p5c",
-        "alt": "Interior Renderings - Azure Great Room - Selene"
-      },
-      {
-        "driveFileId": "1K23MBuyAsRqmBZ_olrKzoQkP1t1hSJuP",
-        "alt": "Interior Renderings - Seaglass Great Room - Selene"
-      },
-      {
-        "driveFileId": "1T8HUPHsmjtu9DHv6b5WtGfcE2DsDJMwl",
-        "alt": "Interior Renderings - Selene Residences Kitchen The Beachwood Collection"
-      },
-      {
-        "driveFileId": "1UKtHfao5moBYelSJsOUP2qezbw2aLQ_P",
-        "alt": "Interior Renderings - Selene Residences Kitchen The Driftwood Collection"
-      },
-      {
-        "driveFileId": "1DxfjL7TiJRBhgFSPPvEGE4ExvRb6xXFy",
-        "alt": "Interior Renderings - Selene Residences Kitchen The Sandalwood Collection"
-      },
-      {
-        "driveFileId": "1rsl5PhKprHtpU1L6jwCvz89xtySFiSWJ",
-        "alt": "Interior Renderings - Selene_Azure Great Room"
-      },
-      {
-        "driveFileId": "1szDeXl6ZxXsgLTLD4NjU-8-RboUuh2TK",
-        "alt": "Interior Renderings - Selene_Beachwalk Den"
-      },
-      {
-        "driveFileId": "1akKykAdUNmGCWGo8PYHEufna8eSGViMo",
-        "alt": "Interior Renderings - Selene_Beachwalk Great Room"
-      },
-      {
-        "driveFileId": "1FcsGwqZF27SJNl-cc4TEONFlGKE5phsr",
-        "alt": "Interior Renderings - Selene_Brandeis Great Room"
-      },
-      {
-        "driveFileId": "1SJzFtFEFDJynmwfoujeenxkrIyeW25KS",
-        "alt": "Interior Renderings - Selene_Cobalt Great Room_HR"
-      },
-      {
-        "driveFileId": "1foV7hHAHZ0QUUqfeB3DMmwIn6jptL16k",
-        "alt": "Interior Renderings - Selene_Cobalt Great Room_web"
-      },
-      {
-        "driveFileId": "1aZfDZhtcqTCAupeDsFm376GhdbZOeSRa",
-        "alt": "Interior Renderings - Selene_Deep Sky Great Room"
-      },
-      {
-        "driveFileId": "1D1Lk6ME66P--eozveLrVvw4aXqUHd9Ir",
-        "alt": "Interior Renderings - Selene_Sand Castle Den"
-      },
-      {
-        "driveFileId": "1e9Hprr5YI16maIyHKoqqoGoxsSaf4ghO",
-        "alt": "Interior Renderings - Selene_Sand Castle Great Room"
-      },
-      {
-        "driveFileId": "1AzbHA9ruTU6BrrL9gIVk-bmU6Y6hA9xT",
-        "alt": "Interior Renderings - Selene_Seabreeze Great Room"
-      },
-      {
-        "driveFileId": "1XP-AaZ36totP-Pc1A9nV2v1dH-CwjfL3",
-        "alt": "Interior Renderings - Selene_Seaglass Great Room"
-      },
-      {
-        "driveFileId": "1zJB_gFxhT52KS57mVLzlUNF4kgIRQmHX",
-        "alt": "Interior Renderings - Selene_Seaglass Owners Bath"
-      },
-      {
-        "driveFileId": "1-Vab1g5sEfN4zXhI15Y-GsYUCRpfbaNa",
-        "alt": "Interior Renderings - Selene_Tiffany Den HR"
-      },
-      {
-        "driveFileId": "15i-eJKvG6f6Snz9UcIRcBF-URrDHdNI6",
-        "alt": "Interior Renderings - Selene_Tiffany Great Room HR"
-      },
-      {
-        "driveFileId": "1yaWMs187ijPtnujUWwFtDOGvqT31Dipz",
-        "alt": "Interior Renderings - Selene_Tiffany Owners Bath Suite_HR"
-      },
-      {
-        "driveFileId": "1TxU1bHGrC79wfI-wrM-t9aJtOztFGYU9",
-        "alt": "Interior Renderings - Selene_Tiffany Owners Suite HR"
-      },
-      {
-        "driveFileId": "15WQnghEyS0L485fGY_AVk5JZtKOYfsOy",
-        "alt": "PH Renderings - Selene - East PH One - Great Room"
-      },
-      {
-        "driveFileId": "15fgiJ-5QVVlRhlO30gjbtCoBaWn0bl58",
-        "alt": "PH Renderings - Selene - East PH One - Owners Suite"
-      },
-      {
-        "driveFileId": "1jqMSC0VOO1j5iLfXcpmvpaNOVYx-d90s",
-        "alt": "PH Renderings - Selene - East PH Two - Great Room"
-      },
-      {
-        "driveFileId": "1F9cBwHZTbFzPKnd4tQwlCC4fQgbREhGM",
-        "alt": "PH Renderings - Selene - East PH Two - Owners Suite"
-      },
-      {
-        "driveFileId": "1PnVJlKotsEiOEElXeXiKDf7e3xK8bdqz",
-        "alt": "PH Renderings - Selene - South PH - Great Room"
-      },
-      {
-        "driveFileId": "1sa1WujwX4FGGotroX7vYvgkG2CRG70-L",
-        "alt": "PH Renderings - Selene - South PH Two - Family Room"
-      },
-      {
-        "driveFileId": "1ftyzEIT6JBquEL9IdbQzGxFAYXYvL_HB",
-        "alt": "PH Renderings - Selene - South PH Two - Owners Suite"
-      },
-      {
-        "driveFileId": "1Czi5GKipk3WZiuGcmI_9Xr5wU1EYiri9",
-        "alt": "Amenity Renderings - Selene _The Wave Entertainment Lounge_View 2"
-      },
-      {
-        "driveFileId": "1Qz1c_QgSjH7-jfHVyGL52jLX9Mbooy7c",
-        "alt": "Amenity Renderings - Selene Oceanfront Residences_South Tower Lobby_2"
-      }
-    ],
-    "priceList": {
-      "driveFileId": "1SQPqPSO4HV1EqMWi8Mg9vi5RZqDRjvlf",
-      "createdAt": "As of June 12, 2026"
-    },
-    "thumbnail": "/api/thumb?id=1iLTzytJaDsaIHq28u3-ebiTiqBj4Q9M-",
-    "hero": "/api/thumb?id=1iLTzytJaDsaIHq28u3-ebiTiqBj4Q9M-"
+    "beds": "2-3",
+    "units": 194,
+    "filterCounty": "Broward County",
+    "filterLocation": "Fort Lauderdale",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2025",
+    "priceList": null,
+    "priceRange": null,
+    "brochures": [],
+    "factSheets": [],
+    "presentations": [],
+    "floorPlans": [],
+    "renderings": []
   }
 ]
