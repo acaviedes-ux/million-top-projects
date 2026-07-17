@@ -51359,7 +51359,10 @@
     "filterLocation": "Fort Lauderdale",
     "filterStatus": "Pre-construction",
     "filterYear": "2025",
-    "priceList": null,
+    "priceList": {
+      "driveFileId": "1SQPqPSO4HV1EqMWi8Mg9vi5RZqDRjvlf",
+      "createdAt": "As of June 2026"
+    },
     "priceRange": null,
     "brochures": [],
     "factSheets": [],
