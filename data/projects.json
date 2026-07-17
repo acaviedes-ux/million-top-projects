@@ -13132,7 +13132,7 @@
     "rentalRestrictions": [
       "Daily Rentals Allowed"
     ],
-    "hoa": null,
+    "hoa": "$1.45",
     "contact": [
       {
         "name": "Ricardo Breton",
@@ -14140,7 +14140,7 @@
     "rentalRestrictions": [
       "1 day minimum. No black out dates."
     ],
-    "hoa": "$1.75",
+    "hoa": null,
     "contact": [
       {
         "name": "Uri Redler",
