@@ -48268,7 +48268,8 @@
     "completionDate": "2026",
     "depositStructure": [
       "20% at contract",
-      "80% at closing"
+      "20% after 6 months",
+      "60% balance at closing"
     ],
     "parkingSpaces": [
       "1 assigned parking space for 3-bedroom units.",
@@ -48660,7 +48661,7 @@
       "createdAt": "As of July 15, 2026"
     },
     "isNew": false,
-    "filterCounty": "Miami-Dade County",
+    "filterCounty": "Broward County",
     "filterLocation": "Fort Lauderdale",
     "filterStatus": "Pre-construction",
     "filterYear": "2028",
