@@ -11329,7 +11329,7 @@
     "slug": "colette-brickell",
     "name": "Colette Residences Brickell",
     "esqueletoName": "Colette Residences Brickell",
-    "startingPrice": "$2.8M",
+    "startingPrice": "$2.7M",
     "thumbnail": "/images/renders/colette-brickell.png",
     "hero": "/images/renders/colette-brickell.png",
     "buildingDescription": "",
@@ -11346,7 +11346,7 @@
     "depositStructure": [
       "10% at contract",
       "10% 60 days after contract",
-      "10% at groundbreaking (November 2026)",
+      "10% at groundbreaking (Q3 2026)",
       "10% at top-off (Q1 2028)",
       "60% at closing (Q4 2028)"
     ],
