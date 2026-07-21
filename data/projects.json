@@ -10981,7 +10981,7 @@
     "name": "Cipriani Residences Brickell",
     "tpDataName": "Cipriani Residences",
     "section": "Top Projects",
-    "startingPrice": "$1.9M",
+    "startingPrice": "$1.8M",
     "thumbnail": "/images/renders/cipriani-residences.jpg",
     "hero": "/images/renders/cipriani-residences.jpg",
     "theBuilding": "Rising gracefully in Brickell, the tower captures the brand's Italian spirit through a striking curved design, sunlit amenities, and spaces infused with effortless elegance.",
@@ -41586,7 +41586,7 @@
     "completionDate": "2028",
     "depositStructure": [
       "30% at contract",
-      "10% at top off",
+      "10% at top-off",
       "60% at closing"
     ],
     "parkingSpaces": [
