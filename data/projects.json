@@ -48267,9 +48267,10 @@
     "interiorDesign": "Adrian Smith & Gordon Gill Architecture",
     "completionDate": "2026",
     "depositStructure": [
+      "50% at contract",
+      "50% at closing",
       "20% at contract",
-      "20% after 6 months",
-      "60% balance at closing"
+      "80% at closing"
     ],
     "parkingSpaces": [
       "1 assigned parking space for 3-bedroom units.",
