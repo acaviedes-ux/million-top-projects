@@ -52608,8 +52608,10 @@
     "filterLocation": "Hollywood",
     "filterStatus": "Pre-construction",
     "filterYear": "2028",
-    "priceList": null,
-    "priceRange": null,
+    "priceList": {
+      "driveFileId": "1RwzBc0kunDMIDPXv4lQIKRfza7hba8an",
+      "createdAt": "As of May 26, 2026"
+    },
     "brochures": [],
     "factSheets": [],
     "presentations": [],
