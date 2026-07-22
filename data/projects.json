@@ -52136,5 +52136,124 @@
     "thumbnail": "/api/thumb?id=1chX7Boys-Mhj8woFJaQEDpSHZa6japB7",
     "hero": "/api/thumb?id=1chX7Boys-Mhj8woFJaQEDpSHZa6japB7",
     "projectLogo": "/images/logos/one-twenty-brickell-residences.png"
+  },
+  {
+    "slug": "villa-sofia-miami-beach",
+    "name": "Villa Sofia Miami Beach",
+    "esqueletoName": "Villa Sofia Miami Beach",
+    "tpDataName": "Villa Sofia Miami Beach",
+    "section": "Other Projects",
+    "theBuilding": "The three floor boutique condominium offers 27 residences, no rental restrictions, dedicated elevator access, concierge service, and an intimate coastal scale.",
+    "stylishAmenities": "The rooftop pool, bar, lounge, outdoor gym, courtyard, beach club access, and house bicycles create a resort-style daily rhythm in SoFi.",
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Miami Beach",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2027",
+    "isNew": false,
+    "address": "250 Collins Ave, Miami Beach, FL 33139",
+    "startingPrice": "$1.4M",
+    "completionDate": "2027",
+    "developer": "Drago Capital Miami",
+    "architecture": null,
+    "interiorDesign": null,
+    "rentalRestrictions": [
+      "Daily Rentals Allowed"
+    ],
+    "parkingSpaces": [
+      "No parking spaces in the building."
+    ],
+    "depositStructure": [
+      "10% at reservation",
+      "10% at contract",
+      "10% at groundbreaking (Q3 2026)",
+      "70% at closing"
+    ],
+    "hoa": "$1.25",
+    "contact": [
+      {
+        "name": "Zach Joslin",
+        "phone": "+1 (561) 222-5240",
+        "email": null
+      }
+    ],
+    "brochures": [
+      {
+        "title": "",
+        "driveFileId": "10zsEGWTlr0_C_gINSRGBlz0S9oveiH_V"
+      }
+    ],
+    "factSheets": [
+      {
+        "title": "",
+        "driveFileId": "1kKaEnrtCGlll_EhfZQqj-5ICgSqGlLzp"
+      }
+    ],
+    "floorPlans": [
+      {
+        "title": "",
+        "driveFileId": "1nM4m0JGnJY5PTHALij_V0YhcY2kHPtNt"
+      }
+    ],
+    "presentations": [],
+    "renderings": [
+      {
+        "driveFileId": "1ylD6Nica3dBdYFI3me-FUbNdObNNrOr1",
+        "alt": "Villa Sofia - Render Aerial"
+      },
+      {
+        "driveFileId": "1KTXVaKbxznriT8Y3sjVPTyXERyQbUKRq",
+        "alt": "Villa Sofia - Render Bar"
+      },
+      {
+        "driveFileId": "1B92hzL8Bp1mJ6f6_QBX-tiAYVYQdt-eW",
+        "alt": "Villa Sofia - Render Bathroom"
+      },
+      {
+        "driveFileId": "1S8CV4GSd51ACUVub_hjtB0IHCr5cWyyj",
+        "alt": "Villa Sofia - Render Bedroom"
+      },
+      {
+        "driveFileId": "1eWOi_lcmGkdOEIQKuw0MkcvIDE44wfHE",
+        "alt": "Villa Sofia - Render Courtyard"
+      },
+      {
+        "driveFileId": "1F2DL1mUBJ-88qxL4Ycw6pCTwd5WmDNKl",
+        "alt": "Villa Sofia - Render Entrance"
+      },
+      {
+        "driveFileId": "1blBD1n5Tr432LqFTquuXM30ipx8xqtt0",
+        "alt": "Villa Sofia - Render Gym"
+      },
+      {
+        "driveFileId": "1knteowf7sOBwb6ptVfGx_wJ7OUYEdHY5",
+        "alt": "Villa Sofia - Render Hummingbird"
+      },
+      {
+        "driveFileId": "1SUcRd1PFW_o7z5YgSa_IsY18rQM8nt7X",
+        "alt": "Villa Sofia - Render Kitchen"
+      },
+      {
+        "driveFileId": "1WxSROSuwSDdR7DLAnAgdP_JFx18vEz6B",
+        "alt": "Villa Sofia - Render Living Room"
+      },
+      {
+        "driveFileId": "1Apkd3EPiT1Lo-MV6FKfp_wbdCCOjoZO8",
+        "alt": "Villa Sofia - Render Lounge"
+      },
+      {
+        "driveFileId": "1trGdJw3rV7551z3yScp4sK1JO6ICZg0-",
+        "alt": "Villa Sofia - Render PH"
+      },
+      {
+        "driveFileId": "1s9nvUX7M6QziGpzBpUk72oiHzUaKmWnm",
+        "alt": "Villa Sofia - Render Pool"
+      }
+    ],
+    "priceList": {
+      "driveFileId": "1nGXFUSJKuL-fNUpwjs3nMbj_Qt4eBQRD",
+      "createdAt": "As of May 26, 2026"
+    },
+    "thumbnail": "/api/thumb?id=1ylD6Nica3dBdYFI3me-FUbNdObNNrOr1",
+    "hero": "/api/thumb?id=1ylD6Nica3dBdYFI3me-FUbNdObNNrOr1"
   }
 ]
