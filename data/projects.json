@@ -52407,5 +52407,167 @@
     "thumbnail": "/api/thumb?id=13akypAlyJ73xnNXolMlj7r8sUq2Wc34Q",
     "hero": "/api/thumb?id=13akypAlyJ73xnNXolMlj7r8sUq2Wc34Q",
     "projectLogo": "/images/logos/melia-miami-brickell.png"
+  },
+  {
+    "slug": "seventeen-gables-residences-coral-gables",
+    "name": "Seventeen Gables Residences Coral Gables",
+    "esqueletoName": "Seventeen Gables Residences Coral Gables",
+    "tpDataName": "Seventeen Gables Residences Coral Gables",
+    "section": "Other Projects",
+    "theBuilding": "Boutique eight-story luxury residence in Coral Gables offering impeccably finished one- to three-bedroom homes with panoramic skyline views, floor-to-ceiling glass, smart home technology, and refined designer finishes.",
+    "stylishAmenities": "Resort-style pool, landscaped sun shelf, fitness center, sauna, yoga lawn, residents’ lounge, coworking spaces, conference room, children’s playground, dog park, basketball court, and 24-hour valet.",
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Coral Gables",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2028",
+    "isNew": false,
+    "address": "1715 Douglas RD, Coral Gables, FL 33134",
+    "startingPrice": "$635K",
+    "completionDate": "2028",
+    "developer": "Ascendra Capital & BAM Property Development",
+    "architecture": "Caymares Martin A&E Design",
+    "interiorDesign": "Asprea Studio",
+    "rentalRestrictions": null,
+    "parkingSpaces": null,
+    "depositStructure": [
+      "10% at contract",
+      "10% 90 days after contract",
+      "10% 180 days after contract",
+      "10% at top-off",
+      "60% at closing"
+    ],
+    "hoa": "$1.60",
+    "contact": null,
+    "brochures": [],
+    "factSheets": [
+      {
+        "title": "",
+        "driveFileId": "1I71Ltxj3NxpN0CjAi76Ld1HvSN7IvVdV"
+      }
+    ],
+    "floorPlans": [
+      {
+        "title": "",
+        "driveFileId": "17ewRU-USVcxK-vH4gjFitEvjT5HPq04C"
+      }
+    ],
+    "presentations": [],
+    "renderings": [
+      {
+        "driveFileId": "1rY5G4YYt-2E_zPmKGel9G-qqxM-iqbih",
+        "alt": "Seventeen Gables - Amenity Kitchen"
+      },
+      {
+        "driveFileId": "1euU9DW2rSpbXdaKI2ULTx-mNbn5dodf2",
+        "alt": "Seventeen Gables - Amenity Lounge"
+      },
+      {
+        "driveFileId": "1PpvWgdocQff3rtn8g0tPP-q4s7XcFGuu",
+        "alt": "Seventeen Gables - Basketball Court"
+      },
+      {
+        "driveFileId": "1202XRt2HPPLn4UDicmymitWZBe27hj_y",
+        "alt": "Seventeen Gables - Business Center"
+      },
+      {
+        "driveFileId": "1mYgqXccwU8XoY7_zfj7bAI0Bosn-ryrv",
+        "alt": "Seventeen Gables - Facade Day"
+      },
+      {
+        "driveFileId": "1khaMi8ZjZLq-wBEn6PAicdZqYRE_Mv5t",
+        "alt": "Seventeen Gables - Facade Night"
+      },
+      {
+        "driveFileId": "1wv2wYpsgJafYp_3bJerWngFBo1ZTjzVd",
+        "alt": "Seventeen Gables - Fitness"
+      },
+      {
+        "driveFileId": "1y8bpVSbHPt6B-1TaZw661uHopWdBxpgx",
+        "alt": "Seventeen Gables - Kids Playground"
+      },
+      {
+        "driveFileId": "1sTjcfwEhG8TqDvA1uLsv56TT8XZNsJFZ",
+        "alt": "Seventeen Gables - Kids Splash"
+      },
+      {
+        "driveFileId": "1KEpYB0lmlLmSsH9e5uYHE0CFvik-mAqu",
+        "alt": "Seventeen Gables - Kitchen"
+      },
+      {
+        "driveFileId": "1aMBzjE_eAaKaOGc1flaZwMmx943KALp3",
+        "alt": "Seventeen Gables - Master Bathroom"
+      },
+      {
+        "driveFileId": "1C0qsOtig-KlCobDP7K7OvqQZDwPLtneD",
+        "alt": "Seventeen Gables - Master Bedroom"
+      },
+      {
+        "driveFileId": "15cY0Hxir9NFfYZFJDmwN3VoJ30XAQj9z",
+        "alt": "Seventeen Gables - Sauna"
+      },
+      {
+        "driveFileId": "1PrUlyhea3WM1IP8HyGCLhWWWs7XmSihF",
+        "alt": "Seventeen Gables - Amenity Kitchen & Lounge 1"
+      },
+      {
+        "driveFileId": "1Dfm8tcOSARhNv4dWVYLlMtpwsohh5e8P",
+        "alt": "Seventeen Gables - Doggie Park 1"
+      },
+      {
+        "driveFileId": "1ignur8LLpck5MkmZUuYN6kt1tRy9e_MB",
+        "alt": "Seventeen Gables - Living 1"
+      },
+      {
+        "driveFileId": "1LJDjmRiPtVkDuNLzCkkvrku6qEgYanjd",
+        "alt": "Seventeen Gables - Lobby 1"
+      },
+      {
+        "driveFileId": "1fEHscEnDdS5Fx603fuG-xEHumljMovRy",
+        "alt": "Seventeen Gables - Pool Deck 1"
+      },
+      {
+        "driveFileId": "1tJ9U6Icm8htoh6_qb4dbdwBaC7NLXCrp",
+        "alt": "Seventeen Gables - Amenity Kitchen & Lounge 2"
+      },
+      {
+        "driveFileId": "129m8lZMGJQ5CwyshoWhVvz2xGaD06K-d",
+        "alt": "Seventeen Gables - Doggie Park 2"
+      },
+      {
+        "driveFileId": "1q5oX5gQ_RCN9v0Qg9xcPV2h5ocTxa5JZ",
+        "alt": "Seventeen Gables - Living 2"
+      },
+      {
+        "driveFileId": "1W70v2F5mK1w_-VVFkcM2ufo0UqSIG-wF",
+        "alt": "Seventeen Gables - Lobby 2"
+      },
+      {
+        "driveFileId": "1FCM1QnOyJJKAmOozUoQolEteeUUAyjPu",
+        "alt": "Seventeen Gables - Pool Deck 2"
+      },
+      {
+        "driveFileId": "1wUiZJjKGtDWFkEQFXuIGAsGqz-bJKUqZ",
+        "alt": "Seventeen Gables - Lobby 3"
+      },
+      {
+        "driveFileId": "1M7Sxs9NncHay5g3pRjcklYAcMtUZy5d_",
+        "alt": "Seventeen Gables - Pool Deck 3"
+      },
+      {
+        "driveFileId": "1oEFSiUd8o_hQX9X4uwK63RTEXALAy8a0",
+        "alt": "Seventeen Gables - Lobby 4"
+      },
+      {
+        "driveFileId": "1cIovh3L14a3Pf3wCOtg4PLqyriNnbjKH",
+        "alt": "Seventeen Gables - Pool Deck 4"
+      }
+    ],
+    "priceRange": {
+      "driveFileId": "1eP74Mpw48ZxJf9FAngHAyzeZoY-Ei7oH",
+      "createdAt": "As of May 26, 2026"
+    },
+    "thumbnail": "/api/thumb?id=1rY5G4YYt-2E_zPmKGel9G-qqxM-iqbih",
+    "hero": "/api/thumb?id=1rY5G4YYt-2E_zPmKGel9G-qqxM-iqbih",
+    "projectLogo": "/images/logos/seventeen-gables-residences-coral-gables.png"
   }
 ]
