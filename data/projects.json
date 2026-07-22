@@ -51964,5 +51964,162 @@
     "thumbnail": "/api/thumb?id=1R5zA48a6bB4WyJvEkX0cTW9SKfkgqyTQ",
     "hero": "/api/thumb?id=1R5zA48a6bB4WyJvEkX0cTW9SKfkgqyTQ",
     "projectLogo": "/images/logos/bay-villas-bay-harbor-islands.png"
+  },
+  {
+    "slug": "one-hollywood-residences",
+    "name": "One Hollywood Residences",
+    "esqueletoName": "One Hollywood Residences",
+    "tpDataName": "One Hollywood Residences",
+    "section": "Other Projects",
+    "theBuilding": "The 23-story tower gathers 248 residences, two retail spaces, gracious arrival areas, and layered amenities within a polished downtown Hollywood presence.",
+    "stylishAmenities": "Resort-style pool, rooftop lounge, spa, sauna, fitness, co-working, kids club, barbecue areas, and event spaces support elevated everyday living with ease.",
+    "filterCounty": "Broward County",
+    "filterLocation": "Hollywood",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2028",
+    "isNew": false,
+    "address": "1817 Taylor St, Hollywood, FL 33020",
+    "startingPrice": "$463K",
+    "completionDate": "2028",
+    "developer": "Star Development Group",
+    "architecture": "BC Architects",
+    "interiorDesign": "Adriana Hoyos",
+    "rentalRestrictions": [
+      "30 days minimum."
+    ],
+    "parkingSpaces": [
+      "1 covered parking space assigned with valet parking service available."
+    ],
+    "depositStructure": [
+      "$30,000 or $50,000 at reservation",
+      "Complete 20% with contract",
+      "10% at groundbreaking",
+      "10% at top-off",
+      "60% at closing"
+    ],
+    "hoa": "$1.00",
+    "contact": [
+      {
+        "name": "Christel",
+        "phone": "N/A",
+        "email": null
+      }
+    ],
+    "brochures": [
+      {
+        "title": "",
+        "driveFileId": "1U_l084m4a_OkDjcJQhGdiGK42mDYHLpH"
+      }
+    ],
+    "factSheets": [
+      {
+        "title": "",
+        "driveFileId": "1eMpHqfBGljtJkYRHaOQJMb08x5NDU3l1"
+      },
+      {
+        "title": "",
+        "driveFileId": "1xm0g_XbWDY2HU1qVjY0RorY-uc8Pr0Vz"
+      },
+      {
+        "title": "",
+        "driveFileId": "18XiaEY-n47JivZNsW4he364GOmm9zR3k"
+      }
+    ],
+    "floorPlans": [
+      {
+        "title": "",
+        "driveFileId": "1HAOgjI6Ii1vu3PEq8UBPOl-qwWCnNCBa"
+      }
+    ],
+    "presentations": [],
+    "renderings": [
+      {
+        "driveFileId": "1zX7NUMyY3FmgIh_1ZtIQD8ww4iqtUXDd",
+        "alt": "One Hollywood Residences - Bathroom"
+      },
+      {
+        "driveFileId": "1Lb-tgWMqA0dK-lB-o5jjeVNYAAZk_keU",
+        "alt": "One Hollywood Residences - Bedroom"
+      },
+      {
+        "driveFileId": "10g57rGDuRwZzH_vtQyh8Vxvg2GhF9xco",
+        "alt": "One Hollywood Residences - Crown"
+      },
+      {
+        "driveFileId": "1m-OTKu0Qs35eFZxOfkrirYZaAScA-Dlg",
+        "alt": "One Hollywood Residences - Entrance"
+      },
+      {
+        "driveFileId": "1_s3ti4hBWdymjQ_gVYXbr2oKBIWJfPrf",
+        "alt": "One Hollywood Residences - Hero"
+      },
+      {
+        "driveFileId": "1iyKiTeNms32RegJImCLQMfn3fed9m1pm",
+        "alt": "One Hollywood Residences - Kids Lounge"
+      },
+      {
+        "driveFileId": "1hHfgv6IjrHv8qEo2XCfa9GkczUNZaeck",
+        "alt": "One Hollywood Residences - Kitchen"
+      },
+      {
+        "driveFileId": "1mn-K_eULaBvhUQUBwD9xxJkkYgUSmIac",
+        "alt": "One Hollywood Residences - Living Room"
+      },
+      {
+        "driveFileId": "1RlaxDXunF5evy6P8wmgy87t9A3r_PIGW",
+        "alt": "One Hollywood Residences - Fitness Center 1"
+      },
+      {
+        "driveFileId": "1BpRSduxVMJy48CpyZjZk7MLuJJ3QuJKe",
+        "alt": "One Hollywood Residences - Lobby 1"
+      },
+      {
+        "driveFileId": "1sOMCd-YWfRYiLFJeRTSs7tMCM3FLDy9s",
+        "alt": "One Hollywood Residences - Owners Lounge 1"
+      },
+      {
+        "driveFileId": "1qoPfER4EIUcyJwhTLm699AqWTxT5F2jH",
+        "alt": "One Hollywood Residences - Pool 1"
+      },
+      {
+        "driveFileId": "1AXvInNo455mWCHya4fhZQjDjImnAfkb2",
+        "alt": "One Hollywood Residences - Rooftop 1"
+      },
+      {
+        "driveFileId": "1D4w7VcaxRkE0Sdz7hUn1PSX6aHUIEH12",
+        "alt": "One Hollywood Residences - Fitness Center 2"
+      },
+      {
+        "driveFileId": "1N0zt2SohLhqqcjUH02krsLjdfmxYL60y",
+        "alt": "One Hollywood Residences - Lobby 2"
+      },
+      {
+        "driveFileId": "1hT1biWJwOatilQQYJTiPMMZmfhw7A_bR",
+        "alt": "One Hollywood Residences - Owners Lounge 2"
+      },
+      {
+        "driveFileId": "10v7bwR7sZQ__pmjNys6vS2U0LP2Kegf5",
+        "alt": "One Hollywood Residences - Pool 2"
+      },
+      {
+        "driveFileId": "1_tMQ3EWzRTdovm4y3wHpi7Ruup--6vWB",
+        "alt": "One Hollywood Residences - Rooftop 2"
+      },
+      {
+        "driveFileId": "1B7sKPQI2cEZKOcmrC80XbMbb-M_u9rce",
+        "alt": "One Hollywood Residences - Fitness Center 3"
+      },
+      {
+        "driveFileId": "1nZps4YIBMjJ32HAVOwc_R4DgkSUAj187",
+        "alt": "One Hollywood Residences - Owners Lounge 3"
+      }
+    ],
+    "priceList": {
+      "driveFileId": "1RwzBc0kunDMIDPXv4lQIKRfza7hba8an",
+      "createdAt": "As of May 26, 2026"
+    },
+    "thumbnail": "/api/thumb?id=1zX7NUMyY3FmgIh_1ZtIQD8ww4iqtUXDd",
+    "hero": "/api/thumb?id=1zX7NUMyY3FmgIh_1ZtIQD8ww4iqtUXDd",
+    "projectLogo": "/images/logos/one-hollywood-residences.png"
   }
 ]
