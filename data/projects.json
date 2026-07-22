@@ -51966,160 +51966,175 @@
     "projectLogo": "/images/logos/bay-villas-bay-harbor-islands.png"
   },
   {
-    "slug": "one-hollywood-residences",
-    "name": "One Hollywood Residences",
-    "esqueletoName": "One Hollywood Residences",
-    "tpDataName": "One Hollywood Residences",
+    "slug": "one-twenty-brickell-residences",
+    "name": "One Twenty Brickell Residences",
+    "esqueletoName": "One Twenty Brickell Residences",
+    "tpDataName": "One Twenty Brickell Residences",
     "section": "Other Projects",
-    "theBuilding": "The 23-story tower gathers 248 residences, two retail spaces, gracious arrival areas, and layered amenities within a polished downtown Hollywood presence.",
-    "stylishAmenities": "Resort-style pool, rooftop lounge, spa, sauna, fitness, co-working, kids club, barbecue areas, and event spaces support elevated everyday living with ease.",
-    "filterCounty": "Broward County",
-    "filterLocation": "Hollywood",
+    "theBuilding": "The 34-story One Twenty Brickell is an elegant tower housing 240 residences. The residential units range from studios to three-bedroom homes, catered to the diverse needs of its occupants.",
+    "stylishAmenities": "One Twenty Brickell's tasteful amenities include a sky bar and lounge, dog run, resort-style pool, wellness spa, and fitness studio, providing a luxurious living experience for residents.",
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Brickell",
     "filterStatus": "Pre-construction",
     "filterYear": "2028",
     "isNew": false,
-    "address": "1817 Taylor St, Hollywood, FL 33020",
-    "startingPrice": "$463K",
+    "address": "101 SW 9th Street Miami, FL 33132",
+    "startingPrice": "$799K",
     "completionDate": "2028",
-    "developer": "Star Development Group",
-    "architecture": "BC Architects",
-    "interiorDesign": "Adriana Hoyos",
+    "developer": "Property Markets Group (PMG)",
+    "architecture": "Sieger Suarez Architects",
+    "interiorDesign": "Cotofana Designs",
     "rentalRestrictions": [
-      "30 days minimum."
+      "Daily Rentals Allowed"
     ],
-    "parkingSpaces": [
-      "1 covered parking space assigned with valet parking service available."
-    ],
+    "parkingSpaces": null,
     "depositStructure": [
-      "$30,000 or $50,000 at reservation",
-      "Complete 20% with contract",
-      "10% at groundbreaking",
-      "10% at top-off",
-      "60% at closing"
+      "10% at contract",
+      "10% at October 2026",
+      "10% at June 2027",
+      "70% at closing"
     ],
-    "hoa": "$1.00",
+    "hoa": "$1.50",
     "contact": [
       {
-        "name": "Christel",
-        "phone": "N/A",
-        "email": null
+        "name": "Karine Carvalho",
+        "phone": "+1 (305) 305-4414",
+        "email": "karinerealtor@gmail.com"
       }
     ],
     "brochures": [
       {
         "title": "",
-        "driveFileId": "1U_l084m4a_OkDjcJQhGdiGK42mDYHLpH"
+        "driveFileId": "1l2vJ31KjeXCkDV4i1maQnrCnIOcp7hRi"
+      },
+      {
+        "title": "",
+        "driveFileId": "1UTk5COP3ZNNWpbDE99McuLP1xCH0FTm9"
       }
     ],
     "factSheets": [
       {
         "title": "",
-        "driveFileId": "1eMpHqfBGljtJkYRHaOQJMb08x5NDU3l1"
+        "driveFileId": "1yj4i4on2LIZXB3v4eziE7F8T71CwZRin"
       },
       {
         "title": "",
-        "driveFileId": "1xm0g_XbWDY2HU1qVjY0RorY-uc8Pr0Vz"
-      },
-      {
-        "title": "",
-        "driveFileId": "18XiaEY-n47JivZNsW4he364GOmm9zR3k"
+        "driveFileId": "1dRBmwfsPXWXAQtDUT1huvG3ycolE6WK_"
       }
     ],
     "floorPlans": [
       {
         "title": "",
-        "driveFileId": "1HAOgjI6Ii1vu3PEq8UBPOl-qwWCnNCBa"
+        "driveFileId": "1wX-_FOueHycQ1VNSZk9KdANGRh7Ashl1"
       }
     ],
     "presentations": [],
     "renderings": [
       {
-        "driveFileId": "1zX7NUMyY3FmgIh_1ZtIQD8ww4iqtUXDd",
-        "alt": "One Hollywood Residences - Bathroom"
+        "driveFileId": "1chX7Boys-Mhj8woFJaQEDpSHZa6japB7",
+        "alt": "One Twenty Brickell Residences"
       },
       {
-        "driveFileId": "1Lb-tgWMqA0dK-lB-o5jjeVNYAAZk_keU",
-        "alt": "One Hollywood Residences - Bedroom"
+        "driveFileId": "18tCtZZL8FCW1Y7oqrqj1SxEhEeJGrIOi",
+        "alt": "One Twenty Brickell Residences AERIAL"
       },
       {
-        "driveFileId": "10g57rGDuRwZzH_vtQyh8Vxvg2GhF9xco",
-        "alt": "One Hollywood Residences - Crown"
+        "driveFileId": "1rdYxKbDNboHdPMURxqUxvgHBV30mnTjj",
+        "alt": "One Twenty Brickell Residences Balcony"
       },
       {
-        "driveFileId": "1m-OTKu0Qs35eFZxOfkrirYZaAScA-Dlg",
-        "alt": "One Hollywood Residences - Entrance"
+        "driveFileId": "1Qg_hmAaBFIsxA3xSI0c29nmBntPOxi_x",
+        "alt": "One Twenty Brickell Residences Bath"
       },
       {
-        "driveFileId": "1_s3ti4hBWdymjQ_gVYXbr2oKBIWJfPrf",
-        "alt": "One Hollywood Residences - Hero"
+        "driveFileId": "1eC4hSh-HXfpC-btNi6DR4R_GcmtkJNZd",
+        "alt": "One Twenty Brickell Residences Bedroom"
       },
       {
-        "driveFileId": "1iyKiTeNms32RegJImCLQMfn3fed9m1pm",
-        "alt": "One Hollywood Residences - Kids Lounge"
+        "driveFileId": "1GalCbM3uLndi9zpQH5J_KGzvNEmCYYXo",
+        "alt": "One Twenty Brickell Residences Closet"
       },
       {
-        "driveFileId": "1hHfgv6IjrHv8qEo2XCfa9GkczUNZaeck",
-        "alt": "One Hollywood Residences - Kitchen"
+        "driveFileId": "1pxFpKv6lmkRmKt00VRtxy65mMwo3rePU",
+        "alt": "One Twenty Brickell Residences GYM"
       },
       {
-        "driveFileId": "1mn-K_eULaBvhUQUBwD9xxJkkYgUSmIac",
-        "alt": "One Hollywood Residences - Living Room"
+        "driveFileId": "1H6Ua9y-GnJn5tU-c3zVIL5BaKhfKY3g7",
+        "alt": "One Twenty Brickell Residences Juice Bar"
       },
       {
-        "driveFileId": "1RlaxDXunF5evy6P8wmgy87t9A3r_PIGW",
-        "alt": "One Hollywood Residences - Fitness Center 1"
+        "driveFileId": "1tujbP0mKwt_z7_OxPooaH0T0I2lCpBFP",
+        "alt": "One Twenty Brickell Residences Kids Room"
       },
       {
-        "driveFileId": "1BpRSduxVMJy48CpyZjZk7MLuJJ3QuJKe",
-        "alt": "One Hollywood Residences - Lobby 1"
+        "driveFileId": "1hx0jaBrheY2qK-BYWAmhuD1Gz0ojswrz",
+        "alt": "One Twenty Brickell Residences Kitchen"
       },
       {
-        "driveFileId": "1sOMCd-YWfRYiLFJeRTSs7tMCM3FLDy9s",
-        "alt": "One Hollywood Residences - Owners Lounge 1"
+        "driveFileId": "1WO4bIeAKEG0iWr1lzLv9BnQ1q4ASNCMe",
+        "alt": "One Twenty Brickell Residences Kitchen Night"
       },
       {
-        "driveFileId": "1qoPfER4EIUcyJwhTLm699AqWTxT5F2jH",
-        "alt": "One Hollywood Residences - Pool 1"
+        "driveFileId": "1Nmi5OHt5k18ZjUK5EPI9xcIOvzbHfZlt",
+        "alt": "One Twenty Brickell Residences Living Room"
       },
       {
-        "driveFileId": "1AXvInNo455mWCHya4fhZQjDjImnAfkb2",
-        "alt": "One Hollywood Residences - Rooftop 1"
+        "driveFileId": "1Vmaizg67kuhRLCZacYarpb8yFp2C0kfI",
+        "alt": "One Twenty Brickell Residences Lobby"
       },
       {
-        "driveFileId": "1D4w7VcaxRkE0Sdz7hUn1PSX6aHUIEH12",
-        "alt": "One Hollywood Residences - Fitness Center 2"
+        "driveFileId": "15KiLzJ0_GAkx3lHMdLj0OS5g-Om_ue60",
+        "alt": "One Twenty Brickell Residences Movement Studio"
       },
       {
-        "driveFileId": "1N0zt2SohLhqqcjUH02krsLjdfmxYL60y",
-        "alt": "One Hollywood Residences - Lobby 2"
+        "driveFileId": "1KMuPHgCuMDSxFY6H_TAxIufeBOaz7Ko5",
+        "alt": "One Twenty Brickell Residences Office"
       },
       {
-        "driveFileId": "1hT1biWJwOatilQQYJTiPMMZmfhw7A_bR",
-        "alt": "One Hollywood Residences - Owners Lounge 2"
+        "driveFileId": "17LOLSRVxzxVhghUcjeUFnH9QBXHbOMwb",
+        "alt": "One Twenty Brickell Residences Office"
       },
       {
-        "driveFileId": "10v7bwR7sZQ__pmjNys6vS2U0LP2Kegf5",
-        "alt": "One Hollywood Residences - Pool 2"
+        "driveFileId": "1iaxHJVKfn6NwT0KXktGUqLTyI33yv65a",
+        "alt": "One Twenty Brickell Residences Pickleball"
       },
       {
-        "driveFileId": "1_tMQ3EWzRTdovm4y3wHpi7Ruup--6vWB",
-        "alt": "One Hollywood Residences - Rooftop 2"
+        "driveFileId": "1v5HCEWidDuEOz47M1QiO-rV7c-7-KewQ",
+        "alt": "One Twenty Brickell Residences Rooftop Pool"
       },
       {
-        "driveFileId": "1B7sKPQI2cEZKOcmrC80XbMbb-M_u9rce",
-        "alt": "One Hollywood Residences - Fitness Center 3"
+        "driveFileId": "15FPK8OYIm666cq-xsyeNxlu869HILtEL",
+        "alt": "One Twenty Brickell Residences Studio Balcony"
       },
       {
-        "driveFileId": "1nZps4YIBMjJ32HAVOwc_R4DgkSUAj187",
-        "alt": "One Hollywood Residences - Owners Lounge 3"
+        "driveFileId": "1-iKuz04fnMnNM00zAyaR6CfMqcjITCxn",
+        "alt": "One Twenty Brickell Residences Studio Bathroom"
+      },
+      {
+        "driveFileId": "1vbTWGdYuQ1K_Jp8FS0h-XuxdT9-KOa3w",
+        "alt": "One Twenty Brickell Residences Studio Bedroom"
+      },
+      {
+        "driveFileId": "1ltYpG6-Ylsa1cQHzRHRJoiFtEjPoU2ZP",
+        "alt": "One Twenty Brickell Residences Studio Living Room"
       }
     ],
-    "priceList": {
-      "driveFileId": "1RwzBc0kunDMIDPXv4lQIKRfza7hba8an",
-      "createdAt": "As of May 26, 2026"
-    },
-    "thumbnail": "/api/thumb?id=1zX7NUMyY3FmgIh_1ZtIQD8ww4iqtUXDd",
-    "hero": "/api/thumb?id=1zX7NUMyY3FmgIh_1ZtIQD8ww4iqtUXDd",
-    "projectLogo": "/images/logos/one-hollywood-residences.png"
+    "priceDocs": [
+      {
+        "driveFileId": "1Q5hcy2-BwmvI8EW1XguffZbm6mL6PfED",
+        "createdAt": "As of May 26, 2026",
+        "title": "One Twenty Brickell Residences - Price List",
+        "kind": "list"
+      },
+      {
+        "driveFileId": "1dYOY8sLhfjmx-m_Ppn0JzE-6iP6XnWlG",
+        "createdAt": "As of May 26, 2026",
+        "title": "One Twenty Brickell Residences - Price List - Signature",
+        "kind": "list"
+      }
+    ],
+    "thumbnail": "/api/thumb?id=1chX7Boys-Mhj8woFJaQEDpSHZa6japB7",
+    "hero": "/api/thumb?id=1chX7Boys-Mhj8woFJaQEDpSHZa6japB7",
+    "projectLogo": "/images/logos/one-twenty-brickell-residences.png"
   }
 ]
