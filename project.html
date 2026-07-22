@@ -739,7 +739,14 @@
     if (d.address) {
       var addrSec = makeSection('address');
       addrSec.appendChild(sectionHeading('ADDRESS'));
-      addrSec.appendChild(el('p', 'section-text', d.address));
+      var addrLines = (Array.isArray(d.address) ? d.address : d.address.split('\n'))
+        .map(function(s) { return s.trim(); }).filter(Boolean);
+      var addrP = el('p', 'section-text');
+      addrLines.forEach(function(line, i) {
+        if (i > 0) addrP.appendChild(document.createElement('br'));
+        addrP.appendChild(document.createTextNode(line));
+      });
+      addrSec.appendChild(addrP);
       frag.appendChild(addrSec);
     }
 
