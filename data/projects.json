@@ -202,10 +202,6 @@
       }
     ],
     "projectLogo": "/images/logos/123-ocean-palm-beach-shores.png",
-    "priceList": {
-      "driveFileId": "1reSypXtnxkvqOFhvMrOiisBooi65dGYE",
-      "createdAt": "As of May 26, 2026"
-    },
     "isNew": false,
     "filterCounty": "Palm Beach County",
     "filterLocation": "Palm Beach Shores",
@@ -333,7 +329,11 @@
         "alt": "123 Ocean 26"
       }
     ],
-    "presentations": []
+    "presentations": [],
+    "priceList": {
+      "driveFileId": "1reSypXtnxkvqOFhvMrOiisBooi65dGYE",
+      "createdAt": "As of May 26, 2026"
+    }
   },
   {
     "slug": "14-roc-miami",
@@ -372,10 +372,6 @@
       }
     ],
     "projectLogo": "/images/logos/14-roc-miami.png",
-    "priceList": {
-      "driveFileId": "1z2xkbRdCAFfGtWTlR_BIJt9Vd8kblkd-",
-      "createdAt": "As of May 26, 2026"
-    },
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Downtown Miami",
@@ -415,7 +411,11 @@
         "title": "",
         "driveFileId": "1Fg6HbJYEseftlTUtvO-pIrKi92dYdEn1"
       }
-    ]
+    ],
+    "priceList": {
+      "driveFileId": "1z2xkbRdCAFfGtWTlR_BIJt9Vd8kblkd-",
+      "createdAt": "As of May 26, 2026"
+    }
   },
   {
     "slug": "2000-ocean",
@@ -800,10 +800,6 @@
       }
     ],
     "projectLogo": "/images/logos/2200-brickell.png",
-    "priceList": {
-      "driveFileId": "10a4npS8FHiEL2jVhjEgCu1rfGLijaHD0",
-      "createdAt": "As of June 1, 2026"
-    },
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Brickell",
@@ -988,7 +984,11 @@
         "title": "",
         "driveFileId": "1Q4vlA1AaWamLFA2idPPmSYiNdCPzZZyA"
       }
-    ]
+    ],
+    "priceList": {
+      "driveFileId": "10a4npS8FHiEL2jVhjEgCu1rfGLijaHD0",
+      "createdAt": "As of June 1, 2026"
+    }
   },
   {
     "slug": "3000-waterside-fort-lauderdale",
@@ -2188,10 +2188,6 @@
     "theBuilding": "A modern Brickell landmark marrying bay‑oriented architecture with Nobu's understated elegance.",
     "section": "Top Projects",
     "projectLogo": "/images/logos/619-residences.png",
-    "priceList": {
-      "driveFileId": "1k2G70g-jSowYL5NQqFI1i1YIinqc6mPS",
-      "createdAt": "As of July 15, 2026"
-    },
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Brickell",
@@ -2348,7 +2344,11 @@
         "title": "",
         "driveFileId": "1JN5FO_GyFHFxWnq965o08EYeDxAgDpGJ"
       }
-    ]
+    ],
+    "priceList": {
+      "driveFileId": "1k2G70g-jSowYL5NQqFI1i1YIinqc6mPS",
+      "createdAt": "As of July 15, 2026"
+    }
   },
   {
     "slug": "72-carlyle",
@@ -2392,10 +2392,6 @@
       }
     ],
     "projectLogo": "/images/logos/72-carlyle.png",
-    "priceList": {
-      "driveFileId": "1RGShzbvjiAtoeqFwZmk1sHGWPjZjPCtY",
-      "createdAt": "As of July 14, 2026"
-    },
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Miami Beach",
@@ -2515,7 +2511,11 @@
         "alt": "72 Carlyle - Hero 7"
       }
     ],
-    "presentations": []
+    "presentations": [],
+    "priceList": {
+      "driveFileId": "1RGShzbvjiAtoeqFwZmk1sHGWPjZjPCtY",
+      "createdAt": "As of July 14, 2026"
+    }
   },
   {
     "slug": "72-park",
@@ -2559,10 +2559,6 @@
       }
     ],
     "projectLogo": "/images/logos/72-park.png",
-    "priceList": {
-      "driveFileId": "1pzpm8rFp5Rm5XfHV7TyM2cpv9HWA1OGL",
-      "createdAt": "As of June 1, 2026"
-    },
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Miami Beach",
@@ -2622,7 +2618,11 @@
         "title": "",
         "driveFileId": "1HNKEGgzRToEmEvaXOQzfJtwpJehsm9C5"
       }
-    ]
+    ],
+    "priceList": {
+      "driveFileId": "1pzpm8rFp5Rm5XfHV7TyM2cpv9HWA1OGL",
+      "createdAt": "As of June 1, 2026"
+    }
   },
   {
     "slug": "888-brickell",
@@ -2977,10 +2977,6 @@
       }
     ],
     "projectLogo": "/images/logos/9900-west.png",
-    "priceList": {
-      "driveFileId": "1E4fU-A68VgfmEWYy1R7uKBeNzBPKXxnt",
-      "createdAt": "As of May 26, 2026"
-    },
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Bay Harbor Islands",
@@ -3260,7 +3256,11 @@
         "title": "",
         "driveFileId": "1NERUAxD-iRViEyw7tBMbxC6W89D2lvOq"
       }
-    ]
+    ],
+    "priceList": {
+      "driveFileId": "1E4fU-A68VgfmEWYy1R7uKBeNzBPKXxnt",
+      "createdAt": "As of May 26, 2026"
+    }
   },
   {
     "slug": "adagio-fort-lauderdale",
@@ -4910,10 +4910,6 @@
       }
     ],
     "projectLogo": "/images/logos/alma-bay-harbor-islands.png",
-    "priceList": {
-      "driveFileId": "1b2Z_oon1G7x1owUC33gy-eGgxMUR8jpl",
-      "createdAt": "As of June 26, 2026"
-    },
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Bay Harbor Islands",
@@ -5038,7 +5034,11 @@
         "title": "",
         "driveFileId": "1El8rFipc4rZWUnYUeXEAsT0UxpVliDq6"
       }
-    ]
+    ],
+    "priceList": {
+      "driveFileId": "1b2Z_oon1G7x1owUC33gy-eGgxMUR8jpl",
+      "createdAt": "As of June 26, 2026"
+    }
   },
   {
     "slug": "anantara-residences-miami-edgewater",
@@ -5072,10 +5072,6 @@
     "filterLocation": "Edgewater",
     "filterStatus": "Pre-construction",
     "filterYear": "2031",
-    "priceRange": {
-      "driveFileId": "1zpCrLxwUzUB10awbA4XbFJa6_P1yPd3r",
-      "createdAt": "As of June 17, 2026"
-    },
     "presentations": [
       {
         "title": "",
@@ -5188,7 +5184,11 @@
         "phone": "+1 (786) 717-9545",
         "email": null
       }
-    ]
+    ],
+    "priceRange": {
+      "driveFileId": "1zpCrLxwUzUB10awbA4XbFJa6_P1yPd3r",
+      "createdAt": "As of June 17, 2026"
+    }
   },
   {
     "slug": "andare-residences",
@@ -5239,10 +5239,6 @@
       }
     ],
     "projectLogo": "/images/logos/andare-residences.png",
-    "priceList": {
-      "driveFileId": "1yddTpxfKrLc02x_4GDj-whP0GrOseMFM",
-      "createdAt": "As of July 6, 2026"
-    },
     "isNew": false,
     "filterCounty": "Broward County",
     "filterLocation": "Fort Lauderdale",
@@ -5353,7 +5349,11 @@
       }
     ],
     "presentations": [],
-    "factSheets": []
+    "factSheets": [],
+    "priceList": {
+      "driveFileId": "1yddTpxfKrLc02x_4GDj-whP0GrOseMFM",
+      "createdAt": "As of July 6, 2026"
+    }
   },
   {
     "slug": "apogee",
@@ -5567,10 +5567,6 @@
       }
     ],
     "projectLogo": "/images/logos/arbor-coconut-grove.png",
-    "priceList": {
-      "driveFileId": "1ma3FuNXRGM6Mv2f-OKBWgZqaNkqWVIRD",
-      "createdAt": "As of June 26, 2026"
-    },
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Coconut Grove",
@@ -5690,7 +5686,11 @@
         "alt": "Residence 202"
       }
     ],
-    "presentations": []
+    "presentations": [],
+    "priceList": {
+      "driveFileId": "1ma3FuNXRGM6Mv2f-OKBWgZqaNkqWVIRD",
+      "createdAt": "As of June 26, 2026"
+    }
   },
   {
     "slug": "aria-reserve",
@@ -5737,10 +5737,6 @@
       }
     ],
     "projectLogo": "/images/logos/aria-reserve.png",
-    "priceList": {
-      "driveFileId": "1rSTKum4AjJepSzC3-eLPBd-HM4wqX39_",
-      "createdAt": "As of July 21, 2026"
-    },
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Edgewater",
@@ -6052,7 +6048,11 @@
         "driveFileId": "1A3fnonqvaxGIcH1IA7wzgs7F11H9F3vl"
       }
     ],
-    "presentations": []
+    "presentations": [],
+    "priceList": {
+      "driveFileId": "1rSTKum4AjJepSzC3-eLPBd-HM4wqX39_",
+      "createdAt": "As of July 21, 2026"
+    }
   },
   {
     "slug": "armani-casa-pompano-beach",
@@ -6104,10 +6104,6 @@
       }
     ],
     "projectLogo": "/images/logos/armani-casa-pompano-beach.png",
-    "priceList": {
-      "driveFileId": "1XLENIGzocDT9naSEEPt4URAYvxPeciRZ",
-      "createdAt": "As of May 26, 2026"
-    },
     "isNew": false,
     "filterCounty": "Broward County",
     "filterLocation": "Pompano Beach",
@@ -6171,7 +6167,11 @@
         "alt": "Armani Casa Pompano Beach - Exterior Park 3"
       }
     ],
-    "presentations": []
+    "presentations": [],
+    "priceList": {
+      "driveFileId": "1XLENIGzocDT9naSEEPt4URAYvxPeciRZ",
+      "createdAt": "As of May 26, 2026"
+    }
   },
   {
     "slug": "armani-casa",
@@ -7652,10 +7652,6 @@
       }
     ],
     "projectLogo": "/images/logos/avenia-aventura.png",
-    "priceList": {
-      "driveFileId": "1663S4HHeaMrlMYjIFFg4k9QEtP0lOdXZ",
-      "createdAt": "As of June 26, 2026"
-    },
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Aventura",
@@ -7727,7 +7723,11 @@
         "alt": "Avenia Aventura  (9)"
       }
     ],
-    "presentations": []
+    "presentations": [],
+    "priceList": {
+      "driveFileId": "1663S4HHeaMrlMYjIFFg4k9QEtP0lOdXZ",
+      "createdAt": "As of June 26, 2026"
+    }
   },
   {
     "slug": "baccarat-residences",
@@ -7783,10 +7783,6 @@
       }
     ],
     "projectLogo": "/images/logos/baccarat-residences.png",
-    "priceList": {
-      "driveFileId": "1j545GY4Gu7y4d8eHR21DTmqYLd5uOw6U",
-      "createdAt": "As of June 24, 2026"
-    },
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Brickell",
@@ -8006,7 +8002,11 @@
         "alt": "Baccarat Residences 21"
       }
     ],
-    "presentations": []
+    "presentations": [],
+    "priceList": {
+      "driveFileId": "1j545GY4Gu7y4d8eHR21DTmqYLd5uOw6U",
+      "createdAt": "As of June 24, 2026"
+    }
   },
   {
     "slug": "bal-harbour-tower",
@@ -8217,10 +8217,6 @@
       }
     ],
     "projectLogo": "/images/logos/banyan-tree-bimini-bahamas.png",
-    "priceList": {
-      "driveFileId": "1RhOsxrzdF3afuVpmf574osmGnJUv6uwn",
-      "createdAt": "As of June 2, 2026"
-    },
     "isNew": false,
     "filterCounty": "Bimini",
     "filterLocation": "Bahamas",
@@ -8352,7 +8348,11 @@
         "alt": "Banyan Tree Bimini (9)"
       }
     ],
-    "presentations": []
+    "presentations": [],
+    "priceList": {
+      "driveFileId": "1RhOsxrzdF3afuVpmf574osmGnJUv6uwn",
+      "createdAt": "As of June 2, 2026"
+    }
   },
   {
     "slug": "banyan-tree",
@@ -8397,10 +8397,6 @@
       }
     ],
     "projectLogo": "/images/logos/banyan-tree.png",
-    "priceList": {
-      "driveFileId": "1lp9prfApMQQ_1gPwdm7le5Cv-MwabsJ6",
-      "createdAt": "As of May 26, 2026"
-    },
     "isNew": false,
     "filterCounty": "Palm Beach County",
     "filterLocation": "West Palm Beach",
@@ -8443,7 +8439,11 @@
         "driveFileId": "1GQ2MDm1cZlzrp9sWuWa0VTYazMBXqtoa",
         "alt": "Banyan Tree Residences West Palm Beach - Kitchen"
       }
-    ]
+    ],
+    "priceList": {
+      "driveFileId": "1lp9prfApMQQ_1gPwdm7le5Cv-MwabsJ6",
+      "createdAt": "As of May 26, 2026"
+    }
   },
   {
     "slug": "bay-harbor-towers",
@@ -8487,10 +8487,6 @@
       }
     ],
     "projectLogo": "/images/logos/bay-harbor-towers.png",
-    "priceList": {
-      "driveFileId": "1gbQ0nPMHhxUAABlzV3yZnT9uSzSYuTi4",
-      "createdAt": "As of July 9, 2026"
-    },
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Bay Harbor Islands",
@@ -8766,7 +8762,11 @@
         "alt": "Kitchen 2"
       }
     ],
-    "presentations": []
+    "presentations": [],
+    "priceList": {
+      "driveFileId": "1gbQ0nPMHhxUAABlzV3yZnT9uSzSYuTi4",
+      "createdAt": "As of July 9, 2026"
+    }
   },
   {
     "slug": "bayview-village",
@@ -10242,10 +10242,6 @@
       }
     ],
     "projectLogo": "/images/logos/casa-bella-residences-miami.png",
-    "priceList": {
-      "driveFileId": "11QbKOMeligva44oWz-9UEAot3b1zzdH8",
-      "createdAt": "As of July 10, 2026"
-    },
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Downtown Miami",
@@ -10570,7 +10566,11 @@
         "title": "",
         "driveFileId": "1ON3YuvKMM3G7asNFNsyhocP2xHXqPoyP"
       }
-    ]
+    ],
+    "priceList": {
+      "driveFileId": "11QbKOMeligva44oWz-9UEAot3b1zzdH8",
+      "createdAt": "As of July 10, 2026"
+    }
   },
   {
     "slug": "casa-cipriani",
@@ -10669,10 +10669,6 @@
       }
     ],
     "projectLogo": "/images/logos/cassia-coral-gables.png",
-    "priceList": {
-      "driveFileId": "1ugznzT8ZmY2RdDf6fvCDT_GfWyIbUoHo",
-      "createdAt": "As of July 15, 2026"
-    },
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Coral Gables",
@@ -10816,7 +10812,11 @@
         "alt": "Cassia - Bedroom-2"
       }
     ],
-    "presentations": []
+    "presentations": [],
+    "priceList": {
+      "driveFileId": "1ugznzT8ZmY2RdDf6fvCDT_GfWyIbUoHo",
+      "createdAt": "As of July 15, 2026"
+    }
   },
   {
     "slug": "chateau-beach-residences",
@@ -11031,10 +11031,6 @@
       }
     ],
     "projectLogo": "/images/logos/cipriani-residences.png",
-    "priceList": {
-      "driveFileId": "1PTxWAkGdgIMElHvqTPWOvLxOD617h9x3",
-      "createdAt": "As of July 17, 2026"
-    },
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Brickell",
@@ -11323,7 +11319,11 @@
         "driveFileId": "1HrMGPEhogel0nrSBk3khUaDkd644gLcx",
         "alt": "Exterior Evening 3"
       }
-    ]
+    ],
+    "priceList": {
+      "driveFileId": "1PTxWAkGdgIMElHvqTPWOvLxOD617h9x3",
+      "createdAt": "As of July 17, 2026"
+    }
   },
   {
     "slug": "colette-brickell",
@@ -11363,10 +11363,6 @@
       }
     ],
     "projectLogo": "/images/logos/colette-brickell.png",
-    "priceList": {
-      "driveFileId": "1x2PrRFOE14t8A83ZlV-QmbbjGKe6gh0G",
-      "createdAt": "As of June 26, 2026"
-    },
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Brickell",
@@ -11446,7 +11442,11 @@
         "alt": "Colette Residences 14"
       }
     ],
-    "presentations": []
+    "presentations": [],
+    "priceList": {
+      "driveFileId": "1x2PrRFOE14t8A83ZlV-QmbbjGKe6gh0G",
+      "createdAt": "As of June 26, 2026"
+    }
   },
   {
     "slug": "continuum-12000-sport-wellness-residences-miami",
@@ -11490,10 +11490,6 @@
     "filterLocation": "North Miami",
     "filterStatus": "Pre-construction",
     "filterYear": "2030",
-    "priceRange": {
-      "driveFileId": "1M94CvzpDk_8K9gDE7-aJxor0_89nAmXP",
-      "createdAt": "As of May 26, 2026"
-    },
     "factSheets": [
       {
         "title": "",
@@ -11555,7 +11551,11 @@
         "title": "",
         "driveFileId": "1EpVtRb3U8LnZ5OJbKV5SohXaUSaYY8sO"
       }
-    ]
+    ],
+    "priceRange": {
+      "driveFileId": "1M94CvzpDk_8K9gDE7-aJxor0_89nAmXP",
+      "createdAt": "As of May 26, 2026"
+    }
   },
   {
     "slug": "continuum-club-residences-north-bay-village",
@@ -11596,10 +11596,6 @@
       }
     ],
     "projectLogo": "/images/logos/continuum-club-residences-north-bay-village.png",
-    "priceList": {
-      "driveFileId": "1Amu6ei-0wB8YDo-lEVpWeSCcSFVvvRhX",
-      "createdAt": "As of June 18, 2026"
-    },
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "North Bay Village",
@@ -11727,7 +11723,11 @@
         "title": "",
         "driveFileId": "1rzXdAp_yw2ZojNPVx4GIqcLacX-Flzb3"
       }
-    ]
+    ],
+    "priceList": {
+      "driveFileId": "1Amu6ei-0wB8YDo-lEVpWeSCcSFVvvRhX",
+      "createdAt": "As of June 18, 2026"
+    }
   },
   {
     "slug": "continuum-south-beach",
@@ -12172,10 +12172,6 @@
       }
     ],
     "projectLogo": "/images/logos/delano-residences-hotel-miami.png",
-    "priceList": {
-      "driveFileId": "12eYf1jLkqtyXpwii1tMSnNEaHOb6h_ro",
-      "createdAt": "As of July 14, 2026"
-    },
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Downtown Miami",
@@ -12235,7 +12231,11 @@
         "alt": "Delano Residences & Hotel Miami - Tower"
       }
     ],
-    "presentations": []
+    "presentations": [],
+    "priceList": {
+      "driveFileId": "12eYf1jLkqtyXpwii1tMSnNEaHOb6h_ro",
+      "createdAt": "As of July 14, 2026"
+    }
   },
   {
     "slug": "diesel-wynwood",
@@ -12278,10 +12278,6 @@
       }
     ],
     "projectLogo": "/images/logos/diesel-wynwood.png",
-    "priceList": {
-      "driveFileId": "1-lr_2wPpRjqSXq24dY7hdnSD03dacKHP",
-      "createdAt": "As of May 26, 2026"
-    },
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Wynwood",
@@ -12694,7 +12690,11 @@
         "title": "",
         "driveFileId": "1Z-5p-oRgXjaQninhDgXHlpMxhiLE2ssV"
       }
-    ]
+    ],
+    "priceList": {
+      "driveFileId": "1-lr_2wPpRjqSXq24dY7hdnSD03dacKHP",
+      "createdAt": "As of May 26, 2026"
+    }
   },
   {
     "slug": "domus-brickell-center",
@@ -13141,10 +13141,6 @@
       }
     ],
     "projectLogo": "/images/logos/edge-house-miami.png",
-    "priceList": {
-      "driveFileId": "1HXQJGvn8H1N7gK96as-a5iTFPtsNHMkt",
-      "createdAt": "As of May 26, 2026"
-    },
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Edgewater",
@@ -13232,7 +13228,11 @@
         "title": "",
         "driveFileId": "1_jOoe-prwpBqxsTRvG9XCz5brMlTahZ2"
       }
-    ]
+    ],
+    "priceList": {
+      "driveFileId": "1HXQJGvn8H1N7gK96as-a5iTFPtsNHMkt",
+      "createdAt": "As of May 26, 2026"
+    }
   },
   {
     "slug": "edgeworth-west-palm-beach",
@@ -13277,14 +13277,6 @@
     "filterLocation": "West Palm Beach",
     "filterStatus": "Pre-construction",
     "filterYear": "2029",
-    "priceRange": {
-      "driveFileId": "1_yQxIIhvFDxMal4lkaJYYMOiKFs_go3e",
-      "createdAt": "As of July 2, 2026",
-      "disclaimer": {
-        "type": "warning",
-        "text": "Do not share the Price List, specific prices, or Floor Plans with clients. All pricing information and Floor Plans are for reference only and may be subject to change during the pre-launch phase. Share price ranges only and verify all information with the in-house team before presenting it to clients."
-      }
-    },
     "factSheets": [
       {
         "title": "",
@@ -13354,7 +13346,15 @@
         "alt": "Edge Worth - 6"
       }
     ],
-    "floorPlans": []
+    "floorPlans": [],
+    "priceRange": {
+      "driveFileId": "1_yQxIIhvFDxMal4lkaJYYMOiKFs_go3e",
+      "createdAt": "As of July 2, 2026",
+      "disclaimer": {
+        "type": "warning",
+        "text": "Do not share the Price List, specific prices, or Floor Plans with clients. All pricing information and Floor Plans are for reference only and may be subject to change during the pre-launch phase. Share price ranges only and verify all information with the in-house team before presenting it to clients."
+      }
+    }
   },
   {
     "slug": "edition-residences-edgewater",
@@ -13995,10 +13995,6 @@
       }
     ],
     "projectLogo": "/images/logos/ella-miami-beach.png",
-    "priceList": {
-      "driveFileId": "1xV5FOcNjUvzNC_rNRbkNz4waQxDYn89z",
-      "createdAt": "As of May 29, 2026"
-    },
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Miami Beach",
@@ -14098,7 +14094,11 @@
         "title": "",
         "driveFileId": "1Kr56zitBO_9w0SZB7NXyDObkZRaOj6YZ"
       }
-    ]
+    ],
+    "priceList": {
+      "driveFileId": "1xV5FOcNjUvzNC_rNRbkNz4waQxDYn89z",
+      "createdAt": "As of May 29, 2026"
+    }
   },
   {
     "slug": "elle-residences-edgewater",
@@ -14149,10 +14149,6 @@
       }
     ],
     "projectLogo": "/images/logos/elle-residences-edgewater.png",
-    "priceList": {
-      "driveFileId": "1gIMah8mm4WUXNRKdlQ-84ipWAh4bqTKz",
-      "createdAt": "As of May 26, 2026"
-    },
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Edgewater",
@@ -14293,7 +14289,11 @@
         "title": "",
         "driveFileId": "1QCCPRBEtP5B5O5j2YOSG5qxnTd2YhEYG"
       }
-    ]
+    ],
+    "priceList": {
+      "driveFileId": "1gIMah8mm4WUXNRKdlQ-84ipWAh4bqTKz",
+      "createdAt": "As of May 26, 2026"
+    }
   },
   {
     "slug": "elysee-miami",
@@ -14496,10 +14496,6 @@
       }
     ],
     "projectLogo": "/images/logos/epique-pelican-bay.png",
-    "priceList": {
-      "driveFileId": "1x-HfLH8PSc-fGOIRcvcY0PniSseFl-v7",
-      "createdAt": "As of May 26, 2026"
-    },
     "isNew": false,
     "filterCounty": "Collier County",
     "filterLocation": "Naples",
@@ -14607,7 +14603,11 @@
         "alt": "Epique - Pool 2"
       }
     ],
-    "presentations": []
+    "presentations": [],
+    "priceList": {
+      "driveFileId": "1x-HfLH8PSc-fGOIRcvcY0PniSseFl-v7",
+      "createdAt": "As of May 26, 2026"
+    }
   },
   {
     "slug": "faena-house",
@@ -16507,10 +16507,6 @@
       }
     ],
     "projectLogo": "/images/logos/four-seasons-coconut-grove.png",
-    "priceList": {
-      "driveFileId": "1Kni-0Ix44od_nDcpGqnSWSTQHqfua9AE",
-      "createdAt": "As of July 14, 2026"
-    },
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Coconut Grove",
@@ -16646,7 +16642,11 @@
         "alt": "Four Seasons Coconut Grove - Balcony 4"
       }
     ],
-    "presentations": []
+    "presentations": [],
+    "priceList": {
+      "driveFileId": "1Kni-0Ix44od_nDcpGqnSWSTQHqfua9AE",
+      "createdAt": "As of July 14, 2026"
+    }
   },
   {
     "slug": "frida-kahlo-wynwood-residences",
@@ -16690,10 +16690,6 @@
       }
     ],
     "projectLogo": "/images/logos/frida-kahlo-wynwood-residences.png",
-    "priceList": {
-      "driveFileId": "1vUkh8ROUcCTPfSI0GZ6dLglMr7vT-BJw",
-      "createdAt": "As of May 26, 2026"
-    },
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Wynwood",
@@ -16778,7 +16774,11 @@
         "title": "South Tower",
         "driveFileId": "1mTLjMKvdoypGy_PX5aqZgAIsd_QZf35P"
       }
-    ]
+    ],
+    "priceList": {
+      "driveFileId": "1vUkh8ROUcCTPfSI0GZ6dLglMr7vT-BJw",
+      "createdAt": "As of May 26, 2026"
+    }
   },
   {
     "slug": "gale-miami",
@@ -16819,10 +16819,6 @@
       }
     ],
     "projectLogo": "/images/logos/gale-miami.png",
-    "priceList": {
-      "driveFileId": "18FkofuLSlZDjf7xnzz9g2pWmOvwmA5WK",
-      "createdAt": "As of May 26, 2026"
-    },
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Downtown Miami",
@@ -16930,7 +16926,11 @@
         "title": "",
         "driveFileId": "1oZ-WqLg6C4jAPktIYeXvGQb8t0f0F3Ch"
       }
-    ]
+    ],
+    "priceList": {
+      "driveFileId": "18FkofuLSlZDjf7xnzz9g2pWmOvwmA5WK",
+      "createdAt": "As of May 26, 2026"
+    }
   },
   {
     "slug": "glass-house-boca-raton",
@@ -16974,10 +16974,6 @@
       }
     ],
     "projectLogo": "/images/logos/glass-house-boca-raton.png",
-    "priceList": {
-      "driveFileId": "1342N-1quAkjjKQw4YndN0gokCs_tGFYZ",
-      "createdAt": "As of July 8, 2026"
-    },
     "isNew": false,
     "filterCounty": "Palm Beach County",
     "filterLocation": "Boca Raton",
@@ -17070,7 +17066,11 @@
         "title": "",
         "driveFileId": "1zPzv15MhsC5VnNjo6HxVDEx5Qx-r7FHA"
       }
-    ]
+    ],
+    "priceList": {
+      "driveFileId": "1342N-1quAkjjKQw4YndN0gokCs_tGFYZ",
+      "createdAt": "As of July 8, 2026"
+    }
   },
   {
     "slug": "glass-miami-beach",
@@ -17556,10 +17556,6 @@
       }
     ],
     "projectLogo": "/images/logos/house-of-wellness-brickell.png",
-    "priceList": {
-      "driveFileId": "1hrj-EQRO_CBiStX3Yjtjp1Coowj4GdE6",
-      "createdAt": "As of May 26, 2026"
-    },
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Brickell",
@@ -17703,7 +17699,11 @@
         "alt": "House of Wellness Brickell - 29"
       }
     ],
-    "floorPlans": []
+    "floorPlans": [],
+    "priceList": {
+      "driveFileId": "1hrj-EQRO_CBiStX3Yjtjp1Coowj4GdE6",
+      "createdAt": "As of May 26, 2026"
+    }
   },
   {
     "slug": "hub-miami",
@@ -17743,10 +17743,6 @@
       }
     ],
     "projectLogo": "/images/logos/hub-miami.png",
-    "priceList": {
-      "driveFileId": "1Z0izkcptN9k6D9IcnooYwCzWeDSWVPiL",
-      "createdAt": "As of May 26, 2026"
-    },
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Downtown Miami",
@@ -17915,7 +17911,11 @@
         "title": "",
         "driveFileId": "1P171RXdsye4TedrUPzUzcl9iSpxhpGXz"
       }
-    ]
+    ],
+    "priceList": {
+      "driveFileId": "1Z0izkcptN9k6D9IcnooYwCzWeDSWVPiL",
+      "createdAt": "As of May 26, 2026"
+    }
   },
   {
     "slug": "icon-beach-residences-hollywood",
@@ -17955,10 +17955,6 @@
       }
     ],
     "projectLogo": "/images/logos/icon-beach-residences-hollywood.png",
-    "priceList": {
-      "driveFileId": "1-WHH9xBz2BdjMTp3Di58DQ9CwLWepW8Q",
-      "createdAt": "As of May 29, 2026"
-    },
     "isNew": false,
     "filterCounty": "Broward County",
     "filterLocation": "Hollywood",
@@ -18118,7 +18114,11 @@
         "title": "",
         "driveFileId": "1kI1OumYY79GXB_1aiWNrLj_kGlRGUOv6"
       }
-    ]
+    ],
+    "priceList": {
+      "driveFileId": "1-WHH9xBz2BdjMTp3Di58DQ9CwLWepW8Q",
+      "createdAt": "As of May 29, 2026"
+    }
   },
   {
     "slug": "il-villaggio",
@@ -18892,10 +18892,6 @@
       }
     ],
     "projectLogo": "/images/logos/jem-residences.png",
-    "priceList": {
-      "driveFileId": "1Ai5Neb4B7qPzVf7OwtS_dBMf8zlyoEc2",
-      "createdAt": "As of May 26, 2026"
-    },
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Brickell",
@@ -19040,7 +19036,11 @@
         "title": "",
         "driveFileId": "1QneOhbqJEtIymxk9WjOKx-RZGQJB3Doo"
       }
-    ]
+    ],
+    "priceList": {
+      "driveFileId": "1Ai5Neb4B7qPzVf7OwtS_dBMf8zlyoEc2",
+      "createdAt": "As of May 26, 2026"
+    }
   },
   {
     "slug": "kempinski-residences-miami-design-district",
@@ -19084,10 +19084,6 @@
       }
     ],
     "projectLogo": "/images/logos/kempinski-residences-miami-design-district.png",
-    "priceList": {
-      "driveFileId": "1jW6VGde3M4S1OqdJNcXOJ8TWvFhbZGT6",
-      "createdAt": "As of July 13, 2026"
-    },
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Design District",
     "filterStatus": "Pre-construction",
@@ -19167,7 +19163,11 @@
         "driveFileId": "10aKR_tA6DjOFAvtqQWZHmqplC5cqHvez",
         "alt": "Kempinski - Kitchen 2"
       }
-    ]
+    ],
+    "priceList": {
+      "driveFileId": "1jW6VGde3M4S1OqdJNcXOJ8TWvFhbZGT6",
+      "createdAt": "As of July 13, 2026"
+    }
   },
   {
     "slug": "l-atelier",
@@ -19302,10 +19302,6 @@
       }
     ],
     "projectLogo": "/images/logos/la-baia-north-bay-harbor.png",
-    "priceList": {
-      "driveFileId": "1Of4JsgKuEd4ScGL4vSVq5ivjGCSw6Gnp",
-      "createdAt": "As of June 26, 2026"
-    },
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Bay Harbor Islands",
@@ -19429,7 +19425,11 @@
         "title": "",
         "driveFileId": "1dK0WvJNNiMeI8LDb_iJ3zloUFRmmG8z6"
       }
-    ]
+    ],
+    "priceList": {
+      "driveFileId": "1Of4JsgKuEd4ScGL4vSVq5ivjGCSw6Gnp",
+      "createdAt": "As of June 26, 2026"
+    }
   },
   {
     "slug": "la-mare",
@@ -19483,10 +19483,6 @@
       }
     ],
     "projectLogo": "/images/logos/la-mare.png",
-    "priceList": {
-      "driveFileId": "1_ejS0BlYfm-kryHxe_-VViEAHIfF8RKf",
-      "createdAt": "As of June 30, 2026"
-    },
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Bay Harbor Islands",
@@ -19778,7 +19774,11 @@
         "alt": "Regency Collection - Regency Rooftop 7"
       }
     ],
-    "presentations": []
+    "presentations": [],
+    "priceList": {
+      "driveFileId": "1_ejS0BlYfm-kryHxe_-VViEAHIfF8RKf",
+      "createdAt": "As of June 30, 2026"
+    }
   },
   {
     "slug": "la-santa-maria",
@@ -20112,10 +20112,6 @@
       }
     ],
     "projectLogo": "/images/logos/lofty-residences.png",
-    "priceList": {
-      "driveFileId": "1T8mCNiVtqc8PuORYJ8MmLt1IZ0TpK15g",
-      "createdAt": "As of May 26, 2026"
-    },
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Brickell",
@@ -20283,7 +20279,11 @@
         "title": "",
         "driveFileId": "118kAtPfngJiMp9fbKb133_Lfis8t5yuL"
       }
-    ]
+    ],
+    "priceList": {
+      "driveFileId": "1T8mCNiVtqc8PuORYJ8MmLt1IZ0TpK15g",
+      "createdAt": "As of May 26, 2026"
+    }
   },
   {
     "slug": "maison-d-or-south-flagler",
@@ -20326,10 +20326,6 @@
     "filterLocation": "West Palm Beach",
     "filterStatus": "Pre-construction",
     "filterYear": "2028",
-    "priceRange": {
-      "driveFileId": "1uCKS-h2p5xJjSOgO4c0VpHS1GtrqNAsp",
-      "createdAt": "As of May 28, 2026"
-    },
     "factSheets": [
       {
         "title": "",
@@ -20440,7 +20436,11 @@
         "title": "",
         "driveFileId": "1VroAFu68A1XSjT1acWTk-5JVpoCz_EDc"
       }
-    ]
+    ],
+    "priceRange": {
+      "driveFileId": "1uCKS-h2p5xJjSOgO4c0VpHS1GtrqNAsp",
+      "createdAt": "As of May 28, 2026"
+    }
   },
   {
     "slug": "the-residences-at-mandarin-oriental-west-palm-beach",
@@ -20997,10 +20997,6 @@
     "filterLocation": "Midtown Miami",
     "filterStatus": "Pre-construction",
     "filterYear": "2030",
-    "priceRange": {
-      "driveFileId": "18032Dmq8HGmF82CDzPQubOXGl6BiGCri",
-      "createdAt": "As of July 9, 2026"
-    },
     "factSheets": [
       {
         "title": "EN",
@@ -21155,7 +21151,11 @@
         "title": "",
         "driveFileId": "1xAfZfUzR9je949gpb17iGYsneq2B_evw"
       }
-    ]
+    ],
+    "priceRange": {
+      "driveFileId": "18032Dmq8HGmF82CDzPQubOXGl6BiGCri",
+      "createdAt": "As of July 9, 2026"
+    }
   },
   {
     "slug": "miami-tropic",
@@ -21460,10 +21460,6 @@
       }
     ],
     "projectLogo": "/images/logos/mila-bay-harbor-islands.png",
-    "priceList": {
-      "driveFileId": "1JYzHbh38FxvQMusDiU3dtOFu3E9tbFtS",
-      "createdAt": "As of June 26, 2026"
-    },
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Bay Harbor Islands",
@@ -21584,7 +21580,11 @@
         "title": "",
         "driveFileId": "13d9mT3uMabaX_-OxJfmjCFJMtoYU534j"
       }
-    ]
+    ],
+    "priceList": {
+      "driveFileId": "1JYzHbh38FxvQMusDiU3dtOFu3E9tbFtS",
+      "createdAt": "As of June 26, 2026"
+    }
   },
   {
     "slug": "missoni-baia",
@@ -22107,10 +22107,6 @@
       }
     ],
     "projectLogo": "/images/logos/mr-c-residences-boca-raton.png",
-    "priceList": {
-      "driveFileId": "1pyay7XMbqi5VukMhFxoMAJAzxOqcYteg",
-      "createdAt": "As of May 26, 2026"
-    },
     "isNew": false,
     "filterCounty": "Palm Beach County",
     "filterLocation": "Boca Raton",
@@ -22170,7 +22166,11 @@
         "alt": "Mr. C Residences Boca Raton (9)"
       }
     ],
-    "presentations": []
+    "presentations": [],
+    "priceList": {
+      "driveFileId": "1pyay7XMbqi5VukMhFxoMAJAzxOqcYteg",
+      "createdAt": "As of May 26, 2026"
+    }
   },
   {
     "slug": "mr-c-residences-west-palm-beach",
@@ -22217,10 +22217,6 @@
       }
     ],
     "projectLogo": "/images/logos/mr-c-residences-west-palm-beach.png",
-    "priceList": {
-      "driveFileId": "1jjW6VPp9FN4wfAZ7JWOIXCZZt-8TFkCp",
-      "createdAt": "As of July 16, 2026"
-    },
     "isNew": false,
     "filterCounty": "Palm Beach County",
     "filterLocation": "West Palm Beach",
@@ -22464,7 +22460,11 @@
         "alt": "Mr. C Residences WPB - Garden Leven 8"
       }
     ],
-    "presentations": []
+    "presentations": [],
+    "priceList": {
+      "driveFileId": "1jjW6VPp9FN4wfAZ7JWOIXCZZt-8TFkCp",
+      "createdAt": "As of July 16, 2026"
+    }
   },
   {
     "slug": "mr-c-residences-tigertail",
@@ -23304,10 +23304,6 @@
       }
     ],
     "projectLogo": "/images/logos/naples-beach-club-four-seasons.png",
-    "priceList": {
-      "driveFileId": "1dDnICGu1QLyzu8YOFrIeFVt-4NghA4MF",
-      "createdAt": "As of May 26, 2026"
-    },
     "isNew": false,
     "filterCounty": "Collier County",
     "filterLocation": "Naples",
@@ -23379,7 +23375,11 @@
         "title": "",
         "driveFileId": "1L-VAZdy19F8Ci-YSr7tlRzdDN9OizpFM"
       }
-    ]
+    ],
+    "priceList": {
+      "driveFileId": "1dDnICGu1QLyzu8YOFrIeFVt-4NghA4MF",
+      "createdAt": "As of May 26, 2026"
+    }
   },
   {
     "slug": "nexo-north-miami-beach",
@@ -23425,10 +23425,6 @@
       }
     ],
     "projectLogo": "/images/logos/nexo-north-miami-beach.png",
-    "priceList": {
-      "driveFileId": "1sacg_JG1wIrpRULwggp-B5mVO0gKAb3c",
-      "createdAt": "As of May 26, 2026"
-    },
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "North Miami Beach",
@@ -23549,7 +23545,11 @@
         "title": "",
         "driveFileId": "1m7jS-xqEeY_9t75pl__mUrgrXxY_qvYq"
       }
-    ]
+    ],
+    "priceList": {
+      "driveFileId": "1sacg_JG1wIrpRULwggp-B5mVO0gKAb3c",
+      "createdAt": "As of May 26, 2026"
+    }
   },
   {
     "slug": "nomad-residences-wynwood",
@@ -23593,10 +23593,6 @@
       }
     ],
     "projectLogo": "/images/logos/nomad-residences-wynwood.png",
-    "priceList": {
-      "driveFileId": "1WxMANn8Gv4sXfpiNssFKeK6GDXCxUhqs",
-      "createdAt": "As of May 26, 2026"
-    },
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Wynwood",
@@ -23700,7 +23696,11 @@
         "title": "",
         "driveFileId": "1Y_8YuZhro6Is78gQ_son_r5z_3xexcNR"
       }
-    ]
+    ],
+    "priceList": {
+      "driveFileId": "1WxMANn8Gv4sXfpiNssFKeK6GDXCxUhqs",
+      "createdAt": "As of May 26, 2026"
+    }
   },
   {
     "slug": "nora-house",
@@ -23895,10 +23895,6 @@
       }
     ],
     "projectLogo": "/images/logos/oasis-hallandale.png",
-    "priceList": {
-      "driveFileId": "1zJ9URqECMSvRpFJVbkFjbKm6mK7971px",
-      "createdAt": "As of June 2, 2026"
-    },
     "isNew": false,
     "filterCounty": "Broward County",
     "filterLocation": "Hallandale",
@@ -24006,7 +24002,11 @@
         "title": "",
         "driveFileId": "1LG_9kdhWWKa2MCAWUaQFY43TWwXOO2ER"
       }
-    ]
+    ],
+    "priceList": {
+      "driveFileId": "1zJ9URqECMSvRpFJVbkFjbKm6mK7971px",
+      "createdAt": "As of June 2, 2026"
+    }
   },
   {
     "slug": "ocean-580-pompano-beach",
@@ -24047,10 +24047,6 @@
       }
     ],
     "projectLogo": "/images/logos/ocean-580-pompano-beach.png",
-    "priceList": {
-      "driveFileId": "1U3vtz0GZEUw_DQ1MCmkJ95XGQ4g8ppmw",
-      "createdAt": "As of June 8, 2026"
-    },
     "isNew": false,
     "filterCounty": "Broward County",
     "filterLocation": "Pompano Beach",
@@ -24134,7 +24130,11 @@
         "title": "",
         "driveFileId": "1EScLFfzfk6nonbKzufqW3KDecLT76zPA"
       }
-    ]
+    ],
+    "priceList": {
+      "driveFileId": "1U3vtz0GZEUw_DQ1MCmkJ95XGQ4g8ppmw",
+      "createdAt": "As of June 8, 2026"
+    }
   },
   {
     "slug": "ocean-delray",
@@ -24780,10 +24780,6 @@
       }
     ],
     "projectLogo": "/images/logos/ocean-terrace.png",
-    "priceList": {
-      "driveFileId": "1FAInXWcQJipvMJ-i7rgVDBnRF7CDMb9V",
-      "createdAt": "As of June 22, 2026"
-    },
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Miami Beach",
@@ -24936,7 +24932,11 @@
         "title": "",
         "driveFileId": "1XtJLWHwJsZkhfh9zmiED0E10bJIfPxOo"
       }
-    ]
+    ],
+    "priceList": {
+      "driveFileId": "1FAInXWcQJipvMJ-i7rgVDBnRF7CDMb9V",
+      "createdAt": "As of June 22, 2026"
+    }
   },
   {
     "slug": "oceana-bal-harbour",
@@ -25627,10 +25627,6 @@
       }
     ],
     "projectLogo": "/images/logos/okan-tower.png",
-    "priceList": {
-      "driveFileId": "1AVLtdFSOEXpI5GvBq0klCdBm3Bbn_pxu",
-      "createdAt": "As of May 26, 2026"
-    },
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Downtown Miami",
@@ -25852,7 +25848,11 @@
         "title": "",
         "driveFileId": "1Kq_3hqm30klP5CXwPsnuEwCEJKwLjcVa"
       }
-    ]
+    ],
+    "priceList": {
+      "driveFileId": "1AVLtdFSOEXpI5GvBq0klCdBm3Bbn_pxu",
+      "createdAt": "As of May 26, 2026"
+    }
   },
   {
     "slug": "olara-west-palm-beach",
@@ -26184,10 +26184,6 @@
     "filterLocation": "Fort Lauderdale",
     "filterStatus": "Pre-construction",
     "filterYear": "2028",
-    "priceRange": {
-      "driveFileId": "1y5m5JCi_T1blF5UP6uUz7dJ7Cd6h86HJ",
-      "createdAt": "As of May 26, 2026"
-    },
     "factSheets": [
       {
         "title": "EN",
@@ -26322,7 +26318,11 @@
         "title": "",
         "driveFileId": "12d9JTIp6MJaeJcWVhUgXlBrekvfn5-H4"
       }
-    ]
+    ],
+    "priceRange": {
+      "driveFileId": "1y5m5JCi_T1blF5UP6uUz7dJ7Cd6h86HJ",
+      "createdAt": "As of May 26, 2026"
+    }
   },
   {
     "slug": "onda-bay-harbor",
@@ -26371,10 +26371,6 @@
       }
     ],
     "projectLogo": "/images/logos/onda-bay-harbor.png",
-    "priceList": {
-      "driveFileId": "1dV4nYdXm_657PjkBHh8Zf58qNJ6fk02N",
-      "createdAt": "As of May 26, 2026"
-    },
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Bay Harbor Islands",
@@ -26546,7 +26542,11 @@
         "title": "",
         "driveFileId": "1nKHhr5tQPgYsQL_jVP-q-4I2xlEUDeYZ"
       }
-    ]
+    ],
+    "priceList": {
+      "driveFileId": "1dV4nYdXm_657PjkBHh8Zf58qNJ6fk02N",
+      "createdAt": "As of May 26, 2026"
+    }
   },
   {
     "slug": "one-ocean",
@@ -26709,10 +26709,6 @@
       }
     ],
     "projectLogo": "/images/logos/one-park-tower-by-turnberry.png",
-    "priceList": {
-      "driveFileId": "1p4WCvC3ugJxlOk_2vPKKoRY1-JXrR_Mu",
-      "createdAt": "As of May 27, 2026"
-    },
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "North Miami",
@@ -27109,7 +27105,11 @@
         "title": "",
         "driveFileId": "1gchm4g8iVadzlehlpieEq3wpe4UOpyKj"
       }
-    ]
+    ],
+    "priceList": {
+      "driveFileId": "1p4WCvC3ugJxlOk_2vPKKoRY1-JXrR_Mu",
+      "createdAt": "As of May 27, 2026"
+    }
   },
   {
     "slug": "one-thousand-museum",
@@ -27495,10 +27495,6 @@
       }
     ],
     "projectLogo": "/images/logos/opus-coconut-grove.png",
-    "priceList": {
-      "driveFileId": "1IkmzBeUUFIYJ2FbrUoyqQGTvyQY-Vy0p",
-      "createdAt": "As of May 26, 2026"
-    },
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Coconut Grove",
@@ -27639,7 +27635,11 @@
         "title": "",
         "driveFileId": "1rBSPB0-zoXMkfyaRH3hZdXP8muOI5NZA"
       }
-    ]
+    ],
+    "priceList": {
+      "driveFileId": "1IkmzBeUUFIYJ2FbrUoyqQGTvyQY-Vy0p",
+      "createdAt": "As of May 26, 2026"
+    }
   },
   {
     "slug": "ora-casa-tua",
@@ -27710,10 +27710,6 @@
       }
     ],
     "projectLogo": "/images/logos/ora-casa-tua.png",
-    "priceList": {
-      "driveFileId": "17K0dT_HbyS8TgHLfi0XXVCqVT9mNLf86",
-      "createdAt": "As of June 30, 2026"
-    },
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Brickell",
@@ -28074,7 +28070,11 @@
         "driveFileId": "1gIgfZQP6iPHccCzXqDLtRZpcJuhkADp0",
         "alt": "New Renderings - Ora by Casa Tua - Rendering 52"
       }
-    ]
+    ],
+    "priceList": {
+      "driveFileId": "17K0dT_HbyS8TgHLfi0XXVCqVT9mNLf86",
+      "createdAt": "As of June 30, 2026"
+    }
   },
   {
     "slug": "origin",
@@ -28112,10 +28112,6 @@
       }
     ],
     "projectLogo": "/images/logos/origin.png",
-    "priceList": {
-      "driveFileId": "1JR2k_CHIObKjoJrNDhmx-08ka4TiW_J7",
-      "createdAt": "As of May 26, 2026"
-    },
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Bay Harbor Islands",
@@ -28336,7 +28332,11 @@
         "title": "",
         "driveFileId": "1agU7QNetA6eRV450ZiEBwvhKa7QwkQGY"
       }
-    ]
+    ],
+    "priceList": {
+      "driveFileId": "1JR2k_CHIObKjoJrNDhmx-08ka4TiW_J7",
+      "createdAt": "As of May 26, 2026"
+    }
   },
   {
     "slug": "pagani-north-bay-village",
@@ -28664,12 +28664,12 @@
         "driveFileId": "1Wa0AliKDZjxlq_qwdQfThvh7_INo8D7N"
       }
     ],
+    "theBuilding": "Standing 30 stories tall, The Pagani encompasses a total of 70 unparalleled units. Designed to cater to various preferences, the building offers a range of 2 to 4-bedroom residences with spacious layouts.",
+    "stylishAmenities": "Equipped with a diverse array of upscale amenities, residents can enjoy access to a dedicated kids' room, library, co-working space, lounge, and movie room for leisure and relaxation. Elevating the living experience further, the rooftop offers an additional amenity deck, featuring a pristine pool, state-of-the-art gym, and a rejuvenating spa.",
     "priceList": {
       "driveFileId": "15ryfrNOpOegGz06QDj9IEuP06jrTnF7u",
       "createdAt": "As of June 26, 2026"
-    },
-    "theBuilding": "Standing 30 stories tall, The Pagani encompasses a total of 70 unparalleled units. Designed to cater to various preferences, the building offers a range of 2 to 4-bedroom residences with spacious layouts.",
-    "stylishAmenities": "Equipped with a diverse array of upscale amenities, residents can enjoy access to a dedicated kids' room, library, co-working space, lounge, and movie room for leisure and relaxation. Elevating the living experience further, the rooftop offers an additional amenity deck, featuring a pristine pool, state-of-the-art gym, and a rejuvenating spa."
+    }
   },
   {
     "slug": "palazzo-at-bayfront-naples",
@@ -28708,10 +28708,6 @@
       }
     ],
     "projectLogo": "/images/logos/palazzo-at-bayfront-naples.png",
-    "priceList": {
-      "driveFileId": "1poo9OTyC_ZSH2kVF0hkOl-rCtc8u2TD8",
-      "createdAt": "As of May 26, 2026"
-    },
     "isNew": false,
     "filterCounty": "Collier County",
     "filterLocation": "Naples",
@@ -28799,7 +28795,11 @@
         "title": "",
         "driveFileId": "17BBL0yAcu-0fx7Hk3DSyEPR_BTTu_oRj"
       }
-    ]
+    ],
+    "priceList": {
+      "driveFileId": "1poo9OTyC_ZSH2kVF0hkOl-rCtc8u2TD8",
+      "createdAt": "As of May 26, 2026"
+    }
   },
   {
     "slug": "palazzo-del-sol",
@@ -30207,10 +30207,6 @@
       }
     ],
     "projectLogo": "/images/logos/palma-miami-beach.png",
-    "priceList": {
-      "driveFileId": "1LzzqHghIzf70LM3Hr72lXckA6IsjjsCq",
-      "createdAt": "As of June 1, 2026"
-    },
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Miami Beach",
@@ -30290,7 +30286,11 @@
         "title": "",
         "driveFileId": "19DVDwk8tcoGpmZN6eQCLkOYqB97XetMO"
       }
-    ]
+    ],
+    "priceList": {
+      "driveFileId": "1LzzqHghIzf70LM3Hr72lXckA6IsjjsCq",
+      "createdAt": "As of June 1, 2026"
+    }
   },
   {
     "slug": "paramount-fort-lauderdale-beach",
@@ -31134,10 +31134,6 @@
       }
     ],
     "projectLogo": "/images/logos/pier-sixty-six-fort-lauderdale.png",
-    "priceList": {
-      "driveFileId": "1ZnLRLOEm85aCkXmQmOOnAqiaM9-YRq82",
-      "createdAt": "As of July 21, 2026"
-    },
     "isNew": false,
     "filterCounty": "Broward County",
     "filterLocation": "Fort Lauderdale",
@@ -31577,7 +31573,11 @@
         "title": "",
         "driveFileId": "1uVPn_X3Dm55uV-qGRnHvZk7d43ktM3TN"
       }
-    ]
+    ],
+    "priceList": {
+      "driveFileId": "1ZnLRLOEm85aCkXmQmOOnAqiaM9-YRq82",
+      "createdAt": "As of July 21, 2026"
+    }
   },
   {
     "slug": "ponce-park",
@@ -31617,10 +31617,6 @@
       }
     ],
     "projectLogo": "/images/logos/ponce-park.png",
-    "priceList": {
-      "driveFileId": "16hmjfb4jVPo6zmarazocyIzJaOm7wAyW",
-      "createdAt": "As of July 21, 2026"
-    },
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Coral Gables",
@@ -31729,7 +31725,11 @@
         "title": "Concept",
         "driveFileId": "1Uufsx6UgBG47DbMjTNFAykWQyUvxIH_R"
       }
-    ]
+    ],
+    "priceList": {
+      "driveFileId": "16hmjfb4jVPo6zmarazocyIzJaOm7wAyW",
+      "createdAt": "As of July 21, 2026"
+    }
   },
   {
     "slug": "porsche-design-tower",
@@ -32608,10 +32608,6 @@
       }
     ],
     "projectLogo": "/images/logos/riva-residenze.png",
-    "priceList": {
-      "driveFileId": "1Dik4pkH3zFiNVUdumwAcUWT8i7XTsfNS",
-      "createdAt": "As of May 26, 2026"
-    },
     "isNew": false,
     "filterCounty": "Broward County",
     "filterLocation": "Fort Lauderdale",
@@ -32736,7 +32732,11 @@
         "title": "ES",
         "driveFileId": "1icIMPrj4Cv4ED05HV0PrN7-hiZGp5N_s"
       }
-    ]
+    ],
+    "priceList": {
+      "driveFileId": "1Dik4pkH3zFiNVUdumwAcUWT8i7XTsfNS",
+      "createdAt": "As of May 26, 2026"
+    }
   },
   {
     "slug": "rivage-bal-harbour",
@@ -32800,10 +32800,6 @@
       }
     ],
     "projectLogo": "/images/logos/rivage-bal-harbour.png",
-    "priceList": {
-      "driveFileId": "1xh8pS8EfzFftZ6Bu-j3KVOglHSXuhZ6J",
-      "createdAt": "As of June 8, 2026"
-    },
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Bal Harbour",
@@ -33805,7 +33801,11 @@
         "title": "Sales Presentation ES",
         "driveFileId": "1O9-284PssCw1qE2BDzmieZh76kbV5AZU"
       }
-    ]
+    ],
+    "priceList": {
+      "driveFileId": "1xh8pS8EfzFftZ6Bu-j3KVOglHSXuhZ6J",
+      "createdAt": "As of June 8, 2026"
+    }
   },
   {
     "slug": "river-district-14-miami",
@@ -33853,10 +33853,6 @@
       }
     ],
     "projectLogo": "/images/logos/river-district-14-miami.png",
-    "priceList": {
-      "driveFileId": "1OAoVkJ7gcAb9vIIkGl8Bwb2VhOaAe64J",
-      "createdAt": "As of May 26, 2026"
-    },
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Miami",
@@ -34157,7 +34153,11 @@
         "title": "",
         "driveFileId": "1igzPwuS42bg_E9qDRYIwFYH-iH-sE-gY"
       }
-    ]
+    ],
+    "priceList": {
+      "driveFileId": "1OAoVkJ7gcAb9vIIkGl8Bwb2VhOaAe64J",
+      "createdAt": "As of May 26, 2026"
+    }
   },
   {
     "slug": "rosewood-hillsboro",
@@ -34202,10 +34202,6 @@
       }
     ],
     "projectLogo": "/images/logos/rosewood-hillsboro.png",
-    "priceList": {
-      "driveFileId": "1TH2jKL1RxsDv45GJ-7aRRUd3CH5FytVu",
-      "createdAt": "As of July 9, 2026"
-    },
     "isNew": false,
     "filterCounty": "Broward County",
     "filterLocation": "Hillsboro Beach",
@@ -34406,7 +34402,11 @@
         "driveFileId": "1sILb2Mlc_GhqKxF1UvZbcHjuk-tPFR_Q",
         "alt": "Rosewood Residences - Primary Bathroom 3"
       }
-    ]
+    ],
+    "priceList": {
+      "driveFileId": "1TH2jKL1RxsDv45GJ-7aRRUd3CH5FytVu",
+      "createdAt": "As of July 9, 2026"
+    }
   },
   {
     "slug": "rosewood-residences-naples",
@@ -34442,10 +34442,6 @@
       }
     ],
     "projectLogo": "/images/logos/rosewood-residences-naples.png",
-    "priceList": {
-      "driveFileId": "1gjV3C8jCJwIzQp-oexfh28F5FVh0OFW3",
-      "createdAt": "As of May 26, 2026"
-    },
     "isNew": false,
     "filterCounty": "Collier County",
     "filterLocation": "Naples",
@@ -34616,7 +34612,11 @@
         "title": "",
         "driveFileId": "11MMkWIXt8u2-JUXse6mGOGA8r8OnJsOg"
       }
-    ]
+    ],
+    "priceList": {
+      "driveFileId": "1gjV3C8jCJwIzQp-oexfh28F5FVh0OFW3",
+      "createdAt": "As of May 26, 2026"
+    }
   },
   {
     "slug": "sage-fort-lauderdale",
@@ -34801,10 +34801,6 @@
       }
     ],
     "projectLogo": "/images/logos/salato.png",
-    "priceList": {
-      "driveFileId": "10DUStSne9-sdF8o8k3DhCSpfYjw54YYX",
-      "createdAt": "As of June 16, 2026"
-    },
     "isNew": false,
     "filterCounty": "Broward County",
     "filterLocation": "Pompano Beach",
@@ -34916,7 +34912,11 @@
         "title": "",
         "driveFileId": "1JgnuC0T_EgKHOhxl_HuHt7F8GYSJ4rtr"
       }
-    ]
+    ],
+    "priceList": {
+      "driveFileId": "10DUStSne9-sdF8o8k3DhCSpfYjw54YYX",
+      "createdAt": "As of June 16, 2026"
+    }
   },
   {
     "slug": "setai-residences",
@@ -35096,10 +35096,6 @@
       }
     ],
     "projectLogo": "/images/logos/shell-bay-by-auberge.png",
-    "priceList": {
-      "driveFileId": "1-Q0q2NGEf1jPlhlvV4XwLLSKA0v4bakT",
-      "createdAt": "As of May 29, 2026"
-    },
     "isNew": false,
     "filterCounty": "Broward County",
     "filterLocation": "Hallandale",
@@ -35263,7 +35259,11 @@
         "title": "",
         "driveFileId": "1f2g4LbcTpH01DWhv5Nco2PdvIcZMcISa"
       }
-    ]
+    ],
+    "priceList": {
+      "driveFileId": "1-Q0q2NGEf1jPlhlvV4XwLLSKA0v4bakT",
+      "createdAt": "As of May 29, 2026"
+    }
   },
   {
     "slug": "shoma-bay",
@@ -35321,10 +35321,6 @@
       }
     ],
     "projectLogo": "/images/logos/shoma-bay.png",
-    "priceList": {
-      "driveFileId": "1dBp0liw0mgqaUeOtyQy87XaNDExr2hIF",
-      "createdAt": "As of June 2, 2026"
-    },
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "North Bay Village",
@@ -35653,7 +35649,11 @@
         "title": "",
         "driveFileId": "1NObsA3UE-haD5wsZNbFaAQ9E08Bk4gHU"
       }
-    ]
+    ],
+    "priceList": {
+      "driveFileId": "1dBp0liw0mgqaUeOtyQy87XaNDExr2hIF",
+      "createdAt": "As of June 2, 2026"
+    }
   },
   {
     "slug": "shore-club-private-collection-residences",
@@ -35695,10 +35695,6 @@
       }
     ],
     "projectLogo": "/images/logos/shore-club-private-collection-residences.png",
-    "priceList": {
-      "driveFileId": "11C3T6x_wZcvUByPwwjSiEUB8Gk-1SVKp",
-      "createdAt": "As of July 22, 2026"
-    },
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Miami Beach",
@@ -35814,7 +35810,11 @@
         "alt": "Shore Club Exterior 5"
       }
     ],
-    "presentations": []
+    "presentations": [],
+    "priceList": {
+      "driveFileId": "11C3T6x_wZcvUByPwwjSiEUB8Gk-1SVKp",
+      "createdAt": "As of July 22, 2026"
+    }
   },
   {
     "slug": "shorecrest-west-palm-beach",
@@ -35863,10 +35863,6 @@
       }
     ],
     "projectLogo": "/images/logos/shorecrest-west-palm-beach.png",
-    "priceList": {
-      "driveFileId": "1dzKLjTggKaWd6eARxkV0ucpRb1BAou9p",
-      "createdAt": "As of July 21, 2026"
-    },
     "isNew": false,
     "filterCounty": "Palm Beach County",
     "filterLocation": "West Palm Beach",
@@ -36050,7 +36046,11 @@
         "alt": "Interior - Shorecrest - Primary Bedroom 902"
       }
     ],
-    "presentations": []
+    "presentations": [],
+    "priceList": {
+      "driveFileId": "1dzKLjTggKaWd6eARxkV0ucpRb1BAou9p",
+      "createdAt": "As of July 21, 2026"
+    }
   },
   {
     "slug": "sixth-rio",
@@ -36089,10 +36089,6 @@
       }
     ],
     "projectLogo": "/images/logos/sixth-rio.png",
-    "priceList": {
-      "driveFileId": "1cgaQ-mtxnJNJEbBhD57Gyi9oaF5dbXsI",
-      "createdAt": "As of July 15, 2026"
-    },
     "isNew": false,
     "filterCounty": "Broward County",
     "filterLocation": "Fort Lauderdale",
@@ -36272,7 +36268,11 @@
         "title": "",
         "driveFileId": "1-COo2DywM4K_0rju4nQGzFrEMt_HkosB"
       }
-    ]
+    ],
+    "priceList": {
+      "driveFileId": "1cgaQ-mtxnJNJEbBhD57Gyi9oaF5dbXsI",
+      "createdAt": "As of July 15, 2026"
+    }
   },
   {
     "slug": "south-flagler-house",
@@ -36317,10 +36317,6 @@
       }
     ],
     "projectLogo": "/images/logos/south-flagler-house.png",
-    "priceList": {
-      "driveFileId": "14nuOQXbZqE2l8v31e0I7oXgTWGa3W0Do",
-      "createdAt": "As of July 1, 2026"
-    },
     "isNew": false,
     "filterCounty": "Palm Beach County",
     "filterLocation": "West Palm Beach",
@@ -36409,7 +36405,11 @@
         "title": "",
         "driveFileId": "1wF2UND8guJ3HHHq4b7cUnziA8Ccu0Bg2"
       }
-    ]
+    ],
+    "priceList": {
+      "driveFileId": "14nuOQXbZqE2l8v31e0I7oXgTWGa3W0Do",
+      "createdAt": "As of July 1, 2026"
+    }
   },
   {
     "slug": "south-pointe-towers",
@@ -36597,10 +36597,6 @@
       }
     ],
     "projectLogo": "/images/logos/st-regis-residences-bahia-mar-fort-lauderdale.png",
-    "priceList": {
-      "driveFileId": "16OlE7eMMUzTjYKCw8I_Y2PrkbP4apXUI",
-      "createdAt": "As of June 12, 2026"
-    },
     "isNew": false,
     "filterCounty": "Broward County",
     "filterLocation": "Fort Lauderdale",
@@ -36732,7 +36728,11 @@
         "alt": "St Regis Bahia Mar Residences Unit - Unit C Kitchen Scheme 1_View 3"
       }
     ],
-    "presentations": []
+    "presentations": [],
+    "priceList": {
+      "driveFileId": "16OlE7eMMUzTjYKCw8I_Y2PrkbP4apXUI",
+      "createdAt": "As of June 12, 2026"
+    }
   },
   {
     "slug": "st-regis-residences-bal-harbour",
@@ -37003,10 +37003,6 @@
       }
     ],
     "projectLogo": "/images/logos/st-regis-residences-brickell.png",
-    "priceList": {
-      "driveFileId": "11wo4gss7kULPU6041H69g6FGV3l94L9T",
-      "createdAt": "As of June 30, 2026"
-    },
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Brickell",
@@ -37411,7 +37407,11 @@
         "driveFileId": "10fBmM64vyQw46cXvGgmRVAwjCo_cc-Mz",
         "alt": "The Villas - St Regis - The Villas 18"
       }
-    ]
+    ],
+    "priceList": {
+      "driveFileId": "11wo4gss7kULPU6041H69g6FGV3l94L9T",
+      "createdAt": "As of June 30, 2026"
+    }
   },
   {
     "slug": "st-regis-residences-sunny-isles",
@@ -37475,10 +37475,6 @@
       }
     ],
     "projectLogo": "/images/logos/st-regis-residences-sunny-isles.png",
-    "priceList": {
-      "driveFileId": "1z0geL1T9o50wwRRzDQV9BNgSraOQQuuw",
-      "createdAt": "As of June 1, 2026"
-    },
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Sunny Isles Beach",
@@ -37991,7 +37987,11 @@
         "driveFileId": "1m1Yc8ChEfTaMZCpwQjSrsNaAkd1ahZWI",
         "alt": "Conceptual Interiors - 12041"
       }
-    ]
+    ],
+    "priceList": {
+      "driveFileId": "1z0geL1T9o50wwRRzDQV9BNgSraOQQuuw",
+      "createdAt": "As of June 1, 2026"
+    }
   },
   {
     "slug": "surf-row",
@@ -38035,10 +38035,6 @@
       }
     ],
     "projectLogo": "/images/logos/surf-row.png",
-    "priceList": {
-      "driveFileId": "13AQp8csURNyec9JsbNEz5hF5lylRZgZf",
-      "createdAt": "As of May 26, 2026"
-    },
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Surfside",
@@ -38150,7 +38146,11 @@
         "title": "",
         "driveFileId": "1fZd59hTxM9h591rmKtj6THI2Cd7ic98Y"
       }
-    ]
+    ],
+    "priceList": {
+      "driveFileId": "13AQp8csURNyec9JsbNEz5hF5lylRZgZf",
+      "createdAt": "As of May 26, 2026"
+    }
   },
   {
     "slug": "the-avenue",
@@ -38196,10 +38196,6 @@
       }
     ],
     "projectLogo": "/images/logos/the-avenue.png",
-    "priceList": {
-      "driveFileId": "1_HKSi1C8Ov9mBpHLuvoxjsgRM7RyZhXM",
-      "createdAt": "As of June 1, 2026"
-    },
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Coral Gables",
@@ -38319,7 +38315,11 @@
         "title": "",
         "driveFileId": "1cOlFEqKa2d8KNxsrOn35IyzJM4iS8l57"
       }
-    ]
+    ],
+    "priceList": {
+      "driveFileId": "1_HKSi1C8Ov9mBpHLuvoxjsgRM7RyZhXM",
+      "createdAt": "As of June 1, 2026"
+    }
   },
   {
     "slug": "the-bath-club",
@@ -38893,10 +38893,6 @@
       }
     ],
     "projectLogo": "/images/logos/the-cove-residences.png",
-    "priceList": {
-      "driveFileId": "1tY2x4o9dk1wj5asU1no4OtUQhExecvOV",
-      "createdAt": "As of May 29, 2026"
-    },
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Edgewater",
@@ -38984,7 +38980,11 @@
         "title": "",
         "driveFileId": "1sFy4vBrVTJXxaYgrz859m5fkqDkGk2O4"
       }
-    ]
+    ],
+    "priceList": {
+      "driveFileId": "1tY2x4o9dk1wj5asU1no4OtUQhExecvOV",
+      "createdAt": "As of May 29, 2026"
+    }
   },
   {
     "slug": "the-delmore",
@@ -39027,14 +39027,6 @@
       }
     ],
     "projectLogo": "/images/logos/the-delmore.png",
-    "priceList": {
-      "driveFileId": "17NVyXQ67eXayZKXhHGyFuKekTAesYfWL",
-      "createdAt": "As of May 26, 2026",
-      "disclaimer": {
-        "type": "info",
-        "text": "It is set to be relaunched in January 2027, and the developer remains fully committed. They are currently in the process of bringing on a local joint venture partner to move the project forward."
-      }
-    },
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Surfside",
@@ -39138,7 +39130,15 @@
         "alt": "The Delmore - SW Residence Primary Bathroom WATERMARK"
       }
     ],
-    "presentations": []
+    "presentations": [],
+    "priceList": {
+      "driveFileId": "17NVyXQ67eXayZKXhHGyFuKekTAesYfWL",
+      "createdAt": "As of May 26, 2026",
+      "disclaimer": {
+        "type": "info",
+        "text": "It is set to be relaunched in January 2027, and the developer remains fully committed. They are currently in the process of bringing on a local joint venture partner to move the project forward."
+      }
+    }
   },
   {
     "slug": "the-estates-at-acqualina",
@@ -39833,10 +39833,6 @@
       }
     ],
     "projectLogo": "/images/logos/the-george-residences-coral-gables.png",
-    "priceList": {
-      "driveFileId": "1ywRto3jine47-WgxLYFlpchQnj8aw8Wv",
-      "createdAt": "As of May 26, 2026"
-    },
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Coral Gables",
@@ -39960,7 +39956,11 @@
         "title": "",
         "driveFileId": "195nQuws_H9F8kO6qZRqjet59pTHTFUsk"
       }
-    ]
+    ],
+    "priceList": {
+      "driveFileId": "1ywRto3jine47-WgxLYFlpchQnj8aw8Wv",
+      "createdAt": "As of May 26, 2026"
+    }
   },
   {
     "slug": "the-lincoln-coconut-grove",
@@ -40001,10 +40001,6 @@
       }
     ],
     "projectLogo": "/images/logos/the-lincoln-coconut-grove.png",
-    "priceList": {
-      "driveFileId": "1dCQmCsZwg3poUI6bXpnx7bsxJWDoPtfz",
-      "createdAt": "As of May 29, 2026"
-    },
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Coconut Grove",
@@ -40088,7 +40084,11 @@
         "title": "",
         "driveFileId": "16I1htauUl9YInCsq8RfE_-s8LBky3PRG"
       }
-    ]
+    ],
+    "priceList": {
+      "driveFileId": "1dCQmCsZwg3poUI6bXpnx7bsxJWDoPtfz",
+      "createdAt": "As of May 29, 2026"
+    }
   },
   {
     "slug": "the-links-estates",
@@ -40132,10 +40132,6 @@
       }
     ],
     "projectLogo": "/images/logos/the-links-estates.png",
-    "priceList": {
-      "driveFileId": "1cUxjtKrVV83v_OjuVeaxgGDrITz8Gct9",
-      "createdAt": "As of May 26, 2026"
-    },
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Fisher Island",
@@ -40376,7 +40372,11 @@
         "title": "",
         "driveFileId": "1xivllpPAHFAu9u7j3vR3HEvIPWV31IC_"
       }
-    ]
+    ],
+    "priceList": {
+      "driveFileId": "1cUxjtKrVV83v_OjuVeaxgGDrITz8Gct9",
+      "createdAt": "As of May 26, 2026"
+    }
   },
   {
     "slug": "the-mansions-at-acqualina",
@@ -40620,10 +40620,6 @@
       }
     ],
     "projectLogo": "/images/logos/the-ocean-club-four-seasons-residences-bahamas.png",
-    "priceList": {
-      "driveFileId": "15aTFD01vGN_UPYI3lp3nOshSEICl8UQf",
-      "createdAt": "As of May 26, 2026"
-    },
     "isNew": false,
     "filterCounty": "Nassau",
     "filterLocation": "Bahamas",
@@ -40762,7 +40758,11 @@
         "title": "",
         "driveFileId": "144ppaZKYWO7UKTiVDyy_-M0UG9Sj9e0n"
       }
-    ]
+    ],
+    "priceList": {
+      "driveFileId": "15aTFD01vGN_UPYI3lp3nOshSEICl8UQf",
+      "createdAt": "As of May 26, 2026"
+    }
   },
   {
     "slug": "the-palace-at-bal-harbour",
@@ -40967,10 +40967,6 @@
       }
     ],
     "projectLogo": "/images/logos/the-perigon.png",
-    "priceList": {
-      "driveFileId": "1G2ClvMwmfRf77XDqxhPh6lNDrri1KYCs",
-      "createdAt": "As of June 11, 2026"
-    },
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Miami Beach",
@@ -41411,7 +41407,11 @@
         "driveFileId": "1cD-mL9uHyaJ5Mmx1hYy3GMz-whkMTvaK",
         "alt": "Primary Bedroom Unit 1101"
       }
-    ]
+    ],
+    "priceList": {
+      "driveFileId": "1G2ClvMwmfRf77XDqxhPh6lNDrri1KYCs",
+      "createdAt": "As of June 11, 2026"
+    }
   },
   {
     "slug": "the-raleigh",
@@ -41612,10 +41612,6 @@
       }
     ],
     "projectLogo": "/images/logos/1428-brickell.png",
-    "priceList": {
-      "driveFileId": "1r1f5FH_yd7zxsk0uhZx2LIc0x_yvP-Yi",
-      "createdAt": "As of July 22, 2026"
-    },
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Brickell",
@@ -41944,7 +41940,11 @@
         "driveFileId": "1rR1vEE6Aj0Poa1YL6lXrcSyAL4DeANQA",
         "alt": "Porte Cochere 3"
       }
-    ]
+    ],
+    "priceList": {
+      "driveFileId": "1r1f5FH_yd7zxsk0uhZx2LIc0x_yvP-Yi",
+      "createdAt": "As of July 22, 2026"
+    }
   },
   {
     "slug": "the-residences-at-mandarin-oriental-boca-raton",
@@ -42002,14 +42002,6 @@
       }
     ],
     "projectLogo": "/images/logos/the-residences-at-mandarin-oriental-boca-raton.png",
-    "priceList": {
-      "driveFileId": "1ITk1gbyHQAJ5w9ZQ8meJexliJb8rbpQo",
-      "createdAt": "As of June 19, 2026",
-      "disclaimer": {
-        "type": "warning",
-        "text": "Price List for reference only. Share price ranges only and verify them with the in-house team before sharing. As the project is in its pre-launch phase, brokers are not permitted to advertise or promote the project in any capacity, including email campaigns, digital marketing, or creating websites that reference the offering. Brokers are only able to offer private in-person appointments with broker and select clients."
-      }
-    },
     "isNew": false,
     "filterCounty": "Palm Beach County",
     "filterLocation": "Boca Raton",
@@ -42097,7 +42089,15 @@
         "alt": "The Residences_v4"
       }
     ],
-    "presentations": []
+    "presentations": [],
+    "priceList": {
+      "driveFileId": "1ITk1gbyHQAJ5w9ZQ8meJexliJb8rbpQo",
+      "createdAt": "As of June 19, 2026",
+      "disclaimer": {
+        "type": "warning",
+        "text": "Price List for reference only. Share price ranges only and verify them with the in-house team before sharing. As the project is in its pre-launch phase, brokers are not permitted to advertise or promote the project in any capacity, including email campaigns, digital marketing, or creating websites that reference the offering. Brokers are only able to offer private in-person appointments with broker and select clients."
+      }
+    }
   },
   {
     "slug": "mandarin-oriental-miami",
@@ -42546,10 +42546,6 @@
       }
     ],
     "projectLogo": "/images/logos/the-residences-at-six-fisher-island.png",
-    "priceList": {
-      "driveFileId": "1NQoJVXqS8PWtYr4B_vsM2I4UXITs-ZSu",
-      "createdAt": "As of May 26, 2026"
-    },
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Fisher Island",
@@ -42746,7 +42742,11 @@
         "driveFileId": "1PQwXRg-Vb-ytmgDI2x-VfIqmNsunt7Wj",
         "alt": "Sunset Pool 2"
       }
-    ]
+    ],
+    "priceList": {
+      "driveFileId": "1NQoJVXqS8PWtYr4B_vsM2I4UXITs-ZSu",
+      "createdAt": "As of May 26, 2026"
+    }
   },
   {
     "slug": "the-residences-at-the-miami-beach-edition",
@@ -43572,10 +43572,6 @@
       }
     ],
     "projectLogo": "/images/logos/the-ritz-carlton-residences-naples.png",
-    "priceList": {
-      "driveFileId": "14L8sb5zb61Eas_h7VbcizjgtFBsSt37H",
-      "createdAt": "As of May 26, 2026"
-    },
     "isNew": false,
     "filterCounty": "Collier County",
     "filterLocation": "Naples",
@@ -43832,7 +43828,11 @@
         "driveFileId": "1DlmtfovemvxGTdctDDWDYa8X_hFr5qOd",
         "alt": "Tower Residences - The Ritz-Carlton Naples - Bedroom 6"
       }
-    ]
+    ],
+    "priceList": {
+      "driveFileId": "14L8sb5zb61Eas_h7VbcizjgtFBsSt37H",
+      "createdAt": "As of May 26, 2026"
+    }
   },
   {
     "slug": "ritz-carlton-palm-beach-gardens",
@@ -44362,10 +44362,6 @@
       }
     ],
     "projectLogo": "/images/logos/the-ritz-carlton-residences-pompano-beach.png",
-    "priceList": {
-      "driveFileId": "1lix6S4kfVwO0nhogWoxXYqAPcajmTBkP",
-      "createdAt": "As of June 11, 2026"
-    },
     "isNew": false,
     "filterCounty": "Broward County",
     "filterLocation": "Pompano Beach",
@@ -44493,7 +44489,11 @@
         "alt": "The Beach Tower Lobby 2"
       }
     ],
-    "presentations": []
+    "presentations": [],
+    "priceList": {
+      "driveFileId": "1lix6S4kfVwO0nhogWoxXYqAPcajmTBkP",
+      "createdAt": "As of June 11, 2026"
+    }
   },
   {
     "slug": "ritz-carlton-south-beach",
@@ -44549,10 +44549,6 @@
       }
     ],
     "projectLogo": "/images/logos/ritz-carlton-south-beach.png",
-    "priceList": {
-      "driveFileId": "1usT_SjtpgBMgYbAKKmN_d2kAJe5cF_8z",
-      "createdAt": "As of June 1, 2026"
-    },
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Miami Beach",
@@ -44757,7 +44753,11 @@
         "driveFileId": "18Tu48p-znXWEeLt_6UAygh8viJh0gf7N",
         "alt": "The Ritz-Carlton South Beach - PH West Dining Room 2"
       }
-    ]
+    ],
+    "priceList": {
+      "driveFileId": "1usT_SjtpgBMgYbAKKmN_d2kAJe5cF_8z",
+      "createdAt": "As of June 1, 2026"
+    }
   },
   {
     "slug": "the-ritz-carlton-residences-sunny-isles",
@@ -44993,10 +44993,6 @@
       }
     ],
     "projectLogo": "/images/logos/ritz-carlton-west-palm.png",
-    "priceList": {
-      "driveFileId": "1LUyNUTzoxv_V6cvj_YVfbEYKdmVDkTUT",
-      "createdAt": "As of July 8, 2026"
-    },
     "isNew": false,
     "filterCounty": "Palm Beach County",
     "filterLocation": "West Palm Beach",
@@ -45105,7 +45101,11 @@
         "title": "WPB Development",
         "driveFileId": "11oOuomiJdiZYtyyZvuvCnH6Mxr51p9JJ"
       }
-    ]
+    ],
+    "priceList": {
+      "driveFileId": "1LUyNUTzoxv_V6cvj_YVfbEYKdmVDkTUT",
+      "createdAt": "As of July 8, 2026"
+    }
   },
   {
     "slug": "the-roads-townhomes-brickell",
@@ -45130,10 +45130,6 @@
     "hoa": "$0.40",
     "contact": null,
     "projectLogo": "/images/logos/the-roads-townhomes-brickell.png",
-    "priceList": {
-      "driveFileId": "1-F_tsolz4wEGffP0kyT4j1qpj6pmXPMv",
-      "createdAt": "As of May 26, 2026"
-    },
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Brickell",
@@ -45573,7 +45569,11 @@
         "alt": "The Roads Townhomes - 63"
       }
     ],
-    "presentations": []
+    "presentations": [],
+    "priceList": {
+      "driveFileId": "1-F_tsolz4wEGffP0kyT4j1qpj6pmXPMv",
+      "createdAt": "As of May 26, 2026"
+    }
   },
   {
     "slug": "the-standard-residences",
@@ -45843,10 +45843,6 @@
     "filterLocation": "Midtown Miami",
     "filterStatus": "Pre-construction",
     "filterYear": "2025",
-    "priceList": {
-      "driveFileId": "1a25vAD7Zo5klRPXZjqcpkevnRfMCweMO",
-      "createdAt": "As of May 29, 2026"
-    },
     "brochures": [
       {
         "title": "",
@@ -45993,7 +45989,11 @@
         "phone": "(561) 866-2643",
         "email": "cesar.alvarez@elliman.com"
       }
-    ]
+    ],
+    "priceList": {
+      "driveFileId": "1a25vAD7Zo5klRPXZjqcpkevnRfMCweMO",
+      "createdAt": "As of May 29, 2026"
+    }
   },
   {
     "slug": "surf-club-four-seasons",
@@ -46315,10 +46315,6 @@
       }
     ],
     "projectLogo": "/images/logos/the-village-coral-gables.png",
-    "priceList": {
-      "driveFileId": "1NJj7yMK6cPRD-0iOeWMCzlxJlgVpIT-M",
-      "createdAt": "As of July 15, 2026"
-    },
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Coral Gables",
@@ -46450,7 +46446,11 @@
         "alt": "Villas - Pool 2"
       }
     ],
-    "presentations": []
+    "presentations": [],
+    "priceList": {
+      "driveFileId": "1NJj7yMK6cPRD-0iOeWMCzlxJlgVpIT-M",
+      "createdAt": "As of July 15, 2026"
+    }
   },
   {
     "slug": "the-well-bay-harbor",
@@ -46500,10 +46500,6 @@
       }
     ],
     "projectLogo": "/images/logos/the-well-bay-harbor.png",
-    "priceList": {
-      "driveFileId": "1t-OQkPJL1Eiz8YUTZ1G8RZZXP4i3sPmM",
-      "createdAt": "As of July 7, 2026"
-    },
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Bay Harbor Islands",
@@ -46764,7 +46760,11 @@
         "driveFileId": "1EqtsSDqOdJ0XD9GZ9CXH9nw6-cPqsP7t",
         "alt": "Hero 4"
       }
-    ]
+    ],
+    "priceList": {
+      "driveFileId": "1t-OQkPJL1Eiz8YUTZ1G8RZZXP4i3sPmM",
+      "createdAt": "As of July 7, 2026"
+    }
   },
   {
     "slug": "the-well-coconut-grove",
@@ -47120,10 +47120,6 @@
       }
     ],
     "projectLogo": "/images/logos/tula-residences.png",
-    "priceList": {
-      "driveFileId": "1n2anS4SxCfs9xTb2TVE0iM3g7WOM6AyV",
-      "createdAt": "As of June 1, 2026"
-    },
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "North Bay Village",
@@ -47203,7 +47199,11 @@
         "alt": "Tula Residences North Bay Village - Wellness Center - Gym"
       }
     ],
-    "presentations": []
+    "presentations": [],
+    "priceList": {
+      "driveFileId": "1n2anS4SxCfs9xTb2TVE0iM3g7WOM6AyV",
+      "createdAt": "As of June 1, 2026"
+    }
   },
   {
     "slug": "turnberry-ocean-club",
@@ -48149,10 +48149,6 @@
     "filterLocation": "Miami Beach",
     "filterStatus": "Pre-construction",
     "filterYear": "2027",
-    "priceRange": {
-      "driveFileId": "1z92Iv098PPsqttt7_tdWoOwiDuPff45k",
-      "createdAt": "As of May 26, 2026"
-    },
     "factSheets": [
       {
         "title": "EN",
@@ -48244,7 +48240,11 @@
         "title": "",
         "driveFileId": "1v26GMjPdbm-pFeDPcmrlzGstKP1E7IOv"
       }
-    ]
+    ],
+    "priceRange": {
+      "driveFileId": "1z92Iv098PPsqttt7_tdWoOwiDuPff45k",
+      "createdAt": "As of May 26, 2026"
+    }
   },
   {
     "slug": "una-residences",
@@ -48293,10 +48293,6 @@
       }
     ],
     "projectLogo": "/images/logos/una-residences.png",
-    "priceList": {
-      "driveFileId": "1Y13k0J0Ep9iVIDcTnkXikMajsqtMGQkv",
-      "createdAt": "As of May 29, 2026"
-    },
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Brickell",
@@ -48428,7 +48424,11 @@
         "alt": "una-residences-hero-2"
       }
     ],
-    "presentations": []
+    "presentations": [],
+    "priceList": {
+      "driveFileId": "1Y13k0J0Ep9iVIDcTnkXikMajsqtMGQkv",
+      "createdAt": "As of May 29, 2026"
+    }
   },
   {
     "slug": "viceroy-brickell",
@@ -48481,10 +48481,6 @@
       }
     ],
     "projectLogo": "/images/logos/viceroy-brickell.png",
-    "priceList": {
-      "driveFileId": "11d_FkJsOdQo3LThq6h4rctuTCixml5kM",
-      "createdAt": "As of June 23, 2026"
-    },
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Brickell",
@@ -48609,7 +48605,11 @@
         "driveFileId": "15ulgm625ky_m6nfNexZ7loOaYiXD-bEo",
         "alt": "Viceroy Brickell - Location 8"
       }
-    ]
+    ],
+    "priceList": {
+      "driveFileId": "11d_FkJsOdQo3LThq6h4rctuTCixml5kM",
+      "createdAt": "As of June 23, 2026"
+    }
   },
   {
     "slug": "viceroy-fort-lauderdale",
@@ -48661,10 +48661,6 @@
       }
     ],
     "projectLogo": "/images/logos/viceroy-fort-lauderdale.png",
-    "priceList": {
-      "driveFileId": "1gDk7QHegv8XFoN_3mGCn8a-yhwyv3DmG",
-      "createdAt": "As of July 15, 2026"
-    },
     "isNew": false,
     "filterCounty": "Broward County",
     "filterLocation": "Fort Lauderdale",
@@ -48889,7 +48885,11 @@
         "title": "",
         "driveFileId": "1SukP4KRsEZ6XQswMlasdgFoAD_qg-TPq"
       }
-    ]
+    ],
+    "priceList": {
+      "driveFileId": "1gDk7QHegv8XFoN_3mGCn8a-yhwyv3DmG",
+      "createdAt": "As of July 15, 2026"
+    }
   },
   {
     "slug": "villa-miami",
@@ -48942,10 +48942,6 @@
       }
     ],
     "projectLogo": "/images/logos/villa-miami.png",
-    "priceList": {
-      "driveFileId": "1CnrcR8jMCmK-nKJJC-cHfNdNIz240VZD",
-      "createdAt": "As of June 1, 2026"
-    },
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Edgewater",
@@ -49462,7 +49458,11 @@
         "title": "Terra",
         "driveFileId": "1iOd9l7vZ8g5yXrbT3xxNrZGUQA49S3eJ"
       }
-    ]
+    ],
+    "priceList": {
+      "driveFileId": "1CnrcR8jMCmK-nKJJC-cHfNdNIz240VZD",
+      "createdAt": "As of June 1, 2026"
+    }
   },
   {
     "slug": "villa-valencia",
@@ -49669,10 +49669,6 @@
       }
     ],
     "projectLogo": "/images/logos/vita-at-grove-isle.png",
-    "priceList": {
-      "driveFileId": "1-xRH2DKLSA0HwdpyAgoo24OgKoEMHDqL",
-      "createdAt": "As of June 22, 2026"
-    },
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Grove Isle",
@@ -49941,7 +49937,11 @@
         "alt": "Restaurant 4"
       }
     ],
-    "presentations": []
+    "presentations": [],
+    "priceList": {
+      "driveFileId": "1-xRH2DKLSA0HwdpyAgoo24OgKoEMHDqL",
+      "createdAt": "As of June 22, 2026"
+    }
   },
   {
     "slug": "w-pompano-beach-hotel-residences",
@@ -49982,10 +49982,6 @@
       }
     ],
     "projectLogo": "/images/logos/w-pompano-beach-hotel-residences.png",
-    "priceList": {
-      "driveFileId": "1dflXnaHhP96dyGlMfCz5ig_Jr3-GhWC-",
-      "createdAt": "As of June 12, 2026"
-    },
     "isNew": false,
     "filterCounty": "Broward County",
     "filterLocation": "Pompano Beach",
@@ -50161,7 +50157,11 @@
         "alt": "W Pompano Beach - Speakeasy View 2"
       }
     ],
-    "presentations": []
+    "presentations": [],
+    "priceList": {
+      "driveFileId": "1dflXnaHhP96dyGlMfCz5ig_Jr3-GhWC-",
+      "createdAt": "As of June 12, 2026"
+    }
   },
   {
     "slug": "w-south-beach-residences",
@@ -50377,10 +50377,6 @@
       }
     ],
     "projectLogo": "/images/logos/waldorf-astoria-residences-downtown-miami.png",
-    "priceList": {
-      "driveFileId": "1lmmvRMN0CbhvmSUvfrF1-OYQoSLcPk9q",
-      "createdAt": "As of July 15, 2026"
-    },
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Downtown Miami",
@@ -50873,7 +50869,11 @@
         "title": "Availability Presentation Dec 2023",
         "driveFileId": "1277HLSLWQ1ao7F3Sz3kV8AjuRDpZKUZy"
       }
-    ]
+    ],
+    "priceList": {
+      "driveFileId": "1lmmvRMN0CbhvmSUvfrF1-OYQoSLcPk9q",
+      "createdAt": "As of July 15, 2026"
+    }
   },
   {
     "slug": "waldorf-astoria-pompano",
@@ -50913,10 +50913,6 @@
       }
     ],
     "projectLogo": "/images/logos/waldorf-astoria-pompano.png",
-    "priceList": {
-      "driveFileId": "1czRy70hEtCn2BpBO4jLrFdMG_RAsJhCJ",
-      "createdAt": "As of July 14, 2026"
-    },
     "isNew": false,
     "filterCounty": "Broward County",
     "filterLocation": "Pompano Beach",
@@ -51061,7 +51057,11 @@
         "title": "",
         "driveFileId": "1XUoUiRCU3K-u0cHJRKBb0uf7fUBLkA-x"
       }
-    ]
+    ],
+    "priceList": {
+      "driveFileId": "1czRy70hEtCn2BpBO4jLrFdMG_RAsJhCJ",
+      "createdAt": "As of July 14, 2026"
+    }
   },
   {
     "slug": "west-eleventh-residences",
@@ -51106,10 +51106,6 @@
       }
     ],
     "projectLogo": "/images/logos/west-eleventh-residences.png",
-    "priceList": {
-      "driveFileId": "18pXeGYwpVXYhrSiujkEYr8gDHLAzlzeU",
-      "createdAt": "As of May 26, 2026"
-    },
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Downtown Miami",
@@ -51190,7 +51186,11 @@
         "title": "",
         "driveFileId": "1mJMKp3zVI7T92X9WbXb59O6Qfv0hfsrv"
       }
-    ]
+    ],
+    "priceList": {
+      "driveFileId": "18pXeGYwpVXYhrSiujkEYr8gDHLAzlzeU",
+      "createdAt": "As of May 26, 2026"
+    }
   },
   {
     "slug": "ziggurat-coconut-grove",
@@ -51235,10 +51235,6 @@
       }
     ],
     "projectLogo": "/images/logos/ziggurat-coconut-grove.png",
-    "priceList": {
-      "driveFileId": "1yGxIokYKKfy1IAvTM0SZfeqFNAblHEXS",
-      "createdAt": "As of June 10, 2026"
-    },
     "isNew": false,
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Coconut Grove",
@@ -51330,7 +51326,11 @@
         "alt": "Ziggurat - View from Kirk Munroe Park looking towards Residential Building"
       }
     ],
-    "presentations": []
+    "presentations": [],
+    "priceList": {
+      "driveFileId": "1yGxIokYKKfy1IAvTM0SZfeqFNAblHEXS",
+      "createdAt": "As of June 10, 2026"
+    }
   },
   {
     "slug": "selene-oceanfront-residences",
@@ -51364,10 +51364,6 @@
     "filterLocation": "Fort Lauderdale",
     "filterStatus": "Pre-construction",
     "filterYear": "2025",
-    "priceList": {
-      "driveFileId": "1SQPqPSO4HV1EqMWi8Mg9vi5RZqDRjvlf",
-      "createdAt": "As of June 12, 2026"
-    },
     "brochures": [
       {
         "title": "",
@@ -51712,7 +51708,11 @@
         "phone": "+1 (561) 386-5666",
         "email": "mark@seleneftl.com"
       }
-    ]
+    ],
+    "priceList": {
+      "driveFileId": "1SQPqPSO4HV1EqMWi8Mg9vi5RZqDRjvlf",
+      "createdAt": "As of June 12, 2026"
+    }
   },
   {
     "slug": "bay-villas-bay-harbor-islands",
@@ -51957,13 +51957,13 @@
         "alt": "Location - Bay Villas Bay Harbor Islands - Location 28"
       }
     ],
+    "thumbnail": "/api/render?id=1R5zA48a6bB4WyJvEkX0cTW9SKfkgqyTQ",
+    "hero": "/api/render?id=1R5zA48a6bB4WyJvEkX0cTW9SKfkgqyTQ",
+    "projectLogo": "/images/logos/bay-villas-bay-harbor-islands.png",
     "priceRange": {
       "driveFileId": "1LprHdoykMjzD3fiNabEI8LJJihbSvsQk",
       "createdAt": "As of July 3, 2026"
-    },
-    "thumbnail": "/api/render?id=1R5zA48a6bB4WyJvEkX0cTW9SKfkgqyTQ",
-    "hero": "/api/render?id=1R5zA48a6bB4WyJvEkX0cTW9SKfkgqyTQ",
-    "projectLogo": "/images/logos/bay-villas-bay-harbor-islands.png"
+    }
   },
   {
     "slug": "one-twenty-brickell-residences",
@@ -52119,6 +52119,9 @@
         "alt": "One Twenty Brickell Residences Studio Living Room"
       }
     ],
+    "thumbnail": "/api/render?id=1rdYxKbDNboHdPMURxqUxvgHBV30mnTjj",
+    "hero": "/api/render?id=1rdYxKbDNboHdPMURxqUxvgHBV30mnTjj",
+    "projectLogo": "/images/logos/one-twenty-brickell-residences.png",
     "priceDocs": [
       {
         "driveFileId": "1Q5hcy2-BwmvI8EW1XguffZbm6mL6PfED",
@@ -52132,10 +52135,7 @@
         "title": "One Twenty Brickell Residences - Price List - Signature",
         "kind": "list"
       }
-    ],
-    "thumbnail": "/api/render?id=1rdYxKbDNboHdPMURxqUxvgHBV30mnTjj",
-    "hero": "/api/render?id=1rdYxKbDNboHdPMURxqUxvgHBV30mnTjj",
-    "projectLogo": "/images/logos/one-twenty-brickell-residences.png"
+    ]
   },
   {
     "slug": "villa-sofia-miami-beach",
@@ -52249,13 +52249,13 @@
         "alt": "Villa Sofia - Render Pool"
       }
     ],
+    "thumbnail": "/api/render?id=1knteowf7sOBwb6ptVfGx_wJ7OUYEdHY5",
+    "hero": "/api/render?id=1knteowf7sOBwb6ptVfGx_wJ7OUYEdHY5",
+    "projectLogo": "/images/logos/villa-sofia-miami-beach.png",
     "priceList": {
       "driveFileId": "1nGXFUSJKuL-fNUpwjs3nMbj_Qt4eBQRD",
       "createdAt": "As of May 26, 2026"
-    },
-    "thumbnail": "/api/render?id=1knteowf7sOBwb6ptVfGx_wJ7OUYEdHY5",
-    "hero": "/api/render?id=1knteowf7sOBwb6ptVfGx_wJ7OUYEdHY5",
-    "projectLogo": "/images/logos/villa-sofia-miami-beach.png"
+    }
   },
   {
     "slug": "melia-miami-brickell",
@@ -52401,13 +52401,13 @@
         "alt": "Meliá Miami Brickell - Unit Studio 2"
       }
     ],
+    "thumbnail": "/api/render?id=12nZzJixf7kiyjs7UJ35LNp4WHMk9XA_g",
+    "hero": "/api/render?id=12nZzJixf7kiyjs7UJ35LNp4WHMk9XA_g",
+    "projectLogo": "/images/logos/melia-miami-brickell.png",
     "priceList": {
       "driveFileId": "17VRPQJfqNKIBBw-7A_HyE0G6xAhcHrvA",
       "createdAt": "As of May 26, 2026"
-    },
-    "thumbnail": "/api/render?id=12nZzJixf7kiyjs7UJ35LNp4WHMk9XA_g",
-    "hero": "/api/render?id=12nZzJixf7kiyjs7UJ35LNp4WHMk9XA_g",
-    "projectLogo": "/images/logos/melia-miami-brickell.png"
+    }
   },
   {
     "slug": "seventeen-gables-residences-coral-gables",
@@ -52563,13 +52563,13 @@
         "alt": "Seventeen Gables - Pool Deck 4"
       }
     ],
+    "thumbnail": "/api/render?id=1mYgqXccwU8XoY7_zfj7bAI0Bosn-ryrv",
+    "hero": "/api/render?id=1mYgqXccwU8XoY7_zfj7bAI0Bosn-ryrv",
+    "projectLogo": "/images/logos/seventeen-gables-residences-coral-gables.png",
     "priceRange": {
       "driveFileId": "1eP74Mpw48ZxJf9FAngHAyzeZoY-Ei7oH",
       "createdAt": "As of May 26, 2026"
-    },
-    "thumbnail": "/api/render?id=1mYgqXccwU8XoY7_zfj7bAI0Bosn-ryrv",
-    "hero": "/api/render?id=1mYgqXccwU8XoY7_zfj7bAI0Bosn-ryrv",
-    "projectLogo": "/images/logos/seventeen-gables-residences-coral-gables.png"
+    }
   },
   {
     "slug": "one-hollywood-residences",
@@ -52608,10 +52608,6 @@
     "filterLocation": "Hollywood",
     "filterStatus": "Pre-construction",
     "filterYear": "2028",
-    "priceList": {
-      "driveFileId": "1RwzBc0kunDMIDPXv4lQIKRfza7hba8an",
-      "createdAt": "As of May 26, 2026"
-    },
     "brochures": [
       {
         "title": "",
@@ -52720,6 +52716,10 @@
         "driveFileId": "1nZps4YIBMjJ32HAVOwc_R4DgkSUAj187",
         "alt": "One Hollywood Residences - Owners Lounge 3"
       }
-    ]
+    ],
+    "priceList": {
+      "driveFileId": "1RwzBc0kunDMIDPXv4lQIKRfza7hba8an",
+      "createdAt": "As of May 26, 2026"
+    }
   }
 ]
