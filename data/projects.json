@@ -51961,8 +51961,8 @@
       "driveFileId": "1LprHdoykMjzD3fiNabEI8LJJihbSvsQk",
       "createdAt": "As of July 3, 2026"
     },
-    "thumbnail": "/api/thumb?id=1R5zA48a6bB4WyJvEkX0cTW9SKfkgqyTQ",
-    "hero": "/api/thumb?id=1R5zA48a6bB4WyJvEkX0cTW9SKfkgqyTQ",
+    "thumbnail": "/api/render?id=1R5zA48a6bB4WyJvEkX0cTW9SKfkgqyTQ",
+    "hero": "/api/render?id=1R5zA48a6bB4WyJvEkX0cTW9SKfkgqyTQ",
     "projectLogo": "/images/logos/bay-villas-bay-harbor-islands.png"
   },
   {
@@ -52133,8 +52133,8 @@
         "kind": "list"
       }
     ],
-    "thumbnail": "/api/thumb?id=1chX7Boys-Mhj8woFJaQEDpSHZa6japB7",
-    "hero": "/api/thumb?id=1chX7Boys-Mhj8woFJaQEDpSHZa6japB7",
+    "thumbnail": "/api/render?id=1rdYxKbDNboHdPMURxqUxvgHBV30mnTjj",
+    "hero": "/api/render?id=1rdYxKbDNboHdPMURxqUxvgHBV30mnTjj",
     "projectLogo": "/images/logos/one-twenty-brickell-residences.png"
   },
   {
@@ -52253,8 +52253,8 @@
       "driveFileId": "1nGXFUSJKuL-fNUpwjs3nMbj_Qt4eBQRD",
       "createdAt": "As of May 26, 2026"
     },
-    "thumbnail": "/api/thumb?id=1ylD6Nica3dBdYFI3me-FUbNdObNNrOr1",
-    "hero": "/api/thumb?id=1ylD6Nica3dBdYFI3me-FUbNdObNNrOr1"
+    "thumbnail": "/api/render?id=1knteowf7sOBwb6ptVfGx_wJ7OUYEdHY5",
+    "hero": "/api/render?id=1knteowf7sOBwb6ptVfGx_wJ7OUYEdHY5"
   },
   {
     "slug": "melia-miami-brickell",
@@ -52404,8 +52404,8 @@
       "driveFileId": "17VRPQJfqNKIBBw-7A_HyE0G6xAhcHrvA",
       "createdAt": "As of May 26, 2026"
     },
-    "thumbnail": "/api/thumb?id=13akypAlyJ73xnNXolMlj7r8sUq2Wc34Q",
-    "hero": "/api/thumb?id=13akypAlyJ73xnNXolMlj7r8sUq2Wc34Q",
+    "thumbnail": "/api/render?id=12nZzJixf7kiyjs7UJ35LNp4WHMk9XA_g",
+    "hero": "/api/render?id=12nZzJixf7kiyjs7UJ35LNp4WHMk9XA_g",
     "projectLogo": "/images/logos/melia-miami-brickell.png"
   },
   {
@@ -52566,8 +52566,53 @@
       "driveFileId": "1eP74Mpw48ZxJf9FAngHAyzeZoY-Ei7oH",
       "createdAt": "As of May 26, 2026"
     },
-    "thumbnail": "/api/thumb?id=1rY5G4YYt-2E_zPmKGel9G-qqxM-iqbih",
-    "hero": "/api/thumb?id=1rY5G4YYt-2E_zPmKGel9G-qqxM-iqbih",
+    "thumbnail": "/api/render?id=1mYgqXccwU8XoY7_zfj7bAI0Bosn-ryrv",
+    "hero": "/api/render?id=1mYgqXccwU8XoY7_zfj7bAI0Bosn-ryrv",
     "projectLogo": "/images/logos/seventeen-gables-residences-coral-gables.png"
+  },
+  {
+    "slug": "one-hollywood-residences",
+    "name": "One Hollywood Residences",
+    "esqueletoName": "One Hollywood Residences",
+    "section": "Other Projects",
+    "isNew": false,
+    "startingPrice": "$462K",
+    "thumbnail": "/api/render?id=1_s3ti4hBWdymjQ_gVYXbr2oKBIWJfPrf",
+    "hero": "/api/render?id=1_s3ti4hBWdymjQ_gVYXbr2oKBIWJfPrf",
+    "projectLogo": null,
+    "address": "1817 Taylor St, Hollywood, FL 33020",
+    "developer": "Star Development Group",
+    "architecture": "BC Architects",
+    "interiorDesign": "Adriana Hoyos",
+    "completionDate": "2028",
+    "theBuilding": null,
+    "stylishAmenities": null,
+    "depositStructure": [
+      "$30,000 or $50,000 at reservation",
+      "Complete 20% with contract",
+      "10% at groundbreaking",
+      "10% at top-off",
+      "60% at closing"
+    ],
+    "rentalRestrictions": [
+      "30 days minimum."
+    ],
+    "parkingSpaces": [
+      "1 covered parking space assigned with valet parking service available."
+    ],
+    "hoa": "$1.00",
+    "beds": null,
+    "units": null,
+    "filterCounty": "Broward County",
+    "filterLocation": "Hollywood",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2028",
+    "priceList": null,
+    "priceRange": null,
+    "brochures": [],
+    "factSheets": [],
+    "presentations": [],
+    "floorPlans": [],
+    "renderings": []
   }
 ]
