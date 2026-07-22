@@ -52255,5 +52255,157 @@
     },
     "thumbnail": "/api/thumb?id=1ylD6Nica3dBdYFI3me-FUbNdObNNrOr1",
     "hero": "/api/thumb?id=1ylD6Nica3dBdYFI3me-FUbNdObNNrOr1"
+  },
+  {
+    "slug": "melia-miami-brickell",
+    "name": "Meliá Miami Brickell",
+    "esqueletoName": "Meliá Miami Brickell",
+    "tpDataName": "Meliá Miami Brickell",
+    "section": "Other Projects",
+    "theBuilding": "Boutique branded hotel residences in the heart of Brickell featuring 110 fully furnished studios, junior suites, and one-bedroom residences with hotel management and wellness-focused design.",
+    "stylishAmenities": "Wellness center with spa and infrared sauna, pool, interactive fitness studio, restaurant with outdoor terrace, concierge, valet, housekeeping, room service, branded hospitality, and wellness technologies.",
+    "filterCounty": "Miami-Dade County",
+    "filterLocation": "Brickell",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2027",
+    "isNew": false,
+    "address": "1130 SW 3rd Ave, Miami, FL 33130",
+    "startingPrice": "$542K",
+    "completionDate": "2027",
+    "developer": "Urban Network Capital Group",
+    "architecture": "DTI Architects",
+    "interiorDesign": "Adriana Hoyos",
+    "rentalRestrictions": null,
+    "parkingSpaces": null,
+    "depositStructure": [
+      "20% at contract",
+      "10% 60 days after contract",
+      "10% 120 days after contract or at top-off",
+      "60% at closing"
+    ],
+    "hoa": "$1.17",
+    "contact": [
+      {
+        "name": "Cristina Colmenares",
+        "phone": "+1 (305) 733-4099",
+        "email": null
+      }
+    ],
+    "brochures": [
+      {
+        "title": "",
+        "driveFileId": "174fqA70jVnL3Rnz5Ob6iPfTE5Qf3OoZK"
+      },
+      {
+        "title": "",
+        "driveFileId": "1oKOVLbgGT0ZgiwqcfQp-LwcmrzmXvQew"
+      }
+    ],
+    "factSheets": [
+      {
+        "title": "",
+        "driveFileId": "11bT_0jP4R5gdajrK9oNBYPat_UzHNYoJ"
+      },
+      {
+        "title": "",
+        "driveFileId": "1gFMzChbbxHBUcIWrZLCWDJ_NyCZIZU3K"
+      }
+    ],
+    "floorPlans": [
+      {
+        "title": "",
+        "driveFileId": "1Ot6QqYUAM7aXzPCw2fn8I13TCsKnUOgT"
+      }
+    ],
+    "presentations": [],
+    "renderings": [
+      {
+        "driveFileId": "13akypAlyJ73xnNXolMlj7r8sUq2Wc34Q",
+        "alt": "Meliá Miami Brickell - Exterior Day"
+      },
+      {
+        "driveFileId": "1pm7fp-azqKptrnBBkZqdvwJW-Ck3t4PP",
+        "alt": "Meliá Miami Brickell - Exterior Night"
+      },
+      {
+        "driveFileId": "12nZzJixf7kiyjs7UJ35LNp4WHMk9XA_g",
+        "alt": "Meliá Miami Brickell - Facade Day"
+      },
+      {
+        "driveFileId": "1bWdtdO21I8cRa8miPMRQgfXt9j5udM2O",
+        "alt": "Meliá Miami Brickell - Facade Night"
+      },
+      {
+        "driveFileId": "1o1g-HWpXnupYQFnkuV3CfWPq1T1F8iw8",
+        "alt": "Meliá Miami Brickell - Gym"
+      },
+      {
+        "driveFileId": "1MywrPjeLBM_pokLcV2PyZmKuWLi73HKD",
+        "alt": "Meliá Miami Brickell - Lobby"
+      },
+      {
+        "driveFileId": "1HM4AH4ans5rEAUpbWUBQT9kGIlxwUZkk",
+        "alt": "Meliá Miami Brickell - Lobby Lounge"
+      },
+      {
+        "driveFileId": "1QZ_4SFH7W0jtu5JusKkn5OZ6t9E4fUtZ",
+        "alt": "Meliá Miami Brickell - Pool"
+      },
+      {
+        "driveFileId": "1wqAOIM3cMJhhOQwNC90ob3qWrmZLals-",
+        "alt": "Meliá Miami Brickell - Restaurant 1"
+      },
+      {
+        "driveFileId": "1GGQ2IkJ-Y_7Hfxaw9-qYD33EoEBKqbJr",
+        "alt": "Meliá Miami Brickell - Spa 1"
+      },
+      {
+        "driveFileId": "1SKQbyuKqL5XvwwazhSDebULNMUNH8w-h",
+        "alt": "Meliá Miami Brickell - Unit 1-Bedroom 1"
+      },
+      {
+        "driveFileId": "1M5kobOzOBYhDsDmRRC1RAJ52fyJ0hnJC",
+        "alt": "Meliá Miami Brickell - Unit Junior Suite 1"
+      },
+      {
+        "driveFileId": "1m7Jg1aQqhzxPYXFEUy-zOOTycOvk7235",
+        "alt": "Meliá Miami Brickell - Unit Junior Suite Bathroom 1"
+      },
+      {
+        "driveFileId": "12kDwcisa1p8eoHhHbpDen9s-py7zUQ9A",
+        "alt": "Meliá Miami Brickell - Unit Studio 1"
+      },
+      {
+        "driveFileId": "1CwPfRSdrGfoWBAKbjYgEgLV316YFIPbZ",
+        "alt": "Meliá Miami Brickell - Restaurant 2"
+      },
+      {
+        "driveFileId": "16fbDDXe7XhPCSKfLXGIp3x9HeHkqcdd4",
+        "alt": "Meliá Miami Brickell - Spa 2"
+      },
+      {
+        "driveFileId": "1oKc8PwY_aSkUmDfy2S1ttjXY15OpVy3G",
+        "alt": "Meliá Miami Brickell - Unit 1-Bedroom 2"
+      },
+      {
+        "driveFileId": "1YGis5DzMQehXM-K8f_xxw2lkUbhZVD67",
+        "alt": "Meliá Miami Brickell - Unit Junior Suite 2"
+      },
+      {
+        "driveFileId": "1Nr1OzyuD-bSzm4VM__OPML_qOJ1KdY2r",
+        "alt": "Meliá Miami Brickell - Unit Junior Suite Bathroom 2"
+      },
+      {
+        "driveFileId": "1RAnGsmevraBXt8N31kYh5l4mUF2YwP_z",
+        "alt": "Meliá Miami Brickell - Unit Studio 2"
+      }
+    ],
+    "priceList": {
+      "driveFileId": "17VRPQJfqNKIBBw-7A_HyE0G6xAhcHrvA",
+      "createdAt": "As of May 26, 2026"
+    },
+    "thumbnail": "/api/thumb?id=13akypAlyJ73xnNXolMlj7r8sUq2Wc34Q",
+    "hero": "/api/thumb?id=13akypAlyJ73xnNXolMlj7r8sUq2Wc34Q",
+    "projectLogo": "/images/logos/melia-miami-brickell.png"
   }
 ]
