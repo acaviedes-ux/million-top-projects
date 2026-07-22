@@ -52612,10 +52612,114 @@
       "driveFileId": "1RwzBc0kunDMIDPXv4lQIKRfza7hba8an",
       "createdAt": "As of May 26, 2026"
     },
-    "brochures": [],
-    "factSheets": [],
+    "brochures": [
+      {
+        "title": "",
+        "driveFileId": "1U_l084m4a_OkDjcJQhGdiGK42mDYHLpH"
+      }
+    ],
+    "factSheets": [
+      {
+        "title": "",
+        "driveFileId": "1eMpHqfBGljtJkYRHaOQJMb08x5NDU3l1"
+      },
+      {
+        "title": "",
+        "driveFileId": "1xm0g_XbWDY2HU1qVjY0RorY-uc8Pr0Vz"
+      },
+      {
+        "title": "",
+        "driveFileId": "18XiaEY-n47JivZNsW4he364GOmm9zR3k"
+      }
+    ],
     "presentations": [],
-    "floorPlans": [],
-    "renderings": []
+    "floorPlans": [
+      {
+        "title": "",
+        "driveFileId": "1HAOgjI6Ii1vu3PEq8UBPOl-qwWCnNCBa"
+      }
+    ],
+    "renderings": [
+      {
+        "driveFileId": "1zX7NUMyY3FmgIh_1ZtIQD8ww4iqtUXDd",
+        "alt": "One Hollywood Residences - Bathroom"
+      },
+      {
+        "driveFileId": "1Lb-tgWMqA0dK-lB-o5jjeVNYAAZk_keU",
+        "alt": "One Hollywood Residences - Bedroom"
+      },
+      {
+        "driveFileId": "10g57rGDuRwZzH_vtQyh8Vxvg2GhF9xco",
+        "alt": "One Hollywood Residences - Crown"
+      },
+      {
+        "driveFileId": "1m-OTKu0Qs35eFZxOfkrirYZaAScA-Dlg",
+        "alt": "One Hollywood Residences - Entrance"
+      },
+      {
+        "driveFileId": "1_s3ti4hBWdymjQ_gVYXbr2oKBIWJfPrf",
+        "alt": "One Hollywood Residences - Hero"
+      },
+      {
+        "driveFileId": "1iyKiTeNms32RegJImCLQMfn3fed9m1pm",
+        "alt": "One Hollywood Residences - Kids Lounge"
+      },
+      {
+        "driveFileId": "1hHfgv6IjrHv8qEo2XCfa9GkczUNZaeck",
+        "alt": "One Hollywood Residences - Kitchen"
+      },
+      {
+        "driveFileId": "1mn-K_eULaBvhUQUBwD9xxJkkYgUSmIac",
+        "alt": "One Hollywood Residences - Living Room"
+      },
+      {
+        "driveFileId": "1RlaxDXunF5evy6P8wmgy87t9A3r_PIGW",
+        "alt": "One Hollywood Residences - Fitness Center 1"
+      },
+      {
+        "driveFileId": "1BpRSduxVMJy48CpyZjZk7MLuJJ3QuJKe",
+        "alt": "One Hollywood Residences - Lobby 1"
+      },
+      {
+        "driveFileId": "1sOMCd-YWfRYiLFJeRTSs7tMCM3FLDy9s",
+        "alt": "One Hollywood Residences - Owners Lounge 1"
+      },
+      {
+        "driveFileId": "1qoPfER4EIUcyJwhTLm699AqWTxT5F2jH",
+        "alt": "One Hollywood Residences - Pool 1"
+      },
+      {
+        "driveFileId": "1AXvInNo455mWCHya4fhZQjDjImnAfkb2",
+        "alt": "One Hollywood Residences - Rooftop 1"
+      },
+      {
+        "driveFileId": "1D4w7VcaxRkE0Sdz7hUn1PSX6aHUIEH12",
+        "alt": "One Hollywood Residences - Fitness Center 2"
+      },
+      {
+        "driveFileId": "1N0zt2SohLhqqcjUH02krsLjdfmxYL60y",
+        "alt": "One Hollywood Residences - Lobby 2"
+      },
+      {
+        "driveFileId": "1hT1biWJwOatilQQYJTiPMMZmfhw7A_bR",
+        "alt": "One Hollywood Residences - Owners Lounge 2"
+      },
+      {
+        "driveFileId": "10v7bwR7sZQ__pmjNys6vS2U0LP2Kegf5",
+        "alt": "One Hollywood Residences - Pool 2"
+      },
+      {
+        "driveFileId": "1_tMQ3EWzRTdovm4y3wHpi7Ruup--6vWB",
+        "alt": "One Hollywood Residences - Rooftop 2"
+      },
+      {
+        "driveFileId": "1B7sKPQI2cEZKOcmrC80XbMbb-M_u9rce",
+        "alt": "One Hollywood Residences - Fitness Center 3"
+      },
+      {
+        "driveFileId": "1nZps4YIBMjJ32HAVOwc_R4DgkSUAj187",
+        "alt": "One Hollywood Residences - Owners Lounge 3"
+      }
+    ]
   }
 ]
