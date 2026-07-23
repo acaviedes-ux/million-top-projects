@@ -43867,7 +43867,7 @@
     "completionDate": "2026",
     "depositStructure": [
       "10% at contract",
-      "25% 15 days after contract",
+      "25% at 15 days after contract",
       "65% at closing"
     ],
     "parkingSpaces": [
