@@ -11576,9 +11576,9 @@
     "completionDate": "2028",
     "depositStructure": [
       "20% at contract",
-      "10% at groundbreaking (2025)",
-      "10% at top-off (2026)",
-      "60% at closing (Q1 2027)"
+      "10% 120 days after contract",
+      "10% at top-off (Q2 2027)",
+      "60% at closing (Q2 2028)"
     ],
     "parkingSpaces": [
       "1 assigned parking space per residence.",
