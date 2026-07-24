@@ -38991,10 +38991,20 @@
         "driveFileId": "1sFy4vBrVTJXxaYgrz859m5fkqDkGk2O4"
       }
     ],
-    "priceList": {
-      "driveFileId": "1tY2x4o9dk1wj5asU1no4OtUQhExecvOV",
-      "createdAt": "As of May 29, 2026"
-    }
+    "priceDocs": [
+      {
+        "driveFileId": "1tY2x4o9dk1wj5asU1no4OtUQhExecvOV",
+        "createdAt": "As of May 29, 2026",
+        "title": "The Cove Residences Edgewater - Price List",
+        "kind": "list"
+      },
+      {
+        "driveFileId": "1ErgcE1zqW2enoTT9cDTQwWfOF6uK4efl",
+        "createdAt": "As of July 24, 2026",
+        "title": "The Cove Residences Edgewater - Price Range",
+        "kind": "range"
+      }
+    ]
   },
   {
     "slug": "the-delmore",
