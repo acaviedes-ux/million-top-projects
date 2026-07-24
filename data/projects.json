@@ -13229,10 +13229,20 @@
         "driveFileId": "1_jOoe-prwpBqxsTRvG9XCz5brMlTahZ2"
       }
     ],
-    "priceList": {
-      "driveFileId": "1sGKUMOxvOgABbouc_lziTj0trysFNl6I",
-      "createdAt": "As of July 24, 2026"
-    }
+    "priceDocs": [
+      {
+        "driveFileId": "1sGKUMOxvOgABbouc_lziTj0trysFNl6I",
+        "createdAt": "As of July 24, 2026",
+        "title": "Edge House Miami - Price List",
+        "kind": "list"
+      },
+      {
+        "driveFileId": "1OOAQ-iOskWcaJ5R8o90innYFrV2wzJZc",
+        "createdAt": "As of July 24, 2026",
+        "title": "Edge House Miami - Price Range",
+        "kind": "range"
+      }
+    ]
   },
   {
     "slug": "edgeworth-west-palm-beach",
