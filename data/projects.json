@@ -36421,7 +36421,11 @@
     ],
     "priceList": {
       "driveFileId": "14nuOQXbZqE2l8v31e0I7oXgTWGa3W0Do",
-      "createdAt": "As of July 1, 2026"
+      "createdAt": "As of July 1, 2026",
+      "disclaimer": {
+        "type": "warning",
+        "text": "Do not share the Price List, specific prices or any document with clients. All pricing information and documents are for reference only. Verify all information with the in-house team before presenting it to clients."
+      }
     }
   },
   {
