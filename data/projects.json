@@ -225,68 +225,48 @@
     ],
     "renderings": [
       {
-        "driveFileId": "14ZamzyFI6t0zWpcn1uB8XsVlTCUDo3a0",
-        "alt": "123 Ocean 1.avif"
+        "driveFileId": "1Th-kOTDAlE4y4YXYNF0L7VmoTAcBapWv",
+        "alt": "123 Ocean 1"
       },
       {
-        "driveFileId": "1Pvg9jCqebAOLmm8thYrbhng3OlXU1CMq",
-        "alt": "123 Ocean 10.avif"
-      },
-      {
-        "driveFileId": "18HTLAWD-KPRr9rK_0G7i7e3ZwdkXjtQf",
-        "alt": "123 Ocean 11.avif"
-      },
-      {
-        "driveFileId": "1uCkqTN2y53JgGcaZa13KiSZFZ_kbUNC6",
-        "alt": "123 Ocean 16.avif"
-      },
-      {
-        "driveFileId": "1i3-p5pWxGxJH3ImZL5JXaZT4YAtBGuFW",
-        "alt": "123 Ocean 17.avif"
-      },
-      {
-        "driveFileId": "1ChpgsVvCjblZ586EEQsYU2YoRvh_XrkC",
-        "alt": "123 Ocean 2.avif"
-      },
-      {
-        "driveFileId": "1mdjFMHYEbeqTSvmsSQiozFD4z0HwRm5h",
-        "alt": "123 Ocean 20.avif"
-      },
-      {
-        "driveFileId": "1aiJYvF8vaVrCmQTkQ6PM9lzuoKQzZs5z",
-        "alt": "123 Ocean 23.avif"
-      },
-      {
-        "driveFileId": "1Pe4OPlQnyeHceEgo-_Ujc8gNk0jketLD",
-        "alt": "123 Ocean 25.avif"
-      },
-      {
-        "driveFileId": "1lAA9_1SGu5mM1KeIkQOjuxUDqt8yuGaR",
-        "alt": "123 Ocean 4.avif"
-      },
-      {
-        "driveFileId": "1gSdW2fpIJibouDOx4-l-dwUiKvuiw8-q",
-        "alt": "123 Ocean 6.avif"
-      },
-      {
-        "driveFileId": "1aL1JWD6_hpM20s9prcNnNp-PGbk75639",
-        "alt": "123 Ocean 7.avif"
-      },
-      {
-        "driveFileId": "1kePdtxox2kpwQKV14X1JbXG0_zA1RS7T",
-        "alt": "123 Ocean 8.avif"
+        "driveFileId": "1CZc5WwjwAYBpwCRB8_f8Rhe7iJrIUG_K",
+        "alt": "123 Ocean 2"
       },
       {
         "driveFileId": "1uKgtk7e3djRC0E2h-WupO_Nx-OcRpH2r",
         "alt": "123 Ocean 3"
       },
       {
+        "driveFileId": "1_FRwaVsLpiT2x2GQgZgQcHFJLvvxMy4F",
+        "alt": "123 Ocean 4"
+      },
+      {
         "driveFileId": "1sJHS1xgqFz7xm5_G052hDgUUfMZQQsab",
         "alt": "123 Ocean 5"
       },
       {
+        "driveFileId": "1VBGEJIXKmMb2gWYYc0NCYgOfmbV_jYUN",
+        "alt": "123 Ocean 6"
+      },
+      {
+        "driveFileId": "1rYEFSl_HHmgiM9xbH4S754p5Ut5BRs5I",
+        "alt": "123 Ocean 7"
+      },
+      {
+        "driveFileId": "1XEVSIbMbY0g-5h45LKKY6xXTHSuTALoY",
+        "alt": "123 Ocean 8"
+      },
+      {
         "driveFileId": "1h0kmgEytK6jHfTJySirfhpRN5sOFQNdF",
         "alt": "123 Ocean 9"
+      },
+      {
+        "driveFileId": "1xTrv9ndJggyLxKlbu68cTHqDDPR-sWcd",
+        "alt": "123 Ocean 10"
+      },
+      {
+        "driveFileId": "1Z5gtEgt_NPPEdHDyW8ZVqcZDA-XffwAS",
+        "alt": "123 Ocean 11"
       },
       {
         "driveFileId": "11vDv5nQpUdonhnSVWQpkYetmKYMo9pz3",
@@ -305,12 +285,24 @@
         "alt": "123 Ocean 15"
       },
       {
+        "driveFileId": "1Y1pQLvFR-wA4ETasgYajhcU16IT2of9A",
+        "alt": "123 Ocean 16"
+      },
+      {
+        "driveFileId": "1Y3ebXX-FI9P3a1aNao5IHmcZdqIMzsfN",
+        "alt": "123 Ocean 17"
+      },
+      {
         "driveFileId": "18iW95vI-LSS2udvVvf4QVo84YMkUeNtw",
         "alt": "123 Ocean 18"
       },
       {
         "driveFileId": "1ns1Gh_XkgUUoJC5hdLLBDNMAGXCsyttK",
         "alt": "123 Ocean 19"
+      },
+      {
+        "driveFileId": "1UET_izN9CLVczAHfY0kdeyTwXRT1J3hd",
+        "alt": "123 Ocean 20"
       },
       {
         "driveFileId": "1687D_ci6xVv0jf0ylqcyay_1Q4SGLLGW",
@@ -321,8 +313,16 @@
         "alt": "123 Ocean 22"
       },
       {
+        "driveFileId": "1oThhQX9ZUS0pyfkCc5itMkbvCdHxrm_g",
+        "alt": "123 Ocean 23"
+      },
+      {
         "driveFileId": "1EVFKUA44rHW-cf1Kmu2tt_ueCeekGZSF",
         "alt": "123 Ocean 24"
+      },
+      {
+        "driveFileId": "17IS35Bo2GJ0paRmF1o2w0zdj7zYZMGZi",
+        "alt": "123 Ocean 25"
       },
       {
         "driveFileId": "1ZuOZJus6mhymtz-hgmN5VwsaEX0ZvBsw",
@@ -32949,107 +32949,151 @@
       },
       {
         "driveFileId": "1gHpRTqoSugPjs8jYTfUP0eEnw30-4-8f",
-        "alt": "Rivage Selected for MG - Bal Harbour Day"
+        "alt": "Selected for MG - Bal Harbour Day"
       },
       {
         "driveFileId": "1I2HlhLtYrYW4LMItyxbKQN2tkLTjDBIq",
-        "alt": "Rivage Selected for MG - Bal Harbour Dusk"
+        "alt": "Selected for MG - Bal Harbour Dusk"
       },
       {
         "driveFileId": "1mz_xNV3KU59VBV7rQNSFqjXNFYs93wC8",
-        "alt": "Rivage Selected for MG - Cocktail Lounge"
+        "alt": "Selected for MG - Cocktail Lounge"
       },
       {
         "driveFileId": "1E7K_3TZopXtzHP2IYhZmswQ4lW5XtN_7",
-        "alt": "Rivage Selected for MG - Crown"
+        "alt": "Selected for MG - Crown"
       },
       {
         "driveFileId": "19sNxxqOjBHMDqf1NS9p4woKvWt-bJvZx",
-        "alt": "Rivage Selected for MG - Fitness Center 1 (1)"
+        "alt": "Selected for MG - Fitness Center 1 (1)"
       },
       {
         "driveFileId": "1th11p6saDLvjhFM3XPLs8Z77_h-jwFN3",
-        "alt": "Rivage Selected for MG - Ground Floor Lounge Area"
+        "alt": "Selected for MG - Ground Floor Lounge Area"
       },
       {
         "driveFileId": "1w6gEzfktePj-1MoeCUHdTg4DmoNP4hkY",
-        "alt": "Rivage Selected for MG - Ground Floor Restaurant Vignette"
+        "alt": "Selected for MG - Ground Floor Restaurant Vignette"
       },
       {
         "driveFileId": "1YyexVJ8QdmVCtf8aubjGCwjaGDmkJOcq",
-        "alt": "Rivage Selected for MG - Kids Room"
+        "alt": "Selected for MG - Kids Room"
       },
       {
         "driveFileId": "1rddJ2dQ4aNTlime9ahGNVa91NVmirzWn",
-        "alt": "Rivage Selected for MG - Kitchen Unit A (2)"
+        "alt": "Selected for MG - Kitchen Unit A (2)"
       },
       {
         "driveFileId": "1mW8sYOcCrL-HM6izBnDSthdHMEpThaYp",
-        "alt": "Rivage Selected for MG - Living Room and Kitchen - Unit A"
+        "alt": "Selected for MG - Living Room and Kitchen - Unit A"
       },
       {
         "driveFileId": "1BCVNVqgUBXLnr8We7j9m38uh0CumpNNK",
-        "alt": "Rivage Selected for MG - Lobby - Art Gallery"
+        "alt": "Selected for MG - Lobby - Art Gallery"
       },
       {
         "driveFileId": "1d7OthfWZm_NkZu_yX72oSW109D6DQPLd",
-        "alt": "Rivage Selected for MG - Oceanfront Dining"
+        "alt": "Selected for MG - Oceanfront Dining"
       },
       {
         "driveFileId": "1vZ11KdnRGZ-1FKWSaW44v5Rd1zc4xaGL",
-        "alt": "Rivage Selected for MG - Oceanfront Pool - Birdseye"
+        "alt": "Selected for MG - Oceanfront Pool - Birdseye"
       },
       {
         "driveFileId": "1CpL00YiICxK8IJ1eqfrmvi7B0Qp1FDbF",
-        "alt": "Rivage Selected for MG - Pool Bar Lounge"
+        "alt": "Selected for MG - Pool Bar Lounge"
       },
       {
         "driveFileId": "1Q9QEkyr9GBfRD-9HUFwenEk0XCfKmPGC",
-        "alt": "Rivage Selected for MG - Residence C - Kitchen"
+        "alt": "Selected for MG - Residence C - Kitchen"
       },
       {
         "driveFileId": "1LR7dmWkv8X_M1V9psl9aYBnf7bOUE7xV",
-        "alt": "Rivage Selected for MG - Residence C - Living Room"
+        "alt": "Selected for MG - Residence C - Living Room"
       },
       {
         "driveFileId": "1TvFZCVvdBAL9gsajtXjcvS1KdQh_lpKd",
-        "alt": "Rivage Selected for MG - Residence C - Master Bedroom"
+        "alt": "Selected for MG - Residence C - Master Bedroom"
       },
       {
         "driveFileId": "1qOGo6l_lDvKat13JNEzikf0orO7RJ6EV",
-        "alt": "Rivage Selected for MG - Restaurant"
+        "alt": "Selected for MG - Restaurant"
       },
       {
         "driveFileId": "10LD9SpSaQPpuQMxgP0UNRLvS_9pfoAoV",
-        "alt": "Rivage Selected for MG - Restaurant Exterior"
+        "alt": "Selected for MG - Restaurant Exterior"
       },
       {
         "driveFileId": "1gwcFTlcqqYKWYKjOkitbPzx7eLleEXPv",
-        "alt": "Rivage Selected for MG - Spa - Hot and Cold Plunge Pools"
+        "alt": "Selected for MG - Spa - Hot and Cold Plunge Pools"
       },
       {
         "driveFileId": "17rUWhJG4Ga8T9sar3wjVocxVcCTxATfk",
-        "alt": "Rivage Selected for MG - Spa - Treatment Room"
+        "alt": "Selected for MG - Spa - Treatment Room"
       },
       {
         "driveFileId": "1mvQHuubdNDNKV-P_l5rxa9uGYzXrCWAq",
-        "alt": "Rivage Selected for MG - Staircase"
+        "alt": "Selected for MG - Staircase"
       },
       {
         "driveFileId": "1Yx8Av8H0U1DPL1LmW4vVYoAXwGgC8cEG",
-        "alt": "Rivage Selected for MG - Terrace"
+        "alt": "Selected for MG - Terrace"
       },
       {
         "driveFileId": "1WvQc81acuzYGt1p5wxzjTQQo3zmkinZc",
-        "alt": "Rivage Selected for MG - Terrace - Unit C"
+        "alt": "Selected for MG - Terrace - Unit C"
       },
       {
         "driveFileId": "1zXcWNMZVKsKb-hyMxzkRDH8vxrjUpO-4",
-        "alt": "Rivage Selected for MG - Terraces with Sunset Views"
+        "alt": "Selected for MG - Terraces with Sunset Views"
       },
       {
         "driveFileId": "1veMUQ1U-zaYa7sC6cF2JaIU9g8HvDQka",
-        "alt": "Rivage Selected for MG - VR Simulator"
+        "alt": "Selected for MG - VR Simulator"
+      },
+      {
+        "driveFileId": "1rXabMS-6E8ucTO3zr7RoRzWrUQutitpY",
+        "alt": "Selected for PR - PH-A Primary Bathroom"
+      },
+      {
+        "driveFileId": "1mxAslq1BEqs-qH_PDWLT0tjVvvQXEf8S",
+        "alt": "Selected for PR - Rivage - PHA Bathroom"
+      },
+      {
+        "driveFileId": "1Etkism-FDdNa20jIkXWrHvY5ZAdBeR6u",
+        "alt": "Selected for PR - Rivage - PHA Closet"
+      },
+      {
+        "driveFileId": "1_R5ENSBoKmGMiwpMpXufLWb2WTK-16Ga",
+        "alt": "Selected for PR - Rivage - PHA Entertainment Room"
+      },
+      {
+        "driveFileId": "1KzK8T25TL30TBBku6JnoRPo6eqZ3YUK_",
+        "alt": "Selected for PR - Rivage - PHA Fitness Area"
+      },
+      {
+        "driveFileId": "1agNRyXo9cNTDi19_ywMpBGHSQl2CveHK",
+        "alt": "Selected for PR - Rivage - PHA Hummingbird"
+      },
+      {
+        "driveFileId": "1IVQIu3SbtqZ1HEJcckalO6-V4S4VL_hE",
+        "alt": "Selected for PR - Rivage - PHA Kitchen"
+      },
+      {
+        "driveFileId": "1uERNHHZsVfezDZWmDMp_WgpT8810I2So",
+        "alt": "Selected for PR - Rivage - PHA Staircase"
+      },
+      {
+        "driveFileId": "1A5J3c89_Lc2r1j1VJVgNdpMKknEwgnp_",
+        "alt": "Selected for PR - Vignette A"
+      },
+      {
+        "driveFileId": "1eLJsd1hZXstnWnWvYmRbzIhHnpI4msee",
+        "alt": "Selected for PR - Vignette B"
+      },
+      {
+        "driveFileId": "1-S9oTryOightStbOFtc0Fb5bY0hu0EtC",
+        "alt": "Selected for PR - Vignette C"
       },
       {
         "driveFileId": "10ih6vHe1HYaedIUzwwpAN0-jbf1m_4ny",
@@ -33305,32 +33349,116 @@
         "alt": "Restaurant 1"
       },
       {
+        "driveFileId": "1HDBeLR0-78-1bWOgYusovPinT42iW1kw",
+        "alt": "Screening Room 1"
+      },
+      {
         "driveFileId": "1D9HdqjsHgKC0rNWSvyQLby810x3nzj1n",
-        "alt": "Rivage Selected for MG - Bedroom 1"
+        "alt": "Selected for MG - Bedroom 1"
       },
       {
         "driveFileId": "1p_8Ij1ydpEf5LhXxrzxYRyIFnw5QHUJ-",
-        "alt": "Rivage Selected for MG - Community Lounge 1"
+        "alt": "Selected for MG - Community Lounge 1"
       },
       {
         "driveFileId": "1uus71zSvA7LmSA-Nt9QxSRVqiaGco_Yc",
-        "alt": "Rivage Selected for MG - Hero 1"
+        "alt": "Selected for MG - Hero 1"
       },
       {
         "driveFileId": "1PyS0GTvzaxN0qZJp2Pm1CPVgAgbpiq_E",
-        "alt": "Rivage Selected for MG - Lobby - Formal Sitting View 1"
+        "alt": "Selected for MG - Lobby - Formal Sitting View 1"
       },
       {
         "driveFileId": "1dBa16l3-HRY2hOMApSmwpqmwZAph2SXS",
-        "alt": "Rivage Selected for MG - Reading Lounge 1"
+        "alt": "Selected for MG - Reading Lounge 1"
       },
       {
         "driveFileId": "1ezr2HdoIplnLXBISqDctfd_A73KhzipX",
-        "alt": "Rivage Selected for MG - Restaurant 1"
+        "alt": "Selected for MG - Restaurant 1"
       },
       {
-        "driveFileId": "1HDBeLR0-78-1bWOgYusovPinT42iW1kw",
-        "alt": "Screening Room 1"
+        "driveFileId": "17lRAbKOKJ5TQXCL8oziYgO9j_XbpUquE",
+        "alt": "Selected for PR - Ammortal Room - D1"
+      },
+      {
+        "driveFileId": "1qroFZ-hSPLae9s7XVP-tDKzDHN6RRbVb",
+        "alt": "Selected for PR - East Deck A1 - D1"
+      },
+      {
+        "driveFileId": "1wmFb88jGBicpMgVpP-QLw_weDyyriyWc",
+        "alt": "Selected for PR - East Deck A2 - D1"
+      },
+      {
+        "driveFileId": "1WPWQDMEyBHhB6SY6NLB1-o7tzP8gt0TU",
+        "alt": "Selected for PR - East Deck A3 - D1"
+      },
+      {
+        "driveFileId": "1DKkQNx6nXq9pYndNYWO2izNsY7U4FvF-",
+        "alt": "Selected for PR - East Deck B - D1"
+      },
+      {
+        "driveFileId": "1KVq2VjOosigX-7bUT3O20OYD3ET8zFt2",
+        "alt": "Selected for PR - East Deck C - D1"
+      },
+      {
+        "driveFileId": "1dvVy3IMTiimjiPyWxySSKS1oPYky8sHA",
+        "alt": "Selected for PR - Great Room A - D1"
+      },
+      {
+        "driveFileId": "17Y9Me9iLWAMV6l_goZ_M0xM6NTpB7O29",
+        "alt": "Selected for PR - Great Room B - D1"
+      },
+      {
+        "driveFileId": "1SlfD7xeAF8ZucxlU6CIv6XxlmBEjkyad",
+        "alt": "Selected for PR - Main Kitchen - D1"
+      },
+      {
+        "driveFileId": "176Wu9PVgGgQtjM0WOlHiVkEC04VhU4YD",
+        "alt": "Selected for PR - Primary Suite Bathroom A - D1"
+      },
+      {
+        "driveFileId": "1bto32nRTcr38eCCVqbVWj4MO_jMWfUdj",
+        "alt": "Selected for PR - Primary Suite Bedroom A - D1"
+      },
+      {
+        "driveFileId": "1hOTFppviAYZJYtahLHsBFrNh8hdZgkpy",
+        "alt": "Selected for PR - Primary Suite Bedroom B - D1"
+      },
+      {
+        "driveFileId": "14FbW67iAUAHq1RkRd7h96k3rs8_nfqau",
+        "alt": "Selected for PR - Primary Suite Sitting Room - D1"
+      },
+      {
+        "driveFileId": "1-OztEA2MUlXw0qQg53FYiVV3Kg8OiZCb",
+        "alt": "Selected for PR - Primary Suite WIC - D1"
+      },
+      {
+        "driveFileId": "16OyjJCzsEep6WGdi3Bf7VVAF8mZzgP21",
+        "alt": "Selected for PR - Rivage - PHA Great Room 1"
+      },
+      {
+        "driveFileId": "1dhdWLhCxYXk4nibTk8z_tL4-K1iDpmJ_",
+        "alt": "Selected for PR - Rivage - PHA Primary Bedroom 1"
+      },
+      {
+        "driveFileId": "1PCH2EvLdbrtqQqZqcPwI2iik6cAVqdlg",
+        "alt": "Selected for PR - Rivage - PHA Rooftop Angle 1"
+      },
+      {
+        "driveFileId": "10F6DRlsmwiLK6p8C4q1H5TmK5wSCKygu",
+        "alt": "Selected for PR - Sunset Deck A - D1"
+      },
+      {
+        "driveFileId": "1t2FXkpOPVVScbyexABooRrwjNvpRZiZE",
+        "alt": "Selected for PR - Sunset Deck B - D1"
+      },
+      {
+        "driveFileId": "1ylCh9wQjLkz1fZDzvfi1trqffe6TavV8",
+        "alt": "Selected for PR - Sunset Deck C - D1"
+      },
+      {
+        "driveFileId": "1pKORoKEi0Fj4MLeJ88HQ8LKtlP0mrrqM",
+        "alt": "Selected for PR - Therapy Room - D1"
       },
       {
         "driveFileId": "1_jO2LF7pr7SIXIkosPdF4GhpL_tygkGD",
@@ -33449,52 +33577,64 @@
         "alt": "Restaurant 2"
       },
       {
+        "driveFileId": "1BhM7UnsTsaiDoIGA3DMsvgPyZmF6Yx4-",
+        "alt": "Screening Room 2"
+      },
+      {
         "driveFileId": "1CtCuKyZcH8htscRKES3l3BmYazSTrl4w",
-        "alt": "Rivage Selected for MG - Balcony 2"
+        "alt": "Selected for MG - Balcony 2"
       },
       {
         "driveFileId": "1iy3sbFQ7Ti9JRqJimu3iv_RE-gkeWjpI",
-        "alt": "Rivage Selected for MG - Bar 2"
+        "alt": "Selected for MG - Bar 2"
       },
       {
         "driveFileId": "1m2GuoeiYzOBSq0dVmhHXJMdBj6poHH3n",
-        "alt": "Rivage Selected for MG - Bathroom 2"
+        "alt": "Selected for MG - Bathroom 2"
       },
       {
         "driveFileId": "1zKxgAX3eH60s_08LDTXnCkXM0_sJDLLP",
-        "alt": "Rivage Selected for MG - Community Lounge 2"
+        "alt": "Selected for MG - Community Lounge 2"
       },
       {
         "driveFileId": "1TUyubdGqym8_PLhYXzKHRvxBftdze5lI",
-        "alt": "Rivage Selected for MG - Lobby - Formal Sitting View 2"
+        "alt": "Selected for MG - Lobby - Formal Sitting View 2"
       },
       {
         "driveFileId": "1ERs6dCeVo_a3s-EEyFgqGfWlJwzyxHLz",
-        "alt": "Rivage Selected for MG - Lounge 2"
+        "alt": "Selected for MG - Lounge 2"
       },
       {
         "driveFileId": "1SMW2G1iuRq8YBCi7jR8qaRGAWY-aUtWa",
-        "alt": "Rivage Selected for MG - Outdoor Dining 2"
+        "alt": "Selected for MG - Outdoor Dining 2"
       },
       {
         "driveFileId": "1BKa6FXauBiDqgeRPZkhknYfWHHbnekLt",
-        "alt": "Rivage Selected for MG - Pickleball and Padel Court 2"
+        "alt": "Selected for MG - Pickleball and Padel Court 2"
       },
       {
         "driveFileId": "1D4RzHLPshh0PklmjRJdqBKl-TX2ihyiC",
-        "alt": "Rivage Selected for MG - Pool 2"
+        "alt": "Selected for MG - Pool 2"
       },
       {
         "driveFileId": "1EyGhtPvY2QsUGfL-a-vPSpKdFO26_fTw",
-        "alt": "Rivage Selected for MG - Screening Room 2"
+        "alt": "Selected for MG - Screening Room 2"
       },
       {
         "driveFileId": "1kZ3bYZbwU0raSES859ETd3bY7Nlttua0",
-        "alt": "Rivage Selected for MG - Terrace Day View 2"
+        "alt": "Selected for MG - Terrace Day View 2"
       },
       {
-        "driveFileId": "1BhM7UnsTsaiDoIGA3DMsvgPyZmF6Yx4-",
-        "alt": "Screening Room 2"
+        "driveFileId": "1ver_BUuOZ4VUOqxpKvC7sDCo8wBHdb5T",
+        "alt": "Selected for PR - Rivage - PHA Great Room 2"
+      },
+      {
+        "driveFileId": "1809MbpN09PwAbfNdUYwakGdzC5QPZ8vm",
+        "alt": "Selected for PR - Rivage - PHA Primary Bedroom 2"
+      },
+      {
+        "driveFileId": "1-hn71ISy-3bVhcV6SYjigMeS-y5xrMhT",
+        "alt": "Selected for PR - Rivage - PHA Rooftop Angle 2"
       },
       {
         "driveFileId": "1wdkz-8ubeWw7HrxqewWThc4iERAmm14T",
@@ -33542,7 +33682,7 @@
       },
       {
         "driveFileId": "1ZDlS3FR2-O0ZMnPMgSS4jsthSi8jrPNn",
-        "alt": "Rivage Selected for MG - Lobby - View 3"
+        "alt": "Selected for MG - Lobby - View 3"
       },
       {
         "driveFileId": "1hex0zNb0raiHXim6HnrtUChIsq4J116l",
@@ -33562,7 +33702,7 @@
       },
       {
         "driveFileId": "11WtH-GGzypBiwo_AV_0E30Bb7wHm1oje",
-        "alt": "Rivage Selected for MG - Pool 4"
+        "alt": "Selected for MG - Pool 4"
       },
       {
         "driveFileId": "1FbtjHUyUZQ0dzQjosF1m2HczOkY-yjCo",
@@ -33574,7 +33714,7 @@
       },
       {
         "driveFileId": "1_4m3OrxPjRlzss5J3Oivg69ChaRXh0L_",
-        "alt": "Rivage Selected for MG - Pool 5"
+        "alt": "Selected for MG - Pool 5"
       },
       {
         "driveFileId": "1PBZg1qW1BjTQqjMBPAyWqd78zOMQHq-W",
@@ -33582,7 +33722,7 @@
       },
       {
         "driveFileId": "17dIs0WHkKtREhJ-A1Ds5GyBmof86-1H3",
-        "alt": "Rivage Selected for MG - Hero 6"
+        "alt": "Selected for MG - Hero 6"
       },
       {
         "driveFileId": "1RIAyStE-rtruNDoKXPcjmslTb-l2Y8iR",
