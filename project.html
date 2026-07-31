@@ -682,7 +682,9 @@
                         || plKind === 'canceled';
 
       var sec = makeSection('price-list');
-      sec.appendChild(sectionHeading(isStatusBanner ? 'PRICE LIST' : plHeading));
+      if (plKind !== 'canceled') {
+        sec.appendChild(sectionHeading(isStatusBanner ? 'PRICE LIST' : plHeading));
+      }
 
       // Hybrid (Five Park): button ABOVE the PDF iframe.
       // unitsForSale is a top-level field on the project, independent of
