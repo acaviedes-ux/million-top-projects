@@ -678,7 +678,8 @@
       // The section heading stays "PRICE LIST" for context; the bold
       // status text is rendered as a banner inside the section.
       var isStatusBanner = plKind === 'mls' || plKind === 'sold-out'
-                        || plKind === 'paused' || plKind === 'message';
+                        || plKind === 'paused' || plKind === 'message'
+                        || plKind === 'canceled';
 
       var sec = makeSection('price-list');
       sec.appendChild(sectionHeading(isStatusBanner ? 'PRICE LIST' : plHeading));

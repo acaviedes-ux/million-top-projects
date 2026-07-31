@@ -1789,6 +1789,11 @@ img { display: block; max-width: 100%; }
   color: var(--gray-dark);
   border: 1px solid #d1d5db;
 }
+.pl-status--canceled {
+  background: #fef2f2;
+  color: #b91c1c;
+  border: 1px solid #fca5a5;
+}
 
 /* UFS button variant in hybrid case (Five Park) — sits above the PDF iframe.
    Slightly more prominent than the legacy bottom-of-section variant. */

@@ -32357,7 +32357,7 @@
     "slug": "riva-residenze",
     "name": "Riva Residenze Fort Lauderdale",
     "esqueletoName": "Riva Residenze Fort Lauderdale",
-    "startingPrice": "$3.8M",
+    "startingPrice": "Canceled Project",
     "thumbnail": "/images/renders/riva-residenze.jpg",
     "hero": "/images/renders/riva-residenze.jpg",
     "buildingDescription": "",
@@ -32530,8 +32530,8 @@
       }
     ],
     "priceList": {
-      "driveFileId": "1Dik4pkH3zFiNVUdumwAcUWT8i7XTsfNS",
-      "createdAt": "As of May 26, 2026"
+      "kind": "canceled",
+      "heading": "PROJECT CANCELED"
     }
   },
   {
