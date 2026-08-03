@@ -35779,10 +35779,7 @@
     "interiorDesign": "Rottet Studio",
     "completionDate": "2028",
     "depositStructure": [
-      "20% at contract",
-      "10% at groundbreaking (Mar 2026)",
-      "10% at reaching selected floor",
-      "60% at closing"
+      "30% at signing and10% at floor pour. 60% at closing"
     ],
     "parkingSpaces": [
       "2 self parking spaces for each residence."
@@ -36125,7 +36122,9 @@
     "interiorDesign": "Pembrooke & Ives",
     "completionDate": "2027",
     "depositStructure": [
-      "40% at contract",
+      "20% at contract",
+      "10% at groundbreaking",
+      "10% at reaching selected floor",
       "60% at closing (Q2 2027)"
     ],
     "parkingSpaces": [
