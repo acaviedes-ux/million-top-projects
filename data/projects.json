@@ -31384,7 +31384,16 @@
     "hero": "/images/renders/ponce-park.jpg",
     "buildingDescription": "",
     "stylishAmenities": "From the rooftop oasis with breathtaking views to the vibrant open-air paseo lined with Michelin-starred dining, amenities at Ponce Park invite residents to indulge in an elevated lifestyle.",
-    "brochures": [],
+    "brochures": [
+      {
+        "title": "",
+        "driveFileId": "1jV6YY2k2E2EGdSVBpZfPxglcFuoa4PsJ"
+      },
+      {
+        "title": "",
+        "driveFileId": "1OCz7uZErhp99fOvgue0vg-plD2bHRW20"
+      }
+    ],
     "tpDataName": "Ponce Park Coral Gables",
     "section": "Top Projects",
     "theBuilding": "A boutique eleven-story tower, Ponce Park is an intimate collection of 58 bespoke residences, redefining luxury living with soaring ceilings and expansive terraces.",
@@ -31419,6 +31428,18 @@
     "filterStatus": "Pre-construction",
     "filterYear": "2028",
     "factSheets": [
+      {
+        "title": "",
+        "driveFileId": "1WYtEDSdSwzjVU67q81yxA8gNIQHnezj_"
+      },
+      {
+        "title": "",
+        "driveFileId": "1PjM33sctzOG8r3lF29bjAPPumX0jeNcg"
+      },
+      {
+        "title": "",
+        "driveFileId": "14rhLEEU9cLGyvR5-tLvtlv3pgXyym6nJ"
+      },
       {
         "title": "",
         "driveFileId": "1U98kUcRHk1ATkNOh34psbI6l6QwQCs_3"
@@ -31460,8 +31481,16 @@
         "alt": "Ponce Park - Closet Day Time"
       },
       {
+        "driveFileId": "1t8VavLyjs1EHO7sPb_DDd36K-Adbxd3P",
+        "alt": "Ponce Park - Courtyard"
+      },
+      {
         "driveFileId": "1ov8lgMRBMSeEzF--NXMsOkGBL0yA7iMD",
         "alt": "Ponce Park - Exterior"
+      },
+      {
+        "driveFileId": "1rFE1CnlQHjgAtlmoDImiaYIMZ1vCk0a0",
+        "alt": "Ponce Park - Fitness Center"
       },
       {
         "driveFileId": "1EJQU_TUQrfrH3xTWVZsglMi9EAwXmfTy",
@@ -31484,6 +31513,14 @@
         "alt": "Ponce Park - Living Room"
       },
       {
+        "driveFileId": "1_uHh7bhNAqz9Tp1mhbODy9m6ixI0vI1P",
+        "alt": "Ponce Park - Lobby Lounge"
+      },
+      {
+        "driveFileId": "1H0RPtumpVfzbWlD_S0cVW_-zpq44U8is",
+        "alt": "Ponce Park - Lobby Staircase"
+      },
+      {
         "driveFileId": "1Ix0tnNP6IZOzyGMvvnhPBM-By1JD0LY4",
         "alt": "Ponce Park - Main Hero"
       },
@@ -31504,12 +31541,36 @@
         "alt": "Ponce Park - Paseo Ground"
       },
       {
+        "driveFileId": "19U0jrrcBmcIC4Mbj4wSlamKHELkSg219",
+        "alt": "Ponce Park - Penthouse Exterior"
+      },
+      {
+        "driveFileId": "16AZpQGi042nx0Jn8xgDqKTZkDVS5BRfu",
+        "alt": "Ponce Park - Penthouse Living Room"
+      },
+      {
         "driveFileId": "1tqYlwX7ymBc2QP5dsrTW8S5XXV-ks8lK",
         "alt": "Ponce Park - Pool"
       },
       {
+        "driveFileId": "1PzcUBdEW32xGuwxJOIBW2CM3IAWC9o0-",
+        "alt": "Ponce Park - Residence Terrace"
+      },
+      {
+        "driveFileId": "1x4BVCv9mxqt9ZdAofTXdx84nO2SAzRdo",
+        "alt": "Ponce Park - Rooftop Bar"
+      },
+      {
+        "driveFileId": "1rxkrNHvV1tzBMigTO5YhdzH_8BVc6hu3",
+        "alt": "Ponce Park - Rooftop Pool and Pergola"
+      },
+      {
         "driveFileId": "1rL3Dhg1zRvJntUTP0sQTzFXXYUvtkEDq",
         "alt": "Ponce Park - South Arches"
+      },
+      {
+        "driveFileId": "19ndCupoE0ya-AdDqDcFeAbWmBoT1RCsc",
+        "alt": "Ponce Park - Spa"
       },
       {
         "driveFileId": "1keqnT2qmKjBvooWEw3ZoSCBLzQ59XirR",
