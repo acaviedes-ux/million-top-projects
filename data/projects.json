@@ -24029,7 +24029,10 @@
       "5% after the completion of the concrete structure",
       "65% at closing (Q2 2028)"
     ],
-    "parkingSpaces": null,
+    "parkingSpaces": [
+      "2 parking spaces per residence",
+      "4 parking spaces for the penthouse"
+    ],
     "rentalRestrictions": [
       "Maximum 2 rentals per year",
       "Minimum 6-month lease term"
