@@ -47117,7 +47117,11 @@
         "alt": "Tula Residences North Bay Village - Wellness Center - Gym"
       }
     ],
-    "presentations": []
+    "presentations": [],
+    "priceList": {
+      "driveFileId": "1QR_M7W697jX5MmlVbckdQRFh_u3UztUq",
+      "createdAt": "As of August 11, 2026"
+    }
   },
   {
     "slug": "turnberry-ocean-club",
