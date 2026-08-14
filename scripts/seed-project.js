@@ -148,13 +148,17 @@ function extractOptionAContact(row) {
   const emails = emailsRaw.split('\n').map(s => s.trim()).filter(Boolean);
   const notes  = notesRaw.split('\n').map(s => s.trim()).filter(Boolean);
 
-  // Find which line index contains "Option A" in notes (AH)
-  const optionAIndex = notes.findIndex(n =>
-    n.toLowerCase().includes('option a')
-  );
+  const isInactive = i => (notes[i] ?? '').toLowerCase().includes('no longer working');
 
-  // If no Option A found, fall back to index 0 (first active agent)
-  const idx = optionAIndex >= 0 ? optionAIndex : 0;
+  // Find which line index contains "Option A" in notes (AH)
+  const optionAIndex = notes.findIndex(n => n.toLowerCase().includes('option a'));
+
+  // Use Option A when still active; otherwise first non-inactive agent; else null.
+  let idx = optionAIndex >= 0 && !isInactive(optionAIndex)
+    ? optionAIndex
+    : names.findIndex((_name, i) => !isInactive(i));
+
+  if (idx < 0) return null; // All agents inactive
 
   const name  = names[idx]  || '';
   const phone = stripPrefix(phones[idx]  || '');
