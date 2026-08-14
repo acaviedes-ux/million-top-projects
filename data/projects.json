@@ -6100,13 +6100,6 @@
       "2 times per year. 6 months minimum."
     ],
     "hoa": "$1.80",
-    "contact": [
-      {
-        "name": "Marie Mangouta",
-        "phone": "+1 (954) 882-9746",
-        "email": null
-      }
-    ],
     "projectLogo": "/images/logos/armani-casa-pompano-beach.png",
     "isNew": false,
     "filterCounty": "Broward County",
@@ -16805,13 +16798,6 @@
       "Daily Rentals Allowed"
     ],
     "hoa": "$1.35",
-    "contact": [
-      {
-        "name": "Lorena Millan",
-        "phone": "+1 (786) 663-4253",
-        "email": "lorena@galemiami.com"
-      }
-    ],
     "projectLogo": "/images/logos/gale-miami.png",
     "isNew": false,
     "filterCounty": "Miami-Dade County",
@@ -28502,13 +28488,6 @@
     ],
     "rentalRestrictions": null,
     "hoa": null,
-    "contact": [
-      {
-        "name": "Jamie Chang",
-        "phone": "+1 (239) 248-7558",
-        "email": "jamie.chang@premiersir.com"
-      }
-    ],
     "projectLogo": "/images/logos/palazzo-at-bayfront-naples.png",
     "isNew": false,
     "filterCounty": "Collier County",
@@ -32463,13 +32442,6 @@
       "6 months minimum. 2 times per year."
     ],
     "hoa": "$1.99",
-    "contact": [
-      {
-        "name": "Adam Elmer",
-        "phone": "+1 (215) 584-1287",
-        "email": "adam@theworthgrp.com"
-      }
-    ],
     "projectLogo": "/images/logos/riva-residenze.png",
     "isNew": false,
     "filterCounty": "Broward County",
@@ -52638,6 +52610,13 @@
     "priceList": {
       "driveFileId": "1RwzBc0kunDMIDPXv4lQIKRfza7hba8an",
       "createdAt": "As of May 26, 2026"
-    }
+    },
+    "contact": [
+      {
+        "name": "Christel",
+        "phone": "N/A",
+        "email": null
+      }
+    ]
   }
 ]
