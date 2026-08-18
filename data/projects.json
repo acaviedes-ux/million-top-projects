@@ -20036,10 +20036,20 @@
         "email": "jonathan@LILLImiami.com"
       }
     ],
-    "priceRange": {
-      "driveFileId": "1gQBL5xd6kRif62E_EXFk5Hj08LB7kVro",
-      "createdAt": "As of August 18, 2026"
-    }
+    "priceDocs": [
+      {
+        "driveFileId": "1xpN-TsKTIeOMq_pwzuHcyWFH0b97cPUx",
+        "createdAt": "As of August 18, 2026",
+        "title": "Lilli Miami Edgewater - Price List",
+        "kind": "list"
+      },
+      {
+        "driveFileId": "1gQBL5xd6kRif62E_EXFk5Hj08LB7kVro",
+        "createdAt": "As of August 18, 2026",
+        "title": "Lilli Miami Edgewater - Price Range",
+        "kind": "range"
+      }
+    ]
   },
   {
     "slug": "lofty-residences",
