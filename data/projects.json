@@ -14793,9 +14793,9 @@
     "completionDate": "2029",
     "depositStructure": [
       "20% at contract",
-      "10% 120 days after contract",
-      "10% 12 months after contract",
-      "10% at pouring off the highest residential unit",
+      "10% at 120 days after signing contract",
+      "10% at 1 year after signing contract",
+      "10% at pouring of highest residential unit",
       "50% at closing"
     ],
     "parkingSpaces": [
