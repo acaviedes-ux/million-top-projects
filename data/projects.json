@@ -52690,5 +52690,115 @@
         "email": null
       }
     ]
+  },
+  {
+    "slug": "waldorf-astoria-residences-sarasota",
+    "name": "Waldorf Astoria Residences Sarasota",
+    "esqueletoName": "Waldorf Astoria Residences Sarasota",
+    "tpDataName": "Waldorf Astoria Residences Sarasota",
+    "section": "Top Projects",
+    "theBuilding": "Set on Five Points Park in the heart of walkable downtown Sarasota, this 22-story tower features 86 private residences alongside nearly 60,000 square feet of interior amenities and garden spaces. Interiors offer 14-foot ceilings, floor-to-ceiling windows, curved terraces with glass railings, and large-format travertine flooring.",
+    "stylishAmenities": "Residents enjoy the Peacock Alley Residents' Lounge with adjacent library and private dining room, and a wellness center with fitness and motion studio, hot and cold plunge pools, steam rooms, infrared saunas, and two treatment rooms. The Garden spans nearly 25,000 square feet with a 70-foot pool and spa, an entertainment lawn with citrus grove, and the Florida Pavilion with self-serve bar and grilling stations, plus a game room with golf simulator, theatre lounge, children's and teen rooms, two guest suites, and 24-hour valet and concierge service.",
+    "filterCounty": "Sarasota County",
+    "filterLocation": "Sarasota",
+    "filterStatus": "Pre-construction",
+    "filterYear": null,
+    "isNew": false,
+    "address": "1000 Blvd of the Arts, Sarasota, FL 34236",
+    "startingPrice": "$2.8M",
+    "completionDate": null,
+    "developer": "Jebcore Companies & WMG Development",
+    "architecture": "ODP Architecture & Design",
+    "interiorDesign": "Workshop/APD",
+    "rentalRestrictions": null,
+    "parkingSpaces": null,
+    "depositStructure": [
+      "15% at contract with a 15-day rescission period",
+      "5% at 120 days following the first deposit",
+      "10% at groundbreaking",
+      "10% at pouring of the selected unit's floor",
+      "60% at closing"
+    ],
+    "hoa": "$1.55",
+    "contact": [
+      {
+        "name": "Joseph Richardson",
+        "phone": "+1 (305) 520-7700",
+        "email": "joseph@waresidencessarasota.com"
+      }
+    ],
+    "brochures": [],
+    "factSheets": [
+      {
+        "title": "",
+        "driveFileId": "1YK9NKHK-033ZWPoMKeZ4D514ak3eq59u"
+      }
+    ],
+    "floorPlans": [],
+    "presentations": [],
+    "renderings": [
+      {
+        "driveFileId": "17e8Yy1vUCrWD5b_JHBroTN5s4Sm9964H",
+        "alt": "Waldorf Astoria Residences Sarasota - Corner Retail"
+      },
+      {
+        "driveFileId": "1LapkYHQXSUArugzaZDEioloe2m0jh19H",
+        "alt": "Waldorf Astoria Residences Sarasota - Fitness Center.tiff",
+        "tooLarge": true
+      },
+      {
+        "driveFileId": "1gO4OUV7HmjTDtP32Uw5fHdGDVid-ei8z",
+        "alt": "Waldorf Astoria Residences Sarasota - Kitchen"
+      },
+      {
+        "driveFileId": "1LxSXEmEehubr5eHW0haFK1_-e0a2kF2p",
+        "alt": "Waldorf Astoria Residences Sarasota - Living Dining"
+      },
+      {
+        "driveFileId": "1OFJWa9-m4OaDrecTZ_xuwj_m1dN69Lkz",
+        "alt": "Waldorf Astoria Residences Sarasota - Lorangerie.tiff",
+        "tooLarge": true
+      },
+      {
+        "driveFileId": "1ozvp2Ygb8HpeyI8K9nFJQJDs8OPIrqpV",
+        "alt": "Waldorf Astoria Residences Sarasota - Main Street Cafe"
+      },
+      {
+        "driveFileId": "1SLo0ySM52hZMB259vFx2zkOW0vin7V36",
+        "alt": "Waldorf Astoria Residences Sarasota - Motion Studio.tiff",
+        "tooLarge": true
+      },
+      {
+        "driveFileId": "1X-TM6sLVUfv2_26ntF5GN9qHru4MZtPw",
+        "alt": "Waldorf Astoria Residences Sarasota - Park Corner Facade"
+      },
+      {
+        "driveFileId": "1YLUplGb_-r_eBs8adR861i0vxpTcwHpC",
+        "alt": "Waldorf Astoria Residences Sarasota - Pineapple Ave Corner Retail"
+      },
+      {
+        "driveFileId": "1Jv7cQ40rVxMZSVHiJOm0JX28985p0Ein",
+        "alt": "Waldorf Astoria Residences Sarasota - Primary Bedroom"
+      },
+      {
+        "driveFileId": "1pIBtoJW9hq48CET4MaxcwOfntojVJxF4",
+        "alt": "Waldorf Astoria Residences Sarasota - Roundabout Corner Restaurant"
+      },
+      {
+        "driveFileId": "147x2wemu1Ivv92Rb9nW6Pk7XK6WQFFtC",
+        "alt": "Waldorf Astoria Residences Sarasota - Hummingbird 1"
+      },
+      {
+        "driveFileId": "16XoIMY6IVNeLbUg31iuHJdgbVFU_IB-5",
+        "alt": "Waldorf Astoria Residences Sarasota - Hummingbird 2"
+      }
+    ],
+    "priceList": {
+      "driveFileId": "1lkbejC2aGKB-Hb__TljdzGJU8x-GF5Se",
+      "createdAt": "As of August 19, 2026"
+    },
+    "thumbnail": "/api/render?id=17e8Yy1vUCrWD5b_JHBroTN5s4Sm9964H",
+    "hero": "/api/render?id=17e8Yy1vUCrWD5b_JHBroTN5s4Sm9964H",
+    "projectLogo": "/images/logos/waldorf-astoria-residences-sarasota.png"
   }
 ]
