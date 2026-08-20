@@ -633,7 +633,16 @@
       if (hasDocs) {
         var sec = makeSection('price-list');
         applyWideSectionStyles(sec);
-        sec.appendChild(sectionHeading('PRICE LIST / PRICE RANGE'));
+        // The heading names what the section actually holds. It used to be the fixed string
+        // 'PRICE LIST / PRICE RANGE', so a project publishing only price lists — Mandarin
+        // Oriental Miami ships three of them: combined, ST and NT — advertised a price range it
+        // does not have. Each doc carries its own `kind`, so the honest title is derivable.
+        var kinds = {};
+        d.priceDocs.forEach(function (doc) { if (doc && doc.kind) kinds[doc.kind] = true; });
+        var heading = (kinds.list && kinds.range) || (!kinds.list && !kinds.range)
+          ? 'PRICE LIST / PRICE RANGE'
+          : (kinds.range ? 'PRICE RANGE' : 'PRICE LIST');
+        sec.appendChild(sectionHeading(heading));
         appendDisclaimer(sec);
 
         var container = buildDocsContainer(d.priceDocs, function (doc, total) {
