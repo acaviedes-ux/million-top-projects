@@ -41261,7 +41261,11 @@
     "projectLogo": "/images/logos/the-raleigh.png",
     "priceList": {
       "heading": "No Pricing Available",
-      "kind": "message"
+      "kind": "message",
+      "disclaimer": {
+        "type": "info",
+        "text": "This project is currently undergoing a relaunch, so the information shown here is not up to date. We expect to have more information by the end of October 2026."
+      }
     },
     "isNew": false,
     "filterCounty": "Miami-Dade County",
