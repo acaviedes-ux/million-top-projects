@@ -219,11 +219,36 @@
     return row;
   }
 
-  // Returns true if a value counts as "has real data"
+  // Values that answer "we don't have this". The Esqueleto records a missing
+  // answer as "N/A" or "-" rather than an empty cell, and the sync copies the
+  // cell through verbatim, so a labelled row would render with a lone dash in
+  // it. Deliberately does NOT match "no" or "0" — for a field like rental
+  // restrictions those are real answers.
+  var NO_INFO_RE = new RegExp(
+    '^(?:' +
+      '[\\s\\-–—_.·•*,;:/\\\\|]+' +   // only punctuation/dashes/dots
+      '|n\\/?a\\.?|n\\.a\\.?|nan|none|null|nil' +
+      '|tbd|tba|pending' +
+      '|no\\s*info(?:rmation)?|sin\\s*informaci[oó]n|sin\\s*info|no\\s*aplica' +
+    ')$', 'i');
+
+  function isNoInfo(v) {
+    return typeof v === 'string' && (v.trim() === '' || NO_INFO_RE.test(v.trim()));
+  }
+
+  // Returns true if a value counts as "has real data".
+  // An array counts only when at least one entry is informative, so
+  // ["N/A"] and ["-"] are treated the same as an absent field.
   function hasData(val) {
     if (!val) return false;
-    if (Array.isArray(val)) return val.length > 0;
-    return true;
+    if (Array.isArray(val)) return val.some(function (v) { return !isNoInfo(v); });
+    return !isNoInfo(val);
+  }
+
+  // Drops the no-info entries from an array so a partially-filled field
+  // renders only its real lines.
+  function cleanList(val) {
+    return Array.isArray(val) ? val.filter(function (v) { return !isNoInfo(v); }) : val;
   }
 
 
@@ -763,10 +788,12 @@
     }
 
     // ── 3. DETAILS ───────────────────────────────────────────
-    var hasDetails = d.developer || d.architecture || d.interiorDesign ||
-      d.completionDate || d.theBuilding || d.depositStructure ||
-      d.stylishAmenities || d.parkingSpaces || d.rentalRestrictions ||
-      d.hoa || (d.contact && d.contact.length);
+    // Gated with hasData so a project whose only "detail" is a placeholder
+    // (e.g. rentalRestrictions: ["-"]) does not render an empty DETAILS heading.
+    var hasDetails = hasData(d.developer) || hasData(d.architecture) || hasData(d.interiorDesign) ||
+      hasData(d.completionDate) || hasData(d.theBuilding) || hasData(d.depositStructure) ||
+      hasData(d.stylishAmenities) || hasData(d.parkingSpaces) || hasData(d.rentalRestrictions) ||
+      hasData(d.hoa) || (d.contact && d.contact.length);
 
     if (hasDetails) {
       var detSec = makeSection('details');
@@ -780,7 +807,7 @@
       if (hasData(d.parkingSpaces)) {
         parkingNode = el('div');
         var pkUl = el('ul', 'detail-bullets');
-        d.parkingSpaces.forEach(function (line) { pkUl.appendChild(el('li', null, line)); });
+        cleanList(d.parkingSpaces).forEach(function (line) { pkUl.appendChild(el('li', null, line)); });
         parkingNode.appendChild(pkUl);
       }
 
@@ -795,12 +822,12 @@
       if (hasData(d.theBuilding))        fields.push({ label: 'THE BUILDING',         val: normalizeProse(d.theBuilding) });
       if (hasData(d.depositStructure)) {
         var depositVal = Array.isArray(d.depositStructure)
-          ? buildDepositStructureNode(d.depositStructure)
+          ? buildDepositStructureNode(cleanList(d.depositStructure))
           : d.depositStructure;
         fields.push({ label: 'DEPOSIT STRUCTURE', val: depositVal });
       }
       if (hasData(d.stylishAmenities))   fields.push({ label: 'STYLISH AMENITIES',    val: normalizeProse(d.stylishAmenities) });
-      if (hasData(d.rentalRestrictions)) fields.push({ label: 'RENTAL RESTRICTIONS',  val: d.rentalRestrictions });
+      if (hasData(d.rentalRestrictions)) fields.push({ label: 'RENTAL RESTRICTIONS',  val: cleanList(d.rentalRestrictions) });
       if (parkingNode)                   fields.push({ label: 'PARKING SPACES',       val: parkingNode });
       if (hasData(d.hoa))                fields.push({ label: 'HOA',                  val: d.hoa });
       if (contactNode)                   fields.push({ label: 'CONTACT CARD',         val: contactNode });

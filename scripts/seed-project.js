@@ -127,10 +127,30 @@ function cell(row, idx) {
   return (row[idx] || '').toString().trim();
 }
 
+// Values that mean "we don't have this". The Esqueleto records a missing answer
+// as "N/A" or "-" rather than leaving the cell blank, and copying that through
+// puts a labelled row holding nothing but a dash on the project page.
+// Deliberately does NOT match "no" or "0" — for a field like rental
+// restrictions those are real answers.
+// Keep in sync with siteSyncService.ts (dashboard sweep) and project.html.
+const NO_INFO_RE =
+  /^(?:[\s\-–—_.·•*,;:/\\|]+|n\/?a\.?|n\.a\.?|nan|none|null|nil|tbd|tba|pending|no\s*info(?:rmation)?|sin\s*informaci[oó]n|sin\s*info|no\s*aplica)$/i;
+
+function isNoInfo(value) {
+  const t = (value || '').trim();
+  return t === '' || NO_INFO_RE.test(t);
+}
+
+/** Trimmed cell, or null when it carries no information. */
+function text(row, idx) {
+  const v = cell(row, idx);
+  return isNoInfo(v) ? null : v;
+}
+
 function multiline(row, idx) {
   const v = cell(row, idx);
   if (!v) return null;
-  const lines = v.split('\n').map(s => s.trim()).filter(Boolean);
+  const lines = v.split('\n').map(s => s.trim()).filter(s => s && !isNoInfo(s));
   return lines.length ? lines : null;
 }
 
@@ -228,18 +248,20 @@ async function seedProject(projectName, tpDataName = null, preloaded = null) {
 
   // Build the updated project fields
   const updates = {
-    startingPrice:      tpRow ? cell(tpRow, TP.startingPrice)    || null : undefined,
-    address:            cell(esqRow, ESQ.address)                || null,
-    developer:          cell(esqRow, ESQ.developer)              || null,
-    architecture:       cell(esqRow, ESQ.architecture)           || null,
-    interiorDesign:     cell(esqRow, ESQ.interiorDesign)         || null,
-    completionDate:     cell(esqRow, ESQ.completionDate)         || null,
-    theBuilding:        tpRow ? cell(tpRow, TP.theBuilding)       || null : undefined,
+    startingPrice:      tpRow ? text(tpRow, TP.startingPrice) : undefined,
+    address:            text(esqRow, ESQ.address),
+    developer:          text(esqRow, ESQ.developer),
+    architecture:       text(esqRow, ESQ.architecture),
+    interiorDesign:     text(esqRow, ESQ.interiorDesign),
+    completionDate:     text(esqRow, ESQ.completionDate),
+    theBuilding:        tpRow ? text(tpRow, TP.theBuilding) : undefined,
     depositStructure:   multiline(esqRow, ESQ.depositStructure),
-    stylishAmenities:   tpRow ? cell(tpRow, TP.stylishAmenities)  || null : undefined,
+    stylishAmenities:   tpRow ? text(tpRow, TP.stylishAmenities) : undefined,
     parkingSpaces:      multiline(esqRow, ESQ.parkingSpaces),
     rentalRestrictions: multiline(esqRow, ESQ.rentalRestrictions),
-    hoa:                buildHoaValue(cell(esqRow, ESQ.hoa), (hoaNotes && hoaNotes[esqRowIdx]) || ''),
+    hoa:                isNoInfo(cell(esqRow, ESQ.hoa))
+                          ? null
+                          : buildHoaValue(cell(esqRow, ESQ.hoa), (hoaNotes && hoaNotes[esqRowIdx]) || ''),
     contact:            extractOptionAContact(esqRow),
   };
 
