@@ -2132,7 +2132,7 @@
     "name": "619 Residences by Foster + Partners + Nobu Hospitality",
     "esqueletoName": "619 Residences by Foster + Partners + Nobu Hospitality",
     "tpDataName": "619 Brickell - NOBU",
-    "startingPrice": "$2.8M",
+    "startingPrice": "$2.9M",
     "thumbnail": "/images/renders/619-residences.jpg",
     "hero": "/images/renders/619-residences.jpg",
     "buildingDescription": "A modern Brickell landmark marrying bay-oriented architecture with Nobu's understated elegance.",
@@ -2929,7 +2929,7 @@
     "name": "9900 West Bay Harbor Islands",
     "tpDataName": "9900 West",
     "section": "Other Projects",
-    "startingPrice": "$2M",
+    "startingPrice": "$3.9M",
     "thumbnail": "/images/renders/9900-west.jpg",
     "hero": "/images/renders/9900-west.jpg",
     "theBuilding": "9900 West offers a variety of units with different sizes ranging from 1,258 to 3,360 Sq. Ft. The building comprises seven floors and 23 two-to-four-bedroom residences.",
@@ -6152,8 +6152,7 @@
     "priceList": {
       "driveFileId": "1XLENIGzocDT9naSEEPt4URAYvxPeciRZ",
       "createdAt": "As of May 26, 2026"
-    },
-    "contact": null
+    }
   },
   {
     "slug": "armani-casa",
@@ -13049,7 +13048,7 @@
     "name": "Edge House Miami",
     "tpDataName": "Edge House Miami",
     "section": "Other Projects",
-    "startingPrice": "$573K",
+    "startingPrice": "$545K",
     "thumbnail": "/images/renders/edge-house-miami.jpg",
     "hero": "/images/renders/edge-house-miami.jpg",
     "theBuilding": "An architecturally iconic 57-story high rise residential building, offering 592 residences from studios to 3 bedrooms.",
@@ -16851,8 +16850,7 @@
     "priceList": {
       "driveFileId": "18FkofuLSlZDjf7xnzz9g2pWmOvwmA5WK",
       "createdAt": "As of May 26, 2026"
-    },
-    "contact": null
+    }
   },
   {
     "slug": "glass-house-boca-raton",
@@ -17436,7 +17434,7 @@
     "name": "House of Wellness Brickell",
     "tpDataName": "House of Wellness Brickell",
     "section": "Other Projects",
-    "startingPrice": "$415K",
+    "startingPrice": "$388K",
     "thumbnail": "/images/renders/house-of-wellness-brickell.png",
     "hero": "/images/renders/house-of-wellness-brickell.png",
     "theBuilding": "This 34 floors building features 656 units from Studios to 2-bedroom residences ranging 337 - 676 Sq. Ft.",
@@ -17840,7 +17838,7 @@
     "name": "Icon Beach Residences Hollywood",
     "tpDataName": "Icon Beach Residences Hollywood",
     "section": "Other Projects",
-    "startingPrice": "$1.1M",
+    "startingPrice": "$1.2M",
     "thumbnail": "/images/renders/icon-beach-residences-hollywood.jpg",
     "hero": "/images/renders/icon-beach-residences-hollywood.jpg",
     "theBuilding": "Boasting stunning bay and ocean views, this 38-story building houses 350 exclusive units. Designed to cater to varied needs, it offers one to three-bedroom options.",
@@ -19840,7 +19838,7 @@
     "esqueletoName": "Lilli Miami Edgewater",
     "section": "Other Projects",
     "isNew": false,
-    "startingPrice": "$1.7M",
+    "startingPrice": "$1.6M",
     "thumbnail": "/api/render?id=16T9CqkSmgKn9b6VKCBMMuR3FA527aWox",
     "hero": "/api/render?id=16T9CqkSmgKn9b6VKCBMMuR3FA527aWox",
     "projectLogo": "/images/logos/lilli-miami-edgewater.png",
@@ -21969,7 +21967,7 @@
     "name": "Mr. C Residences Boca Raton",
     "tpDataName": "Mr. C Residences Boca Raton",
     "section": "Top Projects",
-    "startingPrice": "$2M",
+    "startingPrice": "$2.1M",
     "thumbnail": "/images/renders/mr-c-residences-boca-raton.jpg",
     "hero": "/images/renders/mr-c-residences-boca-raton.jpg",
     "theBuilding": "This magnificent building with 12 floors includes 133 units ranging from 2- to 3-bedrooms and from 1,700 Sq. Ft. to 2,400 Sq. Ft. No furnished.",
@@ -28474,8 +28472,7 @@
     "priceList": {
       "driveFileId": "1poo9OTyC_ZSH2kVF0hkOl-rCtc8u2TD8",
       "createdAt": "As of May 26, 2026"
-    },
-    "contact": null
+    }
   },
   {
     "slug": "palazzo-del-sol",
@@ -32448,8 +32445,7 @@
     "priceList": {
       "kind": "canceled",
       "heading": "PROJECT CANCELED"
-    },
-    "contact": null
+    }
   },
   {
     "slug": "rivage-bal-harbour",
@@ -34690,7 +34686,7 @@
     "name": "Salato Pompano Beach",
     "tpDataName": "Salato",
     "section": "Other Projects",
-    "startingPrice": "$3M",
+    "startingPrice": "$2.7M",
     "thumbnail": "/images/renders/salato.jpg",
     "hero": "/images/renders/salato.jpg",
     "theBuilding": "40 private oceanfront residences, including six exquisite penthouses ranging from 2,106 to 3,354 Sq. Ft. with 3-bedroom layouts and expansive deep terraces.",
@@ -34968,7 +34964,7 @@
     "name": "Shell Bay by Auberge Hallandale",
     "tpDataName": "Shell Bay by Auberge",
     "section": "Other Projects",
-    "startingPrice": "$2M",
+    "startingPrice": "$2.4M",
     "thumbnail": "/images/renders/shell-bay-by-auberge.jpg",
     "hero": "/images/renders/shell-bay-by-auberge.jpg",
     "theBuilding": "100 luxurious residences over 20 stories with one-to-four-bedroom floor plans. Also featuring an exclusive collection of penthouses with private outdoor spaces and plunge pools in select units.",
@@ -35583,7 +35579,7 @@
     "name": "Shore Club Private Collections Miami Beach",
     "tpDataName": "Shore Club Private Collection Residences",
     "section": "Top Projects",
-    "startingPrice": "$4.9M",
+    "startingPrice": "$10.2M",
     "thumbnail": "/images/renders/shore-club-private-collection-residences.jpg",
     "hero": "/images/renders/shore-club-private-collection-residences.jpg",
     "theBuilding": "This reimagined landmark offers private homes, blending classic yacht design and Art Deco allure for an exceptional oceanfront lifestyle.",
@@ -40701,7 +40697,7 @@
     "slug": "the-perigon",
     "name": "The Perigon Miami Beach",
     "esqueletoName": "The Perigon Miami Beach",
-    "startingPrice": "$12.5M",
+    "startingPrice": "$1.8M",
     "thumbnail": "/images/renders/the-perigon.jpg",
     "hero": "/images/renders/the-perigon.jpg",
     "buildingDescription": "",
@@ -41917,7 +41913,7 @@
     "slug": "mandarin-oriental-miami",
     "name": "The Residences at Mandarin Oriental, Miami",
     "esqueletoName": "The Residences at Mandarin Oriental, Miami",
-    "startingPrice": "$7.1M",
+    "startingPrice": "$10.2M",
     "thumbnail": "/images/renders/mandarin-oriental-miami.jpg",
     "hero": "/images/renders/mandarin-oriental-miami.jpg",
     "buildingDescription": "",
@@ -41939,7 +41935,7 @@
     "developer": "Swire Properties",
     "architecture": "Kohn Pedersen Fox Associates",
     "interiorDesign": "Tristan Auer & Laura Gonzalez",
-    "completionDate": "2030",
+    "completionDate": "2031",
     "depositStructure": [
       "10% at contract",
       "10% 90 days after contract",
@@ -41969,7 +41965,7 @@
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Brickell Key",
     "filterStatus": "Pre-construction",
-    "filterYear": "2030",
+    "filterYear": "2031",
     "factSheets": [
       {
         "title": "North Tower - EN",
@@ -43346,7 +43342,7 @@
     "name": "The Ritz-Carlton Residences® Naples",
     "tpDataName": "The Ritz-Carlton Residences® Naples",
     "section": "Other Projects",
-    "startingPrice": "$4.2M",
+    "startingPrice": "$5.2M",
     "thumbnail": "/images/renders/the-ritz-carlton-residences-naples.jpg",
     "hero": "/images/renders/the-ritz-carlton-residences-naples.jpg",
     "theBuilding": "The project comprises two towers rising up to 12 floors, housing a total of 128 units with spacious layouts ranging from three to five bedrooms.",
@@ -43646,7 +43642,7 @@
     "slug": "ritz-carlton-palm-beach-gardens",
     "name": "The Ritz-Carlton Residences® Palm Beach Gardens",
     "esqueletoName": "The Ritz-Carlton Residences® Palm Beach Gardens",
-    "startingPrice": "$4.1M",
+    "startingPrice": "$3.8M",
     "thumbnail": "/images/renders/ritz-carlton-palm-beach-gardens.jpg",
     "hero": "/images/renders/ritz-carlton-palm-beach-gardens.jpg",
     "buildingDescription": "",
@@ -52371,7 +52367,7 @@
     "esqueletoName": "One Hollywood Residences",
     "section": "Other Projects",
     "isNew": false,
-    "startingPrice": "$463K",
+    "startingPrice": "$462K",
     "thumbnail": "/api/render?id=1_s3ti4hBWdymjQ_gVYXbr2oKBIWJfPrf",
     "hero": "/api/render?id=1_s3ti4hBWdymjQ_gVYXbr2oKBIWJfPrf",
     "projectLogo": null,
