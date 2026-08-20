@@ -41247,12 +41247,7 @@
     "architecture": "Peter Marino & Kobi Karp Architecture",
     "interiorDesign": "Peter Marino",
     "completionDate": "2029",
-    "depositStructure": [
-      "30% at contract",
-      "10% at pouring of grade floor slab",
-      "10% at reaching the floor of selected unit",
-      "50% at closing (Q4 2027)"
-    ],
+    "depositStructure": null,
     "parkingSpaces": null,
     "rentalRestrictions": null,
     "hoa": "$4.00",
