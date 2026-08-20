@@ -41246,7 +41246,7 @@
     "developer": "SHVO",
     "architecture": "Peter Marino & Kobi Karp Architecture",
     "interiorDesign": "Peter Marino",
-    "completionDate": null,
+    "completionDate": "2029",
     "depositStructure": [
       "30% at contract",
       "10% at pouring of grade floor slab",
@@ -41272,7 +41272,7 @@
     "filterCounty": "Miami-Dade County",
     "filterLocation": "Miami Beach",
     "filterStatus": "Pre-construction",
-    "filterYear": null,
+    "filterYear": "2029",
     "factSheets": [
       {
         "title": "",
