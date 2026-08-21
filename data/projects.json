@@ -5080,7 +5080,12 @@
         "driveFileId": "162jC0JhniIjV922I__7eMri7BZoFP4LY"
       }
     ],
-    "floorPlans": [],
+    "floorPlans": [
+      {
+        "title": "",
+        "driveFileId": "1UIvIOsOKt0ZSSPnBJ5v1J7YL4vTKIVkZ"
+      }
+    ],
     "renderings": [
       {
         "driveFileId": "13k5sdJAeWpOw43BRZEUg1gb-HEIscQoU",
