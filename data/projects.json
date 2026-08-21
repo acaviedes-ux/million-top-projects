@@ -35876,7 +35876,12 @@
     "hero": "/images/renders/sixth-rio.jpg",
     "theBuilding": "100 luxurious and lofty residences, from 1 to 3 bedrooms in an 8-story unique building.",
     "stylishAmenities": "A breathtaking sky terrace featuring an infinity edge pool and private cabanas for the ultimate relaxation. The resident club room offers a cozy lounge and pool table to unwind and socialize. A state-of-the-art modern fitness center keeps residents active, while the tropical outdoor lounge & dining spaces elevate their daily experience.",
-    "brochures": [],
+    "brochures": [
+      {
+        "title": "",
+        "driveFileId": "1JWgyPylyzslMMy4k3tXDbeIGPVlgigtZ"
+      }
+    ],
     "esqueletoName": "Sixth & Rio Fort Lauderdale",
     "address": "501 Southeast Sixth Avenue, Fort Lauderdale, FL 33301",
     "developer": "Ocean Land",
