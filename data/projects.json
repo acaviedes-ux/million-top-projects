@@ -12841,7 +12841,11 @@
     ],
     "floorPlans": [
       {
-        "title": "",
+        "title": "EN",
+        "driveFileId": "1_6wfLcqYdl3HXdaKPLK3jPO5_qAJzYUV"
+      },
+      {
+        "title": "ES",
         "driveFileId": "1m486r6DR9czoh8rZGh9Urq7EO0iwjViy"
       }
     ],
