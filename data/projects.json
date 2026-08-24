@@ -13340,14 +13340,24 @@
       }
     ],
     "floorPlans": [],
-    "priceRange": {
-      "driveFileId": "1NsQykxLWviGz_dZ2YvXesqNadSh7kU01",
-      "createdAt": "As of July 30, 2026",
-      "disclaimer": {
-        "type": "warning",
-        "text": "Do not share the Price List, specific prices, Fact Sheets or Floor Plans with clients. All pricing information, Fact Sheets and Floor Plans are for reference only and may be subject to change during the pre-launch phase. Share price ranges only and verify all information with the in-house team before presenting it to clients."
+    "priceDocs": [
+      {
+        "driveFileId": "1lkqyylLlKSdkGMJ3_XWAfsKONludJcB7",
+        "createdAt": "As of August 24, 2026",
+        "title": "Edgeworth West Palm Beach - Price List",
+        "kind": "list",
+        "disclaimer": {
+          "type": "warning",
+          "text": "Do not share the Price List, specific prices, Fact Sheets or Floor Plans with clients. All pricing information, Fact Sheets and Floor Plans are for reference only and may be subject to change during the pre-launch phase. Share price ranges only and verify all information with the in-house team before presenting it to clients."
+        }
+      },
+      {
+        "driveFileId": "1NsQykxLWviGz_dZ2YvXesqNadSh7kU01",
+        "createdAt": "As of July 30, 2026",
+        "title": "Edgeworth West Palm Beach - Price Range",
+        "kind": "range"
       }
-    }
+    ]
   },
   {
     "slug": "edition-residences-edgewater",
