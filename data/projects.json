@@ -13339,7 +13339,12 @@
         "alt": "Edgeworth - Rendering 10"
       }
     ],
-    "floorPlans": [],
+    "floorPlans": [
+      {
+        "title": "",
+        "driveFileId": "13NK7hvgUTaEj3rAFvlvCrgfiqNHKh3BN"
+      }
+    ],
     "priceDocs": [
       {
         "driveFileId": "1u3SmjbCFa254eyVhO3tcbgncnFkR6kHq",
