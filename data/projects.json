@@ -52368,7 +52368,13 @@
       "60% at closing"
     ],
     "hoa": "$1.60",
-    "contact": null,
+    "contact": [
+      {
+        "name": "Marjorie Santander",
+        "phone": "+1 (305) 281-0187",
+        "email": "Marjoriesantander@cervera.com"
+      }
+    ],
     "brochures": [],
     "factSheets": [
       {
