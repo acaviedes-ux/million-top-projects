@@ -6154,11 +6154,11 @@
       }
     ],
     "presentations": [],
+    "contact": null,
     "priceList": {
       "driveFileId": "1XLENIGzocDT9naSEEPt4URAYvxPeciRZ",
       "createdAt": "As of May 26, 2026"
-    },
-    "contact": null
+    }
   },
   {
     "slug": "armani-casa",
@@ -12188,8 +12188,8 @@
     ],
     "presentations": [],
     "priceList": {
-      "driveFileId": "12eYf1jLkqtyXpwii1tMSnNEaHOb6h_ro",
-      "createdAt": "As of July 14, 2026"
+      "driveFileId": "1AKC8a1sZqauwzy8vp90SIu4hP77UrHcP",
+      "createdAt": "As of August 26, 2026"
     }
   },
   {
@@ -16916,11 +16916,11 @@
         "driveFileId": "1oZ-WqLg6C4jAPktIYeXvGQb8t0f0F3Ch"
       }
     ],
+    "contact": null,
     "priceList": {
       "driveFileId": "18FkofuLSlZDjf7xnzz9g2pWmOvwmA5WK",
       "createdAt": "As of May 26, 2026"
-    },
-    "contact": null
+    }
   },
   {
     "slug": "glass-house-boca-raton",
@@ -21384,8 +21384,8 @@
         "kind": "list"
       },
       {
-        "driveFileId": "1D5hRGQgQvV9ibXyPvW9IVEl6ll5TU63z",
-        "createdAt": "As of August 26, 2026",
+        "driveFileId": "1Z94iUgatauWi_b_3FQmeSMlAXq5-3Avv",
+        "createdAt": "As of August 27, 2026",
         "title": "Miami Tropic Residences - Price Range",
         "kind": "range"
       }
@@ -28539,11 +28539,11 @@
         "driveFileId": "17BBL0yAcu-0fx7Hk3DSyEPR_BTTu_oRj"
       }
     ],
+    "contact": null,
     "priceList": {
       "driveFileId": "1poo9OTyC_ZSH2kVF0hkOl-rCtc8u2TD8",
       "createdAt": "As of May 26, 2026"
-    },
-    "contact": null
+    }
   },
   {
     "slug": "palazzo-del-sol",
@@ -52653,17 +52653,17 @@
         "alt": "One Hollywood Residences - Owners Lounge 3"
       }
     ],
-    "priceList": {
-      "driveFileId": "1RwzBc0kunDMIDPXv4lQIKRfza7hba8an",
-      "createdAt": "As of May 26, 2026"
-    },
     "contact": [
       {
         "name": "Christel",
         "phone": "N/A",
         "email": null
       }
-    ]
+    ],
+    "priceList": {
+      "driveFileId": "1RwzBc0kunDMIDPXv4lQIKRfza7hba8an",
+      "createdAt": "As of May 26, 2026"
+    }
   },
   {
     "slug": "waldorf-astoria-residences-sarasota",
@@ -52767,12 +52767,12 @@
         "alt": "Waldorf Astoria Residences Sarasota - Hummingbird 2"
       }
     ],
+    "thumbnail": "/api/render?id=17e8Yy1vUCrWD5b_JHBroTN5s4Sm9964H",
+    "hero": "/api/render?id=17e8Yy1vUCrWD5b_JHBroTN5s4Sm9964H",
+    "projectLogo": "/images/logos/waldorf-astoria-residences-sarasota.png?v=2",
     "priceList": {
       "driveFileId": "1lkbejC2aGKB-Hb__TljdzGJU8x-GF5Se",
       "createdAt": "As of August 19, 2026"
-    },
-    "thumbnail": "/api/render?id=17e8Yy1vUCrWD5b_JHBroTN5s4Sm9964H",
-    "hero": "/api/render?id=17e8Yy1vUCrWD5b_JHBroTN5s4Sm9964H",
-    "projectLogo": "/images/logos/waldorf-astoria-residences-sarasota.png?v=2"
+    }
   }
 ]
