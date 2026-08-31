@@ -41891,20 +41891,10 @@
         "alt": "Porte Cochere 3"
       }
     ],
-    "priceDocs": [
-      {
-        "driveFileId": "1r1f5FH_yd7zxsk0uhZx2LIc0x_yvP-Yi",
-        "createdAt": "As of July 22, 2026",
-        "title": "The Residences at 1428 Brickell - Price List",
-        "kind": "list"
-      },
-      {
-        "driveFileId": "1zeDBxSzzNSUdJ-mxIi2bH9ujYQ8vx2ms",
-        "createdAt": "As of August 31, 2026",
-        "title": "The Residences at 1428 Brickell - Price Range",
-        "kind": "range"
-      }
-    ]
+    "priceList": {
+      "driveFileId": "1r1f5FH_yd7zxsk0uhZx2LIc0x_yvP-Yi",
+      "createdAt": "As of July 22, 2026"
+    }
   },
   {
     "slug": "the-residences-at-mandarin-oriental-boca-raton",
