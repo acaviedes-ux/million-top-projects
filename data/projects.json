@@ -5070,8 +5070,20 @@
     ],
     "brochures": [
       {
-        "title": "",
+        "title": "EN",
         "driveFileId": "1LpuiccrQRU5EFOSBe1LYzKPAZrekbtzI"
+      },
+      {
+        "title": "IT",
+        "driveFileId": "1VP3yM2tUNz8uZUUaweMJbLQD3KQzWCt9"
+      },
+      {
+        "title": "PT",
+        "driveFileId": "1w9fFobpUM--bldi1fK_wWDUA6gFs1Jzv"
+      },
+      {
+        "title": "TK",
+        "driveFileId": "1b1tpkz9l5wLZT3ac7GQzZWyRHcy19WZj"
       }
     ],
     "factSheets": [
@@ -16983,72 +16995,64 @@
     ],
     "renderings": [
       {
-        "driveFileId": "1AHHmTaEIohDKHfXEvFg_CJM5h3AK2NFZ",
+        "driveFileId": "1vS6I--9FdKFk0qhnOkvxp2XipRTG8FuX",
         "alt": "Glass House - Arrival"
       },
       {
-        "driveFileId": "1Ol7qBWtnpZNCM48VZO0UJm6AlPpZAuTF",
+        "driveFileId": "1dcsDV8kOzIBf9bBavORQOXWoCY2E02ER",
         "alt": "Glass House - Fitness Center"
       },
       {
-        "driveFileId": "1vqvKaiZWpQOGdZGbkmSX-ghoKEaJbYM-",
+        "driveFileId": "1Nv4zBicCtIvOe4L7EoF5wN4nyusxnTk1",
         "alt": "Glass House - Hummingbird"
       },
       {
-        "driveFileId": "13nJCgrBKxFt1a9cwH8rvn2jyJXyTjbp_",
+        "driveFileId": "1zHVIK7AKc0G8uGsWOuNjSTKqGDlIlePm",
         "alt": "Glass House - Kitchen"
       },
       {
-        "driveFileId": "1sPHk_LN880zJutuk0AUvg7HnM6FyWzza",
+        "driveFileId": "1JFv-jGowyVX1dueQdJjhIKODbZepEsIO",
         "alt": "Glass House - Living Room"
       },
       {
-        "driveFileId": "1tTYVdUHps0Nw2aVGteM7JhYFLCh-en0T",
+        "driveFileId": "1h39BI_wbyI-Z5vwSRNHniUj8ZZ1z11RV",
         "alt": "Glass House - Living Room Vignette"
       },
       {
-        "driveFileId": "16Ea2-hhMSnkqiSf4gubHSmF05V6NBEBy",
+        "driveFileId": "1DpOfNGyemYBpN69dYrEWPMoN18lBcW1u",
+        "alt": "Glass House - Lobby"
+      },
+      {
+        "driveFileId": "1XO3vFhZPg_nWvtOm-bY5SzBuoI8iPTzk",
         "alt": "Glass House - Palmetto Lounge"
       },
       {
-        "driveFileId": "1K6igqltBFoBuvsMSkrwsgbPtxE2oQ2KI",
-        "alt": "Glass House - Pool Deck"
-      },
-      {
-        "driveFileId": "1ZyQtSNhX6Cwt_y_gjMP5f0T49_Ngxw-4",
-        "alt": "Glass House - Pool Vignette"
-      },
-      {
-        "driveFileId": "1_I4jfVncRJHo3o33H8lFYAk4V8vN1FOO",
+        "driveFileId": "1cD2FKiytdHUXpxCTnkPlo2dck7tHd60u",
         "alt": "Glass House - Primary Bathroom"
       },
       {
-        "driveFileId": "13CWtj4cp7oADaavaWjlqJQ34qvkuXLCp",
-        "alt": "Glass House - Primary Bathroom Frosted"
-      },
-      {
-        "driveFileId": "1mhE0UrXO6Jfuq9oBFOc3dVcQUd20AVL9",
+        "driveFileId": "1T-maPH5orDzr5Ysdm9KMnzZT7m2spf07",
         "alt": "Glass House - Primary Bedroom"
       },
       {
-        "driveFileId": "1W0pXJ3rNATjrwN_YYhv6Al9Im96opy6H",
+        "driveFileId": "1zsejpC0Gjp_HV8Ow0zO6IEf5D9l8nn0Q",
+        "alt": "Glass House - Rooftop"
+      },
+      {
+        "driveFileId": "1xkXGbhBGawlYCG1g7___AYl1Cup5Ge7s",
+        "alt": "Glass House - Rooftop Vignette"
+      },
+      {
+        "driveFileId": "12FBb3JobLMTQUXdj9q4WS9rY1zjcl1Ex",
         "alt": "Glass House - Spa"
       },
       {
-        "driveFileId": "1g968tOk0M6-7sht6tkzPKfV9CHzzYJKc",
-        "alt": "Glass House - Hero 1"
+        "driveFileId": "1p0K2uDSKhuY3hqMvBNiZWL4IzLSY0AoN",
+        "alt": "Glass House - Hero Shot 1"
       },
       {
-        "driveFileId": "16w8k0y8hpUuz80zxMRtWOUuSPO1p0B6-",
-        "alt": "Glass House - Lobby 1"
-      },
-      {
-        "driveFileId": "1eh0Wle1aK1487ATEPWMzH-XbrQO9qtPQ",
+        "driveFileId": "18Edut7bkQCzQQupYZSLsSmtgwbmOFrEy",
         "alt": "Glass House - Hero 2"
-      },
-      {
-        "driveFileId": "1u-a1aEcIeUgu54loJhxCbs333bpaOuoi",
-        "alt": "Glass House - Lobby 2"
       }
     ],
     "floorPlans": [
