@@ -11694,8 +11694,8 @@
       }
     ],
     "priceList": {
-      "driveFileId": "1-lhfEiCHuKBW7kT9dHgMVBI8l3EamCwo",
-      "createdAt": "As of July 24, 2026"
+      "driveFileId": "1zD7u7XATKs0n2WTO_7Ci8P0ywC_-eXN-",
+      "createdAt": "As of September 1, 2026"
     }
   },
   {
@@ -51642,20 +51642,10 @@
         "email": "mark@seleneftl.com"
       }
     ],
-    "priceDocs": [
-      {
-        "driveFileId": "1SQPqPSO4HV1EqMWi8Mg9vi5RZqDRjvlf",
-        "createdAt": "As of June 12, 2026",
-        "title": "Selene Oceanfront Residences - Price List",
-        "kind": "list"
-      },
-      {
-        "driveFileId": "15MKWsTE1tTzs4-_mRKpZHT_rvWJ3c8gq",
-        "createdAt": "As of September 1, 2026",
-        "title": "Selene Oceanfront Residences - Price Range",
-        "kind": "range"
-      }
-    ]
+    "priceList": {
+      "driveFileId": "1SQPqPSO4HV1EqMWi8Mg9vi5RZqDRjvlf",
+      "createdAt": "As of June 12, 2026"
+    }
   },
   {
     "slug": "bay-villas-bay-harbor-islands",
