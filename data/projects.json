@@ -51642,10 +51642,20 @@
         "email": "mark@seleneftl.com"
       }
     ],
-    "priceList": {
-      "driveFileId": "1SQPqPSO4HV1EqMWi8Mg9vi5RZqDRjvlf",
-      "createdAt": "As of June 12, 2026"
-    }
+    "priceDocs": [
+      {
+        "driveFileId": "1SQPqPSO4HV1EqMWi8Mg9vi5RZqDRjvlf",
+        "createdAt": "As of June 12, 2026",
+        "title": "Selene Oceanfront Residences - Price List",
+        "kind": "list"
+      },
+      {
+        "driveFileId": "15MKWsTE1tTzs4-_mRKpZHT_rvWJ3c8gq",
+        "createdAt": "As of September 1, 2026",
+        "title": "Selene Oceanfront Residences - Price Range",
+        "kind": "range"
+      }
+    ]
   },
   {
     "slug": "bay-villas-bay-harbor-islands",
