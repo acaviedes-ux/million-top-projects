@@ -52813,5 +52813,348 @@
     "floorPlans": [],
     "presentations": [],
     "renderings": []
+  },
+  {
+    "slug": "the-halcyon-residences-marina-naples",
+    "name": "The Halcyon Residences & Marina Naples",
+    "esqueletoName": "The Halcyon Residences & Marina Naples",
+    "tpDataName": "The Halcyon Residences & Marina Naples",
+    "section": "Other Projects",
+    "theBuilding": "The Halcyon is an exclusive collection of 66 estate-scale residences overlooking the Naples waterfront. Spacious two- to four-bedroom homes feature contemporary architecture, floor-to-ceiling windows, generous terraces, and refined finishes, all less than a mile from Fifth Avenue South.",
+    "stylishAmenities": "Over 50,000 square feet of amenities include a waterfront infinity pool, fitness and wellness center, sports courts, elegant lounges, and co-working spaces. A private 120-slip marina and dedicated concierge services complete the effortless resort-style experience.",
+    "filterCounty": "Collier County",
+    "filterLocation": "Naples",
+    "filterStatus": "Pre-construction",
+    "filterYear": "2029",
+    "isNew": true,
+    "address": "1933 Davis Boulevard, Naples, FL 34104",
+    "completionDate": "2029",
+    "developer": "Henley & Gillette Developments",
+    "architecture": "MHK Architecture",
+    "interiorDesign": "Megan Sherwood Designs",
+    "rentalRestrictions": [
+      "30 days minimum. 2 times per year."
+    ],
+    "parkingSpaces": [
+      "2 assigned parking spaces per unit."
+    ],
+    "depositStructure": [
+      "10% at contract",
+      "15% at groungbreaking",
+      "10% at top-off",
+      "65% at closing"
+    ],
+    "hoa": "$1.66",
+    "contact": [
+      {
+        "name": "Emma Rickwood",
+        "phone": "+1 (239) 248-3132",
+        "email": "emmarickwood@henleyim.com"
+      }
+    ],
+    "brochures": [
+      {
+        "title": "",
+        "driveFileId": "1gfuNT2wEh4YPCWSctKinw4-VUKFKViC7"
+      },
+      {
+        "title": "",
+        "driveFileId": "1cVhuN6dlgeWmiv10EouhvxiiJftS3-XC"
+      },
+      {
+        "title": "",
+        "driveFileId": "1DeDbzfXx_-xaon-rej_6SAJel-y7MhgG"
+      },
+      {
+        "title": "",
+        "driveFileId": "14T66twqX9XcaHC-7KxYNqO5ljWGFTcZD"
+      }
+    ],
+    "factSheets": [
+      {
+        "title": "",
+        "driveFileId": "17LI7sVq0OwVmEyIWjGgU-MTOj3lNnHfF"
+      },
+      {
+        "title": "",
+        "driveFileId": "12Bkb7SlvKqBLYIFb-_Z6ppHvmFB6iRqs"
+      },
+      {
+        "title": "FAQs",
+        "driveFileId": "1OyCG1Vc-FBrL1AAHotKogIETe78CYCaF"
+      },
+      {
+        "title": "Finishes",
+        "driveFileId": "1fPx7pMD_5_LcV_kEURMNYsTj2vpJ3KHF"
+      }
+    ],
+    "floorPlans": [
+      {
+        "title": "",
+        "driveFileId": "1hQRSCD1ZHmloUM3Mhatgyjrjh71xHiOR"
+      }
+    ],
+    "presentations": [],
+    "renderings": [
+      {
+        "driveFileId": "1GuylpUzw5z-HTxDGKfAM_CMowUGMG1MG",
+        "alt": "The Halcyon Residences - Aerial South View"
+      },
+      {
+        "driveFileId": "1GCAcSh997yYvUCfl0cOADGIsHj1Gs0rE",
+        "alt": "The Halcyon Residences - Captain's Club - Lifestyle View"
+      },
+      {
+        "driveFileId": "1PGwnYohDY_59oBMXRP3Yu0-mJSQS1-hw",
+        "alt": "The Halcyon Residences - Captain's Club - Main View"
+      },
+      {
+        "driveFileId": "1Z-OfjH5cmaNNj70h4vEv9uA5qmxAVdbo",
+        "alt": "The Halcyon Residences - Central Garden Courtyard"
+      },
+      {
+        "driveFileId": "1e_ZOAuqI9PSdC5yW10EITS5auoaPV-eZ",
+        "alt": "The Halcyon Residences - Courtyard Yoga Lawn"
+      },
+      {
+        "driveFileId": "15fXdLqhTWh2fSzWBrVnM74Lw-X5R44v8",
+        "alt": "The Halcyon Residences - Exterior and Marina - Evening Hero"
+      },
+      {
+        "driveFileId": "1H4Fw4i3sECnf5AVYbfgappUUDmpL8vfs",
+        "alt": "The Halcyon Residences - Exterior Waterfront Sunset - West View"
+      },
+      {
+        "driveFileId": "1e28RWpnBrOwfVSDJqBNdvL-Wz548R5ed",
+        "alt": "The Halcyon Residences - Garden Promenade - Evening View"
+      },
+      {
+        "driveFileId": "1JrMtUByHqH1ZT7F_8koGYvgIvw27uyQ-",
+        "alt": "The Halcyon Residences - Gym"
+      },
+      {
+        "driveFileId": "1ApWQwoBqW6I-Cd07wo3C3tmWa2cTrbhR",
+        "alt": "The Halcyon Residences - Indoor-Outdoor Terrace - Evening Dining"
+      },
+      {
+        "driveFileId": "1qmChWfdmvrdlG_USOzopRPyP77Dprp7r",
+        "alt": "The Halcyon Residences - Indoor-Outdoor Terrace - Lifestyle View"
+      },
+      {
+        "driveFileId": "1BoGj8d5gvSkeEnBgEh2cWKGSavH6gfFq",
+        "alt": "The Halcyon Residences - Lobby - Main View"
+      },
+      {
+        "driveFileId": "1wJc4D2GAtc0SKtyB7f5WZcCQZg5nFi9Y",
+        "alt": "The Halcyon Residences - Lobby - Spiral Staircase Detail"
+      },
+      {
+        "driveFileId": "1GwmFCwnKx9j3H3fFByT_Y2RX-ZBH6MSI",
+        "alt": "The Halcyon Residences - Lobby Lounge - Garden View"
+      },
+      {
+        "driveFileId": "1Lim80eUrU7KN5pJ4vagolr3IKovGbh93",
+        "alt": "The Halcyon Residences - Lobby Lounge - Staircase View"
+      },
+      {
+        "driveFileId": "1Ib8mcX0l8pl9Ft4EP6sqQqcrEp0oVVoU",
+        "alt": "The Halcyon Residences - Main Entrance - Arrival Lifestyle"
+      },
+      {
+        "driveFileId": "1gAMlHdykXYxJYchyPDw4ZrZBVUYoYGQD",
+        "alt": "The Halcyon Residences - Main Entrance and Porte Cochere"
+      },
+      {
+        "driveFileId": "1-tZxzJg4FlWCxkFCOQLXgxxIRDhtol9g",
+        "alt": "The Halcyon Residences - Marina Lifestyle - Dockside Departure"
+      },
+      {
+        "driveFileId": "1ed_uPUzkDWdxeGi8fuVp9efjQmb5RxNY",
+        "alt": "The Halcyon Residences - Marina Lifestyle - Onboard Gathering"
+      },
+      {
+        "driveFileId": "16rNexPoMCS0N7wKUKSINSklYFIzxZ6Dq",
+        "alt": "The Halcyon Residences - Marina Lifestyle - Yacht Arrival"
+      },
+      {
+        "driveFileId": "1L5yzehX5g_bYbguQPgfI_szRtx9PehYD",
+        "alt": "The Halcyon Residences - Marina Lifestyle - Yacht Boarding"
+      },
+      {
+        "driveFileId": "1i9Ht28L8F8-ao9MSOEz4M2ZR78z6qhXy",
+        "alt": "The Halcyon Residences - Marina Promenade - Day View"
+      },
+      {
+        "driveFileId": "1ZC1Saxmo6WFU2g0W3ykC9llqAd1tRfm3",
+        "alt": "The Halcyon Residences - Mezzanine Lounge - Sunset View"
+      },
+      {
+        "driveFileId": "1suJJ0c2tHFeVvTxO5CKl_6B3Z03U07O9",
+        "alt": "The Halcyon Residences - Mezzanine Lounge and Bar"
+      },
+      {
+        "driveFileId": "1qJSJnfL0nLJc5Zkxi2dyl3eOPUeR20MS",
+        "alt": "The Halcyon Residences - Pickleball Court"
+      },
+      {
+        "driveFileId": "1nwcv41g3Tiou5TR-1HOPgajtZWoDe66C",
+        "alt": "The Halcyon Residences - Pool Deck - Day View"
+      },
+      {
+        "driveFileId": "1Pj9t0jPqbBAlkhSWGjnQfxINoq1-qrUg",
+        "alt": "The Halcyon Residences - Pool Deck - Lifestyle View"
+      },
+      {
+        "driveFileId": "1eSw_Mvs1NQoQh_RDKRazII-oh8mupvTs",
+        "alt": "The Halcyon Residences - Poolside Cabana - Evening View"
+      },
+      {
+        "driveFileId": "1QheBMzJQX_a1R8m8LGdUor67nBLIxplk",
+        "alt": "The Halcyon Residences - Primary Bathroom"
+      },
+      {
+        "driveFileId": "12-g3iKg5AKOyMZWw5IQCPLiJCWJKfdrc",
+        "alt": "The Halcyon Residences - Private Terrace - Sunset Gathering"
+      },
+      {
+        "driveFileId": "118aGWUUcM9_kugf9DU9nn9gegKHHV16k",
+        "alt": "The Halcyon Residences - Private Terrace - Waterfront Dining"
+      },
+      {
+        "driveFileId": "1adytMwkm7IMV6u_ysXYWw4FmQFucIMh9",
+        "alt": "The Halcyon Residences - Residence 14 Kitchen - Island View"
+      },
+      {
+        "driveFileId": "1ZO1Oh7ik3Nu5e2S-88vAZd1wJRV7jr76",
+        "alt": "The Halcyon Residences - Residence 14 Kitchen and Dining"
+      },
+      {
+        "driveFileId": "1UGGURI2Q3Oj7arhBq4mZF9VH3QiFDrmb",
+        "alt": "The Halcyon Residences - Residence 14 Living Room - Main View"
+      },
+      {
+        "driveFileId": "1BNbmlRw837zixaeH5zMfOi-9o7kICdv8",
+        "alt": "The Halcyon Residences - Residence 14 Terrace - Day View"
+      },
+      {
+        "driveFileId": "1ndXJ160B1ZozBCUKtiAIYvOAtkrzqWG9",
+        "alt": "The Halcyon Residences - Residence 7 Terrace"
+      },
+      {
+        "driveFileId": "1_VFQ48nfJWn1LVGjsh8dfKZ_ESON5EWc",
+        "alt": "The Halcyon Residences - Waterfront Garden Promenade - Sunset View"
+      },
+      {
+        "driveFileId": "1PWnXWSi8fmhsF2KnXKCCjHOp8YzUuMTb",
+        "alt": "The Halcyon Residences - Waterfront Terrace - Sunset Gathering"
+      },
+      {
+        "driveFileId": "1K2ZrnDMUEZwIijdzEhqhF_Hba8yzBsjd",
+        "alt": "Brochure Renderings - The Halcyon Residences & Marina Naples - Renderings 1"
+      },
+      {
+        "driveFileId": "1s0gRh7aJ9NWiFcP37DaDyKNCrGVJ_k2Z",
+        "alt": "The Halcyon Residences - Residence 13 Living Room and Kitchen - View 1"
+      },
+      {
+        "driveFileId": "1J37-lKedGm-ESiaHqNBTCGPA8LOn4Smf",
+        "alt": "The Halcyon Residences - Residence 14 Living Room - Fireplace View 1"
+      },
+      {
+        "driveFileId": "1Irhpu47SgWSBZ3aMV_Lxzh8QyDSTp6MH",
+        "alt": "Brochure Renderings - The Halcyon Residences & Marina Naples - Renderings 2"
+      },
+      {
+        "driveFileId": "1N9YMtHaLVXAnn9gRzctCEQsdOIgUnRgk",
+        "alt": "The Halcyon Residences - Residence 13 Living Room and Kitchen - View 2"
+      },
+      {
+        "driveFileId": "1VgJp1GNnvUOXYNuudo42QPt560aC3i1-",
+        "alt": "The Halcyon Residences - Residence 14 Living Room - Fireplace View 2"
+      },
+      {
+        "driveFileId": "10a8Cm4QJmBOkqSYwEWAERtAHimlWOqw3",
+        "alt": "Brochure Renderings - The Halcyon Residences & Marina Naples - Renderings 3"
+      },
+      {
+        "driveFileId": "1Dt1ai0KV7Q25GFHccPwkpfKR5rS8dUQ2",
+        "alt": "Brochure Renderings - The Halcyon Residences & Marina Naples - Renderings 4"
+      },
+      {
+        "driveFileId": "18w9lYHm3eWB1Y9itYypcmLwldC3VnPml",
+        "alt": "Brochure Renderings - The Halcyon Residences & Marina Naples - Renderings 5"
+      },
+      {
+        "driveFileId": "155ISNHn8wSPM16VoCsxIsUrO04ZXsBlw",
+        "alt": "Brochure Renderings - The Halcyon Residences & Marina Naples - Renderings 6"
+      },
+      {
+        "driveFileId": "1geoxKa0qwKYnj2ZSKepfk9hMhQFFs8Dz",
+        "alt": "Brochure Renderings - The Halcyon Residences & Marina Naples - Renderings 7"
+      },
+      {
+        "driveFileId": "1oZjaizSCy_Ba_uiDByiZNp1eJQqp3gg0",
+        "alt": "Brochure Renderings - The Halcyon Residences & Marina Naples - Renderings 8"
+      },
+      {
+        "driveFileId": "1t-ZrS8EThCJpYwwrY79Anuls2mcIhkxC",
+        "alt": "Brochure Renderings - The Halcyon Residences & Marina Naples - Renderings 9"
+      },
+      {
+        "driveFileId": "185tiLpmz1_lKNQHyx5tEiO4l84UCoO9b",
+        "alt": "Brochure Renderings - The Halcyon Residences & Marina Naples - Renderings 10"
+      },
+      {
+        "driveFileId": "1C5QbzfGIYOcoBpIqpD74TdeuhFwHbp6P",
+        "alt": "Brochure Renderings - The Halcyon Residences & Marina Naples - Renderings 11"
+      },
+      {
+        "driveFileId": "1jM6jcptJfaoFtGu-eDjdOd5qOxvpsXsX",
+        "alt": "Brochure Renderings - The Halcyon Residences & Marina Naples - Renderings 12"
+      },
+      {
+        "driveFileId": "14Jpnyi_yUNNg9wuBBDmOL8ZYlr6IkwnP",
+        "alt": "Brochure Renderings - The Halcyon Residences & Marina Naples - Renderings 13"
+      },
+      {
+        "driveFileId": "1YgfLOSxQ6l_HSZQqMrnG2jppDG3Jrifp",
+        "alt": "Brochure Renderings - The Halcyon Residences & Marina Naples - Renderings 14"
+      },
+      {
+        "driveFileId": "1XigErAavR08wA2wNBgMVFiT4KpPLz96E",
+        "alt": "Brochure Renderings - The Halcyon Residences & Marina Naples - Renderings 15"
+      },
+      {
+        "driveFileId": "1He4Nux0_g7_ykpBxzPoFq18D9S8Qm9qt",
+        "alt": "Brochure Renderings - The Halcyon Residences & Marina Naples - Renderings 16"
+      },
+      {
+        "driveFileId": "1EKeOPCq0WRYgpH-zVi-MJLRH2b7l98dx",
+        "alt": "Brochure Renderings - The Halcyon Residences & Marina Naples - Renderings 17"
+      },
+      {
+        "driveFileId": "1cNc0AA1wfFxMMRfItL-sIy3zR_bLzF5J",
+        "alt": "Brochure Renderings - The Halcyon Residences & Marina Naples - Renderings 18"
+      },
+      {
+        "driveFileId": "1rCuur5xeHD0-Ca30k4FRR4-BhjbdhW-o",
+        "alt": "Brochure Renderings - The Halcyon Residences & Marina Naples - Renderings 19"
+      },
+      {
+        "driveFileId": "19vDjTLWfSVcC5wTXNQ_ZKxIOY5-15nNf",
+        "alt": "Brochure Renderings - The Halcyon Residences & Marina Naples - Renderings 20"
+      },
+      {
+        "driveFileId": "1YPV-qaN75-oS7nHQFoqjNmQrZZiOpsJQ",
+        "alt": "Brochure Renderings - The Halcyon Residences & Marina Naples - Renderings 21"
+      },
+      {
+        "driveFileId": "1uEMhcUoBPSiemlu_WN-F6YwQr2AgERPY",
+        "alt": "Brochure Renderings - The Halcyon Residences & Marina Naples - Renderings 22"
+      }
+    ],
+    "thumbnail": "/api/render?id=1GuylpUzw5z-HTxDGKfAM_CMowUGMG1MG",
+    "hero": "/api/render?id=1GuylpUzw5z-HTxDGKfAM_CMowUGMG1MG",
+    "projectLogo": "/images/logos/the-halcyon-residences-marina-naples.png"
   }
 ]
