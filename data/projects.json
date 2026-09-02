@@ -23350,10 +23350,20 @@
         "driveFileId": "1L-VAZdy19F8Ci-YSr7tlRzdDN9OizpFM"
       }
     ],
-    "priceList": {
-      "driveFileId": "1dDnICGu1QLyzu8YOFrIeFVt-4NghA4MF",
-      "createdAt": "As of May 26, 2026"
-    }
+    "priceDocs": [
+      {
+        "driveFileId": "1dWgIAvII1l4oGlX_hx3qkloQC8e_maap",
+        "createdAt": "As of September 2, 2026",
+        "title": "Naples Beach Club Four Seasons - Price List",
+        "kind": "list"
+      },
+      {
+        "driveFileId": "1WdC_bckVxbN4iCOB1Y7bbM8y9wwezabz",
+        "createdAt": "As of September 2, 2026",
+        "title": "Naples Beach Club Four Seasons - Price Range",
+        "kind": "range"
+      }
+    ]
   },
   {
     "slug": "nexo-north-miami-beach",
