@@ -24443,9 +24443,8 @@
     "completionDate": "2027",
     "depositStructure": [
       "20% at contract",
-      "10% 6 months after contract",
-      "10% at top-off (Q3 2026)",
-      "60% at closing (Q4 2027)"
+      "20% at six months",
+      "60% at closing"
     ],
     "parkingSpaces": [
       "2 valet parking spaces per unit"
