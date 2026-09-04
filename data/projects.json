@@ -47165,10 +47165,20 @@
       }
     ],
     "presentations": [],
-    "priceList": {
-      "driveFileId": "1QR_M7W697jX5MmlVbckdQRFh_u3UztUq",
-      "createdAt": "As of August 11, 2026"
-    }
+    "priceDocs": [
+      {
+        "driveFileId": "1ttiW4aLcd1U_5r3dljI9Sru5L_ti2YSx",
+        "createdAt": "As of September 4, 2026",
+        "title": "Tula Residences North Bay Village - Price List",
+        "kind": "list"
+      },
+      {
+        "driveFileId": "1QR_M7W697jX5MmlVbckdQRFh_u3UztUq",
+        "createdAt": "As of August 11, 2026",
+        "title": "Tula Residences North Bay Village - Price List",
+        "kind": "list"
+      }
+    ]
   },
   {
     "slug": "turnberry-ocean-club",
