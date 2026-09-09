@@ -52107,20 +52107,10 @@
     "thumbnail": "/api/render?id=1rdYxKbDNboHdPMURxqUxvgHBV30mnTjj",
     "hero": "/api/render?id=1rdYxKbDNboHdPMURxqUxvgHBV30mnTjj",
     "projectLogo": "/images/logos/one-twenty-brickell-residences.png",
-    "priceDocs": [
-      {
-        "driveFileId": "1TgLWVC52GdYojwQEbPpa6shsDhxkrnaN",
-        "createdAt": "As of September 9, 2026",
-        "title": "One Twenty Brickell Residences - Price List",
-        "kind": "list"
-      },
-      {
-        "driveFileId": "1dYOY8sLhfjmx-m_Ppn0JzE-6iP6XnWlG",
-        "createdAt": "As of May 26, 2026",
-        "title": "One Twenty Brickell Residences - Price List - Signature",
-        "kind": "list"
-      }
-    ]
+    "priceList": {
+      "driveFileId": "1TgLWVC52GdYojwQEbPpa6shsDhxkrnaN",
+      "createdAt": "As of September 9, 2026"
+    }
   },
   {
     "slug": "villa-sofia-miami-beach",
