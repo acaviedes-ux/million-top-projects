@@ -26312,10 +26312,20 @@
         "driveFileId": "12d9JTIp6MJaeJcWVhUgXlBrekvfn5-H4"
       }
     ],
-    "priceRange": {
-      "driveFileId": "1ClFbmUROYWCiphmvBJOIC5rdMF565PQx",
-      "createdAt": "As of July 30, 2026"
-    }
+    "priceDocs": [
+      {
+        "driveFileId": "1AwF_MsT1CmT-830uVz2EpJgCBLS2rsxm",
+        "createdAt": "As of September 14, 2026",
+        "title": "Ombelle Fort Lauderdale - Price List",
+        "kind": "list"
+      },
+      {
+        "driveFileId": "1ClFbmUROYWCiphmvBJOIC5rdMF565PQx",
+        "createdAt": "As of July 30, 2026",
+        "title": "Ombelle Fort Lauderdale - Price Range",
+        "kind": "range"
+      }
+    ]
   },
   {
     "slug": "onda-bay-harbor",
