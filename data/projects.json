@@ -11938,9 +11938,10 @@
     "completionDate": "2027",
     "depositStructure": [
       "20% at contract",
-      "20% at groundbreaking (March 2026) (Could be separated in half)",
-      "⁠10% at top-off",
-      "⁠50% at closing (Q4 2027)"
+      "10% at 90 days",
+      "10% at 180 days",
+      "10% at top-off",
+      "50% at delivery"
     ],
     "parkingSpaces": null,
     "rentalRestrictions": [
