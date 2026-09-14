@@ -40940,9 +40940,9 @@
     "completionDate": "2027",
     "depositStructure": [
       "20% at contract",
-      "10% at top-off (February 2026)",
-      "10% at June 30, 2026",
-      "60% at closing (Q1 2027)"
+      "10% at 90 days",
+      "10% at 180 days",
+      "60% at closing"
     ],
     "parkingSpaces": [
       "1 assigned parking space for 2-bedroom units.",
